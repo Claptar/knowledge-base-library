@@ -451,9 +451,16 @@ def convert_transcript(path):
     return re.sub(r"\A#\s+\S+\n", "", md), None
 
 
+# `N[ϵ, F, L²(P)]` in a PDF comes out as `[ϵ, F, L_<sup>2</sup>](P)` — markdown link syntax
+# manufactured out of mathematical notation, pointing at nothing. A PDF conversion has no
+# hyperlinks worth keeping anyway, so the brackets are escaped and the text is left readable.
+FAKE_LINK = re.compile(r"\[([^\]\n]{0,120})\]\((?!https?:)")
+
+
 def convert_pdf(path):
     import pymupdf4llm
     text = pymupdf4llm.to_markdown(str(path), show_progress=False)
+    text = FAKE_LINK.sub(lambda m: f"\\[{m.group(1)}\\](", text)
     return text, None
 
 
@@ -515,6 +522,54 @@ def split_sections(text):
     return [(None, text)]
 
 
+def split_footnote_defs(text):
+    """Separate footnote definitions from the prose. Returns (text_without_defs, {id: block}).
+
+    A definition is `[^id]: …` plus any lines indented under it.
+    """
+    out, defs, cur_id, cur = [], {}, None, []
+    for line in text.split("\n"):
+        m = re.match(r"^\[\^([^\]]+)\]:", line)
+        if m:
+            if cur_id is not None:
+                defs[cur_id] = "\n".join(cur).rstrip()
+            cur_id, cur = m.group(1), [line]
+            continue
+        if cur_id is not None and line.startswith(("    ", "\t")):
+            cur.append(line)
+            continue
+        if cur_id is not None:
+            defs[cur_id] = "\n".join(cur).rstrip()
+            cur_id, cur = None, []
+        out.append(line)
+    if cur_id is not None:
+        defs[cur_id] = "\n".join(cur).rstrip()
+    return "\n".join(out), defs
+
+
+def carry_footnotes(all_defs, part):
+    """Give each part exactly the footnote definitions it actually references.
+
+    Splitting separates a footnote from its marker, and both halves then break: a definition
+    whose `[^id]` marker ended up on another page renders a back-link to `#fnref:id`, an anchor
+    that no longer exists on this one — 124 strict-build failures in a single converted course.
+    A marker whose definition went the other way renders as literal `[^id]`.
+
+    So definitions are stripped from every part and re-attached to the parts that use them. A
+    footnote referenced twice across a split legitimately appears in both.
+    """
+    part, _ = split_footnote_defs(part)
+    # Test against what markdown will actually render. A marker inside an HTML comment is not a
+    # reference, and attaching a definition for it produces a footnote nothing points at — which
+    # the strict build reports as a back-link to a missing `#fnref:` anchor.
+    visible = re.sub(r"<!--.*?-->", "", part, flags=re.S)
+    used = [i for i in all_defs if re.search(r"\[\^%s\]" % re.escape(i), visible)]
+    if not used:
+        return part.rstrip() + "\n"
+    blocks = "\n\n".join(all_defs[i] for i in used)
+    return part.rstrip() + "\n\n" + blocks + "\n"
+
+
 def carry_reference_defs(whole, part):
     """A part that uses [text][ref] needs the definition, which may have been in another part.
     Without this the split itself manufactures broken links."""
@@ -534,18 +589,40 @@ def carry_reference_defs(whole, part):
 # Link rewriting
 # ---------------------------------------------------------------------------
 
-def rewrite_links(text, doc, out_page_dir, entry, index_by_rel, root):
+def rewrite_links(text, doc, out_page_dir, entry, index_by_rel, root, anchors=None):
     """Point every relative link somewhere real: at the converted sibling, or at the original.
 
-    The third case — no upstream recorded — strips the link to plain text rather than leaving
-    it dangling, because the strict build treats a dangling link as an error and it is right to.
+    The last case — no upstream recorded — strips the link to plain text rather than leaving it
+    dangling, because the strict build treats a dangling link as an error and it is right to.
+
+    Two cases look like they need no work and do:
+
+    * **A site-root-relative link** (`/data`, `/units/unit9-sim.html`) is relative to the *source
+      site's* root, not to this one. Left alone it points into this site and resolves nowhere.
+    * **A fragment-only link** (`#data-exploration`) was valid in the source document and stops
+      being valid the moment that document is split, because the heading it names is now on a
+      sibling page. `anchors` maps heading slug -> the part that ended up holding it.
     """
     src_dir = (root / doc.rel).parent
 
     def sub(m):
         bang, label, target, title = m.group(1), m.group(2), m.group(3), m.group(4) or ""
-        if re.match(r"^(https?:|mailto:|#|/)", target):
+        if re.match(r"^(https?:|mailto:)", target):
             return m.group(0)
+
+        # A fragment-only link: valid before the split, and this is where it gets repaired.
+        if target.startswith("#"):
+            frag = target[1:]
+            if anchors is None or frag in anchors.get("_here", ()):
+                return m.group(0)                       # heading stayed on this page
+            dest = anchors.get(frag)
+            if dest:
+                link = os.path.relpath(dest, Path(out_page_dir)).replace(os.sep, "/")
+                return f"[{label}]({link}#{frag})"
+            return label                                # heading did not survive the conversion
+
+        # `/x` is relative to the source site's root, not to ours.
+        target = target.lstrip("/") if target.startswith("/") else target
         path_part, _, frag = target.partition("#")
         if not path_part:
             return m.group(0)
@@ -776,9 +853,26 @@ def process(entry, sources_dir, library, include_all, apply):
         url, exact = upstream(entry, d.rel)
         split = len(targets) > 1
         rendered = []
+
+        # Which part ended up holding each heading. A `#section` link inside the source was
+        # valid until the document was split; this is what lets it be repaired rather than
+        # dropped, so a table of contents in the source keeps working.
+        part_slugs = []
+        for (heading, body), (target, title) in zip(sections, targets):
+            slugs = {slugify(t) for _, t in HEADING.findall(body)}
+            slugs.add(slugify(title))
+            part_slugs.append(slugs)
+        anchor_home = {}
+        for slugs, (target, _) in zip(part_slugs, targets):
+            for slug in slugs:
+                anchor_home.setdefault(slug, target)
+
+        _, footnote_defs = split_footnote_defs(text)
         for i, ((heading, body), (target, title)) in enumerate(zip(sections, targets)):
+            anchors = dict(anchor_home, _here=part_slugs[i])
+            body = carry_footnotes(footnote_defs, body)
             body = carry_reference_defs(text, body)
-            body = rewrite_links(body, d, target.parent, entry, index_by_rel, root)
+            body = rewrite_links(body, d, target.parent, entry, index_by_rel, root, anchors)
             if heading:
                 # The section heading becomes the page title; drop the duplicate from the body.
                 body = re.sub(r"\A#{1,4}\s+.+?\n", "", body, count=1)
@@ -840,15 +934,26 @@ def read_title(path):
 def write_nav(reference_dir, apply):
     """Regenerate SUMMARY.md from what is on disk.
 
-    Built by scanning rather than from this run's output, so the nav is correct whichever
-    subset of sources has been converted so far. `mkdocs-literate-nav` reads it, which keeps
-    several hundred generated entries out of the hand-written mkdocs.yml.
+    Built by scanning rather than from this run's output, so the nav is correct whichever subset
+    of sources has been converted so far. `mkdocs-literate-nav` reads it.
+
+    **The nav stops at the document, never the section.** Material renders the navigation tree
+    into every page it builds, so nav size multiplies across the site: listing all 9,967 section
+    pages produced 5.8 MB of sidebar on *each* of 11,808 pages — a 68 GB site, against GitHub
+    Pages' 1 GB limit, and a build that never finished. Listing documents instead costs ~2,100
+    entries, and nothing becomes unreachable: a split document's index page lists its sections,
+    and every section carries previous/next/up links and is indexed by search.
     """
     if not reference_dir.is_dir():
         return 0
     lines = ["<!-- Generated by normalise_source.py. Do not edit. -->", "",
              "- [Home](index.md)"]
     count = 1
+
+    def is_split_document(d):
+        """A directory holding one document's sections: an index plus NN-*.md parts."""
+        return (d / "index.md").exists() and any(
+            re.match(r"^\d{2}-", p.name) for p in d.iterdir() if p.suffix == ".md")
 
     def walk(d, depth):
         nonlocal count
@@ -865,13 +970,19 @@ def write_nav(reference_dir, apply):
         for p in pages:
             lines.append(f"{pad}- [{read_title(p)}]({p.relative_to(reference_dir).as_posix()})")
             count += 1
-        for s in subdirs:
-            if any(s.rglob("*.md")):
-                if not (s / "index.md").exists():
-                    lines.append(f"{pad}- {prettify(s.name)}:")
-                    walk(s, depth + 1)
-                else:
-                    walk(s, depth)
+        for sub in subdirs:
+            if not any(sub.rglob("*.md")):
+                continue
+            if is_split_document(sub):
+                # The document, not its sections. Its own index page lists those.
+                target = (sub / "index.md").relative_to(reference_dir).as_posix()
+                lines.append(f"{pad}- [{read_title(sub / 'index.md')}]({target})")
+                count += 1
+            elif not (sub / "index.md").exists():
+                lines.append(f"{pad}- {prettify(sub.name)}:")
+                walk(sub, depth + 1)
+            else:
+                walk(sub, depth)
 
     top = sorted(p for p in reference_dir.iterdir() if p.is_dir())
     for d in top:
