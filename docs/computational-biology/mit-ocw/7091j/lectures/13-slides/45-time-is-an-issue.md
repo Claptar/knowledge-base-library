@@ -1,0 +1,31 @@
+---
+title: Time is an issue
+source: https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/
+source_file: sources/ocw-7091j/lectures/13-slides.pdf
+licence: CC BY-NC-SA 4.0
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# Time is an issue
+
+**Source:** `lectures/13-slides.pdf` from [ocw-7091j](https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/) · **Licence:** CC BY-NC-SA 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+- Imagine we wanted to predict which proteins interact with our favorite molecule. – For each potential partner • **Evaluate all possible relative positions and orientations** – allow for structural rearrangements » measure energy of interaction
+
+- This approach would be extremely slow!
+
+- • **It’ l t f l iti** s a so prone o a se pos ves.
+
+- – Why?
+
+81
+
+---
+
+[← Predicting Structures of Complexes](44-predicting-structures-of-complexes.md) · [Up: contents](index.md) · [Reducing the search space →](46-reducing-the-search-space.md)

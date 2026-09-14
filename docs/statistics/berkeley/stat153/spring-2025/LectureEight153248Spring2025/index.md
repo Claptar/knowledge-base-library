@@ -1,0 +1,28 @@
+---
+title: 1 DFT
+source: https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureEight153248Spring2025.pdf
+source_file: sources/berkeley-stat153/spring-2025/LectureEight153248Spring2025.pdf
+licence: CC BY 4.0
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# 1 DFT
+
+**Source:** [`LectureEight153248Spring2025.pdf`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureEight153248Spring2025.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+Split into 4 sections.
+
+1. [1 DFT](01-1-dft.md)
+2. [2 The Periodogram](02-2-the-periodogram.md)
+3. [3 Utility of the Periodogram](03-3-utility-of-the-periodogram.md)
+4. [4 Other Nonlinear Regression Models](04-4-other-nonlinear-regression-models.md)
+
+---
+
+[Up: contents](../index.md)

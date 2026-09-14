@@ -1,0 +1,27 @@
+---
+title: 21 slides
+source: https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/
+source_file: sources/ocw-8592j/lectures/21-slides.pdf
+licence: CC BY-NC-SA 4.0
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# 21 slides
+
+**Source:** `lectures/21-slides.pdf` from [ocw-8592j](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/) · **Licence:** CC BY-NC-SA 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+Split into 3 sections.
+
+1. [Introduction](01-introduction.md)
+2. [3.2.1 Asymmetric Hopping](02-3-2-1-asymmetric-hopping.md)
+3. [3.2.2 Force of a Brownian Motor](03-3-2-2-force-of-a-brownian-motor.md)
+
+---
+
+[Up: contents](../../index.md)

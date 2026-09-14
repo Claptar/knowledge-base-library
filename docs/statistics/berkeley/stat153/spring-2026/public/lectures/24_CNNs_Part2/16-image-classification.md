@@ -1,0 +1,39 @@
+---
+title: Image Classification
+source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/24_CNNs_Part2.pdf
+source_file: sources/berkeley-stat153/spring-2026/public/lectures/24_CNNs_Part2.pdf
+licence: CC BY 4.0
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# Image Classification
+
+**Source:** [`public/lectures/24_CNNs_Part2.pdf`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/24_CNNs_Part2.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+_Input: 196,608 features_
+
+- So: instead of having the entire image feed into each hidden unit, have each unit only look at **a small portion** of the image, e.g. 11x11 pixels (363 weights)
+
+- Let’s offset each 11x11 unit by 4 pixels, giving 4096 “localized” units
+
+- To combine info. across these patches let’s keep our original 1000-unit layer also
+
+- How many total weights now?
+
+
+<!-- Start of picture text -->
+…<br>4096<br>localized<br>units<br>1000 hidden<br>units<br><!-- End of picture text -->
+
+
+<!-- Start of picture text -->
+1000 output<br>units<br><!-- End of picture text -->
+
+---
+
+[← Image Classification](15-image-classification.md) · [Up: contents](index.md) · [Image Classification →](17-image-classification.md)

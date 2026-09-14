@@ -1,0 +1,21 @@
+---
+title: Solution for Q6
+source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat153_248_Homework5.ipynb
+source_file: sources/berkeley-stat153/spring-2026/public/homework/Stat153_248_Homework5.ipynb
+licence: CC BY 4.0
+route: notebook
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# Solution for Q6
+
+**Source:** [`public/homework/Stat153_248_Homework5.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat153_248_Homework5.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+
+layer = nn.Conv2d(## FILL IN##)
+x = torch.randn(##FILL IN##)
+out = # Apply the conv layer
+
+---
+
+[← print("\nn weight params:", layer4.weight.numel())](23-print-nn-weight-params-layer4-weight-numel.md) · [Up: contents](index.md) · [Print output shape →](25-print-output-shape.md)

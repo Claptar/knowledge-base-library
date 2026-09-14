@@ -1,0 +1,38 @@
+---
+title: 2. Graphics devices
+source: https://github.com/berkeley-stat243/stat243-fall-2022/blob/34dee34760386ed7a0ea4f1fd1c9e7d088e637ff/units/unit12-graphics.Rmd
+source_file: sources/berkeley-stat243/stat243-fall-2022/units/unit12-graphics.Rmd
+licence: unresolved
+route: markdown
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# 2. Graphics devices
+
+**Source:** [`units/unit12-graphics.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2022/blob/34dee34760386ed7a0ea4f1fd1c9e7d088e637ff/units/unit12-graphics.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+
+Graphics are plotted on a *device*. In the old days when computer
+monitors were not high resolution or in color, this referred to a
+physical device, but nowadays this is a general term that denotes the
+context in which the plot is being made: typically on screen or as a
+file in a particular file format. The standard device in a UNIX
+environment is X11, basically a graphics window set up in the X11
+windowing system. On-screen plotting is generally done with R
+interacting with a window manager for the operating system, so R is not
+interacting directly with the physical display. Often one needs to
+iterate to get a plot to look good when printed to a file; in particular
+the aspect (width to height ratio) (e.g., you can specify width and
+height in `pdf()`), the margin sizes relative to the size of the core
+plot, and size of plotting symbols and text relative to the size of the
+plot. In other words, the relative sizes when seen in a graphics window on the
+screen may be very different when printed to a file.
+
+You can have multiple graphics windows open at once; you'll need to
+explicitly call the function for opening a device to set up any
+additional ones. `dev.cur()` tells the number of the active one and
+`dev.set()` allows to change it.
+
+---
+
+[← 1. Good practices for graphics](02-1-good-practices-for-graphics.md) · [Up: contents](index.md) · [3. Graphics file formats →](04-3-graphics-file-formats.md)

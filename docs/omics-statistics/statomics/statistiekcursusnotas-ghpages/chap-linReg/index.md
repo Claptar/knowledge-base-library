@@ -1,0 +1,25 @@
+---
+title: Hoofdstuk 6 Enkelvoudige lineaire regressie {#hoofdstuk-6-enkelvoudige-lineaire-regressie}
+source: https://github.com/statOmics/statistiekCursusNotas/blob/a1c505bbdddd3d602fa9cc629bef7ee772233d14/chap-linReg.html
+source_file: sources/statomics-statistiekcursusnotas-ghpages/chap-linReg.html
+licence: unresolved
+route: pandoc-html
+fidelity: good
+converted: '2026-09-14'
+---
+
+# Hoofdstuk 6 Enkelvoudige lineaire regressie {#hoofdstuk-6-enkelvoudige-lineaire-regressie}
+
+**Source:** [`chap-linReg.html`](https://github.com/statOmics/statistiekCursusNotas/blob/a1c505bbdddd3d602fa9cc629bef7ee772233d14/chap-linReg.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
+
+Split into 5 sections.
+
+1. [Hoofdstuk 6 Enkelvoudige lineaire regressie {#hoofdstuk-6-enkelvoudige-lineaire-regressie}](01-hoofdstuk-6-enkelvoudige-lineaire-regressie-hoofdstuk-6-enke.md)
+2. [we lezen de data in en slaan die op in het object](02-we-lezen-de-data-in-en-slaan-die-op-in-het-object.md)
+3. [met de naam borstkanker](03-met-de-naam-borstkanker.md)
+4. [Het argument header=TRUE wordt gebruikt omdat de eerste](04-het-argument-header-true-wordt-gebruikt-omdat-de-eerste.md)
+5. [lijn van het bestand de namen van de variabelen bevat](05-lijn-van-het-bestand-de-namen-van-de-variabelen-bevat.md)
+
+---
+
+[Up: contents](../index.md)

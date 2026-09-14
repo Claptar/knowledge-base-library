@@ -1,0 +1,33 @@
+---
+title: Introduction
+source: https://github.com/berkeley-stat243/stat243-fall-2018/blob/be0e210baad11c83cecdb23dcb9e91f609bc536a/units/unit2-bash.pdf
+source_file: sources/berkeley-stat243/stat243-fall-2018/units/unit2-bash.pdf
+licence: unresolved
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# Introduction
+
+**Source:** [`units/unit2-bash.pdf`](https://github.com/berkeley-stat243/stat243-fall-2018/blob/be0e210baad11c83cecdb23dcb9e91f609bc536a/units/unit2-bash.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+# Unit 2: The bash shell and UNIX utilities
+
+August 27, 2018
+
+Note that it can be difficult to distinguish what is shell-specific and what is just part of UNIX. Some of the material here is not bash-specific but general to UNIX.
+
+Any tutorials mentioned below are available at
+
+http://statistics.berkeley.edu/computing/training/tutorials.
+
+Reference: Newham and Rosenblatt, Learning the bash Shell, 2nd ed.
+
+---
+
+[Up: contents](index.md) · [1 Shell basics →](02-1-shell-basics.md)

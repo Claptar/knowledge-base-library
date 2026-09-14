@@ -1,0 +1,28 @@
+---
+title: Convergence
+source: https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/
+source_file: sources/ocw-7091j/lectures/15-slides.pdf
+licence: CC BY-NC-SA 4.0
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# Convergence
+
+**Source:** `lectures/15-slides.pdf` from [ocw-7091j](https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/) · **Licence:** CC BY-NC-SA 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+- K-means always converges.
+
+- The assignment and update steps always either reduce the objective function or leave it unchanged.
+
+
+73
+
+---
+
+[← What if we choose pathologically bad initial positions?](28-what-if-we-choose-pathologically-bad-initial-positions.md) · [Up: contents](index.md) · [Convergence →](30-convergence.md)

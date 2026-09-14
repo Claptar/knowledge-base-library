@@ -1,0 +1,47 @@
+---
+title: Let's look at what we're using for our xtrain matrices
+source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/Lecture20.ipynb
+source_file: sources/berkeley-stat153/spring-2026/public/lectures/Lecture20.ipynb
+licence: CC BY 4.0
+route: notebook
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# Let's look at what we're using for our xtrain matrices
+
+**Source:** [`public/lectures/Lecture20.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/Lecture20.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+
+stim_types = ['spec', 'phn']
+
+for stim_type in stim_types:
+    ntimes, nfeats = xtest[stim_type].shape
+    print(f'{ntimes} time points, {nfeats} {stim_type} features')
+    nsec_to_show = 20
+
+    plt.figure(figsize=(10,3))
+    plt.imshow(xtest[stim_type].T, aspect='auto', cmap=cm.magma, interpolation='nearest')
+    plt.gca().invert_yaxis()
+    ticks = np.arange(0, ntimes, fs*10)
+    plt.gca().set_xticks(ticks)
+    plt.gca().set_xticklabels((ticks / fs).astype(int))
+    plt.gca().set_xlim([0,nsec_to_show*fs])
+    plt.title(f'xtest - {stim_type}')
+    plt.colorbar()
+
+    plt.xlabel('Time (s)')
+    plt.ylabel('Feature (bin)')
+```
+
+```
+13563 time points, 80 spec features
+13563 time points, 14 phn features
+```
+
+*(2 figures omitted — see the original notebook.)*
+
+```python
+
+---
+
+[← Show whether the data have been z-scored](04-show-whether-the-data-have-been-z-scored.md) · [Up: contents](index.md) · [Let's show the response data that goes with this test set →](06-let-s-show-the-response-data-that-goes-with-this-test-set.md)

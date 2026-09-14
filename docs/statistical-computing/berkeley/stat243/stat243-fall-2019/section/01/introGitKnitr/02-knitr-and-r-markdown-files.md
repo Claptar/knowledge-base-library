@@ -1,0 +1,144 @@
+---
+title: knitr and R Markdown Files
+source: https://github.com/berkeley-stat243/stat243-fall-2019/blob/b2795324dec367a50f578b01c67d907994ff40f5/section/01/introGitKnitr.Rmd
+source_file: sources/berkeley-stat243/stat243-fall-2019/section/01/introGitKnitr.Rmd
+licence: unresolved
+route: markdown
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# knitr and R Markdown Files
+
+**Source:** [`section/01/introGitKnitr.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2019/blob/b2795324dec367a50f578b01c67d907994ff40f5/section/01/introGitKnitr.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+
+> ### Learning Objectives:
+>
+> - Differentiate between `.R` and `.Rmd` files
+> - To understand dynamic documents
+> - To gain familiarity with R Markdown `.Rmd` files
+> - To gain familiarity with code chunks
+
+### 0) Useful Links
+- [Dynamic docs](https://github.com/berkeley-scf/tutorial-dynamic-docs)
+- [Knitr in a knutshell](http://kbroman.org/knitr_knutshell/)
+- [R Markdown cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- [Complete Guide](https://bookdown.org/yihui/rmarkdown/)
+
+### 1) Opening and knitting an `Rmd` file
+
+In the menu bar of RStudio, click on __File__, then __New File__,
+and choose __R Markdown__. Select the default option (Document),
+and click __Ok__. RStudio will open a new `.Rmd` file in the source pane.
+And you should be able to see a file with some default content.
+
+Locate the button __Knit HTML__, the one with an icon of a ball of yarn and two
+needles. Click the button (knit to HTML) so you can see how `Rmd` files are
+rendered and displayed as HTML documents. Alternatively, you can use a keyboard
+shortcut: in Mac `Command+Shift+K`, in Windows `Ctrl+Shift+K`
+
+
+### 2) What is an `Rmd` file?
+
+__Rmd__ files are a special type of file, referred to as a _dynamic document_.
+This is the fancy term we use to describe a document that allows us to combine
+narrative (text) with R code in one single file.
+
+Rmd files are plain text files. This means that you can open an Rmd file
+with any text editor (not just RStudio) and being able to see and edit its
+contents.
+
+The main idea behind dynamic documents is simple yet very powerful: instead of
+working with two separate files, one that contains the R code, and
+another one that contains the narrative, you use an `.Rmd` file to include
+both the commands and the narrative.
+
+One of the main advantages of this paradigm,
+is that you avoid having to copy results from your computations and paste them
+into a report file. In fact, there are more complex ways to work with dynamic
+documents and source files. But the core idea is the same: combine narrative
+and code in a way that you let the computer do the manual, repetitive,
+and time consuming job.
+
+Rmd files is just one type of dynamic document that you will find in RStudio.
+In fact, RStudio provides other file formats that can be used
+as dynamic documents: e.g. `.Rnw`, `.Rpres`, `.Rhtml`, etc.
+
+
+### 3) Anatomy of an `Rmd` file
+
+The structure of an `.Rmd` file can be divided in two parts: 1) a __YAML header__,
+and 2) the __body__ of the document. In addition to this structure, you should
+know that `.Rmd` files use three types of syntaxes: YAML, Markdown, and R.
+
+The _YAML header_ consists of the first few lines at the top of the file.
+This header is established by a set of three dashes `---` as delimiters
+(one starting set, and one ending set). This part of the file requires you
+to use YAML syntax (Yet Another Markup Language.)
+Within the delimiter sets of dashes, you specify settings (or metadata) that
+will apply to the entire document. Some of the common
+options are things like:
+
+- `title`
+- `author`
+- `date`
+- `output`
+
+The _body_ of the document is everything below the YAML header. It consists
+of a mix of narrative and R code. All the text that is narrative is written
+in a markup syntax called __Markdown__ (although you can also use LaTeX math
+notation). In turn, all the text that is code
+is written in R syntax inside _blocks of code_.
+
+There are two types of blocks of code: 1) __code chunks__, and
+2) __inline code__. Code chunks are lines of text separated from any lines of
+narrative text. Inline code is code inserted within a line of narrative text .
+
+
+### 4) How does an Rmd file work?
+
+Rmd files are plain text files. All that matters is the syntax of its content.
+The content is basically divided in the header, and the body.
+
+- The header uses YAML syntax.
+- The narrative in the body uses Markdown syntax.
+- The code and commands use R syntax.
+
+The process to generate a nice rendered document from an Rmd file is
+known as __knitting__. When you _knit_ an Rmd file, various R packages
+and programs run behind the scenes. But the process can be broken down
+in three main phases: 1) Parsing, 2) Execution, and 3) Rendering.
+
+1) Parsing: the content of the file is parsed (examined line by line)
+and each component is identified as yaml header, or as markdown text, or as R code.
+
+Each component receives a special treatment and formatting.
+
+The most interesting part is in the pieces of text that are R code.
+Those are separated and executed if necessary. The commands may be included
+in the final document. Also, the output may be included in the final document.
+Sometimes, nothing is executed nor included.
+
+Depending on the specified output format (e.g. HTML, pdf, word), all the
+components are assembled, and one single document is generated.
+
+
+### 5) Yet Another Syntax to Learn
+
+R markdown (`Rmd`) files use [markdown](https://daringfireball.net/projects/markdown/)
+as the main syntax to write content.Markdown is a very lightweight type of markup
+language, and it is relatively easy to learn.
+
+One of the most common sources of confusion when learning about R and Rmd
+files has to do with the hash symbol `#`. As you know, `#` is the character
+used by R to indicate comments. The issue is that the `#` character has a
+different meaning in markdown syntax. Hashes in markdown are used to define
+levels of headings.
+
+In an Rmd file, a hash `#` that is inside a code chunk will be treated as
+an R comment. A hash outside a code chunk, will be treated as markdown syntax,
+making its associated text a given type of heading.
+
+---
+
+[← git Basics](01-git-basics.md) · [Up: contents](index.md) · [6) Code chunks →](03-6-code-chunks.md)

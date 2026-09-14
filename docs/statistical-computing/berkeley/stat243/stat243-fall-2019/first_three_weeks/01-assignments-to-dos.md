@@ -1,0 +1,50 @@
+---
+title: Assignments / to-dos
+source: https://github.com/berkeley-stat243/stat243-fall-2019/blob/b2795324dec367a50f578b01c67d907994ff40f5/first_three_weeks.md
+source_file: sources/berkeley-stat243/stat243-fall-2019/first_three_weeks.md
+licence: unresolved
+route: markdown
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# Assignments / to-dos
+
+**Source:** [`first_three_weeks.md`](https://github.com/berkeley-stat243/stat243-fall-2019/blob/b2795324dec367a50f578b01c67d907994ff40f5/first_three_weeks.md) · **Licence:** unresolved · Converted 2026-09-14 from `.md` (lossless)
+
+- (Required) By Friday August 30 at 2 pm, fill out this class survey:
+https://forms.gle/reY7xndSN2PVqcEj8.  This is required and will be 'counted' in the class participation portion of your grade.
+
+- (Required) By Friday August 30 at 2 pm, fill out this survey of potential office hour times: http://whenisgood.net/wqcesmk
+
+- (Optional) By Friday August 30 at 2 pm, ONLY if you would like to attend the optional R help session, fill out this survey of potential times for the extra R help session: http://whenisgood.net/4gikaif
+
+- (Optional) By Friday August 30 at 2 pm, ONLY if you would like to attend the optional UNIX help session (either for getting access to a UNIX-style command line or for basic command line usage) fill out this survey of potential times for the extra UNIX command-line help session: http://whenisgood.net/4j2fi3m
+
+- (Required) By Friday August 30 at 2 pm, please read Sections 1, 2, and 5 of Unit 2, as I'll just touch on an item or two from those sections in class and will assume you're familiar with getting CSV and similar data into and out of R and some of the pitfalls that can arise.
+
+- (Optional) By Friday September 6, if you are not comfortable with the basic UNIX usage we saw in the first class, please work through the [UNIX basics tutorial here](https://github.com/berkeley-scf/tutorial-unix-basics/archive/master.zip) and answer the questions at the end. You don't need to turn anything
+in. If you'd like help, please come to the install/UNIX help session listed below.
+
+- (Optional) If you are not familiar with R at the level of [modules
+1-5 of the R bootcamp](https://github.com/berkeley-scf/r-bootcamp-2019/archive/master.zip),
+work through those modules and the breakout problems associated with
+the modules. If you'd like help and an opportunity for extra practice,
+please attend the special R catch-up session listed below. Some other
+resources for R are listed at the end of module 11 of the bootcamp
+materials, so you could also use those resources. You should do this during
+the week of September 2.
+
+- (Required) By Monday September 9 at 2 pm, read through this [tutorial on using the bash shell](https://github.com/berkeley-scf/tutorial-using-bash/archive/master.zip). Work through the first 10 problems at the end of the tutorial and submit answers via bCourses as a text file or PDF. This is not a formal problem set, so you don't need to worry about formatting nor about explaining/commenting your answers, nor do you need to put your answers in your Github class repository. In fact it's even fine with me if you hand-write the answers and scan them to an electronic document. I just want to make sure you've worked through the tutorial.
+
+   You don't need to look at all the sections in the tutorial. Please see Section 2 of units/unit4-bash.pdf in the course repository for a list of the
+sections you can skip over. I'll be doing demonstrations on using the
+bash shell in class on Friday September 6, so that will be helpful as you work through the tutorial.
+
+- (Required) Problem Set (PS) 1 is due Wednesday September 11 at 2 pm.
+
+- (Required) By Friday September 13 at 2 pm, read the regular expression material in Section 3 of the [tutorial on using the bash shell](https://github.com/berkeley-scf/tutorial-using-bash/archive/master.zip). (You can skip Section 3.6.) Then work through the regular expressions (regex) practice problems and turn in your answers through this online form: https://forms.gle/7fai1RY3M3yMscWf8. This is not one of the graded problem sets but rather an 'assignment' that will simply be noted as being completed or not.
+
+---
+
+[Up: contents](index.md) · [Events →](02-events.md)

@@ -1,0 +1,23 @@
+---
+title: Section
+source: https://github.com/berkeley-stat243/stat243-fall-2014/blob/49fcee4ef42342d81d010e586b69d92a94bbb12f/syllabus/syllabus.pdf
+source_file: sources/berkeley-stat243/stat243-fall-2014/syllabus/syllabus.pdf
+licence: unresolved
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# Section
+
+**Source:** [`syllabus/syllabus.pdf`](https://github.com/berkeley-stat243/stat243-fall-2014/blob/49fcee4ef42342d81d010e586b69d92a94bbb12f/syllabus/syllabus.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+Jarrod will lead a one hour discussion section each week (there are two sections). The discussion sections will vary in format and topic but material will include demonstrations on various topics (version control, Python, debugging, etc.), discussion of relevant papers, and discussion of problem set solutions. If anyone cannot make either section time, please see me to discuss alternative arrangements.
+
+---
+
+[← Course material](05-course-material.md) · [Up: contents](index.md) · [Computing Resources →](07-computing-resources.md)

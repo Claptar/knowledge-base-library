@@ -1,0 +1,21 @@
+---
+title: get all the senators' timelines
+source: https://github.com/berkeley-stat243/stat243-fall-2022/blob/34dee34760386ed7a0ea4f1fd1c9e7d088e637ff/units/unit2-dataTech.Rmd
+source_file: sources/berkeley-stat243/stat243-fall-2022/units/unit2-dataTech.Rmd
+licence: unresolved
+route: markdown
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# get all the senators' timelines
+
+**Source:** [`units/unit2-dataTech.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2022/blob/34dee34760386ed7a0ea4f1fd1c9e7d088e637ff/units/unit2-dataTech.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+
+names = [d["screen_name"] for d in senators["users"]]
+timelines = [api.statuses.user_timeline(screen_name=name, count = 500)
+             for name in names]
+
+---
+
+[← get the list of senators](17-get-the-list-of-senators.md) · [Up: contents](index.md) · [save information out to JSON →](19-save-information-out-to-json.md)

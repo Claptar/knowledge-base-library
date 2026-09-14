@@ -1,0 +1,71 @@
+---
+title: Campus Honor Code
+source: https://github.com/berkeley-stat243/stat243-fall-2019/blob/b2795324dec367a50f578b01c67d907994ff40f5/syllabus/syllabus.pdf
+source_file: sources/berkeley-stat243/stat243-fall-2019/syllabus/syllabus.pdf
+licence: unresolved
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# Campus Honor Code
+
+**Source:** [`syllabus/syllabus.pdf`](https://github.com/berkeley-stat243/stat243-fall-2019/blob/b2795324dec367a50f578b01c67d907994ff40f5/syllabus/syllabus.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+_The following is the Campus Honor Code. With regard to collaboration and independence, please see my rules regarding problem sets earlier in this document – Chris._
+
+The student community at UC Berkeley has adopted the following Honor Code: “As a member of the UC Berkeley community, I act with honesty, integrity, and respect for others.” The hope and expectation is that you will adhere to this code.
+
+Collaboration and Independence: Reviewing lecture and reading materials and studying for exams can be enjoyable and enriching things to do with fellow students. This is recommended. However, unless otherwise instructed, homework assignments are to be completed independently and materials submitted as homework should be the result of one’s own independent work.
+
+6
+
+Cheating: A good lifetime strategy is always to act in such a way that no one would ever imagine that you would even consider cheating. Anyone caught cheating on a quiz or exam in this course will receive a failing grade in the course and will also be reported to the University Center for Student Conduct. In order to guarantee that you are not suspected of cheating, please keep your eyes on your own materials and do not converse with others during the quizzes and exams.
+
+Plagiarism: To copy text or ideas from another source without appropriate reference is plagiarism and will result in a failing grade for your assignment and usually further disciplinary action. For additional information on plagiarism and how to avoid it, see, for example: http://gsi.berkeley.edu/teachingguide/misconduct/preventplag.html
+
+Academic Integrity and Ethics: Cheating on exams and plagiarism are two common examples of dishonest, unethical behavior. Honesty and integrity are of great importance in all facets of life. They help to build a sense of self-confidence, and are key to building trust within relationships, whether personal or professional. There is no tolerance for dishonesty in the academic world, for it undermines what we are dedicated to doing – furthering knowledge for the benefit of humanity.
+
+Your experience as a student at UC Berkeley is hopefully fueled by passion for learning and replete with fulfilling activities. And we also appreciate that being a student may be stressful. There may be times when there is temptation to engage in some kind of cheating in order to improve a grade or otherwise advance your career. This could be as blatant as having someone else sit for you in an exam, or submitting a written assignment that has been copied from another source. And it could be as subtle as glancing at a fellow student’s exam when you are unsure of an answer to a question and are looking for some confirmation. One might do any of these things and potentially not get caught. However, if you cheat, no matter how much you may have learned in this class, you have failed to learn perhaps the most important lesson of all.
+
+7
+
+### **Topics (in order with rough timing)**
+
+1. Introduction to UNIX, operating on a compute server (1 day)
+
+2. Data formats, data access, webscraping (2 days)
+
+3. Debugging, good programming practices, reproducible research (1 day)
+
+4. The bash shell and shell scripting, version control (3 days)
+
+5. Programming concepts and advanced R programming: text processing and regular expressions, functions and variable scope, environments, object oriented programming, efficient programming (9 days)
+
+6. Computer arithmetic/representation of numbers on a computer (3 days)
+
+7. Parallel processing (2 days)
+
+8. Working with databases, hashing, and big data (3 days)
+
+9. Numerical linear algebra (5 days)
+
+10. Simulation studies and Monte Carlo (2 days)
+
+11. Optimization (7 days)
+
+12. Numerical integration and differentiation (1 day)
+
+13. Graphics (1 day)
+
+If you want to get a sense of what material we will cover in more detail, in advance, you can take a look at the materials in the _units_ directory of Github repository from when I taught the class in 2018. See https://github.com/berkeley-stat243/stat243-fall-2018. Material will be quite similar, except that I’ve shifted the order of some of the initial units (in particular moving the bash unit back a bit).
+
+8
+
+---
+
+[← Scheduling Conflicts](03-scheduling-conflicts.md) · [Up: contents](index.md)

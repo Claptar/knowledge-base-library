@@ -1,0 +1,33 @@
+---
+title: Simulation
+source: https://github.com/berkeley-stat243/stat243-fall-2019/blob/b2795324dec367a50f578b01c67d907994ff40f5/section/11/simulation.md
+source_file: sources/berkeley-stat243/stat243-fall-2019/section/11/simulation.md
+licence: unresolved
+route: markdown
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# Simulation
+
+**Source:** [`section/11/simulation.md`](https://github.com/berkeley-stat243/stat243-fall-2019/blob/b2795324dec367a50f578b01c67d907994ff40f5/section/11/simulation.md) · **Licence:** unresolved · Converted 2026-09-14 from `.md` (lossless)
+
+---
+title: Thinking about simulation studies
+...
+
+We'll consider the simulation study in Section 4 of Cao et al. as an example of the kind of simulation study that researchers set up to evaluate statistical and machine learning methods.
+
+In particular, we'll discuss the goals of the simulation study, the choices made in determining how the simulated datasets were generated, what aspects of the data that the methodology might be sensitive to, and how one interprets the tables showing the simulation results.
+
+Please start by finding a group of three people (two if necessary) and take 15-20 minutes to do the following:
+
+ - briefly discuss your answers to questions 1 and 2 of problem set 7
+ - write up pseudo-code (or mathematical expressions or R code, your choice) giving the details of how the authors generate a simulated dataset
+ - consider the choices the authors made in generating the simulated datasets. Select a few you think might be important and brainstorm how one might simulate the data differently. We'll collect these ideas on the board (I will ask each group to provide a sample of their ideas.)
+
+For example, they choose sample sizes of n=100, 400, 900 subjects. One could suggest that these may not be realistic numbers of subjects and suggest they should have tried other values (e.g., n=30 or n=5000).
+
+---
+
+[Up: contents](../../index.md)

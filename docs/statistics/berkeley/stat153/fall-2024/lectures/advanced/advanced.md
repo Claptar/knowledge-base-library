@@ -1,0 +1,80 @@
+---
+title: 'Lecture 8: Advanced Topics: Forecasting, Ensembling, and Calibration'
+source: https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/lectures/advanced/advanced.Rmd
+source_file: sources/berkeley-stat153/fall-2024/lectures/advanced/advanced.Rmd
+licence: CC BY 4.0
+route: markdown
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# Lecture 8: Advanced Topics: Forecasting, Ensembling, and Calibration
+
+**Source:** [`lectures/advanced/advanced.Rmd`](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/lectures/advanced/advanced.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+
+```r
+knitr::opts_chunk$set(dev = c("png", "pdf"), fig.path = "fig/",
+                     cache = TRUE, autodep = TRUE, cache.comments = TRUE)
+```
+
+# PIT transforms
+
+```r
+n = 10000
+x = rnorm(n)
+F1 = function(x) pnorm(x, sd = 0.75)  # Forecaster #1, underdispersed
+F2 = function(x) pnorm(x, sd = 2)     # Forecaster #2, overdispersed
+
+x0 = seq(-3, 3, length = 100)
+cols = c(1, 2, 4)
+
+# Plot the densities
+matplot(x0, cbind(dnorm(x0), dnorm(x0, sd = 0.75), dnorm(x0, sd = 2)),
+        col = cols, type = "l", lty = 1, xlab = "x", ylab = "Density")
+legend("topleft", col = cols, lty = 1, legend = c("True density", "f1", "f2"))
+
+# Plot the CDFs
+matplot(x0, cbind(pnorm(x0), F1(x0), F2(x0)), col = cols,
+        type = "l", lty = 1, xlab = "x", ylab = "Cumulative probability")
+legend("topleft", col = cols, lty = 1, legend = c("True CDF", "F1", "F2"))
+
+# Plot the PIT values
+hist(F1(x), breaks = 50, col = paste0(palette()[cols[2]], "44"), border = NA,
+     prob = TRUE, xlab = "PIT value", main = "")
+hist(F2(x), breaks = 50, col = paste0(palette()[cols[3]], "44"), border = NA,
+     prob = TRUE, add = TRUE)
+legend("topleft", col = cols[2:3], lty = 1, legend = c("F1(x)", "F2(x)"))
+```
+
+# Ensembles and PIT calibration
+
+```r
+n = 10000
+x1 = rnorm(n)
+x2 = rnorm(n)
+
+# The target variable has two random components: x1 and x2
+x = x1 + x2
+
+# Forecaster #1 knows the x1 component, and returns N(x1, 1) as its forecast
+F1 = function(x) pnorm(x, mean = x1)
+
+# Forecaster #2 knows the x2 component, and returns N(x2, 1) as its forecast
+F2 = function(x) pnorm(x, mean = x2)
+
+# Each one is PIT calibrated!
+hist(F1(x), breaks = 50, col = paste0(palette()[2], "44"), border = NA,
+     prob = TRUE, xlab = "PIT value", main = "")
+hist(F2(x), breaks = 50, col = paste0(palette()[4], "44"), border = NA,
+     prob = TRUE, add = TRUE)
+legend("topleft", col = c(2, 4), lty = 1, legend = c("F1(x)", "F2(x)"))
+
+# But what about the simple average ensemble? It is overdispersed!
+F = function(x) (F1(x) + F2(x)) / 2
+hist(F(x), breaks = 50, col = "lightgray", border = NA, prob = TRUE,
+     xlab = "PIT value", main = "")
+```
+
+---
+
+[Up: contents](../../index.md)

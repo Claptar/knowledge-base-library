@@ -1,0 +1,19 @@
+---
+title: Try applying the moving average to the DJIA data
+source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/labs/Lab1_solution.ipynb
+source_file: sources/berkeley-stat153/spring-2026/public/labs/Lab1_solution.ipynb
+licence: CC BY 4.0
+route: notebook
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# Try applying the moving average to the DJIA data
+
+**Source:** [`public/labs/Lab1_solution.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/labs/Lab1_solution.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+
+# Try applying the moving average to the DJIA data
+
+---
+
+[← Load some data from Shumway and Stoffer examples](32-load-some-data-from-shumway-and-stoffer-examples.md) · [Up: contents](index.md) · [(where each sample is from one day). What happens →](34-where-each-sample-is-from-one-day-what-happens.md)

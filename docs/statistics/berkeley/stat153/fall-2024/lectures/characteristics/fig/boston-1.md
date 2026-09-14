@@ -1,0 +1,25 @@
+---
+title: Boston 1
+source: https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/lectures/characteristics/fig/boston-1.pdf
+source_file: sources/berkeley-stat153/fall-2024/lectures/characteristics/fig/boston-1.pdf
+licence: CC BY 4.0
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# Boston 1
+
+**Source:** [`lectures/characteristics/fig/boston-1.pdf`](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/lectures/characteristics/fig/boston-1.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+|02:00:00<br>03:00:00<br>04:00:00<br>Time||
+|---|---|
+||1900<br>1925<br>1950<br>1975<br>2000<br>2025<br>Year|
+
+---
+
+[Up: contents](../../../index.md)

@@ -1,0 +1,31 @@
+---
+title: GitInstall
+source: https://github.com/berkeley-stat243/stat243-fall-2015/blob/ee3c3c2c523a96eefceddf8703d4938396730993/howtos/gitInstall.Rmd
+source_file: sources/berkeley-stat243/stat243-fall-2015/howtos/gitInstall.Rmd
+licence: unresolved
+route: markdown
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# GitInstall
+
+**Source:** [`howtos/gitInstall.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2015/blob/ee3c3c2c523a96eefceddf8703d4938396730993/howtos/gitInstall.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+
+Here are some instructions for installing Git on your computer. Git is version control software. We'll primarily use it in the bootcamp for distributing the course material to you, but our secret goal is to get you started using version control software.
+
+First make sure you've installed Git by downloading and installing the correct binary from [here](http://git-scm.com/downloads).
+
+
+The easiest way for you to use Git is probably through RStudio.
+Here are some [instructions](http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/). Here are some helpful [guidelines from RStudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN).
+
+You may need to tell RStudio where the Git executable is located as follows.
+
+  * On Windows, the git executable should be installed somewhere like: `"C:/Program Files (x86)/Git/bin/git.exe"`
+  * On MacOS X, you can locate the executable by executing the following in Terminal: `which git`
+  * Once you locate the executable, you may then need to confirm that RStudio is looking in the right place. Go to "Tools -> Options -> Git/SVN -> Git executable" and confirm it has the correct information about the location of the git executable.
+
+---
+
+[Up: contents](../index.md)

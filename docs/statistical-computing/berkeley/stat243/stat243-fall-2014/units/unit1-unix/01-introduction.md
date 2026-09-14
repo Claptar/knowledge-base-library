@@ -1,0 +1,29 @@
+---
+title: Introduction
+source: https://github.com/berkeley-stat243/stat243-fall-2014/blob/49fcee4ef42342d81d010e586b69d92a94bbb12f/units/unit1-unix.pdf
+source_file: sources/berkeley-stat243/stat243-fall-2014/units/unit1-unix.pdf
+licence: unresolved
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# Introduction
+
+**Source:** [`units/unit1-unix.pdf`](https://github.com/berkeley-stat243/stat243-fall-2014/blob/49fcee4ef42342d81d010e586b69d92a94bbb12f/units/unit1-unix.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+# Basics of UNIX
+
+June 3, 2015
+
+By UNIX, I mean any UNIX-like operating system, including Linux and Mac OS X. On the Mac you can access a UNIX terminal window with the Terminal application (under /Applications/Utilities from the Finder). Most modern scientific computing is done on UNIX-based machines, often by remotely logging in to a UNIX-based server.
+
+If you’re using your own Mac, you should install the Xcode developer tools.
+
+---
+
+[Up: contents](index.md) · [1 Connecting to a UNIX machine from {UNIX, Mac, Windows} →](02-1-connecting-to-a-unix-machine-from-unix-mac-windows.md)

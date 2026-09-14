@@ -1,0 +1,20 @@
+---
+title: or git@github.com:berkeley-stat243/stat243-fall-2022.git if you use SSH with
+  git
+source: https://github.com/berkeley-stat243/stat243-fall-2023/blob/14ac5335a61c8e78d9c36ec381d606a22cb95bf9/labs/06/scf.qmd
+source_file: sources/berkeley-stat243/stat243-fall-2023/labs/06/scf.qmd
+licence: BSD-3-Clause
+route: markdown
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# or git@github.com:berkeley-stat243/stat243-fall-2022.git if you use SSH with git
+
+**Source:** [`labs/06/scf.qmd`](https://github.com/berkeley-stat243/stat243-fall-2023/blob/14ac5335a61c8e78d9c36ec381d606a22cb95bf9/labs/06/scf.qmd) · **Licence:** BSD-3-Clause · Converted 2026-09-14 from `.qmd` (lossless)
+
+# or git@github.com:berkeley-stat243/stat243-fall-2022.git if you use SSH with git
+
+---
+
+[← first ssh to an SCF login node: ssh @.berkeley.edu](09-first-ssh-to-an-scf-login-node-ssh-berkeley-edu.md) · [Up: contents](index.md) · [the files you need are here →](11-the-files-you-need-are-here.md)

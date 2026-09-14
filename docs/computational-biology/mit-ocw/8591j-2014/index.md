@@ -1,0 +1,323 @@
+---
+title: ocw 8591j 2014
+source: https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/
+licence: CC BY-NC-SA 4.0
+converted: 2026-09-14
+---
+
+# ocw 8591j 2014
+
+Converted material from [https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/](https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/).
+
+**Licence:** CC BY-NC-SA 4.0 · **Material:** course · **Converted:** 2026-09-14
+
+> Converted, not adapted — the same text in markdown, split so every part has a URL.
+> It is regenerable output and is **never edited by hand**: a hand edit is lost on the
+> next run and silently diverges from the source it claims to reproduce. To change the
+> text, make an adaptation instead.
+
+## Contents
+
+### exams
+
+- **01-exam-exam1-2013**
+    - [7.32/7.81J/8.591J: Systems Biology](exams/01-exam-exam1-2013/01-7-32-7-81j-8-591j-systems-biology.md)
+    - [Fall 2013 Exam #1](exams/01-exam-exam1-2013/02-fall-2013-exam-1.md)
+- **01-exam**
+    - [7.32/7.81J/8.591J: Systems Biology](exams/01-exam/01-7-32-7-81j-8-591j-systems-biology.md)
+    - [Exam #1, Fall 2012](exams/01-exam/02-exam-1-fall-2012.md)
+- **02-exam-exam2-2013**
+    - [02 exam exam2 2013 Part 01 —](exams/02-exam-exam2-2013/01-02-exam-exam2-2013-part-01.md)
+    - [7.32/7.81J/8.591J: Systems Biology](exams/02-exam-exam2-2013/02-7-32-7-81j-8-591j-systems-biology.md)
+    - [Exam #2](exams/02-exam-exam2-2013/03-exam-2.md)
+    - [Scores](exams/02-exam-exam2-2013/04-scores.md)
+- **02-exam**
+    - [02 exam Part 01 —](exams/02-exam/01-02-exam-part-01.md)
+    - [7.32/7.81J/8.591J: Systems Biology](exams/02-exam/02-7-32-7-81j-8-591j-systems-biology.md)
+    - [Exam #2](exams/02-exam/03-exam-2.md)
+    - [Scores](exams/02-exam/04-scores.md)
+- **finalexam-2012-exam**
+    - [Introduction](exams/finalexam-2012-exam/01-introduction.md)
+    - [A preview of upcoming challenges](exams/finalexam-2012-exam/02-a-preview-of-upcoming-challenges.md)
+    - [1 15 Evolution of Virulence](exams/finalexam-2012-exam/03-1-15-evolution-of-virulence.md)
+    - [2 16 Cooperativity](exams/finalexam-2012-exam/04-2-16-cooperativity.md)
+    - [3 17 Critical Transitions in the Toggle Switch](exams/finalexam-2012-exam/05-3-17-critical-transitions-in-the-toggle-switch.md)
+    - [4 11 Reynolds Number](exams/finalexam-2012-exam/06-4-11-reynolds-number.md)
+    - [5 18 Fitness Landscape](exams/finalexam-2012-exam/07-5-18-fitness-landscape.md)
+    - [6 9 Host-Symbiont Interactions](exams/finalexam-2012-exam/08-6-9-host-symbiont-interactions.md)
+    - [7 14 Neutral Theory and Relative Species Abundance in Ecology](exams/finalexam-2012-exam/09-7-14-neutral-theory-and-relative-species-abundance-in-ecolog.md)
+    - [8 11 Adaptive Prediction of Environmental Changes by Microorganisms](exams/finalexam-2012-exam/10-8-11-adaptive-prediction-of-environmental-changes-by-microor.md)
+    - [9 16 Rock-Paper-Scissors](exams/finalexam-2012-exam/11-9-16-rock-paper-scissors.md)
+- **finalexam-2013-exam**
+    - [Student Name](exams/finalexam-2013-exam/01-student-name.md)
+    - [7.32/7.81J/8.591J: Systems Biology](exams/finalexam-2013-exam/02-7-32-7-81j-8-591j-systems-biology.md)
+    - [Final Exam, 2013](exams/finalexam-2013-exam/03-final-exam-2013.md)
+    - [Scores](exams/finalexam-2013-exam/04-scores.md)
+
+### psets
+
+- **01-questions**
+    - [Problem Set 1](psets/01-questions/01-problem-set-1.md)
+    - [1 Transcription and Translation](psets/01-questions/02-1-transcription-and-translation.md)
+    - [2 Dilution of Proteins Due to Cell Growth](psets/01-questions/03-2-dilution-of-proteins-due-to-cell-growth.md)
+    - [3 Binding Kinetics, Detailed Balance and Cooperation](psets/01-questions/04-3-binding-kinetics-detailed-balance-and-cooperation.md)
+    - [4 Michaelis-Menten Kinetics](psets/01-questions/05-4-michaelis-menten-kinetics.md)
+- **02-questions**
+    - [Problem Set 2](psets/02-questions/01-problem-set-2.md)
+    - [1 Competitive and uncompetitive inhibition (12 points)](psets/02-questions/02-1-competitive-and-uncompetitive-inhibition-12-points.md)
+    - [2 Stability analysis of dynamical systems1 (10 points)](psets/02-questions/03-2-stability-analysis-of-dynamical-systems1-10-points.md)
+    - [3 Positive feedback and bistability (12 points)](psets/02-questions/04-3-positive-feedback-and-bistability-12-points.md)
+    - [4 Kinetic Proofreading](psets/02-questions/05-4-kinetic-proofreading.md)
+- **03-questions**
+    - [Problem Set 3](psets/03-questions/01-problem-set-3.md)
+    - [1 Circadian Clocks (30 points)](psets/03-questions/02-1-circadian-clocks-30-points.md)
+    - [2 Deterministic scale-free networks2 (15 points)](psets/03-questions/03-2-deterministic-scale-free-networks2-15-points.md)
+    - [3 Network Motifs in Transcription Networks (5 points)](psets/03-questions/04-3-network-motifs-in-transcription-networks-5-points.md)
+- **04-questions**
+    - [Problem Set 4](psets/04-questions/01-problem-set-4.md)
+    - [1 Degree distribution of growing networks (14 points)](psets/04-questions/02-1-degree-distribution-of-growing-networks-14-points.md)
+    - [2 The Feed-Forward Loop (12 points)](psets/04-questions/03-2-the-feed-forward-loop-12-points.md)
+    - [3 Discrete probability distributions (12 points)](psets/04-questions/04-3-discrete-probability-distributions-12-points.md)
+    - [4 Distribution of the number of proteins (12 points)](psets/04-questions/05-4-distribution-of-the-number-of-proteins-12-points.md)
+- **05-questions**
+    - [Problem Set 5](psets/05-questions/01-problem-set-5.md)
+    - [1 Waiting times for chemical reactions (8 points)](psets/05-questions/02-1-waiting-times-for-chemical-reactions-8-points.md)
+    - [2 Stochastic simulation of an auto-regulatory system (22 points)](psets/05-questions/03-2-stochastic-simulation-of-an-auto-regulatory-system-22-poin.md)
+    - [05 questions Part 04 —](psets/05-questions/04-05-questions-part-04.md)
+    - [4 Growth of a population (10 points)](psets/05-questions/05-4-growth-of-a-population-10-points.md)
+- **06-questions**
+    - [Problem Set 6](psets/06-questions/01-problem-set-6.md)
+    - [1 Stochastic simulation of a bistable system (20 points)](psets/06-questions/02-1-stochastic-simulation-of-a-bistable-system-20-points.md)
+    - [2 Life at low Reynolds number (10 points)](psets/06-questions/03-2-life-at-low-reynolds-number-10-points.md)
+    - [06 questions Part 04 —](psets/06-questions/04-06-questions-part-04.md)
+- **07-questions**
+    - [Problem Set 7](psets/07-questions/01-problem-set-7.md)
+    - [1 Design principles (22 points)](psets/07-questions/02-1-design-principles-22-points.md)
+    - [2 cAMP system (28 points)](psets/07-questions/03-2-camp-system-28-points.md)
+- **08-questions**
+    - [Problem Set 8](psets/08-questions/01-problem-set-8.md)
+    - [1 Evolution in Finite Populations (15 points)](psets/08-questions/02-1-evolution-in-finite-populations-15-points.md)
+    - [2 COMPUTATION Simulation of clonal interference (20 points)](psets/08-questions/03-2-computation-simulation-of-clonal-interference-20-points.md)
+    - [3 The Luria-Delbrick experiment (15 points)](psets/08-questions/04-3-the-luria-delbrick-experiment-15-points.md)
+- **09-questions**
+    - [Problem Set 9 (70 points)](psets/09-questions/01-problem-set-9-70-points.md)
+    - [1 Quasispecies Equation (12 points)](psets/09-questions/02-1-quasispecies-equation-12-points.md)
+    - [2 Adaptation in a Sharply Peaked Fitness Landscape (10 points)](psets/09-questions/03-2-adaptation-in-a-sharply-peaked-fitness-landscape-10-points.md)
+    - [3 Repeated Prisoner's Dilemma (12 points)](psets/09-questions/04-3-repeated-prisoner-s-dilemma-12-points.md)
+    - [4 Stochastic Simulations of the Error Threshold (17 points)](psets/09-questions/05-4-stochastic-simulations-of-the-error-threshold-17-points.md)
+    - [5 Conditioned Response vs. Direct Response: Anticipation of Sugars in E. coli (19 points)](psets/09-questions/06-5-conditioned-response-vs-direct-response-anticipation-of-su.md)
+- **10-questions**
+    - [Problem Set 10 (70 points)](psets/10-questions/01-problem-set-10-70-points.md)
+    - [2 Noise induced oscillations in predator-prey dynamics (24 points)](psets/10-questions/02-2-noise-induced-oscillations-in-predator-prey-dynamics-24-po.md)
+    - [3 Critical Transitions: Allee efect and bifurcation diagram (15 points)](psets/10-questions/03-3-critical-transitions-allee-efect-and-bifurcation-diagram-1.md)
+    - [4 Time is Discrete: logistic map and chaos (9 points)](psets/10-questions/04-4-time-is-discrete-logistic-map-and-chaos-9-points.md)
+    - [5 SIS on a Network (10 points)](psets/10-questions/05-5-sis-on-a-network-10-points.md)
+
+### recordings
+
+- [03bvgr vyhq captions](recordings/03bvgr-vyhq-captions.md)
+- **03bvgr-vyhq-transcript**
+    - [PROFESSOR](recordings/03bvgr-vyhq-transcript/01-professor.md)
+    - [AUDIENCE](recordings/03bvgr-vyhq-transcript/02-audience.md)
+    - [[STUDENTS RESPOND]](recordings/03bvgr-vyhq-transcript/03-students-respond.md)
+    - [AUDIENCE](recordings/03bvgr-vyhq-transcript/04-audience.md)
+    - [getting at least one candidate, right?](recordings/03bvgr-vyhq-transcript/05-getting-at-least-one-candidate-right.md)
+    - [like to the other--](recordings/03bvgr-vyhq-transcript/06-like-to-the-other.md)
+    - [PROFESSOR](recordings/03bvgr-vyhq-transcript/07-professor.md)
+    - [AUDIENCE](recordings/03bvgr-vyhq-transcript/08-audience.md)
+- [3eizij6qncy captions](recordings/3eizij6qncy-captions.md)
+- **3eizij6qncy-transcript**
+    - [Introduction](recordings/3eizij6qncy-transcript/01-introduction.md)
+    - [AUDIENCE](recordings/3eizij6qncy-transcript/02-audience.md)
+    - [fancier situations.](recordings/3eizij6qncy-transcript/03-fancier-situations.md)
+- [6pxncdxixne captions](recordings/6pxncdxixne-captions.md)
+- **6pxncdxixne-transcript**
+    - [PROFESSOR](recordings/6pxncdxixne-transcript/01-professor.md)
+    - [[SIDE CONVERSATIONS]](recordings/6pxncdxixne-transcript/02-side-conversations.md)
+- [9ygxpwvwydy captions](recordings/9ygxpwvwydy-captions.md)
+- **9ygxpwvwydy-transcript**
+    - [Introduction](recordings/9ygxpwvwydy-transcript/01-introduction.md)
+    - [PROFESSOR](recordings/9ygxpwvwydy-transcript/02-professor.md)
+    - [[LAUGHTER]](recordings/9ygxpwvwydy-transcript/03-laughter.md)
+    - [[INTERPOSING VOICES].](recordings/9ygxpwvwydy-transcript/04-interposing-voices.md)
+    - [[INAUDIBLE]?](recordings/9ygxpwvwydy-transcript/05-inaudible.md)
+- [A8fbmj4nixy captions](recordings/a8fbmj4nixy-captions.md)
+- **a8fbmj4nixy-transcript**
+    - [PROFESSOR](recordings/a8fbmj4nixy-transcript/01-professor.md)
+    - [Are there any questions about what I'm trying to ask here?](recordings/a8fbmj4nixy-transcript/02-are-there-any-questions-about-what-i-m-trying-to-ask-here.md)
+    - [[INTERPOSING VOICES]](recordings/a8fbmj4nixy-transcript/03-interposing-voices.md)
+    - [should be passionately defending your choice here.](recordings/a8fbmj4nixy-transcript/04-should-be-passionately-defending-your-choice-here.md)
+    - [[INTERPOSING VOICES]](recordings/a8fbmj4nixy-transcript/05-interposing-voices.md)
+    - [AUDIENCE](recordings/a8fbmj4nixy-transcript/06-audience.md)
+    - [AUDIENCE: Small or large [INAUDIBLE]?](recordings/a8fbmj4nixy-transcript/07-audience-small-or-large-inaudible.md)
+    - [[LAUGHTER]](recordings/a8fbmj4nixy-transcript/08-laughter.md)
+    - [[LAUGHTER]](recordings/a8fbmj4nixy-transcript/09-laughter.md)
+    - [few concrete examples.](recordings/a8fbmj4nixy-transcript/10-few-concrete-examples.md)
+    - [AUDIENCE](recordings/a8fbmj4nixy-transcript/11-audience.md)
+- [Bjxcf6pfrha captions](recordings/bjxcf6pfrha-captions.md)
+- **bjxcf6pfrha-transcript**
+    - [PROFESSOR](recordings/bjxcf6pfrha-transcript/01-professor.md)
+    - [you referring to?](recordings/bjxcf6pfrha-transcript/02-you-referring-to.md)
+    - [Yes.](recordings/bjxcf6pfrha-transcript/03-yes.md)
+    - [you ever use that--](recordings/bjxcf6pfrha-transcript/04-you-ever-use-that.md)
+    - [PROFESSOR](recordings/bjxcf6pfrha-transcript/05-professor.md)
+    - [AUDIENCE](recordings/bjxcf6pfrha-transcript/06-audience.md)
+    - [AUDIENCE](recordings/bjxcf6pfrha-transcript/07-audience.md)
+    - [PROFESSOR](recordings/bjxcf6pfrha-transcript/08-professor.md)
+- [Cn5k8r8ceii captions](recordings/cn5k8r8ceii-captions.md)
+- **cn5k8r8ceii-transcript**
+    - [Introduction](recordings/cn5k8r8ceii-transcript/01-introduction.md)
+    - [AUDIENCE](recordings/cn5k8r8ceii-transcript/02-audience.md)
+    - [[LAUGHTER]](recordings/cn5k8r8ceii-transcript/03-laughter.md)
+    - [[INTERPOSING VOICES]](recordings/cn5k8r8ceii-transcript/04-interposing-voices.md)
+    - [[LAUGHTER]](recordings/cn5k8r8ceii-transcript/05-laughter.md)
+    - [AUDIENCE](recordings/cn5k8r8ceii-transcript/06-audience.md)
+    - [AUDIENCE](recordings/cn5k8r8ceii-transcript/07-audience.md)
+    - [different diseases.](recordings/cn5k8r8ceii-transcript/08-different-diseases.md)
+    - [Yeah?](recordings/cn5k8r8ceii-transcript/09-yeah.md)
+    - [[LAUGHTER]](recordings/cn5k8r8ceii-transcript/10-laughter.md)
+- [Ct855rpx8bc captions](recordings/ct855rpx8bc-captions.md)
+- **ct855rpx8bc-transcript**
+    - [JEFF GORE](recordings/ct855rpx8bc-transcript/01-jeff-gore.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/ct855rpx8bc-transcript/02-audience-inaudible.md)
+    - [AUDIENCE](recordings/ct855rpx8bc-transcript/03-audience.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/ct855rpx8bc-transcript/04-audience-inaudible.md)
+    - [AUDIENCE](recordings/ct855rpx8bc-transcript/05-audience.md)
+    - [AUDIENCE](recordings/ct855rpx8bc-transcript/06-audience.md)
+    - [[INAUDIBLE]](recordings/ct855rpx8bc-transcript/07-inaudible.md)
+    - [action on chi B.](recordings/ct855rpx8bc-transcript/08-action-on-chi-b.md)
+    - [AUDIENCE](recordings/ct855rpx8bc-transcript/09-audience.md)
+- [Dp4nqipuh6w captions](recordings/dp4nqipuh6w-captions.md)
+- **dp4nqipuh6w-transcript**
+    - [PROFESSOR](recordings/dp4nqipuh6w-transcript/01-professor.md)
+    - [PROFESSOR](recordings/dp4nqipuh6w-transcript/02-professor.md)
+    - [AUDIENCE](recordings/dp4nqipuh6w-transcript/03-audience.md)
+    - [AUDIENCE](recordings/dp4nqipuh6w-transcript/04-audience.md)
+    - [[STUDENT CHATTER]](recordings/dp4nqipuh6w-transcript/05-student-chatter.md)
+    - [here, and it bleached.](recordings/dp4nqipuh6w-transcript/06-here-and-it-bleached.md)
+- [Efxjkhdbi6a captions](recordings/efxjkhdbi6a-captions.md)
+- **efxjkhdbi6a-transcript**
+    - [Introduction](recordings/efxjkhdbi6a-transcript/01-introduction.md)
+    - [AUDIENCE](recordings/efxjkhdbi6a-transcript/02-audience.md)
+    - [PROFESSOR](recordings/efxjkhdbi6a-transcript/03-professor.md)
+    - [outliers that are more better for the [INAUDIBLE].](recordings/efxjkhdbi6a-transcript/04-outliers-that-are-more-better-for-the-inaudible.md)
+- [Exbo08 78iu captions](recordings/exbo08-78iu-captions.md)
+- **exbo08-78iu-transcript**
+    - [PROFESSOR](recordings/exbo08-78iu-transcript/01-professor.md)
+    - [Exbo08 78iu transcript Part 02 —](recordings/exbo08-78iu-transcript/02-exbo08-78iu-transcript-part-02.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/exbo08-78iu-transcript/03-audience-inaudible.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/exbo08-78iu-transcript/04-audience-inaudible.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/exbo08-78iu-transcript/05-audience-inaudible.md)
+    - [probabilities are 0 above some number?](recordings/exbo08-78iu-transcript/06-probabilities-are-0-above-some-number.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/exbo08-78iu-transcript/07-audience-inaudible.md)
+    - [PROFESSOR](recordings/exbo08-78iu-transcript/08-professor.md)
+- [Gc3o2skisx4 captions](recordings/gc3o2skisx4-captions.md)
+- **gc3o2skisx4-transcript**
+    - [PROFESSOR](recordings/gc3o2skisx4-transcript/01-professor.md)
+    - [things.](recordings/gc3o2skisx4-transcript/02-things.md)
+- [Hfq1t9windg captions](recordings/hfq1t9windg-captions.md)
+- **hfq1t9windg-transcript**
+    - [Introduction](recordings/hfq1t9windg-transcript/01-introduction.md)
+    - [AUDIENCE](recordings/hfq1t9windg-transcript/02-audience.md)
+    - [[INAUDIBLE].](recordings/hfq1t9windg-transcript/03-inaudible.md)
+    - [AUDIENCE: [INAUDIBLE].](recordings/hfq1t9windg-transcript/04-audience-inaudible.md)
+    - [[CLASSROOM CHATTER]](recordings/hfq1t9windg-transcript/05-classroom-chatter.md)
+    - [AUDIENCE](recordings/hfq1t9windg-transcript/06-audience.md)
+    - [AUDIENCE](recordings/hfq1t9windg-transcript/07-audience.md)
+    - [[CLASSROOM CHATTER]](recordings/hfq1t9windg-transcript/08-classroom-chatter.md)
+- [Klrpm beeoi captions](recordings/klrpm-beeoi-captions.md)
+- **klrpm-beeoi-transcript**
+    - [Introduction](recordings/klrpm-beeoi-transcript/01-introduction.md)
+    - [fix. Now, OK, and then what's next?](recordings/klrpm-beeoi-transcript/02-fix-now-ok-and-then-what-s-next.md)
+    - [AUDIENCE](recordings/klrpm-beeoi-transcript/03-audience.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/klrpm-beeoi-transcript/04-audience-inaudible.md)
+    - [thing.](recordings/klrpm-beeoi-transcript/05-thing.md)
+    - [PROFESSOR](recordings/klrpm-beeoi-transcript/06-professor.md)
+    - [[INTERPOSING VOICES]](recordings/klrpm-beeoi-transcript/07-interposing-voices.md)
+- [Lc3xswq62iw captions](recordings/lc3xswq62iw-captions.md)
+- **lc3xswq62iw-transcript**
+    - [PROFESSOR](recordings/lc3xswq62iw-transcript/01-professor.md)
+    - [chemical warfare bacteria.](recordings/lc3xswq62iw-transcript/02-chemical-warfare-bacteria.md)
+    - [[SIDE CONVERSATIONS]](recordings/lc3xswq62iw-transcript/03-side-conversations.md)
+    - [AUDIENCE](recordings/lc3xswq62iw-transcript/04-audience.md)
+- [Lly1u2aghiq captions](recordings/lly1u2aghiq-captions.md)
+- **lly1u2aghiq-transcript**
+    - [PROFESSOR](recordings/lly1u2aghiq-transcript/01-professor.md)
+    - [AUDIENCE](recordings/lly1u2aghiq-transcript/02-audience.md)
+    - [AUDIENCE](recordings/lly1u2aghiq-transcript/03-audience.md)
+    - [fundamental.](recordings/lly1u2aghiq-transcript/04-fundamental.md)
+    - [AUDIENCE: [INAUDIBLE].](recordings/lly1u2aghiq-transcript/05-audience-inaudible.md)
+    - [AUDIENCE: Cooperative binding.](recordings/lly1u2aghiq-transcript/06-audience-cooperative-binding.md)
+- [M41dwardioc captions](recordings/m41dwardioc-captions.md)
+- **m41dwardioc-transcript**
+    - [PROFESSOR](recordings/m41dwardioc-transcript/01-professor.md)
+    - [Are we ready?](recordings/m41dwardioc-transcript/02-are-we-ready.md)
+    - [they divided by 2. That's this number.](recordings/m41dwardioc-transcript/03-they-divided-by-2-that-s-this-number.md)
+    - [AUDIENCE](recordings/m41dwardioc-transcript/04-audience.md)
+    - [dn.](recordings/m41dwardioc-transcript/05-dn.md)
+    - [PROFESSOR](recordings/m41dwardioc-transcript/06-professor.md)
+- [Nndqjhtuqjw captions](recordings/nndqjhtuqjw-captions.md)
+- **nndqjhtuqjw-transcript**
+    - [PROFESSOR](recordings/nndqjhtuqjw-transcript/01-professor.md)
+    - [[LAUGHTER]](recordings/nndqjhtuqjw-transcript/02-laughter.md)
+    - [AUDIENCE](recordings/nndqjhtuqjw-transcript/03-audience.md)
+    - [[INAUDIBLE].](recordings/nndqjhtuqjw-transcript/04-inaudible.md)
+    - [negative feedback loops.](recordings/nndqjhtuqjw-transcript/05-negative-feedback-loops.md)
+    - [[LAUGHTER]](recordings/nndqjhtuqjw-transcript/06-laughter.md)
+    - [AUDIENCE](recordings/nndqjhtuqjw-transcript/07-audience.md)
+    - [PROFESSOR](recordings/nndqjhtuqjw-transcript/08-professor.md)
+    - [AUDIENCE](recordings/nndqjhtuqjw-transcript/09-audience.md)
+- [Onl uf4flvm captions](recordings/onl-uf4flvm-captions.md)
+- **onl-uf4flvm-transcript**
+    - [PROFESSOR](recordings/onl-uf4flvm-transcript/01-professor.md)
+    - [PROFESSOR](recordings/onl-uf4flvm-transcript/02-professor.md)
+    - [AUDIENCE: Decrease faster [INAUDIBLE].](recordings/onl-uf4flvm-transcript/03-audience-decrease-faster-inaudible.md)
+    - [AUDIENCE: [INAUDIBLE].](recordings/onl-uf4flvm-transcript/04-audience-inaudible.md)
+    - [AUDIENCE: [INAUDIBLE].](recordings/onl-uf4flvm-transcript/05-audience-inaudible.md)
+    - [AUDIENCE: [INAUDIBLE].](recordings/onl-uf4flvm-transcript/06-audience-inaudible.md)
+- [Sj7p2auoyla captions](recordings/sj7p2auoyla-captions.md)
+- **sj7p2auoyla-transcript**
+    - [Introduction](recordings/sj7p2auoyla-transcript/01-introduction.md)
+    - [[SIDE CONVERSATIONS]](recordings/sj7p2auoyla-transcript/02-side-conversations.md)
+    - [[SIDE CONVERSATIONS]](recordings/sj7p2auoyla-transcript/03-side-conversations.md)
+    - [Yes.](recordings/sj7p2auoyla-transcript/04-yes.md)
+    - [suddenly.](recordings/sj7p2auoyla-transcript/05-suddenly.md)
+- [Tuxfwkrwqg8 captions](recordings/tuxfwkrwqg8-captions.md)
+- **tuxfwkrwqg8-transcript**
+    - [PROFESSOR](recordings/tuxfwkrwqg8-transcript/01-professor.md)
+    - [an initial linear increase here.](recordings/tuxfwkrwqg8-transcript/02-an-initial-linear-increase-here.md)
+    - [AUDIENCE](recordings/tuxfwkrwqg8-transcript/03-audience.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/tuxfwkrwqg8-transcript/04-audience-inaudible.md)
+    - [[INTERPOSING VOICES]](recordings/tuxfwkrwqg8-transcript/05-interposing-voices.md)
+- [Wtesorg5h a captions](recordings/wtesorg5h-a-captions.md)
+- **wtesorg5h-a-transcript**
+    - [PROFESSOR](recordings/wtesorg5h-a-transcript/01-professor.md)
+    - [AUDIENCE](recordings/wtesorg5h-a-transcript/02-audience.md)
+    - [AUDIENCE](recordings/wtesorg5h-a-transcript/03-audience.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/wtesorg5h-a-transcript/04-audience-inaudible.md)
+    - [AUDIENCE: [INAUDIBLE]](recordings/wtesorg5h-a-transcript/05-audience-inaudible.md)
+- [Xnnxlsy f s captions](recordings/xnnxlsy-f-s-captions.md)
+- **xnnxlsy-f-s-transcript**
+    - [Introduction](recordings/xnnxlsy-f-s-transcript/01-introduction.md)
+    - [AUDIENCE](recordings/xnnxlsy-f-s-transcript/02-audience.md)
+    - [AUDIENCE](recordings/xnnxlsy-f-s-transcript/03-audience.md)
+    - [PROFESSOR](recordings/xnnxlsy-f-s-transcript/04-professor.md)
+    - [same. p tilde dot.](recordings/xnnxlsy-f-s-transcript/05-same-p-tilde-dot.md)
+    - [AUDIENCE](recordings/xnnxlsy-f-s-transcript/06-audience.md)
+    - [PROFESSOR](recordings/xnnxlsy-f-s-transcript/07-professor.md)
+    - [AUDIENCE](recordings/xnnxlsy-f-s-transcript/08-audience.md)
+- [Zjtvmkge8 8 captions](recordings/zjtvmkge8-8-captions.md)
+- **zjtvmkge8-8-transcript**
+    - [Introduction](recordings/zjtvmkge8-8-transcript/01-introduction.md)
+    - [proteins directly.](recordings/zjtvmkge8-8-transcript/02-proteins-directly.md)
+    - [[LAUGHTER]](recordings/zjtvmkge8-8-transcript/03-laughter.md)
+    - [AUDIENCE](recordings/zjtvmkge8-8-transcript/04-audience.md)
+    - [PROFESSOR](recordings/zjtvmkge8-8-transcript/05-professor.md)
+    - [vote on whether you have a warm fuzzy feeling. But, yeah?](recordings/zjtvmkge8-8-transcript/06-vote-on-whether-you-have-a-warm-fuzzy-feeling-but-yeah.md)
+
+## Not converted
+
+Listed rather than dropped silently, because this is the material that needs a
+different approach.
+
+- **render of .srt with the same stem** (24) — `recordings/03bvgr-vyhq-captions.vtt`, `recordings/3eizij6qncy-captions.vtt`, `recordings/6pxncdxixne-captions.vtt`, `recordings/9ygxpwvwydy-captions.vtt`, `recordings/a8fbmj4nixy-captions.vtt`, `recordings/bjxcf6pfrha-captions.vtt`, `recordings/cn5k8r8ceii-captions.vtt`, `recordings/ct855rpx8bc-captions.vtt` … and 16 more
