@@ -1,0 +1,277 @@
+---
+title: Conjugate priors
+source: https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-estimation.qmd
+source_file: sources/berkeley-stat210a/fall-2026/reader/bayes-estimation.qmd
+licence: CC BY 4.0
+route: markdown
+fidelity: lossless
+converted: '2026-09-14'
+---
+
+# Conjugate priors
+
+**Source:** [`reader/bayes-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+
+A special class of easy-to-update prior distributions is the set of *conjugate priors*. For data $X$ drawn from a likelihood model $\cP = \{P_\theta:\; \theta\in\Theta\}$, we say a family $\mathcal{Q}$ of priors is *conjugate* to $\cP$ if the posterior distribution is also always in $\mathcal{Q}$. Conjugate priors exist for many exponential families.
+
+**Example: Beta-Binomial**
+
+Suppose that we observe a binomial random variable with a Beta prior:
+$$
+\begin{aligned}
+\theta \sim \text{Beta}(\alpha,\beta) &= \theta^{\alpha-1}(1-\theta)^{\beta-1} \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)} \\
+X \mid \theta \sim \text{Binom}(n,\theta) &= \theta^x(1-\theta)^{n-x}\binom{n}{x}
+\end{aligned}
+$$
+Recall that the $\text{Beta}(\alpha,\beta)$ distribution is an exponential family on the unit interval with mean $\frac{\alpha}{\alpha + \beta}$ and variance $\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$. The marginal distribution of $X$ in this problem is called a *Beta-Binomial* distribution.
+
+In this context, $\alpha$ and $\beta$ are not unknown parameters; rather, the analyst will specify them to define the prior for $\theta$. Parameters of the prior are commonly called *hyperparameters*. Note that the functional form in $\theta$ is similar for the prior and the likelihood, but $\theta$ plays different roles in each: in the Beta prior, $\theta$ is the random variable, but in the binomial likelihood, $\theta$ plays the role of the parameter.
+
+Note that we only need to calculate the posterior up to a proportionality constant in $\theta$. Since we know it is a probability distribution, we can drop any multiplicative constants along the way and just normalize it at the very end.
+$$
+\begin{aligned}
+\lambda(\theta \mid X=x)
+&\propto_\theta \lambda(\theta)p_\theta(x)\\
+&\propto_\theta \theta^{\alpha-1}(1-\theta)^{\beta-1} \cdot \theta^x (1-\theta)^{n-x}\\
+&= \theta^{x + \alpha-1} \cdot (1-\theta)^{n-x + \beta-1}\\
+&\propto_\theta \text{Beta}(x+\alpha, n-x+\beta)
+\end{aligned}
+$$
+Thus, we have calculated that $\theta \mid X=x \sim \text{Beta}(x+\alpha, n-x+\beta)$, and in particular we have the posterior mean
+$$
+\EE[\theta \mid X] = \frac{X + \alpha}{n + \alpha + \beta}
+$$
+We may recognize the form of this estimator as our estimators from [Lecture 2](../estimation/index.md) where we imagined we had observed $k = \alpha+\beta$ "pseudo-trials" with $\alpha$ successes, and then report the success rate after combining the pseudo-trials with the $n$ trials represented by our binomial data. If we take $\alpha = \beta = 1$, we get the uniform prior. Thus, the estimator $\frac{X+1}{n+2}$ minimizes the corresponding Bayes risk $\int_0^1 R(\theta;\delta)\,d\theta$ over all possible estimators $\delta$.
+
+By massaging the expression above, we can interpret the Bayes estimator as a weighted average of the UMVU estimator we'd obtain using the data alone, and the "pseudo-estimator" we'd obtain if we observed only the $k$ pseudo-trials, with the weights corresponding to the relative sample sizes of the real data and the pseudo-data:
+$$
+\EE[\theta \mid X] = \frac{X}{n} \cdot \frac{n}{n+k} + \frac{\alpha}{k}\cdot \frac{k}{n+k}
+$$
+
+We can visualize this problem below:
+
+### Beta-binomial example
+
+```ojs
+//| echo: false
+
+// Beta PDF function using simpler approximation
+betaPDF = (x, alpha, beta) => {
+  if (x <= 0 || x >= 1) return 0;
+
+  // For small integer values, use exact calculation
+  if (alpha === Math.floor(alpha) && beta === Math.floor(beta) && alpha <= 10 && beta <= 10) {
+    const numerator = Math.pow(x, alpha - 1) * Math.pow(1 - x, beta - 1);
+    // Beta function B(alpha, beta) = Gamma(alpha) * Gamma(beta) / Gamma(alpha + beta)
+    // For integers: Gamma(n) = (n-1)!
+    const betaFunction = factorial(alpha - 1) * factorial(beta - 1) / factorial(alpha + beta - 1);
+    return numerator / betaFunction;
+  }
+
+  // For general case, use log form for numerical stability
+  const logPdf = (alpha - 1) * Math.log(x) + (beta - 1) * Math.log(1 - x) - logBeta(alpha, beta);
+  return Math.exp(logPdf);
+}
+
+// Factorial function
+factorial = (n) => {
+  if (n <= 1) return 1;
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+
+// Log Beta function approximation
+logBeta = (alpha, beta) => {
+  // Use Stirling's approximation for log-gamma
+  const logGammaApprox = (z) => {
+    if (z <= 0) return Infinity;
+    return (z - 0.5) * Math.log(z) - z + 0.5 * Math.log(2 * Math.PI);
+  };
+
+  return logGammaApprox(alpha) + logGammaApprox(beta) - logGammaApprox(alpha + beta);
+}
+
+// Interactive controls
+viewof n = Inputs.range([1, 500], {value: 10, step: 1, label: "n"})
+viewof x = Inputs.range([0, 500], {value: 6, step: 1, label: "X"})
+viewof pseudoHeads = Inputs.range([0.1, 200], {value: 2, step: 0.1, label: "α (pseudo-heads)"})
+viewof pseudoTails = Inputs.range([0.1, 200], {value: 2, step: 0.1, label: "β (pseudo-tails)"})
+
+// Ensure X doesn't exceed n
+xClamped = Math.min(x, n)
+
+// Calculate posterior parameters
+posteriorAlpha = pseudoHeads + xClamped
+posteriorBeta = pseudoTails + (n - xClamped)
+
+// Generate data for plotting
+data = {
+  const thetaMin = 0.001;
+  const thetaMax = 0.999;
+  const numPoints = 1000;
+  const dTheta = (thetaMax - thetaMin) / (numPoints - 1);
+
+  return Array.from({length: numPoints}, (_, i) => {
+    const theta = thetaMin + i * dTheta;
+    return {
+      theta: theta,
+      prior: betaPDF(theta, pseudoHeads, pseudoTails),
+      posterior: betaPDF(theta, posteriorAlpha, posteriorBeta)
+    };
+  });
+}
+
+// Find maximum values for y-axis scaling
+maxPrior = Math.max(...data.map(d => d.prior))
+maxPosterior = Math.max(...data.map(d => d.posterior))
+maxY = Math.max(maxPrior, maxPosterior)
+
+// Create the plot
+Plot.plot({
+  width: 800,
+  height: 400,
+  marginTop: 60,
+  marginLeft: 100,
+  marginBottom: 100,
+  marginRight: 120,
+  style: {
+    fontSize: "18px"
+  },
+  x: {
+    domain: [0, 1],
+    label: "θ",
+    labelAnchor: "center",
+    labelOffset: 60
+  },
+  y: {
+    domain: [0, maxY * 1.1],
+    label: "Density",
+    labelAnchor: "center",
+    labelOffset: 70
+  },
+  marks: [
+    Plot.line(data, {x: "theta", y: "prior", stroke: "steelblue", strokeWidth: 2}),
+    Plot.line(data, {x: "theta", y: "posterior", stroke: "red", strokeWidth: 2}),
+    Plot.ruleY([0]),
+
+    // Title
+    Plot.text([`Beta Prior and Posterior: X = ${xClamped}, n = ${n}`], {
+      x: 0.5,
+      y: maxY * 1.15,
+      fontSize: 18,
+      fontWeight: "bold",
+      textAnchor: "middle"
+    }),
+
+    // Legend with colored lines
+    Plot.lineX([{x: 0.72, y: maxY * 0.95}, {x: 0.78, y: maxY * 0.95}], {
+      x: "x", y: "y",
+      stroke: "steelblue",
+      strokeWidth: 2
+    }),
+    Plot.text([`Prior: Beta(${pseudoHeads.toFixed(1)}, ${pseudoTails.toFixed(1)})`], {
+      x: 0.8,
+      y: maxY * 0.95,
+      fontSize: 16,
+      fill: "black",
+      textAnchor: "start"
+    }),
+    Plot.lineX([{x: 0.72, y: maxY * 0.88}, {x: 0.78, y: maxY * 0.88}], {
+      x: "x", y: "y",
+      stroke: "red",
+      strokeWidth: 2
+    }),
+    Plot.text([`Posterior: Beta(${posteriorAlpha.toFixed(1)}, ${posteriorBeta.toFixed(1)})`], {
+      x: 0.8,
+      y: maxY * 0.88,
+      fontSize: 16,
+      fill: "black",
+      textAnchor: "start"
+    })
+  ]
+})
+```
+
+**Example: Normal mean**
+
+As another example, suppose we observe a single observation from a univariate Gaussian location family with a Gaussian prior on the location parameter
+$$
+\begin{aligned}
+\theta \sim N(\mu,\tau^2) &\propto_\theta e^{-(\theta-\mu)^2/2\tau^2}\\
+X \mid \theta \sim N(\theta,\sigma^2) &\propto_\theta e^{-(x-\theta)^2/2\sigma^2}
+\end{aligned}
+$$
+Again, $\theta$ plays a different role in the two densities above, first as the random variable and then as a parameter. Note $\sigma^2$ and $\tau^2$ are both assumed known.
+
+Multiplying the likelihood by the prior gives an expression proportional to the posterior density:
+$$
+\begin{aligned}
+\lambda(\theta \mid x)
+&\propto_\theta \exp\left\{ -\frac{(x-\theta)^2}{2\sigma^2} -\frac{(\theta-\mu)^2}{2\tau^2}\right\}\\
+&\propto_\theta \exp\left\{ \theta\left(\frac{x}{\sigma^2} + \frac{\mu}{\tau^2}\right)-\theta^2\left(\frac{1}{2\sigma^2} + \frac{1}{2\tau^2}\right)\right\}
+\end{aligned}
+$$
+Since the log-posterior is quadratic in $\theta$, we recognize this as proportional to a Gaussian density. We can find the mean and variance by completing the square. Recalling that
+$$
+a\theta^2-b\theta = \left(\theta - \frac{b}{2a}\right)^2 a - c(a,b),
+$$
+we can continue our calculation with $a=\frac{1}{2}\left(\sigma^{-2} + \tau^{-2}\right)$ and $b= x\sigma^{-2} + \mu\tau^{-2}$, giving
+$$
+\begin{aligned}
+\lambda(\theta \mid x)
+&\propto_\theta \exp\left\{ -\left(\theta-\frac{x\sigma^{-2}+\mu\tau^{-2}}{\sigma^{-2} + \tau^{-2}}\right)^2 \bigg/ 2\left(\sigma^{-2}+\tau^{-2}\right)^{-1}\right\}\\
+&\propto_\theta N\left(  \frac{x\sigma^{-2}+\mu\tau^{-2}}{\sigma^{-2} + \tau^{-2}}  ,  \frac{1}{\sigma^{-2}+\tau^{-2}} \right).
+\end{aligned}
+$$
+This formula becomes a bit less unlovely if we interpret it in terms of the *precision*, which is defined as the reciprocal of the variance. Then, the posterior precision is $\sigma^{-2} + \tau^{-2}$, the sum of the precisions for the prior and likelihood, and the posterior mean is the precision-weighted average
+$$
+\EE[\theta \mid X] = \frac{X\sigma^{-2}+\mu\tau^{-2}}{\sigma^{-2} + \tau^{-2}} = X \frac{\sigma^{-2}}{\sigma^{-2}+\tau^{-2}} + \mu \frac{\tau^{-2}}{\sigma^{-2}+\tau^{-2}}.
+$$
+This suggests a pseudo-data interpretation, which we can make more concrete if we extend this example to an i.i.d. sample.
+
+**Example: Gaussian i.i.d. sample**
+
+Now, assume we have the same prior but instead of one draw, we have $n$ draws $X_1,\ldots,X_n \simiid N(\theta,\sigma^2)$. If we first make a sufficiency reduction to $\overline{X} \sim N(\theta,\sigma^2/n)$, we can immediately apply our formula from before to obtain:
+$$
+\theta \mid X \sim N\left( \frac{\overline{X} n\sigma^{-2}+\mu\tau^{-2}}{n\sigma^{-2} + \tau^{-2}}, \frac{1}{n\sigma^{-2}+\tau^{-2}}  \right).
+$$
+Since the likelihood precision is linear in the sample size $n$, we could think of the prior as arising from an equivalent sample of $k=\sigma^2/\tau^2$ pseudo-observations with mean $\mu$. Then we have
+$$
+\theta \mid X \sim N\left( \frac{n\overline{X} + k\mu}{n + k}, \frac{\sigma^2}{n+k}  \right),
+$$
+giving a similar interpretation as in the Beta-Binomial example.
+
+
+### Conjugate priors for exponential families
+
+Conjugate priors are commonly available for exponential family models. To understand why, consider a generic $s$-parameter exponential family model where
+$$
+X_1,\ldots,X_n \simiid p_\eta(x) = e^{\eta'T(x)-A(\eta)}h(x),
+$$
+We can always define a conjugate $(s+1)$-parameter prior that is also an exponential family model. For any carrier $\lambda_0$, define for $k\in\RR$, $\mu\in \RR^{s}$:
+$$
+\lambda_{\mu,k}(\eta) = e^{k\mu'\eta - kA(\eta) - B(k\mu,k)}\lambda_0(\eta).
+$$
+Recalling that $\eta$ is no longer a parameter, but the sampled random variable, this is an exponential family model with sufficient statistic $\binom{\eta}{-A(\eta)}$ and natural parameter $\binom{k\mu}{k}$, both in $\RR^{s+1}$.
+
+Then the posterior density is
+$$
+\begin{aligned}
+\lambda(\eta \mid x)
+&\propto_\eta \left(\prod_{i=1}^n e^{\eta'T(x_i)-A(\eta)}h(x_i)\right) \cdot \lambda_{k,\mu}(\eta)\\
+&\propto_\eta e^{ \left(k\mu + \sum_i T(x_i)\right)'\eta - (k+n)A(\eta)}\lambda_0(\eta)\\
+&\propto_\eta \lambda_{\mu_{\text{post}}(x),n+k}(\eta),
+\end{aligned}
+$$
+where we have a similar pseudo-data interpretation for $\mu_{\text{post}}$.
+$$
+\mu_{\text{post}}(x) = \frac{n \overline{T}(x) + k\mu}{n+k}, \quad\text{for } \overline{T}(x) = \frac{1}{n}\sum_i T(x_i)
+$$
+In many examples, including the examples we saw above, $\mu_{\text{post}}$ corresponds to the posterior expectation for the mean parameter $\EE_\eta T(X)$; but whether or not this is true depends on the functional form of the prior. Another caveat is that, again depending on the functional form of the exponential family distribution, we may not have a closed form for $B(k\mu,k)$.
+
+---
+
+[← Bayes estimator](02-bayes-estimator.md) · [Up: contents](index.md)

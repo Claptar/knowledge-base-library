@@ -1,0 +1,3561 @@
+version: 1
+generated: '2026-09-14'
+sources:
+- slug: _archives
+  material: archive
+  licence: unresolved
+  holds: scaffolding
+  files: 6
+  bytes: 482924247
+  fetched: '2026-09-13'
+  kind: files
+  base: null
+  restorable: never
+  contents:
+  - name: 6.041sc-fall-2013.zip
+    bytes: 177113946
+    sha256: null
+  - name: 6.047-fall-2015.zip
+    bytes: 141522883
+    sha256: null
+  - name: 7.91j-spring-2014.zip
+    bytes: 103785369
+    sha256: null
+  - name: 8.591j-fall-2004.zip
+    bytes: 17919435
+    sha256: c951cbdb57856b5472d1c8beb1f5c2f1eeb52545848a9cc82fb0e75776966673
+  - name: 8.591j-fall-2014.zip
+    bytes: 23171273
+    sha256: 9c3afd540a5663e5dc16af9825a6b3c8b984c35314ed299d2229b2e7295eb416
+  - name: 8.592j-spring-2011.zip
+    bytes: 19411341
+    sha256: 2d57de63d54086fce92a332b774f31d2dce2f661a37372213d4998fe9bdc4a85
+  note: publisher zips for the OCW courses — the route back to original filenames
+- slug: berkeley-guntuboyina-notes
+  material: notes
+  licence: unresolved
+  holds: material
+  files: 4
+  bytes: 3331085
+  fetched: '2026-09-13'
+  kind: files
+  base: https://www.stat.berkeley.edu/~aditya/resources/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: FullLectureNotes201AFall2019.pdf
+    bytes: 733329
+    sha256: 56c408cdf6079c856de961b1afbb6796340a1bd9e151279c3f7121fdfff4aa5e
+  - name: FullNotes201AFall2022.pdf
+    bytes: 835750
+    sha256: 816b686b05f02000a281d55c3649e10455918d946757e75786f442a5658c5d6f
+  - name: FullNotes210BSpring2018.pdf
+    bytes: 1021373
+    sha256: 3492687549b553afc1d5aef94f07d097de049d637cd9baa1d58d8c21811fc9a5
+  - name: FullNotes248Spring2022TimeSeries.pdf
+    bytes: 740633
+    sha256: f752d67594a87c04943c0560217304c82c034d6c46275e3aac876fb7aa3876d6
+- slug: berkeley-stat-c245b-vanderlaan
+  material: course
+  licence: unresolved
+  holds: material
+  files: 16
+  bytes: 7462271
+  fetched: '2026-09-13'
+  kind: files
+  base: https://vanderlaan-lab.org/teach-files/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: caus2004.pdf
+    bytes: 398712
+    sha256: 2eed997437eee666f428ff0d09d28c8e065ed6c6c11bc5e145a6c5ab230917d1
+  - name: caus2004syl.pdf
+    bytes: 24235
+    sha256: 5f8e48c1884f6939d375f645eee6c3e31d88e2a1ab9c570ebe83e3cc03ce78f0
+  - name: compbio.pdf
+    bytes: 515963
+    sha256: aaf87782638715c6b57f994e9a93fd2a9c5992ccbac183c9efba466b40194a2e
+  - name: compbiosyl2001.pdf
+    bytes: 37593
+    sha256: a7c201fa42f0202a8b139624280ba70cfb373a6c0eb665a33df163700756b9f5
+  - name: dsaslides.pdf
+    bytes: 163386
+    sha256: 5aa18bf7c9cdc8c2054bde0b2366f7c362b760afa6d2dcd9d1795224818af58e
+  - name: fall2003.pdf
+    bytes: 2859684
+    sha256: 474c24cce7f2515cc506c66d271f8b9df528b82fd3ca41b7cdec631073759269
+  - name: mcp2007.ppt
+    bytes: 839680
+    sha256: bda7a1877232f96be1907459921e8f3b6abaadbad13d1ebb1391523dae68d8fa
+  - name: slcausal.pdf
+    bytes: 491323
+    sha256: 02e4e52037c5cae86147033862577f6cad5e560be79f8760a2f7dbd8ae22bede
+  - name: stat210b.pdf
+    bytes: 302302
+    sha256: 6e5a053fd3e6ac40daa1d7c6682d00551298012af2218399277a6c2e593edfca
+  - name: stat210bsyl.pdf
+    bytes: 45920
+    sha256: d22079a08ee00fb784b2ba32699dd8d3d01a68f8b815b076020befde7d189f2a
+  - name: surv2004.pdf
+    bytes: 412616
+    sha256: ab57f33fe00ddd87915cb42658223f3dd0a739414bf85704c31ecba08a3814bd
+  - name: survMSM2004.pdf
+    bytes: 524541
+    sha256: ebe6bc3f59e035843ea55c29c79531005609b0c8f357fc2ec99db38bbe1afba2
+  - name: syllabus-ph240b_survival-fa2017.pdf
+    bytes: 94948
+    sha256: b42f91dfa87bbdd559a4ec4493f6aed39b55c54c93bfe8a31d80fbb529d2c872
+  - name: syllabus-ph240b_survival-fa2019.pdf
+    bytes: 276568
+    sha256: 06b4a7db0648e19435d0e10c6b231ed97fe835e8e3dbb722dd5d632c2e661fe7
+  - name: syllabus-ph243d_adaptivedesigns-fa2018.pdf
+    bytes: 241795
+    sha256: 75e7cce38c6de9847c13de4367f4e4cf047583f43be4eb09792da5dee8761ccf
+  - name: syllabus-ph290_tlbbd-sp2019.pdf
+    bytes: 233005
+    sha256: 2033e9d09ab1a0fcd757478cd946bcc2d87e9355842ede84fb292ab8be793eb0
+  catalogue: docs/resources/berkeley-statistics.md
+- slug: berkeley-stat-c245c-leishi
+  material: course
+  licence: unresolved
+  holds: material
+  files: 24
+  bytes: 10259531
+  fetched: '2026-09-13'
+  kind: files
+  base: https://leishi-rocks.github.io/courses/ph240c/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: hw/Homework-1.pdf
+    bytes: 79835
+    sha256: 161f7cce05ad01100b88cb99bc27d2aee06a6f0b9843f8191da14d9bf5cd931d
+  - name: hw/Homework-2.pdf
+    bytes: 45052
+    sha256: f49dc69037fa99fd4b88258c6a4a1967f5472f8fe0806bffeb48ec133323ec9b
+  - name: hw/dataHW2.Rda
+    bytes: 15814
+    sha256: 692105c5180ad562add07f38e9985a0c282adc3a727520933fff1de18d14e739
+  - name: hw/heart_disease.csv
+    bytes: 15348
+    sha256: e61783d0ccdd8f7d7d2ef71f8a9b08301e620f4f3e13c3bcf3e7360366d9c88c
+  - name: hw/hw1-sol.pdf
+    bytes: 565548
+    sha256: 60bc42c3e5aaf8ca1644647a498f233ca1cc296d69b6ebb7f6c60ecac57cd96c
+  - name: hw/hw2-sol.pdf
+    bytes: 468083
+    sha256: d9d7c039bf834cbd71d7160a17217d7805ae6c5429d1faff595a5172827a955e
+  - name: notes/Lecture_01_Scope_and_Intro.pdf
+    bytes: 3273143
+    sha256: 33aba1d2e7b03a8d2f5577d839bfaa0ec2045d6993056486a8d7337d280e647b
+  - name: notes/Lecture_02_GLM_SVM.pdf
+    bytes: 422653
+    sha256: 85e31628d5e75dcf2f4275593865c7ac81e65f5a001e731947d9fe67c13613b7
+  - name: notes/Lecture_03_Empirical_Risk_Kernel.pdf
+    bytes: 418850
+    sha256: dd27c2f7a05fdd36fa88777b13ee649bba20f16e8d90fc4f7a0cb87b5a09ac28
+  - name: notes/Lecture_04_Metric_Learning.pdf
+    bytes: 396585
+    sha256: e8334f19d4d5b34980a00029c2fef98a48916b4fd535a8f8074e8809359d7595
+  - name: notes/Lecture_05_Trees.pdf
+    bytes: 425369
+    sha256: 909d27e0d5d0a3039fc67dbf949d78a59d2c13095dd891b162f18e772e1cb5b3
+  - name: notes/Lecture_06_Ensemble_methods.pdf
+    bytes: 261083
+    sha256: bf5b44309012468045ef34383eddebc7dc4ac3a35bd5fd66edae60e7dcbc82df
+  - name: notes/Lecture_07_Semi-supervised_learning.pdf
+    bytes: 395021
+    sha256: ad38eeba8a26230406a1bdd8dd87528694c4feac6ad6713c1b0469124df62e33
+  - name: notes/Lecture_08_Neural_Networks.pdf
+    bytes: 581627
+    sha256: 62e765527bc38b532159625f6ee752c6e618874c7ba645433213611a5e72dee5
+  - name: notes/Lecture_11_Streaming_Data_Analyses_in_Electronic_Medical_Record_Data.pdf
+    bytes: 384000
+    sha256: 6b240b7fba31e1c7a8710e02045d4cd838117f48db75b92c4c61e8c2ea881c03
+  - name: notes/Lecture_13_Design_of_Experiments.pdf
+    bytes: 277629
+    sha256: 798d309dfcab33e0a3094a371e306313800d904c4be3c3d78bb4c78fa50523b2
+  - name: notes/Lecture_14_Adaptive_Clinical_Trial_and_Reinforcement_Learning.pdf
+    bytes: 254921
+    sha256: 902be6acd21df9af48175fb1af4fb6a8459329f436d96684bb6e5617adadca9d
+  - name: notes/PH240C-Lab01.pdf
+    bytes: 444667
+    sha256: ab27d1f238c7c13e37693d364d4939c880db759982155385b6b2108905b8755f
+  - name: notes/PH240C-Lab02.pdf
+    bytes: 1140267
+    sha256: 980afa1d3e3eb3bd54cca7e8e441dbfd8cea0b15622ef1fbb02a142dafeb4d34
+  - name: notes/Tree-Missing.R
+    bytes: 1039
+    sha256: 97548aab75c0cbcc034fff4a7a3a9d04ba7d7876cf2633314a341a8c617fcd87
+  - name: notes/bandits.pdf
+    bytes: 33196
+    sha256: cd6d173573806d4e96f84ebf23ce6d3f91e3695cfb5b53fceed213e5b81c6a4c
+  - name: notes/glm_svm.R
+    bytes: 1946
+    sha256: 6cf795a3d58c7f682447d6323234b9773060d49eaf58b8a700bb4b1af8ef58b4
+  - name: notes/multi-armed.Rmd
+    bytes: 12652
+    sha256: fd7db1733e6e04f588a49e6174f3f4b72a1b844aab8479539163b2f3cbee1deb
+  - name: notes/multi-armed.pdf
+    bytes: 345203
+    sha256: 9a32648a3b257e3ffc8076bb8240bf91036d94598ec74587ac5a90c6121aac63
+  catalogue: docs/resources/berkeley-statistics.md
+- slug: berkeley-stat150/aldous-legacy
+  material: course
+  licence: unresolved
+  holds: material
+  files: 40
+  bytes: 12390638
+  fetched: '2026-09-13'
+  kind: files
+  base: https://www.stat.berkeley.edu/~aldous/150/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: BZ.pdf
+    bytes: 2021810
+    sha256: dd508a78d7945135eb96f695c71aeca64bfbd3afd5fe687894b7761a1f404aed
+  - name: coincidence_chapter.pdf
+    bytes: 503511
+    sha256: 7948d145ea78543b437badfdd681c6f23a3560759fa476edb81f5f9da2388096
+  - name: index.html
+    bytes: 11217
+    sha256: 300d49776b1afb5856474d9054d94282e4c89f98bfab205a8750f271c296458f
+  - name: lecture_10_post.pdf
+    bytes: 145846
+    sha256: 384ca21ece42b7c016eaa9d4a4b6b79db09716cb15a2d338fbd2ed0abb26a9ec
+  - name: lecture_11_post.pdf
+    bytes: 136060
+    sha256: 127c0aa37e8c27b764887598ef421684bc2cc611e69d2d5dfb53afd6fc67ef61
+  - name: lecture_16_post.pdf
+    bytes: 1769752
+    sha256: 76f511ff15106df5a6558e90e7907f104781ab9be6b8f759615d2d315d9ebeb9
+  - name: lecture_17_post.pdf
+    bytes: 1818516
+    sha256: 106bf472c255bd76901670add4dffaee42097c197b9323c931d2fa60a28e79a3
+  - name: lecture_18_post.pdf
+    bytes: 137044
+    sha256: 248e8b3d07f8348ed8a940e01c6a7a62a8baeeee7628b4d0ac6082e2e2508f14
+  - name: lecture_19_post.pdf
+    bytes: 128503
+    sha256: 61885930e62cb49b75c75c61d900ab276970aadae09347480021870cde7d515e
+  - name: lecture_1_post.pdf
+    bytes: 240071
+    sha256: f9815c57819b3a6002e75463cd1452571b0178d22109744d62a2ccac38dc6f2a
+  - name: lecture_20_post.pdf
+    bytes: 133626
+    sha256: 0aa9fc7ea10486b571f4ed72a2a0a9a04853f9bc299e587616860c7ec5792e1f
+  - name: lecture_21_post.pdf
+    bytes: 196285
+    sha256: a14b482ce50672cf5bc47eaaa7d7b4e6707c8acfb94107df47e4bd60454bc0f0
+  - name: lecture_22_post.pdf
+    bytes: 123338
+    sha256: ae56688993d218672d99d19077a5a7d619466589e4d02e4ce934c92a8ff4f3e1
+  - name: lecture_23_post.pdf
+    bytes: 141321
+    sha256: fd98ee1f80cdd275a8d42967de258fee4fbb45172144023ecde3cca0d1431410
+  - name: lecture_24_post.pdf
+    bytes: 117594
+    sha256: 3f393f1f6cbc3beb4ea2c1e9426599c71d2392ff60d65d5edf08eb9cadacd400
+  - name: lecture_25_post.pdf
+    bytes: 128142
+    sha256: 05a4a56592ce38378f3ea236a90ac96c2cd29ae44b125237b6c8749d9e309137
+  - name: lecture_26_post.pdf
+    bytes: 121946
+    sha256: a59262bc221da5da3c654f27e12e57ec83d69a9274b761a195a34b2b19576fce
+  - name: lecture_27_post.pdf
+    bytes: 253345
+    sha256: 4fe154e17872932fa02bb628c672934f39bde469d438ea2aead0e259231a0e27
+  - name: lecture_28_post.pdf
+    bytes: 147512
+    sha256: d43e194ff3df2a7441f8bb66a5013421889335fbb750b8ba17d7f20b448cb0f2
+  - name: lecture_29_post.pdf
+    bytes: 134227
+    sha256: 60c71561442cc838f89b71da592df2eba2b4baf46557016d079db8dc0652777f
+  - name: lecture_2_post.pdf
+    bytes: 155918
+    sha256: 86ee1b2c951d67190219745c4afe8a89c8698ba540edc8966708210f74170a5e
+  - name: lecture_30_post.pdf
+    bytes: 118709
+    sha256: 1397f1f755da3c2825548ba5b16fc17284f13bbe652c1e16a28b690045bacb30
+  - name: lecture_31_post.pdf
+    bytes: 119408
+    sha256: 232567d3e490fe871970864831f148a1bd6917c53e19d328ad84a403b3710386
+  - name: lecture_32_post.pdf
+    bytes: 127360
+    sha256: 201add369be02ac7aea7aff85501a7fbc7af7719432bc46a83dedbf8a9a4b294
+  - name: lecture_33_post.pdf
+    bytes: 111609
+    sha256: 9a63c077046128538a9ca67da1d647cd67159b053659301b29abd9979ea2b85a
+  - name: lecture_34_post.pdf
+    bytes: 121188
+    sha256: c316c110124d85fea7282faa68993bfccca6a279326f04dd60de4da310619228
+  - name: lecture_35_post.pdf
+    bytes: 97127
+    sha256: e1be044f2ac244f5820d3b3c5aeb87dd3e2610c467cd7e07c343fe733d83ed9a
+  - name: lecture_36_post.pdf
+    bytes: 106744
+    sha256: 7160ed873e1337090152c44dfcff7c01c3003d2a199654a8a2a910af20490fb5
+  - name: lecture_37_shuffling.pdf
+    bytes: 124185
+    sha256: 5b318250f176e36d86cc85d33fa4f2d5b61c9047924e3be185ac356c4221d828
+  - name: lecture_37_waves.pdf
+    bytes: 174672
+    sha256: 9c5f1dda9a99d43f89c6fbd58f403a10d7a3d41131a0031d8afe30f6e88d021f
+  - name: lecture_38_post.pdf
+    bytes: 134501
+    sha256: 75a9f4446721af6f8b8b9bf144158e1eb6a099bc660a1847f7a0d6a952645b34
+  - name: lecture_3_post.pdf
+    bytes: 151540
+    sha256: 5091982650311fe2f9710c109ba77a85789bf9fd8b1ee7372250ff1371bf3dc9
+  - name: lecture_4_post.pdf
+    bytes: 770860
+    sha256: ae72acc12d170f0f54ce10a1f6088fdf5af9668c877e301591a6f966d0e75730
+  - name: lecture_5_post.pdf
+    bytes: 141779
+    sha256: d23ed1bc7b9e6609f677f1182c9555d23c25b63e9922f58fe3c98bcb5db18db5
+  - name: lecture_6_post.pdf
+    bytes: 118560
+    sha256: 1fde621d4a0484b59d23f60069016534ae113eb2b27e7f2f1519a005496ad254
+  - name: lecture_7_post.pdf
+    bytes: 124813
+    sha256: fd3356f2020d69b00502a4878fad3017dab1e51d11540ae7e61db305966d7e53
+  - name: lecture_8_post.pdf
+    bytes: 126075
+    sha256: d78283da2911a35a4cfb844223ec5bb8078c92d22f57893a9aa4ae8c97bd588d
+  - name: lecture_9_post.pdf
+    bytes: 134876
+    sha256: 95671d890a498bdd00f6d1454076c31b306a66f0f50d65627bace7ec897a0c0d
+  - name: me134_monthly.pdf
+    bytes: 435967
+    sha256: 57429594325a5b917355ef68feff7993c5d644d486d1e3cda49a3a483a95c349
+  - name: takis_exercises.pdf
+    bytes: 585081
+    sha256: e6f9cc0796575b407869a79c39713de3c61333aff3c276958fcf80cfcd459e9d
+- slug: berkeley-stat150/au-f21
+  material: course
+  licence: unresolved
+  holds: material
+  files: 27
+  bytes: 1003629
+  fetched: '2026-09-13'
+  kind: files
+  base: https://www.stat.berkeley.edu/~bensonau/f21.150/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: 150.ec.pdf
+    bytes: 47627
+    sha256: be47f1ffc07b281264b8d3107279ea311a8db72f613cbee585c03dd49bf7f81a
+  - name: 150.ec.tex
+    bytes: 1622
+    sha256: 78ecbb349a47119310ba4589986118c1bdb4fa03cf7818ffe3da13c4c66eeade
+  - name: 150.hw0.pdf
+    bytes: 111562
+    sha256: f11674c3f86aae6fb6a9d3e32012a3b01a6f2504ae3fef8dd0798b7144dc9e71
+  - name: 150.hw1.pdf
+    bytes: 94220
+    sha256: 284540df81aaea1cd91842e19b4653d89d582fc27c68409650dfe65a2df1c4b1
+  - name: 150.hw1.tex
+    bytes: 1658
+    sha256: 159fc120cd350c2c42378e9c4728ee3dfe321dcc3a99bc1a5b288fdd55d459c9
+  - name: 150.hw10.pdf
+    bytes: 58347
+    sha256: 39048c5ba9aed9b7eb780806e5252d1f2d62142f93d68c3538a62ba21c6453e9
+  - name: 150.hw10.tex
+    bytes: 1241
+    sha256: 154264a967bf2be395f857ea416a90e139619b3cc1fd44c27182fa845433be93
+  - name: 150.hw11.pdf
+    bytes: 52646
+    sha256: 0fc10dffe744e18dc9e0559b37da021c843349df1654314cec80ec4e1cbf8fab
+  - name: 150.hw11.tex
+    bytes: 999
+    sha256: 836706b334ff24eae342dbe1bb858ea5688956e1cedf83a4d569300cb589f186
+  - name: 150.hw2.pdf
+    bytes: 56600
+    sha256: 27a41614a800ed22c587333ab243d3977164847ccc1c02c9bcb63d7feab9ce94
+  - name: 150.hw2.tex
+    bytes: 1285
+    sha256: 3a92039422b0261d76686f2994a6f4ebd37d0cc58fe5b4c471a627a380ca9f7b
+  - name: 150.hw3.pdf
+    bytes: 56310
+    sha256: b13e79a91563d860756140da27979afedb78e99424825e318a7dc2a4c0984cd9
+  - name: 150.hw3.tex
+    bytes: 1041
+    sha256: 3ed2be09634d67b28d9aa19a1cf210c24b9152c74f5bb292f56d3348d2b81346
+  - name: 150.hw4.pdf
+    bytes: 55872
+    sha256: 5d3fcf4ff390bb63309ddf0d7430dea38ab06ddc3f7fd76070dbb7440f9a2f30
+  - name: 150.hw4.tex
+    bytes: 1319
+    sha256: 0de415b7c7a050973ac43cee1bcdd684d5ac898ff75903410d25b9e281bdf4ff
+  - name: 150.hw5.pdf
+    bytes: 57236
+    sha256: 44e09c2f051a794884d5afaf0cbedee957b698a14af46671c8575da35e90e9f9
+  - name: 150.hw5.tex
+    bytes: 1355
+    sha256: 465731e44f76beb334a2cb5c6dcf19065e6b08ba700dc0e511a35f244fcd54c4
+  - name: 150.hw6.pdf
+    bytes: 55794
+    sha256: 5131d7d05016a416a58d508d2e1c521124bcaf4e0a6d2cb46bc6d203801b7fe5
+  - name: 150.hw6.tex
+    bytes: 1210
+    sha256: a892c56fb3b05eed5b96ec333efcd9742a6da5d65c67a58eb4a1abc626e6d3ed
+  - name: 150.hw7.pdf
+    bytes: 78921
+    sha256: 7a33d6f9e906b440ce923bd023a8d0ee0d835221b624f398c23d0666056a146d
+  - name: 150.hw7.tex
+    bytes: 1690
+    sha256: 0456c3bffde58f164fcf6370e82e5b51f073bf96b27aebd0f215b6722f5209ce
+  - name: 150.hw8.pdf
+    bytes: 59245
+    sha256: 2f1c949ca54e8ddbcf19ddc9b9bccd45c55094875e91e0e7dd6187534475490a
+  - name: 150.hw8.tex
+    bytes: 1487
+    sha256: 471bbef48a0ed442749625dfdd8db96b2fb1522fe4f35dac2c55a3fc4e6e7f97
+  - name: 150.hw9.pdf
+    bytes: 66022
+    sha256: 6152a77cd3cb2ab8318c886ba6cc7a580d12ac7283ef7f74a1b518463c77ff7c
+  - name: 150.hw9.tex
+    bytes: 1232
+    sha256: e4b1fda53b7007c03ecb2e20f7748bb6dc517f5edda578f522b228c786a7af45
+  - name: f21.150.syllabus.pdf
+    bytes: 129683
+    sha256: 695aa8e626d888392be3e4cd5c8329298126deeb8fe5e153111c2f760cd66718
+  - name: index.html
+    bytes: 7405
+    sha256: b8d4ca95cc15e471a3ba23e628bde9f540896862a50841170ac7ba8ec63ec939
+- slug: berkeley-stat150/au-f22
+  material: course
+  licence: unresolved
+  holds: material
+  files: 23
+  bytes: 894751
+  fetched: '2026-09-13'
+  kind: files
+  base: https://www.stat.berkeley.edu/~bensonau/f22.150/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: 150.hw0.pdf
+    bytes: 111861
+    sha256: 255d524db6388401435131bd1cada81617b4dde2fa4c8d6b0c4ab192368f6324
+  - name: 150.hw1.pdf
+    bytes: 113267
+    sha256: e68e3642c1bba99d32ad0660ec521502647584c44691073fa6ebb75f887e8e6b
+  - name: 150.hw1.tex
+    bytes: 2730
+    sha256: 05f7372a807d13fc131c9a406a3ae9fdb0a407aa32d1351ac9fc3bda9e91f7fa
+  - name: 150.hw10.pdf
+    bytes: 77080
+    sha256: 3ab1bd4728db38a309d847dc5480e6cdd9e2b8c0ad3b3f308dad077a5a0be2c6
+  - name: 150.hw10.tex
+    bytes: 1185
+    sha256: 1c91d1ed1e669692c12dae40947f4d5b813b85ae5a16d8a1c96e8a6753043a16
+  - name: 150.hw2.pdf
+    bytes: 57482
+    sha256: e4c1a82a6c9799f339e73b63cb18c83ff026d7a6e2a4951b22f125a85f760fb1
+  - name: 150.hw2.tex
+    bytes: 1298
+    sha256: ffdb8a5fccbc0ff694f95c692c97756e0b70a5c308af3fef0349beb2752e7371
+  - name: 150.hw3.pdf
+    bytes: 55798
+    sha256: 0f05c59cc2b43efc3bee10b4630ebe31f17f568534c56028717af7b1737e629d
+  - name: 150.hw3.tex
+    bytes: 1041
+    sha256: f7330bca134725ac0425e311735b2c967b5a37dd6e74e79be17b4abc06ea173c
+  - name: 150.hw4.pdf
+    bytes: 56362
+    sha256: 7fb76e8368c49200ecc4408b01a4033de7930599f907a2cd23ebffdc249ee407
+  - name: 150.hw4.tex
+    bytes: 1325
+    sha256: 469c5f42cb00ddf7cfbeaf8b59e95c9e77fe5f9fe7b60193b864f078e5e0d31c
+  - name: 150.hw5.pdf
+    bytes: 57094
+    sha256: 1a0c4dc8381e42a7c4ead8aeee617e979754ef242e6d67f099271cb3abbe5bcb
+  - name: 150.hw5.tex
+    bytes: 1350
+    sha256: 4ed52d575d4580e830ad8c2de5004df3cf020de7b9f5078edf8c5c5251f6c456
+  - name: 150.hw6.pdf
+    bytes: 55943
+    sha256: 53fae8736285ff89dc71c0c9938d01f6903a5988348911d3cda61a6c73614f9c
+  - name: 150.hw6.tex
+    bytes: 1210
+    sha256: 6516b142f4e48f0a1880e75c8d09eb4638c1742831888736989ed33841026f3c
+  - name: 150.hw7.pdf
+    bytes: 57480
+    sha256: f8ff50cb38770ee955fadaa2fc856f3a167df611901cdb84437c60b63840fe95
+  - name: 150.hw7.tex
+    bytes: 1219
+    sha256: 6f6da1887daa0c8783824e48ce48bb677faaa5d6068a292c2da3138e3ec85c5a
+  - name: 150.hw8.pdf
+    bytes: 57776
+    sha256: 3674cf34372f30bc98265df27faf59eaf5f5d6e6302fd0ba4c2ca1f587c9d8de
+  - name: 150.hw8.tex
+    bytes: 1240
+    sha256: 17b835403ad13dbd9d1b9abf2d5d17644a0203aab6f827af7987a958eaabf191
+  - name: 150.hw9.pdf
+    bytes: 44822
+    sha256: a8c45d38177fb953c3e932a0d42497eb719c8efd0201cd0d18bb184f41fda422
+  - name: 150.hw9.tex
+    bytes: 1030
+    sha256: 373ec2d2a2d6883942a310f1d54634d45d4020c83e8c02eecf9c313011f9198d
+  - name: f22.150.syllabus.pdf
+    bytes: 128844
+    sha256: c51c7e92c2c421f422c1e92f2c223df1cba06645403015b537cf7b6eb89a1246
+  - name: index.html
+    bytes: 7314
+    sha256: 1297a0bb0259fd1daa940fd9af41d7a9f723e61ffe26cb046d03d53ddbf3b621
+- slug: berkeley-stat150/au-f23
+  material: course
+  licence: unresolved
+  holds: material
+  files: 25
+  bytes: 1052238
+  fetched: '2026-09-13'
+  kind: files
+  base: https://www.stat.berkeley.edu/~bensonau/f23.150/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: 150.hw0.pdf
+    bytes: 128991
+    sha256: 45d04b3ecaf83b1e197925b6904c83cd4fc9eb9d1598432fd7a72273a33bfe67
+  - name: 150.hw1.pdf
+    bytes: 122221
+    sha256: 2ba916dd6442f787ac27fb3305292a2b94ffd8243adf736a5ebfbd8e7c543b5f
+  - name: 150.hw1.tex
+    bytes: 2724
+    sha256: ee7b29732225c84a3a5f1459d697ee77861379220327398438530041c08f482e
+  - name: 150.hw10.pdf
+    bytes: 48276
+    sha256: 024fa7b5a586cea24b1717b9ccb69008a241c965820ab115c116c8cd48aaa14b
+  - name: 150.hw10.tex
+    bytes: 1031
+    sha256: fa7660c65de6e144ac6268e0ee3c10319fa4df0ca2cdadc8805a0de44d52c59e
+  - name: 150.hw11.pdf
+    bytes: 87272
+    sha256: a5243589fce365e00fa77bd1c886404ce08d0f9b624f45a04bac370e2169ca90
+  - name: 150.hw11.tex
+    bytes: 1501
+    sha256: 223f88d0ca9e1f02c324cfd3170a8bdbe8e77784e11869bf9fbc177b9507c7b7
+  - name: 150.hw2.pdf
+    bytes: 61101
+    sha256: 3aad877f316d84b1c9b890dba7c045cfe4e690ab6a1797afd56c76455adf0ac0
+  - name: 150.hw2.tex
+    bytes: 1290
+    sha256: c692d9beb7753909843c83b2e42e6b07b98abbe5f81a24d1c763af715c0807d7
+  - name: 150.hw3.pdf
+    bytes: 59810
+    sha256: b7217a0149846e2255f13495096c3093564ebf4869304885052b3fe6b8c59d14
+  - name: 150.hw3.tex
+    bytes: 1035
+    sha256: 3f19cd56b7cd7ccb31d3ea82f660933fd80984a8de1eab89018b21797916e7b2
+  - name: 150.hw4.pdf
+    bytes: 60722
+    sha256: e855d645a52df91f06b8f8ab14b50e28a3a9896508df841a46cd12ce88be969a
+  - name: 150.hw4.tex
+    bytes: 1159
+    sha256: eaae686ba7394b66a85fdc929fbf583aa4013dad00e5d25a3695afef59c118b1
+  - name: 150.hw5.pdf
+    bytes: 62079
+    sha256: f556bf2daa313dd370631a53319c6d848530eb284d650626655a28d545384a23
+  - name: 150.hw5.tex
+    bytes: 1132
+    sha256: 50f786088d4b2dcbf30013938477abf0587cad7f284e58d5f94291a5df1a77e8
+  - name: 150.hw6.pdf
+    bytes: 61792
+    sha256: 31bbeda10bbfc76fa104b5c09a3374c126b6c649d3a73cf4715f902bfa998e66
+  - name: 150.hw6.tex
+    bytes: 1351
+    sha256: fead36badcf6b3b15d72319755d3cb0b4889baf3767da0252428a02540e6d9c5
+  - name: 150.hw7.pdf
+    bytes: 61969
+    sha256: 32ba01734033d912db2258b9c533b178ba8bfbc94061e8f4aac03b422a79416b
+  - name: 150.hw7.tex
+    bytes: 1508
+    sha256: 1f09197ee15648f1b97de80be3f5de03b2351c9dbbc6f9131a2e2982a87a5630
+  - name: 150.hw8.pdf
+    bytes: 70834
+    sha256: fc63414e6992b90a8d5d104bb56314c6817ced37f8810afe28ce323081a7a6ad
+  - name: 150.hw8.tex
+    bytes: 1306
+    sha256: 971a0d3f4cd71d9b63154af62e501222f99105007f613b52bbf037fe3f44a9d0
+  - name: 150.hw9.pdf
+    bytes: 62661
+    sha256: 5568d891dcb7c804409945e01346557e97013d77f91a452dac3cff05c390a1c4
+  - name: 150.hw9.tex
+    bytes: 1236
+    sha256: 54d76fde87533b3c602a2774ee8ae67befe6271ef6e34e4ca6deb6178628da32
+  - name: f23.150.syllabus.pdf
+    bytes: 141082
+    sha256: 7b1f5437ea7e28c248106f365534242f2030e48902abc1d55cd8c46490d6136a
+  - name: index.html
+    bytes: 8155
+    sha256: 24653da49bddc503d637b16a99ce279dd3449c5bfc1bc0a2beed4abd930fa723
+- slug: berkeley-stat150/au-s23
+  material: course
+  licence: unresolved
+  holds: material
+  files: 25
+  bytes: 1036119
+  fetched: '2026-09-13'
+  kind: files
+  base: https://www.stat.berkeley.edu/~bensonau/s23.150/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: 150.hw0.pdf
+    bytes: 121478
+    sha256: 1b4d93835aac43f4e7863dfbf6575ccb102241b8d018a1d6f55fbf52132249ae
+  - name: 150.hw1.pdf
+    bytes: 114715
+    sha256: f6bd6e3564a85153a43904b0f0cfe9c182e3d39fce4a1db7412ca1eb5460105e
+  - name: 150.hw1.tex
+    bytes: 2727
+    sha256: 105d4ba24efb2f2740710b47d7aebb9b31c850f61cabc0296e5ef9146880537f
+  - name: 150.hw10.pdf
+    bytes: 49687
+    sha256: 029ab28e8883ad719631a070418397f9383c980018aab7e098098b6dd425fe88
+  - name: 150.hw10.tex
+    bytes: 1033
+    sha256: f01e7022d757705d14ee1c4715cf6a15ad5d29ca8f32d386c3a790ca58b4f4ff
+  - name: 150.hw11.pdf
+    bytes: 86389
+    sha256: 3f6b8fabb800238a5e84a2733813d42dd9ff0c726e515faf5d2d7e1ef3fa0980
+  - name: 150.hw11.tex
+    bytes: 1187
+    sha256: caee9f748da7aaf926bf4dfbd19c765fbcb20e9f5440504dae38ae9f88ba6194
+  - name: 150.hw2.pdf
+    bytes: 62660
+    sha256: fdf3761facaf3f65a660ab3a0a2589e50c1e056898ef23930780292d3fe2363d
+  - name: 150.hw2.tex
+    bytes: 1291
+    sha256: c33ea3e4a4d1dfcc06f1b623510f26ab99d1c9296285c02f57747bad23fc0d31
+  - name: 150.hw3.pdf
+    bytes: 61382
+    sha256: 2e86f24855413a8b6679b648890eaa86d33b977b7319d608759716fd013b5dae
+  - name: 150.hw3.tex
+    bytes: 1037
+    sha256: 37cfd4a78f76da48cca91a859d588271bd0fe64c8a16e7c027b5954651b2cfab
+  - name: 150.hw4.pdf
+    bytes: 62174
+    sha256: 61d3729581c74bb594bc1e0d0d71290a7dd132de9b4cad762ca1c5e310d618d8
+  - name: 150.hw4.tex
+    bytes: 1174
+    sha256: 0865a1068ab0cdfc8877b1b12056148bc7e7c09029e7b1c2c5e4e457588ea3c8
+  - name: 150.hw5.pdf
+    bytes: 61751
+    sha256: b55dcc0b06d90a0eb120c5d46e48f3cff93c16501e241445ffc4dfc8f4f2a725
+  - name: 150.hw5.tex
+    bytes: 1127
+    sha256: 81804bcdfcd8db44531c4c02face284890c3c75e2b5adc347d3eaea55833e124
+  - name: 150.hw6.pdf
+    bytes: 62961
+    sha256: 36ade4cd156806bf8b342bacc7befbae06c5048bfc1e3f7365379feb4395f81f
+  - name: 150.hw6.tex
+    bytes: 1353
+    sha256: ccb64b7d0b8ae2f021f79abd9cb92d5153e7ac95a0f79fb00ca65dc98fa86e5c
+  - name: 150.hw7.pdf
+    bytes: 63190
+    sha256: 3e8259b65a857bdb282c75bb277cbc75eba54b62b5520807b5565e441126f433
+  - name: 150.hw7.tex
+    bytes: 1504
+    sha256: f6a14cf6de2bab8b17ebcd0c20043498862cfd34106bcbc70275e2060c05e092
+  - name: 150.hw8.pdf
+    bytes: 63317
+    sha256: c7a4b8391a21741cb5f557f52cc5362456d36ada8729f02802098b44568a11af
+  - name: 150.hw8.tex
+    bytes: 1221
+    sha256: 74e08ddcca61886c562ecffaad516e4f646b256ba3bf6ea436449cba1d492566
+  - name: 150.hw9.pdf
+    bytes: 63649
+    sha256: 3a52134a081f47c3433e8926fdc09c74cd5f2aec6fc906beaabe8acac199ddce
+  - name: 150.hw9.tex
+    bytes: 1237
+    sha256: 3765f82ef6535baa643f649362e4d3dd6f9f197b22ac1449b04f0e45ad6636f9
+  - name: index.html
+    bytes: 7586
+    sha256: 9656b1687b2dca9337135b755c30bbcd6aa6ad027ded52fe3cd610c6a37ad61f
+  - name: s23.150.syllabus.pdf
+    bytes: 140289
+    sha256: 3d6d96502507fc3063574951f22e39d9aff76fb40271b54862e9ad0080e5ad16
+- slug: berkeley-stat150/au-s24
+  material: course
+  licence: unresolved
+  holds: material
+  files: 25
+  bytes: 1133821
+  fetched: '2026-09-13'
+  kind: files
+  base: https://www.stat.berkeley.edu/~bensonau/s24.150/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: 150.hw0.pdf
+    bytes: 130279
+    sha256: aa44ab76906bb0d21016ec9fedd8ebc2222f8718048014fc30e79157928d582a
+  - name: 150.hw1.pdf
+    bytes: 131325
+    sha256: c208c027cbe98f6c8437fde738d86955291f3ce6f08506119f898366f4540fff
+  - name: 150.hw1.tex
+    bytes: 3130
+    sha256: 3a5f1c7a13f60addd4fa1e2561537aeee75c89c12d8c9dfa21f29b668d43b761
+  - name: 150.hw10.pdf
+    bytes: 49178
+    sha256: 8ed903256c5966211830f493d7e1dc52311290337595013d095b6c71ce55c27d
+  - name: 150.hw10.tex
+    bytes: 1035
+    sha256: 916485a27c06971f37bdee1c2a56b2411ab3f981b0f900d362ca9206079a9bbf
+  - name: 150.hw11.pdf
+    bytes: 88589
+    sha256: 0a3db1e8f5e613a5dadc89db102867f4ea96e4b4fd379ec07f8625768e340866
+  - name: 150.hw11.tex
+    bytes: 1503
+    sha256: adb641937975e083b69a87e34b419bb502d566f5fee46db2a9748f560ba2d0b9
+  - name: 150.hw2.pdf
+    bytes: 62551
+    sha256: 5ce38dbfe3bef78246b006784850fcf969e3ecda7d62435b0641b997f9057ccc
+  - name: 150.hw2.tex
+    bytes: 1291
+    sha256: 349eb97489173aaa6aed634d11ee4cf95eca0ed2eee4ff90e66a2344edc7794c
+  - name: 150.hw3.pdf
+    bytes: 115671
+    sha256: fa7c3929b81472422bcf3d5708aba96a3edee49958300a26bdc0eb31db8ceefe
+  - name: 150.hw3.tex
+    bytes: 1945
+    sha256: 7c2e6864ccf7c344702dfe7fef7877ebf1575b6acf794a7d0d4f60005b9a564f
+  - name: 150.hw4.pdf
+    bytes: 62406
+    sha256: fe4b5aa524f2207bb8e998e1ea62d370ba6cac59a9c5c0966bf8407f062b778e
+  - name: 150.hw4.tex
+    bytes: 1161
+    sha256: 32719f94089eb7791419ec14b093f9d827a4683440bef4c45f31fef5428d3183
+  - name: 150.hw5.pdf
+    bytes: 63737
+    sha256: cd40d971790945df3d43388bb676a464d55ce8344431c274779de938e9f32c16
+  - name: 150.hw5.tex
+    bytes: 1134
+    sha256: f1caf9d225bb5751163d9e48228e12aef6c0f38cfa9585a1c7ba63e79bf1e6c2
+  - name: 150.hw6.pdf
+    bytes: 63059
+    sha256: 755b8c708733c6e871f42a3ed5541cae63ba40b402dbf27cfae37231a0cd03be
+  - name: 150.hw6.tex
+    bytes: 1352
+    sha256: 0931b8ee1b1f0f909051a38175bac40aca89673304549a2c9743a83b352068f7
+  - name: 150.hw7.pdf
+    bytes: 63115
+    sha256: 307e65813989f09d7c3e9a594fa0e3310d3b416c0650f1a5fd53abe4fad15e5e
+  - name: 150.hw7.tex
+    bytes: 1510
+    sha256: 6174c280d82b5b4c483e46f5e252e06b437c7b19a05498427c683d6f213714ab
+  - name: 150.hw8.pdf
+    bytes: 63965
+    sha256: 078d0a0a1e5c15e880de77fdf4885c1713b8ed115575219bdceb3298d5c92c7f
+  - name: 150.hw8.tex
+    bytes: 1362
+    sha256: fc86ed479cbd84fc29b9f5aa2a13d76693e1529e175142b302f1003782457309
+  - name: 150.hw9.pdf
+    bytes: 72802
+    sha256: a52331c3755b4dfebadf3417edf5e784bcdec186a8b8ed5c2cd996b6ee87d614
+  - name: 150.hw9.tex
+    bytes: 1583
+    sha256: 980b0b50969e45e729b5616f47e8c331cd1f73c4044394785ceb001cf93e7ab3
+  - name: index.html
+    bytes: 7490
+    sha256: 743d3e51d93f6adc563788e31b8aa45e0dc5da1e5bd70961f7d0a33285769e9f
+  - name: s24.150.syllabus.pdf
+    bytes: 142648
+    sha256: 46931d5b0eda04263a8da0de392c258576e281186637fe51a609e04597868460
+- slug: berkeley-stat150/spring-2026
+  material: course
+  licence: CC BY 4.0
+  holds: unclear
+  files: 28
+  bytes: 411052
+  fetched: '2026-09-13'
+  licence_file: myst.yml
+  kind: git
+  url: https://github.com/berkeley-stat150/spring-2026.git
+  branch: main
+  commit: 88be72c5f14551686a5be663f67adc7dd6db7af7
+  restorable: upstream
+- slug: berkeley-stat153/fall-2024
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 221
+  bytes: 48380404
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat153/fall-2024.git
+  branch: main
+  commit: 94c943d315ea7361f1f660f42881d219a7e7f009
+  restorable: upstream
+- slug: berkeley-stat153/fall-2025
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 105
+  bytes: 128532985
+  fetched: '2026-09-13'
+  licence_file: myst.yml
+  kind: git
+  url: https://github.com/berkeley-stat153/fall-2025.git
+  branch: main
+  commit: df8e8e972b95eb1235ce8a17f88722e852802200
+  restorable: upstream
+- slug: berkeley-stat153/fall-2026
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 38
+  bytes: 24558990
+  fetched: '2026-09-13'
+  licence_file: myst.yml
+  kind: git
+  url: https://github.com/berkeley-stat153/fall-2026.git
+  branch: main
+  commit: 1df2e362c312415dc83d910dc9e724e1646fafab
+  restorable: upstream
+- slug: berkeley-stat153/spring-2025
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 89
+  bytes: 41889993
+  fetched: '2026-09-13'
+  licence_file: myst.yml
+  kind: git
+  url: https://github.com/berkeley-stat153/spring-2025.git
+  branch: main
+  commit: 60232ff1b10a6e871e4de968015b36891a606030
+  restorable: upstream
+- slug: berkeley-stat153/spring-2026
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 880
+  bytes: 412179841
+  fetched: '2026-09-13'
+  licence_file: myst.yml
+  kind: git
+  url: https://github.com/berkeley-stat153/spring-2026.git
+  branch: main
+  commit: c08dd12c146698bb6ea1d0c6887d1898a8d98c6e
+  restorable: upstream
+- slug: berkeley-stat156/fall-2024
+  material: course
+  licence: CC BY-NC 4.0
+  holds: material
+  files: 51
+  bytes: 1039037
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat156/fall-2024.git
+  branch: main
+  commit: bbfe05b00bcc6fcbcf3140ad89cda2c5b36ed75e
+  restorable: upstream
+- slug: berkeley-stat158/spring-2025
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 15
+  bytes: 106010
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat158/spring-2025.git
+  branch: main
+  commit: 02be3b577c9af913bfbbda698495471c2f909adb
+  restorable: upstream
+- slug: berkeley-stat158/spring-2026
+  material: course
+  licence: unresolved
+  holds: material
+  files: 513
+  bytes: 143878017
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/berkeley-stat158/spring-2026.git
+  branch: gh-pages
+  commit: 3863c023585286c55df692b83ee6cd5c56dbe822
+  restorable: upstream
+- slug: berkeley-stat201a/fall-2024
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 15
+  bytes: 115694
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat201a/fall-2024.git
+  branch: main
+  commit: 517ddd578d1f24f3338ec3c929606d3d28a70704
+  restorable: upstream
+- slug: berkeley-stat201b/fall-2024
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 14
+  bytes: 107722
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat201b/fall-2024.git
+  branch: main
+  commit: 302a8048139aab44435eb98c8e3f9ab42df2074c
+  restorable: upstream
+- slug: berkeley-stat205a/aldous-legacy
+  material: course
+  licence: unresolved
+  holds: material
+  files: 6
+  bytes: 1407071
+  fetched: '2026-09-13'
+  kind: files
+  base: https://www.stat.berkeley.edu/~aldous/205A/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: DurrettTOC.html
+    bytes: 29250
+    sha256: 6e0cc94e6d693e2672bdc265eae8a7d6860eb8bdb81bce09f7e2bcb9729c4d6a
+  - name: hw.pdf
+    bytes: 173686
+    sha256: 1f6e354713e8a0235686b8ad9d658a89e2bbaddd4b3b6f73939a21b87a69de6e
+  - name: index.html
+    bytes: 11159
+    sha256: 820253c146224e0030a33218e7135eff9cd39bcad46b87efb34a9e3dc98c1d1c
+  - name: me134_monthly.pdf
+    bytes: 435967
+    sha256: 57429594325a5b917355ef68feff7993c5d644d486d1e3cda49a3a483a95c349
+  - name: notes.pdf
+    bytes: 97281
+    sha256: 6cfb36b86f90415eb27a7620c2743eb83339ff68d2c803edaad3e57109427d5e
+  - name: sinho_chewi_notes.pdf
+    bytes: 659728
+    sha256: 6003458ca28e128812e972e58270e3a0ab9aed3d45bed8f8a9edefc2d509c8ca
+- slug: berkeley-stat205a/fall-2024
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 13
+  bytes: 102369
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat205a/fall-2024.git
+  branch: main
+  commit: 0daa2bb40a1269b6c951b118a1196ccff8761fa5
+  restorable: upstream
+- slug: berkeley-stat205b/aldous-legacy
+  material: course
+  licence: unresolved
+  holds: material
+  files: 14
+  bytes: 7123462
+  fetched: '2026-09-13'
+  kind: files
+  base: https://www.stat.berkeley.edu/~aldous/205B/
+  mirrors_upstream: true
+  restorable: upstream
+  contents:
+  - name: 511.pdf
+    bytes: 865811
+    sha256: 2649ce3eea83c43fda2e3c1fe7b1b64effae24b916d808cc61432467c4f7dc2c
+  - name: DurrettTOC.html
+    bytes: 29250
+    sha256: 6e0cc94e6d693e2672bdc265eae8a7d6860eb8bdb81bce09f7e2bcb9729c4d6a
+  - name: MC_lec.pdf
+    bytes: 72869
+    sha256: 763b0228e96e33c4ce23e2b768fc050103ba6449550d7455deb0d557b2c9e500
+  - name: austin_arrays.pdf
+    bytes: 371422
+    sha256: 092c61622652a312bf0b3a8596be1cd54070627844ef017e0548fcbbe64f71f4
+  - name: bmbook.pdf
+    bytes: 2877122
+    sha256: 97adddc80d108f3a7b51f077625034e8e5b96449a983b081ce10277f1f32df3f
+  - name: book.html
+    bytes: 3484
+    sha256: e48e53831c7b76c22dd4fc13a2b301f7c05e54b7ff671480e5f4f6ad3bc2e064
+  - name: chewi_notes.pdf
+    bytes: 644028
+    sha256: a20ea8ff8e35178e79e351d29ed169729de27507521d93fa9b035ea785431b6f
+  - name: entropy_chapter.pdf
+    bytes: 591623
+    sha256: c8e5c7b87ea221a4887b656b9351722b1bee5da3ca11e98fc6a02806b2a745a9
+  - name: homework.html
+    bytes: 1066
+    sha256: f8db583f39a222e6f2d8d741868bda11a5e031f04b856273e2d56d207d462ccc
+  - name: index.html
+    bytes: 9563
+    sha256: 2ac84d1aeff13a7e874b4de4517a36a51186407335d46f56ac5735e901436b50
+  - name: kernel.pdf
+    bytes: 97281
+    sha256: 6cfb36b86f90415eb27a7620c2743eb83339ff68d2c803edaad3e57109427d5e
+  - name: lecture_1.pdf
+    bytes: 178367
+    sha256: aecab5caca710b6fde140d87e0485b1c66cb7f44e020586337fa70aec2e90583
+  - name: pitman_yor_guide_bm.pdf
+    bytes: 721848
+    sha256: c2028c0e73642a0cb0ef36970f1d61fa10e1ec6e8cd2315016cdbf76d731af3c
+  - name: sinho_chewi_notes.pdf
+    bytes: 659728
+    sha256: 6003458ca28e128812e972e58270e3a0ab9aed3d45bed8f8a9edefc2d509c8ca
+- slug: berkeley-stat205b/spring-2026
+  material: course
+  licence: CC BY 4.0
+  holds: unclear
+  files: 26
+  bytes: 398842
+  fetched: '2026-09-13'
+  licence_file: myst.yml
+  kind: git
+  url: https://github.com/berkeley-stat205b/spring-2026.git
+  branch: main
+  commit: db22baac43fb4c39112acd706940c72e2deccac4
+  restorable: upstream
+- slug: berkeley-stat206a/fall-2024
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 13
+  bytes: 104520
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat206a/fall-2024.git
+  branch: main
+  commit: 67b33919409b2507b48465b8d9e92b11fb41a983
+  restorable: upstream
+- slug: berkeley-stat206b/spring-2025
+  material: course
+  licence: CC BY 4.0
+  holds: scaffolding
+  files: 15
+  bytes: 352515
+  fetched: '2026-09-13'
+  licence_file: myst.yml
+  kind: git
+  url: https://github.com/berkeley-stat206b/spring-2025.git
+  branch: main
+  commit: 010df60fbc31daa6fbb19503f12d1b45ff8d8e6d
+  restorable: upstream
+- slug: berkeley-stat206b/spring-2026
+  material: course
+  licence: CC BY 4.0
+  holds: unclear
+  files: 28
+  bytes: 411766
+  fetched: '2026-09-13'
+  licence_file: myst.yml
+  kind: git
+  url: https://github.com/berkeley-stat206b/spring-2026.git
+  branch: main
+  commit: 3f3ba771e972d8544e021243999531ad753161b9
+  restorable: upstream
+- slug: berkeley-stat210a/fall-2024
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 184
+  bytes: 203703029
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat210a/fall-2024.git
+  branch: main
+  commit: 812543bde50398a54db3044bf8ba7120189a4dfa
+  restorable: upstream
+- slug: berkeley-stat210a/fall-2025
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 243
+  bytes: 129779266
+  fetched: '2026-09-13'
+  licence_file: license.html
+  kind: git
+  url: https://github.com/berkeley-stat210a/fall-2025.git
+  branch: gh-pages
+  commit: 5eb849a4924c34eb73e098cdfc812ffa8d806501
+  restorable: upstream
+- slug: berkeley-stat210a/fall-2026
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 135
+  bytes: 113488539
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat210a/fall-2026.git
+  branch: main
+  commit: 7dc8f80da94dff74532d9e3923afdb16a255262d
+  restorable: upstream
+- slug: berkeley-stat210b/spring-2025
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 13
+  bytes: 200325
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat210b/spring-2025.git
+  branch: main
+  commit: 6a725bda2894de573659dd9ae38e3ca1b5cb41d5
+  restorable: upstream
+- slug: berkeley-stat230a/spring-2025
+  material: course
+  licence: CC BY 4.0
+  holds: scaffolding
+  files: 21
+  bytes: 587816
+  fetched: '2026-09-13'
+  licence_file: myst.yml
+  kind: git
+  url: https://github.com/berkeley-stat230a/spring-2025.git
+  branch: main
+  commit: e876671afc2665ae79c2a5263b03c3377f6e2836
+  restorable: upstream
+- slug: berkeley-stat230a/spring-2026
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 15
+  bytes: 108971
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat230a/spring-2026.git
+  branch: main
+  commit: 3999c62f8688b734d0aebe5759554705ed20fd3e
+  restorable: upstream
+- slug: berkeley-stat243/fall-2024
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 209
+  bytes: 20238470
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat243/fall-2024.git
+  branch: main
+  commit: 9c62305d05fca31df0d9c6a3b68b350ad8722fee
+  restorable: upstream
+- slug: berkeley-stat243/fall-2025
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 232
+  bytes: 20426933
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat243/fall-2025.git
+  branch: main
+  commit: 035a19ebd7ab88cffca907cade6d40212d575a1f
+  restorable: upstream
+- slug: berkeley-stat243/fall-2026
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 54
+  bytes: 6953881
+  fetched: '2026-09-13'
+  licence_file: license.qmd
+  kind: git
+  url: https://github.com/berkeley-stat243/fall-2026.git
+  branch: main
+  commit: c74395ec9c420005c80bbcc5f315729aaee3dc32
+  restorable: upstream
+- slug: berkeley-stat243/stat243-fall-2014
+  material: course
+  licence: unresolved
+  holds: material
+  files: 172
+  bytes: 40820269
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/berkeley-stat243/stat243-fall-2014.git
+  branch: master
+  commit: 49fcee4ef42342d81d010e586b69d92a94bbb12f
+  restorable: upstream
+- slug: berkeley-stat243/stat243-fall-2015
+  material: course
+  licence: unresolved
+  holds: material
+  files: 121
+  bytes: 26636703
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/berkeley-stat243/stat243-fall-2015.git
+  branch: master
+  commit: ee3c3c2c523a96eefceddf8703d4938396730993
+  restorable: upstream
+- slug: berkeley-stat243/stat243-fall-2017
+  material: course
+  licence: unresolved
+  holds: material
+  files: 122
+  bytes: 18517940
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/berkeley-stat243/stat243-fall-2017.git
+  branch: master
+  commit: 0e9c7fe58194834b0d43b3dbf152d28a37044d05
+  restorable: upstream
+- slug: berkeley-stat243/stat243-fall-2018
+  material: course
+  licence: unresolved
+  holds: material
+  files: 127
+  bytes: 30436577
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/berkeley-stat243/stat243-fall-2018.git
+  branch: master
+  commit: be0e210baad11c83cecdb23dcb9e91f609bc536a
+  restorable: upstream
+- slug: berkeley-stat243/stat243-fall-2019
+  material: course
+  licence: unresolved
+  holds: material
+  files: 187
+  bytes: 53690431
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/berkeley-stat243/stat243-fall-2019.git
+  branch: master
+  commit: b2795324dec367a50f578b01c67d907994ff40f5
+  restorable: upstream
+- slug: berkeley-stat243/stat243-fall-2020
+  material: course
+  licence: unresolved
+  holds: material
+  files: 159
+  bytes: 25973229
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/berkeley-stat243/stat243-fall-2020.git
+  branch: master
+  commit: fd024cc8537586f4869f79be1492009acfe62d76
+  restorable: upstream
+- slug: berkeley-stat243/stat243-fall-2021
+  material: course
+  licence: CC0-1.0
+  holds: material
+  files: 143
+  bytes: 25753469
+  fetched: '2026-09-13'
+  licence_file: LICENSE
+  kind: git
+  url: https://github.com/berkeley-stat243/stat243-fall-2021.git
+  branch: main
+  commit: c918dcc56a197cc539e270f1f7d076010b175c52
+  restorable: upstream
+- slug: berkeley-stat243/stat243-fall-2022
+  material: course
+  licence: unresolved
+  holds: material
+  files: 212
+  bytes: 19767727
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/berkeley-stat243/stat243-fall-2022.git
+  branch: main
+  commit: 34dee34760386ed7a0ea4f1fd1c9e7d088e637ff
+  restorable: upstream
+- slug: berkeley-stat243/stat243-fall-2023
+  material: course
+  licence: BSD-3-Clause
+  holds: material
+  files: 295
+  bytes: 24501006
+  fetched: '2026-09-13'
+  licence_file: LICENSE
+  kind: git
+  url: https://github.com/berkeley-stat243/stat243-fall-2023.git
+  branch: main
+  commit: 14ac5335a61c8e78d9c36ec381d606a22cb95bf9
+  restorable: upstream
+- slug: degroot-schervish
+  material: book
+  licence: unresolved
+  holds: scaffolding
+  files: 2
+  bytes: 6432356
+  fetched: '2026-09-13'
+  kind: files
+  base: null
+  restorable: never
+  contents:
+  - name: _manifest.csv
+    bytes: 148
+    sha256: c357e5daed5ec6762aa858002e7754d88904f2a769ccfd937741560493c2546f
+  - name: book.pdf
+    bytes: 6432208
+    sha256: 89a9c7538df5945fda47a93c8d1b820fcf29de69ff9781ea044022c2eadbd470
+  note: book PDF, added by hand
+- slug: gtpb-psls20
+  material: course
+  licence: CC BY 4.0
+  holds: material
+  files: 125
+  bytes: 139534741
+  fetched: '2026-09-13'
+  licence_file: License.md
+  kind: git
+  url: https://github.com/GTPB/PSLS20.git
+  branch: master
+  commit: 55acd654e639f1d5297dc0f2e46d8fd6855b5bad
+  restorable: upstream
+- slug: ocw-6041sc
+  material: course
+  licence: CC BY-NC-SA 4.0
+  holds: material
+  files: 402
+  bytes: 80416757
+  fetched: '2026-09-13'
+  kind: files
+  base: https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/
+  restorable: upstream
+  contents:
+  - name: _manifest.csv
+    bytes: 48490
+    sha256: e105aa9ec16e5df9ba1139406e8b5dc12db106fae2f163ace1d7fa6a02d7ee69
+  - name: exams/01-exam-quiz01-f09.pdf
+    bytes: 820183
+    sha256: 088586379ac3833a5ecc8b6703753c6f75d84e270ddb5385b1dd0521c9509b6f
+  - name: exams/01-exam-quiz01-revi.pdf
+    bytes: 248218
+    sha256: d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65
+  - name: exams/01-exam-quiz01-s09.pdf
+    bytes: 205865
+    sha256: 45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68
+  - name: exams/01-exam.pdf
+    bytes: 326870
+    sha256: b91fb74fb927b08e8a48f70aad7c7fe82350f7ac02e7bf9c9a5946d48707d19f
+  - name: exams/02-exam-quiz02-f09.pdf
+    bytes: 762308
+    sha256: a9483f28660eb90dc3c90871288490baf6f7607241f45b71c48939fdbb34bb64
+  - name: exams/02-exam-quiz02-revi.pdf
+    bytes: 125890
+    sha256: 3cc178501de98ce93d2843d57676dc41bee19177b4494525ccec7ba9bd983436
+  - name: exams/02-exam-quiz02-s08.pdf
+    bytes: 617379
+    sha256: 489e47f5ac9f591b35f31b350e3d55ffe45849ffc09f67d27819955872124ad6
+  - name: exams/02-exam.pdf
+    bytes: 624870
+    sha256: 0ba88ae1755721d550fc6800e55eb2bd346df69466604d338da5ca11f7a163a6
+  - name: exams/final-exam.pdf
+    bytes: 745004
+    sha256: 8747e270a0895db8c938e5b47837a7d920c0571d52463b006479b1c374fb6b82
+  - name: exams/final-f09-exam.pdf
+    bytes: 720413
+    sha256: 18aeb6fee252abaf5bc36b912b31faa1732ae58881406512553989c1291d8b3a
+  - name: exams/final-s09-exam.pdf
+    bytes: 687321
+    sha256: 91545b554c10a73f8bfa13494ff0dc878533db462e37e37cc4a86051523acbf6
+  - name: lectures/01-captions.srt
+    bytes: 77066
+    sha256: a44373cd52aff72baf2479268189cfee625ad07be84e11232c53d4c39a743753
+  - name: lectures/01-captions.vtt
+    bytes: 72634
+    sha256: 05f56af0e0da508262c89576be326d5c47805e71a95da5606125b04bea1f694a
+  - name: lectures/01-slides.pdf
+    bytes: 613739
+    sha256: d9538a403bd0390f54f3f1c6edec12a49777821facb459f1e6004744fe5498b0
+  - name: lectures/01-transcript.pdf
+    bytes: 639684
+    sha256: 68cb35862ae70d22f5332b3cc24f20ebb74fca46fd2867584f634ce354962ea0
+  - name: lectures/02-captions.srt
+    bytes: 74030
+    sha256: b8abf751ca3309eb9accd8f23f768aad789441dee412f644758da22d4a636656
+  - name: lectures/02-captions.vtt
+    bytes: 69459
+    sha256: b49730dab0b6329023e4a0811066bebfe77b721573af95ee9c0fb68dc78bc328
+  - name: lectures/02-slides.pdf
+    bytes: 235674
+    sha256: 261a03813dbf289eb81dd78ce487fba332958ec5502526a7843df2a2de16ef52
+  - name: lectures/02-transcript.pdf
+    bytes: 630438
+    sha256: 736313a77455ff3541a68c43d887c91f09f80d0ae0aba3dcd1a9680dfbf4a92f
+  - name: lectures/03-captions.srt
+    bytes: 67126
+    sha256: 898d967b5c9f7994ac30827853263c2c0c3d4d153e707ef7e08ede4107a14afb
+  - name: lectures/03-captions.vtt
+    bytes: 62772
+    sha256: 9df533ca639ea04892b979edf12f839b546be1fcce14ea72dde19aa4372427bd
+  - name: lectures/03-slides.pdf
+    bytes: 175559
+    sha256: 2ac46c0ef60bc554acfce65eaf5a43e0b784f0288774aff62112125ef5ff7c0a
+  - name: lectures/03-transcript.pdf
+    bytes: 571458
+    sha256: 4736412c6d572e8e1354c539811c9320419dac3a80dd172254c370d59f382c50
+  - name: lectures/04-captions.srt
+    bytes: 68421
+    sha256: c2a01974fa2d69fae317a9b22db839f3c6fc70a9342d72b151dcd7fc8f662da0
+  - name: lectures/04-captions.vtt
+    bytes: 63707
+    sha256: f63b8a27ea1e2fe01dfaf145569ac5da6c9c3ed394849dd64ee00bdecdf172bd
+  - name: lectures/04-slides.pdf
+    bytes: 158682
+    sha256: 512a15facda793bb10ac54b55f7ad0c15b1a3dbf6ac2f0e89d8b458f1ab5737f
+  - name: lectures/04-transcript.pdf
+    bytes: 573877
+    sha256: 322a3cd241e466d9804274f21c7b4099aa4df7bf2912399427a09c454f2bc9d1
+  - name: lectures/05-captions.srt
+    bytes: 71605
+    sha256: 395aefb05efbfb6693b05e0d6b9d59e425ff5d39b901b11ccadb489143120e30
+  - name: lectures/05-captions.vtt
+    bytes: 67186
+    sha256: 0b667ca4c9f9f4e7d290d2ff1e18ba406736e346d59c49020fb51041dd5f2355
+  - name: lectures/05-slides.pdf
+    bytes: 183824
+    sha256: c7a75287b315b88c7047b447d71bf5fe8e2ddfe721fe89dd2f56e04aefcac54d
+  - name: lectures/05-transcript.pdf
+    bytes: 576011
+    sha256: 78f563aed8ba94b7094459654732e74fd7c96037e47da60efb2f2f2c82aecbbf
+  - name: lectures/06-captions.srt
+    bytes: 71446
+    sha256: 5e9a1000cef63dbb925374bb1b49a4b2b9dfab5f5f1d00d74cfe861331419ae6
+  - name: lectures/06-captions.vtt
+    bytes: 67164
+    sha256: 7b7aeda98d6fdf81f2ab28781f332369f0691dff75cec152380b9e79fb3ca479
+  - name: lectures/06-slides.pdf
+    bytes: 169127
+    sha256: a2adfd90bc3f9e5ceccef851fd5d8b922b7099b37fa1786fbeb6ba039e0a4dfb
+  - name: lectures/06-transcript.pdf
+    bytes: 577002
+    sha256: 0f01d1a16c84e18e644ad2006177a740242d24117967fbf1964943a30601c938
+  - name: lectures/07-captions.srt
+    bytes: 72214
+    sha256: 8ec278fac2b509eb77e232b800b9a89f6e6241d542f603ff2a7d5a09e52b5004
+  - name: lectures/07-captions.vtt
+    bytes: 67810
+    sha256: 4b803b22d57c342383f22dcb11426942bef836f01e94839d7c65946f390d4b28
+  - name: lectures/07-slides.pdf
+    bytes: 141674
+    sha256: 03f0d791603a0a95d26de4f99840863cbd0b8dab2d351d7f65c36419accedaad
+  - name: lectures/07-transcript.pdf
+    bytes: 573444
+    sha256: 16f42c834a064b884b66da57e6b4b6761d4dda57490e052f5d34254ec918cc78
+  - name: lectures/08-captions.srt
+    bytes: 73752
+    sha256: fbbc4f1bde800a81850d382da5071c05e49fb5abb07f358d235971181658b6b8
+  - name: lectures/08-captions.vtt
+    bytes: 69402
+    sha256: 1a99b3f9c69f32e44915a34d5d1af14ba17cc1f1d93555c05ff799fbd357bf24
+  - name: lectures/08-slides.pdf
+    bytes: 252072
+    sha256: e3bf20b5aaa40c0c4742254f74de3f655957099beb6113d44ed6d668134d43c7
+  - name: lectures/08-transcript.pdf
+    bytes: 578882
+    sha256: 555484deffb58925967c3aa139b97be4e2142080a6241231d1a1792be7f14766
+  - name: lectures/09-captions.srt
+    bytes: 72831
+    sha256: f6986ba996f791ada1490cd753889c438794bb282e54a8915198d939009f6d62
+  - name: lectures/09-captions.vtt
+    bytes: 68289
+    sha256: 9f96fbd575a2c1f883ae1f08b11e72fbd508c8599110f7614e8ee95feb3b308d
+  - name: lectures/09-slides.pdf
+    bytes: 478305
+    sha256: 79f92c77476b3cff4cba4bd215c132f166a1e0b820ef44b806479be089e9706a
+  - name: lectures/09-transcript.pdf
+    bytes: 576405
+    sha256: a3cb876b01ee55a3735ce2772acc9d50f6489638d878deccd7c208c4110a43c2
+  - name: lectures/10-captions.srt
+    bytes: 66755
+    sha256: 2b894d8c40121bdfbf5dcb0e2726466cc6c0bad8906491c0b4b61adc81932210
+  - name: lectures/10-captions.vtt
+    bytes: 62235
+    sha256: c202c5bc1fd3f0ba1da0c7721000fadccbc7a8d045a483b99014135487021b9a
+  - name: lectures/10-slides.pdf
+    bytes: 152095
+    sha256: 21687507c336f0bb803123e15acd48bfc5f34d11493d6fbdd9abecffa62860d2
+  - name: lectures/10-transcript.pdf
+    bytes: 571545
+    sha256: 28aa143023df36838a2255bfddb535a88966b592f0cd709f583d0af6353219da
+  - name: lectures/11-captions.srt
+    bytes: 71238
+    sha256: 79ecdf4bbc814da4dcab4515750bcab0c6a73ed021f6814a331e7cdb58f3850b
+  - name: lectures/11-captions.vtt
+    bytes: 66236
+    sha256: 6a7cd7685a8984d11774811637adac2bfa0ceb72d6e169516499fab9c0e90b65
+  - name: lectures/11-slides.pdf
+    bytes: 179383
+    sha256: c29c9d6f96aa85e215d850a7981d15330f4e9cee5896dad85df142426d0ee3d7
+  - name: lectures/11-transcript.pdf
+    bytes: 577782
+    sha256: 7c5253bf4fe7f1a541834c28f1f7b46e6087ffcb1e24412d557927366b11110a
+  - name: lectures/12-captions.srt
+    bytes: 68671
+    sha256: e24296d59ad2fde3e8f7c69aed688a28d42e92fee1b3f371b47bd9306d8ea234
+  - name: lectures/12-captions.vtt
+    bytes: 64632
+    sha256: 6deafe9db66f5b8b63a7d925eeb3fd1fe261d79f8ff3be92853f234e7264247a
+  - name: lectures/12-slides-lec12bonvid.pdf
+    bytes: 134017
+    sha256: af2b840ccddec764f90779184d1616333212fd9a378ac3376b2e7bb3b3f4ee38
+  - name: lectures/12-slides.pdf
+    bytes: 143551
+    sha256: f02657ecf841a0cd82824a8fb8888758dda2552897c15538dfe8128f45432ad9
+  - name: lectures/12-transcript.pdf
+    bytes: 572592
+    sha256: 9b980424a233aaedaa6846037f0bccea14195bf0b2e047b6613b8055749e7f0d
+  - name: lectures/13-captions.srt
+    bytes: 70456
+    sha256: db7161728dd35c3f941f1499217475658f583060498eed93b1064c88abfc2794
+  - name: lectures/13-captions.vtt
+    bytes: 65751
+    sha256: e59c7c84e99ea299015e49da4f01b8817a0516e85440ef3e4849275fd020bb1f
+  - name: lectures/13-slides.pdf
+    bytes: 363075
+    sha256: 72d07b2f66b85aa02ddc966587e34199bdd6ee39fd7e1f21c31677c936233693
+  - name: lectures/13-transcript.pdf
+    bytes: 573642
+    sha256: 88d2bb5f55022796fd6cf630f7a0da8d2d9d47cc31dba5d6db64c90879c2a5d3
+  - name: lectures/14-captions.srt
+    bytes: 73683
+    sha256: c731e2ebb50fcf8e0c6994c40e605577b965047a8b3f53f296b23e6f7acc6eec
+  - name: lectures/14-captions.vtt
+    bytes: 68848
+    sha256: 056e36dd99a7d8f83e329d461fd77158e619d72d5af63d678e498796049c5b92
+  - name: lectures/14-slides.pdf
+    bytes: 488694
+    sha256: e720fdd97b41ea19e55f55911d8a5ee468b49fc9bdae587c2d616d53a37c7ca5
+  - name: lectures/14-transcript.pdf
+    bytes: 576941
+    sha256: 26ca9c15f9275d9b2f742f3a52ca3be016131be9f9463280df61468b228ce467
+  - name: lectures/15-captions.srt
+    bytes: 71765
+    sha256: 9691878769c846ce2bc70fb64d1835846c4efdcbbd81eb77ed59a203c6bda926
+  - name: lectures/15-captions.vtt
+    bytes: 67566
+    sha256: 0c427846a886d9fd01d7e07ebe669ccb591e5e9673b0f81cdef5af29458d0d3b
+  - name: lectures/15-slides.pdf
+    bytes: 371106
+    sha256: 73d60b3aa3a9e891432b9e3d9962130d2b1f30d5afb87efd4c7c1e96edcf0d18
+  - name: lectures/15-transcript.pdf
+    bytes: 573984
+    sha256: 95f550ddb03b854aa3d836cca654daf9fc99de048c7a6c53541f399db9e110d4
+  - name: lectures/16-captions.srt
+    bytes: 73822
+    sha256: 951b8962c613b4d7bf7974bd48b5f95bd4381bb52b2ffd5d6336a3d028c68e5f
+  - name: lectures/16-captions.vtt
+    bytes: 69389
+    sha256: 0d09cfbd1922ed1d971220208788f8b69c2ebf2458df524adc4afdbd167bd4ca
+  - name: lectures/16-slides.pdf
+    bytes: 181295
+    sha256: 9537e6b6c9a86bd566b8a31faa0d9c920829132571a5631d78aada9c94c4ca1b
+  - name: lectures/16-transcript.pdf
+    bytes: 574656
+    sha256: 8f8d1c598ed5853d58511e558f19820f53a310c6a70dc096764860b212bce2e6
+  - name: lectures/17-captions.srt
+    bytes: 73270
+    sha256: 988d83ed58c8d1e0a0e4a9dbdb8a2fa7fb9fac71d6de32c42d442d7b466931e7
+  - name: lectures/17-captions.vtt
+    bytes: 68883
+    sha256: 8cbc7c5e54ce292f655210d9bd85e9430ae35411106dad324a7d25eda09ac90f
+  - name: lectures/17-slides.pdf
+    bytes: 367542
+    sha256: a018c4eda122d076168c1167a9ae9f280a2cabe5248e7cc5b826f38e270fac7d
+  - name: lectures/17-transcript.pdf
+    bytes: 576378
+    sha256: 1249281e6cfea9939b7a85c914c03bb9077fa695e0970a1f5e89a6f8db25c4a5
+  - name: lectures/18-captions.srt
+    bytes: 72019
+    sha256: 188e95cd2dbed2b19c3dc9a97ef0c88d1d6d693996df5e14d6f522f2399def9a
+  - name: lectures/18-captions.vtt
+    bytes: 67295
+    sha256: cab8c6f43ca1b2f497e4cbaae38f4c0a9c35a881c45a8023d47a9d6d3009a264
+  - name: lectures/18-slides.pdf
+    bytes: 269280
+    sha256: 1372754e8d112e1f39563da89fa67afab120c9206a529ea8817d9b047dcfdc76
+  - name: lectures/18-transcript.pdf
+    bytes: 573978
+    sha256: c86b0ffe4fa329a628486f9e45b6cb7badeea57409cc03c4cc9e2d630f603090
+  - name: lectures/19-captions.srt
+    bytes: 68176
+    sha256: d9ccb4c973a2a3df23c67a21fcae76856310355c66d74b5da94b2d9b59d0f7d0
+  - name: lectures/19-captions.vtt
+    bytes: 63874
+    sha256: b1f27373830c96190d688c7200bfbcf42ec3ee0b85b4d1a3f40c3859e3a847e7
+  - name: lectures/19-slides.pdf
+    bytes: 159368
+    sha256: 0c7585c432d8ec04c19134c707dde42a6cc5c85bfaf4bf2f510035a452ad9be2
+  - name: lectures/19-transcript.pdf
+    bytes: 572755
+    sha256: cd9e6adfcec6471ebb9ea2a43b904ebac85cfa5e69ebd7f0bdd5ffd6b07d07d1
+  - name: lectures/20-captions.srt
+    bytes: 66318
+    sha256: 432057dcbfd542f85450c71c9c6d394b68566a31698b5508abb0b62e47f6e165
+  - name: lectures/20-captions.vtt
+    bytes: 61834
+    sha256: c32583d4bbe6ff5829b5d8d93b4c769e6ed074007e0990aceaf0d0da46effc0b
+  - name: lectures/20-slides.pdf
+    bytes: 190118
+    sha256: cb2bdd06c65497a353d7b3900bb09be3d325096525725839dc2898a159e7514c
+  - name: lectures/20-transcript.pdf
+    bytes: 572468
+    sha256: b4e5fcf082929ec58be7c223c796620ab88b60a7942c8cc9a9cdc32b74a8983f
+  - name: lectures/21-captions.srt
+    bytes: 69334
+    sha256: 3e1ad5ffa1b82b2db8fe1ce6b9777193d6879808463581bdfbc870b3af61e7dd
+  - name: lectures/21-captions.vtt
+    bytes: 65063
+    sha256: cd275a5026b292b8e89a1ee4d6500bc3e1eb68aa39bcc5f3298ca8b14ae6d560
+  - name: lectures/21-slides.pdf
+    bytes: 647291
+    sha256: f3caff9449b7db73157cd8ec5c62f7619de9792e3ec663dee56cca7d29e46202
+  - name: lectures/21-transcript.pdf
+    bytes: 576448
+    sha256: 4591f7d99aa179e93088ab487918c7b8ec14a60cf5fa092bce693634bd6d1d03
+  - name: lectures/22-captions.srt
+    bytes: 71252
+    sha256: 92607d8581082560e0c7939d37d8b93af4aaa76baeee90459b632d8d55cac3d6
+  - name: lectures/22-captions.vtt
+    bytes: 66683
+    sha256: 792029936376a7a72d7c987951f3502c7ccd35445adaad18e2e1c60f5b39b17d
+  - name: lectures/22-slides.pdf
+    bytes: 722460
+    sha256: c162b0589ae13b1d447b057e7e3e430dc3d15895c0ac45e5241c63b32d7572a2
+  - name: lectures/22-transcript.pdf
+    bytes: 576021
+    sha256: e42d1d92001493d829e910590ec61f41f5bb58716951d6aec9dafb8595836e33
+  - name: lectures/23-captions.srt
+    bytes: 74419
+    sha256: d595dc72bd8439975df700478ddcc6a73ea63f136c2e3ddc6d7c0e8dc868be4a
+  - name: lectures/23-captions.vtt
+    bytes: 70037
+    sha256: a8b1dbec32f38c3f6decf5a8a870df7936f36643e9563c27bfaaf2ac30b9bbff
+  - name: lectures/23-slides.pdf
+    bytes: 254598
+    sha256: fc987ef25c1610cd8ad72ef8112c4e44dd543f63198f63ca952bee24dfb68a81
+  - name: lectures/23-transcript.pdf
+    bytes: 581867
+    sha256: bb4b783c90863f8e0f721b72ea218c4325aa2d1ab9d426d6ed21a322aecdb4dd
+  - name: lectures/24-captions.srt
+    bytes: 70006
+    sha256: 1fca8702d82b9d7a5fd5e3c4ff3f008aff6c358b432daa0e897f4e9ec6aa2e56
+  - name: lectures/24-captions.vtt
+    bytes: 66000
+    sha256: 6e8a83abaa54d2d431838f87b183cbfceefc759a6b4e32792f239bf0cfc7d051
+  - name: lectures/24-slides.pdf
+    bytes: 418343
+    sha256: d0824c4fa52d3170cca60e7ddc2fd9b59b96d9a6a6a3e0332eb9f12ff47284ab
+  - name: lectures/24-transcript.pdf
+    bytes: 575939
+    sha256: 892fa0ac1abbc218cee1468d3555973282390618f0e82590e054356ac1115303
+  - name: lectures/25-captions.srt
+    bytes: 72808
+    sha256: 6110879409c7fdb0f17bb2c985453467d65095014a18fc6b9956b0746c05ab9a
+  - name: lectures/25-captions.vtt
+    bytes: 68617
+    sha256: e2050eec977f7bb30c72d7ff40b4236659266a5f5e4e6af2c727a914aa498d9e
+  - name: lectures/25-slides.pdf
+    bytes: 183888
+    sha256: bde8f5ceaf2182e5491c040da09248d5e39e6a3767b69e3bbaf6f490fe0af3c8
+  - name: lectures/25-transcript.pdf
+    bytes: 635269
+    sha256: 0e7c51bf0ae1f62dbd2ffa19d3afc2e367edf74afbecdf5e3a1031712c588d06
+  - name: other/edit2-take2-no13-ch1-hypergeometicprobabilities-slides.pdf
+    bytes: 531948
+    sha256: 8a7b5fd6c2161e51728448b232f1204766aabea70d2c0f99e97e247bf74f8b18
+  - name: psets/01-questions.pdf
+    bytes: 131618
+    sha256: 32bb16c9e0914dfa08d90cb83f79bc1a53605b3540467567cf71b944d303814a
+  - name: psets/02-questions.pdf
+    bytes: 78756
+    sha256: 79df864e03bf17368ce87d28b74f69f6d7b04358a7c615f7c8b9b5aef9d9df11
+  - name: psets/03-questions.pdf
+    bytes: 77932
+    sha256: d51bd1f22ff5d51a9a8518b5e358363eb2696969f9c11bd8b7183b0f2e94ffed
+  - name: psets/04-questions.pdf
+    bytes: 115202
+    sha256: 25334ba9c8368585e624d66841f58124a2d1d8e109bffe1793c7beebc0e99ebc
+  - name: psets/05-questions.pdf
+    bytes: 94859
+    sha256: b108b449a94e55ad441d51eae236ea720020c301bfc62124943f9ba7f92da2bf
+  - name: psets/06-questions.pdf
+    bytes: 95099
+    sha256: 3843cdab7a7dbad7d456825a49e44e9206e6ac22f2f56bc970d4d218b14c6c5c
+  - name: psets/07-questions.pdf
+    bytes: 95065
+    sha256: 2ddb16c41d57ea5a0e87d96cc8acca1b1aa3a700b7f7a768caf3f07baea41f12
+  - name: psets/08-questions.pdf
+    bytes: 88726
+    sha256: 0496133dee66ed301612532e4d5d8743fad93471a8b90a35441644ea66695251
+  - name: psets/09-questions.pdf
+    bytes: 91487
+    sha256: 4474e5f277bbe7a161aebb6458f6a70cc4342af3cb35dc71ef803cd6ab94f294
+  - name: psets/10-questions.pdf
+    bytes: 92136
+    sha256: a5e12e6fd73aa17e0f26088682feeb2ade69e1da652a7f0cff2c0c9b92689bc7
+  - name: psets/11-questions.pdf
+    bytes: 80299
+    sha256: 95a971db7927842118970c1eb6d45d0313712c934adf758a02e9bc6e1ebece64
+  - name: recitations/01-slides.pdf
+    bytes: 106630
+    sha256: 243f6b65a9d7a0758b09938e533f34d58bd00a89547ad208974364c0a92191d8
+  - name: recitations/02-slides.pdf
+    bytes: 65450
+    sha256: 7bad2fcc8965226bdfd93682b5af5f5fc0678e814caf410e22018418a48b54f4
+  - name: recitations/03-slides.pdf
+    bytes: 96522
+    sha256: 842471965d9ac3708e6aeb723d7f89492ff37cafa61929d0052696b6f3b492ba
+  - name: recitations/04-slides.pdf
+    bytes: 166527
+    sha256: 2f569519bf67be0e45dd91cc47bc0f11fc0cde7c47e384d855974c2f30f999ee
+  - name: recitations/05-slides.pdf
+    bytes: 396256
+    sha256: c80b9e8bfe35c5919aeba192526e4064af5088e502d987639b5660093f7bd929
+  - name: recitations/06-slides.pdf
+    bytes: 78395
+    sha256: b8ee982e3210100a984e50a52661d715eddf51f6f00269b2aab24f40f0b3081c
+  - name: recitations/07-slides.pdf
+    bytes: 79709
+    sha256: 260f30173298449f90507dfcfb484017a2ac1fcd5b5b4b28a7a2bf9e7664624b
+  - name: recitations/08-slides.pdf
+    bytes: 73484
+    sha256: c68c994fb803e610b88908977660ad00aae61f4e655a49288de0786b1afdebc8
+  - name: recitations/09-slides.pdf
+    bytes: 68730
+    sha256: 15cf316716b5a93783bf37317caa7a2b8e8aa0fa2a2026fa5a89c978dda260a6
+  - name: recitations/10-slides.pdf
+    bytes: 77917
+    sha256: 5561ccbf5fda34767611ad63cc082704daf57314d19588ba445b1aca1121c875
+  - name: recitations/11-slides.pdf
+    bytes: 87128
+    sha256: b8a9db95922e228924dac359d72445203dc7f4e18cf11b59d47a6deab3c10bb6
+  - name: recitations/12-slides.pdf
+    bytes: 72127
+    sha256: 51f731324eed8e4a26b4841265cae071e58728f5bafce52d3ee668f7b84bb0b8
+  - name: recitations/13-slides.pdf
+    bytes: 70607
+    sha256: f6660d452008ceb38b20e4215a13e505e7068e851a48a830540ea5e35aac8e8a
+  - name: recitations/14-slides.pdf
+    bytes: 69525
+    sha256: 9b2dc6fd245359e5b83cf9e2ea4ce5a9a55097ff4a44954986fe1753fdfa56f4
+  - name: recitations/15-slides.pdf
+    bytes: 73674
+    sha256: d6baed23d7323462a70fb444bbcb48bdac096b622bda0fbc10b1436763aea102
+  - name: recitations/17-slides.pdf
+    bytes: 76238
+    sha256: 552382d478ac7b3b89f5ad669e0b7aa80eb113d531666136575f873e1536f42b
+  - name: recitations/18-slides.pdf
+    bytes: 73295
+    sha256: fb8320ed0850e3d9fa9b7a63124e08d82b1fdeed033fce27239415665e6022bc
+  - name: recitations/19-slides.pdf
+    bytes: 64633
+    sha256: 5761763b152728a0b9dba2234dbf974230e27a0388aa6a9b3017538b93a9cd44
+  - name: recitations/20-captions-no32-rec20-p2-convgprob1-part-28a-29to-28d-29.srt
+    bytes: 16782
+    sha256: 8ba1a913a729c3146925dd70135637738c2f7a134315e41590603a71f9e70ebb
+  - name: recitations/20-captions-no32-rec20-p2-convgprob1-part-28a-29to-28d-29.vtt
+    bytes: 15685
+    sha256: 1e8598da8bf3d8c2890e7af18acbb68ae0712450bf5631d6c1c06f139e747ca3
+  - name: recitations/20-captions-no32-rec20-p2-convgprob1-part-ef.srt
+    bytes: 6974
+    sha256: e099d15952c31773aaf1f4424098623fad6b7f9b8c2406666ff62d4e659567ef
+  - name: recitations/20-captions-no32-rec20-p2-convgprob1-part-ef.vtt
+    bytes: 6634
+    sha256: 25fb620e8b1c5687854f245069150f286a1ddd102acc8c7afd53fcb9af7fe8f4
+  - name: recitations/20-captions.srt
+    bytes: 9509
+    sha256: 89ca59c0ee72b6227c7010bf8b7e05ee25aa6e210993b8eb60181f357911776e
+  - name: recitations/20-captions.vtt
+    bytes: 9036
+    sha256: d5bbdf4fbc9b70f5e54730609466f919e0b410616f4ea8035fc0f1949ba5b760
+  - name: recitations/20-slides.pdf
+    bytes: 78479
+    sha256: b0661e30643d8566855c21d2853cbad5d6a585f9d06a3d6c2beaf712f85b9f38
+  - name: recitations/20-transcript-no32-rec20-p2-convgprob1-part-28a-29to-28d-29.pdf
+    bytes: 615536
+    sha256: 4e1287e9df11c5421885aea11a683dcef8c2cffcd19e604f9a7a4b26a8d8be4d
+  - name: recitations/20-transcript-no32-rec20-p2-convgprob1-part-ef.pdf
+    bytes: 556331
+    sha256: 81982230274d0d6b5245833e9bb14feb8849f70eec6197c4beb3a938b2076f5d
+  - name: recitations/20-transcript.pdf
+    bytes: 557511
+    sha256: a72cb14e505b1b0ac511f0a5b145f12143422b104005b5e75ecd4f23075c9913
+  - name: recitations/21-captions.srt
+    bytes: 14245
+    sha256: af970cfe2ffb0fcf1ba3a87ab7c78880e1015ffe5d088161ab0f53a29279b7f8
+  - name: recitations/21-captions.vtt
+    bytes: 13428
+    sha256: 67b0fafeadaf57d7eeea70e5886cc6cd3ad93bc064e42d1295d934082b4f0188
+  - name: recitations/21-slides.pdf
+    bytes: 72982
+    sha256: c5671559f7601fc3252f9e57123e8e5aa3c216de03ceff26eb8127d8c7e80517
+  - name: recitations/21-transcript.pdf
+    bytes: 560467
+    sha256: d582fcc32dc9b5f9640042a7827058976ca34026b034092ef498cffb7256ce67
+  - name: recitations/22-slides.pdf
+    bytes: 65783
+    sha256: f015d55b8243eaaa15a9808bba98bf87e16fc6b8db6b38f39c34b1e61bcc03ef
+  - name: recitations/23-slides.pdf
+    bytes: 75397
+    sha256: 37803e6b83b1d4203a9cdaf7706fc315c243ac324604d267206378ec39caedac
+  - name: recitations/24-slides.pdf
+    bytes: 84596
+    sha256: 74c8acdb6439b0ae43e5c2a454e2508abf8b8c243434027f33390d96307ad732
+  - name: solutions/01-solutions-qu01-f09-sol.pdf
+    bytes: 115908
+    sha256: 979e3b94650c44e01b5a6208481c77ce27e4a64d5458fd530c9b70086a2d6729
+  - name: solutions/01-solutions-qu01-s09-sol.pdf
+    bytes: 707027
+    sha256: 28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce
+  - name: solutions/01-solutions-qu01-sol-v2.pdf
+    bytes: 110216
+    sha256: 65c1290c0a98475e6b465a7705e3586978224fcbea51cb24320d245a4d097fdc
+  - name: solutions/01-solutions-qu01-solnew.pdf
+    bytes: 50916
+    sha256: 924223b75867333ced79f51a7cc3d7f3e6bb44bbb1561c030ef79e980d6e07c8
+  - name: solutions/01-solutions-quiz01-sol.pdf
+    bytes: 212042
+    sha256: 92f4e31fd9a73b19e904d8d1945a9e8e484d2f35cf468899ff809b9cbf218f7f
+  - name: solutions/01-solutions-rec01-sol.pdf
+    bytes: 96874
+    sha256: 5addea7c0f40a4bb577db69351232416b1b92254dc3a590caa5b8c9048451277
+  - name: solutions/01-solutions-tut01-sol.pdf
+    bytes: 104732
+    sha256: 9bf1c0160b608c3765d4dd05ff997547c8eae374a4197dfd744e5a210bb8eadd
+  - name: solutions/01-solutions.pdf
+    bytes: 132742
+    sha256: 13647dfd87c988504f649360822aa634f6d3ba0f4cf1bf36fa1d2bd01197da26
+  - name: solutions/02-solutions-qu02-f09-sol.pdf
+    bytes: 604241
+    sha256: 3c810344dc8effd869f651618cc62d05783a6915c3fff3e9444c4b026e367ca5
+  - name: solutions/02-solutions-qu02-s08-sol.pdf
+    bytes: 716333
+    sha256: 630876affaa60feb3ce5bd8882557796428ead89fb7a280d592f6275439314f3
+  - name: solutions/02-solutions-quiz02-sol.pdf
+    bytes: 628163
+    sha256: ac2658c89bd193d23ae88d9782f2a92efd6b5afd345fa65d1a6a33a1e66ad1bf
+  - name: solutions/02-solutions-quiz02-sol2.pdf
+    bytes: 131170
+    sha256: b0442b122811e5f9768f5d44facbdd9614d33e54bf3f106f2305db910993a1f0
+  - name: solutions/02-solutions-rec02-sol.pdf
+    bytes: 86559
+    sha256: ad9a18653049d34de1a3f2c137a9d0daf2067219ecaac6bf14b554c239a3837b
+  - name: solutions/02-solutions-tut02-sol.pdf
+    bytes: 112597
+    sha256: 2d5847a6d17905fb71bbb17418328ffa74172943dcba5a40f556f9e222671b55
+  - name: solutions/02-solutions.pdf
+    bytes: 116627
+    sha256: 795469b53ebebc6a12c4935a4c2a2914d5a947b774d91a83152226b6f8510f29
+  - name: solutions/03-solutions-rec03-sol.pdf
+    bytes: 83970
+    sha256: 141cae6362479114b96649557874aab6dc19ff35e50b970e8e116fe94f4ef76d
+  - name: solutions/03-solutions-tut03-sol.pdf
+    bytes: 82757
+    sha256: ab48279b1eabfe5ae02e3cbbd8ea9d30f221778fb977ca29ffa25199c47ca15c
+  - name: solutions/03-solutions-tut03-sol2.pdf
+    bytes: 104984
+    sha256: e2c93b93780348aa54c768d62ed2b7e1a72b2b215b17d79f52c26d2744b58ab9
+  - name: solutions/03-solutions.pdf
+    bytes: 112419
+    sha256: 96457df0b25b1308d984263f093a55eefc8294091eb73cdffb71839d34bc4d96
+  - name: solutions/04-solutions-rec04-sol.pdf
+    bytes: 150440
+    sha256: 62adb3e0966545844a9bef4cb2dd69c4ac96ac37d5e0cfa62c9b191c867ffea3
+  - name: solutions/04-solutions-tut04-sol.pdf
+    bytes: 68879
+    sha256: 2c6339cf4d91bb5e36b18185a7788e279011bb778ec511a474e5bc0c09514cad
+  - name: solutions/04-solutions.pdf
+    bytes: 137317
+    sha256: 73f1ec8420c9e47806849658eddf099b62b0e1346f187f8a378c51eda32433fd
+  - name: solutions/05-solutions-rec05-sol.pdf
+    bytes: 414030
+    sha256: 9e2ae19d7f625339394f550e3d3c4ba8e43c877c9ab3c3673c92010129fcc9c8
+  - name: solutions/05-solutions-tut05-sol.pdf
+    bytes: 88283
+    sha256: 2191fe10c087c0e56bd8f93737944a59c2c90b3232dd85cdcc0ccc04469b21fe
+  - name: solutions/05-solutions.pdf
+    bytes: 201376
+    sha256: e142b7aa5541653f9869b6e339867e788bc0ab592dfaa947dfee1d855fe1e31d
+  - name: solutions/06-solutions-rec06-sol.pdf
+    bytes: 84932
+    sha256: 810f0b911f15afacb266d5c7dc446726605edd333b34028b291ed0f6d29339c9
+  - name: solutions/06-solutions-tut06-sol.pdf
+    bytes: 100648
+    sha256: 277028490d0e934d4304f8affc9233e94db30aee50b56c304b7ce0112d1ac704
+  - name: solutions/06-solutions.pdf
+    bytes: 115696
+    sha256: 72ce05b14a412a3d92f799053de79502b65c5e5da920ee86a35f24718a6d6313
+  - name: solutions/07-solutions-rec07-sol.pdf
+    bytes: 78494
+    sha256: 7e8fe0820cfebfae4f6b880c030d95727676c9203cdd09daaa4ad11c6a55a850
+  - name: solutions/07-solutions-tut07-sol.pdf
+    bytes: 93014
+    sha256: 0c5bd439579782293187028a8d32d4823c2d4124d6dc919efd34228bd6ebd2db
+  - name: solutions/07-solutions.pdf
+    bytes: 132980
+    sha256: 79c7d8a6ef78a637cd91d78f280cbf83fea5832902100622bfa4a70a2e78f6da
+  - name: solutions/08-solutions-rec08-sol.pdf
+    bytes: 86748
+    sha256: fa110eae7d96ce6f76fa69e74877e4d6bc88c615e5a963b4b222030536f3678f
+  - name: solutions/08-solutions-tut08-sol.pdf
+    bytes: 91120
+    sha256: bead46aa736fd34ce5a978a2c9bc971036d20acd6fc6352363f1e5b891a35702
+  - name: solutions/08-solutions.pdf
+    bytes: 145299
+    sha256: ed251f516c50bbd018ade8b248012422f0308052151cba1f90a14bf88e52fed3
+  - name: solutions/09-solutions-rec09-sol.pdf
+    bytes: 74430
+    sha256: 2b9efab0f7178071a31643504383141412da5e49ff1c649a891d99ed3fcb0ea8
+  - name: solutions/09-solutions-tut09-sol.pdf
+    bytes: 63757
+    sha256: 7464d17e9b7e266d977f3175d457d42211342ca2aef4477e3b23a2f30e54d6ac
+  - name: solutions/09-solutions.pdf
+    bytes: 137306
+    sha256: d84f3d1f0ec1cea3e4088f7714704a2c5b5782478de8ba03c2b77ad4215e62d8
+  - name: solutions/10-solutions-rec10-sol.pdf
+    bytes: 98313
+    sha256: a4965f6129597aa746e6796d08731159ef6f6c0d9d012ce88d1897682580e883
+  - name: solutions/10-solutions-tut10-sol.pdf
+    bytes: 87576
+    sha256: 0f2112badf5cdfd3be502f321a175ece3eaf40977c409df51a10a3c00cdcbbd2
+  - name: solutions/10-solutions.pdf
+    bytes: 132287
+    sha256: 72776cb662a90532c217eadb4550252c0a30303096861c7c8212ba68bfa6ae8b
+  - name: solutions/11-solutions-rec11-sol.pdf
+    bytes: 94368
+    sha256: 98fe9775a526ba70952b4ab407cd852b020fe8b84808620027465d49f5e03634
+  - name: solutions/11-solutions-tut11-sol.pdf
+    bytes: 100085
+    sha256: 977f4d631c910aee77a3f6c89de9feb5c46d938af11054bc842c4af2721233ba
+  - name: solutions/11-solutions.pdf
+    bytes: 151778
+    sha256: 068893b2fc3152c9704f0e28904c6ad73ff6ceda23dd58ca1cd1f28cc671f4dc
+  - name: solutions/12-solutions-rec12-sol.pdf
+    bytes: 134140
+    sha256: eacd40a6af341b5966869cbaa421f76367e83ce492bcaa6d93df0b622d3eed68
+  - name: solutions/12-solutions.pdf
+    bytes: 625819
+    sha256: a2211500c9acb093d28f1246736506ceeb54e3073873ea8d1ad43e0f9b8ab2b9
+  - name: solutions/13-solutions.pdf
+    bytes: 88951
+    sha256: 56158dc47f59b471547ea41aaf5bceaa7980bb9f680dc6452a819168456082ce
+  - name: solutions/14-solutions.pdf
+    bytes: 86405
+    sha256: 8b0d04b4b328cf0c1cfd44e7a0f645cc5a53ecf44ad5b62d9fe5e114b7abf5f0
+  - name: solutions/15-solutions.pdf
+    bytes: 95480
+    sha256: 25735d1f65ade5dc523d749e3b63a4fbfb3bf444cd565680da00606d49cc4da9
+  - name: solutions/17-solutions.pdf
+    bytes: 92544
+    sha256: ec184d128e91caca130ef168410451599b08285ace00a9d5d34c47ef8debe0e4
+  - name: solutions/18-solutions.pdf
+    bytes: 87008
+    sha256: c9c5e36bbb31df8ec68658e34d75b846534ae33f51c7e4a48bbb7b75e0f61c0e
+  - name: solutions/19-solutions.pdf
+    bytes: 133062
+    sha256: 7c43c981cb14bed32c6da230fde70e3e90dc6e13073d04092f2c573e27c4106f
+  - name: solutions/20-solutions.pdf
+    bytes: 91849
+    sha256: d33ac7f213f5bb014a4648f23e1c593d23856cad6a393f4e9a5042b11259dcbb
+  - name: solutions/21-solutions.pdf
+    bytes: 87697
+    sha256: cf521fd7deb38381305a144765fdd7b04ddc0104967731330f7fa52ac6dd648e
+  - name: solutions/22-solutions.pdf
+    bytes: 57762
+    sha256: cfaee7a2da4ba53e3988d3256a48bc9dc6c73a94e5b80a10a01a4495b331bcbe
+  - name: solutions/23-solutions.pdf
+    bytes: 56928
+    sha256: 65ad7a0bdccbdda1cf6683b22c6a8f2a21b7592ff6c76a7a2f5a3bb009ee005a
+  - name: solutions/24-solutions.pdf
+    bytes: 134985
+    sha256: 37e861c6f81a02bc9a33b8a028f68da19767ded6bbe5e836ce18bd210a6be15a
+  - name: solutions/fin-f09-sol-solutions.pdf
+    bytes: 632728
+    sha256: 13e82b9f01f19be6320b59dda388f10e3a99126f2f57771aaec831f662a3c2bf
+  - name: solutions/final-sol-solutions.pdf
+    bytes: 679989
+    sha256: 68cc549091f1f49b9f8a69e5a9e197bf3a4df4b1bd509ca306cce6d3b9041754
+  - name: solutions/finl-s09-sol-solutions.pdf
+    bytes: 729979
+    sha256: 1c95ccd2f9b27c377398b4b246fe636ec37f93d26c3fe17b20ca1631dfa73775
+  - name: transcripts-pdf/04-transcript.pdf
+    bytes: 67398
+    sha256: 4971492e5b42efdc9e03a1a62e872a0a36f9a0e476fe836ec6b6ef0934c0e106
+  - name: transcripts-pdf/19ql-q3l0ga-transcript-transcript.pdf
+    bytes: 65105
+    sha256: 1d60a1224559c1ca94021e85fdcaaf035ce2552f27844df9de1fecc5c2938f52
+  - name: transcripts-pdf/1jdbm9um9xk-transcript-transcript.pdf
+    bytes: 68381
+    sha256: dc1108ab02f5552e78078537778bf874d600b78882ab8df46e0487d805646477
+  - name: transcripts-pdf/3eiio3tw7uq-transcript-transcript.pdf
+    bytes: 65330
+    sha256: 91b886dd26c9cc0fb8a860a673ce647a2b666baec6590586c5e056d096243ab6
+  - name: transcripts-pdf/3moahplxj6a-transcript-transcript.pdf
+    bytes: 64809
+    sha256: d312d4a118fa89fcacbcbe76b395dc9ec8943482b1717323c657bbde12179ce0
+  - name: transcripts-pdf/4ujc0s8apm4-transcript-transcript.pdf
+    bytes: 71757
+    sha256: b0d22c85b1ca22110eb23628355e7951af246e3f298f3542c0c28dd0056cfabb
+  - name: transcripts-pdf/6ov3pklgw2i-transcript-transcript.pdf
+    bytes: 64707
+    sha256: 53726791e676aab4daf3ce42914f13ae7f68238c271b4acb9f5536429b4a5601
+  - name: transcripts-pdf/cadzxgnauy0-transcript-transcript.pdf
+    bytes: 68704
+    sha256: c366b9edc542fcf7415cb0ccd1a83ccf0190159cc3128a4b20a4679d5151b41c
+  - name: transcripts-pdf/eobhwiekgja-transcript-transcript.pdf
+    bytes: 67207
+    sha256: 7d76f9966d23e7773058508da3cba5c7b029429bc87bd2c9e15c688ec852bd81
+  - name: transcripts-pdf/gmtiaee0ncw-transcript-transcript.pdf
+    bytes: 66055
+    sha256: da22553dd262dd79d2f1e9491e0f7307fe5a7d795ac1365690274bf450b8ed14
+  - name: transcripts-pdf/h-k1w3cfny8-transcript-transcript.pdf
+    bytes: 66745
+    sha256: b0d3b9265e8fec467c69ab48f2a2c7212a8093b87c3808c1b196effc79882d8c
+  - name: transcripts-pdf/himxdwdlek8-transcript-transcript.pdf
+    bytes: 67793
+    sha256: 29ed2be6e5e3a4f66dfc0e66c8a6a7a467070dd1444c63994ed797872b2243c0
+  - name: transcripts-pdf/ikbketooc1y-transcript-transcript.pdf
+    bytes: 67896
+    sha256: a95de1c36fc5885a76cc0906dd71cfcf6e25cfc1b8c6eb1b42fde4920fd85e96
+  - name: transcripts-pdf/j9wzylzcbzs-transcript-transcript.pdf
+    bytes: 72162
+    sha256: 82bdf26756b6b53d5983675305e1fd99e4382c855c9e2e9e601f1250205c2d2e
+  - name: transcripts-pdf/jsqsscywvmc-transcript-transcript.pdf
+    bytes: 67843
+    sha256: 3a2aa407dd4be25e4d766bca9974dab148a15b10918e7f95e188288ca2db23ad
+  - name: transcripts-pdf/mhfn-7ym6to-transcript-transcript.pdf
+    bytes: 70265
+    sha256: f59daf75e156e94aa8cb29853801638f07c5ed9872bc51475adb11f50d3a655c
+  - name: transcripts-pdf/p7a4bje6crk-transcript-transcript.pdf
+    bytes: 64999
+    sha256: 49753147ba509ac75943937b709e9518128b973ffce83b6a982f7466e6c70eba
+  - name: transcripts-pdf/qceoqpwjf4-transcript-transcript.pdf
+    bytes: 69440
+    sha256: c2e1a6543938756f8a86db940f1e388e00c1af80c940b5b6fd750ea68cdfa351
+  - name: transcripts-pdf/ryefusyuep0-transcript-transcript.pdf
+    bytes: 71775
+    sha256: 614eeae701fd29f29fb03724de1977b28f8fa63dd909e107a7e7fbe20246a024
+  - name: transcripts-pdf/tbuhrpfzy0s-transcript-transcript.pdf
+    bytes: 67957
+    sha256: 07f3189844b7b84747ec5fa7b6884a9318ecfdd9808875549e573aff3cf93f83
+  - name: transcripts-pdf/tlutv5v0rme-transcript-transcript.pdf
+    bytes: 69289
+    sha256: 638acef9ac1d7c62637e51305e33698e693a0edbd43ce5d7e213b8605be79678
+  - name: transcripts-pdf/tx7zzd4aeia-transcript-transcript.pdf
+    bytes: 66086
+    sha256: 7fedeac418667a2542544a4402ebfcf40a37f8bbd23fd26d370fe647326e3dc2
+  - name: transcripts-pdf/xsyxaceiklu-transcript-transcript.pdf
+    bytes: 66920
+    sha256: 4dbf21de781c7e4c71047f8292593c8c32cb8702ff91792ca82e4b9760ee5e3f
+  - name: transcripts-pdf/xtnxqjkgkhi-transcript-transcript.pdf
+    bytes: 68004
+    sha256: 75794a75dcb84a416726d7a09233a12d44ddd09c6a1a7a34fed9f0e464345ba2
+  - name: transcripts-pdf/zulmqrvp-pk-transcript-transcript.pdf
+    bytes: 68427
+    sha256: fb773c9188177152541e39c3887101fecbfc4e23b532fe7c115afa2896fa27cb
+  - name: tutorials/01-slides-tut01.pdf
+    bytes: 70456
+    sha256: d2d22d40f539cd19939d7bfa52725d9958a026b3d97d700b2f0868f95b540c08
+  - name: tutorials/01-slides.pdf
+    bytes: 87137
+    sha256: e90dfe2908396aef9a8307ad8a9d30fa62a1cd4065a42f2fdd523a62a428debd
+  - name: tutorials/02-slides-tut02.pdf
+    bytes: 68061
+    sha256: 1cac268b276f275d3f70f7651350ff9c8ab1cdd30449e4f7be50612783c883b6
+  - name: tutorials/02-slides.pdf
+    bytes: 84667
+    sha256: 720236b1ad7131ea2fff4b1a212e9c2be63cf9f5a82a6cd71f69dbadcd9f773b
+  - name: tutorials/03-slides-tut03.pdf
+    bytes: 70618
+    sha256: 8cb5374dd961af0b7aff58ba1f581de29a5441fdbaf6dbe87c802e179930b5d4
+  - name: tutorials/03-slides.pdf
+    bytes: 88116
+    sha256: db4655069edd857faa6609750b6a94344c8ab6f35edc817a6afc9bffa173a680
+  - name: tutorials/04-slides.pdf
+    bytes: 69836
+    sha256: aa09d3f007f02e1ff7cbf05a075aaada38275df181e1e801eda4fd0a4b327db3
+  - name: tutorials/05-slides.pdf
+    bytes: 74574
+    sha256: 0de7eddb0fde16c024b98752a01a7e0974f84fcbf68955d3ebd63e6a4c692a41
+  - name: tutorials/06-slides.pdf
+    bytes: 62601
+    sha256: 03f13e913cb53e4bc0050e60d5b874abbbbad5fbb6504fd7a8abafc625cab08a
+  - name: tutorials/07-slides.pdf
+    bytes: 75827
+    sha256: 5bc15fd1d9f3d417d64e07b5a056ffe35743306ed3b8a54f16f9560b5e2c91e2
+  - name: tutorials/08-slides.pdf
+    bytes: 69101
+    sha256: 6643a120ae20af671b268637b25388b41d7c4b4044e983c9e863abc5df389325
+  - name: tutorials/09-slides.pdf
+    bytes: 72135
+    sha256: 9151dbd63598620ffa712a95f8b64dd0750cdd442fdce662e86365927b21a227
+  - name: tutorials/10-slides.pdf
+    bytes: 71766
+    sha256: 8e997b5fbe70249bb7f11638b941b9186590704f966b39b77fb101133e61fc58
+  - name: tutorials/11-slides.pdf
+    bytes: 73034
+    sha256: 50082179ce5118d7ada8054ccadd5ca8c81cefb33091fd1b085b03a4164cbcad
+  - name: worked-examples/a-chess-tournament-problem-captions.srt
+    bytes: 24772
+    sha256: 11bd7deba0539cab2f5a35b4c907426ee4b4b730f732f73ecc9459f60b8bfaf4
+  - name: worked-examples/a-chess-tournament-problem-captions.vtt
+    bytes: 23421
+    sha256: bdf8e166d2e26478c2a9fd58fa836912b9d7e169eb198337714acd0b5db7d620
+  - name: worked-examples/a-chess-tournament-problem-transcript-2.pdf
+    bytes: 569471
+    sha256: e12ba367da6a53dd69158b0433f03c3104fb1166a08dafda859820af10e0ee04
+  - name: worked-examples/a-chess-tournament-problem-transcript.pdf
+    bytes: 543861
+    sha256: 517f347e9359bb9a56e23e2d0fff2622c71718755a0e4d46e33c9cef7fe8a408
+  - name: worked-examples/a-coin-with-random-bias-captions.srt
+    bytes: 28611
+    sha256: 54164d77ad0750fc426f852ddb3b68a8ec0599b8367d272f567ee960d2b9fa97
+  - name: worked-examples/a-coin-with-random-bias-captions.vtt
+    bytes: 26521
+    sha256: 13bf796bb2b7fa22df3d31ea56473b09eef0b71334973017ca6a985383860977
+  - name: worked-examples/a-coin-with-random-bias-transcript.pdf
+    bytes: 547596
+    sha256: 1fdacf9af2e22d712a036a943e140f210216d8f380ea1ce10382138f2425d677
+  - name: worked-examples/an-inference-example-captions.srt
+    bytes: 34575
+    sha256: 16fb4bd3d8def7d71b9c8555e868c6c407669a3654752248ee6e399e6ec9fae8
+  - name: worked-examples/an-inference-example-captions.vtt
+    bytes: 32084
+    sha256: 89baaad4f82b2d73fe8b007bc309d59b64fdaa5b716ec71fc526d306e43e73a7
+  - name: worked-examples/an-inference-example-transcript.pdf
+    bytes: 575837
+    sha256: 03ae6b5e53e2bddc53d46deeb8ea8aaea67ab413044c475ea190603519f36297
+  - name: worked-examples/bernoulli-process-practice-i-captions.srt
+    bytes: 8253
+    sha256: 6b863890a91eaa153b516ba017225c36a65d1940fc0651c9ff8fee8a79f495b5
+  - name: worked-examples/bernoulli-process-practice-i-captions.vtt
+    bytes: 7646
+    sha256: d146ed8676bbd3c0a3e7beb5f69f0d89f5d7cb5ce4f8fde284e31b1d5b5c91a5
+  - name: worked-examples/bernoulli-process-practice-i-transcript.pdf
+    bytes: 531717
+    sha256: 79d4090eab869d52df3f49968a58021251fdcdbec43a1300013b3c7d17fae3a6
+  - name: worked-examples/calculating-a-cdf-captions.srt
+    bytes: 12125
+    sha256: 969480410d11d62d3c8d853a31f597c3885d142e26996d56573a0a5f964eb240
+  - name: worked-examples/calculating-a-cdf-captions.vtt
+    bytes: 10656
+    sha256: 502da51b337b76f755db54e7e3aea284c087bb37cd9befeaef63675dd68e5f43
+  - name: worked-examples/calculating-a-cdf-transcript.pdf
+    bytes: 536776
+    sha256: ae883dd8c288c766fc5a40f437f0b603efd2285477c5a7ab1a76b2f57b856248
+  - name: worked-examples/ch1-coin-toss-puzzle-captions.srt
+    bytes: 10833
+    sha256: 69824b4a97372a635481ef2db7da9b5d3f3ad583247012dd44300d04d6420602
+  - name: worked-examples/ch1-coin-toss-puzzle-captions.vtt
+    bytes: 10292
+    sha256: c4f74a54f99df512e04b118e2565159de786051c2c49ba455f0f7ffa261a95cf
+  - name: worked-examples/ch1-coin-toss-puzzle-transcript.pdf
+    bytes: 534218
+    sha256: f5c618ea44ac48fb3eff8a5a72ce9674d5a531ba37266255ca05ce06d5104700
+  - name: worked-examples/ch1-coupon-collector-captions.srt
+    bytes: 9308
+    sha256: 210a096667704acc2c9ef149f69c3bb562ddec708cad211029137c0edaadeae4
+  - name: worked-examples/ch1-coupon-collector-captions.vtt
+    bytes: 8761
+    sha256: 218a7f646c405dfc3d325fef5475348a69e6f1c27518fc27ddc591fa473930d7
+  - name: worked-examples/ch1-coupon-collector-transcript.pdf
+    bytes: 532337
+    sha256: 0a105783b6a20c7ce17aa213bdc7ee311bdc502e55b878e06f35778af4a9deab
+  - name: worked-examples/ch1-random-walker-captions.srt
+    bytes: 8407
+    sha256: afe634929afa62bef30e2d748dcfdb7cfd8b85711d03a8025323dbc18613f04e
+  - name: worked-examples/ch1-random-walker-captions.vtt
+    bytes: 7928
+    sha256: 65cb0de405d5d1f8d9e974efabe43280c3c71bb64fefbf876f204e890b35f4be
+  - name: worked-examples/ch1-random-walker-transcript.pdf
+    bytes: 533083
+    sha256: e84cce3fed87ca4482da555e16526785a540af24f88e3e35db42e577abcd98aa
+  - name: worked-examples/ch1p1-probability-of-difference-two-events-captions.srt
+    bytes: 6808
+    sha256: 0a45ffc2c6a52725ab986cf3e40c8b96a03431e80bfb8f19396ecb8faf6df557
+  - name: worked-examples/ch1p1-probability-of-difference-two-events-captions.vtt
+    bytes: 6440
+    sha256: 44adf80e700ea412d5c138cf4f1b61bad7ea5c02e8f7bcf08ba4f2c426af45c4
+  - name: worked-examples/ch1p1-probability-of-difference-two-events-transcript.pdf
+    bytes: 533216
+    sha256: 717147a63d33ddfce5c0c0b0f7600cc9a4e2b23b14641a97350b9109a8c1b21b
+  - name: worked-examples/competing-exponentials-captions.srt
+    bytes: 10249
+    sha256: f3d22ddc4d21292a95ae98a176622236bcad6e512dd71090a2f873290081fe63
+  - name: worked-examples/competing-exponentials-captions.vtt
+    bytes: 9736
+    sha256: b29da65b5889308da3302ba1ee51e33c286fd4582bedafa4c50b6307bda0fa85
+  - name: worked-examples/competing-exponentials-transcript.pdf
+    bytes: 533894
+    sha256: 606d8f06db8b6607434b030e7d2190d41d79a44c9e2b4eb796a5445c6186c765
+  - name: worked-examples/conditioning-example-captions.srt
+    bytes: 20287
+    sha256: 941f9752c441596754442f05f52d439078906a6e8968dadcd592459dd0037287
+  - name: worked-examples/conditioning-example-captions.vtt
+    bytes: 19114
+    sha256: 1c94fb24a744600eafbe6bab67768b0acdcffca1b5be188a53a11730dca0e5ad
+  - name: worked-examples/conditioning-example-transcript-2.pdf
+    bytes: 620719
+    sha256: 8e20aa2598e13a4c5fc8b884cd4770639cea048cb2078ae299e872c8a2083917
+  - name: worked-examples/conditioning-example-transcript.pdf
+    bytes: 587290
+    sha256: b62bc9e36d432d31c4e120373a0711f36e0ad256304bfc9e1e5b9876008d665d
+  - name: worked-examples/derived-distribution-example-captions.srt
+    bytes: 13351
+    sha256: 347ac20d903cd67a6f9e6be1f99e5fb5043972de6725d2caf0eee0a523658ba2
+  - name: worked-examples/derived-distribution-example-captions.vtt
+    bytes: 12655
+    sha256: d1b2580a28ef9570371ed0fc3dab117752d8272c172bf260eeece9aafbaaa432
+  - name: worked-examples/derived-distribution-example-transcript.pdf
+    bytes: 537908
+    sha256: c5bd34614bdc759d30b987dae539d0d9256f07d691cea886119b90de8e3113fd
+  - name: worked-examples/edit2-take2-no13-ch1-hypergeometicprobabilities-captions.srt
+    bytes: 7080
+    sha256: ea2fb53459d556fbf743032db2231acc20d6a5bf647e7880c3b7d648fbc71207
+  - name: worked-examples/edit2-take2-no13-ch1-hypergeometicprobabilities-captions.vtt
+    bytes: 6666
+    sha256: 564547ada262b8efb37d4dd31358d78be13eb6b96812c6bb5eb54c672999afd5
+  - name: worked-examples/geniuses-and-chocolates-captions.srt
+    bytes: 12804
+    sha256: 82c939149b856ddb356eeb38dc15f9d99cecd2bc87b459534f358e049abfc96d
+  - name: worked-examples/geniuses-and-chocolates-captions.vtt
+    bytes: 12190
+    sha256: 61b1063a0c901c75d9cbac6682bf73d5ffa608146813c4281ddadcba20700b76
+  - name: worked-examples/geniuses-and-chocolates-transcript.pdf
+    bytes: 535844
+    sha256: b49b9c4db7768028903035f3cdf475c0428f35dbffc43ad5391bfb3b8e8b4014
+  - name: worked-examples/inferring-a-continuous-random-variable-from-a-discrete-measurement-captions.srt
+    bytes: 13663
+    sha256: 664e5ee8c0366ef9426a89fd6395fb142bd9743f340e56cfd6b55c028e417dc5
+  - name: worked-examples/inferring-a-continuous-random-variable-from-a-discrete-measurement-captions.vtt
+    bytes: 12803
+    sha256: 107d27c261541ecf57ea1e5c4b317b4a4030724915a167c4549f11466beba2c7
+  - name: worked-examples/inferring-a-continuous-random-variable-from-a-discrete-measurement-transcript.pdf
+    bytes: 538425
+    sha256: ae1950acb37c6094eb554e6e478e12f6aaa7166cac7bda63f43efc1623db58f4
+  - name: worked-examples/inferring-a-discrete-random-variable-from-a-continuous-measurement-captions.srt
+    bytes: 23393
+    sha256: 5ce4e4b36f15987c6860aea8adcb3c170bdf531f81bc4383399f19c82274ce9f
+  - name: worked-examples/inferring-a-discrete-random-variable-from-a-continuous-measurement-captions.vtt
+    bytes: 21951
+    sha256: a80b6b2c6c8393a9af5cd6fd2a8aefbee714174e89ca61b65c1f161039226edc
+  - name: worked-examples/inferring-a-discrete-random-variable-from-a-continuous-measurement-transcript.pdf
+    bytes: 546019
+    sha256: cbe964a7547a231604b32bfeaac6914122745db8ccd63a7fda9d243e6afec57a
+  - name: worked-examples/inferring-a-parameter-of-uniform-part-1-captions.srt
+    bytes: 32481
+    sha256: 92ff48ccd96c2913685079fa969635f22f9072ded39cc73b0c4feaff70852770
+  - name: worked-examples/inferring-a-parameter-of-uniform-part-1-captions.vtt
+    bytes: 30467
+    sha256: 22b76dd7f87485986a5d7c20ac7033ad40adaad69c067dadc1bd545742e9caa0
+  - name: worked-examples/inferring-a-parameter-of-uniform-part-1-transcript.pdf
+    bytes: 575053
+    sha256: 8d4deccec9e80105c794d4536b03c78baedd03cdf74cfd8f3781a28d29b46d2b
+  - name: worked-examples/inferring-a-parameter-of-uniform-part-2-captions.srt
+    bytes: 24184
+    sha256: 42b1a9065490ad588d9871ad9cf0b873f12c0e7162c988bca545cf77f243e188
+  - name: worked-examples/inferring-a-parameter-of-uniform-part-2-captions.vtt
+    bytes: 22430
+    sha256: 00ff5091d257e8d2db467f99ef79be09c30d4295d98bde31d8036c9de145349c
+  - name: worked-examples/inferring-a-parameter-of-uniform-part-2-transcript.pdf
+    bytes: 567303
+    sha256: aa733cf357179ca406b7a13a92436a3b89607215fc6e1dcfe67f3f1fab21d47d
+  - name: worked-examples/joint-pmf-drill1-captions.srt
+    bytes: 25088
+    sha256: 61f0c1f600c98ff5600fa39f9247130f4df354eeae4447e768ff0ba6b7f7a510
+  - name: worked-examples/joint-pmf-drill1-captions.vtt
+    bytes: 23603
+    sha256: 5d2928b44adf5e69cdef16fcde2ff43fd660faa03b43396a2e74cd8504ddec08
+  - name: worked-examples/joint-pmf-drill1-transcript.pdf
+    bytes: 546087
+    sha256: 1ed417ee0a5f840641de516b77646b7b74695b1c54e8d4c3b8202f394daddeec
+  - name: worked-examples/joint-pmf-drill2-captions.srt
+    bytes: 20267
+    sha256: 30561e9a800735b5158aec84ef4e4ae817579848d01dd8a4e18c8915ea5ab44f
+  - name: worked-examples/joint-pmf-drill2-captions.vtt
+    bytes: 19213
+    sha256: 23647b4a417cfeec0153ac16978464e195eb05ebbff87ab1da02e2ceb82bc92f
+  - name: worked-examples/joint-pmf-drill2-transcript.pdf
+    bytes: 542908
+    sha256: 4cd0c612530643a894dfadd02ca3591b898d741e122db62aa27275e558e084e9
+  - name: worked-examples/law-of-total-variance-captions.srt
+    bytes: 15003
+    sha256: c673a837dca7617eaecd8b7609469a2fbe6d5b619c73ff0395508464647e0cf7
+  - name: worked-examples/law-of-total-variance-captions.vtt
+    bytes: 14195
+    sha256: 7f8e884c3f8c728e8ecb108640bb37ab54ce8414be54c0f22f61c303e0740ce3
+  - name: worked-examples/law-of-total-variance-transcript.pdf
+    bytes: 538398
+    sha256: 015c6143cd2da5e95b25286f865eb05fb3dc9bce1c358127a6869fa2083ad6f2
+  - name: worked-examples/markov-chain-practice-231-captions.srt
+    bytes: 13202
+    sha256: 9b14519e0eeabe71e39c71de92ab28f99654b56d9ba55847de84062ca705a23c
+  - name: worked-examples/markov-chain-practice-231-captions.vtt
+    bytes: 12270
+    sha256: 7cf3278d62103cec9217b57446d3ed2d546f998298dedccd791b1e1f92eb4008
+  - name: worked-examples/markov-chain-practice-231-transcript-2.pdf
+    bytes: 557414
+    sha256: 14b5cd022431cb5d76580c7ca14c12e365ad07d54f229f146668b543c891b6ef
+  - name: worked-examples/markov-chain-practice-231-transcript.pdf
+    bytes: 536006
+    sha256: 7647000835918ca0ba34f90a8f07a8979ee2fa010a091c3261c8548f55059a82
+  - name: worked-examples/mean-and-variance-of-the-exponential-captions.srt
+    bytes: 19706
+    sha256: a382031a7c68b33dfc896c9c875ac1533a1148544e1721d4e2402bedc7fbd2e1
+  - name: worked-examples/mean-and-variance-of-the-exponential-captions.vtt
+    bytes: 16791
+    sha256: de68efccabffc7da87573ef1bd24d49061112234c50af881df870af78b242a02
+  - name: worked-examples/mean-and-variance-of-the-exponential-transcript.pdf
+    bytes: 542155
+    sha256: bc1e53419e257288513ec8f5a25422d6d34babb92258c286e0af3ecf316ddc16
+  - name: worked-examples/mixed-distribution-example-captions.srt
+    bytes: 15965
+    sha256: d78805bbf469e0df356e8f78cf0b78cd0507772c721970895e29e76be587fb75
+  - name: worked-examples/mixed-distribution-example-captions.vtt
+    bytes: 14515
+    sha256: 0cd0b50728ac0c08107ac05e7416a09a8e5fe24f2ae18b84a08b3d9e8de311e4
+  - name: worked-examples/mixed-distribution-example-transcript.pdf
+    bytes: 561711
+    sha256: 50b0127334fae51cbeb34fc28694887644216fb5afa75fe18b5fa1067880ea6e
+  - name: worked-examples/monty-hall-captions.srt
+    bytes: 24942
+    sha256: afb32d9dbadcb3e88ca7614b2cf404c420959107d1b9fefaf313a1c2c5336159
+  - name: worked-examples/monty-hall-captions.vtt
+    bytes: 23635
+    sha256: 960cdb73237de6140973e177526d2ce26cb5ffe54c68c523b2c2f5dd3f04259d
+  - name: worked-examples/monty-hall-transcript.pdf
+    bytes: 544777
+    sha256: 68496d3472f57a8251df5901f64c5145b05ba7c81eb59f3c81d715083104d3df
+  - name: worked-examples/no-16-ch1-flipcoinrandomnumber-captions.srt
+    bytes: 10593
+    sha256: a7f82c8b6d70a567eae02b2687692724c14277001d95ae2cf36c0befc6cfeec9
+  - name: worked-examples/no-16-ch1-flipcoinrandomnumber-captions.vtt
+    bytes: 9878
+    sha256: b6b35f79312f5de83c8354338ef039f56e7418c0bc5ebd0a31560733c6648179
+  - name: worked-examples/no-16-ch1-flipcoinrandomnumber-transcript.pdf
+    bytes: 532270
+    sha256: c7816fb29e4af266489c2cea562f42ee26511779b9dff941f412954444009249
+  - name: worked-examples/no-25-ch4-ambulance-captions.srt
+    bytes: 8386
+    sha256: 5a8347e90c6116ebaa784d2701ed93b373873c5d721a3d53d06ecc23db88447b
+  - name: worked-examples/no-25-ch4-ambulance-captions.vtt
+    bytes: 7985
+    sha256: bebdece0f7aad3e1edb2555db57a9331810915752b7c67dd011c8ef273e96f52
+  - name: worked-examples/no-25-ch4-ambulance-transcript.pdf
+    bytes: 532334
+    sha256: 15bce220ba373ce5469a631d3c48e8228f8b558ef5482808f7646a8433c7e802
+  - name: worked-examples/no-41-ch7-meanfirstpassage-26recurrancetimes-captions.srt
+    bytes: 10229
+    sha256: 06e68b9ed9af5eaf61dfb9fa82d27a86e634c9feebdb41fb6dccca3049a97cf8
+  - name: worked-examples/no-41-ch7-meanfirstpassage-26recurrancetimes-captions.vtt
+    bytes: 9572
+    sha256: 8edeedcf299c7b2dec8a28ce60e9d205c6f8bde87f083f7c9dc6a6aad1c61a4c
+  - name: worked-examples/no-41-ch7-meanfirstpassage-26recurrancetimes-transcript.pdf
+    bytes: 611006
+    sha256: 97120bcfc605841d5f5244fe50e499b9afa5da83ce524f69b10d6728a23de2d2
+  - name: worked-examples/no-9-ch1-networkreliability-captions.srt
+    bytes: 9973
+    sha256: fb68f8c981279b8bfada0040a27d008107b6df1dc70a4cdc48af54cb61f225ee
+  - name: worked-examples/no-9-ch1-networkreliability-captions.vtt
+    bytes: 9492
+    sha256: b378835be8b3c980b31f241c0367042586ffbca74ee4adcffb5059b1af11ad58
+  - name: worked-examples/no-9-ch1-networkreliability-transcript.pdf
+    bytes: 533846
+    sha256: a31db527f90c9761d3c2c44ec14fd0b6876f56fb80a374d5af827393460e3269
+  - name: worked-examples/noisy-channel-captions.srt
+    bytes: 26887
+    sha256: 3170768b8d4e9ebd654dd0fa24ee679dc94d205caef9bff1a33231bc1b1556c8
+  - name: worked-examples/noisy-channel-captions.vtt
+    bytes: 25142
+    sha256: 157af2b2d3683690a8715009946ec526c6af1a134409f00de98e68de6c81702a
+  - name: worked-examples/noisy-channel-transcript.pdf
+    bytes: 545585
+    sha256: a4059de7c09764ee715256aa09e3bf9ff393e2e404d9cbba701bef04958ffd3e
+  - name: worked-examples/normal-probability-calculation-captions.srt
+    bytes: 7295
+    sha256: 7d1c5fe035fa6481f3120e068322bdeac64ff9d2a4ea9b53994fa50807538f07
+  - name: worked-examples/normal-probability-calculation-captions.vtt
+    bytes: 6289
+    sha256: 3d043963861a78d075bf66f893c136c0235323657397761365152997e1b5eb34
+  - name: worked-examples/normal-probability-calculation-transcript.pdf
+    bytes: 531021
+    sha256: e7e921ca363f7c9afb4ee0bd36a9a79602b25a4ea84b4dd66a67920a1a1a7599
+  - name: worked-examples/pmf-of-a-function-of-a-random-variable-captions.srt
+    bytes: 8135
+    sha256: 9dbe8a9a58777787e9f9c22494ed5557ddc723a915df833ae63a434e403b69bf
+  - name: worked-examples/pmf-of-a-function-of-a-random-variable-captions.vtt
+    bytes: 7714
+    sha256: ef1f4daf55305c3f15ec13015a7579c51610db1b2b741da3f0cec9b786de2f2c
+  - name: worked-examples/pmf-of-a-function-of-a-random-variable-transcript.pdf
+    bytes: 532941
+    sha256: 1d060d3232f847c78e55c4667eca827cde77e479678ebc5aa949d34dd3e8eb33
+  - name: worked-examples/probability-that-3-pieces-form-a-triangle-captions.srt
+    bytes: 16803
+    sha256: 81e898f2c445480014b17f5ee9fb3583ae982ff7a03ab9d37a523b6a80486132
+  - name: worked-examples/probability-that-3-pieces-form-a-triangle-captions.vtt
+    bytes: 14740
+    sha256: 9d11efb6f3857aef56ea105fa5ed808ca2c5d89a985d7454b58079cf58d99673
+  - name: worked-examples/probability-that-3-pieces-form-a-triangle-transcript.pdf
+    bytes: 539411
+    sha256: 5f259d8d2983a144671e9cdc6054fdb8fce6ef68386b48f67a77cfec33bdca9b
+  - name: worked-examples/random-incidence-under-erlang-arrivals-captions.srt
+    bytes: 12206
+    sha256: 1f91d3c6d156ca6c92be9cb28f2b68414da317be10187ce114488f5ff57ab737
+  - name: worked-examples/random-incidence-under-erlang-arrivals-captions.vtt
+    bytes: 11551
+    sha256: 2be1d436b77adbae8b378de3bcf87811382fda57cd891af42df3ebc23ff845c4
+  - name: worked-examples/random-incidence-under-erlang-arrivals-transcript-2.pdf
+    bytes: 557857
+    sha256: a62aead1c9b9b44450cc8a58d13a47e3f407d01f54754ab437fccbe0826d5834
+  - name: worked-examples/random-incidence-under-erlang-arrivals-transcript.pdf
+    bytes: 536419
+    sha256: 19440504704c4a706aecd7885be990214122bc9a4bf7d71a15c0729056d54d7b
+  - name: worked-examples/random-number-of-coin-flipstake-captions.srt
+    bytes: 24337
+    sha256: e07b72f77fa110d600e2cb7145ceb2b646f29ffdfb4610e00f6c064eb4f530bf
+  - name: worked-examples/random-number-of-coin-flipstake-captions.vtt
+    bytes: 22660
+    sha256: 53df46d88fc90cba6152309db1c740a02a3b4ec29966096314815a2e2d176a31
+  - name: worked-examples/random-number-of-coin-flipstake-transcript.pdf
+    bytes: 543793
+    sha256: 3137ad121188393e3d144c692921e08127edc4e397a5713d229ce40c75fe446c
+  - name: worked-examples/rooks-on-a-chessboard-captions.srt
+    bytes: 26276
+    sha256: cd5da7b933568cedec699f27d2170ea35f18ccae949795df582ac529dc7bb252
+  - name: worked-examples/rooks-on-a-chessboard-captions.vtt
+    bytes: 24760
+    sha256: 495195b968d38f4b7887ce84d1ea6f646ff08700e5586ce9fa51ea215ee51e97
+  - name: worked-examples/rooks-on-a-chessboard-transcript.pdf
+    bytes: 545422
+    sha256: 786891153a22c26ee2688e24c751c89e4e8f54f4c5fedd2cf3157c08d3b7b226
+  - name: worked-examples/sampling-people-on-buses-captions.srt
+    bytes: 15254
+    sha256: 5dfe8b5e3777ad1f98b426a834a4dd99570cac92d8f6b614144a4d10197167ee
+  - name: worked-examples/sampling-people-on-buses-captions.vtt
+    bytes: 14442
+    sha256: 30da598e84cc76f63d6860d3295ba306160eb3ed17ffccbba5c57d3fa8871b3b
+  - name: worked-examples/sampling-people-on-buses-transcript.pdf
+    bytes: 537439
+    sha256: 35f9223779ad7646a0f11fa8e5930a3461396be2eb60c142b5071d82e016f20c
+  - name: worked-examples/setting-up-a-markov-chain-captions.srt
+    bytes: 16227
+    sha256: 588120b06c2826570b09316b57f3b96bd99d194437efbed0c885254b4ec0e095
+  - name: worked-examples/setting-up-a-markov-chain-captions.vtt
+    bytes: 15332
+    sha256: cf7612add78e5a6c51945c26299f9b448aef1cdc37e8aa3e9449c43a35c0b6ee
+  - name: worked-examples/setting-up-a-markov-chain-transcript.pdf
+    bytes: 563168
+    sha256: c6c0cd4984f7b69cdc482d45bc02f7a7f943e43f943800aafc8bda287b9a79e4
+  - name: worked-examples/the-absent-minded-professor-captions.srt
+    bytes: 19369
+    sha256: 3e79deedd221c65024c172a8916dc740d46ed9f0d19c267a5f001cfc3a59a1af
+  - name: worked-examples/the-absent-minded-professor-captions.vtt
+    bytes: 17180
+    sha256: 6df7fe54dbf9bc167de0209755a454f9744449a13e09acc0065f5bd660a8ab87
+  - name: worked-examples/the-absent-minded-professor-transcript.pdf
+    bytes: 540135
+    sha256: 7fbf4e8d5082faeb7350b6288527afa254582224db4a640f7b36e6cd82a2fc43
+  - name: worked-examples/the-difference-of-2-independent-exponential-random-variables-captions.srt
+    bytes: 7985
+    sha256: f43e3ee567ac1cc3865245ee5f14a264a283bb4af08be3985e73ca19e15ac771
+  - name: worked-examples/the-difference-of-2-independent-exponential-random-variables-captions.vtt
+    bytes: 7627
+    sha256: b4ce24194ae22635472aa1c9151742c9d531c1d29f3b9a7d700060151b5cd968
+  - name: worked-examples/the-difference-of-two-independent-exponential-random-variables-transcript.pdf
+    bytes: 536580
+    sha256: 39b6b17d12e3adc7476a1a8809aec9096ce82f80c199d38047abc7efceae16db
+  - name: worked-examples/the-pdf-of-x-captions.srt
+    bytes: 11683
+    sha256: 02efbefa67ce7048bca74d551d60fb6362be10193610aa36d5854dee420bf009
+  - name: worked-examples/the-pdf-of-x-captions.vtt
+    bytes: 10935
+    sha256: db65d9960a97263b33003c195b3c4e94f5d58ceffc97cf86c4b5d0da4ad084fd
+  - name: worked-examples/the-pdf-of-x-transcript.pdf
+    bytes: 538881
+    sha256: 851cfd4b5585e3a9e429d3e75d344d86c000941c7a5d31b83d76cfa840d66bce
+  - name: worked-examples/the-sum-of-discrete-and-continuous-r-v-s-captions.srt
+    bytes: 5888
+    sha256: 843286ff7dc4f1bed52e8d46fb636e9178b86968c66c6833c0436e56aba18e1a
+  - name: worked-examples/the-sum-of-discrete-and-continuous-r-v-s-captions.vtt
+    bytes: 5349
+    sha256: 6d6646ab88fffef7495d92459bf2122d9debebf6ee6c8666dd7e0526d42eed6e
+  - name: worked-examples/the-sum-of-discrete-and-continuous-r-v-s-transcript.pdf
+    bytes: 532675
+    sha256: efbe0381a7b69536a29b82c3c6968965bd2a8262231e841cec36fd2813568f0f
+  - name: worked-examples/the-variance-in-the-stick-breaking-problem-captions.srt
+    bytes: 16179
+    sha256: ec1e19bc2334f4b3ef8a69b40f1167fa096665cf317aa0a96dc23cd32741792c
+  - name: worked-examples/the-variance-in-the-stick-breaking-problem-captions.vtt
+    bytes: 15032
+    sha256: 6daef1a784beacf6e9a4109d709325b43ce196416b05a4fe467553be84f209fb
+  - name: worked-examples/the-variance-in-the-stick-breaking-problem-transcript.pdf
+    bytes: 538284
+    sha256: 0f7c09bb76603ae1ef34f66aaa5a2ffcd2ab483a538fbe18d3496c6384bcf5a2
+  - name: worked-examples/uniform-probabilities-on-a-square-captions.srt
+    bytes: 14373
+    sha256: 6bc1dcb9d0aa6d466e63e66ef62a70ed05ece395ec97b378dccb5a419854da3b
+  - name: worked-examples/uniform-probabilities-on-a-square-captions.vtt
+    bytes: 13625
+    sha256: 32730bfc847fd92ced4ff29541fcde1a7d8923b63bf3db0e04169ddd1ca91eb6
+  - name: worked-examples/uniform-probabilities-on-a-square-transcript.pdf
+    bytes: 581926
+    sha256: 20c829ce5a1197ad8438d86e54d71644623d6e794fdcd9dfb342c8c9d2b72aff
+  - name: worked-examples/uniform-probabilities-on-a-triangle-captions.srt
+    bytes: 32130
+    sha256: a3f88ca9d5109d4b05d8b5aef63d0dd09b282b36c38c7af234aedaa695b6c87a
+  - name: worked-examples/uniform-probabilities-on-a-triangle-captions.vtt
+    bytes: 27935
+    sha256: 60c693d77c66cd56af30b0d6cff58118c86a8fc504dd322f80c889e7c4ff9426
+  - name: worked-examples/uniform-probabilities-on-a-triangle-transcript.pdf
+    bytes: 548752
+    sha256: d23c28c1a76f46f062489afacde6c92cac264fd043d2f792a01eb6a91e871ef1
+  - name: worked-examples/using-the-clt-captions.srt
+    bytes: 13402
+    sha256: bc04aa2021586baca62a43ae503d48afa7edfe8ddd9b39b3c23f01127d56bd6a
+  - name: worked-examples/using-the-clt-captions.vtt
+    bytes: 12697
+    sha256: 99c61fdb1fff7b7b79f624b96d06ab690cb1b6fbb8bf2af382f70fbb3bdb781a
+  - name: worked-examples/using-the-clt-transcript.pdf
+    bytes: 558902
+    sha256: 1d734bb43c8cc943815ce6ceb755546bb53f47b373650d15db65f8a31d9aaba8
+  - name: worked-examples/widgets-and-crates-captions.srt
+    bytes: 15331
+    sha256: dae49dd7421fad44961b94a9ed809535017c0b310cc292ccaab8fcbd11c73881
+  - name: worked-examples/widgets-and-crates-captions.vtt
+    bytes: 14391
+    sha256: 4e4903513da637e61558278a75b3dc3519ac1c6151228238137078acb5596f35
+  - name: worked-examples/widgets-and-crates-transcript.pdf
+    bytes: 575501
+    sha256: 205743f87ab083ae0d304a9b5078b426fe06fbb927b40f1eb3485390a85c9573
+  note: MIT OCW export, unpacked from sources/_archives/
+- slug: ocw-6047
+  material: course
+  licence: CC BY-NC-SA 4.0
+  holds: material
+  files: 20
+  bytes: 92977891
+  fetched: '2026-09-13'
+  kind: files
+  base: https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/
+  restorable: upstream
+  contents:
+  - name: _manifest.csv
+    bytes: 1517
+    sha256: 981455db24f8fefe6394e0f2695afc7ae2af7aaf035b8eb08b181df62e5d9c2f
+  - name: compiled/compiled-compiled.pdf
+    bytes: 43478050
+    sha256: 3f2e786b4e7e4c0c630c0565262544b532ea141442cfc25a99b3beab186a0621
+  - name: lectures/01-slides.pdf
+    bytes: 8294979
+    sha256: 5ca1f019247cd8bbc4fdbcca704b65043caa2a0dcbb92f7b2b8bff30c6226a2d
+  - name: lectures/02-slides.pdf
+    bytes: 1763559
+    sha256: 623cc838f8da290c9ef99b5e1eeeae63fd965638f8483dccd23bb9ce846ca3f5
+  - name: lectures/03-slides.pdf
+    bytes: 1853592
+    sha256: ae13e3e7ca8a5a0cc5db930feeed5d6ce32980e2758558c18eceb338078fcf59
+  - name: lectures/04-slides.pdf
+    bytes: 746969
+    sha256: 33825a2678a00b93ae828883a34e6ca29322d4fd2c3452e431d0b4d3ed7fe0ec
+  - name: lectures/05-slides.pdf
+    bytes: 1404033
+    sha256: 26992ad7bc49df94a5325abf77278df95517ee6c360599ea0b4bc259c556661f
+  - name: lectures/07-slides.pdf
+    bytes: 1659441
+    sha256: 6f44d7c8dfe7bb9bcb365457b84674ae531249c228799816d8837d35422bcbff
+  - name: lectures/09-slides.pdf
+    bytes: 2306825
+    sha256: ce905229f3e2c68a2255bc99d049d421638acb43e46aad1c0832905feaa35a77
+  - name: lectures/10-slides.pdf
+    bytes: 3391388
+    sha256: ae800b200ff92794017ac0c6358dba8929a6b502d3ecda5a3a1fa07d23a1deda
+  - name: lectures/11-slides.pdf
+    bytes: 10312434
+    sha256: cf6c09bce1fd897d68674385f60dcca5c8516dc161738a8ee56e4689b8c5bf05
+  - name: lectures/17-slides.pdf
+    bytes: 5390153
+    sha256: c7eb6a9a30174d65bf5c3eb9f16b14eca653909487e9c9ffcc696909793a581d
+  - name: lectures/18-slides.pdf
+    bytes: 2202824
+    sha256: f9ee4ca19e022fc1913bc780a153c73a282bb2b52f9b8f7c24909b7ed992a339
+  - name: lectures/20-slides.pdf
+    bytes: 9104860
+    sha256: 750aa401b678d77492d54c28f20da5fdf5917e383a70fcabaa3a473d74c7b618
+  - name: other/scribingguide-slides.pdf
+    bytes: 209180
+    sha256: 02f94aefaced59be97b8457e888817db969202fe8839850faf20e4f5b6ac32d2
+  - name: psets/01-questions.pdf
+    bytes: 206931
+    sha256: b9bfa030a448c8ff8c40d1148e5f2387be13301241878e9c0417c6d993816084
+  - name: psets/02-questions.pdf
+    bytes: 187740
+    sha256: 604e95cf5543302662027bf88c56fdb786c4263136dbff24c801e9f1cac6719d
+  - name: psets/03-questions.pdf
+    bytes: 204989
+    sha256: 6fd8a41536c33eaf2dbda60feef3f929e29d32a794b35b60ad345f596454ac7c
+  - name: psets/04-questions.pdf
+    bytes: 145266
+    sha256: 01cc0aaeef0f2ee1f6f787c33635170b91dfb9877756b766b5054b5004cfb56c
+  - name: psets/05-questions.pdf
+    bytes: 113161
+    sha256: ffdc57792d3f6854f506184a0cc90daf0a45060f5a6125ce0e858654c924f968
+  note: MIT OCW export, unpacked from sources/_archives/
+- slug: ocw-7091j
+  material: course
+  licence: CC BY-NC-SA 4.0
+  holds: material
+  files: 112
+  bytes: 104296866
+  fetched: '2026-09-13'
+  kind: files
+  base: https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/
+  restorable: upstream
+  contents:
+  - name: _manifest.csv
+    bytes: 9762
+    sha256: aff4b586f1a328541d2a79cd78818d4243b5ee77b5bf97e3bc8e0a0d274500ad
+  - name: lectures/01-slides.pdf
+    bytes: 5256935
+    sha256: 8480d50859f0eb3c451be8bebfade687c29eee1b4b4d3642d7e5764462ac0de0
+  - name: lectures/02-slides.pdf
+    bytes: 2055731
+    sha256: a46e69236aa234dac72d7158f27d4b1c768cd964ebd08d8350bbac9fe2848cf8
+  - name: lectures/03-slides.pdf
+    bytes: 1007384
+    sha256: ac5843adb004ffb1afcd6c7c6d41c1a230607b72bcb95ea1a87f16f0f9f664c3
+  - name: lectures/04-slides.pdf
+    bytes: 3050435
+    sha256: fb22dfbfa84750979913af9a9557c8d8f57a38382c5477dd14283be4504f689d
+  - name: lectures/05-slides.pdf
+    bytes: 1446100
+    sha256: 08179f9a8582d66db18421da510a6217e7d46862f65adf5e1866a8c94ae28142
+  - name: lectures/06-slides.pdf
+    bytes: 971758
+    sha256: afb122ca78f4fe25b59db39f59ac23a8dd292daeb84bf9c0170ed44ae44cba79
+  - name: lectures/07-slides.pdf
+    bytes: 2106758
+    sha256: f872c80b34e645e9eb81a6b69520738fe12e56747480a93324ad3913a902ebbb
+  - name: lectures/08-slides.pdf
+    bytes: 3016748
+    sha256: 8541a2d1d14a8c310c253520842ffd071ecd86c4b5e982981d3fd46e2676cf77
+  - name: lectures/09-slides.pdf
+    bytes: 874072
+    sha256: 5377a41c9354eb98391065c2343527e5f69b06918504bf0cd6ed99638a138eb3
+  - name: lectures/10-slides.pdf
+    bytes: 773384
+    sha256: 06ad98cc2cf924cc59a075590fea46910021868c724795dd4a5e8c566c702d12
+  - name: lectures/11-slides.pdf
+    bytes: 1695327
+    sha256: 6ae4bd3c43beeda95523898f8daff425519f98bfdb105d81de716f0b270219a0
+  - name: lectures/12-slides.pdf
+    bytes: 3244866
+    sha256: b51ca031380b121e96cd1d3602c8fbdb2892f3d7599bf3954e5bdd19fc6fe1ad
+  - name: lectures/13-slides.pdf
+    bytes: 3570213
+    sha256: 2f11e86a606fa49194bee9d33bedff413107f4a3d48aa4d1a0fb455bb8c6b7a2
+  - name: lectures/14-slides.pdf
+    bytes: 4935046
+    sha256: 4f1c6c17ed5c89d0826616f0b15ad8f5a3d6e546e403db063f61e81cdfa73bdc
+  - name: lectures/15-slides.pdf
+    bytes: 6344695
+    sha256: bc4c4e45d1e5c267894d90dadacd09ffb14663b9509e556479c97c5575a399a6
+  - name: lectures/16-slides.pdf
+    bytes: 7920683
+    sha256: af16e02efcf0ee4a7f27e072279aecad0f0b9677c245dbf011081ffb1c01612e
+  - name: lectures/17-slides.pdf
+    bytes: 3276454
+    sha256: 1126b60295356b78c18018d68ef6b8d627df0b091fb4ecc1388915660d6acc37
+  - name: lectures/18-slides.pdf
+    bytes: 3936775
+    sha256: 71d018187a0735cba37f09dadd46ae487576276f3a0717dadc9f6557a3d86307
+  - name: lectures/19-slides.pdf
+    bytes: 2896925
+    sha256: 764eba4d28a49823f16f890e98a8421a0fa72f8fd22feb6e7f0fc4e0bc4658c8
+  - name: lectures/20-slides.pdf
+    bytes: 3510131
+    sha256: 2df217294b485c9807e070fdf33ec255f903086b0601e9a5277a1346adff1372
+  - name: other/present-tips-slides.pdf
+    bytes: 58068
+    sha256: c8bdaabaaa9942033289f3a30ebc4c6913ed0676ad69d7cfc9f810d32a6aa958
+  - name: psets/01-questions-pset1-ans.pdf
+    bytes: 721857
+    sha256: e3002ce6dab9fc813309d1ecb01825fd12a27bbc8a088bb811508ca2582794d8
+  - name: psets/01-questions.pdf
+    bytes: 220010
+    sha256: aa0a0d1994f1c60ff3a1c2808900ed84fac0e8747743ba5e0def3289d3a07183
+  - name: psets/02-questions-pset2-ques.pdf
+    bytes: 339094
+    sha256: b1f3e3db8ae6e417e2807b4449e25f95f0007180f81b927067f57821cc303d05
+  - name: psets/02-questions.pdf
+    bytes: 1434706
+    sha256: 7e52eb482cfdb5abfa478c70d33659a583bd5e2580a06c463097680541ed79fd
+  - name: psets/03-questions-pset3-ques.pdf
+    bytes: 237538
+    sha256: b915e9f01d9b80142c0a11f6b3267773227ee165ad0b3cc795eafc64b1d3a4f6
+  - name: psets/03-questions.pdf
+    bytes: 1596739
+    sha256: 98344bc62af44136e8107874331718c546b83028e17f620506cd88d1c5202770
+  - name: psets/04-questions-pset4-ques.pdf
+    bytes: 237326
+    sha256: 0611139cf126d9ec96a547d3abf394f54ff117f790473877a539fb83b08b34d7
+  - name: psets/04-questions.pdf
+    bytes: 716092
+    sha256: e467c0e749a219f88fb9c9463e416a3599208f10d3fb4ff502464c1d5ba83f00
+  - name: psets/05-questions-pset5-ques.pdf
+    bytes: 655530
+    sha256: e07391a2e701543e56710bbb0061576d3c32a66b245b759c8b61999ddf7be257
+  - name: psets/05-questions.pdf
+    bytes: 241440
+    sha256: dd81e19c1ece2f3e79b0f08d6a3b4affb496f5dc7072a384120882c72a7fea3a
+  - name: recitations/2014-02-11-slides.pdf
+    bytes: 454118
+    sha256: d9e314265b865318c547ed62b39faf795e20082527c66d38ac7e9afd5484b160
+  - name: recitations/2014-02-12-slides.pdf
+    bytes: 543518
+    sha256: f2bf5c430263389c67d7785796b462efb3b9ea63f74c36e6ea5f8551c2f6a4cb
+  - name: recitations/2014-02-14-slides.pdf
+    bytes: 2326042
+    sha256: 8d61b0143a16a3d4f69f0ee52dfe81b8fce053007131151cc1ab025586da2dfc
+  - name: recitations/2014-02-19-slides.pdf
+    bytes: 1045380
+    sha256: a9eb90c2e79c05cd3a213397439ca49a5bd42ec39fd3920ac1b741da0697042c
+  - name: recitations/2014-02-26-slides.pdf
+    bytes: 1616173
+    sha256: 7cfb61e865cf38f87f0b88aa000982eb77a998ebf8a4f4aa6c9b5278d00d7d37
+  - name: recitations/2014-03-05-slides.pdf
+    bytes: 2241932
+    sha256: f6842819fd2e1b3a0744175a2a844316f44d768cc01c15ca783d64b3c14332c4
+  - name: recitations/2014-03-07-slides.pdf
+    bytes: 988525
+    sha256: d3f6c3394c6c6ebad6ee58b783b7f0f6710dcc25e350b04eabe0c22d1deb5f0b
+  - name: recitations/2014-03-12-slides.pdf
+    bytes: 1906026
+    sha256: aedb1c96f7f40e2e4febadde1423c40970776e64a4671cce6ecd2d2285725ae6
+  - name: recitations/2014-03-19-slides.pdf
+    bytes: 4129808
+    sha256: 3d41b72f682131340b04087e3771cf158e26f2f6e77ce08e469c94720521f25d
+  - name: recitations/2014-04-02-slides.pdf
+    bytes: 4423465
+    sha256: 7ae72d7609d698989b95c84e72dd0976b9d5f28fe67122a9ff276eb038507f4e
+  - name: recitations/2014-04-09-slides.pdf
+    bytes: 2719279
+    sha256: 7f18bf28188bb41b8df06c61232dc626fb88544cd5ebade2ea9e91d8b4b9c19b
+  - name: recitations/2014-04-16-slides.pdf
+    bytes: 2166745
+    sha256: ffa826c131a4931b0b7df8a47f74c0d112f46815a46ab7fd8fe55049176d7e30
+  - name: recitations/2014-04-23-slides.pdf
+    bytes: 1977344
+    sha256: ed1090a4df0bd63dc3a1e66b0483d3aa18cbc6e0ccbf6bc48d24894fffb54a8e
+  - name: recitations/2014-04-30-slides.pdf
+    bytes: 1911210
+    sha256: da9b63e171ddcff320167a7690792d0098bf0c9fc301829a18da15015eac4952
+  - name: recordings/14m9mw-qmhg-captions.srt
+    bytes: 119936
+    sha256: 13a01afce073e6108f271aedb920770b0ce4834845c0be949dcf3e3e14b04cd0
+  - name: recordings/14m9mw-qmhg-captions.vtt
+    bytes: 113176
+    sha256: 3375ce20d67c1315cf50a322a2bbd771d4f113cab080e2f8bc8170f5857e94fe
+  - name: recordings/14m9mw-qmhg-transcript.pdf
+    bytes: 117539
+    sha256: f29f5e33f5e1aade9460e717eaf964d0ed1f8b52bf0f551f9ba31288b199e619
+  - name: recordings/1emonm7qau8-captions.srt
+    bytes: 120979
+    sha256: e42ec6d9e199078448a52b29c3bce76bcd7de2bc62f8f2b219aae2d1b0b5adde
+  - name: recordings/1emonm7qau8-captions.vtt
+    bytes: 114114
+    sha256: 1f957078ef4f2ca729dc72f1b3b0943a39ac24b4419303b5365c394aff333604
+  - name: recordings/1emonm7qau8-transcript.pdf
+    bytes: 119555
+    sha256: 7ae353a7d3b7052f8b54fdd7ae1e406f605dc17c4b95cadfbc394881d3f54f5e
+  - name: recordings/6robp57g2zi-captions.srt
+    bytes: 123772
+    sha256: 37a116fa6a44d039b160cc153b5937134e7bf406a6489d3509e7dc3263e47554
+  - name: recordings/6robp57g2zi-captions.vtt
+    bytes: 116942
+    sha256: b7fddde3c857ecd38048ef5fe256d47a31a4613c241050c0487a8769cc7db622
+  - name: recordings/6robp57g2zi-transcript.pdf
+    bytes: 122402
+    sha256: 71828620c07107c89fd8a4474c4fba469812882c252d04cd5e626d74295104ce
+  - name: recordings/6udqou3vmng-captions.srt
+    bytes: 117394
+    sha256: 175767dca7a06ab56f88b4bc47ea6d36bc8e0112fe9b09d71b5f816625ccfa4f
+  - name: recordings/6udqou3vmng-captions.vtt
+    bytes: 110544
+    sha256: 755bd9d7dab1fa651e069f0c84b31eb9e7393480f8033c07c658a5dd79dc2c49
+  - name: recordings/6udqou3vmng-transcript.pdf
+    bytes: 114747
+    sha256: 42a656c0a892241201217baa926d5a169a181bcda467a599d16d2865e703c364
+  - name: recordings/c95294-vvqy-captions.srt
+    bytes: 129837
+    sha256: 88d562defb7d72283bd487f5af3d402e6cf920cfe0d96edf7409a79e70de65ed
+  - name: recordings/c95294-vvqy-captions.vtt
+    bytes: 122482
+    sha256: 0194d232675e11bb033924450593570ffd16b2eaab7ab037eec77d1d2266d410
+  - name: recordings/c95294-vvqy-transcript.pdf
+    bytes: 122226
+    sha256: 17361f8a9196928ac593ac9626d64b0d82657dbe90a2b633899f5e6e5509c290
+  - name: recordings/d5nmra2hkg4-captions.srt
+    bytes: 112136
+    sha256: 0777caf0d35dba2822083c74a3b20e7a71b3d06120d7165c843d883932f9008a
+  - name: recordings/d5nmra2hkg4-captions.vtt
+    bytes: 105881
+    sha256: 6ca26b8b39bb41187f0394bedc9d255bbd8d6c3dcb8f1497f407229f3fa6170e
+  - name: recordings/d5nmra2hkg4-transcript.pdf
+    bytes: 115176
+    sha256: d2b0c7b7fab64facad81db537d65e21b91833588f17c756cfb624bfc9799e270
+  - name: recordings/i59jdq9hk10-captions.srt
+    bytes: 117764
+    sha256: f112bb93d162b2de25b5158670308b6510d4f4ec4423ad27d374ab04c32a2ff4
+  - name: recordings/i59jdq9hk10-captions.vtt
+    bytes: 111164
+    sha256: febdb5716f2a14b84fb58812ed4646be987b70fa46a2b83f3aadb8e33c72d576
+  - name: recordings/i59jdq9hk10-transcript.pdf
+    bytes: 117126
+    sha256: f6585064d17c66cb40e1402f9df76bf7f5209c6b615c072003cd9594bf1d9a74
+  - name: recordings/iklvcufd1ma-captions.srt
+    bytes: 110897
+    sha256: 72bc8a090e6eb98659231696d328f3937b55f4535ceb2c0deb90175890c1ab89
+  - name: recordings/iklvcufd1ma-captions.vtt
+    bytes: 104697
+    sha256: 4b16cd86b7b20401a0a18933e152036446825622d3f8661f7855f5e46af1e46a
+  - name: recordings/iklvcufd1ma-transcript.pdf
+    bytes: 111424
+    sha256: ea456e27421a9762b3596cdb5a0d344cc1f6a34ab8d99c84b46cb32c3057bcb6
+  - name: recordings/j1s9jfzkfqu-captions.srt
+    bytes: 121649
+    sha256: 46bdfe519c4e0ccbdc118403ed2d4e0b3473d177dfe840edc71772dc4453c077
+  - name: recordings/j1s9jfzkfqu-captions.vtt
+    bytes: 114819
+    sha256: aa1acad1776d8188c2d6d1958c6ab0de3a070ad12d55db057a13c2601637a291
+  - name: recordings/j1s9jfzkfqu-transcript.pdf
+    bytes: 118275
+    sha256: 608b99f1158bb27df0aa9e13639e0d29a8c54a0d88df57ff14092ce3fa6e2b7c
+  - name: recordings/kkyrr0cfreg-captions.srt
+    bytes: 119255
+    sha256: 34e88857c16924d28c8f1986aa0b19afdcc4c62b1d506ae2e2b9fb91ce45d404
+  - name: recordings/kkyrr0cfreg-captions.vtt
+    bytes: 112690
+    sha256: cc94229913d26bf11c408d4e4922d0359abe897ff72f027cd234a8808ae8058b
+  - name: recordings/kkyrr0cfreg-transcript.pdf
+    bytes: 117181
+    sha256: 4e83c01dcf71e45e1ccf802629ce25402a4a3eda1ed22e23d8202786c0054fd7
+  - name: recordings/kun6rj21hno-captions.srt
+    bytes: 119620
+    sha256: 3518cd7c657e67582ff9806aa1a63c48dfa5555b7fb57c6f1219833c0240566a
+  - name: recordings/kun6rj21hno-captions.vtt
+    bytes: 112850
+    sha256: 91b311b819d1479ce329a90d23b92b3320063ae0425973b202c767b8926f5e8e
+  - name: recordings/kun6rj21hno-transcript.pdf
+    bytes: 120507
+    sha256: 1080bfc490745b0395d32429bf473cdaf243b9113bc5555684d4bb1f66088e1e
+  - name: recordings/kx-hks-szm-captions.srt
+    bytes: 106323
+    sha256: 0bb43dd848ac60cd7f63e302d9044bfd6c559ea59250688d5469ec94e566aa09
+  - name: recordings/kx-hks-szm-captions.vtt
+    bytes: 100383
+    sha256: bd6a31604737149df9bcf3ee0436d1298cf122e8416981575c23065abd55838a
+  - name: recordings/kx-hks-szm-transcript.pdf
+    bytes: 106428
+    sha256: 5474ab0dabc84fc47fd84994d3d9d4d9dcab12271138a58a3a57d6a4dba17216
+  - name: recordings/kyq2dpw5neu-captions.srt
+    bytes: 110228
+    sha256: cca58f2591fe2dd9e75c336f58643221f65a2ca9263e6b7f9401b029f04a1be7
+  - name: recordings/kyq2dpw5neu-captions.vtt
+    bytes: 104248
+    sha256: 42f4454bb9a65ed4543167eb624de70f5dfa8a0b9419f91421341866203151ce
+  - name: recordings/kyq2dpw5neu-transcript.pdf
+    bytes: 106575
+    sha256: 272721b20999b8a8d2b2277e7ef47c167d4e7ae84e6a57bc6d2a0ca96bd33f70
+  - name: recordings/ljzybexmij0-captions.srt
+    bytes: 103920
+    sha256: b6d07a9d40047cc17f2151b17c06b532e61b85e5c44ae1b954a7743e48b8bc1b
+  - name: recordings/ljzybexmij0-captions.vtt
+    bytes: 98220
+    sha256: 9627441d6433dee4fb5d30713dacaa330c76087f0e8051b87f601cfc8b90f940
+  - name: recordings/ljzybexmij0-transcript.pdf
+    bytes: 109669
+    sha256: e0a2adbbab603808141b12d7f606a8679b7803ef9bcaba33b82ae81131360b1b
+  - name: recordings/mniygszsp30-captions.srt
+    bytes: 105448
+    sha256: 4522356dddc6ed140733c0a9ff93624b4034bd158e15f479572487b49a5e30b5
+  - name: recordings/mniygszsp30-captions.vtt
+    bytes: 99548
+    sha256: cc3e11ed268fdad0dbfe1aafc92951457f2bd88e0c37effd1e736e1ecdbb8e16
+  - name: recordings/mniygszsp30-transcript.pdf
+    bytes: 102849
+    sha256: 30d7ab949ab263c004f7d25c1f4f0a233f834382af9b950bdfcac8fc9ba85117
+  - name: recordings/ob9xgbpvr-s-captions.srt
+    bytes: 110423
+    sha256: d2d41a4e2071f46906a770e1641198f86bcaffd95b41e15931de07beeae66fbf
+  - name: recordings/ob9xgbpvr-s-captions.vtt
+    bytes: 104318
+    sha256: e7b88aad817c8a46c8fcee34a2b12096735f0064616dbd5f19f29a01982f1474
+  - name: recordings/ob9xgbpvr-s-transcript.pdf
+    bytes: 112347
+    sha256: 2e1ad3063afb6a6dff8011aca25c9e7a34b0782951695318fdec3aea61ce48e8
+  - name: recordings/p3orbmon8aw-captions.srt
+    bytes: 121565
+    sha256: efa0fcecd3f3a6278ba302a1977f1c16a558bdfecc6aa6772d0445f2fd770847
+  - name: recordings/p3orbmon8aw-captions.vtt
+    bytes: 114515
+    sha256: 56a88a26cd3ef109fb1115355c3fb6dbf70d67e92a37f029399655ee2e99572c
+  - name: recordings/p3orbmon8aw-transcript.pdf
+    bytes: 115042
+    sha256: 07589b672cdb17b36bdf80461bdb869cc7d07b5b6b6fba247362da217b4b0190
+  - name: recordings/pdyarrnwi7i-captions.srt
+    bytes: 118207
+    sha256: 8c87ee608a50944ac4d15b306504fd26477c6369620ba16e799b03c0f23134ac
+  - name: recordings/pdyarrnwi7i-captions.vtt
+    bytes: 111467
+    sha256: 5d86e8310021f1980d9fa5463e48d8e3c9c5e2d042e255cd2fe2b22ded080978
+  - name: recordings/pdyarrnwi7i-transcript.pdf
+    bytes: 116563
+    sha256: 6198786bc3b8a16c348344a3205d48ce3c44298226de538c1cd494241d859831
+  - name: recordings/rbpckbevk3u-captions.srt
+    bytes: 146856
+    sha256: f905cb348438edca28b485b83bd4814ed4ef55f7a1b0dd8c17c507e138617b3b
+  - name: recordings/rbpckbevk3u-captions.vtt
+    bytes: 138491
+    sha256: 030ddb5cfa1d93f74472865e2ae3077bdb30b808457527dfe759811c1e05fbc2
+  - name: recordings/rbpckbevk3u-transcript.pdf
+    bytes: 136165
+    sha256: 0723429896e053ca3b490c5204984de45f9e10f66d25db4fa46c10cc3cd56b11
+  - name: recordings/so6mk-fcp4e-captions.srt
+    bytes: 148009
+    sha256: 6453086cddf986c13185225d92209784a1dc5ced44eb508d416e191b15b268d4
+  - name: recordings/so6mk-fcp4e-captions.vtt
+    bytes: 139559
+    sha256: 27abd644ea620def28f2602caccfa93f4facd04b7ccbf4bddeaa6c70f2e64486
+  - name: recordings/so6mk-fcp4e-transcript.pdf
+    bytes: 134332
+    sha256: d2cc0fb6a1f5c5aa6c13489f568f9e739903df7c850fbea78026489f133fa21e
+  - name: recordings/ud4-fowexay-captions.srt
+    bytes: 79153
+    sha256: 0d765efea192a57516792ceb0f575405206d084885053618354fee4a81bfaaea
+  - name: recordings/ud4-fowexay-captions.vtt
+    bytes: 75098
+    sha256: 1dfb019e39ae51b075fd19d7b00cf9eda25e3e672e4c2e2dac69db625734d8af
+  - name: recordings/ud4-fowexay-transcript.pdf
+    bytes: 88926
+    sha256: 280049acf628342d0878eae3185613d136d0c760b12be440dbe4f8e3d48b133a
+  - name: recordings/zyw2aede6wu-captions.srt
+    bytes: 91906
+    sha256: d44c0941629e6bff3a8d0d0fbdfcaac9283e39b4e777d8a68c9f2b02f64d5586
+  - name: recordings/zyw2aede6wu-captions.vtt
+    bytes: 87106
+    sha256: 605e0af8584549844aaf1d31662ded98e4eb5a25957411aca4c1fbd6a3eac6b5
+  - name: recordings/zyw2aede6wu-transcript.pdf
+    bytes: 96076
+    sha256: 6e598a01e6337deae49d73b502dcd4dee144db0aa1e3657a1534494d59f30a93
+  note: MIT OCW export, unpacked from sources/_archives/
+- slug: ocw-8591j-2004
+  material: course
+  licence: CC BY-NC-SA 4.0
+  holds: material
+  files: 35
+  bytes: 9869599
+  fetched: '2026-09-13'
+  kind: files
+  base: https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/
+  restorable: upstream
+  contents:
+  - name: _manifest.csv
+    bytes: 2484
+    sha256: 570ba5ea3a4f711e673484dc67ea2cdd4cdd681c73b77a7473b07ed0b4c8dab4
+  - name: exams/final-ps-exam.pdf
+    bytes: 159055
+    sha256: 091a6e313e5536bc960b85b49c32bed88063ba96f4222723e5a98f0b7c19278b
+  - name: lecture-outlines/10-outline.pdf
+    bytes: 328946
+    sha256: 932439f01f10d1bd2ef0132462ab2bcd3fd87b2a22b0c378f953d1ad586a4c0f
+  - name: lecture-outlines/11-outline.pdf
+    bytes: 304048
+    sha256: 7d34ba53cfbad57cc8620031ccfaef8b2a7ec6a97bd579ab973c2de8657a69de
+  - name: lecture-outlines/12-outline.pdf
+    bytes: 142979
+    sha256: 0e0798a12421cb6262ae40a3dae65903d2b9da79154aa7bf3ac021dc5744a79a
+  - name: lecture-outlines/15-outline.pdf
+    bytes: 144196
+    sha256: ac2eaecd3097849875a4261b20207a2f757aa428983bcaef2b1390139f5a8812
+  - name: lecture-outlines/19-outline.pdf
+    bytes: 149343
+    sha256: 1b341a84d6573599ae717119e2312690824a76d3ad3ffe9a1ec9d51798514200
+  - name: lectures/01-notes.pdf
+    bytes: 754536
+    sha256: 61787bba905332bb4247d3d3dfa99971cf76b7d264bf41791b07206d4ec05853
+  - name: lectures/03-notes.pdf
+    bytes: 494515
+    sha256: aab79c18a36d788fd27492ea083d0386ced4ab2c1d52e0e19a6888b7f8d35b74
+  - name: lectures/04-notes.pdf
+    bytes: 296251
+    sha256: 0baf126597b0c6ee23b0cc687996dfef8845df24cc181584631488b3bc041cf5
+  - name: lectures/06-notes.pdf
+    bytes: 39562
+    sha256: 76738d4e5c681163571b27ad68f32aa397eb97fac9f7b169692e64824ee8b292
+  - name: lectures/07-notes.pdf
+    bytes: 1429623
+    sha256: 35e5fb5a92a0362588d73ecf4154ed0019b66c188bf027dd4d031aaafe0eab04
+  - name: lectures/08-notes.pdf
+    bytes: 539284
+    sha256: 7c61f8568294afb7d42eb4e14be2aadc3137131b875738567a52b5229382fc8e
+  - name: lectures/09-notes.pdf
+    bytes: 913894
+    sha256: d66d7725521c1abc4856248e34fb7c7b3747563dbc3895e24774ae166ac5e2d8
+  - name: lectures/10-notes.pdf
+    bytes: 278158
+    sha256: 6084431f5908f2240f15273fc9e15afdcd91aaf8b1bee3bacec34181b2205222
+  - name: lectures/11-notes.pdf
+    bytes: 531891
+    sha256: 479c7a28e5e03834b762f7de6b058eef671d3a22360dabb630e2b4909ad77902
+  - name: lectures/14-notes.pdf
+    bytes: 16375
+    sha256: 0a5d243aaa22258466efdc96cef0f359bb9dc3532f821abee048ca1da7fcda49
+  - name: lectures/16-notes.pdf
+    bytes: 81544
+    sha256: 123a8f86078982a015e2a7799478995af0c3ff1170b22961e3009bb94354e64f
+  - name: lectures/17-notes.pdf
+    bytes: 226177
+    sha256: 6edee5dff33281fa39e5758c2cb0b7a0cadf791da0a00f609af7b3c91d0d24f7
+  - name: lectures/18-notes.pdf
+    bytes: 21082
+    sha256: 40488def180ff8d806bead4eae78433eb6e1a7bf147e733d4d9f85f39977387a
+  - name: lectures/20-notes.pdf
+    bytes: 148058
+    sha256: e4e913c9b688b0a9455b8ce62da5441f4067a336fdf1b77dc375909bf819d07c
+  - name: lectures/23-notes.pdf
+    bytes: 22026
+    sha256: 67fc7dfb2239f55abcaa3bfea8d16b93e8e32ce2f934b172709df8c06d298bb7
+  - name: lectures/25-notes.pdf
+    bytes: 51133
+    sha256: 4b6ac2f701500f9ef52c457f4c63c67dcf7bec9386be528777953624dbb0b848
+  - name: psets/01-questions.pdf
+    bytes: 45191
+    sha256: 43923a2d97561c96b0f69ecdc36ce07fc07201219a4c5775d6808624e985e733
+  - name: psets/02-questions.pdf
+    bytes: 80261
+    sha256: 6dffc38e05d14aa0853559a6480fa8c07dfc955e6fdede02232bb89f71a765ab
+  - name: psets/03-questions.pdf
+    bytes: 48014
+    sha256: 2727c8af189d8f5a999fbe68c29e1d4b723583c1bf81af1b91cec2c0b04eb22c
+  - name: psets/04-questions.pdf
+    bytes: 116200
+    sha256: 345502f7123e762ef62cca99441f4cddad810c9f0ef915e2d7e130e54276dac0
+  - name: psets/05-questions.pdf
+    bytes: 82680
+    sha256: 10275b862c6e33b0cb7fc237486e834ef4c042d1b44fd482a885178790646fb8
+  - name: recordings/l2-syllabus-transcript.pdf
+    bytes: 855546
+    sha256: ebc720e84434575bd8752755d456b9563e6ed0b29721f8a0895a23be92bb8ea8
+  - name: recordings/l3-syllabus-transcript.pdf
+    bytes: 263641
+    sha256: ce73e90e66e734c7cdf09a27c5b510cf3bfca28220b43cea97836dbbd23af765
+  - name: recordings/l5-syllabus-transcript.pdf
+    bytes: 162602
+    sha256: 227419f6e5fd883ed15c7074318140dd5e593452ba26c830a48bad48f81247c2
+  - name: recordings/l6-syllabus-transcript.pdf
+    bytes: 115234
+    sha256: bad459fe261175b134339e6a12718d6acf25ed5942f9cab1609cff4a95d6b19f
+  - name: recordings/l8-syllabus-transcript.pdf
+    bytes: 427370
+    sha256: 70960a606b659c9f21fa160b7a12a2e1826c77dbc3e229ecfb8690f6d3fff342
+  - name: recordings/l9-syllabus-transcript.pdf
+    bytes: 282187
+    sha256: 3f774135299cff59ad41480871e5cf5a1265251e194594b026f197c19c471885
+  - name: recordings/stochastics-transcript.pdf
+    bytes: 315513
+    sha256: 05df5f24a39e0147e3078b4fb4f77a77c0e636a9e4428a19a21f4217de76a485
+  note: MIT OCW export, unpacked from sources/_archives/
+- slug: ocw-8591j-2014
+  material: course
+  licence: CC BY-NC-SA 4.0
+  holds: material
+  files: 89
+  bytes: 14830806
+  fetched: '2026-09-13'
+  kind: files
+  base: https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/
+  restorable: upstream
+  contents:
+  - name: _manifest.csv
+    bytes: 7659
+    sha256: b414bc25ae920951f1f6c998bbb841f4877155a8b469ed1f44243c11fbdd4154
+  - name: exams/01-exam-exam1-2013.pdf
+    bytes: 300989
+    sha256: c25d0e5c81c3486609edbe70c80ca137265b1367f45a39c438bbe2d881688fa1
+  - name: exams/01-exam.pdf
+    bytes: 462257
+    sha256: 7387d381b9f3d21b0d6b74e0147cc25f9d9039d4f0716bd1871c7e490584459c
+  - name: exams/02-exam-exam2-2013.pdf
+    bytes: 327824
+    sha256: 6d2a9a6c9d0f71bdc02f0e6a04272ff5b94cf44d10678b2889dd0e34e7b13260
+  - name: exams/02-exam.pdf
+    bytes: 271786
+    sha256: 181755ec9b476fc1b037c38651de72d0a348388c24290f3425d54525ebe082cc
+  - name: exams/finalexam-2012-exam.pdf
+    bytes: 272274
+    sha256: 2d681ae4998fd6037cb906571c4f3d5a897c01a61451327254108435b1d46c77
+  - name: exams/finalexam-2013-exam.pdf
+    bytes: 893197
+    sha256: 623c3d1e74c0e8a7ccf0af0bee50630491173604a7344b91608645dbb7bbc259
+  - name: psets/01-questions.pdf
+    bytes: 434500
+    sha256: 634b1d8d4e1d0a77254eee0f2167dc128dae5b0a4e7fa61cb81a5c0668d81301
+  - name: psets/02-questions.pdf
+    bytes: 306072
+    sha256: 19de1c14cf29c07ec65ea2646708d789907898483a928c328b98036757b503e3
+  - name: psets/03-questions.pdf
+    bytes: 587055
+    sha256: 7e9ecd1115fb755f8b4ec91824572824e25bc090391c80dec7d59b74c85f9e9a
+  - name: psets/04-questions.pdf
+    bytes: 404060
+    sha256: 59d60857bbca782e7e5844611dffea823ddc4350af8edf7517f24890705dc4b5
+  - name: psets/05-questions.pdf
+    bytes: 418139
+    sha256: 9245b28604b2c40e9027ce12b3ba2cc969e2a8e33a7be495b5810863b992bd23
+  - name: psets/06-questions.pdf
+    bytes: 496394
+    sha256: 827dc1f3a74449f3c504d91c79775d013e764e851b05854f1cde23d34a6091a2
+  - name: psets/07-questions.pdf
+    bytes: 483235
+    sha256: 6a7aaf67067f31bfb743cc979ef9f6ef80c8e28d423fa41268480741691c6698
+  - name: psets/08-questions.pdf
+    bytes: 395006
+    sha256: cfec85c455c7340d6a50372dbe464a2b50baa16c0c3c911fbde67f7a5794ee8a
+  - name: psets/09-questions.pdf
+    bytes: 512950
+    sha256: 9a81ca0c10e4f23e08257be672c38fd757406811d1153d3d39d1802ce89e288c
+  - name: psets/10-questions.pdf
+    bytes: 613228
+    sha256: 2e1a851ef7b18a14752ce06c525156d17781a92df7b5a9e3a47190ca1ee6a0b4
+  - name: recordings/03bvgr-vyhq-captions.srt
+    bytes: 109734
+    sha256: bde8bf0cc37d88a130c973dd2af6555d75e0663d2a6c79e548956076a1f0e2c9
+  - name: recordings/03bvgr-vyhq-captions.vtt
+    bytes: 103399
+    sha256: 97767019e741833ff8d23e811c8e638226800fbd31812fc27680b76d9832f7c4
+  - name: recordings/03bvgr-vyhq-transcript.pdf
+    bytes: 108320
+    sha256: b22350c719f83be72b154f87dde5b2ee3dffc9b19a836cebe8902245bbb9a575
+  - name: recordings/3eizij6qncy-captions.srt
+    bytes: 107236
+    sha256: b6382a2a9e38765d603ff1017532443d1916c32b4ec7c3b4d977b3c96a1c10cd
+  - name: recordings/3eizij6qncy-captions.vtt
+    bytes: 101331
+    sha256: efbe48867063d65aa82b347750675da5da3efe3198dee03586897f12310f29a3
+  - name: recordings/3eizij6qncy-transcript.pdf
+    bytes: 113076
+    sha256: a5739c20878332dd7b70104b6dd528bac65d18ca0d6189ef72833c6faed2521c
+  - name: recordings/6pxncdxixne-captions.srt
+    bytes: 106815
+    sha256: fb609ca1adada606792bb7dfc115cbe3b664afe5a3b8d0b60a63b59b0e696ee3
+  - name: recordings/6pxncdxixne-captions.vtt
+    bytes: 100735
+    sha256: 438deae7392273c7a46cdc1ab56b2ed56c5cdb526f2592fb3c72abce02c94934
+  - name: recordings/6pxncdxixne-transcript.pdf
+    bytes: 111488
+    sha256: 242ffc798efb8a1c0ba24319e5c3b2755b08cbd25dfafdd734f95ec065f53cb2
+  - name: recordings/9ygxpwvwydy-captions.srt
+    bytes: 100366
+    sha256: dca439bfd3e0be0421331a4e98cc4176f5f5ef1c798d166d1fa0fa8906df54fa
+  - name: recordings/9ygxpwvwydy-captions.vtt
+    bytes: 94886
+    sha256: a4ec2deb105e1dcf0c2ba0295ba9ef1c9cbafcfe6f8bac589dfbf9a2e5aa6cc3
+  - name: recordings/9ygxpwvwydy-transcript.pdf
+    bytes: 107421
+    sha256: b3dc41b3dfcbf86394c4659a9843809658102c8e2be2094f0263017d6b90c034
+  - name: recordings/a8fbmj4nixy-captions.srt
+    bytes: 102863
+    sha256: c174970f7ff474014663033a1394f4ebb94f3cb2c383a4ecd2e0645cfb1ac51b
+  - name: recordings/a8fbmj4nixy-captions.vtt
+    bytes: 97188
+    sha256: a56ccf943260b456c3799bc849a8dede05d6e3a6a6a734f9f2078a4a9d976bf2
+  - name: recordings/a8fbmj4nixy-transcript.pdf
+    bytes: 105637
+    sha256: 2c1773d2e69fa8e30a06aa9d5988ffdadddd58fefe5f63bac3277c0d3aed6c00
+  - name: recordings/bjxcf6pfrha-captions.srt
+    bytes: 112627
+    sha256: 5d29921bc5a4c208f7db510a59a0951f66e8adc2195ce1b3cfb2077900115e22
+  - name: recordings/bjxcf6pfrha-captions.vtt
+    bytes: 106432
+    sha256: d0dca4eb32c719d23c558e3026d3d5062a4494189d4a5c0d3f119a6288fe6516
+  - name: recordings/bjxcf6pfrha-transcript.pdf
+    bytes: 114854
+    sha256: e04de6ff39376425662bc97623da23cfbdad5a2d9d0c42eacdd56d303ceeef25
+  - name: recordings/cn5k8r8ceii-captions.srt
+    bytes: 112049
+    sha256: 6a009124811fc255d84c9506771a598b986485cbcfb965d18404d92a12277ef9
+  - name: recordings/cn5k8r8ceii-captions.vtt
+    bytes: 105604
+    sha256: 593ee163ad2b944973e9f1dc099cf1bd5cf1d827f8977441389c0a2d81e95ae4
+  - name: recordings/cn5k8r8ceii-transcript.pdf
+    bytes: 117205
+    sha256: d4616b1ad77a28852a22eb792a442541a9e92be53aa76b63b7edd69a215de472
+  - name: recordings/ct855rpx8bc-captions.srt
+    bytes: 109458
+    sha256: fa6c6de1615e7b0fea0a24ee7ecb2a12dbbfdbb2c0146b9f03150cabc9764073
+  - name: recordings/ct855rpx8bc-captions.vtt
+    bytes: 103408
+    sha256: 1d886243d7897c086cb54cfb70a9adaacc446035390ff18eea8836ccfa4359ad
+  - name: recordings/ct855rpx8bc-transcript.pdf
+    bytes: 111300
+    sha256: c666c0d820702225b64209138ef31d7fbfcbabc999a17d215a4fb214f5c3b623
+  - name: recordings/dp4nqipuh6w-captions.srt
+    bytes: 109983
+    sha256: 21a80fa444983abc4f57ecaeb4691f0b6b7b705ea7c45da0cf5749d123ebe80c
+  - name: recordings/dp4nqipuh6w-captions.vtt
+    bytes: 103593
+    sha256: 08d16469654b1b81619645238616bc61841884c5f37cea579782f7c7b5e9e65b
+  - name: recordings/dp4nqipuh6w-transcript.pdf
+    bytes: 108770
+    sha256: f28acc30bdc9223792706c3f67a921d9abe32837e2dc99b25e17dc93756914e0
+  - name: recordings/efxjkhdbi6a-captions.srt
+    bytes: 106544
+    sha256: eb149fac1eb1fdcd36f788987dedba58ebcf0bf9ee0e845b12773647430c870c
+  - name: recordings/efxjkhdbi6a-captions.vtt
+    bytes: 100384
+    sha256: 569e43e9127920ef3fe49c163d49d8d2b03cd83458ded49d4d0b821f23bfc2b1
+  - name: recordings/efxjkhdbi6a-transcript.pdf
+    bytes: 105722
+    sha256: 9c14327206c9b197ba1c1736cc3ba07d38417e508a347e16256a8c72529f2867
+  - name: recordings/exbo08-78iu-captions.srt
+    bytes: 109238
+    sha256: 4257e1ab3da0247528beb470d5f7f830ae52f03f288327b753b3ea6a81f8ceb7
+  - name: recordings/exbo08-78iu-captions.vtt
+    bytes: 103143
+    sha256: 859242fd6a54d44249a434bf8852e122d6550864504f6a8ee85e696015f5174b
+  - name: recordings/exbo08-78iu-transcript.pdf
+    bytes: 106566
+    sha256: 58a960d9a16acbb8aad75f389aacce0c37e7addf90d92e6d9fbbf6d9832ebdaf
+  - name: recordings/gc3o2skisx4-captions.srt
+    bytes: 115996
+    sha256: 8a789c0727f56a6593b9a533239c88916d48a9aacee948b3d7f18cc9a55ada19
+  - name: recordings/gc3o2skisx4-captions.vtt
+    bytes: 109731
+    sha256: d99ca6c72a546d3da8c4f94c823c889e26c0f9a99a92f1758b620537d0ba0329
+  - name: recordings/gc3o2skisx4-transcript.pdf
+    bytes: 117633
+    sha256: c7d3290c48bf7020a467ec456a40a3b24dc2ea8681c04f8e3d9a01bf2446485a
+  - name: recordings/hfq1t9windg-captions.srt
+    bytes: 101196
+    sha256: a2a2dd352007e47355266f005402e5b534cfed0ac28031d83993e548952f8545
+  - name: recordings/hfq1t9windg-captions.vtt
+    bytes: 95606
+    sha256: bd0b3c58b10d1aaf01e10036dbd705890bd5a2819464aa20e7bde3af58af32d8
+  - name: recordings/hfq1t9windg-transcript.pdf
+    bytes: 99773
+    sha256: bbc19e641694ba3b9e9181cba4f4700e00955ec558e89e318c17a10e2a4e16d9
+  - name: recordings/klrpm-beeoi-captions.srt
+    bytes: 108971
+    sha256: 9c331f4463f807fd650934ac394d7bb56760bd34a1a9cb6bba5cbfaad5317b1f
+  - name: recordings/klrpm-beeoi-captions.vtt
+    bytes: 102836
+    sha256: 2ead8ccfa510c5be5528064f4744a4742dd9a818fe8ce92cf8412610af4d2217
+  - name: recordings/klrpm-beeoi-transcript.pdf
+    bytes: 109479
+    sha256: 7328285cbd90d3f62b68ba641e18b0f59a68ad0300d1513007a617353025421a
+  - name: recordings/lc3xswq62iw-captions.srt
+    bytes: 105163
+    sha256: 4459358c6677ac9034a3bb57857fb8d49d2350455f8a8d5d896e49de506b8899
+  - name: recordings/lc3xswq62iw-captions.vtt
+    bytes: 99363
+    sha256: 8a4842858198091c37c76a4f1ac210b249e65f2158cdfc4aa98428a2890b1cec
+  - name: recordings/lc3xswq62iw-transcript.pdf
+    bytes: 103107
+    sha256: fd8f1096b3351827ff5f0d71c019da8518540b32ee2c1f5a0c9ceae6ed262c97
+  - name: recordings/lly1u2aghiq-captions.srt
+    bytes: 102991
+    sha256: 55360f116e78c6fb894bfefc1fec695c37c9beb703d54ca56e1af8320242f032
+  - name: recordings/lly1u2aghiq-captions.vtt
+    bytes: 97366
+    sha256: 8ac33921f7d13f2249cf00a6c1dbaa1c1369f68d6752b8750086301b16a9ec58
+  - name: recordings/lly1u2aghiq-transcript.pdf
+    bytes: 104096
+    sha256: ed9e3cedb8cee6e27dc6b21455a1e75067a9394466a83cd0031e8bd48201078d
+  - name: recordings/m41dwardioc-captions.srt
+    bytes: 112297
+    sha256: 424538fcd435e17c1021f931ce7495235afc8e365004250ae2468a4f3508c27c
+  - name: recordings/m41dwardioc-captions.vtt
+    bytes: 105967
+    sha256: 67ff035a72d24ff5c59c802bad392c5fa5f08586f63630ec96aa4be63637575e
+  - name: recordings/m41dwardioc-transcript.pdf
+    bytes: 114218
+    sha256: 982c1bef599e1a86db2f771a4fb9deb45885ab70dc8d9cd80cef44e98c0795e0
+  - name: recordings/nndqjhtuqjw-captions.srt
+    bytes: 115384
+    sha256: 78f3d3429c778ae9ec9c6322ae40b4ccd00fd4d3a74447b1dd666b601e8dc394
+  - name: recordings/nndqjhtuqjw-captions.vtt
+    bytes: 108989
+    sha256: 7fc9c7f5fb188d10361f76173439f666a9d97eaa6938a075e57ef0a43d63289a
+  - name: recordings/nndqjhtuqjw-transcript.pdf
+    bytes: 117397
+    sha256: d0eea06b92b16767b5b52d373a47db63f57ec008f5f2414a379c95a2aa797481
+  - name: recordings/onl-uf4flvm-captions.srt
+    bytes: 97338
+    sha256: b7f708265a2c0ec1ddb7f3611a4d3a96bbccd0107c66897ed2d0cb1ac5d5cb81
+  - name: recordings/onl-uf4flvm-captions.vtt
+    bytes: 92073
+    sha256: a589258783e08d9b86f4a0844f744f97b502f7fc10ab8f20b98961156e852b22
+  - name: recordings/onl-uf4flvm-transcript.pdf
+    bytes: 99064
+    sha256: 174691a7a078d72ce6ec1f884836473e523115302baf505f66d38cb63d9e30f2
+  - name: recordings/sj7p2auoyla-captions.srt
+    bytes: 104841
+    sha256: e1db6630ed42a81753499e71e289fb9ac91ed449b26c1174d1937659a06ce388
+  - name: recordings/sj7p2auoyla-captions.vtt
+    bytes: 99056
+    sha256: 32e7629acc3c0580531d2d8a9bc1286250d6065cc2cfed0a1f828a71c53087d8
+  - name: recordings/sj7p2auoyla-transcript.pdf
+    bytes: 107499
+    sha256: 8199e25c1b547b727e9752d2b598052c1ee9c329b70d54a43e40058d5e507562
+  - name: recordings/tuxfwkrwqg8-captions.srt
+    bytes: 98628
+    sha256: 1285b8737b66fb0b7d48a7ceac54b8933eb91d3055f73ea1f3a458280a69d93e
+  - name: recordings/tuxfwkrwqg8-captions.vtt
+    bytes: 93248
+    sha256: 4bc27d7f67ca64891467a626c30cc43312aa8c5a6cf7f1de70ecdd86ef25db63
+  - name: recordings/tuxfwkrwqg8-transcript.pdf
+    bytes: 101733
+    sha256: b9a95f2110af98e5c52e0a9badc08e17b6066872761184bdf8689330289b5ec2
+  - name: recordings/wtesorg5h-a-captions.srt
+    bytes: 112604
+    sha256: 1e3ab492c533aae5a52bdcb06a031daba8b8ac3f7604be048a285cd55bb76c7e
+  - name: recordings/wtesorg5h-a-captions.vtt
+    bytes: 105989
+    sha256: 7f84e534ca29098d6bea6c02ac46cc1369f4a823e9160ab140a756317ecf2cb0
+  - name: recordings/wtesorg5h-a-transcript.pdf
+    bytes: 113513
+    sha256: d405438bc97de250fc50bdeb59a19b019d2e0d4d7d376c9cd876da325eb2f703
+  - name: recordings/xnnxlsy-f-s-captions.srt
+    bytes: 117260
+    sha256: d745b84758f241535990fe61c905bda17e95428311846816af51d391f9ebd176
+  - name: recordings/xnnxlsy-f-s-captions.vtt
+    bytes: 110515
+    sha256: 0b739947cd292eb44a2607da5107dd27543b6ff5415efac8f006bb6f72ddc266
+  - name: recordings/xnnxlsy-f-s-transcript.pdf
+    bytes: 110595
+    sha256: 1643bc7e91ab5ff7722281eba51a5fd0ce59f1aa0d25b3485f01ea73761aebbd
+  - name: recordings/zjtvmkge8-8-captions.srt
+    bytes: 106387
+    sha256: 7bd19a784bcfe2deea95daa1036afa31231c3811c907c859e6038b9e7f9cd4b0
+  - name: recordings/zjtvmkge8-8-captions.vtt
+    bytes: 100412
+    sha256: 63b179d3065a1a89127bd179c81d889903c04cc1bccb9f1e6f93ed194b7b5248
+  - name: recordings/zjtvmkge8-8-transcript.pdf
+    bytes: 108492
+    sha256: d02448ee8895491a4b3c35b55d53b4329f83cb2745fb38609d94e218968a0cea
+  note: MIT OCW export, unpacked from sources/_archives/
+- slug: ocw-8592j
+  material: course
+  licence: CC BY-NC-SA 4.0
+  holds: material
+  files: 25
+  bytes: 4602441
+  fetched: '2026-09-13'
+  kind: files
+  base: https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/
+  restorable: upstream
+  contents:
+  - name: _manifest.csv
+    bytes: 1719
+    sha256: 454221b284a411f70c54dad638f04b7c43fea7daba5461f37d92922c7cfa369c
+  - name: lectures/01-slides.pdf
+    bytes: 149949
+    sha256: 9448ee2a5e8674b96657a78b324e2e033209187a5e11e856642ff837f917b14b
+  - name: lectures/03-slides.pdf
+    bytes: 115564
+    sha256: 06e427c56fab3aca9c100270e7d2402f86ae5c2804b6adef6e17933df5284b4e
+  - name: lectures/05-slides.pdf
+    bytes: 106061
+    sha256: 1c6667f251cff9b54b5caf440c9932203bc18a1ae7be06ba17430a8f5452896f
+  - name: lectures/08-slides.pdf
+    bytes: 161621
+    sha256: 7b12671cd0abec652eb99dee46d113594fd2e1e47293bebf940d5188dbaa1f18
+  - name: lectures/09-slides.pdf
+    bytes: 133056
+    sha256: e4740d407d443c5130594c415755698fd4f569e209690c45ed1d32df8b6c6cff
+  - name: lectures/10-slides.pdf
+    bytes: 327659
+    sha256: 2429f00b45b3a9913edcf43c145b6f80603dcda9fa1c01e493022483f4455b3e
+  - name: lectures/11-slides.pdf
+    bytes: 537301
+    sha256: 0ec4af06aeb8f84f8a0b1e2d8241b09232ec69b8a70049bc775959a530ce4eb7
+  - name: lectures/16-slides.pdf
+    bytes: 405982
+    sha256: 7cbd5c6cd398954945f238034beb3bf127980b6cadbce8eab26e6e96d1ac7854
+  - name: lectures/17-slides.pdf
+    bytes: 244617
+    sha256: c513e83912b9d3d3fb14615d07b48e7a52c1c28883ee35c90cf4382d5dd65092
+  - name: lectures/19-slides.pdf
+    bytes: 91425
+    sha256: 7fe0b7f468a39b586e61706a0c98d067ff16f93347767d7a08206ca99bece77b
+  - name: lectures/20-slides.pdf
+    bytes: 306042
+    sha256: 0cc92a89c13edc5982faf8f46fa273eeba3dec2f0e32ee205932d31424e42d8e
+  - name: lectures/21-slides.pdf
+    bytes: 336886
+    sha256: ad4b605b2166eb8ab6054b8ab75a28eded70819b5f0038ba24351fe4d9cc644c
+  - name: lectures/22-slides.pdf
+    bytes: 187026
+    sha256: 456de14f49eba9a51d79a93f2e112fa5e5a9d6897e0c17e62e356445b548c5d9
+  - name: lectures/23-slides.pdf
+    bytes: 447486
+    sha256: 3628a9cc1bde0a8cdf17d68cbfe829f4a0b31306f9c0e1e0c11e2c35ddc9e6d5
+  - name: lectures/24-slides.pdf
+    bytes: 201681
+    sha256: cbde1f59ff42e1d655d4836299b9be9141eca6f32e75fd4c3a13b57fba87ab67
+  - name: other/mj-table3-slides.pdf
+    bytes: 11122
+    sha256: f6f71f748989d2846ce2fc494be381c26c9a2f57fba39fbd68ab5d1228baad9e
+  - name: psets/01-questions.pdf
+    bytes: 87941
+    sha256: 5120c0af6bc06fd0f64c90a3bf9af63d10cbbefa15ba6ae0468fb70f08843f21
+  - name: psets/02-questions.pdf
+    bytes: 85446
+    sha256: 35e55a0c89cd5dddb88ae6c9c53f7f516993bc46612fcd6c35e294ef33d95106
+  - name: psets/03-questions.pdf
+    bytes: 91757
+    sha256: ab973d06f90f1d86645351dcb264d194549a0fd54e15298c5f906b491232f6c0
+  - name: psets/04-questions.pdf
+    bytes: 134706
+    sha256: 8abf357b1de59ab8233b224aa97990f4d4f5ad636be47823d76547681b674a4f
+  - name: psets/05-questions.pdf
+    bytes: 107543
+    sha256: 207f15fe896d46b574eb55efed4bd07c6354085dce1541277eee54a975faf67a
+  - name: psets/06-questions.pdf
+    bytes: 107390
+    sha256: f576c6d5fb9533a1d638f9fcf170ceca0918c1ea34b288def4ff62a042c3d401
+  - name: psets/07-questions.pdf
+    bytes: 128207
+    sha256: de88a68bf5724c39d6d611a2839b725fda7b81eecb62450bbbe38cc656457314
+  - name: psets/08-questions.pdf
+    bytes: 94254
+    sha256: 2740e4d9d861c62cab77292c32a0dc60b14913f30bbdeb09de1032aafc520a4f
+  note: MIT OCW export, unpacked from sources/_archives/
+- slug: resnick-adventures
+  material: book
+  licence: unresolved
+  holds: scaffolding
+  files: 2
+  bytes: 11514203
+  fetched: '2026-09-13'
+  kind: files
+  base: null
+  restorable: never
+  contents:
+  - name: _manifest.csv
+    bytes: 159
+    sha256: c511aff9700f3e48aa7555daad4c08967b501dc1e61f7e0ee3336cd0e4065ca3
+  - name: book.pdf
+    bytes: 11514044
+    sha256: ee2328209c8807912345b0a0e3809ef2ac5c61a37116e4dbf8551ca123d942aa
+  note: book PDF, added by hand
+- slug: statomics-sga2020
+  material: course
+  licence: unresolved
+  holds: scaffolding
+  files: 5
+  bytes: 6621861
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/statOmics/SGA2020.git
+  branch: master
+  commit: 0ee44bf6f117bb7ad65ee3ca3e35b127c91348ff
+  restorable: upstream
+- slug: statomics-sga2020-data
+  material: data
+  licence: unresolved
+  holds: unclear
+  files: 50
+  bytes: 613040164
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/statOmics/SGA2020.git
+  branch: data
+  commit: 61292e8a6774234b030daa1e4eb6d18be7456068
+  restorable: upstream
+- slug: statomics-sga2020-data-rnaseq
+  material: data
+  licence: unresolved
+  holds: unclear
+  files: 157
+  bytes: 112548517
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/statOmics/SGA2020.git
+  branch: data-rnaseq
+  commit: ad071208efb7e0ffe0e021f1bda9de6669edb267
+  restorable: upstream
+- slug: statomics-sga2020-ghpages
+  material: course
+  licence: CC0-1.0
+  holds: material
+  files: 227
+  bytes: 320834307
+  fetched: '2026-09-13'
+  licence_file: License.md
+  kind: git
+  url: https://github.com/statOmics/SGA2020.git
+  branch: gh-pages
+  commit: ded99ebf046477d39ae1950eed10a4ba901b948d
+  restorable: upstream
+- slug: statomics-sga21
+  material: course
+  licence: unresolved
+  holds: material
+  files: 147
+  bytes: 105497551
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/statOmics/SGA21.git
+  branch: master
+  commit: 0ad787d4cc2bb2f4636440840a8a923cf6c09839
+  restorable: upstream
+- slug: statomics-statistiekcursusnotas
+  material: course
+  licence: unresolved
+  holds: scaffolding
+  files: 1
+  bytes: 335
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/statOmics/statistiekCursusNotas.git
+  branch: master
+  commit: 04ba54790276697eac9a9635a2e28ce5c2c83380
+  restorable: upstream
+- slug: statomics-statistiekcursusnotas-ghpages
+  material: course
+  licence: unresolved
+  holds: material
+  files: 219
+  bytes: 31931065
+  fetched: '2026-09-13'
+  kind: git
+  url: https://github.com/statOmics/statistiekCursusNotas.git
+  branch: gh-pages
+  commit: a1c505bbdddd3d602fa9cc629bef7ee772233d14
+  restorable: upstream
+- slug: van-kampen-sppc
+  material: book
+  licence: unresolved
+  holds: scaffolding
+  files: 2
+  bytes: 59268467
+  fetched: '2026-09-13'
+  kind: files
+  base: null
+  restorable: never
+  contents:
+  - name: _manifest.csv
+    bytes: 127
+    sha256: 73bd38b5aff0d2d10521c2a01a864520c2e40558dcd62197167b10e66e03cb15
+  - name: book.pdf
+    bytes: 59268340
+    sha256: 18f5c3d3367736740ffc5651a2cfd426e16c1fe64fc46f254cb7e7dc04846dd3
+  note: book PDF, added by hand

@@ -1,0 +1,26 @@
+---
+title: The human genome
+source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/docs/intro.pdf
+source_file: sources/statomics-sga21/docs/intro.pdf
+licence: unresolved
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# The human genome
+
+**Source:** [`docs/intro.pdf`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/docs/intro.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+Humans: 2 _×_ 3 billion base pairs 2 meters of DNA _±_ 20.000 protein coding genes (500-4000/ chromosome) 99 _._ 9% in common with each-other Only 2% is protein coding 96% in common with chimp
+
+
+9 / 19
+
+---
+
+[← The human genome](09-the-human-genome.md) · [Up: contents](index.md) · [The human genome →](11-the-human-genome.md)

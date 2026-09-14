@@ -1,0 +1,79 @@
+site_name: Study reference library
+site_description: >-
+  Course material, lecture notes and transcripts converted to markdown and split by section,
+  so that every part of them can be linked to.
+site_url: https://claptar.github.io/knowledge-base-library/
+repo_url: https://github.com/Claptar/knowledge-base-library
+docs_dir: docs
+site_dir: _site
+use_directory_urls: true
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  # Maths. `generic: true` emits \(...\) / \[...\] wrappers for MathJax, which is
+  # loaded below. Source stays `$…$` and `$$…$$` so the markdown reads as plain text.
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  # The entire nav is generated into docs/SUMMARY.md by the knowledge base's
+  # normalise_source.py. There is no hand-written `nav:` here and there should not be —
+  # several thousand entries do not belong in a config file.
+  - literate-nav:
+      nav_file: SUMMARY.md
+      implicit_index: true
+
+# Converted pages are generated output, and the converter rewrites every relative link to a
+# converted sibling or to the original. A warning here means the converter has a bug, which is
+# exactly what this should catch — so the build stays strict even though nothing is hand-written.
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn

@@ -1,0 +1,16 @@
+.DS_Store
+*.tar.gz
+__pycache__/
+*.pyc
+.claude/settings.local.json
+
+# Downloaded source material — never committed. See sources/README.md.
+# The lockfile is the exception: it is the committed record of what sources/ should
+# contain and which parts of it cannot be refetched, so a clone can rebuild the rest.
+sources/*
+!sources/README.md
+!sources/sources.lock.yml
+
+# Site build
+_site/
+.venv/

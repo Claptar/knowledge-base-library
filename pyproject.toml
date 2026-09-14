@@ -1,0 +1,35 @@
+[project]
+name = "knowledge-base-library"
+version = "0.1.0"
+description = "Converted source material for the study knowledge base"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+# MkDocs 1.x is pinned deliberately. Material has announced that MkDocs 2.0
+# removes the plugin system and rewrites theming, with no migration path.
+# This is not a stale pin — read before bumping it.
+dev = [
+    "mkdocs<2",
+    "mkdocs-material<10",
+    # Several thousand generated nav entries live in docs/SUMMARY.md rather than in
+    # mkdocs.yml, so the hand-written config stays hand-written and a conversion run
+    # does not produce a thousand-line diff in it.
+    "mkdocs-literate-nav<1",
+]
+
+# Source conversion. A separate group so the site build stays small, and declared here
+# rather than installed with brew so that `uv sync --group convert` reproduces the toolchain
+# on any machine — the same reason sources/ has a lockfile.
+#
+# Both ship as wheels with no system libraries: pymupdf4llm replaces poppler for PDFs,
+# pypandoc-binary bundles the pandoc executable itself.
+convert = [
+    "pymupdf4llm",      # PDF -> markdown, preserving headings and layout
+    "pypandoc-binary",  # LaTeX/HTML -> markdown; bundles pandoc, no system install
+    "pyyaml",
+]
+
+# Notebooks are read directly from the .ipynb JSON rather than via nbconvert, which writes
+# image outputs as links to files the converter does not emit — and a broken link fails the
+# strict site build. See convert_notebook() in the knowledge base's normalise_source.py.

@@ -1,0 +1,400 @@
+---
+title: statomics sga21
+source: https://github.com/statOmics/SGA21.git
+licence: unresolved
+converted: 2026-09-14
+---
+
+# statomics sga21
+
+Converted material from [https://github.com/statOmics/SGA21.git](https://github.com/statOmics/SGA21.git).
+
+**Licence:** unresolved · **Material:** course · **Converted:** 2026-09-14
+
+> Converted, not adapted — the same text in markdown, split so every part has a URL.
+> It is regenerable output and is **never edited by hand**: a hand edit is lost on the
+> next run and silently diverges from the source it claims to reproduce. To change the
+> text, make an adaptation instead.
+
+## Contents
+
+- **cancer2_6x6**
+    - [Background](cancer2_6x6/01-background.md)
+    - [Data](cancer2_6x6/02-data.md)
+    - [Preprocessing](cancer2_6x6/03-preprocessing.md)
+    - [Data Analysis](cancer2_6x6/04-data-analysis.md)
+    - [plotting](cancer2_6x6/05-plotting.md)
+    - [plotting 2](cancer2_6x6/06-plotting-2.md)
+- **cptac_maxLFQ**
+    - [Background](cptac_maxLFQ/01-background.md)
+    - [Data](cptac_maxLFQ/02-data.md)
+    - [Preprocessing](cptac_maxLFQ/03-preprocessing.md)
+    - [Data Analysis](cptac_maxLFQ/04-data-analysis.md)
+    - [Session Info](cptac_maxLFQ/05-session-info.md)
+- **cptac_median**
+    - [Background](cptac_median/01-background.md)
+    - [Data](cptac_median/02-data.md)
+    - [Preprocessing](cptac_median/03-preprocessing.md)
+    - [Data Analysis](cptac_median/04-data-analysis.md)
+    - [plotting](cptac_median/05-plotting.md)
+    - [plotting 2](cptac_median/06-plotting-2.md)
+    - [Session Info](cptac_median/07-session-info.md)
+- **cptac_robust**
+    - [Background](cptac_robust/01-background.md)
+    - [Data](cptac_robust/02-data.md)
+    - [Preprocessing](cptac_robust/03-preprocessing.md)
+    - [Data Analysis](cptac_robust/04-data-analysis.md)
+    - [plotting](cptac_robust/05-plotting.md)
+    - [plotting 2](cptac_robust/06-plotting-2.md)
+    - [Session Info](cptac_robust/07-session-info.md)
+- **cptac_robust_gui**
+    - [2.2. Starting MSqRob](cptac_robust_gui/01-2-2-starting-msqrob.md)
+    - [2.2.1. The Input tab](cptac_robust_gui/02-2-2-1-the-input-tab.md)
+    - [2.3.2. The Preprocessing tab](cptac_robust_gui/03-2-3-2-the-preprocessing-tab.md)
+    - [2.3.3. The Summarization tab](cptac_robust_gui/04-2-3-3-the-summarization-tab.md)
+    - [2.3.4. The Model tab](cptac_robust_gui/05-2-3-4-the-model-tab.md)
+    - [2.3.4. The Inference tab](cptac_robust_gui/06-2-3-4-the-inference-tab.md)
+    - [2.3.4 The DetailPlots Tab](cptac_robust_gui/07-2-3-4-the-detailplots-tab.md)
+    - [2.3.5. The Report Tab](cptac_robust_gui/08-2-3-5-the-report-tab.md)
+    - [2.3.6. Evaluate Summarization](cptac_robust_gui/09-2-3-6-evaluate-summarization.md)
+    - [Final remark](cptac_robust_gui/10-final-remark.md)
+- **heartMainInteractionStageR**
+    - [Background](heartMainInteractionStageR/01-background.md)
+    - [Data](heartMainInteractionStageR/02-data.md)
+    - [Preprocessing](heartMainInteractionStageR/03-preprocessing.md)
+    - [Data Analysis](heartMainInteractionStageR/04-data-analysis.md)
+    - [Large difference in number of proteins that are returned](heartMainInteractionStageR/05-large-difference-in-number-of-proteins-that-are-returned.md)
+- **index**
+    - [Course Description](home/01-course-description.md)
+    - [Target Audience](home/02-target-audience.md)
+    - [GitHub repository](home/03-github-repository.md)
+    - [Prerequisites](home/04-prerequisites.md)
+    - [Software](home/05-software.md)
+    - [Detailed Program](home/06-detailed-program.md)
+    - [Instructors](home/07-instructors.md)
+    - [License](home/08-license.md)
+- **indexOldLinksMaterialsKoen**
+    - [Course Description](indexOldLinksMaterialsKoen/01-course-description.md)
+    - [Target Audience](indexOldLinksMaterialsKoen/02-target-audience.md)
+    - [Prerequisites](indexOldLinksMaterialsKoen/03-prerequisites.md)
+    - [Lecturers](indexOldLinksMaterialsKoen/04-lecturers.md)
+    - [Lecture material](indexOldLinksMaterialsKoen/05-lecture-material.md)
+- **multipleRegression_KPNA2**
+    - [Introduction](multipleRegression_KPNA2/01-introduction.md)
+    - [Background](multipleRegression_KPNA2/02-background.md)
+    - [Data analysis](multipleRegression_KPNA2/03-data-analysis.md)
+    - [Interpretation of model parameters and statistical tests](multipleRegression_KPNA2/04-interpretation-of-model-parameters-and-statistical-tests.md)
+    - [Assessing the significance of all hypothesis of interest](multipleRegression_KPNA2/05-assessing-the-significance-of-all-hypothesis-of-interest.md)
+    - [Conclusion](multipleRegression_KPNA2/06-conclusion.md)
+- **pda_blocking_wrapup**
+    - [Import Data and Preprocessing](pda_blocking_wrapup/01-import-data-and-preprocessing.md)
+    - [Advantage of Blocking: comparison between designs](pda_blocking_wrapup/02-advantage-of-blocking-comparison-between-designs.md)
+- **pda_quantification_inference**
+    - [Introduction](pda_quantification_inference/01-introduction.md)
+    - [Outline {-}](pda_quantification_inference/02-outline.md)
+    - [Francisella tularensis experiment](pda_quantification_inference/03-francisella-tularensis-experiment.md)
+    - [Experimental Design](pda_quantification_inference/04-experimental-design.md)
+    - [Software & code](pda_quantification_inference/05-software-code.md)
+    - [References](pda_quantification_inference/06-references.md)
+- **pda_quantification_inference_noFrames**
+    - [Outline {-}](pda_quantification_inference_noFrames/01-outline.md)
+    - [Francisella tularensis experiment](pda_quantification_inference_noFrames/02-francisella-tularensis-experiment.md)
+    - [Experimental Design](pda_quantification_inference_noFrames/03-experimental-design.md)
+- [Pda quantification inference noFrames withSimulationOfProteinsWithSameVariance](pda_quantification_inference_noFrames_withSimulationOfProteinsWithSameVariance.md)
+- **pda_quantification_preprocessing**
+    - [Introduction](pda_quantification_preprocessing/01-introduction.md)
+    - [Outline {-}](pda_quantification_preprocessing/02-outline.md)
+    - [Intro: Challenges in Label-Free Quantitative Proteomics](pda_quantification_preprocessing/03-intro-challenges-in-label-free-quantitative-proteomics.md)
+    - [Import the data in R](pda_quantification_preprocessing/04-import-the-data-in-r.md)
+    - [Preprocessing](pda_quantification_preprocessing/05-preprocessing.md)
+    - [Exercise](pda_quantification_preprocessing/06-exercise.md)
+    - [Software & code](pda_quantification_preprocessing/07-software-code.md)
+    - [References](pda_quantification_preprocessing/08-references.md)
+- **pda_quantification_preprocessing_noframes**
+    - [Outline {-}](pda_quantification_preprocessing_noframes/01-outline.md)
+    - [Intro: Challenges in Label-Free Quantitative Proteomics](pda_quantification_preprocessing_noframes/02-intro-challenges-in-label-free-quantitative-proteomics.md)
+    - [Import the data in R](pda_quantification_preprocessing_noframes/03-import-the-data-in-r.md)
+    - [Preprocessing](pda_quantification_preprocessing_noframes/04-preprocessing.md)
+    - [Exercise](pda_quantification_preprocessing_noframes/05-exercise.md)
+    - [Code](pda_quantification_preprocessing_noframes/06-code.md)
+- **pda_robustSummarisation_peptideModels**
+    - [Introduction](pda_robustSummarisation_peptideModels/01-introduction.md)
+    - [Subset of CPTAC study: A vs B comparison in lab 3](pda_robustSummarisation_peptideModels/02-subset-of-cptac-study-a-vs-b-comparison-in-lab-3.md)
+    - [Full CPTAC study](pda_robustSummarisation_peptideModels/03-full-cptac-study.md)
+    - [Peptide-level models](pda_robustSummarisation_peptideModels/04-peptide-level-models.md)
+    - [References](pda_robustSummarisation_peptideModels/05-references.md)
+- **pda_tutorialDesign**
+    - [3. Analysis of more complex designs with MSqRob](pda_tutorialDesign/01-3-analysis-of-more-complex-designs-with-msqrob.md)
+    - [3.1 Basic Statistical Concepts](pda_tutorialDesign/02-3-1-basic-statistical-concepts.md)
+    - [3.2 Blocking: Mouse T-cell example](pda_tutorialDesign/03-3-2-blocking-mouse-t-cell-example.md)
+    - [3.3 Heart dataset](pda_tutorialDesign/04-3-3-heart-dataset.md)
+- **pda_tutorialPreprocessing**
+    - [2.1 The CPTAC A vs B dataset](pda_tutorialPreprocessing/01-2-1-the-cptac-a-vs-b-dataset.md)
+    - [2.2 The CPTAC A vs B dataset](pda_tutorialPreprocessing/02-2-2-the-cptac-a-vs-b-dataset.md)
+    - [2.3 Breast cancer example](pda_tutorialPreprocessing/03-2-3-breast-cancer-example.md)
+    - [References](pda_tutorialPreprocessing/04-references.md)
+- **recapGeneralLinearModel**
+    - [Breast cancer example](recapGeneralLinearModel/01-breast-cancer-example.md)
+    - [Data Exploration](recapGeneralLinearModel/02-data-exploration.md)
+    - [Statistical Inference](recapGeneralLinearModel/03-statistical-inference.md)
+    - [General Linear Model](recapGeneralLinearModel/04-general-linear-model.md)
+    - [Linear regression in matrix form](recapGeneralLinearModel/05-linear-regression-in-matrix-form.md)
+    - [predict values on regular xy grid](recapGeneralLinearModel/06-predict-values-on-regular-xy-grid.md)
+    - [fitted points for droplines to surface](recapGeneralLinearModel/07-fitted-points-for-droplines-to-surface.md)
+    - [Homework: Adopt the gene analysis on log scale in matrix form!](recapGeneralLinearModel/08-homework-adopt-the-gene-analysis-on-log-scale-in-matrix-form.md)
+- **sequencing_countData**
+    - [A function for captioning and referencing images](sequencing_countData/01-a-function-for-captioning-and-referencing-images.md)
+    - [The Poisson distribution](sequencing_countData/02-the-poisson-distribution.md)
+    - [All defaults](sequencing_countData/03-all-defaults.md)
+    - [Modeling count data: Generalized linear models](sequencing_countData/04-modeling-count-data-generalized-linear-models.md)
+    - [All defaults](sequencing_countData/05-all-defaults.md)
+    - [if ISLR2 isn't installed, install it](sequencing_countData/06-if-islr2-isn-t-installed-install-it.md)
+    - [load and preview the dataset](sequencing_countData/07-load-and-preview-the-dataset.md)
+    - [association with weather on count and log scale](sequencing_countData/08-association-with-weather-on-count-and-log-scale.md)
+    - [association with humidity on count and log scale](sequencing_countData/09-association-with-humidity-on-count-and-log-scale.md)
+    - [association with hour on count and log scale](sequencing_countData/10-association-with-hour-on-count-and-log-scale.md)
+    - [set up data frames with relevant predictor variables' values.](sequencing_countData/11-set-up-data-frames-with-relevant-predictor-variables-values.md)
+    - [calculate estimated average number of bikers](sequencing_countData/12-calculate-estimated-average-number-of-bikers.md)
+    - [Wald test manually](sequencing_countData/13-wald-test-manually.md)
+    - [Wald test through a contrast](sequencing_countData/14-wald-test-through-a-contrast.md)
+    - [note this being equal to](sequencing_countData/15-note-this-being-equal-to.md)
+    - [finally, we can also read the Wald test result from the summary of the model](sequencing_countData/16-finally-we-can-also-read-the-wald-test-result-from-the-summa.md)
+    - [manual LRT](sequencing_countData/17-manual-lrt.md)
+    - [using anova function](sequencing_countData/18-using-anova-function.md)
+    - [doesn't work because we have a singular matrix](sequencing_countData/19-doesn-t-work-because-we-have-a-singular-matrix.md)
+    - [identify the linearly independent contrasts](sequencing_countData/20-identify-the-linearly-independent-contrasts.md)
+    - [try again](sequencing_countData/21-try-again.md)
+    - [Sequencing countData Part 22 —](sequencing_countData/22-sequencing-countdata-part-22.md)
+    - [Indeed, this is the way the dispersion parameter is estimated for the QP!!](sequencing_countData/23-indeed-this-is-the-way-the-dispersion-parameter-is-estimated.md)
+    - [A final note](sequencing_countData/24-a-final-note.md)
+    - [All defaults](sequencing_countData/25-all-defaults.md)
+    - [References](sequencing_countData/26-references.md)
+- **sequencing_hw**
+    - [A function for captioning and referencing images](sequencing_hw/01-a-function-for-captioning-and-referencing-images.md)
+    - [Default edgeR analysis](sequencing_hw/02-default-edger-analysis.md)
+    - [Impact of blocking](sequencing_hw/03-impact-of-blocking.md)
+    - [Analyze dataset using full-quantile normalization](sequencing_hw/04-analyze-dataset-using-full-quantile-normalization.md)
+- **sequencing_intro**
+    - [A function for captioning and referencing images](sequencing_intro/01-a-function-for-captioning-and-referencing-images.md)
+    - [The study of gene expression](sequencing_intro/02-the-study-of-gene-expression.md)
+    - [Sequencing technology](sequencing_intro/03-sequencing-technology.md)
+    - [All defaults](sequencing_intro/04-all-defaults.md)
+    - [Preprocessing of raw sequencing data](sequencing_intro/05-preprocessing-of-raw-sequencing-data.md)
+    - [A preprocessing tutorial](sequencing_intro/06-a-preprocessing-tutorial.md)
+    - [References](sequencing_intro/07-references.md)
+- **sequencing_lab_oneGene**
+    - [Introduction](sequencing_lab_oneGene/01-introduction.md)
+    - [Wald test](sequencing_lab_oneGene/02-wald-test.md)
+    - [Likelihood ratio test](sequencing_lab_oneGene/03-likelihood-ratio-test.md)
+- **sequencing_rnaseqIntro**
+    - [A function for captioning and referencing images](sequencing_rnaseqIntro/01-a-function-for-captioning-and-referencing-images.md)
+    - [Experimental design, data import and data exploration](sequencing_rnaseqIntro/02-experimental-design-data-import-and-data-exploration.md)
+    - [All defaults](sequencing_rnaseqIntro/03-all-defaults.md)
+    - [install package if not installed.](sequencing_rnaseqIntro/04-install-package-if-not-installed.md)
+    - [import data](sequencing_rnaseqIntro/05-import-data.md)
+    - [rename for convenience](sequencing_rnaseqIntro/06-rename-for-convenience.md)
+    - [three treatments](sequencing_rnaseqIntro/07-three-treatments.md)
+    - [two timepoints](sequencing_rnaseqIntro/08-two-timepoints.md)
+    - [four donor patients](sequencing_rnaseqIntro/09-four-donor-patients.md)
+    - [remove after summing counts (otherwise IDs get mixed up)](sequencing_rnaseqIntro/10-remove-after-summing-counts-otherwise-ids-get-mixed-up.md)
+    - [Create new SummarizedExperiment](sequencing_rnaseqIntro/11-create-new-summarizedexperiment.md)
+    - [library size distribution](sequencing_rnaseqIntro/12-library-size-distribution.md)
+    - [MDS plot](sequencing_rnaseqIntro/13-mds-plot.md)
+    - [Explain concept of MDS: preserve Euclidean distance from high to low dim.](sequencing_rnaseqIntro/14-explain-concept-of-mds-preserve-euclidean-distance-from-high.md)
+    - [Challenge I: Choice of modeling assumptions](sequencing_rnaseqIntro/15-challenge-i-choice-of-modeling-assumptions.md)
+    - [Mean-variance trend within each experimental condition](sequencing_rnaseqIntro/16-mean-variance-trend-within-each-experimental-condition.md)
+    - [note phi = 1 / size](sequencing_rnaseqIntro/17-note-phi-1-size.md)
+    - [Challenge II: Normalization](sequencing_rnaseqIntro/18-challenge-ii-normalization.md)
+    - [All defaults](sequencing_rnaseqIntro/19-all-defaults.md)
+    - [Challenge III: Parameter estimation (under limited information setting)](sequencing_rnaseqIntro/20-challenge-iii-parameter-estimation-under-limited-information.md)
+    - [All defaults](sequencing_rnaseqIntro/21-all-defaults.md)
+    - [All defaults](sequencing_rnaseqIntro/22-all-defaults.md)
+    - [Challenge IV: Statistical inference across many genes](sequencing_rnaseqIntro/23-challenge-iv-statistical-inference-across-many-genes.md)
+    - [DPN vs control at 24h](sequencing_rnaseqIntro/24-dpn-vs-control-at-24h.md)
+    - [DPN vs control at 48h](sequencing_rnaseqIntro/25-dpn-vs-control-at-48h.md)
+    - [OHT vs control at 24h](sequencing_rnaseqIntro/26-oht-vs-control-at-24h.md)
+    - [OHT vs control at 48h](sequencing_rnaseqIntro/27-oht-vs-control-at-48h.md)
+    - [DPN control interaction](sequencing_rnaseqIntro/28-dpn-control-interaction.md)
+    - [OHT control interaction](sequencing_rnaseqIntro/29-oht-control-interaction.md)
+    - [OHT DPN interaction](sequencing_rnaseqIntro/30-oht-dpn-interaction.md)
+    - [p-value histograms](sequencing_rnaseqIntro/31-p-value-histograms.md)
+    - [number of DE genes](sequencing_rnaseqIntro/32-number-of-de-genes.md)
+    - [extract all DE genes](sequencing_rnaseqIntro/33-extract-all-de-genes.md)
+    - [order according to absolute fold-change](sequencing_rnaseqIntro/34-order-according-to-absolute-fold-change.md)
+    - [Alternative parameterizations](sequencing_rnaseqIntro/35-alternative-parameterizations.md)
+    - [Let's implement the DPNvsCON48 contrast](sequencing_rnaseqIntro/36-let-s-implement-the-dpnvscon48-contrast.md)
+    - [Additional Challenge (Opportunity?): The importance of reproducible analysis](sequencing_rnaseqIntro/37-additional-challenge-opportunity-the-importance-of-reproduci.md)
+- **sequencing_scalingNormalization**
+    - [No offset](sequencing_scalingNormalization/01-no-offset.md)
+    - [Poisson GLM, no library size: signifcantly DE](sequencing_scalingNormalization/02-poisson-glm-no-library-size-signifcantly-de.md)
+    - [Library size offset](sequencing_scalingNormalization/03-library-size-offset.md)
+    - [Suppose library sizes are different between groups](sequencing_scalingNormalization/04-suppose-library-sizes-are-different-between-groups.md)
+    - [Poisson GLM with library size offset: no longer significantly DE on 5% level.](sequencing_scalingNormalization/05-poisson-glm-with-library-size-offset-no-longer-significantly.md)
+    - [Scaling versus offsets](sequencing_scalingNormalization/06-scaling-versus-offsets.md)
+- **sequencing_technicalDE**
+    - [A function for captioning and referencing images](sequencing_technicalDE/01-a-function-for-captioning-and-referencing-images.md)
+    - [Independent filtering](sequencing_technicalDE/02-independent-filtering.md)
+    - [All defaults](sequencing_technicalDE/03-all-defaults.md)
+    - [All defaults](sequencing_technicalDE/04-all-defaults.md)
+    - [filter out ~20% of genes with lowest effect sizes](sequencing_technicalDE/05-filter-out-20-of-genes-with-lowest-effect-sizes.md)
+    - [we remove a similar fraction of ~20% genes](sequencing_technicalDE/06-we-remove-a-similar-fraction-of-20-genes.md)
+    - [Aliasing](sequencing_technicalDE/07-aliasing.md)
+    - [2 samples per patient for 8 patients](sequencing_technicalDE/08-2-samples-per-patient-for-8-patients.md)
+    - [first four are healthy, next four are diseased](sequencing_technicalDE/09-first-four-are-healthy-next-four-are-diseased.md)
+    - [one before and one after sample for each](sequencing_technicalDE/10-one-before-and-one-after-sample-for-each.md)
+    - [limma-voom as an alternative approach to modeling counts](sequencing_technicalDE/11-limma-voom-as-an-alternative-approach-to-modeling-counts.md)
+    - [All defaults](sequencing_technicalDE/12-all-defaults.md)
+    - [All defaults](sequencing_technicalDE/13-all-defaults.md)
+    - [normalize just as in edgeR](sequencing_technicalDE/14-normalize-just-as-in-edger.md)
+    - [fit the mean-variance trend used to calculate weights](sequencing_technicalDE/15-fit-the-mean-variance-trend-used-to-calculate-weights.md)
+    - [this mean-variance trend is then automatically incorporated into the usual limma pipeline](sequencing_technicalDE/16-this-mean-variance-trend-is-then-automatically-incorporated.md)
+    - [contrast matrix we used before](sequencing_technicalDE/17-contrast-matrix-we-used-before.md)
+    - [DPN vs control at 24h](sequencing_technicalDE/18-dpn-vs-control-at-24h.md)
+    - [DPN vs control at 48h](sequencing_technicalDE/19-dpn-vs-control-at-48h.md)
+    - [OHT vs control at 24h](sequencing_technicalDE/20-oht-vs-control-at-24h.md)
+    - [OHT vs control at 48h](sequencing_technicalDE/21-oht-vs-control-at-48h.md)
+    - [DPN control interaction](sequencing_technicalDE/22-dpn-control-interaction.md)
+    - [OHT control interaction](sequencing_technicalDE/23-oht-control-interaction.md)
+    - [OHT DPN interaction](sequencing_technicalDE/24-oht-dpn-interaction.md)
+    - [loop over all contrasts of interest](sequencing_technicalDE/25-loop-over-all-contrasts-of-interest.md)
+- **singleCell_MacoskoWorkflow**
+    - [Introduction](singleCell_MacoskoWorkflow/01-introduction.md)
+    - [Accessing data from a SingleCellExperiment object](singleCell_MacoskoWorkflow/02-accessing-data-from-a-singlecellexperiment-object.md)
+    - [Creating a new SingleCellExperiment object](singleCell_MacoskoWorkflow/03-creating-a-new-singlecellexperiment-object.md)
+    - [Storing (meta)data in a SingleCellExperiment object](singleCell_MacoskoWorkflow/04-storing-meta-data-in-a-singlecellexperiment-object.md)
+    - [Calculate QC variables](singleCell_MacoskoWorkflow/05-calculate-qc-variables.md)
+    - [add the QC variables to sce object](singleCell_MacoskoWorkflow/06-add-the-qc-variables-to-sce-object.md)
+    - [EDA](singleCell_MacoskoWorkflow/07-eda.md)
+    - [QC using adaptive thresholds](singleCell_MacoskoWorkflow/08-qc-using-adaptive-thresholds.md)
+    - [Identifying and removing empty droplets](singleCell_MacoskoWorkflow/09-identifying-and-removing-empty-droplets.md)
+    - [Identifying and removing doublets](singleCell_MacoskoWorkflow/10-identifying-and-removing-doublets.md)
+    - [perform doublet detection](singleCell_MacoskoWorkflow/11-perform-doublet-detection.md)
+    - [visualize these scores](singleCell_MacoskoWorkflow/12-visualize-these-scores.md)
+    - [explore doublet score wrt original cluster labels](singleCell_MacoskoWorkflow/13-explore-doublet-score-wrt-original-cluster-labels.md)
+    - [The most basic DR](singleCell_MacoskoWorkflow/14-the-most-basic-dr.md)
+    - [Linear dimensionality reduction: PCA](singleCell_MacoskoWorkflow/15-linear-dimensionality-reduction-pca.md)
+    - [A generalization of PCA for exponential family distributions.](singleCell_MacoskoWorkflow/16-a-generalization-of-pca-for-exponential-family-distributions.md)
+    - [Non-linear dimensionality reduction: UMAP](singleCell_MacoskoWorkflow/17-non-linear-dimensionality-reduction-umap.md)
+- [Single-cell RNA-sequencing intro](singleCell_intro1.md)
+- [Single-cell RNA-sequencing: variance stabilizing transformations](singleCell_varStabilization.md)
+- [2. Software for Proteomics Data Analysis 2021 (PDA21)](software.md)
+- **technicalDetailsProteomics**
+    - [Preamble](technicalDetailsProteomics/01-preamble.md)
+    - [Linear regression](technicalDetailsProteomics/02-linear-regression.md)
+    - [Robust regression](technicalDetailsProteomics/03-robust-regression.md)
+    - [Empirical Bayes/Moderated $t$-test.](technicalDetailsProteomics/04-empirical-bayes-moderated--test.md)
+    - [P-values](technicalDetailsProteomics/05-p-values.md)
+    - [Correction for multiple testing](technicalDetailsProteomics/06-correction-for-multiple-testing.md)
+- [Mass Spectrometry & Bioinformatics for Proteomics](techvid.md)
+
+### docs
+
+- **AhlmannEltze2021**
+    - [Introduction](docs/AhlmannEltze2021/01-introduction.md)
+    - [Discussion](docs/AhlmannEltze2021/02-discussion.md)
+    - [Availability](docs/AhlmannEltze2021/03-availability.md)
+    - [Acknowledgments](docs/AhlmannEltze2021/04-acknowledgments.md)
+    - [Funding](docs/AhlmannEltze2021/05-funding.md)
+    - [References](docs/AhlmannEltze2021/06-references.md)
+    - [A Supplementary Figures](docs/AhlmannEltze2021/07-a-supplementary-figures.md)
+    - [B Appendix](docs/AhlmannEltze2021/08-b-appendix.md)
+    - [C Data Availability](docs/AhlmannEltze2021/09-c-data-availability.md)
+- **Genome Res.-2008-Marioni-1509-17**
+    - [Method ~~s~~](docs/Genome Res.-2008-Marioni-1509-17/01-method-s.md)
+    - [Genome Res. 2008 Marioni 1509 17 Part 02 —](docs/Genome Res.-2008-Marioni-1509-17/02-genome-res-2008-marioni-1509-17-part-02.md)
+- **PCI.2011.45**
+    - [Introduction](docs/PCI.2011.45/01-introduction.md)
+    - [A. Hybrid Tree](docs/PCI.2011.45/02-a-hybrid-tree.md)
+    - [I. INTRODUCTION](docs/PCI.2011.45/03-i-introduction.md)
+    - [B. R-tree](docs/PCI.2011.45/04-b-r-tree.md)
+    - [C. iDistance](docs/PCI.2011.45/05-c-idistance.md)
+    - [PCI.2011.45 Part 06 —](docs/PCI.2011.45/06-pci-2011-45-part-06.md)
+    - [III. K-NEAREST NEIGHBOR QUERIES](docs/PCI.2011.45/07-iii-k-nearest-neighbor-queries.md)
+    - [IV. DIMENSIONALITY CURSE](docs/PCI.2011.45/08-iv-dimensionality-curse.md)
+    - [V. EXPERIMENTAL EVALUATION](docs/PCI.2011.45/09-v-experimental-evaluation.md)
+    - [VI. CONCLUSIONS](docs/PCI.2011.45/10-vi-conclusions.md)
+    - [REFERENCES](docs/PCI.2011.45/11-references.md)
+- **backgroundProteomicsDataAnalysis**
+    - [STATISTICAL METHODS FOR DIFFERENTIAL PROTEOMICS AT PEPTIDE AND PROTEIN LEVEL](docs/backgroundProteomicsDataAnalysis/01-statistical-methods-for-differential-proteomics-at-peptide-a.md)
+    - [PART I: INTRODUCTION](docs/backgroundProteomicsDataAnalysis/02-part-i-introduction.md)
+    - [PART II: RESEARCH PAPERS](docs/backgroundProteomicsDataAnalysis/03-part-ii-research-papers.md)
+- **illumina_sequencing_introduction**
+    - [Table of Contents](docs/illumina_sequencing_introduction/01-table-of-contents.md)
+    - [I. Welcome to Next-Generation Sequencing](docs/illumina_sequencing_introduction/02-i-welcome-to-next-generation-sequencing.md)
+    - [II. NGS Methods](docs/illumina_sequencing_introduction/03-ii-ngs-methods.md)
+    - [III. Illumina DNA-to-Data NGS Solutions](docs/illumina_sequencing_introduction/04-iii-illumina-dna-to-data-ngs-solutions.md)
+    - [IV. Glossary](docs/illumina_sequencing_introduction/05-iv-glossary.md)
+    - [V. References](docs/illumina_sequencing_introduction/06-v-references.md)
+- **intro**
+    - [Introduction](docs/intro/01-introduction.md)
+    - [Genomics](docs/intro/02-genomics.md)
+    - [Genomics](docs/intro/03-genomics.md)
+    - [Genome - DNA](docs/intro/04-genome---dna.md)
+    - [DNA structure](docs/intro/05-dna-structure.md)
+    - [Transcription-Translation](docs/intro/06-transcription-translation.md)
+    - [Transcription-Translation](docs/intro/07-transcription-translation.md)
+    - [Proteins](docs/intro/08-proteins.md)
+    - [The human genome](docs/intro/09-the-human-genome.md)
+    - [The human genome](docs/intro/10-the-human-genome.md)
+    - [The human genome](docs/intro/11-the-human-genome.md)
+    - [The human genome](docs/intro/12-the-human-genome.md)
+    - [Differential Gene Expression](docs/intro/13-differential-gene-expression.md)
+    - [Differential gene expression](docs/intro/14-differential-gene-expression.md)
+    - [’omics profiling](docs/intro/15-omics-profiling.md)
+    - [Topics](docs/intro/16-topics.md)
+    - [Organisation](docs/intro/17-organisation.md)
+    - [Organisation](docs/intro/18-organisation.md)
+    - [Projects + Master thesis](docs/intro/19-projects-master-thesis.md)
+    - [Projects + Master thesis](docs/intro/20-projects-master-thesis.md)
+- **martens_proteomics_bioinformatics**
+    - [Introduction](docs/martens_proteomics_bioinformatics/01-introduction.md)
+    - [Mass resolution is an important characteristic for identification and quantification](docs/martens_proteomics_bioinformatics/02-mass-resolution-is-an-important-characteristic-for-identific.md)
+    - [Detectors: electron multiplier amplification](docs/martens_proteomics_bioinformatics/03-detectors-electron-multiplier-amplification.md)
+    - [GutenTag, DirecTag, TagRecon](docs/martens_proteomics_bioinformatics/04-gutentag-directag-tagrecon.md)
+- **proteomics_data_analysis**
+    - [Introduction](docs/proteomics_data_analysis/01-introduction.md)
+    - [Mass resolution is an important characteristic for identification and quantification](docs/proteomics_data_analysis/02-mass-resolution-is-an-important-characteristic-for-identific.md)
+    - [Detectors: electron multiplier amplification](docs/proteomics_data_analysis/03-detectors-electron-multiplier-amplification.md)
+    - [GutenTag, DirecTag, TagRecon](docs/proteomics_data_analysis/04-gutentag-directag-tagrecon.md)
+- **stagewiseTesting**
+    - [(R)evolution in high throughput experiments](docs/stagewiseTesting/01-r-evolution-in-high-throughput-experiments.md)
+    - [(R)evolution in high throughput experiments](docs/stagewiseTesting/02-r-evolution-in-high-throughput-experiments.md)
+    - [State-of-the-art RNA-seq tools allow transcript-level analysis](docs/stagewiseTesting/03-state-of-the-art-rna-seq-tools-allow-transcript-level-analys.md)
+    - [State-of-the-art RNA-seq tools allow transcript-level analysis](docs/stagewiseTesting/04-state-of-the-art-rna-seq-tools-allow-transcript-level-analys.md)
+    - [Power Issue Transcript Level Analysis](docs/stagewiseTesting/05-power-issue-transcript-level-analysis.md)
+    - [Single cell transcriptomics](docs/stagewiseTesting/06-single-cell-transcriptomics.md)
+    - [Single cell transc riptomics](docs/stagewiseTesting/07-single-cell-transc-riptomics.md)
+    - [Simulation study conventional analysis in sequencing applications](docs/stagewiseTesting/08-simulation-study-conventional-analysis-in-sequencing-applica.md)
+    - [Example](docs/stagewiseTesting/09-example.md)
+    - [Example: Gene-level tests](docs/stagewiseTesting/10-example-gene-level-tests.md)
+    - [Solution: Stage-wise testing procedure: aggregate and split evidence](docs/stagewiseTesting/11-solution-stage-wise-testing-procedure-aggregate-and-split-ev.md)
+    - [Stage-wise testing procedure1](docs/stagewiseTesting/12-stage-wise-testing-procedure1.md)
+    - [Stage-wise testing procedure1](docs/stagewiseTesting/13-stage-wise-testing-procedure1.md)
+
+### images_sequencing
+
+- [DeAnalysis para](images_sequencing/deAnalysis_para.md)
+- [FastqLine](images_sequencing/fastqLine.md)
+- [IndependentFiltering2](images_sequencing/independentFiltering2.md)
+- [MarioniFigs cropped](images_sequencing/marioniFigs_cropped.md)
+- [Marioni fig1](images_sequencing/marioni_fig1.md)
+- **seqKeynote**
+    - [Reads](images_sequencing/seqKeynote/01-reads.md)
+    - [Exon-level quantification](images_sequencing/seqKeynote/02-exon-level-quantification.md)
+
+### scripts_singleCell
+
+- [Single-cell lab session](scripts_singleCell/singleCell_lab.md)
+
+## Not converted
+
+Listed rather than dropped silently, because this is the material that needs a
+different approach.
+
+- **administrivia** (2) — `README.md`, `instructors.Rmd`
+
+- **converted to almost nothing** (1) — `about.Rmd`
+
+- **no text layer (scan) — 0 chars/page** (2) — `images_sequencing/likTests.pdf`, `images_sequencing/marioni_fig2.pdf`
+
+- **no text layer (scan) — 47 chars/page** (1) — `images_sequencing/irlsScheme.pdf`

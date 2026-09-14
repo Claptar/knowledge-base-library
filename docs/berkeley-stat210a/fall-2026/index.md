@@ -1,0 +1,508 @@
+---
+title: berkeley stat210a · fall 2026
+source: https://github.com/berkeley-stat210a/fall-2026.git
+licence: CC BY 4.0
+converted: 2026-09-14
+---
+
+# berkeley stat210a · fall 2026
+
+Converted material from [https://github.com/berkeley-stat210a/fall-2026.git](https://github.com/berkeley-stat210a/fall-2026.git).
+
+**Licence:** CC BY 4.0 · **Material:** course · **Converted:** 2026-09-14
+
+> Converted, not adapted — the same text in markdown, split so every part has a URL.
+> It is regenerable output and is **never edited by hand**: a hand edit is lost on the
+> next run and silently diverges from the source it claims to reproduce. To change the
+> text, make an adaptation instead.
+
+## Contents
+
+- [Data](data.md)
+- [Handwritten notes](handwritten-notes.md)
+- **homework**
+    - [Assignments](homework/01-assignments.md)
+    - [Standing homework instructions](homework/02-standing-homework-instructions.md)
+- [Statistics 210a: Theoretical Statistics](home.md)
+- [Old exams](old-exams.md)
+- [Recitation](recitation.md)
+- **syllabus**
+    - [Course information](syllabus/01-course-information.md)
+    - [About Stat 210A](syllabus/02-about-stat-210a.md)
+    - [References](syllabus/03-references.md)
+    - [Grading](syllabus/04-grading.md)
+    - [Accommodations](syllabus/05-accommodations.md)
+
+### handwritten
+
+- [Lecture 01 — intro](handwritten/lecture01-intro.md)
+- [Lecture 02 — probability](handwritten/lecture02-probability.md)
+- [Lecture 03 — estimation](handwritten/lecture03-estimation.md)
+- **lecture04-sufficiency**
+    - [Introduction](handwritten/lecture04-sufficiency/01-introduction.md)
+    - [Def](handwritten/lecture04-sufficiency/02-def.md)
+    - [theorem](handwritten/lecture04-sufficiency/03-theorem.md)
+- [Lecture 05 — exponentialfamilies](handwritten/lecture05-exponentialfamilies.md)
+- [Lecture 06 — completeness](handwritten/lecture06-completeness.md)
+- [Lecture 07 — unbiased](handwritten/lecture07-unbiased.md)
+- [Lecture 08 — fisherinfo](handwritten/lecture08-fisherinfo.md)
+- [Lecture 09 — bayesestimation](handwritten/lecture09-bayesestimation.md)
+- [Lecture 10 — bayesinterp](handwritten/lecture10-bayesinterp.md)
+- [Lecture 11 — bayescompute](handwritten/lecture11-bayescompute.md)
+- [Lecture 12 — jamesstein](handwritten/lecture12-jamesstein.md)
+- [Lecture 13 — minimax](handwritten/lecture13-minimax.md)
+- [Lecture 14 — hyptesting](handwritten/lecture14-hyptesting.md)
+- [Lecture 15 — testonepar](handwritten/lecture15-testonepar.md)
+- [Lecture 16 — pconf](handwritten/lecture16-pconf.md)
+- [Lecture 17 — nuisanceparams](handwritten/lecture17-nuisanceparams.md)
+- [Lecture 18 — linearmodel](handwritten/lecture18-linearmodel.md)
+- [Lecture 19 — asymptotics](handwritten/lecture19-asymptotics.md)
+- [Lecture 21 — mle](handwritten/lecture21-mle.md)
+- [Lecture 22 — mle consistency](handwritten/lecture22-mle-consistency.md)
+- [Lecture 23 — likelihoodbasedinference](handwritten/lecture23-likelihoodbasedinference.md)
+- [Lecture 25 — bootstrap](handwritten/lecture25-bootstrap.md)
+- [Lecture 26 — multipletesting](handwritten/lecture26-multipletesting.md)
+
+### homework
+
+- **homework1**
+    - [Homework1 Part 01 —](homework/homework1/01-homework1-part-01.md)
+    - [Moral: {#moral}](homework/homework1/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework1/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework1/04-moral-moral-2.md)
+    - [Moral: {#moral-3}](homework/homework1/05-moral-moral-3.md)
+- **homework10**
+    - [Homework10 Part 01 —](homework/homework10/01-homework10-part-01.md)
+    - [Moral: {#moral}](homework/homework10/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework10/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework10/04-moral-moral-2.md)
+    - [Moral: {#moral-3}](homework/homework10/05-moral-moral-3.md)
+- **homework11**
+    - [Homework11 Part 01 —](homework/homework11/01-homework11-part-01.md)
+    - [Moral: {#moral}](homework/homework11/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework11/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework11/04-moral-moral-2.md)
+    - [Moral: {#moral-3}](homework/homework11/05-moral-moral-3.md)
+- **homework12**
+    - [Homework12 Part 01 —](homework/homework12/01-homework12-part-01.md)
+    - [Moral: {#moral}](homework/homework12/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework12/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework12/04-moral-moral-2.md)
+- **homework2**
+    - [Homework2 Part 01 —](homework/homework2/01-homework2-part-01.md)
+    - [Moral: {#moral}](homework/homework2/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework2/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework2/04-moral-moral-2.md)
+    - [Moral: {#moral-3}](homework/homework2/05-moral-moral-3.md)
+- **homework3**
+    - [Homework3 Part 01 —](homework/homework3/01-homework3-part-01.md)
+    - [Moral: {#moral}](homework/homework3/02-moral-moral.md)
+    - [Moral 1: {#moral-1}](homework/homework3/03-moral-1-moral-1.md)
+    - [Moral 2: {#moral-2}](homework/homework3/04-moral-2-moral-2.md)
+    - [Moral: {#moral-3}](homework/homework3/05-moral-moral-3.md)
+- **homework4**
+    - [Homework4 Part 01 —](homework/homework4/01-homework4-part-01.md)
+    - [Moral: {#moral}](homework/homework4/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework4/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework4/04-moral-moral-2.md)
+- **homework5**
+    - [Homework5 Part 01 —](homework/homework5/01-homework5-part-01.md)
+    - [Moral: {#moral}](homework/homework5/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework5/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework5/04-moral-moral-2.md)
+    - [Moral: {#moral-3}](homework/homework5/05-moral-moral-3.md)
+- **homework6**
+    - [Homework6 Part 01 —](homework/homework6/01-homework6-part-01.md)
+    - [Moral: {#moral}](homework/homework6/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework6/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework6/04-moral-moral-2.md)
+- **homework7**
+    - [Homework7 Part 01 —](homework/homework7/01-homework7-part-01.md)
+    - [Moral: {#moral}](homework/homework7/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework7/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework7/04-moral-moral-2.md)
+    - [Moral: {#moral-3}](homework/homework7/05-moral-moral-3.md)
+- **homework8**
+    - [Homework8 Part 01 —](homework/homework8/01-homework8-part-01.md)
+    - [Moral: {#moral}](homework/homework8/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework8/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework8/04-moral-moral-2.md)
+    - [Moral: {#moral-3}](homework/homework8/05-moral-moral-3.md)
+- **homework9**
+    - [Homework9 Part 01 —](homework/homework9/01-homework9-part-01.md)
+    - [Moral: {#moral}](homework/homework9/02-moral-moral.md)
+    - [Moral: {#moral-1}](homework/homework9/03-moral-moral-1.md)
+    - [Moral: {#moral-2}](homework/homework9/04-moral-moral-2.md)
+    - [Moral: {#moral-3}](homework/homework9/05-moral-moral-3.md)
+- [Hw 00 —](homework/hw0.md)
+
+### old-exams
+
+- **final2018**
+    - [Final2018 Part 01 —](old-exams/final2018/01-final2018-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/final2018/02-final-examination-question-booklet.md)
+    - [Problem 1 answers continued (1)](old-exams/final2018/03-problem-1-answers-continued-1.md)
+    - [Problem 1 answers continued (2)](old-exams/final2018/04-problem-1-answers-continued-2.md)
+    - [Problem 1 answers continued (3)](old-exams/final2018/05-problem-1-answers-continued-3.md)
+    - [Problem 2 answers continued (1)](old-exams/final2018/06-problem-2-answers-continued-1.md)
+    - [Problem 2 answers continued (2)](old-exams/final2018/07-problem-2-answers-continued-2.md)
+    - [Problem 2 answers continued (3)](old-exams/final2018/08-problem-2-answers-continued-3.md)
+    - [Problem 3 answers continued (1)](old-exams/final2018/09-problem-3-answers-continued-1.md)
+    - [Problem 3 answers continued (2)](old-exams/final2018/10-problem-3-answers-continued-2.md)
+    - [Problem 3 answers continued (3)](old-exams/final2018/11-problem-3-answers-continued-3.md)
+    - [Problem 4 answers continued (1)](old-exams/final2018/12-problem-4-answers-continued-1.md)
+    - [Problem 4 answers continued (2)](old-exams/final2018/13-problem-4-answers-continued-2.md)
+    - [Problem 4 answers continued (3)](old-exams/final2018/14-problem-4-answers-continued-3.md)
+- **final2019**
+    - [Final2019 Part 01 —](old-exams/final2019/01-final2019-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/final2019/02-final-examination-question-booklet.md)
+    - [1. Poisson minimax estimation (24 points, 4 points / part).](old-exams/final2019/03-1-poisson-minimax-estimation-24-points-4-points-part.md)
+    - [Problem 1 answers continued (1)](old-exams/final2019/04-problem-1-answers-continued-1.md)
+    - [Problem 1 answers continued (2)](old-exams/final2019/05-problem-1-answers-continued-2.md)
+    - [Problem 1 answers continued (3)](old-exams/final2019/06-problem-1-answers-continued-3.md)
+    - [2. ANOVA with random effects (25 points, 5 points / part).](old-exams/final2019/07-2-anova-with-random-effects-25-points-5-points-part.md)
+    - [Problem 2 answers continued (1)](old-exams/final2019/08-problem-2-answers-continued-1.md)
+    - [Problem 2 answers continued (2)](old-exams/final2019/09-problem-2-answers-continued-2.md)
+    - [Problem 2 answers continued (3)](old-exams/final2019/10-problem-2-answers-continued-3.md)
+    - [Problem 3 answers continued (1)](old-exams/final2019/11-problem-3-answers-continued-1.md)
+    - [Problem 3 answers continued (2)](old-exams/final2019/12-problem-3-answers-continued-2.md)
+    - [Problem 3 answers continued (3)](old-exams/final2019/13-problem-3-answers-continued-3.md)
+    - [4. Nonlinear regression (24 points, 6 points / part).](old-exams/final2019/14-4-nonlinear-regression-24-points-6-points-part.md)
+    - [Problem 4 answers continued (1)](old-exams/final2019/15-problem-4-answers-continued-1.md)
+    - [Problem 4 answers continued (2)](old-exams/final2019/16-problem-4-answers-continued-2.md)
+    - [Problem 4 answers continued (3)](old-exams/final2019/17-problem-4-answers-continued-3.md)
+- **final2020**
+    - [Final Examination: QUESTION BOOKLET](old-exams/final2020/01-final-examination-question-booklet.md)
+    - [Prof. Will Fithian](old-exams/final2020/02-prof-will-fithian.md)
+    - [1. One Poisson, two Poissons (30 points, 5 points / part).](old-exams/final2020/03-1-one-poisson-two-poissons-30-points-5-points-part.md)
+    - [2. A problem of limited means (20 points, 5 points / part).](old-exams/final2020/04-2-a-problem-of-limited-means-20-points-5-points-part.md)
+    - [3. Gamma palooza (25 points, 5 points / part).](old-exams/final2020/05-3-gamma-palooza-25-points-5-points-part.md)
+- **final2021**
+    - [Final2021 Part 01 —](old-exams/final2021/01-final2021-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/final2021/02-final-examination-question-booklet.md)
+    - [1. Regression with correlated errors (25 points, 5 points / part).](old-exams/final2021/03-1-regression-with-correlated-errors-25-points-5-points-part.md)
+    - [Problem 1 answers continued (1)](old-exams/final2021/04-problem-1-answers-continued-1.md)
+    - [Problem 1 answers continued (2)](old-exams/final2021/05-problem-1-answers-continued-2.md)
+    - [Problem 1 answers continued (3)](old-exams/final2021/06-problem-1-answers-continued-3.md)
+    - [2. Contamination model (25 points, 5 points / part).](old-exams/final2021/07-2-contamination-model-25-points-5-points-part.md)
+    - [Problem 2 answers continued (1)](old-exams/final2021/08-problem-2-answers-continued-1.md)
+    - [Problem 2 answers continued (2)](old-exams/final2021/09-problem-2-answers-continued-2.md)
+    - [Problem 2 answers continued (3)](old-exams/final2021/10-problem-2-answers-continued-3.md)
+    - [3. Two-by-two count table (25 points, 5 points / part).](old-exams/final2021/11-3-two-by-two-count-table-25-points-5-points-part.md)
+    - [Problem 3 answers continued (1)](old-exams/final2021/12-problem-3-answers-continued-1.md)
+    - [Problem 3 answers continued (2)](old-exams/final2021/13-problem-3-answers-continued-2.md)
+    - [Problem 3 answers continued (3)](old-exams/final2021/14-problem-3-answers-continued-3.md)
+    - [4. Change point problem (25 points, 5 points / part).](old-exams/final2021/15-4-change-point-problem-25-points-5-points-part.md)
+    - [Problem 4 answers continued (1)](old-exams/final2021/16-problem-4-answers-continued-1.md)
+    - [Problem 4 answers continued (2)](old-exams/final2021/17-problem-4-answers-continued-2.md)
+    - [Problem 4 answers continued (3)](old-exams/final2021/18-problem-4-answers-continued-3.md)
+- **final2023**
+    - [Final2023 Part 01 —](old-exams/final2023/01-final2023-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/final2023/02-final-examination-question-booklet.md)
+    - [1. Laplace Location Family (30 points, 5 points / part).](old-exams/final2023/03-1-laplace-location-family-30-points-5-points-part.md)
+    - [Problem 1 answers continued (1)](old-exams/final2023/04-problem-1-answers-continued-1.md)
+    - [Problem 1 answers continued (2)](old-exams/final2023/05-problem-1-answers-continued-2.md)
+    - [Problem 1 answers continued (3)](old-exams/final2023/06-problem-1-answers-continued-3.md)
+    - [2. Multivariate normal means (20 points, 5 points / part).](old-exams/final2023/07-2-multivariate-normal-means-20-points-5-points-part.md)
+    - [Problem 2 answers continued (1)](old-exams/final2023/08-problem-2-answers-continued-1.md)
+    - [Problem 2 answers continued (2)](old-exams/final2023/09-problem-2-answers-continued-2.md)
+    - [Problem 2 answers continued (3)](old-exams/final2023/10-problem-2-answers-continued-3.md)
+    - [3. Nonparametric two-sample problem (20 points, 5 points / part).](old-exams/final2023/11-3-nonparametric-two-sample-problem-20-points-5-points-part.md)
+    - [Problem 3 answers continued (1)](old-exams/final2023/12-problem-3-answers-continued-1.md)
+    - [Problem 3 answers continued (2)](old-exams/final2023/13-problem-3-answers-continued-2.md)
+    - [Problem 3 answers continued (3)](old-exams/final2023/14-problem-3-answers-continued-3.md)
+    - [4. Bayes estimation for Uniform Scale family (20 points, 5 points / part).](old-exams/final2023/15-4-bayes-estimation-for-uniform-scale-family-20-points-5-poin.md)
+    - [Problem 4 answers continued (1)](old-exams/final2023/16-problem-4-answers-continued-1.md)
+    - [Problem 4 answers continued (2)](old-exams/final2023/17-problem-4-answers-continued-2.md)
+    - [Problem 4 answers continued (3)](old-exams/final2023/18-problem-4-answers-continued-3.md)
+- **final2024**
+    - [Final2024 Part 01 —](old-exams/final2024/01-final2024-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/final2024/02-final-examination-question-booklet.md)
+    - [1. Six Gaussians (20 points, 5 points / part).](old-exams/final2024/03-1-six-gaussians-20-points-5-points-part.md)
+    - [Problem 1 answers continued (1)](old-exams/final2024/04-problem-1-answers-continued-1.md)
+    - [Problem 1 answers continued (2)](old-exams/final2024/05-problem-1-answers-continued-2.md)
+    - [Problem 1 answers continued (3)](old-exams/final2024/06-problem-1-answers-continued-3.md)
+    - [Problem 2 answers continued (1)](old-exams/final2024/07-problem-2-answers-continued-1.md)
+    - [Problem 2 answers continued (2)](old-exams/final2024/08-problem-2-answers-continued-2.md)
+    - [Problem 2 answers continued (3)](old-exams/final2024/09-problem-2-answers-continued-3.md)
+    - [3. Social network model (20 points, 5 points / part).](old-exams/final2024/10-3-social-network-model-20-points-5-points-part.md)
+    - [Problem 3 answers continued (1)](old-exams/final2024/11-problem-3-answers-continued-1.md)
+    - [Problem 3 answers continued (2)](old-exams/final2024/12-problem-3-answers-continued-2.md)
+    - [Problem 3 answers continued (3)](old-exams/final2024/13-problem-3-answers-continued-3.md)
+    - [4. Estimation in the Geometric model (25 points, 5 points / part).](old-exams/final2024/14-4-estimation-in-the-geometric-model-25-points-5-points-part.md)
+    - [Problem 4 answers continued (1)](old-exams/final2024/15-problem-4-answers-continued-1.md)
+    - [Problem 4 answers continued (2)](old-exams/final2024/16-problem-4-answers-continued-2.md)
+    - [Problem 4 answers continued (3)](old-exams/final2024/17-problem-4-answers-continued-3.md)
+- **solution2018**
+    - [Solution2018 Part 01 —](old-exams/solution2018/01-solution2018-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/solution2018/02-final-examination-question-booklet.md)
+    - [Problem 1 Solutions](old-exams/solution2018/03-problem-1-solutions.md)
+    - [Species](old-exams/solution2018/04-species.md)
+    - [Problem 2 solutions](old-exams/solution2018/05-problem-2-solutions.md)
+    - [Problem 3 solutions](old-exams/solution2018/06-problem-3-solutions.md)
+    - [Problem 4 solutions](old-exams/solution2018/07-problem-4-solutions.md)
+- **solution2019**
+    - [Solution2019 Part 01 —](old-exams/solution2019/01-solution2019-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/solution2019/02-final-examination-question-booklet.md)
+    - [1. Poisson minimax estimation (24 points, 4 points / part).](old-exams/solution2019/03-1-poisson-minimax-estimation-24-points-4-points-part.md)
+    - [1. Solution.](old-exams/solution2019/04-1-solution.md)
+    - [2. ANOVA with random effects (25 points, 5 points / part).](old-exams/solution2019/05-2-anova-with-random-effects-25-points-5-points-part.md)
+    - [2. Solution.](old-exams/solution2019/06-2-solution.md)
+    - [3. Solution.](old-exams/solution2019/07-3-solution.md)
+    - [4. Nonlinear regression (24 points, 6 points / part).](old-exams/solution2019/08-4-nonlinear-regression-24-points-6-points-part.md)
+    - [4. Solution](old-exams/solution2019/09-4-solution.md)
+- **solution2020**
+    - [Final Examination: QUESTION BOOKLET](old-exams/solution2020/01-final-examination-question-booklet.md)
+    - [Prof. Will Fithian](old-exams/solution2020/02-prof-will-fithian.md)
+    - [1. One Poisson, two Poissons (30 points, 5 points / part).](old-exams/solution2020/03-1-one-poisson-two-poissons-30-points-5-points-part.md)
+    - [1. Solution](old-exams/solution2020/04-1-solution.md)
+    - [2. A problem of limited means (20 points, 5 points / part).](old-exams/solution2020/05-2-a-problem-of-limited-means-20-points-5-points-part.md)
+    - [2. Solution](old-exams/solution2020/06-2-solution.md)
+    - [3. Gamma palooza (25 points, 5 points / part).](old-exams/solution2020/07-3-gamma-palooza-25-points-5-points-part.md)
+    - [3. Solution](old-exams/solution2020/08-3-solution.md)
+    - [4. Solution](old-exams/solution2020/09-4-solution.md)
+- **solution2021**
+    - [Solution2021 Part 01 —](old-exams/solution2021/01-solution2021-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/solution2021/02-final-examination-question-booklet.md)
+    - [1. Regression with correlated errors (25 points, 5 points / part).](old-exams/solution2021/03-1-regression-with-correlated-errors-25-points-5-points-part.md)
+    - [Solution](old-exams/solution2021/04-solution.md)
+    - [Solution](old-exams/solution2021/05-solution.md)
+    - [Solution](old-exams/solution2021/06-solution.md)
+    - [Solution](old-exams/solution2021/07-solution.md)
+    - [2. Contamination model (25 points, 5 points / part).](old-exams/solution2021/08-2-contamination-model-25-points-5-points-part.md)
+    - [Solution](old-exams/solution2021/09-solution.md)
+    - [Solution](old-exams/solution2021/10-solution.md)
+    - [Solution](old-exams/solution2021/11-solution.md)
+    - [Solution](old-exams/solution2021/12-solution.md)
+    - [Solution](old-exams/solution2021/13-solution.md)
+    - [3. Two-by-two count table (25 points, 5 points / part).](old-exams/solution2021/14-3-two-by-two-count-table-25-points-5-points-part.md)
+    - [Solution](old-exams/solution2021/15-solution.md)
+    - [Solution](old-exams/solution2021/16-solution.md)
+    - [Solution](old-exams/solution2021/17-solution.md)
+    - [Solution](old-exams/solution2021/18-solution.md)
+    - [4. Change point problem (25 points, 5 points / part).](old-exams/solution2021/19-4-change-point-problem-25-points-5-points-part.md)
+    - [Solution](old-exams/solution2021/20-solution.md)
+    - [Solution](old-exams/solution2021/21-solution.md)
+    - [Solution](old-exams/solution2021/22-solution.md)
+    - [Solution](old-exams/solution2021/23-solution.md)
+    - [Solution](old-exams/solution2021/24-solution.md)
+- **solution2023**
+    - [Solution2023 Part 01 —](old-exams/solution2023/01-solution2023-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/solution2023/02-final-examination-question-booklet.md)
+    - [1. Laplace Location Family (24 points, 4 points / part).](old-exams/solution2023/03-1-laplace-location-family-24-points-4-points-part.md)
+    - [Solution](old-exams/solution2023/04-solution.md)
+    - [Solution](old-exams/solution2023/05-solution.md)
+    - [Solution](old-exams/solution2023/06-solution.md)
+    - [Solution](old-exams/solution2023/07-solution.md)
+    - [Solution](old-exams/solution2023/08-solution.md)
+    - [Solution](old-exams/solution2023/09-solution.md)
+    - [2. Multivariate normal means (20 points, 5 points / part).](old-exams/solution2023/10-2-multivariate-normal-means-20-points-5-points-part.md)
+    - [Solution](old-exams/solution2023/11-solution.md)
+    - [Solution](old-exams/solution2023/12-solution.md)
+    - [Solution](old-exams/solution2023/13-solution.md)
+    - [Solution](old-exams/solution2023/14-solution.md)
+    - [3. Nonparametric two-sample problem (20 points, 5 points / part).](old-exams/solution2023/15-3-nonparametric-two-sample-problem-20-points-5-points-part.md)
+    - [Solution](old-exams/solution2023/16-solution.md)
+    - [Solution](old-exams/solution2023/17-solution.md)
+    - [Solution](old-exams/solution2023/18-solution.md)
+    - [Solution](old-exams/solution2023/19-solution.md)
+    - [4. Bayes estimation for Uniform Scale family (20 points, 5 points / part).](old-exams/solution2023/20-4-bayes-estimation-for-uniform-scale-family-20-points-5-poin.md)
+    - [Solution](old-exams/solution2023/21-solution.md)
+    - [Solution](old-exams/solution2023/22-solution.md)
+    - [Solution](old-exams/solution2023/23-solution.md)
+    - [Solution](old-exams/solution2023/24-solution.md)
+- **solution2024**
+    - [Solution2024 Part 01 —](old-exams/solution2024/01-solution2024-part-01.md)
+    - [Final Examination: QUESTION BOOKLET](old-exams/solution2024/02-final-examination-question-booklet.md)
+    - [1. Six Gaussians (20 points, 5 points / part).](old-exams/solution2024/03-1-six-gaussians-20-points-5-points-part.md)
+    - [Solution](old-exams/solution2024/04-solution.md)
+    - [Solution](old-exams/solution2024/05-solution.md)
+    - [Solution](old-exams/solution2024/06-solution.md)
+    - [Solution](old-exams/solution2024/07-solution.md)
+    - [Solution](old-exams/solution2024/08-solution.md)
+    - [Solution](old-exams/solution2024/09-solution.md)
+    - [Solution](old-exams/solution2024/10-solution.md)
+    - [3. Social network model (20 points, 5 points / part).](old-exams/solution2024/11-3-social-network-model-20-points-5-points-part.md)
+    - [Solution](old-exams/solution2024/12-solution.md)
+    - [Solution](old-exams/solution2024/13-solution.md)
+    - [Solution](old-exams/solution2024/14-solution.md)
+    - [4. Estimation in the Geometric model (25 points, 5 points / part).](old-exams/solution2024/15-4-estimation-in-the-geometric-model-25-points-5-points-part.md)
+    - [Solution](old-exams/solution2024/16-solution.md)
+    - [Solution](old-exams/solution2024/17-solution.md)
+    - [Solution](old-exams/solution2024/18-solution.md)
+    - [Solution](old-exams/solution2024/19-solution.md)
+    - [Solution](old-exams/solution2024/20-solution.md)
+
+### reader
+
+- **asymptotics**
+    - [Introduction to Asymptotic Theory](reader/asymptotics/01-introduction-to-asymptotic-theory.md)
+    - ["True" Fisher information](reader/asymptotics/02-true-fisher-information.md)
+    - [Convergence](reader/asymptotics/03-convergence.md)
+    - [Continuous Mapping Theorem](reader/asymptotics/04-continuous-mapping-theorem.md)
+    - [Slutsky's Theorem](reader/asymptotics/05-slutsky-s-theorem.md)
+    - [Delta Method](reader/asymptotics/06-delta-method.md)
+- **bayes-computation**
+    - [Why Bayesian computation is difficult](reader/bayes-computation/01-why-bayesian-computation-is-difficult.md)
+    - [Markov chains](reader/bayes-computation/02-markov-chains.md)
+    - [The Gibbs sampler](reader/bayes-computation/03-the-gibbs-sampler.md)
+    - [MCMC in practice](reader/bayes-computation/04-mcmc-in-practice.md)
+- **bayes-estimation**
+    - [Frequentist motivation for a Bayes Estimator](reader/bayes-estimation/01-frequentist-motivation-for-a-bayes-estimator.md)
+    - [Bayes estimator](reader/bayes-estimation/02-bayes-estimator.md)
+    - [Conjugate priors](reader/bayes-estimation/03-conjugate-priors.md)
+- **bayes-interpretation**
+    - [Interpretations of Probability](reader/bayes-interpretation/01-interpretations-of-probability.md)
+    - [Where Does the Prior Come From?](reader/bayes-interpretation/02-where-does-the-prior-come-from.md)
+    - [Example: Hierarchical Gaussian model](reader/bayes-interpretation/03-example-hierarchical-gaussian-model.md)
+- **completeness**
+    - [Completeness](reader/completeness/01-completeness.md)
+    - [Expand to see answer](reader/completeness/02-expand-to-see-answer.md)
+    - [Expand to see answer](reader/completeness/03-expand-to-see-answer.md)
+    - [Expand for proof](reader/completeness/04-expand-for-proof.md)
+    - [Ancillarity](reader/completeness/05-ancillarity.md)
+    - [Basu's Theorem](reader/completeness/06-basu-s-theorem.md)
+    - [Expand for answer](reader/completeness/07-expand-for-answer.md)
+- **convergence**
+    - [Introduction to Asymptotic Theory](reader/convergence/01-introduction-to-asymptotic-theory.md)
+    - [Convergence](reader/convergence/02-convergence.md)
+    - [Continuous Mapping Theorem](reader/convergence/03-continuous-mapping-theorem.md)
+    - [Slutsky's Theorem](reader/convergence/04-slutsky-s-theorem.md)
+    - [Delta Method](reader/convergence/05-delta-method.md)
+- **empirical-bayes**
+    - [Gaussian sequence model](reader/empirical-bayes/01-gaussian-sequence-model.md)
+    - [Stein's Unbiased Risk Estimator](reader/empirical-bayes/02-stein-s-unbiased-risk-estimator.md)
+    - [Empirical Bayes](reader/empirical-bayes/03-empirical-bayes.md)
+    - [James-Stein Estimator](reader/empirical-bayes/04-james-stein-estimator.md)
+    - [Stein's Lemma](reader/empirical-bayes/05-stein-s-lemma.md)
+    - [Stein's Unbiased Risk Estimator (SURE)](reader/empirical-bayes/06-stein-s-unbiased-risk-estimator-sure.md)
+- **estimation**
+    - [Statistical models](reader/estimation/01-statistical-models.md)
+    - [Estimation in statistical models](reader/estimation/02-estimation-in-statistical-models.md)
+    - [risk function of estimator (X + synth.heads) / (n + synth.flips)](reader/estimation/03-risk-function-of-estimator-x-synth-heads-n-synth-flips.md)
+- **exponential-families**
+    - [Exponential family structure](reader/exponential-families/01-exponential-family-structure.md)
+    - [Differential identities](reader/exponential-families/02-differential-identities.md)
+    - [Other parameterizations](reader/exponential-families/03-other-parameterizations.md)
+    - [Exponential tilting](reader/exponential-families/04-exponential-tilting.md)
+    - [Visualization of exponential tilting](reader/exponential-families/05-visualization-of-exponential-tilting.md)
+    - [Repeated sampling from exponential families](reader/exponential-families/06-repeated-sampling-from-exponential-families.md)
+- **hypothesis-testing**
+    - [Hypothesis Testing](reader/hypothesis-testing/01-hypothesis-testing.md)
+    - [The critical function](reader/hypothesis-testing/02-the-critical-function.md)
+    - [Optimal testing](reader/hypothesis-testing/03-optimal-testing.md)
+- **introduction**
+    - [About Stat 210A](reader/introduction/01-about-stat-210a.md)
+    - [Deductive vs inductive reasoning](reader/introduction/02-deductive-vs-inductive-reasoning.md)
+    - [The problem of induction](reader/introduction/03-the-problem-of-induction.md)
+    - [Statistical evasions in practice: coin flipping](reader/introduction/04-statistical-evasions-in-practice-coin-flipping.md)
+- **jamesstein**
+    - [Gaussian sequence model](reader/jamesstein/01-gaussian-sequence-model.md)
+    - [Stein's Unbiased Risk Estimator](reader/jamesstein/02-stein-s-unbiased-risk-estimator.md)
+    - [Risk of the James-Stein estimator](reader/jamesstein/03-risk-of-the-james-stein-estimator.md)
+- [Latex macros](reader/latex-macros.md)
+- **likelihood-inference**
+    - [Likelihood-Based Inference](reader/likelihood-inference/01-likelihood-based-inference.md)
+    - [Wald-Type Confidence Regions](reader/likelihood-inference/02-wald-type-confidence-regions.md)
+    - [Likelihood inference Part 03 —](reader/likelihood-inference/03-likelihood-inference-part-03.md)
+- **maximum-likelihood**
+    - [Maximum Likelihood Estimation](reader/maximum-likelihood/01-maximum-likelihood-estimation.md)
+    - [Asymptotic Efficiency](reader/maximum-likelihood/02-asymptotic-efficiency.md)
+    - [Asymptotic Distribution of MLE](reader/maximum-likelihood/03-asymptotic-distribution-of-mle.md)
+    - [Consistency of MLE](reader/maximum-likelihood/04-consistency-of-mle.md)
+- **measure-theory-basics**
+    - [Measure theory: a rigorous grounding for probability](reader/measure-theory-basics/01-measure-theory-a-rigorous-grounding-for-probability.md)
+    - [Measures](reader/measure-theory-basics/02-measures.md)
+    - [Integrals](reader/measure-theory-basics/03-integrals.md)
+    - [Densities](reader/measure-theory-basics/04-densities.md)
+    - [Probability spaces and random variables](reader/measure-theory-basics/05-probability-spaces-and-random-variables.md)
+    - [Conditional probability](reader/measure-theory-basics/06-conditional-probability.md)
+    - [More definitions](reader/measure-theory-basics/07-more-definitions.md)
+- **minimax-estimation**
+    - [Definitions](reader/minimax-estimation/01-definitions.md)
+    - [Game theoretic interpretation](reader/minimax-estimation/02-game-theoretic-interpretation.md)
+    - [Least Favorable Priors](reader/minimax-estimation/03-least-favorable-priors.md)
+    - [Least Favorable Sequence](reader/minimax-estimation/04-least-favorable-sequence.md)
+    - [Bounding the minimax risk](reader/minimax-estimation/05-bounding-the-minimax-risk.md)
+- **multiple-testing**
+    - [Multiple Testing](reader/multiple-testing/01-multiple-testing.md)
+    - [Family-wise Error Rate (FWER)](reader/multiple-testing/02-family-wise-error-rate-fwer.md)
+    - [Bonferroni Correction](reader/multiple-testing/03-bonferroni-correction.md)
+    - [Testing with Dependence](reader/multiple-testing/04-testing-with-dependence.md)
+    - [Deduced Inference](reader/multiple-testing/05-deduced-inference.md)
+    - [False Discovery Rate (FDR)](reader/multiple-testing/06-false-discovery-rate-fdr.md)
+    - [Benjamini-Hochberg Procedure](reader/multiple-testing/07-benjamini-hochberg-procedure.md)
+    - [FDR Control](reader/multiple-testing/08-fdr-control.md)
+- **probability**
+    - [What is a probability?](reader/probability/01-what-is-a-probability.md)
+    - [Probability as a measure](reader/probability/02-probability-as-a-measure.md)
+    - [Measures](reader/probability/03-measures.md)
+    - [Integrals](reader/probability/04-integrals.md)
+    - [Densities](reader/probability/05-densities.md)
+    - [Probability spaces and random variables](reader/probability/06-probability-spaces-and-random-variables.md)
+    - [Conditional probability](reader/probability/07-conditional-probability.md)
+- **score-fisher**
+    - [Score fisher Part 01 —](reader/score-fisher/01-score-fisher-part-01.md)
+    - [Wait! Didn't we say a statistic can't be a function of $\theta$?](reader/score-fisher/02-wait-didn-t-we-say-a-statistic-can-t-be-a-function-of.md)
+    - [Is the score a statistic?](reader/score-fisher/03-is-the-score-a-statistic.md)
+    - [Differential Identities and the Fisher Information](reader/score-fisher/04-differential-identities-and-the-fisher-information.md)
+    - [Cramér-Rao Lower Bound](reader/score-fisher/05-cramér-rao-lower-bound.md)
+    - [Score fisher Part 06 —](reader/score-fisher/06-score-fisher-part-06.md)
+    - [Score fisher Part 07 —](reader/score-fisher/07-score-fisher-part-07.md)
+- **sufficiency**
+    - [Sufficiency](reader/sufficiency/01-sufficiency.md)
+    - [Visualization of sufficiency](reader/sufficiency/02-visualization-of-sufficiency.md)
+    - [Factorization theorem](reader/sufficiency/03-factorization-theorem.md)
+    - [Statement for general $\mathcal{X}$](reader/sufficiency/04-statement-for-general.md)
+    - [Examples](reader/sufficiency/05-examples.md)
+    - [Sufficient statistics under i.i.d. sampling](reader/sufficiency/06-sufficient-statistics-under-i-i-d-sampling.md)
+    - [Minimal sufficiency](reader/sufficiency/07-minimal-sufficiency.md)
+- **testing-interpretation**
+    - [Introduction](reader/testing-interpretation/01-introduction.md)
+    - [p-Values](reader/testing-interpretation/02-p-values.md)
+    - [We'll compute power curves for a grid of d and k values](reader/testing-interpretation/03-we-ll-compute-power-curves-for-a-grid-of-d-and-k-values.md)
+    - [and pass them to OJS as data](reader/testing-interpretation/04-and-pass-them-to-ojs-as-data.md)
+    - [Function that computes power curve for given d and k](reader/testing-interpretation/05-function-that-computes-power-curve-for-given-d-and-k.md)
+    - [Pre-compute for a reasonable range of d and k](reader/testing-interpretation/06-pre-compute-for-a-reasonable-range-of-d-and-k.md)
+    - [Confidence Regions](reader/testing-interpretation/07-confidence-regions.md)
+    - [(Mis-)Interpreting Hypothesis Tests](reader/testing-interpretation/08-mis--interpreting-hypothesis-tests.md)
+    - [Conceptual objections to hypothesis testing](reader/testing-interpretation/09-conceptual-objections-to-hypothesis-testing.md)
+- **testing-linear**
+    - [t and F Distributions](reader/testing-linear/01-t-and-f-distributions.md)
+    - [Canonical Linear Model](reader/testing-linear/02-canonical-linear-model.md)
+    - [General Linear Model](reader/testing-linear/03-general-linear-model.md)
+- **testing-nuisance**
+    - [Introduction](reader/testing-nuisance/01-introduction.md)
+    - [Conditional testing](reader/testing-nuisance/02-conditional-testing.md)
+    - [Multiparameter exponential families](reader/testing-nuisance/03-multiparameter-exponential-families.md)
+    - [Permutation tests](reader/testing-nuisance/04-permutation-tests.md)
+- **testing-one-parameter**
+    - [Testing with one real parameter](reader/testing-one-parameter/01-testing-with-one-real-parameter.md)
+    - [One-sided testing](reader/testing-one-parameter/02-one-sided-testing.md)
+    - [Sample mean](reader/testing-one-parameter/03-sample-mean.md)
+    - [Two-sided alternatives](reader/testing-one-parameter/04-two-sided-alternatives.md)
+- **unbiased-estimation**
+    - [Unbiased Estimation](reader/unbiased-estimation/01-unbiased-estimation.md)
+    - [Convex Loss Functions](reader/unbiased-estimation/02-convex-loss-functions.md)
+    - [The Rao-Blackwell Theorem](reader/unbiased-estimation/03-the-rao-blackwell-theorem.md)
+    - [UMVU estimators](reader/unbiased-estimation/04-umvu-estimators.md)
+    - [Finding the UMVUE](reader/unbiased-estimation/05-finding-the-umvue.md)
+    - [Doubts about unbiasedness](reader/unbiased-estimation/06-doubts-about-unbiasedness.md)
+    - [Expand for answer](reader/unbiased-estimation/07-expand-for-answer.md)
+
+### recitation
+
+- [Recitation4](recitation/recitation4.md)
+
+## Not converted
+
+Listed rather than dropped silently, because this is the material that needs a
+different approach.
+
+- **administrivia** (6) — `README.md`, `calendar.qmd`, `faq.qmd`, `license.qmd`, `test-ons.qmd`, `test.pdf`
+
+- **converted to almost nothing** (3) — `reader/tikz/dgm.tex`, `reader/under-construction.qmd`, `siteimprove.html`
+
+- **no text layer (scan) — 0 chars/page** (4) — `recitation/recitation1-probability.pdf`, `recitation/recitation2.pdf`, `recitation/recitation3.pdf`, `recitation/recitation5.pdf`
+
+- **render of .tex with the same stem** (13) — `homework/homework1.pdf`, `homework/homework10.pdf`, `homework/homework11.pdf`, `homework/homework12.pdf`, `homework/homework2.pdf`, `homework/homework3.pdf`, `homework/homework4.pdf`, `homework/homework5.pdf` … and 5 more

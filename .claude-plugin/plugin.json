@@ -1,0 +1,17 @@
+{
+  "name": "study-library",
+  "description": "Finds, fetches and converts learning materials into a uniform, linkable markdown library. Owns the per-provider recipes — where a site's material actually lives, what is gated, which licence claims are traps — and the conversion that turns Quarto, LaTeX, notebooks, transcripts and PDFs into markdown split by section. Companion to the study-kb plugin, which holds the teaching and adaptation skills.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Claptar",
+    "url": "https://github.com/Claptar"
+  },
+  "homepage": "https://github.com/Claptar/knowledge-base-library",
+  "keywords": [
+    "library",
+    "course-materials",
+    "markdown",
+    "conversion",
+    "open-educational-resources"
+  ]
+}

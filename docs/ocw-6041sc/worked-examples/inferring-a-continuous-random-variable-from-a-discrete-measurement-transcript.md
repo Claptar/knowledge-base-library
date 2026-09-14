@@ -1,0 +1,83 @@
+---
+title: Inferring a continuous random variable from a discrete measurement transcript
+source: https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/
+source_file: sources/ocw-6041sc/worked-examples/inferring-a-continuous-random-variable-from-a-discrete-measurement-transcript.pdf
+licence: CC BY-NC-SA 4.0
+route: pdf
+fidelity: lossy
+converted: '2026-09-14'
+---
+
+# Inferring a continuous random variable from a discrete measurement transcript
+
+**Source:** `worked-examples/inferring-a-continuous-random-variable-from-a-discrete-measurement-transcript.pdf` from [ocw-6041sc](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/) · **Licence:** CC BY-NC-SA 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+
+!!! warning "Converted from PDF — mathematics may be mangled"
+    Prose survives a PDF; equations do not. Check anything symbolic against the
+    original before relying on it, and mark repairs `**Unverified.**`
+
+# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Inferring a Continuous Random Variable from a Discrete Measurement**
+
+In this problem, we're going to look at how to infer a continuous random variable from a discrete measurement. And the continuous random variable that we're interested in in this problem is q, which is given by this PDF. It's 6q times 1 minus q for a q between 0 and 1 and 0 otherwise.
+
+And here is a graph of what it looks like. It just kind of has this curve shape. And it's symmetric. And it's peak is at 1/2.
+
+And the way to interpret q is q is the unknown bias of a coin. So the bias of a coin, the probability of heads of that coin is somewhere between 0 and 1. We're not sure exactly what it is.
+
+And here is our, say, prior belief about how this random bias is distributed. And we're going try to infer what this bias is by flipping the coin and observing whether or not we got heads or tails. And because of that, the measurement, or the observation that we get, is discreet. Either we get heads, or we get tails. And we model that using a discrete random variable x, which is, in this case, it turns out it's just a Bernoulli random variable, either 0 or 1.
+
+And the model that we have is that, if we knew what this bias q was, if we knew that it was a little q, then this coin, I mean, it behaves as if it was a coin with that bias. So the probability of getting heads, or the probability that x equals 1, is just equal to q, which is the bias. And the probability that it's equal to 0 is 1 minus q. So that's just our model of how the coin works.
+
+We can also write this another way, as just more like a conditional PMF. So the conditional PMF of x, given q of little x, is q, if x is 1, 1 minus q, if x equals 0, and 0 otherwise. Just a more compact way of writing this.
+
+All right, so what we want to do in this problem is find this conditional PDF. What is the conditional PDF of q given x? So we observe what x is, either a 0 or 1. And we want to know now, given that information, given that measurement, what is the new distribution of q the bias of the coin?
+
+And to do that, well, we apply Bayes' rule. And remember, Bayes' rule, it consists of several terms. The first one is the numerator, which is our prior initial belief, so which is just the regular PDF of q, times the conditional PMF of x given q. All right, so because we have a continuous variable that we want to infer from a discreet measurement, we use this variation of Bayes' rule, where we have a PDF here and a conditional PMF here. And the denominator is-- well, it's the PMF of x.
+
+And of course, we can take this PMF of x, this denominator, and expand it, using the law of total probability where the PMF of x, you can think of it as you can get x with a combination of lots of different possible values of the bias q. And so we just calculate all those possibilities and
+
+1
+
+integrate. And what we want to integrate here is q, so we want to integrate-- remember to keep in mind the limits of integration. And this is just referenced by the limits of what the PDF of q is.
+
+OK. All right, so now we're asked to find what this value is for x equals to 0 or 1 and for all values of q. And the values of q we care about are the ones between 0 and 1. So let's focus on the two different possibilities for x.
+
+So the first one is, let's look at the case where x equals 1 first. And then now let's just plug-in what all these different terms should be. Well, the PDF of q we're given. And of course, we're looking here at q between 0 and 1, so within that range. The PDF of q is just 6q times 1 minus q.
+
+And the conditional PMF of x where we know that from our model, because we're looking at the case where x equals 1. That conditional PMF is just q. And the denominator is really the same as the numerator, except you integrate it. So it's the integral from 0 to 1 of 6q times 1 minus q times q dq.
+
+OK. And now we can simplify this. So under the numerator, we have integral-- sorry, 6q squared times 1 minus q. And then the bottom we have the integral of 6q squared minus q cubed, d cubed from 0 to 1. And now this is just some calculus now. So we still have the numerator 6q squared times 1 minus q. The denominator, we have 2q cubed-- that would give us the 6q squared term-minus 6/4 q to the fourth. And we integrate that from 0 to 1.
+
+OK. And what does that give us? We get 6q squared 1 minus q still on the top. And the bottom, we get-- well the 0-- the case where it's 0, it's just 0. The case where it's 1, it's 2 minus 3/2, so it's 1/2. So really, it just becomes 12 q squared 1 minus q. And of course, this only true when q is between 0 and 1.
+
+All right, so the case where it's equal to 1, we have our answer. And it turns out that, if you plot this, what does it look like? It looks something like this where the peak is now at 2/3.
+
+So how do you interpret this? The interpretation is that what you have is you observe that you've got, actually, heads on this toss. So that is evidence that the bias of the coin is relatively high.
+
+So it's relatively more likely to get heads with this coin. So q, in that case, you would believe that it's more likely to be higher than 1/2. And it turns out that, when you go through this reasoning and the Bayes' rule, what you get is that it looks like this. And the peak is now at 2/3.
+
+And you can repeat this exercise now with the case where x is 0. So when x is 0, you still get the same term here, 6q 1 minus q, but the conditional PMF is now the-- you want the conditional PMF when x equals 0, which is now 1 minus q. So you get 1 minus q here.
+
+And now this term becomes 6q times 1 minus q squared. And so really, the bottom is also 6q times 1 minus q squared dq. And if you go through the same sort of calculus, what you get is that, in this case, the answer is 12q 1 minus q squared.
+
+2
+
+So let me rewrite what the first case was. The first case, when x equals 1 was equal to 12q squared 1 minus q. So they look quite similar, except that this one has q squared, this one has 1 minus q squared. And if you take this one, the case where you observe a 0, and you plot that, it turns out it looks something like this. And this actually doesn't look like it, but it should be the peak is at 1/3.
+
+And so you notice, first of all, that these are symmetric. There's some symmetry going on. And this interpretation in this case is that, because you observed 0, which corresponds to observing tails, that gives you evidence that the bias of the coin is relatively low, or the probability of getting heads with this coin is relatively low, which pushes your belief about q towards the smaller values.
+
+OK, so it turns out that this distribution, this distribution, and the original distribution of q, all fall under family of distributions called the beta distribution. And they're parameterized by a couple of parameters. And it's used frequently to model things like the bias of a coin, or anything that's a random variable that's bounded between 0 and 1.
+
+OK, so this problem allowed us to get some more exercise with Bayes' rule, this continuous discrete version of Bayes' rule. And if you go through all the steps, you'll find that it's relatively straightforward to go through the formula and plug in the different parts of the terms and go through a little bit of calculus and find the answer. And it's always good to go back, once you find the answer, to look at it a little bit and make sure that actually makes sense. So you can convince yourself that it's not something that looks--
+
+3
+
+MIT OpenCourseWare http://ocw.mit.edu
+
+6.041SC Probabilistic Systems Analysis and Applied Probability Fall 2013
+
+For information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.
+
+---
+
+[Up: contents](../index.md)
