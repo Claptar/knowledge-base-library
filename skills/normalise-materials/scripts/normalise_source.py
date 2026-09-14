@@ -40,9 +40,11 @@ Dry run by default: without --apply it reports the plan and writes nothing.
 import argparse
 import json
 import os
+import os
 import re
 import shutil
 import sys
+from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
@@ -492,6 +494,40 @@ def convert(doc):
     raise ValueError(doc.route)
 
 
+def convert_one(job):
+    """Convert a single document. Pure function of its input path — the unit of parallelism.
+
+    Runs in a worker process, so it takes and returns only plain data and never touches the
+    output tree or the shared link map. Failures come back as values rather than exceptions,
+    because one unreadable PDF in 1,591 must not take the pool down with it.
+    """
+    rel, src, route, fidelity = job
+    path = Path(src)
+    if route == "pdf":
+        ok, chars = pdf_has_text(path)
+        if not ok:
+            return rel, "scan", chars, None
+    try:
+        text, meta_title = convert(Doc(src=path, rel=rel, route=route, fidelity=fidelity))
+    except Exception as exc:
+        return rel, "fail", f"{type(exc).__name__}: {exc}", None
+    return rel, "ok", tidy(text), meta_title
+
+
+def convert_all(docs, jobs):
+    """Run convert_one over every document, in parallel where it is worth it.
+
+    PDFs are ~90% of the corpus by bytes and pymupdf is CPU-bound, so this is where the wall
+    clock goes. Pass 2 stays serial: it needs the finished map of which file became which page,
+    and it is only string work and file writes.
+    """
+    work = [(d.rel, str(d.src), d.route, d.fidelity) for d in docs]
+    if jobs > 1 and len(work) > 1:
+        with ProcessPoolExecutor(max_workers=jobs) as pool:
+            return {r[0]: r[1:] for r in pool.map(convert_one, work, chunksize=1)}
+    return {r[0]: r[1:] for r in map(convert_one, work)}
+
+
 # ---------------------------------------------------------------------------
 # Splitting
 # ---------------------------------------------------------------------------
@@ -793,7 +829,7 @@ def footer(prev, nxt, up):
 # One source, end to end
 # ---------------------------------------------------------------------------
 
-def process(entry, sources_dir, library, include_all, apply):
+def process(entry, sources_dir, library, include_all, apply, jobs=1):
     """Convert one source, in two passes.
 
     Converting first and rendering second is not an optimisation — it is the only way the
@@ -818,13 +854,17 @@ def process(entry, sources_dir, library, include_all, apply):
     skipped = admin_skips + render_drops
 
     # ---- pass 1: convert, split, and decide where every page lands ------------------------
+    converted = convert_all(docs, jobs)
+
     plans, index_by_rel = [], {}
     for d in docs:
-        if d.route == "pdf":
-            ok, chars = pdf_has_text(d.src)
-            if not ok:
-                skipped.append((d.rel, f"no text layer (scan) — {chars} chars/page"))
-                continue
+        status, payload, meta_title = converted[d.rel]
+        if status == "scan":
+            skipped.append((d.rel, f"no text layer (scan) — {payload} chars/page"))
+            continue
+        if status == "fail":
+            skipped.append((d.rel, f"conversion failed: {payload}"))
+            continue
         # `index.qmd` would be overwritten by the generated contents page at the same path, so
         # the source's own home page keeps its content under a name of its own.
         out = Path(d.rel).with_suffix("")
@@ -832,12 +872,7 @@ def process(entry, sources_dir, library, include_all, apply):
             out = out.with_name("home")
         d.out_rel = str(out)
 
-        try:
-            text, meta_title = convert(d)
-        except Exception as exc:
-            skipped.append((d.rel, f"conversion failed: {type(exc).__name__}: {exc}"))
-            continue
-        text = expand_shortcodes(tidy(text), d.src, root)
+        text = expand_shortcodes(payload, d.src, root)
         if meta_title:
             meta_title = expand_shortcodes(str(meta_title), d.src, root)
         if len(text.strip()) < 80:
@@ -1082,6 +1117,8 @@ def main():
     ap.add_argument("--all", action="store_true", help="every source in the lockfile")
     ap.add_argument("--include-all", action="store_true", help="keep course administrivia")
     ap.add_argument("--summary-only", action="store_true", help="regenerate nav only")
+    ap.add_argument("--jobs", type=int, default=min(8, os.cpu_count() or 1),
+                    help="parallel conversion workers (default: min(8, cores); 1 disables)")
     ap.add_argument("--apply", action="store_true")
     a = ap.parse_args()
 
@@ -1107,7 +1144,7 @@ def main():
                 sys.exit(f"{slug} is not in the lockfile — run lock_sources.py first")
             entries.append(by_slug[slug])
 
-    results = [process(e, a.sources, LIBRARY, a.include_all, a.apply) for e in entries]
+    results = [process(e, a.sources, LIBRARY, a.include_all, a.apply, a.jobs) for e in entries]
 
     print(f"{'source':45s} {'dest':8s} {'docs':>5s} {'pages':>6s} {'lossy':>6s} {'skipped':>8s}")
     print("-" * 84)
