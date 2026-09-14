@@ -16,6 +16,10 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.indexes
+    # Render only the part of the nav this page needs. Material otherwise embeds the whole
+    # tree in every page, and at this scale that is fatal: ~2,100 entries on each of 11,808
+    # pages. Without it an earlier build reached 5.8 MB per page and a 48 GB site.
+    - navigation.prune
     - search.highlight
     - search.suggest
     - content.code.copy
@@ -70,7 +74,10 @@ validation:
   absolute_links: warn
   unrecognized_links: warn
   nav:
-    omitted_files: warn
+    # Section pages are deliberately absent from the nav — it stops at the document, or the
+    # sidebar alone weighs several megabytes on every page. They stay reachable from their
+    # document's index page, from previous/next links, and from search.
+    omitted_files: info
     not_found: warn
   links:
     not_found: warn
