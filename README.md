@@ -33,11 +33,10 @@ the top. Pages converted from a PDF carry a warning: prose survives a PDF, mathe
 ## Everything here is generated
 
 Do not edit a converted file by hand — the next run overwrites it, and in the meantime it claims to
-reproduce a source it no longer matches. The converter lives in the knowledge base:
+reproduce a source it no longer matches. The converter is in `skills/`:
 
 ```bash
-export KB_LIBRARY=$PWD
-cd ../knowledge-base
+uv sync --group dev --group convert
 uv run --group convert --group dev python \
     skills/normalise-materials/scripts/normalise_source.py sources/<slug> --apply
 ```

@@ -22,6 +22,14 @@ knowledge-base-library    everyone else's material, converted — large, generat
 belongs in the knowledge base. If it is someone else's text mechanically reformatted, it belongs
 here.
 
+**This repository serves the knowledge base, and is judged by whether it does.** The knowledge base
+is a route through ideas indexed by question, where completeness is the failure mode rather than
+the goal — its `AGENTS.md` opens with the test every change there is judged by. Here the opposite
+is true and deliberately so: breadth is the point, because the whole job is to be the place
+exhaustive material can live *without* burying seventy pages of actual notes. So the test here is
+narrower and mechanical — **is it converted faithfully, is it linkable, does it cite its
+original?** — and anything that is a *judgement* about a source belongs next door, not here.
+
 ## Everything here is generated
 
 **Never edit a converted file by hand.** It is regenerable output: a hand edit is lost on the next
@@ -29,20 +37,20 @@ run and, worse, silently diverges from the source it claims to reproduce. To cha
 the converter — or make an *adaptation*, which is a different job and lives in the knowledge base's
 `adapted/`.
 
-The converter is **not in this repository**. It lives with the skills, in the knowledge base:
+The converter lives here, in `skills/`, beside the material it produces:
 
 ```bash
-export KB_LIBRARY=/path/to/knowledge-base-library
-cd /path/to/knowledge-base
+uv sync --group dev --group convert
 uv run --group convert --group dev python \
-    skills/normalise-materials/scripts/normalise_source.py sources/<slug>            # dry run
-uv run ... normalise_source.py sources/<slug> --apply                                # write
-uv run ... normalise_source.py --all                                                 # plan the corpus
-uv run ... normalise_source.py --summary-only --apply                                # nav + index only
+    skills/normalise-materials/scripts/normalise_source.py sources/<slug>       # dry run
+uv run ... normalise_source.py sources/<slug> --apply                           # write
+uv run ... normalise_source.py --all                                            # plan the corpus
+uv run ... normalise_source.py --summary-only --apply                           # nav + index only
 ```
 
-`sources/` lives **here**, beside the output it produces. The script resolves it from `--library`,
-then `$KB_LIBRARY`, then a sibling `../knowledge-base-library`.
+`sources/<slug>` in, `docs/<slug>/` out, both in this repository. **Anything that touches
+`sources/` lives where `sources/` lives** — which is why `collect-materials`, `normalise-materials`
+and the four source-handling scripts are here rather than with the teaching skills next door.
 
 ## What is converted, and what is not
 
