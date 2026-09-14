@@ -67,6 +67,27 @@ NEVER = {"book"}                           # however obtained, whatever its lice
 NOT_MATERIAL = {"archive", "data", "scaffolding"}
 NEEDS_OPEN_ACCESS = {"paper"}              # assume paywalled unless the lockfile asserts otherwise
 
+# docs/<subject>/<provider>/<rest of slug>/ — a library is browsed by what a thing is about, not
+# by who published it, so the discipline is the top level. `subject:` is hand-written in the
+# lockfile beside `material:`; the provider and the rest are mechanical, because the slug already
+# encodes them. Berkeley alone is 45 of 57 sources, which is why provider cannot be the top level.
+PROVIDERS = {"ocw": "mit-ocw", "berkeley": "berkeley", "statomics": "statomics", "gtpb": "gtpb"}
+
+
+def output_path(entry, library):
+    """Where a source's converted pages go. One definition, used by the converter and the index."""
+    slug = entry["slug"]
+    subject = entry.get("subject") or "unsorted"
+    head, _, tail = slug.partition("/")
+    for prefix, provider in PROVIDERS.items():
+        if head == prefix or head.startswith(prefix + "-"):
+            rest = head[len(prefix):].lstrip("-") or head
+            break
+    else:
+        provider, rest = "other", head
+    parts = [p for p in (rest, tail) if p]
+    return library / "docs" / subject / provider / Path(*parts)
+
 # ---------------------------------------------------------------------------
 # Formats, best first. A document is whatever group of files shares a directory and a stem;
 # only the best format in each group is converted, so a lecture present as .qmd, .html and .pdf
@@ -262,7 +283,7 @@ def destination(entry, library):
     if not (entry.get("url") or entry.get("base")):
         # Every page cites its original. One that cannot is not published.
         return None, False, "no source URL to cite"
-    return library / "docs" / entry["slug"], True, ""
+    return output_path(entry, library), True, ""
 
 
 # ---------------------------------------------------------------------------
@@ -847,7 +868,7 @@ def write_nav(reference_dir, apply):
         for s in subdirs:
             if any(s.rglob("*.md")):
                 if not (s / "index.md").exists():
-                    lines.append(f"{pad}- {s.name}:")
+                    lines.append(f"{pad}- {prettify(s.name)}:")
                     walk(s, depth + 1)
                 else:
                     walk(s, depth)
@@ -858,7 +879,7 @@ def write_nav(reference_dir, apply):
             if (d / "index.md").exists():
                 walk(d, 0)
             else:
-                lines.append(f"- {d.name}:")
+                lines.append(f"- {prettify(d.name)}:")
                 walk(d, 1)
 
     text = "\n".join(lines) + "\n"
@@ -877,10 +898,11 @@ def write_library_index(reference_dir, slugs, apply):
     if not reference_dir.is_dir():
         return
     entries = []
-    for slug in sorted(slugs):
-        idx = reference_dir / slug / "index.md"
+    for entry in sorted(slugs, key=lambda e: (e.get("subject") or "", e["slug"])):
+        idx = output_path(entry, reference_dir.parent) / "index.md"
         if idx.exists():
-            entries.append((read_title(idx), f"{slug}/index.md"))
+            rel = idx.relative_to(reference_dir).as_posix()
+            entries.append((entry.get("subject") or "unsorted", read_title(idx), rel))
 
     body = [
         "---", "title: Home", "---", "",
@@ -895,12 +917,20 @@ def write_library_index(reference_dir, slugs, apply):
         "> a PDF carries a warning, because prose survives a PDF and mathematics does not. These",
         "> files are generated and are **never edited by hand**.",
         "",
-        f"**{len(entries)} source{'s' if len(entries) != 1 else ''} converted.** Books and paywalled "
-        "papers are deliberately absent.",
+        f"**{len(entries)} source{'s' if len(entries) != 1 else ''} converted**, by discipline. "
+        "Books and paywalled papers are deliberately absent.",
         "",
         "## Sources", "",
     ]
-    body += [f"- [{t}]({h})" for t, h in entries] or ["*(none yet)*"]
+    if entries:
+        current = None
+        for subject, title, href in entries:
+            if subject != current:
+                body += ["", f"### {prettify(subject)}", ""]
+                current = subject
+            body.append(f"- [{title}]({href})")
+    else:
+        body.append("*(none yet)*")
     text = "\n".join(body).rstrip() + "\n"
     if apply:
         (reference_dir / "index.md").write_text(text, encoding="utf-8")
@@ -924,7 +954,7 @@ def main():
     by_slug = {e["slug"]: e for e in lock.get("sources", [])}
 
     if a.summary_only:
-        write_library_index(published_root, set(by_slug), a.apply)
+        write_library_index(published_root, by_slug.values(), a.apply)
         n = write_nav(published_root, a.apply)
         print(f"nav: {n} entries" + ("" if a.apply else "  (dry run)"))
         return 0
@@ -974,7 +1004,7 @@ def main():
             print(f"  {n:5d}  {why}")
 
     if a.apply:
-        write_library_index(published_root, set(by_slug), True)
+        write_library_index(published_root, by_slug.values(), True)
         n = write_nav(published_root, True)
         print(f"\nwrote {tot['parts']} pages; nav has {n} entries")
     else:
