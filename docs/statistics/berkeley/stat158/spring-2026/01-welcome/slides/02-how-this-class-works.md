@@ -65,4 +65,4 @@ You will:
 
 ---
 
-[← Concepts in Computing with Data {#concepts-in-computing-with-data .title}](01-concepts-in-computing-with-data-concepts-in-computing-with-d.md) · [Up: contents](index.md)
+[← Concepts in Computing with Data](01-concepts-in-computing-with-data.md) · [Up: contents](index.md)

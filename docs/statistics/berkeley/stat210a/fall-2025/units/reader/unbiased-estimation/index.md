@@ -15,12 +15,12 @@ converted: '2026-09-14'
 Split into 7 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 Outline {.anchored number="1" anchor-id="outline"}](02-1-outline-anchored-number-1-anchor-id-outline.md)
-3. [Unbiased estimation Part 03 —](03-unbiased-estimation-part-03.md)
-4. [3 Convex Loss Functions {.anchored number="3" anchor-id="convex-loss-functions"}](04-3-convex-loss-functions-anchored-number-3-anchor-id-convex-l.md)
-5. [4 The Rao-Blackwell Theorem {.anchored number="4" anchor-id="the-rao-blackwell-theorem"}](05-4-the-rao-blackwell-theorem-anchored-number-4-anchor-id-the.md)
-6. [5 UMVU estimators {.anchored number="5" anchor-id="umvu-estimators"}](06-5-umvu-estimators-anchored-number-5-anchor-id-umvu-estimator.md)
-7. [6 Finding the UMVUE {.anchored number="6" anchor-id="finding-the-umvue"}](07-6-finding-the-umvue-anchored-number-6-anchor-id-finding-the.md)
+2. [1 Outline](02-1-outline.md)
+3. [2 Unbiased Estimation](03-2-unbiased-estimation.md)
+4. [3 Convex Loss Functions](04-3-convex-loss-functions.md)
+5. [4 The Rao-Blackwell Theorem](05-4-the-rao-blackwell-theorem.md)
+6. [5 UMVU estimators](06-5-umvu-estimators.md)
+7. [6 Finding the UMVUE](07-6-finding-the-umvue.md)
 
 ---
 

@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Hypergeometric Probabilities**
-
 In this problem, we're given an urn with n balls in it, out of which m balls are red balls. To visualize it, we can draw a box that represents the set of all n balls. Somewhere in the middle or somewhere else we have a cut, such that to the left we have all the red balls (there are m), and non-red balls. Let's for now call it black balls. That is n minus m.
 
 Now, from this box, we are to draw k balls, and we'd like to know the probability that i out of those k balls are red balls. For the rest of the problem, we'll refer to this probability as p-r, where r stands for the red balls. So from this picture, we know that we're going to draw a subset of the balls, such that i of them are red, and the remaining k minus i are black. And we'll like to know what is the probability that this event would occur.

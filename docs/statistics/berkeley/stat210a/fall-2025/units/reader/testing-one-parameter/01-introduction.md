@@ -18,4 +18,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [Testing one parameter Part 02 — →](02-testing-one-parameter-part-02.md)
+[Up: contents](index.md) · [1 Testing with one real parameter →](02-1-testing-with-one-real-parameter.md)

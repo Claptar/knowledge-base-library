@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: A Coin with Random Bias**
-
 Hi. In this problem, we're going to be dealing with a variation of the usual coin-flipping problem. But in this case, the bias itself of the coin is going to be random. So you could think of it as, you don't even know what the probability of heads for the coin is.
 
 So as usual, we're still taking one coin and we're flipping it n times. But the difference here is that the bias is because it was random variable Q. And we're told that the expectation of this bias is some mu and that the variance of the bias is some sigma squared, which we're told is positive. And what we're going to be asked is find a bunch of different expectations, covariances, and variances.

@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Bernoulli Process Practice**
-
 Hi everyone. Today I'm going to talk about Bernoulli process practice number one. In this problem, you are visiting a rain forest. But unfortunately you have run out of insect repellent.
 
 As a result, the probability of you getting mosquito bites is really high. At each second, the probability that a mosquito will land on your neck is 0.5. If a mosquito lands on your neck, the probability that it will bite you is 0.2. And the probability that it will never bother you is 0.8. All of this happens independently among all mosquitoes.

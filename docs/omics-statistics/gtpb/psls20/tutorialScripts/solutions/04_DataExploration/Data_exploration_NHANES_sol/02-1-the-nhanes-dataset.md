@@ -18,4 +18,4 @@ However, before we can actually start working with data, we will need to learn h
 
 ---
 
-[← Data exploration NHANES sol Part 01 —](01-data-exploration-nhanes-sol-part-01.md) · [Up: contents](index.md) · [2 Data Import with the readr R package →](03-2-data-import-with-the-readr-r-package.md)
+[← Tutorial 1.1: Exploring the NHANES dataset](01-tutorial-1-1-exploring-the-nhanes-dataset.md) · [Up: contents](index.md) · [2 Data Import with the readr R package →](03-2-data-import-with-the-readr-r-package.md)

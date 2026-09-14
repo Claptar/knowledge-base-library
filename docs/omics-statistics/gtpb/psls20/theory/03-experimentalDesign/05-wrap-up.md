@@ -29,4 +29,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Sample size](04-sample-size.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](06-home-https-gtpb-github-io-psls20.md)
+[← Sample size](04-sample-size.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](06-home-https-gtpb-github-io-psls20.md)

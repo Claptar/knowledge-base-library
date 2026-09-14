@@ -1,5 +1,5 @@
 ---
-title: Section questions oct30
+title: Reading for Oct. 30 section discussion
 source: https://github.com/berkeley-stat243/stat243-fall-2017/blob/0e9c7fe58194834b0d43b3dbf152d28a37044d05/ps/section_questions_oct30.pdf
 source_file: sources/berkeley-stat243/stat243-fall-2017/ps/section_questions_oct30.pdf
 licence: unresolved
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Section questions oct30
+# Reading for Oct. 30 section discussion
 
 **Source:** [`ps/section_questions_oct30.pdf`](https://github.com/berkeley-stat243/stat243-fall-2017/blob/0e9c7fe58194834b0d43b3dbf152d28a37044d05/ps/section_questions_oct30.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# Reading for Oct. 30 section discussion
 
 October 23, 2017
 

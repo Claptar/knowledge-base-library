@@ -15,9 +15,9 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Bayes interpretation Part 02 —](02-bayes-interpretation-part-02.md)
-3. [Bayes interpretation Part 03 —](03-bayes-interpretation-part-03.md)
-4. [Bayes interpretation Part 04 —](04-bayes-interpretation-part-04.md)
+2. [1 Interpretations of Probability](02-1-interpretations-of-probability.md)
+3. [2 Where Does the Prior Come From?](03-2-where-does-the-prior-come-from.md)
+4. [3 Gaussian Hierarchical Model](04-3-gaussian-hierarchical-model.md)
 
 ---
 

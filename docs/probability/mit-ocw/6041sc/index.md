@@ -86,10 +86,10 @@ Converted material from [https://ocw.mit.edu/courses/6-041sc-probabilistic-syste
 ### lectures
 
 - [01 captions](lectures/01-captions.md)
-- [01 slides](lectures/01-slides.md)
+- [LECTURE 1](lectures/01-slides.md)
 - [01 transcript](lectures/01-transcript.md)
 - [02 captions](lectures/02-captions.md)
-- [02 slides](lectures/02-slides.md)
+- [LECTURE 2](lectures/02-slides.md)
 - [02 transcript](lectures/02-transcript.md)
 - [03 captions](lectures/03-captions.md)
 - **03-slides**
@@ -102,16 +102,16 @@ Converted material from [https://ocw.mit.edu/courses/6-041sc-probabilistic-syste
     - [The king’s sibling](lectures/03-slides/07-the-king-s-sibling.md)
 - [03 transcript](lectures/03-transcript.md)
 - [04 captions](lectures/04-captions.md)
-- [04 slides](lectures/04-slides.md)
+- [LECTURE 4](lectures/04-slides.md)
 - [04 transcript](lectures/04-transcript.md)
 - [05 captions](lectures/05-captions.md)
-- [05 slides](lectures/05-slides.md)
+- [LECTURE 5](lectures/05-slides.md)
 - [05 transcript](lectures/05-transcript.md)
 - [06 captions](lectures/06-captions.md)
-- [06 slides](lectures/06-slides.md)
+- [LECTURE 6](lectures/06-slides.md)
 - [06 transcript](lectures/06-transcript.md)
 - [07 captions](lectures/07-captions.md)
-- [07 slides](lectures/07-slides.md)
+- [LECTURE 7](lectures/07-slides.md)
 - [07 transcript](lectures/07-transcript.md)
 - [08 captions](lectures/08-captions.md)
 - **08-slides**
@@ -144,7 +144,7 @@ Converted material from [https://ocw.mit.edu/courses/6-041sc-probabilistic-syste
 - [11 transcript](lectures/11-transcript.md)
 - [12 captions](lectures/12-captions.md)
 - [12 slides Lec 12 —bonvid](lectures/12-slides-lec12bonvid.md)
-- [12 slides](lectures/12-slides.md)
+- [LECTURE 12](lectures/12-slides.md)
 - [12 transcript](lectures/12-transcript.md)
 - [13 captions](lectures/13-captions.md)
 - **13-slides**
@@ -203,7 +203,7 @@ Converted material from [https://ocw.mit.edu/courses/6-041sc-probabilistic-syste
     - [Least Mean Squares Estimation](lectures/21-slides/06-least-mean-squares-estimation.md)
 - [21 transcript](lectures/21-transcript.md)
 - [22 captions](lectures/22-captions.md)
-- [22 slides](lectures/22-slides.md)
+- [LECTURE 22](lectures/22-slides.md)
 - [22 transcript](lectures/22-transcript.md)
 - [23 captions](lectures/23-captions.md)
 - **23-slides**

@@ -22,4 +22,4 @@ October 17, 2023
 
 ---
 
-[Up: contents](index.md) · [1 p-Values {.anchored number="1" anchor-id="p-values"} →](02-1-p-values-anchored-number-1-anchor-id-p-values.md)
+[Up: contents](index.md) · [1 p-Values →](02-1-p-values.md)

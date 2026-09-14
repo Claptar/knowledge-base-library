@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: Normal Probability Calculation**
-
 Hi. In this video, we're going to do standard probability calculations for normal random variables. We're given that x is standard normal with mean 0 and variance 1. And y is normal with mean one and variance 4. And we're asked for a couple of probabilities.
 
 For the normal CDF, we don't have a closed form expression. And so people generally tabulate values and for the standard normal case. So if we want little x equal to 3.49, we just look for 3.4 along the rows and 0.09 along the columns, and then pick the value appropriately. So for part A, we're asked what's the probability that x is less than equal to 1.5?

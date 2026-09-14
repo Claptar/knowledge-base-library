@@ -15,7 +15,7 @@ converted: '2026-09-14'
 Split into 3 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1.1 De Wetenschappelijke Methode {#de-wetenschappelijke-methode}](02-1-1-de-wetenschappelijke-methode-de-wetenschappelijke-method.md)
+2. [1.1 De Wetenschappelijke Methode](02-1-1-de-wetenschappelijke-methode.md)
 3. [1.2 Voorbeeld: Horizon - Homeopathy the test](03-1-2-voorbeeld-horizon---homeopathy-the-test.md)
 
 ---

@@ -19,4 +19,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Hypothesis tests](05-hypothesis-tests.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](07-home-https-gtpb-github-io-psls20.md)
+[← Hypothesis tests](05-hypothesis-tests.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](07-home-https-gtpb-github-io-psls20.md)

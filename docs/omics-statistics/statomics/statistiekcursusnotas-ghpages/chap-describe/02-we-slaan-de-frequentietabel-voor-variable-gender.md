@@ -16,4 +16,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Chap describe Part 01 —](01-chap-describe-part-01.md) · [Up: contents](index.md) · [op in object 'tab' →](03-op-in-object-tab.md)
+[← Hoofdstuk 4 Data exploratie en beschrijvende statistiek](01-hoofdstuk-4-data-exploratie-en-beschrijvende-statistiek.md) · [Up: contents](index.md) · [op in object 'tab' →](03-op-in-object-tab.md)

@@ -29,4 +29,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Statistics](10-statistics.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](12-home-https-gtpb-github-io-psls20.md)
+[← Statistics](10-statistics.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](12-home-https-gtpb-github-io-psls20.md)

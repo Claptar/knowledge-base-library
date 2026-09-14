@@ -22,4 +22,4 @@ Check that Laplace median problem is on HW 2 or other, check that minimality for
 
 ---
 
-[Up: contents](index.md) · [1 Completeness {.anchored number="1" anchor-id="completeness"} →](02-1-completeness-anchored-number-1-anchor-id-completeness.md)
+[Up: contents](index.md) · [1 Completeness →](02-1-completeness.md)

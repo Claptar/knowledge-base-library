@@ -16,4 +16,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Study: School Attendance](02-study-school-attendance.md) · [Up: contents](index.md) · [Simulated School Attendance {data-id="quarto-animate-title"} →](04-simulated-school-attendance-data-id-quarto-animate-title.md)
+[← Study: School Attendance](02-study-school-attendance.md) · [Up: contents](index.md) · [Simulated School Attendance →](04-simulated-school-attendance.md)

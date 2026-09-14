@@ -85,4 +85,4 @@ text(7.5,.5,"DATA EXPLORATION &\nDESCRIPTIVE STATISTICS (2)",col="black",cex=1.2
 
 ---
 
-[← Scientific Method](04-scientific-method.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](06-home-https-gtpb-github-io-psls20.md)
+[← Scientific Method](04-scientific-method.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](06-home-https-gtpb-github-io-psls20.md)

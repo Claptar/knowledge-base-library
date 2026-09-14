@@ -17,9 +17,9 @@ Split into 8 sections.
 1. [Study: School Attendance](01-study-school-attendance.md)
 2. [Study: School Attendance](02-study-school-attendance.md)
 3. [Question: How many potential outcomes are needed to represent this design?](03-question-how-many-potential-outcomes-are-needed-to-represent.md)
-4. [Simulated School Attendance {data-id="quarto-animate-title"}](04-simulated-school-attendance-data-id-quarto-animate-title.md)
-5. [Simulated School Attendance {data-id="quarto-animate-title"}](05-simulated-school-attendance-data-id-quarto-animate-title.md)
-6. [Simulated School Attendance {data-id="quarto-animate-title"}](06-simulated-school-attendance-data-id-quarto-animate-title.md)
+4. [Simulated School Attendance](04-simulated-school-attendance.md)
+5. [Simulated School Attendance](05-simulated-school-attendance.md)
+6. [Simulated School Attendance](06-simulated-school-attendance.md)
 7. [Estimates](07-estimates.md)
 8. [Rand. test under interference](08-rand-test-under-interference.md)
 

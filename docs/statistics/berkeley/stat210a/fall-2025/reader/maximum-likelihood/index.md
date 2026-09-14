@@ -15,10 +15,10 @@ converted: '2026-09-14'
 Split into 5 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Maximum likelihood Part 02 —](02-maximum-likelihood-part-02.md)
-3. [2 Asymptotic Efficiency {.anchored number="2" anchor-id="asymptotic-efficiency"}](03-2-asymptotic-efficiency-anchored-number-2-anchor-id-asymptot.md)
-4. [Maximum likelihood Part 04 —](04-maximum-likelihood-part-04.md)
-5. [4 Consistency of MLE {.anchored number="4" anchor-id="consistency-of-mle"}](05-4-consistency-of-mle-anchored-number-4-anchor-id-consistency.md)
+2. [1 Maximum Likelihood Estimation](02-1-maximum-likelihood-estimation.md)
+3. [2 Asymptotic Efficiency](03-2-asymptotic-efficiency.md)
+4. [3 Asymptotic Distribution of MLE](04-3-asymptotic-distribution-of-mle.md)
+5. [4 Consistency of MLE](05-4-consistency-of-mle.md)
 
 ---
 

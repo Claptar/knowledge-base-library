@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Probability that Three Pieces Form a Triangle**
-
 In this problem, we're going to look at the probability that when you take a stick and break it into three pieces randomly that these three pieces can actually be used to form a triangle. All right, so we start out with a stick of unit length, so-- length 1. And we'll choose a point along the stick to break. And we'll choose that point uniformly at random.
 
 So let's say that we chose it here, that was the point where we'll break it. And then independently of this first choice we'll again choose a second point to break it. Again, uniformly at random along the entire stick. So let's say the second point we chose was here. So what we have now is, we'll break it here, here, and so we'll have three pieces-- the first one, the left one and the right one.

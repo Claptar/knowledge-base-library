@@ -21,40 +21,40 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 - [Code](code.md)
 - [For next time](for-next-time.md)
 - [Index](home.md)
-- [Office hours](office-hours.md)
+- [Office Hours](office-hours.md)
 - **syllabus**
-    - [Learning Goals {.anchored anchor-id="learning-goals"}](syllabus/01-learning-goals-anchored-anchor-id-learning-goals.md)
-    - [Topics {.anchored anchor-id="topics"}](syllabus/02-topics-anchored-anchor-id-topics.md)
-    - [Class Format {.anchored anchor-id="class-format"}](syllabus/03-class-format-anchored-anchor-id-class-format.md)
-    - [Materials {.anchored anchor-id="materials"}](syllabus/04-materials-anchored-anchor-id-materials.md)
-    - [Course communication {.anchored anchor-id="course-communication"}](syllabus/05-course-communication-anchored-anchor-id-course-communication.md)
-    - [Assignments, Exams, and Grading {.anchored anchor-id="assignments-exams-and-grading"}](syllabus/06-assignments-exams-and-grading-anchored-anchor-id-assignments.md)
-    - [Policies {.anchored anchor-id="policies"}](syllabus/07-policies-anchored-anchor-id-policies.md)
-    - [Frequently Asked Questions {.anchored anchor-id="frequently-asked-questions"}](syllabus/08-frequently-asked-questions-anchored-anchor-id-frequently-ask.md)
-    - [Campus Resources {.anchored anchor-id="campus-resources"}](syllabus/09-campus-resources-anchored-anchor-id-campus-resources.md)
+    - [Learning Goals](syllabus/01-learning-goals.md)
+    - [Topics](syllabus/02-topics.md)
+    - [Class Format](syllabus/03-class-format.md)
+    - [Materials](syllabus/04-materials.md)
+    - [Course communication](syllabus/05-course-communication.md)
+    - [Assignments, Exams, and Grading](syllabus/06-assignments-exams-and-grading.md)
+    - [Policies](syllabus/07-policies.md)
+    - [Frequently Asked Questions](syllabus/08-frequently-asked-questions.md)
+    - [Campus Resources](syllabus/09-campus-resources.md)
 
 ### 01-components-design-1
 
 - [1. Components Of An Experiment Starter](01-components-design-1/1. Components Of An Experiment Starter.md)
 - [1. Components Of An Experiment](01-components-design-1/1. Components Of An Experiment.md)
-- [Notes](01-components-design-1/notes.md)
+- [Welcome to Class](01-components-design-1/notes.md)
 - [Ps](01-components-design-1/ps.md)
 - **slides**
-    - [Concepts in Computing with Data {#concepts-in-computing-with-data .title}](01-components-design-1/slides/01-concepts-in-computing-with-data-concepts-in-computing-with-d.md)
+    - [Concepts in Computing with Data](01-components-design-1/slides/01-concepts-in-computing-with-data.md)
     - [How this class works](01-components-design-1/slides/02-how-this-class-works.md)
 
 ### 01-welcome
 
-- [Notes](01-welcome/notes.md)
+- [Welcome to Class](01-welcome/notes.md)
 - **slides**
-    - [Concepts in Computing with Data {#concepts-in-computing-with-data .title}](01-welcome/slides/01-concepts-in-computing-with-data-concepts-in-computing-with-d.md)
+    - [Concepts in Computing with Data](01-welcome/slides/01-concepts-in-computing-with-data.md)
     - [How this class works](01-welcome/slides/02-how-this-class-works.md)
 
 ### 02-components-design-2
 
 - [2. Components Of An Experiment 2 Starter](02-components-design-2/2. Components Of An Experiment 2 Starter.md)
 - [2. Components Of An Experiment 2](02-components-design-2/2. Components Of An Experiment 2.md)
-- [Code](02-components-design-2/code.md)
+- [Exploratory Data Analysis](02-components-design-2/code.md)
 - [Ps](02-components-design-2/ps.md)
 
 ### 03-potential-outcomes
@@ -68,8 +68,8 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
     - [Before NextGess](04-sampling-distributions/4. Sampling Distributions Starter/02-before-nextgess.md)
 - **code**
     - [Introduction](04-sampling-distributions/code/01-introduction.md)
-    - [A single experiment {.anchored anchor-id="a-single-experiment"}](04-sampling-distributions/code/02-a-single-experiment-anchored-anchor-id-a-single-experiment.md)
-    - [Code Part 03 —](04-sampling-distributions/code/03-code-part-03.md)
+    - [A single experiment](04-sampling-distributions/code/02-a-single-experiment.md)
+    - [Calculating the sampling distribution](04-sampling-distributions/code/03-calculating-the-sampling-distribution.md)
 - [Ps](04-sampling-distributions/ps.md)
 
 ### 05-testing
@@ -79,7 +79,7 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
     - [Conparametric Method(Permutation Test)](05-testing/5. Testing Starter/02-conparametric-method-permutation-test.md)
     - [5. Testing Starter Part 03 —](05-testing/5. Testing Starter/03-5-testing-starter-part-03.md)
 - **code**
-    - [Testing {#testing .title}](05-testing/code/01-testing-testing-title.md)
+    - [Testing](05-testing/code/01-testing.md)
     - [replicate the anchor sched 20 times and stack them on top of one another](05-testing/code/02-replicate-the-anchor-sched-20-times-and-stack-them-on-top-of.md)
     - [add the unique permutations as a new column and find yi, the observed responses](05-testing/code/03-add-the-unique-permutations-as-a-new-column-and-find-yi-the.md)
     - [calculate ATE-hat for every partition](05-testing/code/04-calculate-ate-hat-for-every-partition.md)
@@ -103,23 +103,23 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 
 - **code**
     - [Introduction](08-power-2/code/01-introduction.md)
-    - [In a world where… {.anchored anchor-id="in-a-world-where"}](08-power-2/code/02-in-a-world-where-anchored-anchor-id-in-a-world-where.md)
-    - [“Conduct the experiment” {.anchored anchor-id="conduct-the-experiment"}](08-power-2/code/03-conduct-the-experiment-anchored-anchor-id-conduct-the-experi.md)
-    - [Code Part 04 —](08-power-2/code/04-code-part-04.md)
-    - [Visualizing the threshold {.anchored anchor-id="visualizing-the-threshold"}](08-power-2/code/05-visualizing-the-threshold-anchored-anchor-id-visualizing-the.md)
-    - [Code Part 06 —](08-power-2/code/06-code-part-06.md)
-    - [Calculate Power {.anchored anchor-id="calculate-power"}](08-power-2/code/07-calculate-power-anchored-anchor-id-calculate-power.md)
+    - [In a world where…](08-power-2/code/02-in-a-world-where.md)
+    - [“Conduct the experiment”](08-power-2/code/03-conduct-the-experiment.md)
+    - [Find Sampling Distribution under \$H\0\$](08-power-2/code/04-find-sampling-distribution-under.md)
+    - [Visualizing the threshold](08-power-2/code/05-visualizing-the-threshold.md)
+    - [Find Sampling Distribution under \$H\A\$](08-power-2/code/06-find-sampling-distribution-under.md)
+    - [Calculate Power](08-power-2/code/07-calculate-power.md)
 - **slides**
-    - [Power {#power .title}](08-power-2/slides/01-power-power-title.md)
+    - [Power](08-power-2/slides/01-power.md)
     - [The Null Hypothesis](08-power-2/slides/02-the-null-hypothesis.md)
     - [An Alternative Hypothesis](08-power-2/slides/03-an-alternative-hypothesis.md)
-    - [Power {#power-1}](08-power-2/slides/04-power-power-1.md)
+    - [Power](08-power-2/slides/04-power.md)
     - [Functions](08-power-2/slides/05-functions.md)
 
 ### 09-power-3
 
 - **slides**
-    - [Power (THIS SLIDE DECK IS NOT FINAL) {#power-this-slide-deck-is-not-final .title}](09-power-3/slides/01-power-this-slide-deck-is-not-final-power-this-slide-deck-is.md)
+    - [Power (THIS SLIDE DECK IS NOT FINAL)](09-power-3/slides/01-power-this-slide-deck-is-not-final.md)
     - [The Null Hypothesis](09-power-3/slides/02-the-null-hypothesis.md)
     - [An Alternative Hypothesis](09-power-3/slides/03-an-alternative-hypothesis.md)
     - [Power](09-power-3/slides/04-power.md)
@@ -128,10 +128,10 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 
 - [10. Power   MBI Starter](10-power-mbi/10. Power - MBI Starter.md)
 - **slides**
-    - [Power {#power .title}](10-power-mbi/slides/01-power-power-title.md)
+    - [Power](10-power-mbi/slides/01-power.md)
     - [The Null Hypothesis](10-power-mbi/slides/02-the-null-hypothesis.md)
     - [An Alternative Hypothesis](10-power-mbi/slides/03-an-alternative-hypothesis.md)
-    - [Power {#power-1}](10-power-mbi/slides/04-power-power-1.md)
+    - [Power](10-power-mbi/slides/04-power.md)
 
 ### 11-one-factor
 
@@ -139,34 +139,34 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 
 ### 12-f-statistic
 
-- [12. F Statistic Starter](12-f-statistic/12. F Statistic Starter.md)
+- [TheStatistic](12-f-statistic/12. F Statistic Starter.md)
 
 ### 13-f-inference
 
-- [13. Inference On F Starter](13-f-inference/13. Inference On F Starter.md)
+- [of StepsaHypothesisTest](13-f-inference/13. Inference On F Starter.md)
 - **slides**
-    - [Designs with One Factor {#designs-with-one-factor .title}](13-f-inference/slides/01-designs-with-one-factor-designs-with-one-factor-title.md)
+    - [Designs with One Factor](13-f-inference/slides/01-designs-with-one-factor.md)
     - [Model-Based Inference](13-f-inference/slides/02-model-based-inference.md)
 
 ### 14-two-factors
 
 - [14. Two Factor Designs Starter](14-two-factors/14. Two Factor Designs Starter.md)
 - **slides**
-    - [Designs with Two Factors {#designs-with-two-factors .title}](14-two-factors/slides/01-designs-with-two-factors-designs-with-two-factors-title.md)
+    - [Designs with Two Factors](14-two-factors/slides/01-designs-with-two-factors.md)
     - [A Linear Model](14-two-factors/slides/02-a-linear-model.md)
     - [Study: Battery Lifetime](14-two-factors/slides/03-study-battery-lifetime.md)
 
 ### 15-main-effects
 
 - **slides**
-    - [Main Effects and Interactions {#main-effects-and-interactions .title}](15-main-effects/slides/01-main-effects-and-interactions-main-effects-and-interactions.md)
+    - [Main Effects and Interactions](15-main-effects/slides/01-main-effects-and-interactions.md)
     - [Building a Model](15-main-effects/slides/02-building-a-model.md)
 
 ### 16-higher-order-effects
 
 - [16. Higher Order Effects Starter](16-higher-order-effects/16. Higher Order Effects Starter.md)
 - **slides**
-    - [Higher Order Factorial Designs {#higher-order-factorial-designs .title}](16-higher-order-effects/slides/01-higher-order-factorial-designs-higher-order-factorial-design.md)
+    - [Higher Order Factorial Designs](16-higher-order-effects/slides/01-higher-order-factorial-designs.md)
     - [Exploratory Data Analysis](16-higher-order-effects/slides/02-exploratory-data-analysis.md)
     - [Interaction Plots](16-higher-order-effects/slides/03-interaction-plots.md)
     - [Time and Pressure](16-higher-order-effects/slides/04-time-and-pressure.md)
@@ -184,23 +184,23 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 
 - [17. Confidence Intervals Starter](17-confidence-intervals/17. Confidence Intervals Starter.md)
 - **slides**
-    - [Confidence Intervals {#confidence-intervals .title}](17-confidence-intervals/slides/01-confidence-intervals-confidence-intervals-title.md)
-    - [Confidence Intervals {#confidence-intervals-1}](17-confidence-intervals/slides/02-confidence-intervals-confidence-intervals-1.md)
+    - [Confidence Intervals](17-confidence-intervals/slides/01-confidence-intervals.md)
+    - [Confidence Intervals](17-confidence-intervals/slides/02-confidence-intervals.md)
     - [Randomization CI](17-confidence-intervals/slides/03-randomization-ci.md)
     - [install.packages("remotes")](17-confidence-intervals/slides/04-install-packages-remotes.md)
     - [remotes::installgithub("andrewpbray/designrbi")](17-confidence-intervals/slides/05-remotes-installgithub-andrewpbray-designrbi.md)
 
 ### 18-multiple-comparisons
 
-- [18. Multiple Comparisons Starter](18-multiple-comparisons/18. Multiple Comparisons Starter.md)
+- [Multiple Comparisons](18-multiple-comparisons/18. Multiple Comparisons Starter.md)
 - **slides**
-    - [Multiple Comparisons {#multiple-comparisons .title}](18-multiple-comparisons/slides/01-multiple-comparisons-multiple-comparisons-title.md)
-    - [Multiple Comparisons {#multiple-comparisons-1}](18-multiple-comparisons/slides/02-multiple-comparisons-multiple-comparisons-1.md)
+    - [Multiple Comparisons](18-multiple-comparisons/slides/01-multiple-comparisons.md)
+    - [Multiple Comparisons](18-multiple-comparisons/slides/02-multiple-comparisons.md)
 
 ### 19-blocking
 
 - **slides**
-    - [Blocking {#blocking .title}](19-blocking/slides/01-blocking-blocking-title.md)
+    - [Blocking](19-blocking/slides/01-blocking.md)
     - [Examples](19-blocking/slides/02-examples.md)
     - [Block Designs](19-blocking/slides/03-block-designs.md)
     - [Study 2: Drugs and Tapping](19-blocking/slides/04-study-2-drugs-and-tapping.md)
@@ -209,20 +209,20 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 ### 20-blocking-and-variance
 
 - **slides**
-    - [Blocking and Variance {#blocking-and-variance .title}](20-blocking-and-variance/slides/01-blocking-and-variance-blocking-and-variance-title.md)
+    - [Blocking and Variance](20-blocking-and-variance/slides/01-blocking-and-variance.md)
     - [Completely Randomized Design \$CR$$1$$\$](20-blocking-and-variance/slides/02-completely-randomized-design.md)
     - [Generalized Complete Block Design \$GCB$$1$$\$](20-blocking-and-variance/slides/03-generalized-complete-block-design.md)
 
 ### 21-two-blocking-factors
 
 - **slides**
-    - [Two Blocking Factors {#two-blocking-factors .title}](21-two-blocking-factors/slides/01-two-blocking-factors-two-blocking-factors-title.md)
+    - [Two Blocking Factors](21-two-blocking-factors/slides/01-two-blocking-factors.md)
     - [A Study of Diet and Milk](21-two-blocking-factors/slides/02-a-study-of-diet-and-milk.md)
 
 ### 22-latin-squares
 
 - **slides**
-    - [Latin Squares {#latin-squares .title}](22-latin-squares/slides/01-latin-squares-latin-squares-title.md)
+    - [Latin Squares](22-latin-squares/slides/01-latin-squares.md)
     - [Inference](22-latin-squares/slides/02-inference.md)
 
 ### 23-comparing-designs
@@ -235,33 +235,33 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 
 ### 24-crossover-designs
 
-- [Slides](24-crossover-designs/slides.md)
+- [Crossover Designs](24-crossover-designs/slides.md)
 
 ### 25-crossover-inference
 
 - **slides**
-    - [Crossover Designs {#crossover-designs .title}](25-crossover-inference/slides/01-crossover-designs-crossover-designs-title.md)
+    - [Crossover Designs](25-crossover-inference/slides/01-crossover-designs.md)
     - [Randomization-based Inference for Crossover Design](25-crossover-inference/slides/02-randomization-based-inference-for-crossover-design.md)
     - [Model-Based Inference](25-crossover-inference/slides/03-model-based-inference.md)
 
 ### 25-random-effects
 
 - **slides**
-    - [Random Effects Models {#random-effects-models .title}](25-random-effects/slides/01-random-effects-models-random-effects-models-title.md)
+    - [Random Effects Models](25-random-effects/slides/01-random-effects-models.md)
     - [Randomization-based Inference for Crossover Design](25-random-effects/slides/02-randomization-based-inference-for-crossover-design.md)
     - [Model-Based Inference](25-random-effects/slides/03-model-based-inference.md)
 
 ### 25-random-effects-models
 
 - **slides**
-    - [Random Effects Models {#random-effects-models .title}](25-random-effects-models/slides/01-random-effects-models-random-effects-models-title.md)
+    - [Random Effects Models](25-random-effects-models/slides/01-random-effects-models.md)
     - [Randomization-based Inference for Crossover Design](25-random-effects-models/slides/02-randomization-based-inference-for-crossover-design.md)
     - [Model-Based Inference](25-random-effects-models/slides/03-model-based-inference.md)
 
 ### 25-sequential-analysis
 
 - **slides**
-    - [Sequential Analysis {#sequential-analysis .title}](25-sequential-analysis/slides/01-sequential-analysis-sequential-analysis-title.md)
+    - [Sequential Analysis](25-sequential-analysis/slides/01-sequential-analysis.md)
     - [Sequential Probability Ratio Test (SPRT)](25-sequential-analysis/slides/02-sequential-probability-ratio-test-sprt.md)
     - [SPRT thresholds](25-sequential-analysis/slides/03-sprt-thresholds.md)
     - [Many Simulations](25-sequential-analysis/slides/04-many-simulations.md)
@@ -269,7 +269,7 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 ### 26-sequential-analysis
 
 - **slides**
-    - [Sequential Analysis {#sequential-analysis .title}](26-sequential-analysis/slides/01-sequential-analysis-sequential-analysis-title.md)
+    - [Sequential Analysis](26-sequential-analysis/slides/01-sequential-analysis.md)
     - [Sequential Probability Ratio Test (SPRT)](26-sequential-analysis/slides/02-sequential-probability-ratio-test-sprt.md)
     - [SPRT thresholds](26-sequential-analysis/slides/03-sprt-thresholds.md)
     - [Many Simulations](26-sequential-analysis/slides/04-many-simulations.md)
@@ -277,7 +277,7 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 ### 26-sequential-analysis-1
 
 - **slides**
-    - [Sequential Analysis {#sequential-analysis .title}](26-sequential-analysis-1/slides/01-sequential-analysis-sequential-analysis-title.md)
+    - [Sequential Analysis](26-sequential-analysis-1/slides/01-sequential-analysis.md)
     - [Sequential Probability Ratio Test (SPRT)](26-sequential-analysis-1/slides/02-sequential-probability-ratio-test-sprt.md)
     - [SPRT thresholds](26-sequential-analysis-1/slides/03-sprt-thresholds.md)
     - [Many Simulations](26-sequential-analysis-1/slides/04-many-simulations.md)
@@ -285,7 +285,7 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 ### 27-sequential-analysis
 
 - **slides**
-    - [Slides Part 01 —](27-sequential-analysis/slides/01-slides-part-01.md)
+    - [Sequential Testing for Experimental Design](27-sequential-analysis/slides/01-sequential-testing-for-experimental-design.md)
     - [Fixed vs. Sequential](27-sequential-analysis/slides/02-fixed-vs-sequential.md)
     - [find cn](27-sequential-analysis/slides/03-find-cn.md)
     - [verify alpha](27-sequential-analysis/slides/04-verify-alpha.md)
@@ -300,7 +300,7 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 ### 27-sequential-analysis-2
 
 - **slides**
-    - [Slides Part 01 —](27-sequential-analysis-2/slides/01-slides-part-01.md)
+    - [Sequential Testing for Experimental Design](27-sequential-analysis-2/slides/01-sequential-testing-for-experimental-design.md)
     - [Fixed vs. Sequential](27-sequential-analysis-2/slides/02-fixed-vs-sequential.md)
     - [find cn](27-sequential-analysis-2/slides/03-find-cn.md)
     - [verify alpha](27-sequential-analysis-2/slides/04-verify-alpha.md)
@@ -315,16 +315,16 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 ### 28-adaptive-design
 
 - **slides**
-    - [Adaptive Designs {#adaptive-designs .title}](28-adaptive-design/slides/01-adaptive-designs-adaptive-designs-title.md)
+    - [Adaptive Designs](28-adaptive-design/slides/01-adaptive-designs.md)
     - [Study: Pediatric Leukemia](28-adaptive-design/slides/02-study-pediatric-leukemia.md)
 
 ### 29-adaptive-algorithms
 
-- [Slides](29-adaptive-algorithms/slides.md)
+- [Algorithms for Adaptive Assignment](29-adaptive-algorithms/slides.md)
 
 ### 30-implementing-ucb
 
-- [Slides](30-implementing-ucb/slides.md)
+- [Implementing UCB](30-implementing-ucb/slides.md)
 
 ### 31-interference
 
@@ -332,20 +332,20 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
     - [Study: School Attendance](31-interference/slides/01-study-school-attendance.md)
     - [Study: School Attendance](31-interference/slides/02-study-school-attendance.md)
     - [Question: How many potential outcomes are needed to represent this design?](31-interference/slides/03-question-how-many-potential-outcomes-are-needed-to-represent.md)
-    - [Simulated School Attendance {data-id="quarto-animate-title"}](31-interference/slides/04-simulated-school-attendance-data-id-quarto-animate-title.md)
-    - [Simulated School Attendance {data-id="quarto-animate-title"}](31-interference/slides/05-simulated-school-attendance-data-id-quarto-animate-title.md)
-    - [Simulated School Attendance {data-id="quarto-animate-title"}](31-interference/slides/06-simulated-school-attendance-data-id-quarto-animate-title.md)
+    - [Simulated School Attendance](31-interference/slides/04-simulated-school-attendance.md)
+    - [Simulated School Attendance](31-interference/slides/05-simulated-school-attendance.md)
+    - [Simulated School Attendance](31-interference/slides/06-simulated-school-attendance.md)
     - [Estimates](31-interference/slides/07-estimates.md)
     - [Rand. test under interference](31-interference/slides/08-rand-test-under-interference.md)
 
 ### 31-interference-1
 
-- [Slides](31-interference-1/slides.md)
+- [Interference](31-interference-1/slides.md)
 
 ### 32-interference-2
 
 - **slides**
-    - [Interference {#interference .title}](32-interference-2/slides/01-interference-interference-title.md)
+    - [Interference](32-interference-2/slides/01-interference.md)
     - [Simulated School Attendance](32-interference-2/slides/02-simulated-school-attendance.md)
     - [treated students in treated households](32-interference-2/slides/03-treated-students-in-treated-households.md)
     - [their untreated siblings](32-interference-2/slides/04-their-untreated-siblings.md)
@@ -355,7 +355,7 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 ### 34-noncompliance-2
 
 - **slides**
-    - [Study: Getting out the vote {data-id="quarto-animate-title"}](34-noncompliance-2/slides/01-study-getting-out-the-vote-data-id-quarto-animate-title.md)
+    - [Study: Getting out the vote](34-noncompliance-2/slides/01-study-getting-out-the-vote.md)
     - [ykkvrkjobl table {](34-noncompliance-2/slides/02-ykkvrkjobl-table.md)
     - [gckdtvfbgk table {](34-noncompliance-2/slides/03-gckdtvfbgk-table.md)
     - [\$CACE\$ vs \$ITT\Y\$](34-noncompliance-2/slides/04-vs.md)
@@ -370,9 +370,9 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 ### 36-adjustments
 
 - **slides**
-    - [Regression Adjustments {#regression-adjustments .title}](36-adjustments/slides/01-regression-adjustments-regression-adjustments-title.md)
+    - [Regression Adjustments](36-adjustments/slides/01-regression-adjustments.md)
     - [Study: Meadowfoam](36-adjustments/slides/02-study-meadowfoam.md)
-    - [Regression Adjustments {#regression-adjustments-1}](36-adjustments/slides/03-regression-adjustments-regression-adjustments-1.md)
+    - [Regression Adjustments](36-adjustments/slides/03-regression-adjustments.md)
     - [Collinearity](36-adjustments/slides/04-collinearity.md)
 
 ### 37-wrap-up
@@ -393,7 +393,7 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
     - [Factorial Design](37-wrap-up/Midterm Review Topics List/04-factorial-design.md)
     - [Multiple Testing and Blocking](37-wrap-up/Midterm Review Topics List/05-multiple-testing-and-blocking.md)
 - **slides**
-    - [Wrap-Up {#wrap-up .title}](37-wrap-up/slides/01-wrap-up-wrap-up-title.md)
+    - [Wrap-Up](37-wrap-up/slides/01-wrap-up.md)
     - [First Half Topics](37-wrap-up/slides/02-first-half-topics.md)
     - [Second Half Topics](37-wrap-up/slides/03-second-half-topics.md)
     - [Data Set Inventory](37-wrap-up/slides/04-data-set-inventory.md)
@@ -435,24 +435,24 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 ### labs/04-factorial-design
 
 - **lab**
-    - [Introduction {#introduction}](labs/04-factorial-design/lab/01-introduction-introduction.md)
-    - [The Experiment {#the-experiment}](labs/04-factorial-design/lab/02-the-experiment-the-experiment.md)
-    - [Conducting Your Own Experiment {#conducting-your-own-experiment}](labs/04-factorial-design/lab/03-conducting-your-own-experiment-conducting-your-own-experimen.md)
-    - [Data Analysis {#data-analysis}](labs/04-factorial-design/lab/04-data-analysis-data-analysis.md)
+    - [Introduction](labs/04-factorial-design/lab/01-introduction.md)
+    - [The Experiment](labs/04-factorial-design/lab/02-the-experiment.md)
+    - [Conducting Your Own Experiment](labs/04-factorial-design/lab/03-conducting-your-own-experiment.md)
+    - [Data Analysis](labs/04-factorial-design/lab/04-data-analysis.md)
 
 ### labs/05-sequential-testing
 
 - **lab**
-    - [Introduction {#introduction}](labs/05-sequential-testing/lab/01-introduction-introduction.md)
-    - [The Experiment {#the-experiment}](labs/05-sequential-testing/lab/02-the-experiment-the-experiment.md)
-    - [Conducting Your Own Experiment {#conducting-your-own-experiment}](labs/05-sequential-testing/lab/03-conducting-your-own-experiment-conducting-your-own-experimen.md)
-    - [Data Analysis {#data-analysis}](labs/05-sequential-testing/lab/04-data-analysis-data-analysis.md)
+    - [Introduction](labs/05-sequential-testing/lab/01-introduction.md)
+    - [The Experiment](labs/05-sequential-testing/lab/02-the-experiment.md)
+    - [Conducting Your Own Experiment](labs/05-sequential-testing/lab/03-conducting-your-own-experiment.md)
+    - [Data Analysis](labs/05-sequential-testing/lab/04-data-analysis.md)
 
 ### labs/06-power-calculations
 
 - **lab**
-    - [Introduction {#introduction}](labs/06-power-calculations/lab/01-introduction-introduction.md)
-    - [Complete Block Design Example {#complete-block-design-example}](labs/06-power-calculations/lab/02-complete-block-design-example-complete-block-design-example.md)
+    - [Introduction](labs/06-power-calculations/lab/01-introduction.md)
+    - [Complete Block Design Example](labs/06-power-calculations/lab/02-complete-block-design-example.md)
 
 ### problem-sets
 
@@ -479,20 +479,20 @@ Converted material from [https://github.com/berkeley-stat158/spring-2026.git](ht
 
 ### project
 
-- [Design](project/design.md)
+- [Design Proposal Guidelines](project/design.md)
 - **final-report**
     - [Final Report Guidelines](project/final-report/01-final-report-guidelines.md)
     - [Reading in and formatting data](project/final-report/02-reading-in-and-formatting-data.md)
     - [Interaction plot (Figure 1 in text)](project/final-report/03-interaction-plot-figure-1-in-text.md)
     - [ANOVA (Table 2 & 3 in text)](project/final-report/04-anova-table-2-3-in-text.md)
 - **overview**
-    - [Guidelines for the experiment {.anchored anchor-id="guidelines-for-the-experiment"}](project/overview/01-guidelines-for-the-experiment-anchored-anchor-id-guidelines.md)
-    - [Stages of the Project {.anchored anchor-id="stages-of-the-project"}](project/overview/02-stages-of-the-project-anchored-anchor-id-stages-of-the-proje.md)
-    - [Overview Part 03 —](project/overview/03-overview-part-03.md)
+    - [Guidelines for the experiment](project/overview/01-guidelines-for-the-experiment.md)
+    - [Stages of the Project](project/overview/02-stages-of-the-project.md)
+    - [Suggestions for Organizing Your Project](project/overview/03-suggestions-for-organizing-your-project.md)
 - **proposal**
     - [Introduction](project/proposal/01-introduction.md)
-    - [Proposal Part 02 —](project/proposal/02-proposal-part-02.md)
-    - [Structure of Proposal {.anchored anchor-id="structure-of-proposal"}](project/proposal/03-structure-of-proposal-anchored-anchor-id-structure-of-propos.md)
+    - [How are experiments run in section?](project/proposal/02-how-are-experiments-run-in-section.md)
+    - [Structure of Proposal](project/proposal/03-structure-of-proposal.md)
 - **protocol**
     - [1. The Dry Run](project/protocol/01-1-the-dry-run.md)
     - [2. Estimate 𝜎2 for Power Calculations](project/protocol/02-2-estimate-𝜎2-for-power-calculations.md)

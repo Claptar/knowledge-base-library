@@ -30,8 +30,8 @@ Converted material from [https://github.com/statOmics/SGA2020.git](https://githu
 ### _includes/themes/twitter
 
 - [Default](_includes/themes/twitter/default.md)
-- [Page](_includes/themes/twitter/page.md)
-- [Post](_includes/themes/twitter/post.md)
+- [{{ page.title }} {% if page.tagline %} {{ page.tagline }}{% endif %}](_includes/themes/twitter/page.md)
+- [{{ page.title }} {% if page.tagline %}{{page.tagline}}{% endif %}](_includes/themes/twitter/post.md)
 
 ### _layouts
 
@@ -47,27 +47,27 @@ Converted material from [https://github.com/statOmics/SGA2020.git](https://githu
     - [1.2. Target Decoy Approach](pages/Identification/03-1-2-target-decoy-approach.md)
     - [References](pages/Identification/04-references.md)
 - **cptacAvsB_lab3.nb**
-    - [CptacAvsB lab3.nb Part 01 —](pages/cptacAvsB_lab3.nb/01-cptacavsb-lab3-nb-part-01.md)
-    - [Contents {#contents}](pages/cptacAvsB_lab3.nb/02-contents-contents.md)
+    - [Introduction to proteomics data analysis](pages/cptacAvsB_lab3.nb/01-introduction-to-proteomics-data-analysis.md)
+    - [Contents](pages/cptacAvsB_lab3.nb/02-contents.md)
     - [1 Background](pages/cptacAvsB_lab3.nb/03-1-background.md)
     - [2 Data](pages/cptacAvsB_lab3.nb/04-2-data.md)
     - [3 Preprocessing](pages/cptacAvsB_lab3.nb/05-3-preprocessing.md)
     - [4 Data Analysis](pages/cptacAvsB_lab3.nb/06-4-data-analysis.md)
 - **elegans**
-    - [Elegans: DE analysis {#elegans-de-analysis .title .toc-ignore}](pages/elegans/01-elegans-de-analysis-elegans-de-analysis-title-toc-ignore.md)
-    - [Contents {#contents}](pages/elegans/02-contents-contents.md)
+    - [Elegans: DE analysis](pages/elegans/01-elegans-de-analysis.md)
+    - [Contents](pages/elegans/02-contents.md)
     - [1 Read featurecounts object](pages/elegans/03-1-read-featurecounts-object.md)
     - [2 Data Analysis](pages/elegans/04-2-data-analysis.md)
 - **elegansMappingCountTable**
-    - [ElegansMappingCountTable Part 01 —](pages/elegansMappingCountTable/01-elegansmappingcounttable-part-01.md)
-    - [Contents {#contents}](pages/elegansMappingCountTable/02-contents-contents.md)
+    - [Elegans: Read mapping and count table](pages/elegansMappingCountTable/01-elegans-read-mapping-and-count-table.md)
+    - [Contents](pages/elegansMappingCountTable/02-contents.md)
     - [1 Background](pages/elegansMappingCountTable/03-1-background.md)
     - [2 Get info on experiment](pages/elegansMappingCountTable/04-2-get-info-on-experiment.md)
     - [3 Build index for C. elegans](pages/elegansMappingCountTable/05-3-build-index-for-c-elegans.md)
     - [4 CountTable](pages/elegansMappingCountTable/06-4-counttable.md)
 - **robustRegression.nb**
     - [Introduction](pages/robustRegression.nb/01-introduction.md)
-    - [Robust Regression {#robust-regression .title .toc-ignore}](pages/robustRegression.nb/02-robust-regression-robust-regression-title-toc-ignore.md)
+    - [Robust Regression](pages/robustRegression.nb/02-robust-regression.md)
     - [Robust regression in R](pages/robustRegression.nb/03-robust-regression-in-r.md)
     - [add outlier at high leverage point](pages/robustRegression.nb/04-add-outlier-at-high-leverage-point.md)
     - [Implement it yourself](pages/robustRegression.nb/05-implement-it-yourself.md)

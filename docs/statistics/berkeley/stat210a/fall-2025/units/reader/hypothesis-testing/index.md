@@ -15,9 +15,9 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 Hypothesis Testing {.anchored number="1" anchor-id="hypothesis-testing"}](02-1-hypothesis-testing-anchored-number-1-anchor-id-hypothesis.md)
-3. [2 The critical function {.anchored number="2" anchor-id="the-critical-function"}](03-2-the-critical-function-anchored-number-2-anchor-id-the-crit.md)
-4. [3 Optimal testing {.anchored number="3" anchor-id="optimal-testing"}](04-3-optimal-testing-anchored-number-3-anchor-id-optimal-testin.md)
+2. [1 Hypothesis Testing](02-1-hypothesis-testing.md)
+3. [2 The critical function](03-2-the-critical-function.md)
+4. [3 Optimal testing](04-3-optimal-testing.md)
 
 ---
 

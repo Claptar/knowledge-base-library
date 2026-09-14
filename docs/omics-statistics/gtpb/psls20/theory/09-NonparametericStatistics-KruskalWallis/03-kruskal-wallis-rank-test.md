@@ -117,4 +117,4 @@ Because there are doubts on the location-shift model we draw our conclusions in 
 
 ---
 
-[← DMH Voorbeeld](02-dmh-voorbeeld.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](04-home-https-gtpb-github-io-psls20.md)
+[← DMH Voorbeeld](02-dmh-voorbeeld.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](04-home-https-gtpb-github-io-psls20.md)

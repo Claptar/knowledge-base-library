@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [1] "/accounts/gen/vis/paciorek/R/x86_64-pc-linux-gnu-library/3.0" ## [2] "/system/linux/lib/R/3.0/x86_64/site-library"
+
 
 ---
 

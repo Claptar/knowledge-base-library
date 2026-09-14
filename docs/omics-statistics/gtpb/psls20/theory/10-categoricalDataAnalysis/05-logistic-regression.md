@@ -186,4 +186,4 @@ geom_text(aes(x=dose%>%as.character%>%as.double,y=status%>%as.character%>%as.dou
 
 ---
 
-[← Unpaired observations](04-unpaired-observations.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](06-home-https-gtpb-github-io-psls20.md)
+[← Unpaired observations](04-unpaired-observations.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](06-home-https-gtpb-github-io-psls20.md)

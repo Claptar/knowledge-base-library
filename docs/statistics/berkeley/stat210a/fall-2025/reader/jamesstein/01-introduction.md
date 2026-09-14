@@ -25,4 +25,4 @@ Will Fithian
 
 ---
 
-[Up: contents](index.md) · [Gaussian sequence model {.anchored anchor-id="gaussian-sequence-model"} →](02-gaussian-sequence-model-anchored-anchor-id-gaussian-sequence.md)
+[Up: contents](index.md) · [Gaussian sequence model →](02-gaussian-sequence-model.md)

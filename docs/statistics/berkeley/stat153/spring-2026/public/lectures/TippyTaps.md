@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`public/lectures/TippyTaps.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/TippyTaps.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
 
-# Stat153/248 - Lecture 7 and 8 Finger Tapping Exercise
-
 This is the (in progress) notebook from our exercise in class. We will continue with this during Lecture 8.
 
 ```python

@@ -101,19 +101,19 @@ Converted material from [https://github.com/berkeley-stat153/fall-2024.git](http
 
 ### lectures/arima/fig
 
-- [Ar 1](lectures/arima/fig/ar-1.md)
+- [AR(1), phi = +0.9](lectures/arima/fig/ar-1.md)
 - [Auto cor 1](lectures/arima/fig/auto-cor-1.md)
-- [Car 1](lectures/arima/fig/car-1.md)
+- [Central African Republic (CAR) exports](lectures/arima/fig/car-1.md)
 - [Car 5](lectures/arima/fig/car-5.md)
 - [Car 6](lectures/arima/fig/car-6.md)
-- [Car 7](lectures/arima/fig/car-7.md)
+- [ARIMA(2,1,0)](lectures/arima/fig/car-7.md)
 - [Leisure 1](lectures/arima/fig/leisure-1.md)
 - [Leisure 2](lectures/arima/fig/leisure-2.md)
 - [Leisure 3](lectures/arima/fig/leisure-3.md)
 - [Leisure 6](lectures/arima/fig/leisure-6.md)
 - [Leisure 7](lectures/arima/fig/leisure-7.md)
-- [Leisure 8](lectures/arima/fig/leisure-8.md)
-- [Ma 1](lectures/arima/fig/ma-1.md)
+- [ARIMA(2,1,0)(1,1,0)[12]](lectures/arima/fig/leisure-8.md)
+- [MA(1), phi = +0.9](lectures/arima/fig/ma-1.md)
 
 ### lectures/characteristics
 
@@ -126,8 +126,8 @@ Converted material from [https://github.com/berkeley-stat153/fall-2024.git](http
 - [Boston 3](lectures/characteristics/fig/boston-3.md)
 - [Covid 1](lectures/characteristics/fig/covid-1.md)
 - [Covid 2](lectures/characteristics/fig/covid-2.md)
-- [Fmri 1](lectures/characteristics/fig/fmri-1.md)
-- [Fmri 2](lectures/characteristics/fig/fmri-2.md)
+- [Cortex](lectures/characteristics/fig/fmri-1.md)
+- [Thalamus & cerebellum](lectures/characteristics/fig/fmri-2.md)
 - [Gw 1](lectures/characteristics/fig/gw-1.md)
 - [Jj 1](lectures/characteristics/fig/jj-1.md)
 - [Rw 1](lectures/characteristics/fig/rw-1.md)
@@ -140,7 +140,7 @@ Converted material from [https://github.com/berkeley-stat153/fall-2024.git](http
 
 ### lectures/dependence/fig
 
-- [Covid 1](lectures/dependence/fig/covid-1.md)
+- [Covid−19 cases and deaths in California](lectures/dependence/fig/covid-1.md)
 - [Speech 1](lectures/dependence/fig/speech-1.md)
 
 ### lectures/ets
@@ -149,7 +149,7 @@ Converted material from [https://github.com/berkeley-stat153/fall-2024.git](http
 
 ### lectures/ets/fig
 
-- [Decomposition 1](lectures/ets/fig/decomposition-1.md)
+- [Holt−Winters: additive seasonality](lectures/ets/fig/decomposition-1.md)
 - [Holiday 1](lectures/ets/fig/holiday-1.md)
 - [Internet 1](lectures/ets/fig/internet-1.md)
 
@@ -161,15 +161,15 @@ Converted material from [https://github.com/berkeley-stat153/fall-2024.git](http
 
 - [Cardio 1](lectures/regression/fig/cardio-1.md)
 - [Cardio 2](lectures/regression/fig/cardio-2.md)
-- [Cardio cv 1](lectures/regression/fig/cardio-cv-1.md)
-- [Cardio cv 2](lectures/regression/fig/cardio-cv-2.md)
-- [Cardio lagged 1](lectures/regression/fig/cardio-lagged-1.md)
+- [Cross−validation, training on all past](lectures/regression/fig/cardio-cv-1.md)
+- [Cross−validation, training on trailing window](lectures/regression/fig/cardio-cv-2.md)
+- [Prospective forecasts](lectures/regression/fig/cardio-lagged-1.md)
 - [Cardio mult 1](lectures/regression/fig/cardio-mult-1.md)
 - [Cardio mult 2](lectures/regression/fig/cardio-mult-2.md)
 - [Cardio mult 3](lectures/regression/fig/cardio-mult-3.md)
 - [Cardio mult 4](lectures/regression/fig/cardio-mult-4.md)
 - [Cardio mult 5](lectures/regression/fig/cardio-mult-5.md)
-- [Cardio split 1](lectures/regression/fig/cardio-split-1.md)
+- [Split−sample forecasts](lectures/regression/fig/cardio-split-1.md)
 - [Chicken 1](lectures/regression/fig/chicken-1.md)
 
 ### lectures/smoothing
@@ -178,12 +178,12 @@ Converted material from [https://github.com/berkeley-stat153/fall-2024.git](http
 
 ### lectures/smoothing/fig
 
-- [Boston hp 1](lectures/smoothing/fig/boston-hp-1.md)
-- [Boston tf 1](lectures/smoothing/fig/boston-tf-1.md)
-- [Cardio lasso 1](lectures/smoothing/fig/cardio-lasso-1.md)
-- [Cardio ridge 1](lectures/smoothing/fig/cardio-ridge-1.md)
-- [Soi ks 1](lectures/smoothing/fig/soi-ks-1.md)
-- [Soi ma 1](lectures/smoothing/fig/soi-ma-1.md)
+- [Hodrick−Prescott filter](lectures/smoothing/fig/boston-hp-1.md)
+- [Trend filter](lectures/smoothing/fig/boston-tf-1.md)
+- [Lasso](lectures/smoothing/fig/cardio-lasso-1.md)
+- [Ridge](lectures/smoothing/fig/cardio-ridge-1.md)
+- [Kernel smoother](lectures/smoothing/fig/soi-ks-1.md)
+- [Moving average](lectures/smoothing/fig/soi-ma-1.md)
 
 ### lectures/spectral
 
@@ -202,11 +202,11 @@ Converted material from [https://github.com/berkeley-stat153/fall-2024.git](http
 
 - **syllabus**
     - [Introduction](syllabus/syllabus/01-introduction.md)
-    - [Prerequisites {#prerequisites .unnumbered}](syllabus/syllabus/02-prerequisites-prerequisites-unnumbered.md)
-    - [Topics {#topics .unnumbered}](syllabus/syllabus/03-topics-topics-unnumbered.md)
-    - [Evaluation {#evaluation .unnumbered}](syllabus/syllabus/04-evaluation-evaluation-unnumbered.md)
-    - [Homework {#homework .unnumbered}](syllabus/syllabus/05-homework-homework-unnumbered.md)
-    - [Take care of yourself {#take-care-of-yourself .unnumbered}](syllabus/syllabus/06-take-care-of-yourself-take-care-of-yourself-unnumbered.md)
+    - [Prerequisites](syllabus/syllabus/02-prerequisites.md)
+    - [Topics](syllabus/syllabus/03-topics.md)
+    - [Evaluation](syllabus/syllabus/04-evaluation.md)
+    - [Homework](syllabus/syllabus/05-homework.md)
+    - [Take care of yourself](syllabus/syllabus/06-take-care-of-yourself.md)
 
 ## Not converted
 

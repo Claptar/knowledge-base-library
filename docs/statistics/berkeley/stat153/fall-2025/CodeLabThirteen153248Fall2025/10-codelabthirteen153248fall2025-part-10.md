@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`CodeLabThirteen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLabThirteen153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
 
-# detach() in PyTorch creates a new tensor that shares the same storage as the original tensor
+
 
 ---
 

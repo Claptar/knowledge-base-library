@@ -1,5 +1,5 @@
 ---
-title: Lecture 19 — asymptotics
+title: Outline
 source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture19-asymptotics.pdf
 source_file: sources/berkeley-stat210a/fall-2025/handwritten/lecture19-asymptotics.pdf
 licence: CC BY 4.0
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Lecture 19 — asymptotics
+# Outline
 
 **Source:** [`handwritten/lecture19-asymptotics.pdf`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture19-asymptotics.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# Outline
 
 1 in and Distribution Probability Convergence
 

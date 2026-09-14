@@ -47,4 +47,4 @@ ybar_1_0 - ybar_all_0 # diff in means on treated students
 
 ---
 
-[← Simulated School Attendance {data-id="quarto-animate-title"}](06-simulated-school-attendance-data-id-quarto-animate-title.md) · [Up: contents](index.md) · [Rand. test under interference →](08-rand-test-under-interference.md)
+[← Simulated School Attendance](06-simulated-school-attendance.md) · [Up: contents](index.md) · [Rand. test under interference →](08-rand-test-under-interference.md)

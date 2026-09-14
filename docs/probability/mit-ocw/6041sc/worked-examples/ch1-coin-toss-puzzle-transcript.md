@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: A Coin Tossing Puzzle**
-
 Hi. In this problem, we'll be going over practice with the calculation of conditional probabilities. We'll start with a game where our friend Alice will be tossing a coin with certain bias of having a head, and tosses this coin twice. And we're interested in knowing, what's the probability that both coin tosses will end up being a head?
 
 The first step we're going to do is to convert the problem into a mathematical form by defining two events as the following. Event A is where the first coin toss is a head. And similarly, event B will be having the second coin toss also being a head. Having these two events will allow us to say, well, the event that A intersection B will be the event that both coin tosses are a head. And we'd like to know the probability of such an event.

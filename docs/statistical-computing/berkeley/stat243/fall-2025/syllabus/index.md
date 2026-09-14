@@ -14,19 +14,19 @@ converted: '2026-09-14'
 
 Split into 13 sections.
 
-1. [Course description {#course-description .unnumbered}](01-course-description-course-description-unnumbered.md)
-2. [Objectives of the course {#objectives-of-the-course .unnumbered}](02-objectives-of-the-course-objectives-of-the-course-unnumbered.md)
-3. [Topics (in order with rough timing) {#topics-in-order-with-rough-timing .unnumbered}](03-topics-in-order-with-rough-timing-topics-in-order-with-rough.md)
-4. [Personnel {#personnel .unnumbered}](04-personnel-personnel-unnumbered.md)
-5. [Syllabus Part 05 —](05-syllabus-part-05.md)
-6. [Course material {#course-material .unnumbered}](06-course-material-course-material-unnumbered.md)
-7. [Section {#section .unnumbered}](07-section-section-unnumbered.md)
-8. [Computing Resources {#computing-resources .unnumbered}](08-computing-resources-computing-resources-unnumbered.md)
-9. [Class time {#class-time .unnumbered}](09-class-time-class-time-unnumbered.md)
-10. [Course requirements and grading {#course-requirements-and-grading .unnumbered}](10-course-requirements-and-grading-course-requirements-and-grad.md)
-11. [Feedback {#feedback .unnumbered}](11-feedback-feedback-unnumbered.md)
-12. [Syllabus Part 12 —](12-syllabus-part-12.md)
-13. [Campus Honor Code {#campus-honor-code .unnumbered}](13-campus-honor-code-campus-honor-code-unnumbered.md)
+1. [Course description](01-course-description.md)
+2. [Objectives of the course](02-objectives-of-the-course.md)
+3. [Topics (in order with rough timing)](03-topics-in-order-with-rough-timing.md)
+4. [Personnel](04-personnel.md)
+5. [Course websites: GitHub, Ed Discussion, Gradescope, and bCourses](05-course-websites-github-ed-discussion-gradescope-and-bcourses.md)
+6. [Course material](06-course-material.md)
+7. [Section](07-section.md)
+8. [Computing Resources](08-computing-resources.md)
+9. [Class time](09-class-time.md)
+10. [Course requirements and grading](10-course-requirements-and-grading.md)
+11. [Feedback](11-feedback.md)
+12. [Accomodations for Students with Disabilities](12-accomodations-for-students-with-disabilities.md)
+13. [Campus Honor Code](13-campus-honor-code.md)
 
 ---
 

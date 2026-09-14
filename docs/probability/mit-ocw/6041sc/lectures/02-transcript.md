@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 2**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu
 
 JOHN TSISIKLIS: So here's the agenda for today. We're going to do a very quick review. And then we're going to introduce some very important concepts. The idea is that all information is-Information is always partial. And the question is what do we do to probabilities if we have some partial information about the random experiments. We're going to introduce the important concept of conditional probability. And then we will see three very useful ways in which it is used. And these ways basically correspond to divide and conquer methods for breaking up problems into simpler pieces. And also one more fundamental tool which allows us to use conditional probabilities to do inference, that is, if we get a little bit of information about some phenomenon, what can we infer about the things that we have not seen?

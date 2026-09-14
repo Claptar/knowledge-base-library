@@ -1,5 +1,5 @@
 ---
-title: Unit 02 —
+title: 'Unit 2: Next'
 source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/unit2.html
 source_file: sources/berkeley-stat210a/fall-2025/units/unit2.html
 licence: CC BY 4.0
@@ -8,11 +8,9 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Unit 02 —
+# Unit 2: Next
 
 **Source:** [`units/unit2.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/unit2.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
-
-# Unit 2: Next {#unit-2-next .title}
 
 This is an example of using an ipynb file as source rather than qmd. It follows instructions from https://github.com/DS-100/course-notes/README.md.
 

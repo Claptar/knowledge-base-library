@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Convergence in Probability and in the Mean Part 2**
-
 For part E and F of the problem, we'll be introducing a new notion of convergence, so-called the convergence E mean squared sense. We say that xn converges to a number c in mean squared, if as we take and go to infinity, the expected value of xn minus c squared goes to 0. To get a sense of what this looks like, let's say we let c equal to the expected value of xn, and let's say the expected value of xn is always the same.
 
 So the sequence of random variables has the same mean. Well, if that is true, then mean square convergence simply says the limit of the variance of xn is 0. So as you can imagine, somehow as xn becomes big, the variance of xn is very small, so xn is basically highly concentrated around c. And by this I mean, the density function for xn. So that's the notion of convergence we'll be working with.

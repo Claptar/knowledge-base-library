@@ -22,4 +22,4 @@ October 5, 2023
 
 ---
 
-[Up: contents](index.md) · [1 Minimax Risk Estimator {.anchored number="1" anchor-id="minimax-risk-estimator"} →](02-1-minimax-risk-estimator-anchored-number-1-anchor-id-minimax.md)
+[Up: contents](index.md) · [1 Minimax Risk Estimator →](02-1-minimax-risk-estimator.md)

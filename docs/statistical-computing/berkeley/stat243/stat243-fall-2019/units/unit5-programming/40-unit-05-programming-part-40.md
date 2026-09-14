@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [13] "/usr/lib/R/library/graphics" ## [14] "/usr/lib/R/library/grDevices" ## [15] "/usr/lib/R/library/utils" ## [16] "/usr/lib/R/library/datasets"
+
 
 ---
 

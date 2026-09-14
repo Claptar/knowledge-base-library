@@ -18,4 +18,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [Bayes estimation Part 02 — →](02-bayes-estimation-part-02.md)
+[Up: contents](index.md) · [1 Bayes Risk and Bayes Estimator →](02-1-bayes-risk-and-bayes-estimator.md)

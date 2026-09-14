@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 17**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high-quality, educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 PROFESSOR: All right. So today, we're going to start by taking stock of what we discussed last time, review the definition of Markov chains. And then most of the lecture, we're going to concentrate on their steady-state behavior. Meaning, we're going to look at what does a Markov chain do if it has run for a long time. What can we say about the probabilities of the different states?

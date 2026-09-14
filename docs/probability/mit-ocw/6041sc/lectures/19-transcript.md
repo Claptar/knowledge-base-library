@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 19**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 JOHN TSITSIKLIS: We're going to start today a new unit. so we will be talking about limit theorems. So just to introduce the topic, let's think of the following situation. There's a population of penguins down at the South Pole. And if you were to pick a penguin at random and measure their height, the expected value of their height would be the average of the heights of the different penguins in the population. So suppose when you pick one, every penguin is equally likely. Then the expected value is just the average of all the penguins out there.

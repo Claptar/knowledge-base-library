@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: Ambulance Travel Time**
-
 In this problem, we'll be looking at an ambulance that is traveling back and forth in interval of size l. Say from 0 to l.
 
 At some point in time, there's an accident occurring, let's say at location x. And we'll assume the accident occurs in a random location so that x is uniformly distributed between 0 and l. Now, at this point in time, let's say the ambulance turns out to be at location y. Again, we'll assume that y is a uniform random variable between 0 and l, and also that x and y are independently distributed.

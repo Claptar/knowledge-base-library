@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`tutorialScripts/excercises/07_ANOVA/ANOVA_cuckoo_half.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/07_ANOVA/ANOVA_cuckoo_half.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
 
-# Cuckoo dataset
-
 The common cuckoo does not build its own nest: it prefers
 to lay its eggs in another birds' nest. It is known, since 1892,
 that the type of cuckoo bird eggs are different between different

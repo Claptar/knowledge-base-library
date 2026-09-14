@@ -12,7 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`index.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/index.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
 
-# Course Description
 An introduction to time series analysis in the time domain and spectral domain. Topics will include: estimation of trends and seasonal effects, autoregressive moving average models, forecasting, indicators, harmonic analysis, spectra. This course uses Python as its primary computing language.
 
 

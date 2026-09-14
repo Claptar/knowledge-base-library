@@ -285,4 +285,4 @@ mean(abs(stats) >= obs_stat)
 
 ---
 
-[← Random Effects Models {#random-effects-models .title}](01-random-effects-models-random-effects-models-title.md) · [Up: contents](index.md) · [Model-Based Inference →](03-model-based-inference.md)
+[← Random Effects Models](01-random-effects-models.md) · [Up: contents](index.md) · [Model-Based Inference →](03-model-based-inference.md)

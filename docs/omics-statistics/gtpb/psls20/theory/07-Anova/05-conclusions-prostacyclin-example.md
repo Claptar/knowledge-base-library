@@ -45,4 +45,4 @@ The average prostacyclin concentration is higher in the high dose group than in 
 
 ---
 
-[← Post hoc analysis: Multiple comparisons of means](04-post-hoc-analysis-multiple-comparisons-of-means.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](06-home-https-gtpb-github-io-psls20.md)
+[← Post hoc analysis: Multiple comparisons of means](04-post-hoc-analysis-multiple-comparisons-of-means.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](06-home-https-gtpb-github-io-psls20.md)

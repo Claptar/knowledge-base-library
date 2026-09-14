@@ -22,4 +22,4 @@ November 2, 2023
 
 ---
 
-[Up: contents](index.md) · [Asymptotics Part 02 — →](02-asymptotics-part-02.md)
+[Up: contents](index.md) · [1 Introduction to Asymptotic Theory →](02-1-introduction-to-asymptotic-theory.md)

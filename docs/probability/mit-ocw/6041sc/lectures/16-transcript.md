@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 16**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 PROFESSOR: So we're going to start now with a new chapter. We're going to talk about Markov processes. The good news is that this is a subject that is a lot more intuitive and simple in many ways than, let's say, the Poisson processes. So hopefully this will be enjoyable.

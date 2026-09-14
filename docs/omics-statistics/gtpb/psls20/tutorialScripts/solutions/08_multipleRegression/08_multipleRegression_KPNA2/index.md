@@ -16,7 +16,7 @@ Split into 3 sections.
 
 1. [Introduction](01-introduction.md)
 2. [Assessing the significance of all hypothesis of interest](02-assessing-the-significance-of-all-hypothesis-of-interest.md)
-3. [[Home](https://gtpb.github.io/PSLS20/) {-}](03-home-https-gtpb-github-io-psls20.md)
+3. [[Home](https://gtpb.github.io/PSLS20/)](03-home-https-gtpb-github-io-psls20.md)
 
 ---
 

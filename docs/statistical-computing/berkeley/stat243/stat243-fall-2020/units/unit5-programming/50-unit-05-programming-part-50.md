@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## used (Mb) gc trigger (Mb) max used (Mb) ## Ncells 2022023 108 3.81e+06 203 2040200 109 ## Vcells 63675461 486 1.42e+08 1087 63706618 486 ## @7f02491a0010 14 REALSXP g1c7 [MARK,NAM(7)] (len=10000000, tl=0) **.Internal** ( **inspect** (y))
+
 
 ---
 

@@ -447,4 +447,4 @@ Crucially, <span class="math inline">\$U(Z)\$</span> is *not* sufficient for <sp
 
 ---
 
-[← Testing with Nuisance Parameters {#testing-with-nuisance-parameters .title}](01-testing-with-nuisance-parameters-testing-with-nuisance-param.md) · [Up: contents](index.md)
+[← Testing with Nuisance Parameters](01-testing-with-nuisance-parameters.md) · [Up: contents](index.md)

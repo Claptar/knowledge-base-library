@@ -1,5 +1,5 @@
 ---
-title: Lecture 01 — Scope and Intro
+title: 'PH240C: Scope and Introduction'
 source: https://leishi-rocks.github.io/courses/ph240c/notes/Lecture_01_Scope_and_Intro.pdf
 source_file: sources/berkeley-stat-c245c-leishi/notes/Lecture_01_Scope_and_Intro.pdf
 licence: unresolved
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Lecture 01 — Scope and Intro
+# PH240C: Scope and Introduction
 
 **Source:** [`notes/Lecture_01_Scope_and_Intro.pdf`](https://leishi-rocks.github.io/courses/ph240c/notes/Lecture_01_Scope_and_Intro.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# **PH240C: Scope and Introduction**
 
 Jingshen Wang 09/01/2021
 

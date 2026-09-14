@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`homeworks/homework3/homework3.Rmd`](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/homeworks/homework3/homework3.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
 
-# Compute the predictions on the points in the first fold. Plot the predictions
+
 
 ---
 

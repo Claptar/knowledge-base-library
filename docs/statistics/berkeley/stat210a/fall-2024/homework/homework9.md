@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`homework/homework9.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/homework/homework9.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
 
-#### Instructions: {#instructions}
-
 See the standing homework instructions on the course web page
 
 **Problem 1** (Fisher’s exact test). Suppose $X_i \sim \text{Binom}(n_i, \pi_i)$ independently for $i=0,1$ and $\pi_0,\pi_1\in(0,1)$. Consider testing $H_0:\; \pi_1\leq \pi_0$ vs. $H_1:\; \pi_1 > \pi_0$.

@@ -182,4 +182,4 @@ Thus, depending on what test we use on the same data set, we can get very differ
 
 ---
 
-[← Testing interpretation Part 01 —](01-testing-interpretation-part-01.md) · [Up: contents](index.md) · [Confidence Regions →](03-confidence-regions.md)
+[← p-values, confidence regions, and (mis-)interpreting Tests](01-p-values-confidence-regions-and-mis--interpreting-tests.md) · [Up: contents](index.md) · [Confidence Regions →](03-confidence-regions.md)

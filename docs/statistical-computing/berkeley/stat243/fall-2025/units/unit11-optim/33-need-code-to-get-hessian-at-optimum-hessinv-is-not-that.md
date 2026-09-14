@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`units/unit11-optim.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit11-optim.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
 
-# Need code to get Hessian at optimum; `hess_inv` is NOT that.
+
 
 ---
 

@@ -136,7 +136,7 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2018.g
 
 ### lab/S10
 
-- [Simulation](lab/S10/simulation.md)
+- [Discuss Lo et al. which was assigned for PS6, problem 1.](lab/S10/simulation.md)
 
 ### project
 
@@ -166,7 +166,7 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2018.g
     - [Changes and differences in linear patterns](ps/clm/15-changes-and-differences-in-linear-patterns.md)
     - [Conclusion and discussion](ps/clm/16-conclusion-and-discussion.md)
     - [Reproducing this work](ps/clm/17-reproducing-this-work.md)
-- [Lo etal 2001](ps/lo_etal_2001.md)
+- [Biometrika Trust](ps/lo_etal_2001.md)
 - **ps1**
     - [Introduction](ps/ps1/01-introduction.md)
     - [Formatting requirements](ps/ps1/02-formatting-requirements.md)
@@ -175,12 +175,12 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2018.g
     - [Introduction](ps/ps2/01-introduction.md)
     - [Problems](ps/ps2/02-problems.md)
     - [Ps 02 — Part 03 —](ps/ps2/03-ps-02-part-03.md)
-- [Ps 03 —](ps/ps3.md)
-- [Ps 04 —](ps/ps4.md)
-- [Ps 05 —](ps/ps5.md)
-- [Ps 06 —](ps/ps6.md)
-- [Ps 07 —](ps/ps7.md)
-- [Ps 08 —](ps/ps8.md)
+- [Stat243: Problem Set 3, Due Friday Sept. 28](ps/ps3.md)
+- [Stat243: Problem Set 4, Due Wednesday October 10](ps/ps4.md)
+- [Stat243: Problem Set 5, Due Friday October 19](ps/ps5.md)
+- [Stat243: Problem Set 6, Due Wed. October 31](ps/ps6.md)
+- [Stat243: Problem Set 7, Due Fri. November 16](ps/ps7.md)
+- [Stat243: Problem Set 8, Due Fri. November 30](ps/ps8.md)
 
 ### syllabus
 

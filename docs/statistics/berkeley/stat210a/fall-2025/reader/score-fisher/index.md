@@ -15,11 +15,11 @@ converted: '2026-09-14'
 Split into 6 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 Score Function {.anchored number="1" anchor-id="score-function"}](02-1-score-function-anchored-number-1-anchor-id-score-function.md)
-3. [Score fisher Part 03 —](03-score-fisher-part-03.md)
-4. [3 Cramér-Rao Lower Bound {.anchored number="3" anchor-id="cramér-rao-lower-bound"}](04-3-cramér-rao-lower-bound-anchored-number-3-anchor-id-cramér.md)
-5. [Score fisher Part 05 —](05-score-fisher-part-05.md)
-6. [Score fisher Part 06 —](06-score-fisher-part-06.md)
+2. [1 Score Function](02-1-score-function.md)
+3. [2 Differential Identities and the Fisher Information](03-2-differential-identities-and-the-fisher-information.md)
+4. [3 Cramér-Rao Lower Bound](04-3-cramér-rao-lower-bound.md)
+5. [4 Score and Fisher information in an i.i.d. sample](05-4-score-and-fisher-information-in-an-i-i-d-sample.md)
+6. [5 Score and Fisher information in (curved) exponential families](06-5-score-and-fisher-information-in-curved-exponential-familie.md)
 
 ---
 

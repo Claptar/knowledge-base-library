@@ -49,4 +49,4 @@ ggplot(null_stats, aes(x = f_vec)) +
 
 ---
 
-[← Designs with One Factor {#designs-with-one-factor .title}](01-designs-with-one-factor-designs-with-one-factor-title.md) · [Up: contents](index.md)
+[← Designs with One Factor](01-designs-with-one-factor.md) · [Up: contents](index.md)

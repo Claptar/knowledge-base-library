@@ -24,4 +24,4 @@ Zoals steeds heeft het herwerken van de cursus heel wat voeten in de aarde. Gelu
 
 ---
 
-[← Cursus Statistiek 2019-2020 {#cursus-statistiek-2019-2020-1 .title}](01-cursus-statistiek-2019-2020-cursus-statistiek-2019-2020-1-ti.md) · [Up: contents](index.md)
+[← Cursus Statistiek 2019-2020](01-cursus-statistiek-2019-2020.md) · [Up: contents](index.md)

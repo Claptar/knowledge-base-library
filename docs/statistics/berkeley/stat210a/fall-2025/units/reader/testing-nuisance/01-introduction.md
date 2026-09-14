@@ -22,4 +22,4 @@ October 24, 2023
 
 ---
 
-[Up: contents](index.md) · [1 Nuisance Parameters {.anchored number="1" anchor-id="nuisance-parameters"} →](02-1-nuisance-parameters-anchored-number-1-anchor-id-nuisance-p.md)
+[Up: contents](index.md) · [1 Nuisance Parameters →](02-1-nuisance-parameters.md)

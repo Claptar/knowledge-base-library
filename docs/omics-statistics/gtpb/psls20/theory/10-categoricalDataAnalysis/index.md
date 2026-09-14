@@ -19,7 +19,7 @@ Split into 6 sections.
 3. [Test for association between two qualitative variables](03-test-for-association-between-two-qualitative-variables.md)
 4. [Unpaired observations](04-unpaired-observations.md)
 5. [Logistic regression](05-logistic-regression.md)
-6. [[Home](https://gtpb.github.io/PSLS20/) {-}](06-home-https-gtpb-github-io-psls20.md)
+6. [[Home](https://gtpb.github.io/PSLS20/)](06-home-https-gtpb-github-io-psls20.md)
 
 ---
 

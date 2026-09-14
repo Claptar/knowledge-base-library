@@ -18,4 +18,4 @@ See the [previous slidedeck](https://github.com/berkeley-stat158/spring-2026/blo
 
 ---
 
-[← Wrap-Up {#wrap-up .title}](01-wrap-up-wrap-up-title.md) · [Up: contents](index.md) · [Second Half Topics →](03-second-half-topics.md)
+[← Wrap-Up](01-wrap-up.md) · [Up: contents](index.md) · [Second Half Topics →](03-second-half-topics.md)

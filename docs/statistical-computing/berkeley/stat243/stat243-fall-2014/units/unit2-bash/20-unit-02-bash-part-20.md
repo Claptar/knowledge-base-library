@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## Author: Christopher Paciorek <paciorek@scf.Berkeley.EDU> ## Date: Wed Sep 3 08:34:40 2014 -0700 ## ## I have made great progress on this critical matter. ## ## commit a1254fdd518f5728bb7028011ce82aac559277a0
+
 
 ---
 

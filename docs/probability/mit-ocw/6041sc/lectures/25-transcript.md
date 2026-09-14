@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 25**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu
 
 PROFESSOR: OK, if you have not yet done it, please take a moment to go through the course evaluation website and enter your comments for the class. So what we're going to do today to wrap things up is we're going to go through a tour of the world of hypothesis testing. See a few examples of hypothesis tests, starting from simple ones such as the one the setting that we discussed last time in which you just have two hypotheses, you're trying to choose between them.

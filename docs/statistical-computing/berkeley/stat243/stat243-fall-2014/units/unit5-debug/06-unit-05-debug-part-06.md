@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [1] "<-" "==" "-" "!" ## [5] "!=" "[" "[[<-" "{" ## [9] "$<-" "*" "&&" "as.vector" ## [13] "attr" "c" "class<-" "eval" ## [17] "gettextf" ".getXlevels" "if" "is.empty.model" ## [21] "is.matrix" "is.null" "is.numeric" "length" ## [25] "list" f <- **function** () { y <- 3 **print** (x + y) } **findGlobals** (f)
+
 
 ---
 

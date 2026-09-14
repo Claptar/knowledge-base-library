@@ -28,4 +28,4 @@ Consider the *Gaussian linear model* where $$y_i = x_i' \beta + \varepsilon_i, \
 
 ---
 
-[Up: contents](index.md) · [Moral: {#moral} →](02-moral-moral.md)
+[Up: contents](index.md) · [Moral →](02-moral.md)

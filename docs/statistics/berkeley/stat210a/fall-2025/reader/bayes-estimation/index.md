@@ -15,9 +15,9 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Bayes estimation Part 02 —](02-bayes-estimation-part-02.md)
-3. [2 Bayes estimator {.anchored number="2" anchor-id="bayes-estimator"}](03-2-bayes-estimator-anchored-number-2-anchor-id-bayes-estimato.md)
-4. [3 Conjugate priors {.anchored number="3" anchor-id="conjugate-priors"}](04-3-conjugate-priors-anchored-number-3-anchor-id-conjugate-pri.md)
+2. [1 Frequentist motivation for a Bayes Estimator](02-1-frequentist-motivation-for-a-bayes-estimator.md)
+3. [2 Bayes estimator](03-2-bayes-estimator.md)
+4. [3 Conjugate priors](04-3-conjugate-priors.md)
 
 ---
 

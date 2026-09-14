@@ -14,7 +14,7 @@ themselves — the split is by authorship, not by subject.
 > a PDF carries a warning, because prose survives a PDF and mathematics does not. These
 > files are generated and are **never edited by hand**.
 
-**55 sources converted**, by discipline. Books and paywalled papers are deliberately absent.
+**61 sources converted**, by discipline. Books and paywalled papers are deliberately absent.
 
 ## Sources
 
@@ -22,11 +22,17 @@ themselves — the split is by authorship, not by subject.
 ### Computational biology
 
 - [berkeley stat c245c leishi](computational-biology/berkeley/stat-c245c-leishi/index.md)
+- [carilli 2026 expression regulation](computational-biology/caltech-thesis/carilli-2026-expression-regulation/index.md)
+- [fang 2025 biophysical normalisation](computational-biology/caltech-thesis/fang-2025-biophysical-normalisation/index.md)
+- [felce 2026 biophysical evolution](computational-biology/caltech-thesis/felce-2026-biophysical-evolution/index.md)
+- [gorin 2023 scrnaseq foundations](computational-biology/caltech-thesis/gorin-2023-scrnaseq-foundations/index.md)
+- [luebbert 2024 transcriptomic complexity](computational-biology/caltech-thesis/luebbert-2024-transcriptomic-complexity/index.md)
 - [ocw 6047](computational-biology/mit-ocw/6047/index.md)
 - [ocw 7091j](computational-biology/mit-ocw/7091j/index.md)
 - [ocw 8591j 2004](computational-biology/mit-ocw/8591j-2004/index.md)
 - [ocw 8591j 2014](computational-biology/mit-ocw/8591j-2014/index.md)
 - [ocw 8592j](computational-biology/mit-ocw/8592j/index.md)
+- [pachter biophysics docs](computational-biology/pachter-lab/biophysics-docs/index.md)
 
 ### Omics statistics
 

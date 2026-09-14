@@ -80,4 +80,4 @@ For the following questions assume we also have a predictor matrix $X\in \mathbb
 
 ---
 
-[Up: contents](index.md) · [Moral: {#moral} →](02-moral-moral.md)
+[Up: contents](index.md) · [Moral →](02-moral.md)

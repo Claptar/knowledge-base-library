@@ -26,4 +26,4 @@ August 29, 2023
 
 ---
 
-[Up: contents](index.md) · [Exponential family structure {.anchored anchor-id="exponential-family-structure"} →](02-exponential-family-structure-anchored-anchor-id-exponential.md)
+[Up: contents](index.md) · [Exponential family structure →](02-exponential-family-structure.md)

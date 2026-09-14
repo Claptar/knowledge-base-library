@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Inferring a Discrete Random Variable from a Continuous Measurement**
-
 Hi. In this problem, we're going to look at how to infer a discrete random variable from a continuous measurement. And really, what it's going to give us is some practice working with a variation of Bayes' rule. So the problem tells us that we have a discrete random variable x with this PMF. It is 1 with probability P, minus 1 with probability 1 minus P, and 0 otherwise. So here is just a diagram of this PMF.
 
 And then we also have another random variable, y, which is continuous. And its PDF is given by this. It's 1/2 lambda e to the minus lambda times the absolute value of y. And so this may look familiar. It looks kind of like an exponential. And in fact, it's just a two-sided exponential. That's flattened by a factor of 1/2. And this is what it looks like, kind of like a tent that goes on both ways.

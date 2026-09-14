@@ -20,7 +20,7 @@ Split into 7 sections.
 4. [Estimation](04-estimation.md)
 5. [Hypothesis tests](05-hypothesis-tests.md)
 6. [Nature column on testing](06-nature-column-on-testing.md)
-7. [[Home](https://gtpb.github.io/PSLS20/) {-}](07-home-https-gtpb-github-io-psls20.md)
+7. [[Home](https://gtpb.github.io/PSLS20/)](07-home-https-gtpb-github-io-psls20.md)
 
 ---
 

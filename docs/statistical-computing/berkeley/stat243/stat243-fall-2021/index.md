@@ -96,12 +96,12 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2021.g
     - [Introduction](ps/ps2/01-introduction.md)
     - [Formatting requirements](ps/ps2/02-formatting-requirements.md)
     - [Problems](ps/ps2/03-problems.md)
-- [Ps 03 —](ps/ps3.md)
-- [Ps 04 —](ps/ps4.md)
-- [Ps 05 —](ps/ps5.md)
-- [Ps 06 —](ps/ps6.md)
-- [Ps 07 —](ps/ps7.md)
-- [Ps 08 —](ps/ps8.md)
+- [Stat243: Problem Set 3, Due Wednesday Sep. 29](ps/ps3.md)
+- [Stat243: Problem Set 4, Due Wednesday Oct. 13](ps/ps4.md)
+- [Stat243: Problem Set 5, Due Friday October 29](ps/ps5.md)
+- [Stat243: Problem Set 6, Due Monday November 8](ps/ps6.md)
+- [Stat243: Problem Set 7, Due Wednesday November 17](ps/ps7.md)
+- [Stat243: Problem Set 8, Due Friday December 3 (5 pm)](ps/ps8.md)
 
 ### sections/01
 

@@ -33,4 +33,4 @@ library(tidyverse)
 
 ---
 
-[Up: contents](index.md) · [In a world where… {.anchored anchor-id="in-a-world-where"} →](02-in-a-world-where-anchored-anchor-id-in-a-world-where.md)
+[Up: contents](index.md) · [In a world where… →](02-in-a-world-where.md)

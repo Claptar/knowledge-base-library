@@ -508,4 +508,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Higher Order Factorial Designs {#higher-order-factorial-designs .title}](01-higher-order-factorial-designs-higher-order-factorial-design.md) · [Up: contents](index.md) · [Interaction Plots →](03-interaction-plots.md)
+[← Higher Order Factorial Designs](01-higher-order-factorial-designs.md) · [Up: contents](index.md) · [Interaction Plots →](03-interaction-plots.md)

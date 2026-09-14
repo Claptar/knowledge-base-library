@@ -15,12 +15,12 @@ converted: '2026-09-14'
 Split into 7 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Exponential family structure {.anchored anchor-id="exponential-family-structure"}](02-exponential-family-structure-anchored-anchor-id-exponential.md)
-3. [Differential identities {.anchored anchor-id="differential-identities"}](03-differential-identities-anchored-anchor-id-differential-iden.md)
-4. [Other parameterizations {.anchored anchor-id="other-parameterizations"}](04-other-parameterizations-anchored-anchor-id-other-parameteriz.md)
-5. [Exponential tilting {.anchored anchor-id="exponential-tilting"}](05-exponential-tilting-anchored-anchor-id-exponential-tilting.md)
-6. [Exponential families Part 06 —](06-exponential-families-part-06.md)
-7. [Exponential families Part 07 —](07-exponential-families-part-07.md)
+2. [Exponential family structure](02-exponential-family-structure.md)
+3. [Differential identities](03-differential-identities.md)
+4. [Other parameterizations](04-other-parameterizations.md)
+5. [Exponential tilting](05-exponential-tilting.md)
+6. [Visualization of exponential tilting](06-visualization-of-exponential-tilting.md)
+7. [Repeated sampling from exponential families](07-repeated-sampling-from-exponential-families.md)
 
 ---
 

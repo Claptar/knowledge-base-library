@@ -1,5 +1,5 @@
 ---
-title: Index
+title: 'STAT C205B/MATH C218B : Probability Theory (Spring 2018)'
 source: https://www.stat.berkeley.edu/~aldous/205B/index.html
 source_file: sources/berkeley-stat205b/aldous-legacy/index.html
 licence: unresolved
@@ -8,20 +8,20 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Index
+# STAT C205B/MATH C218B : Probability Theory (Spring 2018)
 
 **Source:** [`index.html`](https://www.stat.berkeley.edu/~aldous/205B/index.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
 
 Split into 8 sections.
 
-1. [Index Part 01 —](01-index-part-01.md)
-2. [Lecture notes {#lecture-notes align="center"}](02-lecture-notes-lecture-notes-align-center.md)
-3. [Weekly schedule Spring 2018 {#weekly-schedule-spring-2018 align="center"}](03-weekly-schedule-spring-2018-weekly-schedule-spring-2018-alig.md)
-4. [Homeworks {#homeworks align="center"}](04-homeworks-homeworks-align-center.md)
-5. [Prerequisites {#prerequisites}](05-prerequisites-prerequisites.md)
-6. [Books {#books align="center"}](06-books-books-align-center.md)
-7. [Final {#final align="center"}](07-final-final-align-center.md)
-8. [Office Hours {#office-hours align="center"}](08-office-hours-office-hours-align-center.md)
+1. [STAT C205B/MATH C218B : Probability Theory (Spring 2018)](01-stat-c205b-math-c218b-probability-theory-spring-2018.md)
+2. [Lecture notes](02-lecture-notes.md)
+3. [Weekly schedule Spring 2018](03-weekly-schedule-spring-2018.md)
+4. [Homeworks](04-homeworks.md)
+5. [Prerequisites](05-prerequisites.md)
+6. [Books](06-books.md)
+7. [Final](07-final.md)
+8. [Office Hours](08-office-hours.md)
 
 ---
 

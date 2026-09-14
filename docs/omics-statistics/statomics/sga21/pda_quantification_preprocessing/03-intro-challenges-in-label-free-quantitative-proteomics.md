@@ -96,4 +96,4 @@ knitr::include_graphics("./figures/maxquantOutputDir.png")
 
 ---
 
-[← Outline {-}](02-outline.md) · [Up: contents](index.md) · [Import the data in R →](04-import-the-data-in-r.md)
+[← Outline](02-outline.md) · [Up: contents](index.md) · [Import the data in R →](04-import-the-data-in-r.md)

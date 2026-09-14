@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Geniuses and Chocolates**
-
 Hi. Today, we're going to do a really fun problem called geniuses and chocolates. And what this problem is exercising is your knowledge of properties of probability laws. So let me just clarify what I mean by that. Hopefully, by this point, you have already learned what the axioms of probability are. And properties of probability laws are essentially any rules that you can derive from those axioms.
 
 So take for example the fact that the probability of A union B is equal to the probability of A plus the probability of B minus the probability of the intersection. That's an example of a property of a probability law. So enough with the preamble. Let's see what the problem is asking us. In this problem, we have a class of students. And we're told that 60% of the students are geniuses. 70% of the students love chocolate. So I would be in that category. And 40% fall into both categories.

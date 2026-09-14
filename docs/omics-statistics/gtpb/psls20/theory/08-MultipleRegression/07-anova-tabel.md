@@ -377,4 +377,4 @@ boxplot(exp(prostate$lweight),ylab="Prostate Weight (g)")
 
 ---
 
-[← fitted points for droplines to surface](06-fitted-points-for-droplines-to-surface.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](08-home-https-gtpb-github-io-psls20.md)
+[← fitted points for droplines to surface](06-fitted-points-for-droplines-to-surface.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](08-home-https-gtpb-github-io-psls20.md)

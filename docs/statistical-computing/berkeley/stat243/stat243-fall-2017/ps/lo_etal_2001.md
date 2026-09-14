@@ -1,5 +1,5 @@
 ---
-title: Lo etal 2001
+title: Biometrika Trust
 source: https://github.com/berkeley-stat243/stat243-fall-2017/blob/0e9c7fe58194834b0d43b3dbf152d28a37044d05/ps/lo_etal_2001.pdf
 source_file: sources/berkeley-stat243/stat243-fall-2017/ps/lo_etal_2001.pdf
 licence: unresolved
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Lo etal 2001
+# Biometrika Trust
 
 **Source:** [`ps/lo_etal_2001.pdf`](https://github.com/berkeley-stat243/stat243-fall-2017/blob/0e9c7fe58194834b0d43b3dbf152d28a37044d05/ps/lo_etal_2001.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# Biometrika Trust
 
 Testing the Number of Components in a Normal Mixture Author(s): Yungtai Lo, Nancy R. Mendell and  Donald B. Rubin Source: Biometrika, Vol. 88, No. 3 (Sep., 2001), pp. 767-778 Published by: Oxford University Press on behalf of Biometrika Trust Stable URL: http://www.jstor.org/stable/2673445 Accessed: 23-10-2017 15:10 UTC
 

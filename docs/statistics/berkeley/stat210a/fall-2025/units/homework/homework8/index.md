@@ -15,7 +15,7 @@ converted: '2026-09-14'
 Split into 2 sections.
 
 1. [Homework8 Part 01 —](01-homework8-part-01.md)
-2. [Moral: {#moral}](02-moral-moral.md)
+2. [Moral](02-moral.md)
 
 ---
 

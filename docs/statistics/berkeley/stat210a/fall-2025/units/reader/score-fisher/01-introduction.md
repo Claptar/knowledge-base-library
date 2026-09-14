@@ -24,4 +24,4 @@ Add back in figures from handwritten notes.
 
 ---
 
-[Up: contents](index.md) · [1 Outline {.anchored number="1" anchor-id="outline"} →](02-1-outline-anchored-number-1-anchor-id-outline.md)
+[Up: contents](index.md) · [1 Outline →](02-1-outline.md)

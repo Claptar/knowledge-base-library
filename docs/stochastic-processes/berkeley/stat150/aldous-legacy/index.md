@@ -30,8 +30,8 @@ Converted material from [https://www.stat.berkeley.edu/~aldous/150/](https://www
     - [3.9 How not to explain coincidences](coincidence_chapter/09-3-9-how-not-to-explain-coincidences.md)
     - [3.10 Hot hands](coincidence_chapter/10-3-10-hot-hands.md)
 - **index**
-    - [STAT 150: Stochastic Processes (Fall 2015) {#stat-150-stochastic-processes-fall-2015}](home/01-stat-150-stochastic-processes-fall-2015-stat-150-stochastic.md)
-    - [Topic each class {#topic-each-class}](home/02-topic-each-class-topic-each-class.md)
+    - [STAT 150: Stochastic Processes (Fall 2015)](home/01-stat-150-stochastic-processes-fall-2015.md)
+    - [Topic each class](home/02-topic-each-class.md)
 - **lecture_10_post**
     - [Ideas used in Lecture 9.](lecture_10_post/01-ideas-used-in-lecture-9.md)
     - [Discussion.](lecture_10_post/02-discussion.md)

@@ -21,4 +21,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [1 Completeness {.anchored number="1" anchor-id="completeness"} →](02-1-completeness-anchored-number-1-anchor-id-completeness.md)
+[Up: contents](index.md) · [1 Completeness →](02-1-completeness.md)

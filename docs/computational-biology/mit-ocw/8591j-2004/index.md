@@ -29,7 +29,7 @@ Converted material from [https://ocw.mit.edu/courses/8-591j-systems-biology-fall
 
 ### lecture-outlines
 
-- [10 outline](lecture-outlines/10-outline.md)
+- [VII Biological Oscillators](lecture-outlines/10-outline.md)
 - [11 outline](lecture-outlines/11-outline.md)
 - **12-outline**
     - [Introduction](lecture-outlines/12-outline/01-introduction.md)
@@ -49,7 +49,7 @@ Converted material from [https://ocw.mit.edu/courses/8-591j-systems-biology-fall
     - [Spatially homogeneous solutions](lecture-outlines/15-outline/03-spatially-homogeneous-solutions.md)
     - [Spatially inhomogeneous solutions](lecture-outlines/15-outline/04-spatially-inhomogeneous-solutions.md)
     - [Conditions for inhomogeneous instability](lecture-outlines/15-outline/05-conditions-for-inhomogeneous-instability.md)
-- [19 outline](lecture-outlines/19-outline.md)
+- [IX Models for eukaryotic gradient sensing](lecture-outlines/19-outline.md)
 
 ### lectures
 
@@ -108,7 +108,7 @@ Converted material from [https://ocw.mit.edu/courses/8-591j-systems-biology-fall
     - [Adaptation (one stable fixed point)](lectures/09-notes/16-adaptation-one-stable-fixed-point.md)
     - [Oscillator (unstable fixed point)](lectures/09-notes/17-oscillator-unstable-fixed-point.md)
 - [10 notes](lectures/10-notes.md)
-- [14 notes](lectures/14-notes.md)
+- [L14: 14 Lectures past and 11 to go](lectures/14-notes.md)
 - **16-notes**
     - [Review L15 Turing-Gierer-Meinhardt models Local excitation, global inhibition](lectures/16-notes/01-review-l15-turing-gierer-meinhardt-models-local-excitation-g.md)
     - [a: concentration activator i: concentration inhibitor t: time x: position](lectures/16-notes/02-a-concentration-activator-i-concentration-inhibitor-t-time-x.md)
@@ -144,7 +144,7 @@ Converted material from [https://ocw.mit.edu/courses/8-591j-systems-biology-fall
     - [3. test stability of fluctuations around homogeneous solution](lectures/17-notes/22-3-test-stability-of-fluctuations-around-homogeneous-solution.md)
     - [3. test stability of fluctuations around homogeneous solution](lectures/17-notes/23-3-test-stability-of-fluctuations-around-homogeneous-solution.md)
     - [Howard et al. : Results](lectures/17-notes/24-howard-et-al-results.md)
-- [18 notes](lectures/18-notes.md)
+- [creation of membrane associated minD](lectures/18-notes.md)
 - **20-notes**
     - [Alternative views on gradient sensing](lectures/20-notes/01-alternative-views-on-gradient-sensing.md)
     - [Second mesenger production in a gradient](lectures/20-notes/02-second-mesenger-production-in-a-gradient.md)
@@ -158,7 +158,7 @@ Converted material from [https://ocw.mit.edu/courses/8-591j-systems-biology-fall
     - [Remember: Perfect adaptation module](lectures/20-notes/10-remember-perfect-adaptation-module.md)
     - [Steady state](lectures/20-notes/11-steady-state.md)
     - [well mixed, A/I directly reflects signal](lectures/20-notes/12-well-mixed-a-i-directly-reflects-signal.md)
-- [23 notes](lectures/23-notes.md)
+- [- Note Final PS](lectures/23-notes.md)
 - **25-notes**
     - [I Systems Microbiology (13 Lectures)](lectures/25-notes/01-i-systems-microbiology-13-lectures.md)
     - [Main take home messages from this course](lectures/25-notes/02-main-take-home-messages-from-this-course.md)
@@ -205,9 +205,9 @@ Converted material from [https://ocw.mit.edu/courses/8-591j-systems-biology-fall
     - [IV Synthetic genetic switches](recordings/l5-syllabus-transcript/01-iv-synthetic-genetic-switches.md)
     - [Reference](recordings/l5-syllabus-transcript/02-reference.md)
     - [V Stability analysis](recordings/l5-syllabus-transcript/03-v-stability-analysis.md)
-- [L6 syllabus transcript](recordings/l6-syllabus-transcript.md)
-- [L8 syllabus transcript](recordings/l8-syllabus-transcript.md)
-- [L9 syllabus transcript](recordings/l9-syllabus-transcript.md)
+- [V Stability analysis](recordings/l6-syllabus-transcript.md)
+- [VI Modeling Escherichia coli chemotaxis](recordings/l8-syllabus-transcript.md)
+- [VII Biological Oscillators](recordings/l9-syllabus-transcript.md)
 - **stochastics-transcript**
     - [1. THE MASTER EQUATION APPROACH](recordings/stochastics-transcript/01-1-the-master-equation-approach.md)
     - [Degradation](recordings/stochastics-transcript/02-degradation.md)

@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 9**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high-quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 JOHN TSITSIKLIS: OK let's start. So we've had the quiz. And I guess there's both good and bad news in it. Yesterday, as you know, the bad news. The average was a little lower than what we would have wanted. On the other hand, the good news is that the distribution was nicely spread. And that's the main purpose of this quiz is basically for you to calibrate and see roughly where you are standing.

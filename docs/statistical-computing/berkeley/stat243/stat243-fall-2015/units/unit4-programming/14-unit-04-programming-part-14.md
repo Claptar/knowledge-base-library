@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [11] "package:grDevices" "package:utils" ## [13] "package:datasets" "package:SCF" ## [15] "Autoloads" "package:base" _# ls(pos = 8) # for the stats package_ **ls** (pos = 8)[1:5] _# just show the first few_ ## [1] "all_labels" "all_patterns" "asis_output" ## [4] "clean_cache" "current_input" **ls** ("package:stats")[1:5] _# equivalent_ ## [1] "acf" "acf2AR" "add1" "addmargins" ## [5] "add.scope"
+
 
 ---
 

@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# there is a glitch in the EC2 setup that Spark provides -- numpy is not yum install -y python27-pip python27-devel pip-2.7 install 'numpy==1.9.2' # 1.10.1 has an issue with a warning in /root/spark-ec2/copy-dir /usr/local/lib64/python2.7/site-packages/numpy
+
 
 ---
 

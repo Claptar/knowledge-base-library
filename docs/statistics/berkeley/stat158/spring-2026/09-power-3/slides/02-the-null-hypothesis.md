@@ -3172,4 +3172,4 @@ right_threshold <- quantile(H_0, .975)
 
 ---
 
-[← Power (THIS SLIDE DECK IS NOT FINAL) {#power-this-slide-deck-is-not-final .title}](01-power-this-slide-deck-is-not-final-power-this-slide-deck-is.md) · [Up: contents](index.md) · [An Alternative Hypothesis →](03-an-alternative-hypothesis.md)
+[← Power (THIS SLIDE DECK IS NOT FINAL)](01-power-this-slide-deck-is-not-final.md) · [Up: contents](index.md) · [An Alternative Hypothesis →](03-an-alternative-hypothesis.md)

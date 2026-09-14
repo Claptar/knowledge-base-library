@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Mean & Variance of the Exponential**
-
 Hi. In this video, we're going to compute some useful quantities for the exponential random variable.
 
 So we're given that x is exponential with rate lambda. PDF looks like this, and the formula is here.

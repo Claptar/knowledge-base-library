@@ -15,14 +15,14 @@ converted: '2026-09-14'
 Split into 9 sections.
 
 1. [Introduction](01-introduction.md)
-2. [What is a probability? {.anchored anchor-id="what-is-a-probability"}](02-what-is-a-probability-anchored-anchor-id-what-is-a-probabili.md)
-3. [Probability as a measure {.anchored anchor-id="probability-as-a-measure"}](03-probability-as-a-measure-anchored-anchor-id-probability-as-a.md)
-4. [Measures {.anchored anchor-id="measures"}](04-measures-anchored-anchor-id-measures.md)
-5. [Integrals {.anchored anchor-id="integrals"}](05-integrals-anchored-anchor-id-integrals.md)
-6. [Densities {.anchored anchor-id="densities"}](06-densities-anchored-anchor-id-densities.md)
-7. [Probability Part 07 —](07-probability-part-07.md)
-8. [Conditional probability {.anchored anchor-id="conditional-probability"}](08-conditional-probability-anchored-anchor-id-conditional-proba.md)
-9. [Footnotes {#footnotes .anchored .quarto-appendix-heading}](09-footnotes-footnotes-anchored-quarto-appendix-heading.md)
+2. [What is a probability?](02-what-is-a-probability.md)
+3. [Probability as a measure](03-probability-as-a-measure.md)
+4. [Measures](04-measures.md)
+5. [Integrals](05-integrals.md)
+6. [Densities](06-densities.md)
+7. [Probability spaces and random variables](07-probability-spaces-and-random-variables.md)
+8. [Conditional probability](08-conditional-probability.md)
+9. [Footnotes](09-footnotes.md)
 
 ---
 

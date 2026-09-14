@@ -166,4 +166,4 @@ No collinearity leads to . . .
 
 ---
 
-[← Regression Adjustments {#regression-adjustments-1}](03-regression-adjustments-regression-adjustments-1.md) · [Up: contents](index.md)
+[← Regression Adjustments](03-regression-adjustments.md) · [Up: contents](index.md)

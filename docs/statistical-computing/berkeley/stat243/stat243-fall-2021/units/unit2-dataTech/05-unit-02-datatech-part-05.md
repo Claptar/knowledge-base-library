@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# get all the senators' timelines names = [d["screen_name"] for d in senators["users"]] timelines = [api.statuses.user_timeline(screen_name=name, count = 500) for name in names]
+
 
 ---
 

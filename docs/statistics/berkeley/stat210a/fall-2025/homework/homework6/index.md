@@ -15,9 +15,9 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Homework6 Part 01 —](01-homework6-part-01.md)
-2. [Moral: {#moral}](02-moral-moral.md)
-3. [Moral: {#moral-1}](03-moral-moral-1.md)
-4. [Moral: {#moral-2}](04-moral-moral-2.md)
+2. [Moral](02-moral.md)
+3. [Moral](03-moral.md)
+4. [Moral](04-moral.md)
 
 ---
 

@@ -21,4 +21,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [About Stat 210A {.anchored anchor-id="about-stat-210a"} →](02-about-stat-210a-anchored-anchor-id-about-stat-210a.md)
+[Up: contents](index.md) · [About Stat 210A →](02-about-stat-210a.md)

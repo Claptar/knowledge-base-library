@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`lab/S02/testingAssertion.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2018/blob/be0e210baad11c83cecdb23dcb9e91f609bc536a/lab/S02/testingAssertion.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
 
-# (assuming that your working directory is "code/")
+
 
 ---
 

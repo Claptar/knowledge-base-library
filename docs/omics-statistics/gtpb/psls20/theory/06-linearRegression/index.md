@@ -22,7 +22,7 @@ Split into 9 sections.
 6. [Invalid assumptions](06-invalid-assumptions.md)
 7. [Prediction-intervals](07-prediction-intervals.md)
 8. [Sum of squares and Anova-table](08-sum-of-squares-and-anova-table.md)
-9. [[Home](https://gtpb.github.io/PSLS20/) {-}](09-home-https-gtpb-github-io-psls20.md)
+9. [[Home](https://gtpb.github.io/PSLS20/)](09-home-https-gtpb-github-io-psls20.md)
 
 ---
 

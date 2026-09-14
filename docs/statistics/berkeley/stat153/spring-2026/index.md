@@ -34,7 +34,7 @@ Converted material from [https://github.com/berkeley-stat153/spring-2026.git](ht
 ### public/homework
 
 - **Homework5**
-    - [Stat 153/248 - Homework 5 - YOUR NAME HERE {-}](public/homework/Homework5/01-stat-153-248---homework-5---your-name-here.md)
+    - [Stat 153/248 - Homework 5 - YOUR NAME HERE](public/homework/Homework5/01-stat-153-248---homework-5---your-name-here.md)
     - [Apply it to a batch of 2 univariate signals of length 10](public/homework/Homework5/02-apply-it-to-a-batch-of-2-univariate-signals-of-length-10.md)
     - [Before running the lines below, predict](public/homework/Homework5/03-before-running-the-lines-below-predict.md)
     - [1. What output shape do you expect if kernelsize is 5 instead of 3?](public/homework/Homework5/04-1-what-output-shape-do-you-expect-if-kernelsize-is-5-instead.md)
@@ -65,7 +65,7 @@ Converted material from [https://github.com/berkeley-stat153/spring-2026.git](ht
     - [fc weight: 6410 = 640, bias: 10 -> 650](public/homework/Homework5/29-fc-weight-6410-640-bias-10---650.md)
     - [Homework5 Part 30 —](public/homework/Homework5/30-homework5-part-30.md)
 - **Stat153_248_Homework5**
-    - [Stat 153/248 - Homework 5 - YOUR NAME HERE {-}](public/homework/Stat153_248_Homework5/01-stat-153-248---homework-5---your-name-here.md)
+    - [Stat 153/248 - Homework 5 - YOUR NAME HERE](public/homework/Stat153_248_Homework5/01-stat-153-248---homework-5---your-name-here.md)
     - [Build the layer from the worked example](public/homework/Stat153_248_Homework5/02-build-the-layer-from-the-worked-example.md)
     - [Apply it to a batch of 2 univariate signals of length 10](public/homework/Stat153_248_Homework5/03-apply-it-to-a-batch-of-2-univariate-signals-of-length-10.md)
     - [---- Predict-then-verify ----](public/homework/Stat153_248_Homework5/04------predict-then-verify.md)
@@ -101,18 +101,18 @@ Converted material from [https://github.com/berkeley-stat153/spring-2026.git](ht
     - [Stat153 248 Homework5 Part 34 —](public/homework/Stat153_248_Homework5/34-stat153-248-homework5-part-34.md)
 - **Stat153_Homework1**
     - [Stat153 Homework1 Part 01 —](public/homework/Stat153_Homework1/01-stat153-homework1-part-01.md)
-    - [Collaborated with: {-}](public/homework/Stat153_Homework1/02-collaborated-with.md)
-    - [Q1. Autocovariance, autocorrelation, and stationarity {-}](public/homework/Stat153_Homework1/03-q1-autocovariance-autocorrelation-and-stationarity.md)
-    - [Q2. Data simulation {-}](public/homework/Stat153_Homework1/04-q2-data-simulation.md)
-    - [Q3. Correlation and independence {-}](public/homework/Stat153_Homework1/05-q3-correlation-and-independence.md)
-    - [Q4. Random walk with drift {-}](public/homework/Stat153_Homework1/06-q4-random-walk-with-drift.md)
-    - [Q5. Stationarity {-}](public/homework/Stat153_Homework1/07-q5-stationarity.md)
-    - [Q6. Theoretical and sample ACF {-}](public/homework/Stat153_Homework1/08-q6-theoretical-and-sample-acf.md)
-    - [Q7. Random walk and a trend stationary process {-}](public/homework/Stat153_Homework1/09-q7-random-walk-and-a-trend-stationary-process.md)
-    - [Q8. Linear trends and stationarity {-}](public/homework/Stat153_Homework1/10-q8-linear-trends-and-stationarity.md)
-    - [Q9. Auto- and cross-correlation for brain data {-}](public/homework/Stat153_Homework1/11-q9-auto--and-cross-correlation-for-brain-data.md)
+    - [Collaborated with](public/homework/Stat153_Homework1/02-collaborated-with.md)
+    - [Q1. Autocovariance, autocorrelation, and stationarity](public/homework/Stat153_Homework1/03-q1-autocovariance-autocorrelation-and-stationarity.md)
+    - [Q2. Data simulation](public/homework/Stat153_Homework1/04-q2-data-simulation.md)
+    - [Q3. Correlation and independence](public/homework/Stat153_Homework1/05-q3-correlation-and-independence.md)
+    - [Q4. Random walk with drift](public/homework/Stat153_Homework1/06-q4-random-walk-with-drift.md)
+    - [Q5. Stationarity](public/homework/Stat153_Homework1/07-q5-stationarity.md)
+    - [Q6. Theoretical and sample ACF](public/homework/Stat153_Homework1/08-q6-theoretical-and-sample-acf.md)
+    - [Q7. Random walk and a trend stationary process](public/homework/Stat153_Homework1/09-q7-random-walk-and-a-trend-stationary-process.md)
+    - [Q8. Linear trends and stationarity](public/homework/Stat153_Homework1/10-q8-linear-trends-and-stationarity.md)
+    - [Q9. Auto- and cross-correlation for brain data](public/homework/Stat153_Homework1/11-q9-auto--and-cross-correlation-for-brain-data.md)
 - **Stat153_Homework2**
-    - [Stat 153 - Homework 2 - YOUR NAME HERE {-}](public/homework/Stat153_Homework2/01-stat-153---homework-2---your-name-here.md)
+    - [Stat 153 - Homework 2 - YOUR NAME HERE](public/homework/Stat153_Homework2/01-stat-153---homework-2---your-name-here.md)
     - [Some imports that will probably be helpful for you](public/homework/Stat153_Homework2/02-some-imports-that-will-probably-be-helpful-for-you.md)
     - [INSERT CODE HERE](public/homework/Stat153_Homework2/03-insert-code-here.md)
     - [FILL IN CODE](public/homework/Stat153_Homework2/04-fill-in-code.md)
@@ -120,22 +120,22 @@ Converted material from [https://github.com/berkeley-stat153/spring-2026.git](ht
     - [FILL IN CODE](public/homework/Stat153_Homework2/06-fill-in-code.md)
 - **Stat153_Homework4**
     - [Stat153 Homework4 Part 01 —](public/homework/Stat153_Homework4/01-stat153-homework4-part-01.md)
-    - [Collaborated with: {-}](public/homework/Stat153_Homework4/02-collaborated-with.md)
+    - [Collaborated with](public/homework/Stat153_Homework4/02-collaborated-with.md)
 - **Stat248_Homework1**
     - [Stat248 Homework1 Part 01 —](public/homework/Stat248_Homework1/01-stat248-homework1-part-01.md)
-    - [Collaborated with: {-}](public/homework/Stat248_Homework1/02-collaborated-with.md)
-    - [Q1. Autocovariance, autocorrelation, and stationarity {-}](public/homework/Stat248_Homework1/03-q1-autocovariance-autocorrelation-and-stationarity.md)
-    - [Q2. Data simulation {-}](public/homework/Stat248_Homework1/04-q2-data-simulation.md)
-    - [Q3. Correlation and independence {-}](public/homework/Stat248_Homework1/05-q3-correlation-and-independence.md)
-    - [Q4. Random walk with drift {-}](public/homework/Stat248_Homework1/06-q4-random-walk-with-drift.md)
-    - [Q5. Stationarity {-}](public/homework/Stat248_Homework1/07-q5-stationarity.md)
-    - [Q6. Theoretical and sample ACF {-}](public/homework/Stat248_Homework1/08-q6-theoretical-and-sample-acf.md)
-    - [Q7. Random walk and a trend stationary process {-}](public/homework/Stat248_Homework1/09-q7-random-walk-and-a-trend-stationary-process.md)
-    - [Q8. Linear trends and stationarity {-}](public/homework/Stat248_Homework1/10-q8-linear-trends-and-stationarity.md)
-    - [Q9. Auto- and cross-correlation for brain data {-}](public/homework/Stat248_Homework1/11-q9-auto--and-cross-correlation-for-brain-data.md)
-    - [Q10. Linear regression with dependent errors {-}](public/homework/Stat248_Homework1/12-q10-linear-regression-with-dependent-errors.md)
+    - [Collaborated with](public/homework/Stat248_Homework1/02-collaborated-with.md)
+    - [Q1. Autocovariance, autocorrelation, and stationarity](public/homework/Stat248_Homework1/03-q1-autocovariance-autocorrelation-and-stationarity.md)
+    - [Q2. Data simulation](public/homework/Stat248_Homework1/04-q2-data-simulation.md)
+    - [Q3. Correlation and independence](public/homework/Stat248_Homework1/05-q3-correlation-and-independence.md)
+    - [Q4. Random walk with drift](public/homework/Stat248_Homework1/06-q4-random-walk-with-drift.md)
+    - [Q5. Stationarity](public/homework/Stat248_Homework1/07-q5-stationarity.md)
+    - [Q6. Theoretical and sample ACF](public/homework/Stat248_Homework1/08-q6-theoretical-and-sample-acf.md)
+    - [Q7. Random walk and a trend stationary process](public/homework/Stat248_Homework1/09-q7-random-walk-and-a-trend-stationary-process.md)
+    - [Q8. Linear trends and stationarity](public/homework/Stat248_Homework1/10-q8-linear-trends-and-stationarity.md)
+    - [Q9. Auto- and cross-correlation for brain data](public/homework/Stat248_Homework1/11-q9-auto--and-cross-correlation-for-brain-data.md)
+    - [Q10. Linear regression with dependent errors](public/homework/Stat248_Homework1/12-q10-linear-regression-with-dependent-errors.md)
 - **Stat248_Homework2**
-    - [Stat 248 - Homework 2 - YOUR NAME HERE {-}](public/homework/Stat248_Homework2/01-stat-248---homework-2---your-name-here.md)
+    - [Stat 248 - Homework 2 - YOUR NAME HERE](public/homework/Stat248_Homework2/01-stat-248---homework-2---your-name-here.md)
     - [Some imports that will probably be helpful for you](public/homework/Stat248_Homework2/02-some-imports-that-will-probably-be-helpful-for-you.md)
     - [INSERT CODE HERE](public/homework/Stat248_Homework2/03-insert-code-here.md)
     - [FILL IN CODE](public/homework/Stat248_Homework2/04-fill-in-code.md)
@@ -143,7 +143,7 @@ Converted material from [https://github.com/berkeley-stat153/spring-2026.git](ht
     - [FILL IN CODE](public/homework/Stat248_Homework2/06-fill-in-code.md)
 - **Stat248_Homework4**
     - [Stat248 Homework4 Part 01 —](public/homework/Stat248_Homework4/01-stat248-homework4-part-01.md)
-    - [Collaborated with: {-}](public/homework/Stat248_Homework4/02-collaborated-with.md)
+    - [Collaborated with](public/homework/Stat248_Homework4/02-collaborated-with.md)
 
 ### public/labs
 
@@ -485,7 +485,7 @@ Converted material from [https://github.com/berkeley-stat153/spring-2026.git](ht
 - **06_linear_regression_notes**
     - [Simple linear regression](public/lectures/06_linear_regression_notes/01-simple-linear-regression.md)
     - [A note on assumptions](public/lectures/06_linear_regression_notes/02-a-note-on-assumptions.md)
-- [07 finger tap](public/lectures/07_finger-tap.md)
+- [Finger Tap Test](public/lectures/07_finger-tap.md)
 - **07_multiple_linear_regression_notes**
     - [Simple and multiple linear regression](public/lectures/07_multiple_linear_regression_notes/01-simple-and-multiple-linear-regression.md)
     - [Matrix notation](public/lectures/07_multiple_linear_regression_notes/02-matrix-notation.md)
@@ -622,7 +622,7 @@ Converted material from [https://github.com/berkeley-stat153/spring-2026.git](ht
     - [RNN variants](public/lectures/25_RNNs_Part1/21-rnn-variants.md)
     - [RNN Variants](public/lectures/25_RNNs_Part1/22-rnn-variants.md)
 - [Lecture 25 - Recurrent Neural Networks - Part 1](public/lectures/25_rnns.md)
-- [26 RNNs Part 02 —](public/lectures/26_RNNs_Part2.md)
+- [Lecture 26: Recurrent neural networks part 2](public/lectures/26_RNNs_Part2.md)
 - [Lecture 26 - Recurrent Neural Networks - Part 2](public/lectures/26_rnns_2.md)
 - **Ch6_Regularization**
     - [Introduction](public/lectures/Ch6_Regularization/01-introduction.md)
@@ -639,10 +639,10 @@ Converted material from [https://github.com/berkeley-stat153/spring-2026.git](ht
     - [7 Signal in noise](public/lectures/Lec02_Notes/07-7-signal-in-noise.md)
     - [8 Next week](public/lectures/Lec02_Notes/08-8-next-week.md)
 - **Lec03_Notes**
-    - [Review / basic concepts {#review-basic-concepts}](public/lectures/Lec03_Notes/01-review-basic-concepts-review-basic-concepts.md)
-    - [This week - Measures of dependence {#this-week---measures-of-dependence}](public/lectures/Lec03_Notes/02-this-week---measures-of-dependence-this-week---measures-of-d.md)
-    - [Mean and variance {#mean-and-variance}](public/lectures/Lec03_Notes/03-mean-and-variance-mean-and-variance.md)
-    - [Next time: {#next-time}](public/lectures/Lec03_Notes/04-next-time-next-time.md)
+    - [Review / basic concepts](public/lectures/Lec03_Notes/01-review-basic-concepts.md)
+    - [This week - Measures of dependence](public/lectures/Lec03_Notes/02-this-week---measures-of-dependence.md)
+    - [Mean and variance](public/lectures/Lec03_Notes/03-mean-and-variance.md)
+    - [Next time](public/lectures/Lec03_Notes/04-next-time.md)
 - **Lec04_Notes**
     - [1 Today](public/lectures/Lec04_Notes/01-1-today.md)
     - [2 Autocorrelation function](public/lectures/Lec04_Notes/02-2-autocorrelation-function.md)

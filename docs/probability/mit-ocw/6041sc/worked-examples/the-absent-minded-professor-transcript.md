@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: The Absent Minded Professor**
-
 Hi. In this problem, we have an absent-minded professor who will inadvertently give us some practice with exponential random variables. So the professor has made two appointments with two students and inadvertently made them at the same time. And what we do is we model the duration of these appointments with an exponential random variable.
 
 So remember, an exponential random variable is a continuous random variable that takes on nonnegative values, and it's parametrized by a rate parameter, lambda. And the exponential random variable is often used to model durations of time-- so time until something happens, so for example, in this case, time until the student leaves or the appointment is over. Or sometimes you will also use it to be as a model of time until something fails.

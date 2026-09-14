@@ -15,9 +15,9 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Introduction](01-introduction.md)
-2. [R {#r}](02-r-r.md)
-3. [bash {#bash}](03-bash-bash.md)
-4. [Python {#python}](04-python-python.md)
+2. [R](02-r.md)
+3. [bash](03-bash.md)
+4. [Python](04-python.md)
 
 ---
 

@@ -137,4 +137,4 @@ Davenas, E., F. Beauvais, J. Amara, M. Oberbaum, B. Robinzon, A. Miadonnai, A. T
 
 ---
 
-[← 1.1 De Wetenschappelijke Methode {#de-wetenschappelijke-methode}](02-1-1-de-wetenschappelijke-methode-de-wetenschappelijke-method.md) · [Up: contents](index.md)
+[← 1.1 De Wetenschappelijke Methode](02-1-1-de-wetenschappelijke-methode.md) · [Up: contents](index.md)

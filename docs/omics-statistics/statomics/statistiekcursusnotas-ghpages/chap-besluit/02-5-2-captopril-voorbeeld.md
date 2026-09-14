@@ -165,4 +165,4 @@ We vragen ons nu af of het effect dat we observeren in de steekproef groot genoe
 
 ---
 
-[← 5.1 Inleiding {#inleiding}](01-5-1-inleiding-inleiding.md) · [Up: contents](index.md) · [5.3 Puntschatters: het steekproefgemiddelde →](03-5-3-puntschatters-het-steekproefgemiddelde.md)
+[← 5.1 Inleiding](01-5-1-inleiding.md) · [Up: contents](index.md) · [5.3 Puntschatters: het steekproefgemiddelde →](03-5-3-puntschatters-het-steekproefgemiddelde.md)

@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: The Variance in the Stick Breaking Problem**
-
 Hi. In this problem, we'll get a chance to see the usefulness of conditioning in helping us to calculate quantities that would otherwise be difficult to calculate. Specifically, we'll be using the law of iterated expectations and the law of total variance.
 
 Before we get started, let's just take a quick moment to interpret what these two laws are saying. Really, what it's saying is, in order to calculate the expectation or the variance of some random variable x, if that's difficult to do, we'll instead attack this problem in stages.

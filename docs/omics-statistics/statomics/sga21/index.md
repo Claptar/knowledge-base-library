@@ -91,19 +91,19 @@ Converted material from [https://github.com/statOmics/SGA21.git](https://github.
     - [Advantage of Blocking: comparison between designs](pda_blocking_wrapup/02-advantage-of-blocking-comparison-between-designs.md)
 - **pda_quantification_inference**
     - [Introduction](pda_quantification_inference/01-introduction.md)
-    - [Outline {-}](pda_quantification_inference/02-outline.md)
+    - [Outline](pda_quantification_inference/02-outline.md)
     - [Francisella tularensis experiment](pda_quantification_inference/03-francisella-tularensis-experiment.md)
     - [Experimental Design](pda_quantification_inference/04-experimental-design.md)
     - [Software & code](pda_quantification_inference/05-software-code.md)
     - [References](pda_quantification_inference/06-references.md)
 - **pda_quantification_inference_noFrames**
-    - [Outline {-}](pda_quantification_inference_noFrames/01-outline.md)
+    - [Outline](pda_quantification_inference_noFrames/01-outline.md)
     - [Francisella tularensis experiment](pda_quantification_inference_noFrames/02-francisella-tularensis-experiment.md)
     - [Experimental Design](pda_quantification_inference_noFrames/03-experimental-design.md)
 - [Pda quantification inference noFrames withSimulationOfProteinsWithSameVariance](pda_quantification_inference_noFrames_withSimulationOfProteinsWithSameVariance.md)
 - **pda_quantification_preprocessing**
     - [Introduction](pda_quantification_preprocessing/01-introduction.md)
-    - [Outline {-}](pda_quantification_preprocessing/02-outline.md)
+    - [Outline](pda_quantification_preprocessing/02-outline.md)
     - [Intro: Challenges in Label-Free Quantitative Proteomics](pda_quantification_preprocessing/03-intro-challenges-in-label-free-quantitative-proteomics.md)
     - [Import the data in R](pda_quantification_preprocessing/04-import-the-data-in-r.md)
     - [Preprocessing](pda_quantification_preprocessing/05-preprocessing.md)
@@ -111,7 +111,7 @@ Converted material from [https://github.com/statOmics/SGA21.git](https://github.
     - [Software & code](pda_quantification_preprocessing/07-software-code.md)
     - [References](pda_quantification_preprocessing/08-references.md)
 - **pda_quantification_preprocessing_noframes**
-    - [Outline {-}](pda_quantification_preprocessing_noframes/01-outline.md)
+    - [Outline](pda_quantification_preprocessing_noframes/01-outline.md)
     - [Intro: Challenges in Label-Free Quantitative Proteomics](pda_quantification_preprocessing_noframes/02-intro-challenges-in-label-free-quantitative-proteomics.md)
     - [Import the data in R](pda_quantification_preprocessing_noframes/03-import-the-data-in-r.md)
     - [Preprocessing](pda_quantification_preprocessing_noframes/04-preprocessing.md)
@@ -374,7 +374,7 @@ Converted material from [https://github.com/statOmics/SGA21.git](https://github.
 ### images_sequencing
 
 - [DeAnalysis para](images_sequencing/deAnalysis_para.md)
-- [FastqLine](images_sequencing/fastqLine.md)
+- [FASTQ format - sequence ID line](images_sequencing/fastqLine.md)
 - [IndependentFiltering2](images_sequencing/independentFiltering2.md)
 - [MarioniFigs cropped](images_sequencing/marioniFigs_cropped.md)
 - [Marioni fig1](images_sequencing/marioni_fig1.md)

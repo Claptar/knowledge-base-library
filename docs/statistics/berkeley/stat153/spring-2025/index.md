@@ -179,7 +179,7 @@ Converted material from [https://github.com/berkeley-stat153/spring-2025.git](ht
     - [Introduction](Lab1_Part1_Solution/01-introduction.md)
     - [Plot the original dataset along with the fitted values](Lab1_Part1_Solution/02-plot-the-original-dataset-along-with-the-fitted-values.md)
     - [USA Accidents Dataset](Lab1_Part1_Solution/03-usa-accidents-dataset.md)
-- [Lab1 Part 02 — Solution](Lab1_Part2_Solution.md)
+- [STAT 153 & 248 - Time Series Lab One Spring 2025, UC Berkeley](Lab1_Part2_Solution.md)
 - **Lab2**
     - [Introduction](Lab2/01-introduction.md)
     - [Least Squares Estimates](Lab2/02-least-squares-estimates.md)
@@ -418,7 +418,7 @@ Converted material from [https://github.com/berkeley-stat153/spring-2025.git](ht
     - [3 Bayesian Inference](LectureTwo153248Spring2025/04-3-bayesian-inference.md)
 - [Data](data.md)
 - [Stat 153: Introduction to Time Series](home.md)
-- [Syllabus](syllabus.md)
+- [STAT 153 AND STAT 248: TIME SERIES](syllabus.md)
 - [Unit 1: Intro](unit1.md)
 - [Unit 02 —](unit2.md)
 

@@ -16,7 +16,7 @@ Split into 8 sections.
 
 1. [Introduction](01-introduction.md)
 2. [2.1 Variabelen](02-2-1-variabelen.md)
-3. [2.2 Populatie {#populatie}](03-2-2-populatie-populatie.md)
+3. [2.2 Populatie](03-2-2-populatie.md)
 4. [2.3 Toevalsveranderlijken (of toevallige veranderlijken)](04-2-3-toevalsveranderlijken-of-toevallige-veranderlijken.md)
 5. [2.4 Beschrijven van de populatie](05-2-4-beschrijven-van-de-populatie.md)
 6. [2.5 Steekproef](06-2-5-steekproef.md)

@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Flipping a Coin a Random Number of Times**
-
 In this problem, we're looking at a two stage process in which the first stage, we roll a fair die which has four faces to obtain a number N, where N belongs to the set 0, 1, 2, and 3 with equal probability. Now, given the result of the die roll, N will toss a fair coin N times in getting K heads from the coin tosses.
 
 For instance, if from the first die roll, we get N equal to 3, then we'll toss a coin 3 times. Let's say the outcome is heads, heads, and tails. And that will give us K equal to 2.

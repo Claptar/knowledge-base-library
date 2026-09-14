@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Joint Probability Mass Function (PMF) Drill 2**
-
 Hey, guys. Welcome back. Today, we're going to do another fun problem, which is a drill problem on joint PMFs. And the goal is that you will feel more comfortable by the end of this problem, manipulating joint PMFs. And we'll also review some ideas about independents in the process.
 
 So just to go over what I've drawn here, we are given an xy plane. And we're told what the PMF is. And it's plotted for you here.

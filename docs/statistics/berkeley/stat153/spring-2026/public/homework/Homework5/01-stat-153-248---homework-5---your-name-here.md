@@ -1,5 +1,5 @@
 ---
-title: Stat 153/248 - Homework 5 - YOUR NAME HERE {-}
+title: Stat 153/248 - Homework 5 - YOUR NAME HERE
 source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Homework5.pdf
 source_file: sources/berkeley-stat153/spring-2026/public/homework/Homework5.pdf
 licence: CC BY 4.0
@@ -8,7 +8,7 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Stat 153/248 - Homework 5 - YOUR NAME HERE {-}
+# Stat 153/248 - Homework 5 - YOUR NAME HERE
 
 **Source:** [`public/homework/Homework5.pdf`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Homework5.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 

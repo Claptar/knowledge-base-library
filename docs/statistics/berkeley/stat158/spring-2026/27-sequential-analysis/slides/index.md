@@ -1,5 +1,5 @@
 ---
-title: Slides
+title: Sequential Testing for Experimental Design
 source: https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/27-sequential-analysis/slides.html
 source_file: sources/berkeley-stat158/spring-2026/27-sequential-analysis/slides.html
 licence: unresolved
@@ -8,13 +8,13 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Slides
+# Sequential Testing for Experimental Design
 
 **Source:** [`27-sequential-analysis/slides.html`](https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/27-sequential-analysis/slides.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
 
 Split into 11 sections.
 
-1. [Slides Part 01 —](01-slides-part-01.md)
+1. [Sequential Testing for Experimental Design](01-sequential-testing-for-experimental-design.md)
 2. [Fixed vs. Sequential](02-fixed-vs-sequential.md)
 3. [find cn](03-find-cn.md)
 4. [verify alpha](04-verify-alpha.md)

@@ -15,9 +15,9 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 Likelihood-Based Inference {.anchored number="1" anchor-id="likelihood-based-inference"}](02-1-likelihood-based-inference-anchored-number-1-anchor-id-lik.md)
-3. [Likelihood inference Part 03 —](03-likelihood-inference-part-03.md)
-4. [3 Score Test {.anchored number="3" anchor-id="score-test"}](04-3-score-test-anchored-number-3-anchor-id-score-test.md)
+2. [1 Likelihood-Based Inference](02-1-likelihood-based-inference.md)
+3. [2 Wald-Type Confidence Regions](03-2-wald-type-confidence-regions.md)
+4. [3 Score Test](04-3-score-test.md)
 
 ---
 

@@ -50,7 +50,7 @@ Converted material from [https://ocw.mit.edu/courses/8-592j-statistical-physics-
     - [2.3.3 Compact (globular) polymers in bad solvents](lectures/11-slides/02-2-3-3-compact-globular-polymers-in-bad-solvents.md)
     - [2.3.4 The Random Energy Model (REM) for compact heteropolymers](lectures/11-slides/03-2-3-4-the-random-energy-model-rem-for-compact-heteropolymers.md)
     - [2.3.5 Designed REM for protein folding](lectures/11-slides/04-2-3-5-designed-rem-for-protein-folding.md)
-- [16 slides](lectures/16-slides.md)
+- [2.4 DNA structure](lectures/16-slides.md)
 - **17-slides**
     - [Introduction](lectures/17-slides/01-introduction.md)
     - [2.5.1 Free energy of molten RNA](lectures/17-slides/02-2-5-1-free-energy-of-molten-rna.md)
@@ -96,5 +96,5 @@ Converted material from [https://ocw.mit.edu/courses/8-592j-statistical-physics-
 - [04 questions](psets/04-questions.md)
 - [05 questions](psets/05-questions.md)
 - [06 questions](psets/06-questions.md)
-- [07 questions](psets/07-questions.md)
+- [8.592J–HST.452J: Statistical Physics in Biology](psets/07-questions.md)
 - [08 questions](psets/08-questions.md)

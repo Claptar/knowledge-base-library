@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# (i) P(A=ON, B=ON, C=ON, D=ON, E=ON)
+
 
 ---
 

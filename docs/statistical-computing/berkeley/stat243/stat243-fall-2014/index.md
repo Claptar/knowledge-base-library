@@ -21,7 +21,7 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2014.g
 ### howtos
 
 - [KdeFit](howtos/kdeFit.md)
-- [LatexTemplate](howtos/latexTemplate.md)
+- [Problem 1](howtos/latexTemplate.md)
 - **remoteConnect**
     - [1 Introduction](howtos/remoteConnect/01-1-introduction.md)
     - [2 Usernames and Hostnames](howtos/remoteConnect/02-2-usernames-and-hostnames.md)
@@ -32,9 +32,9 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2014.g
 
 - **testRnw**
     - [Introduction](literateProgramming/testRnw/01-introduction.md)
-    - [R {#r}](literateProgramming/testRnw/02-r-r.md)
-    - [bash {#bash}](literateProgramming/testRnw/03-bash-bash.md)
-    - [Python {#python}](literateProgramming/testRnw/04-python-python.md)
+    - [R](literateProgramming/testRnw/02-r.md)
+    - [bash](literateProgramming/testRnw/03-bash.md)
+    - [Python](literateProgramming/testRnw/04-python.md)
 
 ### project
 
@@ -67,13 +67,13 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2014.g
     - [Technical requirements for your solutions to Problems 3 and 4](ps/ps1/03-technical-requirements-for-your-solutions-to-problems-3-and.md)
     - [Problems](ps/ps1/04-problems.md)
     - [Histogram of LakeHuron](ps/ps1/05-histogram-of-lakehuron.md)
-- [Ps 02 —](ps/ps2.md)
-- [Ps 03 —](ps/ps3.md)
-- [Ps 04 —](ps/ps4.md)
-- [Ps 05 —](ps/ps5.md)
-- [Ps 06 —](ps/ps6.md)
-- [Ps 07 —](ps/ps7.md)
-- [Ps 08 —](ps/ps8.md)
+- [Stat243: Problem Set 2, Due Monday Sep. 22](ps/ps2.md)
+- [Stat243: Problem Set 3, Due Wednesday Oct. 1](ps/ps3.md)
+- [Stat243: Problem Set 4, Due Wednesday 10/15](ps/ps4.md)
+- [Stat243: Problem Set 5, Due Wednesday Oct. 22](ps/ps5.md)
+- [Stat243: Problem Set 6, Due Monday Nov. 3](ps/ps6.md)
+- [Stat243: Problem Set 7, Due Friday Nov. 14](ps/ps7.md)
+- [Stat243: Problem Set 8, Due Wednesday Dec. 3](ps/ps8.md)
 
 ### section
 
@@ -90,18 +90,18 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2014.g
     - [6 Conclusion](section/millman-perez/07-6-conclusion.md)
     - [Acknowledgments](section/millman-perez/08-acknowledgments.md)
     - [References](section/millman-perez/09-references.md)
-- [SectionNov10](section/sectionNov10.md)
+- [Reading for Nov. 10 section discussion](section/sectionNov10.md)
 
 ### section/ps0
 
 - **practice**
     - [Introduction](section/ps0/practice/01-introduction.md)
-    - [Creating datastructures {#creating-datastructures .unnumbered}](section/ps0/practice/02-creating-datastructures-creating-datastructures-unnumbered.md)
-    - [Subsetting datastructures {#subsetting-datastructures .unnumbered}](section/ps0/practice/03-subsetting-datastructures-subsetting-datastructures-unnumber.md)
-    - [Vectorized calculations {#vectorized-calculations .unnumbered}](section/ps0/practice/04-vectorized-calculations-vectorized-calculations-unnumbered.md)
-    - [Using apply, sapply, and lapply {#using-apply-sapply-and-lapply .unnumbered}](section/ps0/practice/05-using-apply-sapply-and-lapply-using-apply-sapply-and-lapply.md)
-    - [Functions {#functions .unnumbered}](section/ps0/practice/06-functions-functions-unnumbered.md)
-    - [Loading (and saving) data {#loading-and-saving-data .unnumbered}](section/ps0/practice/07-loading-and-saving-data-loading-and-saving-data-unnumbered.md)
+    - [Creating datastructures](section/ps0/practice/02-creating-datastructures.md)
+    - [Subsetting datastructures](section/ps0/practice/03-subsetting-datastructures.md)
+    - [Vectorized calculations](section/ps0/practice/04-vectorized-calculations.md)
+    - [Using apply, sapply, and lapply](section/ps0/practice/05-using-apply-sapply-and-lapply.md)
+    - [Functions](section/ps0/practice/06-functions.md)
+    - [Loading (and saving) data](section/ps0/practice/07-loading-and-saving-data.md)
 
 ### section/w10
 

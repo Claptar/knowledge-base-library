@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`labs/02/assertionsAndTesting.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2022/blob/34dee34760386ed7a0ea4f1fd1c9e7d088e637ff/labs/02/assertionsAndTesting.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
 
-# (assuming that your working directory is "sections/03/")
+
 
 ---
 

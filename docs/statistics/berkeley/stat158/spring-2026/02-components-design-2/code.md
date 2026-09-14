@@ -1,5 +1,5 @@
 ---
-title: Code
+title: Exploratory Data Analysis
 source: https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/02-components-design-2/code.html
 source_file: sources/berkeley-stat158/spring-2026/02-components-design-2/code.html
 licence: unresolved
@@ -8,11 +8,9 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Code
+# Exploratory Data Analysis
 
 **Source:** [`02-components-design-2/code.html`](https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/02-components-design-2/code.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
-
-# Exploratory Data Analysis {#exploratory-data-analysis .title}
 
 ``` {.sourceCode .r .code-with-copy}
 library(tidyverse)

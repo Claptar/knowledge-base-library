@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# ssh -i ~/.ssh/ec2star.rsa root@ec2-54-71-204-234.us-west-2.compute.amazonaws.com
+
 
 ---
 

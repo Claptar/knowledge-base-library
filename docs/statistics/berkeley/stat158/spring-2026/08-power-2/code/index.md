@@ -15,12 +15,12 @@ converted: '2026-09-14'
 Split into 7 sections.
 
 1. [Introduction](01-introduction.md)
-2. [In a world where… {.anchored anchor-id="in-a-world-where"}](02-in-a-world-where-anchored-anchor-id-in-a-world-where.md)
-3. [“Conduct the experiment” {.anchored anchor-id="conduct-the-experiment"}](03-conduct-the-experiment-anchored-anchor-id-conduct-the-experi.md)
-4. [Code Part 04 —](04-code-part-04.md)
-5. [Visualizing the threshold {.anchored anchor-id="visualizing-the-threshold"}](05-visualizing-the-threshold-anchored-anchor-id-visualizing-the.md)
-6. [Code Part 06 —](06-code-part-06.md)
-7. [Calculate Power {.anchored anchor-id="calculate-power"}](07-calculate-power-anchored-anchor-id-calculate-power.md)
+2. [In a world where…](02-in-a-world-where.md)
+3. [“Conduct the experiment”](03-conduct-the-experiment.md)
+4. [Find Sampling Distribution under \$H\0\$](04-find-sampling-distribution-under.md)
+5. [Visualizing the threshold](05-visualizing-the-threshold.md)
+6. [Find Sampling Distribution under \$H\A\$](06-find-sampling-distribution-under.md)
+7. [Calculate Power](07-calculate-power.md)
 
 ---
 

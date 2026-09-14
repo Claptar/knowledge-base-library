@@ -1,5 +1,5 @@
 ---
-title: Slides
+title: Algorithms for Adaptive Assignment
 source: https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/29-adaptive-algorithms/slides.html
 source_file: sources/berkeley-stat158/spring-2026/29-adaptive-algorithms/slides.html
 licence: unresolved
@@ -8,11 +8,9 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Slides
+# Algorithms for Adaptive Assignment
 
 **Source:** [`29-adaptive-algorithms/slides.html`](https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/29-adaptive-algorithms/slides.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
-
-# Algorithms for Adaptive Assignment {#algorithms-for-adaptive-assignment .title}
 
 # Regret
 

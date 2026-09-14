@@ -20,7 +20,7 @@ converted: '2026-09-14'
 
 ### Header 3 #### Header 4 ##### Header 5 ###### Header 6
 
-endash: -- emdash: --ellipsis: ... inline equation: $A = \pi*r^{2}$ image: ![](https://raw.githubusercontent.com/GTPB/PSLS20/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/background_material/path/to/smallorb.png) horizontal rule (or slide break):
+endash: -- emdash: --ellipsis: ... inline equation: $A = \pi*r^{2}$ image: !\[\](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/background_material/path/to/smallorb.png) horizontal rule (or slide break):
 
 
 ***

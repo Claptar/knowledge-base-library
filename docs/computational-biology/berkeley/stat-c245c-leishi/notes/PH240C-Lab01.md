@@ -1,5 +1,5 @@
 ---
-title: PH240C Lab01
+title: PH240C LAB 01
 source: https://leishi-rocks.github.io/courses/ph240c/notes/PH240C-Lab01.pdf
 source_file: sources/berkeley-stat-c245c-leishi/notes/PH240C-Lab01.pdf
 licence: unresolved
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# PH240C Lab01
+# PH240C LAB 01
 
 **Source:** [`notes/PH240C-Lab01.pdf`](https://leishi-rocks.github.io/courses/ph240c/notes/PH240C-Lab01.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# PH240C LAB 01
 
 Sep 14, 2021
 

@@ -340,4 +340,4 @@ anova_table
 
 ---
 
-[← Main Effects and Interactions {#main-effects-and-interactions .title}](01-main-effects-and-interactions-main-effects-and-interactions.md) · [Up: contents](index.md)
+[← Main Effects and Interactions](01-main-effects-and-interactions.md) · [Up: contents](index.md)

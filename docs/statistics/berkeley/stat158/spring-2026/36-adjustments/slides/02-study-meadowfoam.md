@@ -46,4 +46,4 @@ Each group has a linear model with the same effect on <span class="math inline">
 
 ---
 
-[← Regression Adjustments {#regression-adjustments .title}](01-regression-adjustments-regression-adjustments-title.md) · [Up: contents](index.md) · [Regression Adjustments {#regression-adjustments-1} →](03-regression-adjustments-regression-adjustments-1.md)
+[← Regression Adjustments](01-regression-adjustments.md) · [Up: contents](index.md) · [Regression Adjustments →](03-regression-adjustments.md)

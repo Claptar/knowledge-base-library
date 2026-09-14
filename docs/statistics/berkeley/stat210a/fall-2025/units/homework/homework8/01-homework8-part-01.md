@@ -52,4 +52,4 @@ You may appeal to any results from the previous homework problem that are helpfu
 
 ---
 
-[Up: contents](index.md) · [Moral: {#moral} →](02-moral-moral.md)
+[Up: contents](index.md) · [Moral →](02-moral.md)

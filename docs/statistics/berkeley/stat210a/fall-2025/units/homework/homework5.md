@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`units/homework/homework5.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/homework/homework5.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
 
-#### Instructions: {#instructions}
-
 You may disregard measure-theoretic niceties about conditioning on measure-zero sets, almost-sure equality vs. actual equality, “all functions” vs. “all measurable functions,” etc. (unless the problem is explicitly asking about such issues).
 
 **Problem 1** (Ridge regression). Consider the *Gaussian linear model* where $$y_i = x_i' \beta + \varepsilon_i, \quad \text{ with } \varepsilon_i \overset{\text{i.i.d.}}{\sim}N(0,\sigma^2) \;\text{ for } i =1, \ldots n,$$ where $\beta \in \mathbb{R}^d$ is unknown, and the covariate vectors $x_i \in \mathbb{R}^d$ are fixed and known. Assume the error variance $\sigma^2>0$ is also known. We observe the response vector $y \in \mathbb{R}^n$.

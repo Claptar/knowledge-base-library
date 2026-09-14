@@ -34,4 +34,4 @@ These results about the MLE apply far beyond logistic regression, to a wide vari
 
 ---
 
-[← Asymptotics Part 02 —](02-asymptotics-part-02.md) · [Up: contents](index.md) · [2 Convergence {.anchored number="2" anchor-id="convergence"} →](04-2-convergence-anchored-number-2-anchor-id-convergence.md)
+[← 1 Introduction to Asymptotic Theory](02-1-introduction-to-asymptotic-theory.md) · [Up: contents](index.md) · [2 Convergence →](04-2-convergence.md)

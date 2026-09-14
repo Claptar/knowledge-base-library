@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Rooks on a Chessboard**
-
 Today, we're going to do a fun problem called rooks on a chessboard. And rooks on a chessboard is a problem that's going to test your ability on counting. So hopefully by now in class, you've learned a few tricks to approach counting problems. You've learned about permutations, you've learned about k-permutations, you've learned about combinations, and you've learned about partitions.
 
 And historically for students that we've taught in the past and many people, counting can be a tricky topic. So this is just one drill problem to help you get those skills under your belt. So what does the rooks on a chessboard problem ask you? Well, you're given an 8-by-8 chessboard, which I've tried to draw here. It's not very symmetrical. Sorry about that.

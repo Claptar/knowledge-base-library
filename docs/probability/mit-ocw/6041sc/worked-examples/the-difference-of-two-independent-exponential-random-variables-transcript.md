@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: The Difference of Two Independent Exponential Random Variables**
-
 In this problem, Romeo and Juliet are to meet up for a date, where Romeo arrives at time x and Juliet at time y, where x and y are independent exponential random variables, with parameters lambda. And we're interested in knowing the difference between the two times of arrivals, we'll call it z, written as x minus y. And we'll like to know what the distribution of z is, expressed by the probability density function, f of z.
 
 Now, we'll do so by using the so-called convolution formula that we learn in the lecture. Recall that if we have a random variable w that is the sum of two independent random variables, x plus y, now, if that's the case, we can write the probability [INAUDIBLE] function, fw, [INAUDIBLE] as the following integration-- negative infinity to infinity fx little x times f of y w minus x, integrated over x.

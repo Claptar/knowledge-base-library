@@ -19,7 +19,7 @@ Split into 6 sections.
 3. [Blocking](03-blocking.md)
 4. [Sample size](04-sample-size.md)
 5. [Wrap-up](05-wrap-up.md)
-6. [[Home](https://gtpb.github.io/PSLS20/) {-}](06-home-https-gtpb-github-io-psls20.md)
+6. [[Home](https://gtpb.github.io/PSLS20/)](06-home-https-gtpb-github-io-psls20.md)
 
 ---
 

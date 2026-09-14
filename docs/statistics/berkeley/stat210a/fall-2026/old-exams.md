@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`old-exams.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/old-exams.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
 
-## Exams from previous semesters
-
 -   [Fall 2023](old-exams/final2024/index.md) [(Solutions)](old-exams/solution2024/index.md)
 
 -   [Fall 2023](old-exams/final2023/index.md) [(Solutions)](old-exams/solution2023/index.md)

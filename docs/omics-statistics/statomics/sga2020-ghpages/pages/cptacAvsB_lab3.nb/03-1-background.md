@@ -16,4 +16,4 @@ This case-study is a subset of the data of the 6th study of the Clinical Proteom
 
 ---
 
-[← Contents {#contents}](02-contents-contents.md) · [Up: contents](index.md) · [2 Data →](04-2-data.md)
+[← Contents](02-contents.md) · [Up: contents](index.md) · [2 Data →](04-2-data.md)

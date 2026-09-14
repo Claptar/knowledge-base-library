@@ -15,10 +15,10 @@ converted: '2026-09-14'
 Split into 5 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Bayes estimation Part 02 —](02-bayes-estimation-part-02.md)
-3. [2 Special Cases and Examples {.anchored number="2" anchor-id="special-cases-and-examples"}](03-2-special-cases-and-examples-anchored-number-2-anchor-id-spe.md)
-4. [3 Examples {.anchored number="3" anchor-id="examples"}](04-3-examples-anchored-number-3-anchor-id-examples.md)
-5. [4 Conjugate Priors {.anchored number="4" anchor-id="conjugate-priors"}](05-4-conjugate-priors-anchored-number-4-anchor-id-conjugate-pri.md)
+2. [1 Bayes Risk and Bayes Estimator](02-1-bayes-risk-and-bayes-estimator.md)
+3. [2 Special Cases and Examples](03-2-special-cases-and-examples.md)
+4. [3 Examples](04-3-examples.md)
+5. [4 Conjugate Priors](05-4-conjugate-priors.md)
 
 ---
 

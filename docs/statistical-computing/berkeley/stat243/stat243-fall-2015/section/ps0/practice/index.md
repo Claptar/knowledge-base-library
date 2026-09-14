@@ -15,12 +15,12 @@ converted: '2026-09-14'
 Split into 7 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Creating datastructures {#creating-datastructures .unnumbered}](02-creating-datastructures-creating-datastructures-unnumbered.md)
-3. [Subsetting datastructures {#subsetting-datastructures .unnumbered}](03-subsetting-datastructures-subsetting-datastructures-unnumber.md)
-4. [Vectorized calculations {#vectorized-calculations .unnumbered}](04-vectorized-calculations-vectorized-calculations-unnumbered.md)
-5. [Using apply, sapply, and lapply {#using-apply-sapply-and-lapply .unnumbered}](05-using-apply-sapply-and-lapply-using-apply-sapply-and-lapply.md)
-6. [Functions {#functions .unnumbered}](06-functions-functions-unnumbered.md)
-7. [Loading (and saving) data {#loading-and-saving-data .unnumbered}](07-loading-and-saving-data-loading-and-saving-data-unnumbered.md)
+2. [Creating datastructures](02-creating-datastructures.md)
+3. [Subsetting datastructures](03-subsetting-datastructures.md)
+4. [Vectorized calculations](04-vectorized-calculations.md)
+5. [Using apply, sapply, and lapply](05-using-apply-sapply-and-lapply.md)
+6. [Functions](06-functions.md)
+7. [Loading (and saving) data](07-loading-and-saving-data.md)
 
 ---
 

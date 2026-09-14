@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`homeworks.qmd`](https://github.com/berkeley-stat156/fall-2024/blob/bbfe05b00bcc6fcbcf3140ad89cda2c5b36ed75e/homeworks.qmd) · **Licence:** CC BY-NC 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
 
-# Navigation
-
 - [Homework 1](#homework-1)
 - [Homework 2](#homework-2)
 - [Homework 3](#homework-3)

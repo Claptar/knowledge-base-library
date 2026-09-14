@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Probabilty Bounds**
-
 In this problem, we're given a collection of 10 variables, x1 through x10, where each i, xi, is a uniform random variable between 0 and 1. So each i is uniform between 0 and 1, and all 10 variables are independent. And we'd like to develop a bound on the probability that some of the 10 variables, 1 to 10, being greater than 7 using different methods. So in part A we'll be using the Markov's inequality written here. That is, if we have a random variable, positive random variable x, the probability x is greater than a, where a is again some positive number, is bounded above by the expected value of x divided by a.
 
 And let's see how that works out in our situation. In our situation, we will call x the summation of i equal to 1 to 10xi, and therefore, E of x is simply 10 times E of x1, the individual ones, and this gives us 5. Here we use used the linearity of expectation such that the expectation of the sum of the random variable is simply the sum of the expectations. Now, we can invoke Markov's Inequality. It says x greater or equal to 7. This is less than E of x over 7, and this gives us 5 over 7.

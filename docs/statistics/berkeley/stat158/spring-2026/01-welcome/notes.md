@@ -1,5 +1,5 @@
 ---
-title: Notes
+title: Welcome to Class
 source: https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/01-welcome/notes.html
 source_file: sources/berkeley-stat158/spring-2026/01-welcome/notes.html
 licence: unresolved
@@ -8,11 +8,9 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Notes
+# Welcome to Class
 
 **Source:** [`01-welcome/notes.html`](https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/01-welcome/notes.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
-
-# Welcome to Class {#welcome-to-class .title}
 
 #### Concept Acquisition {.anchored anchor-id="concept-acquisition"}
 

@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# get the list of senators senators = api.lists.members(owner_screen_name="gov", slug="us-senate",
+
 
 ---
 

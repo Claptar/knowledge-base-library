@@ -21,4 +21,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [Bayes estimation Part 02 — →](02-bayes-estimation-part-02.md)
+[Up: contents](index.md) · [1 Frequentist motivation for a Bayes Estimator →](02-1-frequentist-motivation-for-a-bayes-estimator.md)

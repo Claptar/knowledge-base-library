@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`labs/lab5-codereview.md`](https://github.com/berkeley-stat243/stat243-fall-2023/blob/14ac5335a61c8e78d9c36ec381d606a22cb95bf9/labs/lab5-codereview.md) · **Licence:** BSD-3-Clause · Converted 2026-09-14 from `.md` (lossless)
 
-## Hands on steps for lab
-
 1. Pair up in teams of 2 (or 3 if necessary).
 2. One member of the team will create a new repository on github and invite the other teammember(s) as collaborators on the repo.
 3. Using the Github web UI, each team member will create a new file in the repo, and paste their code for presidential speaches into it.

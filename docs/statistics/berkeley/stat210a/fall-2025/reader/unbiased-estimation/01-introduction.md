@@ -21,4 +21,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [Unbiased estimation Part 02 — →](02-unbiased-estimation-part-02.md)
+[Up: contents](index.md) · [1 Unbiased Estimation →](02-1-unbiased-estimation.md)

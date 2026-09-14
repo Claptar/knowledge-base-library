@@ -1,5 +1,5 @@
 ---
-title: Testing interpretation
+title: p-values, confidence regions, and (mis-)interpreting Tests
 source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/testing-interpretation.html
 source_file: sources/berkeley-stat210a/fall-2025/reader/testing-interpretation.html
 licence: CC BY 4.0
@@ -8,13 +8,13 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Testing interpretation
+# p-values, confidence regions, and (mis-)interpreting Tests
 
 **Source:** [`reader/testing-interpretation.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/testing-interpretation.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
 
 Split into 5 sections.
 
-1. [Testing interpretation Part 01 —](01-testing-interpretation-part-01.md)
+1. [p-values, confidence regions, and (mis-)interpreting Tests](01-p-values-confidence-regions-and-mis--interpreting-tests.md)
 2. [p-Values](02-p-values.md)
 3. [Confidence Regions](03-confidence-regions.md)
 4. [(Mis-)Interpreting Hypothesis Tests](04-mis--interpreting-hypothesis-tests.md)

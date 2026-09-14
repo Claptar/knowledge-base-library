@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`sequencing_countData.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/sequencing_countData.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
 
-# note the dispersion parameter being estimated is equal to our overdispersion diagnostic measure.
+
 
 ---
 

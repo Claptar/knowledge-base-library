@@ -39,31 +39,31 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2015.g
     - [Technical requirements for your solutions to Problems 1 and 2](ps/ps1/03-technical-requirements-for-your-solutions-to-problems-1-and.md)
     - [Problems](ps/ps1/04-problems.md)
     - [Histogram of LakeHuron](ps/ps1/05-histogram-of-lakehuron.md)
-- [Ps 02 —](ps/ps2.md)
-- [Ps 03 —](ps/ps3.md)
-- [Ps 04 —](ps/ps4.md)
-- [Ps 05 —](ps/ps5.md)
-- [Ps 06 —](ps/ps6.md)
-- [Ps 07 —](ps/ps7.md)
-- [Ps 08 —](ps/ps8.md)
+- [Stat243: Problem Set 2, Due Friday Sep. 18](ps/ps2.md)
+- [Stat243: Problem Set 3, Due Wednesday Sept. 30](ps/ps3.md)
+- [Stat243: Problem Set 4, Due Monday 10/12](ps/ps4.md)
+- [Stat243: Problem Set 5, Due Monday Oct. 19](ps/ps5.md)
+- [Stat243: Problem Set 6, Due Monday Nov. 2](ps/ps6.md)
+- [Stat243: Problem Set 7, Due Monday Nov. 16](ps/ps7.md)
+- [Stat243: Problem Set 8, Due Dec. 4](ps/ps8.md)
 
 ### section
 
 - **chenMixtExample**
     - [Journal of the American Statistical Association](section/chenMixtExample/01-journal-of-the-american-statistical-association.md)
     - [Inference on the Order of a Normal Mixture](section/chenMixtExample/02-inference-on-the-order-of-a-normal-mixture.md)
-- [Section questions nov9](section/section_questions_nov9.md)
+- [Reading for Nov. 9 section discussion](section/section_questions_nov9.md)
 
 ### section/ps0
 
 - **practice**
     - [Introduction](section/ps0/practice/01-introduction.md)
-    - [Creating datastructures {#creating-datastructures .unnumbered}](section/ps0/practice/02-creating-datastructures-creating-datastructures-unnumbered.md)
-    - [Subsetting datastructures {#subsetting-datastructures .unnumbered}](section/ps0/practice/03-subsetting-datastructures-subsetting-datastructures-unnumber.md)
-    - [Vectorized calculations {#vectorized-calculations .unnumbered}](section/ps0/practice/04-vectorized-calculations-vectorized-calculations-unnumbered.md)
-    - [Using apply, sapply, and lapply {#using-apply-sapply-and-lapply .unnumbered}](section/ps0/practice/05-using-apply-sapply-and-lapply-using-apply-sapply-and-lapply.md)
-    - [Functions {#functions .unnumbered}](section/ps0/practice/06-functions-functions-unnumbered.md)
-    - [Loading (and saving) data {#loading-and-saving-data .unnumbered}](section/ps0/practice/07-loading-and-saving-data-loading-and-saving-data-unnumbered.md)
+    - [Creating datastructures](section/ps0/practice/02-creating-datastructures.md)
+    - [Subsetting datastructures](section/ps0/practice/03-subsetting-datastructures.md)
+    - [Vectorized calculations](section/ps0/practice/04-vectorized-calculations.md)
+    - [Using apply, sapply, and lapply](section/ps0/practice/05-using-apply-sapply-and-lapply.md)
+    - [Functions](section/ps0/practice/06-functions.md)
+    - [Loading (and saving) data](section/ps0/practice/07-loading-and-saving-data.md)
 
 ### section/s06
 
@@ -86,7 +86,7 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2015.g
 
 ### section/s12
 
-- [Worksheet](section/s12/worksheet.md)
+- [Stat243: section 12 practice problem](section/s12/worksheet.md)
 
 ### syllabus
 

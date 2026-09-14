@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [1] "<0x5639b3906dc8>" _## b and a share memory_ b <- a b[1] <- 1
+
 
 ---
 

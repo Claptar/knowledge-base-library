@@ -1,5 +1,5 @@
 ---
-title: Q2. Data simulation {-}
+title: Q2. Data simulation
 source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat153_Homework1.ipynb
 source_file: sources/berkeley-stat153/spring-2026/public/homework/Stat153_Homework1.ipynb
 licence: CC BY 4.0
@@ -8,7 +8,7 @@ fidelity: lossless
 converted: '2026-09-14'
 ---
 
-# Q2. Data simulation {-}
+# Q2. Data simulation
 
 **Source:** [`public/homework/Stat153_Homework1.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat153_Homework1.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
 
@@ -26,4 +26,4 @@ and report the value for each case (2 points).
 
 ---
 
-[← Q1. Autocovariance, autocorrelation, and stationarity {-}](03-q1-autocovariance-autocorrelation-and-stationarity.md) · [Up: contents](index.md) · [Q3. Correlation and independence {-} →](05-q3-correlation-and-independence.md)
+[← Q1. Autocovariance, autocorrelation, and stationarity](03-q1-autocovariance-autocorrelation-and-stationarity.md) · [Up: contents](index.md) · [Q3. Correlation and independence →](05-q3-correlation-and-independence.md)

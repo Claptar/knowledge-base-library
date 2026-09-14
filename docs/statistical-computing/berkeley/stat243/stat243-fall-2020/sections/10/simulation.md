@@ -1,5 +1,5 @@
 ---
-title: Simulation
+title: Thinking about simulation studies
 source: https://github.com/berkeley-stat243/stat243-fall-2020/blob/fd024cc8537586f4869f79be1492009acfe62d76/sections/10/simulation.md
 source_file: sources/berkeley-stat243/stat243-fall-2020/sections/10/simulation.md
 licence: unresolved
@@ -8,11 +8,9 @@ fidelity: lossless
 converted: '2026-09-14'
 ---
 
-# Simulation
+# Thinking about simulation studies
 
 **Source:** [`sections/10/simulation.md`](https://github.com/berkeley-stat243/stat243-fall-2020/blob/fd024cc8537586f4869f79be1492009acfe62d76/sections/10/simulation.md) · **Licence:** unresolved · Converted 2026-09-14 from `.md` (lossless)
-
-# Thinking about simulation studies
 
 We'll consider the simulation study in Section 4 of Cao et al. as an example of the kind of simulation
 study that researchers set up to evaluate statistical and machine learning methods.

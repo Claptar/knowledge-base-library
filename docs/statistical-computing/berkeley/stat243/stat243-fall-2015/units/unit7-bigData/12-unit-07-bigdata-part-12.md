@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# wget http://www.stat.berkeley.edu/share/paciorek/1987-2008.csvs.tgz # tar -xvzf 1987-2008.csvs.tgz
+
 
 ---
 

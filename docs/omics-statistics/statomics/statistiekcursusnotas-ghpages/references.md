@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`references.html`](https://github.com/statOmics/statistiekCursusNotas/blob/a1c505bbdddd3d602fa9cc629bef7ee772233d14/references.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
 
-# References
-
 Davenas, E., F. Beauvais, J. Amara, M. Oberbaum, B. Robinzon, A. Miadonnai, A. Tedeschi, et al. 1988. “Human Basophil Degranulation Triggered by Very Dilute Antiserum Against Ige.” *Nature* 333 (6176): 816–18. <http://dx.doi.org/10.1038/333816a0>.
 
 Jacques, S., B. Ghesquière, P. De Bock, H. Demol, K. Wahni, P. Willems, J. Messens, F. Van Breusegem, and K. Gevaert. 2015. “Protein Methionine Sulfoxide Dynamics in Arabidopsis Thaliana Under Oxidative Stress.” *Molecular and Cellular Proteomics* 14 (5): 1217–29.

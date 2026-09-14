@@ -253,4 +253,4 @@ NHANES%>%
 
 ---
 
-[← Normale approximation](04-normale-approximation.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](06-home-https-gtpb-github-io-psls20.md)
+[← Normale approximation](04-normale-approximation.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](06-home-https-gtpb-github-io-psls20.md)

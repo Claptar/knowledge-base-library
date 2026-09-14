@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 20** 13 **Transcript – Tutorial: Network Reliability**
-
 Previously, we learned the concept of independent experiments. In this exercise, we'll see how the seemingly simple idea of independence can help us understand the behavior of quite complex systems. In particular, we'll combined the concept of independence with the idea of divide and conquer, where we break a larger system into smaller components, and then using independent properties to glue them back together.
 
 Now, let's take a look at the problem. We are given a network of connected components, and each component can be good with probability P or bad otherwise. All components are independent from each other. We say the system is operational if there exists a path connecting point A here to point B that go through only the good components. And we'd like to understand, what is the probability that system is operational? Which we'll denote by P of A to B.

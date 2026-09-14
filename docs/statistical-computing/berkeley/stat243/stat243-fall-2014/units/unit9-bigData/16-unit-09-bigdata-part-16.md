@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# particularly for in-class demo - good to repartition the 3 files to more # lines = lines.repartition(96).cache()
+
 
 ---
 

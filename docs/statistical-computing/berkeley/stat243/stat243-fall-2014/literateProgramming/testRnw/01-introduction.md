@@ -20,4 +20,4 @@ Compile this document within R as:
 
 ---
 
-[Up: contents](index.md) · [R {#r} →](02-r-r.md)
+[Up: contents](index.md) · [R →](02-r.md)

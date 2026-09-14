@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **7.36/7.91/20.390/20.490/6.802/6.874 PROBLEM SET 1. Sequence search, global alignment, BLAST statistics (19 Points)**
+
 
 ---
 

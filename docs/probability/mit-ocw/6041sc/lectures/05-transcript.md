@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 5**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation, or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu,
 
 OK. So let us start. All right. So today we're starting a new unit in this class. We have covered, so far, the basics of probability theory-- the main concepts and tools, as far as just probabilities are concerned. But if that was all that there is in this subject, the subject would not be rich enough. What makes probability theory a lot more interesting and richer is that we can also talk about random variables, which are ways of assigning numerical results to the outcomes of an experiment.

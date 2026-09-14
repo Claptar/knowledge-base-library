@@ -1,5 +1,5 @@
 ---
-title: Ps 04 —
+title: 'Stat243: Problem Set 4, Due Wednesday October 10'
 source: https://github.com/berkeley-stat243/stat243-fall-2018/blob/be0e210baad11c83cecdb23dcb9e91f609bc536a/ps/ps4.pdf
 source_file: sources/berkeley-stat243/stat243-fall-2018/ps/ps4.pdf
 licence: unresolved
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Ps 04 —
+# Stat243: Problem Set 4, Due Wednesday October 10
 
 **Source:** [`ps/ps4.pdf`](https://github.com/berkeley-stat243/stat243-fall-2018/blob/be0e210baad11c83cecdb23dcb9e91f609bc536a/ps/ps4.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# Stat243: Problem Set 4, Due Wednesday October 10
 
 ### September 30, 2018
 

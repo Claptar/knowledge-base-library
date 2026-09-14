@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`units/unit2-dataTech.qmd`](https://github.com/berkeley-stat243/stat243-fall-2023/blob/14ac5335a61c8e78d9c36ec381d606a22cb95bf9/units/unit2-dataTech.qmd) · **Licence:** BSD-3-Clause · Converted 2026-09-14 from `.qmd` (lossless)
 
-# "Key and Access Tokens", you will find the information needed
+
 
 ---
 

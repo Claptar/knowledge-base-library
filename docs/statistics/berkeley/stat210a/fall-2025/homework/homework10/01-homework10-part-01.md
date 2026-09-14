@@ -32,4 +32,4 @@ Suppose that we have side information about each parameter $\theta_i$, represent
 
 ---
 
-[Up: contents](index.md) · [Moral: {#moral} →](02-moral-moral.md)
+[Up: contents](index.md) · [Moral →](02-moral.md)

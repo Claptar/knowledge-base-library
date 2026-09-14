@@ -16,4 +16,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Hoofdstuk 8 Niet-parametrische statistiek {#hoofdstuk-8-niet-parametrische-statistiek}](01-hoofdstuk-8-niet-parametrische-statistiek-hoofdstuk-8-niet-p.md) · [Up: contents](index.md) · [argument FUN: een functie die men wil uitvoeren op X. →](03-argument-fun-een-functie-die-men-wil-uitvoeren-op-x.md)
+[← Hoofdstuk 8 Niet-parametrische statistiek](01-hoofdstuk-8-niet-parametrische-statistiek.md) · [Up: contents](index.md) · [argument FUN: een functie die men wil uitvoeren op X. →](03-argument-fun-een-functie-die-men-wil-uitvoeren-op-x.md)

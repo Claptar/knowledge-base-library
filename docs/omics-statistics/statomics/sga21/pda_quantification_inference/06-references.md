@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`pda_quantification_inference.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/pda_quantification_inference.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
 
-# References
+
 
 ---
 

@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Calculating a Cumulative Distribution Function (CDF)**
-
 Hi. In this problem, we'll get some practice working with PDFs and also using PDFs to calculate CDFs. So the PDF that we're given in this problem is here. So we have a random variable, z, which is a continuous random variable. And we're told that the PDF of this random variable, z, is given by gamma times 1 plus z squared in the range of z between negative 2 and 1. And outside of this range, it's 0.
 
 All right, so first thing we need to do and the first part of this problem is we need to figure out what gamma is because it's not really a fully specified PDF yet. We need to figure out exactly what the value gamma is. And how do we do that? Well, we've done analogous things before for the discrete case.

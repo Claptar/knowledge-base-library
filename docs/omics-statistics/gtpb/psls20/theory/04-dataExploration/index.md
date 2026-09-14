@@ -19,7 +19,7 @@ Split into 6 sections.
 3. [Univariate exploration of quantitative variables](03-univariate-exploration-of-quantitative-variables.md)
 4. [Normale approximation](04-normale-approximation.md)
 5. [Two continuous variables: Correlation](05-two-continuous-variables-correlation.md)
-6. [[Home](https://gtpb.github.io/PSLS20/) {-}](06-home-https-gtpb-github-io-psls20.md)
+6. [[Home](https://gtpb.github.io/PSLS20/)](06-home-https-gtpb-github-io-psls20.md)
 
 ---
 

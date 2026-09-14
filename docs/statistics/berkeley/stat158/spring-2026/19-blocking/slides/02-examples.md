@@ -97,4 +97,4 @@ In this experiment, public works projects occurring in two regions of Indonesia 
 
 ---
 
-[← Blocking {#blocking .title}](01-blocking-blocking-title.md) · [Up: contents](index.md) · [Block Designs →](03-block-designs.md)
+[← Blocking](01-blocking.md) · [Up: contents](index.md) · [Block Designs →](03-block-designs.md)

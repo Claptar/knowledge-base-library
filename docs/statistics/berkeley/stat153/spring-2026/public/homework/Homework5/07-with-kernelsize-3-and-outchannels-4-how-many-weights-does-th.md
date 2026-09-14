@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-#      with kernel_size=3 and out_channels=4? How many weights does the laye
+
 
 ---
 

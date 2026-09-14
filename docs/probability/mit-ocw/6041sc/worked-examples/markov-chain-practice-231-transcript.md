@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation 1: Markov Chain Practice 1**
-
 Hi, everyone. Today, I'm going to talk about Markov Chain Practice number one. Before we start, let's first take a look at this Markov chain. This Markov chain has six states. In this problem, we always assume the process starts from state S0. On the first trial, the process can either make a transition from S0 to S1 with probability 1/3 or from S0 to S3 with probability 1/3 third or from S0 to S5 with probability 1/3.
 
 If on the first trial, the process makes the transition from S0 to S1 or from S0 to S5, it will always be stuck in either S1 or S5 forever, because both of the states S1 and S5 have a selftransition probability of one. On the other hand, if on the first trial, the process makes the transition from S0 to S3, it can then either transition to the left or transition to the right or make self-transition back to the state S3.

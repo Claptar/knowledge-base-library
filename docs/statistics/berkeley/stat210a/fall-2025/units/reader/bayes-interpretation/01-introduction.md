@@ -22,4 +22,4 @@ September 26, 2023
 
 ---
 
-[Up: contents](index.md) · [Bayes interpretation Part 02 — →](02-bayes-interpretation-part-02.md)
+[Up: contents](index.md) · [1 Interpretations of Probability →](02-1-interpretations-of-probability.md)

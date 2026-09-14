@@ -196,4 +196,4 @@ There is a significant difference in the distribution of the cholesterol concent
 
 ---
 
-[← Rank Tests](02-rank-tests.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](04-home-https-gtpb-github-io-psls20.md)
+[← Rank Tests](02-rank-tests.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](04-home-https-gtpb-github-io-psls20.md)

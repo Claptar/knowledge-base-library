@@ -226,4 +226,4 @@ Figuur 7.5: Meerdere F-verdelingen met een verschillend aantal vrijheidsgraden i
 
 ---
 
-[← 7.1 Inleiding {#inleiding}](01-7-1-inleiding-inleiding.md) · [Up: contents](index.md) · [7.3 Post hoc analyse: Meervoudig Vergelijken van Gemiddelden →](03-7-3-post-hoc-analyse-meervoudig-vergelijken-van-gemiddelden.md)
+[← 7.1 Inleiding](01-7-1-inleiding.md) · [Up: contents](index.md) · [7.3 Post hoc analyse: Meervoudig Vergelijken van Gemiddelden →](03-7-3-post-hoc-analyse-meervoudig-vergelijken-van-gemiddelden.md)

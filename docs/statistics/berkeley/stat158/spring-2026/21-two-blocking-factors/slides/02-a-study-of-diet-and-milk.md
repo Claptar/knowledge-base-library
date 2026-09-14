@@ -100,4 +100,4 @@ Change the cow id column to being highlighted as a blocking factor alongside wee
 
 ---
 
-[← Two Blocking Factors {#two-blocking-factors .title}](01-two-blocking-factors-two-blocking-factors-title.md) · [Up: contents](index.md)
+[← Two Blocking Factors](01-two-blocking-factors.md) · [Up: contents](index.md)

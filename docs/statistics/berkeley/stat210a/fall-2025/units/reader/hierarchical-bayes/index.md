@@ -15,10 +15,10 @@ converted: '2026-09-14'
 Split into 5 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 Hierarchical Bayes {.anchored number="1" anchor-id="hierarchical-bayes"}](02-1-hierarchical-bayes-anchored-number-1-anchor-id-hierarchica.md)
-3. [Hierarchical bayes Part 03 —](03-hierarchical-bayes-part-03.md)
-4. [3 Gibbs Sampler {.anchored number="3" anchor-id="gibbs-sampler"}](04-3-gibbs-sampler-anchored-number-3-anchor-id-gibbs-sampler.md)
-5. [4 Empirical Bayes {.anchored number="4" anchor-id="empirical-bayes"}](05-4-empirical-bayes-anchored-number-4-anchor-id-empirical-baye.md)
+2. [1 Hierarchical Bayes](02-1-hierarchical-bayes.md)
+3. [2 Markov Chain Monte Carlo (MCMC)](03-2-markov-chain-monte-carlo-mcmc.md)
+4. [3 Gibbs Sampler](04-3-gibbs-sampler.md)
+5. [4 Empirical Bayes](05-4-empirical-bayes.md)
 
 ---
 

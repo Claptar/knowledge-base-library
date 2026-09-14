@@ -242,4 +242,4 @@ for(i in 1:9) plot(rnorm(32)~node,brca,ylab="iid N(0,1)")
 
 ---
 
-[← Prediction-intervals](07-prediction-intervals.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](09-home-https-gtpb-github-io-psls20.md)
+[← Prediction-intervals](07-prediction-intervals.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](09-home-https-gtpb-github-io-psls20.md)

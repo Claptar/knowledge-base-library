@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: The Probability Distribution Function (PDF) of [X]**
-
 Hi, In this problem, we'll be looking at the PDF the absolute value of x. So if we know a random variable, x, and we know it's PDF, how can we use that information to help us find the PDF of another random variable-- the absolute value of x? And so throughout this problem, we'll define a new random variable called y. And we'll define that y to be equal to the absolute value of x, just to make things simpler.
 
 So we'll do a couple of concrete examples, and then we'll try to generalize at the end. The first example that we'll deal with in part A is this PDF for x. So we're told that the PDF of x is 1/3 between negative 2 and 1, and 0 otherwise. And here's a picture of what it looks like. It's just a rectangle from negative 2 to 1. So now we want to find out what is the PDF of the absolute value of x, which we've called y?

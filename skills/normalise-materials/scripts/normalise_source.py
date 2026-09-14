@@ -41,6 +41,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import sys
 from dataclasses import dataclass, field
 from datetime import date
@@ -71,7 +72,8 @@ NEEDS_OPEN_ACCESS = {"paper"}              # assume paywalled unless the lockfil
 # by who published it, so the discipline is the top level. `subject:` is hand-written in the
 # lockfile beside `material:`; the provider and the rest are mechanical, because the slug already
 # encodes them. Berkeley alone is 45 of 57 sources, which is why provider cannot be the top level.
-PROVIDERS = {"ocw": "mit-ocw", "berkeley": "berkeley", "statomics": "statomics", "gtpb": "gtpb"}
+PROVIDERS = {"ocw": "mit-ocw", "berkeley": "berkeley", "statomics": "statomics",
+             "gtpb": "gtpb", "pachter": "pachter-lab"}
 
 
 def output_path(entry, library):
@@ -79,12 +81,17 @@ def output_path(entry, library):
     slug = entry["slug"]
     subject = entry.get("subject") or "unsorted"
     head, _, tail = slug.partition("/")
-    for prefix, provider in PROVIDERS.items():
-        if head == prefix or head.startswith(prefix + "-"):
-            rest = head[len(prefix):].lstrip("-") or head
-            break
+    if entry.get("provider"):
+        # Set by hand where the slug does not encode the publisher — a thesis is named for its
+        # author, not for the repository it came from.
+        provider, rest = entry["provider"], head
     else:
-        provider, rest = "other", head
+        for prefix, name in PROVIDERS.items():
+            if head == prefix or head.startswith(prefix + "-"):
+                provider, rest = name, head[len(prefix):].lstrip("-") or head
+                break
+        else:
+            provider, rest = "other", head
     parts = [p for p in (rest, tail) if p]
     return library / "docs" / subject / provider / Path(*parts)
 
@@ -99,12 +106,13 @@ ROUTES = {
     ".rmd": ("markdown", "lossless"),
     ".ipynb": ("notebook", "lossless"),
     ".tex": ("pandoc-latex", "high"),
+    ".rst": ("pandoc-rst", "high"),      # Sphinx / readthedocs sources
     ".srt": ("transcript", "speech"),
     ".vtt": ("transcript", "speech"),
     ".html": ("pandoc-html", "good"),
     ".pdf": ("pdf", "lossy"),
 }
-PREFERENCE = [".qmd", ".rmd", ".md", ".ipynb", ".tex", ".srt", ".vtt", ".html", ".pdf"]
+PREFERENCE = [".qmd", ".rmd", ".md", ".rst", ".ipynb", ".tex", ".srt", ".vtt", ".html", ".pdf"]
 
 SKIP_DIRS = {
     ".git", ".github", ".quarto", "_freeze", "_site", "site_libs", "libs", "node_modules",
@@ -166,6 +174,8 @@ def clean_title(raw, fallback):
     be a sentence, is discarded for the filename — which is at least a real name for the thing.
     """
     t = (raw or "").strip()
+    # Pandoc keeps the source's explicit anchor as an attribute block: `Foundations {#foundations}`.
+    t = re.sub(r"\s*\{[^}]*\}\s*$", "", t)
     t = HTML_TAG.sub("", t)
     t = re.sub(r"[*_`]{1,3}", "", t)
     t = re.sub(r"^#+\s*", "", t)
@@ -471,6 +481,8 @@ def convert(doc):
         return convert_notebook(doc.src)
     if doc.route == "pandoc-latex":
         return convert_pandoc(doc.src, "latex")
+    if doc.route == "pandoc-rst":
+        return convert_pandoc(doc.src, "rst")
     if doc.route == "pandoc-html":
         return convert_pandoc(doc.src, "html")
     if doc.route == "transcript":
@@ -833,6 +845,13 @@ def process(entry, sources_dir, library, include_all, apply):
             continue
 
         sections = split_sections(text)
+        # A document with a single top heading is not "unsectioned" — that heading is its title.
+        # Without this the page is named after its file (`Packages monod`) while the real title
+        # (`Monod: CME inference from seq data`) sits duplicated in the body as a second H1.
+        if len(sections) == 1 and sections[0][0] is None:
+            m = re.match(r"\A#{1,4}[ \t]+(.+?)[ \t]*#*[ \t]*$", sections[0][1], re.M)
+            if m:
+                sections = [(m.group(1).strip(), sections[0][1])]
         stem = Path(d.rel).stem
         doc_title = clean_title(meta_title or sections[0][0] or "", stem)
 
@@ -847,6 +866,12 @@ def process(entry, sources_dir, library, include_all, apply):
             landing = out_root / d.out_rel / "index.md"
         index_by_rel[d.rel] = str(landing)
         plans.append((d, text, sections, doc_title, targets, landing))
+
+    # A source's output is regenerable in full, so it is rebuilt rather than written over.
+    # Writing over leaves orphans: rename a section and the old file survives, stays in the nav,
+    # and is published alongside its replacement with nobody able to tell which is current.
+    if apply and plans and out_root.exists():
+        shutil.rmtree(out_root)
 
     # ---- pass 2: render, now that every link has somewhere to point ------------------------
     for d, text, sections, doc_title, targets, landing in plans:

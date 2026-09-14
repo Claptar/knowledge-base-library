@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: The Sum of Discrete and Continuous Random Variables**
-
 In this video, we're going to do an example in which we derive the probability density function of the sum of two random variables.
 
 The problem tells us the following. We're given that X and Y are independent random variables. X is a discrete random variable with PMF Px. Y is continuous with PDF Fy. And we'd like to compute the PDF of Z which is equal to X plus Y. We're going to use the standard approach here-- compute the CDF of Z and then take the derivative to get the PDF.

@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`code.html`](https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/code.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
 
-# Code {#code .title}
-
 ### R package: `designrbi` {.anchored anchor-id="r-package-designrbi"}
 
 You can install the `designrbi` package from GitHub using the following code:

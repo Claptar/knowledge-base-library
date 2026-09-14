@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: PMF of a Function of a Random Variable**
-
 Hey guys. Welcome back. Today, we're going to be working on a problem that asks you to find the PMF of a function of a random variable. So let's just jump right in. The problem statement gives you the PMF for a random variable called x. So we're told that there's this random variable x that takes on values minus 3, minus 2, minus 1, 1, 2, and 3.
 
 And for each of those values, the probability mass lying over that value is given by this formula, x squared over a. Now I didn't write it here to save room, but we're also told that a is a real number that is greater than 0. And we're told that the probability of x taking on any value outside of the set is 0.

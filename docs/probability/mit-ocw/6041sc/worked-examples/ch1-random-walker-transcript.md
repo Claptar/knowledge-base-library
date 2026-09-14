@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: A Random Walker**
-
 In this problem, we'll be working with a object called random walk, where we have a person on the line-- or a tight rope, according to the problem. Let's start from the origin, and each time step, it would randomly either go forward or backward with certain probability. In our case, with probability P, the person would go forward, and 1 minus P going backwards.
 
 Now, the walk is random in the following sense-- that the choice going forward or backward in each step is random, and it's completely independent from all past history. So let's look at the problem. It has three parts. In the first part, we'd like to know what's the probability that after two steps the person returns to the starting point, which in this case is 0?

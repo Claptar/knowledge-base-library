@@ -22,4 +22,4 @@ October 26, 2023
 
 ---
 
-[Up: contents](index.md) · [1 t and F Distributions {.anchored number="1" anchor-id="t-and-f-distributions"} →](02-1-t-and-f-distributions-anchored-number-1-anchor-id-t-and-f.md)
+[Up: contents](index.md) · [1 t and F Distributions →](02-1-t-and-f-distributions.md)

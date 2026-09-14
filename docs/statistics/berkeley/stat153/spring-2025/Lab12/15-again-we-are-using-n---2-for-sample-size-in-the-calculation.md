@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`Lab12.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/Lab12.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
 
-# Again we are using (n - 2) for sample size in the calculation of BIC
+
 
 ---
 

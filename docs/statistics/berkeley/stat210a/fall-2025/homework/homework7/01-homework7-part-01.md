@@ -38,4 +38,4 @@ In this problem we’ll consider minimax estimation of $\theta$ in the exponenti
 
 ---
 
-[Up: contents](index.md) · [Moral: {#moral} →](02-moral-moral.md)
+[Up: contents](index.md) · [Moral →](02-moral.md)

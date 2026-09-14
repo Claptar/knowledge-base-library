@@ -1331,6 +1331,19 @@ sources:
   branch: main
   commit: 14ac5335a61c8e78d9c36ec381d606a22cb95bf9
   restorable: upstream
+- slug: carilli-2026-expression-regulation
+  material: thesis
+  subject: computational-biology
+  provider: caltech-thesis
+  licence: unresolved
+  holds: material
+  files: 1
+  bytes: 40294216
+  fetched: '2026-09-14'
+  kind: files
+  base: https://thesis.library.caltech.edu/18729/
+  restorable: upstream
+  note: Carilli 2026 — Genetic Interrogation of Expression Regulation
 - slug: degroot-schervish
   material: book
   licence: unresolved
@@ -1349,6 +1362,45 @@ sources:
     bytes: 6432208
     sha256: 89a9c7538df5945fda47a93c8d1b820fcf29de69ff9781ea044022c2eadbd470
   note: book PDF, added by hand
+- slug: fang-2025-biophysical-normalisation
+  material: thesis
+  subject: computational-biology
+  provider: caltech-thesis
+  licence: unresolved
+  holds: material
+  files: 1
+  bytes: 25197916
+  fetched: '2026-09-14'
+  kind: files
+  base: https://thesis.library.caltech.edu/17389/
+  restorable: upstream
+  note: Fang 2025 — A Biophysical Approach to Normalization and Trajectory Inference
+- slug: felce-2026-biophysical-evolution
+  material: thesis
+  subject: computational-biology
+  provider: caltech-thesis
+  licence: unresolved
+  holds: material
+  files: 1
+  bytes: 8081793
+  fetched: '2026-09-14'
+  kind: files
+  base: https://thesis.library.caltech.edu/17880/
+  restorable: upstream
+  note: Felce 2026 — Biophysical Modeling for Gene Expression and Evolution
+- slug: gorin-2023-scrnaseq-foundations
+  material: thesis
+  subject: computational-biology
+  provider: caltech-thesis
+  licence: unresolved
+  holds: material
+  files: 1
+  bytes: 20776508
+  fetched: '2026-09-14'
+  kind: files
+  base: https://thesis.library.caltech.edu/16062/
+  restorable: upstream
+  note: Gorin 2023 — Stochastic Foundations for Single-Cell RNA Sequencing
 - slug: gtpb-psls20
   material: course
   subject: omics-statistics
@@ -1363,6 +1415,19 @@ sources:
   branch: master
   commit: 55acd654e639f1d5297dc0f2e46d8fd6855b5bad
   restorable: upstream
+- slug: luebbert-2024-transcriptomic-complexity
+  material: thesis
+  subject: computational-biology
+  provider: caltech-thesis
+  licence: unresolved
+  holds: material
+  files: 1
+  bytes: 36991192
+  fetched: '2026-09-14'
+  kind: files
+  base: https://thesis.library.caltech.edu/16368/
+  restorable: upstream
+  note: Luebbert 2024 — Complexity of Transcriptomic Data Analysis
 - slug: ocw-6041sc
   material: course
   subject: probability
@@ -3490,6 +3555,22 @@ sources:
     bytes: 94254
     sha256: 2740e4d9d861c62cab77292c32a0dc60b14913f30bbdeb09de1032aafc520a4f
   note: MIT OCW export, unpacked from sources/_archives/
+- slug: pachter-biophysics-docs
+  material: notes
+  subject: computational-biology
+  licence: BSD-2-Clause
+  licence_file: LICENSE
+  holds: material
+  files: 68
+  bytes: 15708555
+  fetched: '2026-09-14'
+  kind: git
+  url: https://github.com/pachterlab/biophysics.git
+  branch: main
+  commit: ca6fe2ae824eb4cc3508ce951e1a7a868f50a043
+  restorable: upstream
+  note: the Pachter lab's own biophysics site — tool docs plus its foundations and contributions reading
+    lists
 - slug: resnick-adventures
   material: book
   licence: unresolved

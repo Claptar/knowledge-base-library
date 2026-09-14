@@ -75,4 +75,4 @@ summary(m2)
 
 ---
 
-[← Designs with Two Factors {#designs-with-two-factors .title}](01-designs-with-two-factors-designs-with-two-factors-title.md) · [Up: contents](index.md) · [Study: Battery Lifetime →](03-study-battery-lifetime.md)
+[← Designs with Two Factors](01-designs-with-two-factors.md) · [Up: contents](index.md) · [Study: Battery Lifetime →](03-study-battery-lifetime.md)

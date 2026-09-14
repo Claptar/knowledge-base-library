@@ -15,7 +15,7 @@ converted: '2026-09-14'
 Split into 8 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Outline {-}](02-outline.md)
+2. [Outline](02-outline.md)
 3. [Intro: Challenges in Label-Free Quantitative Proteomics](03-intro-challenges-in-label-free-quantitative-proteomics.md)
 4. [Import the data in R](04-import-the-data-in-r.md)
 5. [Preprocessing](05-preprocessing.md)

@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Joint Probability Mass Function (PMF) Drill 1**
-
 Welcome back guys. Today we're going to work on a problem that tests your knowledge of joint PMFs. And we're also going to get some practice computing conditional expectations and conditional variances. So in this problem, we are given a set of points in the xy plane. And we're told that these points are equally likely.
 
 So there's eight of them. And each point has a probability of 1/8 of occurring. And we're also given this list of questions. And we're going to work through them together.

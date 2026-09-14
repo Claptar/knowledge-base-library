@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`handwritten-notes.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten-notes.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
 
-## Handwritten lecture notes
-
 -   [Lecture 1: Induction](handwritten/lecture01-intro.md)
 
 -   [Lecture 2: Probability](handwritten/lecture02-probability.md)

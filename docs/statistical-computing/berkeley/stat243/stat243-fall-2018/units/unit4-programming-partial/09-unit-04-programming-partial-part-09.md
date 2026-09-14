@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [1] ".GlobalEnv" ## [2] "/system/linux/lib/R-16.04/3.4/x86_64/site-library/dplyr" ## [3] "/system/linux/lib/R-16.04/3.4/x86_64/site-library/pryr" ## [4] "/system/linux/lib/R-16.04/3.4/x86_64/site-library/knitr" ## [5] "/usr/lib/R/library/stats" ## [6] "/usr/lib/R/library/graphics" ## [7] "/usr/lib/R/library/grDevices" ## [8] "/usr/lib/R/library/utils" ## [9] "/usr/lib/R/library/datasets"
+
 
 ---
 

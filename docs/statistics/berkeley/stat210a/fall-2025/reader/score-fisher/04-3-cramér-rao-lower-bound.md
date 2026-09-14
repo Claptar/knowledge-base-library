@@ -1,0 +1,33 @@
+---
+title: 3 Cramér-Rao Lower Bound
+source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/score-fisher.html
+source_file: sources/berkeley-stat210a/fall-2025/reader/score-fisher.html
+licence: CC BY 4.0
+route: pandoc-html
+fidelity: good
+converted: '2026-09-14'
+---
+
+# 3 Cramér-Rao Lower Bound
+
+**Source:** [`reader/score-fisher.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/score-fisher.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
+
+The score function and Fisher information play critical roles in asymptotic statistics but they have finite-sample implications too. For example, they can be used to derive a lower bound on the variance of any unbiased estimator.
+
+Let <span class="math inline">\$\\delta(X)\$</span> be an unbiased estimator for the estimand <span class="math inline">\$g(\\theta)\\in \\RR\$</span>, so <span class="math inline">\$g(\\theta) = \\int \\delta p\_\\theta \\,d\\mu\$</span>. If we repeat the idea of differentiating <span class="math inline">\$g(\\theta) = \\int \\delta(x) e^{\\ell(\\theta;x)}\\,d\\mu(x)\$</span> with respect to <span class="math inline">\$\\theta\$</span>, we obtain <span class="math display">\\$$ \\frac{\\partial g}{\\partial\\theta\_j}(\\theta) = \\int \\delta(x) \\frac{\\partial}{\\partial \\theta\_j} \\ell(\\theta; x)e^{\\ell(\\theta;x)}\\,d\\mu(x), \\$$</span> leading to <span class="math display">\\$$ \\nabla g(\\theta) = \\EE\_\\theta\\left\[\\delta(X) S\_{\\theta}(X)\\right$$ = \\Cov\_\\theta\\left(\\delta(X), S\_{\\theta}(X)\\right). \\\]</span> This covariance should be thought of as a <span class="math inline">\$d\$</span>-vector like <span class="math inline">\$S\_\\theta(X)\$</span>, since <span class="math inline">\$\\delta(X)\$</span> is a scalar.
+
+For the case <span class="math inline">\$d=1\$</span> (<span class="math inline">\$\\theta\\in\\RR\$</span>), we will write the derivative as <span class="math inline">\$\\dot g(\\theta) = \\frac{d}{d\\theta}g(\\theta)\$</span>. Then we can express the correlation of our estimator and <span class="math inline">\$S\_{\\theta}(X)\$</span> in terms of <span class="math inline">\$\\nabla g(\\theta)\$</span> and the Fisher information: <span class="math display">\\$$ \\Corr\_\\theta^2\\left(\\delta(X),S\_\\theta(X) \\right) \\;=\\; \\frac{\\Cov\_\\theta^2\\left(\\delta(X),S\_\\theta(X) \\right)}{\\Var\_\\theta(\\delta(X))\\Var\_\\theta(S\_\\theta(X))} \\;=\\; \\frac{\\dot g(\\theta)^2}{\\Var\_\\theta(\\delta(X)) J(\\theta)}. \\$$</span> Rearranging and recalling that a squared correlation must be less than 1, we obtain the *Cram'{e}r-Rao Lower Bound* (CRLB) <span class="math display">\\$$ \\Var\_\\theta(\\delta(X)) = \\frac{\\dot g(\\theta)^2}{J(\\theta)\\Corr\_\\theta^2(\\delta,S\_\\theta)} \\geq \\frac{\\dot g(\\theta)^2}{J(\\theta)} \\$$</span> In particular, if <span class="math inline">\$g(\\theta)=\\theta\$</span>, no unbiased estimator can have smaller variance than <span class="math inline">\$1/J(\\theta)\$</span>. In general, the bound depends on how rapidly the estimand changes with <span class="math inline">\$\\theta\$</span>.
+
+Is it really “harder” to estimate <span class="math inline">\$g(\\theta) = 12\\theta\$</span> than it is to estimate <span class="math inline">\$g(\\theta) = \\theta\$</span>? Yes and no: it’s harder in the sense that we can expect the variance of an estimator to be <span class="math inline">\$144\$</span> times larger in the first case than the second. But what if this just reflects the fact that <span class="math inline">\$\\theta\$</span> is denominated in inches and <span class="math inline">\$g(\\theta)\$</span> is denominated in feet? Then we can see clearly that the <span class="math inline">\$\\dot{g}(\\theta)\$</span> is just keeping track of a unit conversion. Likewise, if <span class="math inline">\$\\theta\$</span> has units of feet, we can think of <span class="math inline">\$S\_\\theta(X)\$</span> as having units of inverse feet, and <span class="math inline">\$J(\\theta)\$</span> as having units of inverse square feet.
+
+In finite samples it’s typically the case that even the UMVU estimator will not attain the CRLB. An estimator that attains the CRLB is called *efficient*, and more generally the gap <span class="math inline">\$\\Corr\_\\theta^2(\\delta,S\_\\theta)\$</span> is called the *efficiency* of the estimator. Very roughly, if <span class="math inline">\$S\_\\theta(X)\$</span> is locally capturing all of the relevant information, but <span class="math inline">\$\\delta(X)\$</span> has only a <span class="math inline">\$50\\%\$</span> “R squared” with it, then <span class="math inline">\$\\delta(X)\$</span> is only using <span class="math inline">\$1/2\$</span> of the available information, and we can roughly say that is what accounts for its inefficiency.
+
+As <span class="math inline">\$n\\to\\infty\$</span> in i.i.d. sampling models, however, there typically will be estimators that achieve the CRLB in the limit (for example, in an asymptotically limiting sense the maximum likelihood estimator will typically be both unbiased and efficient).
+
+For the multivariate case where <span class="math inline">\$\\theta\$</span> has dimension <span class="math inline">\$d&gt;1\$</span> (but <span class="math inline">\$g(\\theta)\\in \\RR\$</span> still), we have more generally <span class="math display">\\$$ \\Var\_\\theta(\\delta(X) \\geq \\nabla g(\\theta)'J(\\theta)^{-1}\\nabla g(\\theta). \\$$</span>
+
+To derive this identity, note that for any <span class="math inline">\$a \\in \\RR^d\$</span>, we have <span class="math display">\\$$ \\Cov\_\\theta(\\delta(X), a'S\_\\theta(X)) = a'\\Cov\_\\theta(\\delta(X), S\_\\theta(X)) = a'\\nabla g(\\theta) \\$$</span> and <span class="math inline">\$\\Var\_\\theta(a'S\_\\theta(X)) = a'J(\\theta)a\$</span>. Then we can repeat the derivation above to obtain <span class="math display">\\$$ \\Var\_\\theta(\\delta(X)) \\geq \\frac{a'\\nabla g(\\theta)\\nabla g(\\theta)'a}{a'J(\\theta)a}. \\$$</span> We obtain the CRLB <span class="math inline">\$\\nabla g(\\theta)'J(\\theta)^{-1}\\nabla g(\\theta)\$</span> by maximizing the right-hand side, which is a Rayleigh quotient maximized by <span class="math inline">\$a^\* = J(\\theta)^{-1}\\nabla g(\\theta)\$</span>.
+
+---
+
+[← 2 Differential Identities and the Fisher Information](03-2-differential-identities-and-the-fisher-information.md) · [Up: contents](index.md) · [4 Score and Fisher information in an i.i.d. sample →](05-4-score-and-fisher-information-in-an-i-i-d-sample.md)

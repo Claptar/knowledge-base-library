@@ -21,4 +21,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [Statistical models {.anchored anchor-id="statistical-models"} →](02-statistical-models-anchored-anchor-id-statistical-models.md)
+[Up: contents](index.md) · [Statistical models →](02-statistical-models.md)

@@ -26,4 +26,4 @@ allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ---
 
-[Up: contents](index.md) · [Outline {-} →](02-outline.md)
+[Up: contents](index.md) · [Outline →](02-outline.md)

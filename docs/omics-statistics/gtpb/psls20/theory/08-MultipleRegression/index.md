@@ -21,7 +21,7 @@ Split into 8 sections.
 5. [fitted points for droplines to surface](05-fitted-points-for-droplines-to-surface.md)
 6. [fitted points for droplines to surface](06-fitted-points-for-droplines-to-surface.md)
 7. [ANOVA Tabel](07-anova-tabel.md)
-8. [[Home](https://gtpb.github.io/PSLS20/) {-}](08-home-https-gtpb-github-io-psls20.md)
+8. [[Home](https://gtpb.github.io/PSLS20/)](08-home-https-gtpb-github-io-psls20.md)
 
 ---
 

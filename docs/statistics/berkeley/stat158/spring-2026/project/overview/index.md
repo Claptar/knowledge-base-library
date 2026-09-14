@@ -1,5 +1,5 @@
 ---
-title: Guidelines for the experiment {.anchored anchor-id="guidelines-for-the-experiment"}
+title: Guidelines for the experiment
 source: https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/project/overview.html
 source_file: sources/berkeley-stat158/spring-2026/project/overview.html
 licence: unresolved
@@ -8,15 +8,15 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Guidelines for the experiment {.anchored anchor-id="guidelines-for-the-experiment"}
+# Guidelines for the experiment
 
 **Source:** [`project/overview.html`](https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/project/overview.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
 
 Split into 3 sections.
 
-1. [Guidelines for the experiment {.anchored anchor-id="guidelines-for-the-experiment"}](01-guidelines-for-the-experiment-anchored-anchor-id-guidelines.md)
-2. [Stages of the Project {.anchored anchor-id="stages-of-the-project"}](02-stages-of-the-project-anchored-anchor-id-stages-of-the-proje.md)
-3. [Overview Part 03 —](03-overview-part-03.md)
+1. [Guidelines for the experiment](01-guidelines-for-the-experiment.md)
+2. [Stages of the Project](02-stages-of-the-project.md)
+3. [Suggestions for Organizing Your Project](03-suggestions-for-organizing-your-project.md)
 
 ---
 

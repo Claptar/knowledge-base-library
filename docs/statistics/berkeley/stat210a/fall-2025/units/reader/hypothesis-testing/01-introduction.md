@@ -18,4 +18,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [1 Hypothesis Testing {.anchored number="1" anchor-id="hypothesis-testing"} →](02-1-hypothesis-testing-anchored-number-1-anchor-id-hypothesis.md)
+[Up: contents](index.md) · [1 Hypothesis Testing →](02-1-hypothesis-testing.md)

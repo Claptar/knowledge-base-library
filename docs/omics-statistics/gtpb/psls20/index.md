@@ -50,7 +50,7 @@ Converted material from [https://github.com/GTPB/PSLS20.git](https://github.com/
     - [Salk Study](theory/01-intro/03-salk-study.md)
     - [Scientific Method](theory/01-intro/04-scientific-method.md)
     - [Role of Statistics in the Life Sciences](theory/01-intro/05-role-of-statistics-in-the-life-sciences.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/01-intro/06-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/01-intro/06-home-https-gtpb-github-io-psls20.md)
 - **02-concepts**
     - [Introduction](theory/02-concepts/01-introduction.md)
     - [Example](theory/02-concepts/02-example.md)
@@ -63,27 +63,27 @@ Converted material from [https://github.com/GTPB/PSLS20.git](https://github.com/
     - [Direct cholesterol example](theory/02-concepts/09-direct-cholesterol-example.md)
     - [Statistics](theory/02-concepts/10-statistics.md)
     - [Convention](theory/02-concepts/11-convention.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/02-concepts/12-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/02-concepts/12-home-https-gtpb-github-io-psls20.md)
 - **03-experimentalDesign**
     - [Introduction](theory/03-experimentalDesign/01-introduction.md)
     - [Randomization](theory/03-experimentalDesign/02-randomization.md)
     - [Blocking](theory/03-experimentalDesign/03-blocking.md)
     - [Sample size](theory/03-experimentalDesign/04-sample-size.md)
     - [Wrap-up](theory/03-experimentalDesign/05-wrap-up.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/03-experimentalDesign/06-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/03-experimentalDesign/06-home-https-gtpb-github-io-psls20.md)
 - **04-dataExploration**
     - [Introduction](theory/04-dataExploration/01-introduction.md)
     - [Why data exploration and descriptive statistics?](theory/04-dataExploration/02-why-data-exploration-and-descriptive-statistics.md)
     - [Univariate exploration of quantitative variables](theory/04-dataExploration/03-univariate-exploration-of-quantitative-variables.md)
     - [Normale approximation](theory/04-dataExploration/04-normale-approximation.md)
     - [Two continuous variables: Correlation](theory/04-dataExploration/05-two-continuous-variables-correlation.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/04-dataExploration/06-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/04-dataExploration/06-home-https-gtpb-github-io-psls20.md)
 - **05-statisticalInference-twosampleT**
     - [Introduction](theory/05-statisticalInference-twosampleT/01-introduction.md)
     - [Two sample T-test](theory/05-statisticalInference-twosampleT/02-two-sample-t-test.md)
     - [Assumptions](theory/05-statisticalInference-twosampleT/03-assumptions.md)
     - [How to report?](theory/05-statisticalInference-twosampleT/04-how-to-report.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/05-statisticalInference-twosampleT/05-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/05-statisticalInference-twosampleT/05-home-https-gtpb-github-io-psls20.md)
 - **05-statisticalInference**
     - [Introduction](theory/05-statisticalInference/01-introduction.md)
     - [Experimental Design](theory/05-statisticalInference/02-experimental-design.md)
@@ -91,7 +91,7 @@ Converted material from [https://github.com/GTPB/PSLS20.git](https://github.com/
     - [Estimation](theory/05-statisticalInference/04-estimation.md)
     - [Hypothesis tests](theory/05-statisticalInference/05-hypothesis-tests.md)
     - [Nature column on testing](theory/05-statisticalInference/06-nature-column-on-testing.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/05-statisticalInference/07-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/05-statisticalInference/07-home-https-gtpb-github-io-psls20.md)
 - **06-linearRegression**
     - [Breast cancer dataset](theory/06-linearRegression/01-breast-cancer-dataset.md)
     - [Lineair Regression](theory/06-linearRegression/02-lineair-regression.md)
@@ -101,14 +101,14 @@ Converted material from [https://github.com/GTPB/PSLS20.git](https://github.com/
     - [Invalid assumptions](theory/06-linearRegression/06-invalid-assumptions.md)
     - [Prediction-intervals](theory/06-linearRegression/07-prediction-intervals.md)
     - [Sum of squares and Anova-table](theory/06-linearRegression/08-sum-of-squares-and-anova-table.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/06-linearRegression/09-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/06-linearRegression/09-home-https-gtpb-github-io-psls20.md)
 - **07-Anova**
     - [Prostacyclin Example](theory/07-Anova/01-prostacyclin-example.md)
     - [Analyse of Variance](theory/07-Anova/02-analyse-of-variance.md)
     - [Sum of squares and Anova](theory/07-Anova/03-sum-of-squares-and-anova.md)
     - [Post hoc analysis: Multiple comparisons of means](theory/07-Anova/04-post-hoc-analysis-multiple-comparisons-of-means.md)
     - [Conclusions: Prostacyclin example](theory/07-Anova/05-conclusions-prostacyclin-example.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/07-Anova/06-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/07-Anova/06-home-https-gtpb-github-io-psls20.md)
 - **08-MultipleRegression**
     - [Intro](theory/08-MultipleRegression/01-intro.md)
     - [Additive multiple linair model](theory/08-MultipleRegression/02-additive-multiple-linair-model.md)
@@ -117,24 +117,24 @@ Converted material from [https://github.com/GTPB/PSLS20.git](https://github.com/
     - [fitted points for droplines to surface](theory/08-MultipleRegression/05-fitted-points-for-droplines-to-surface.md)
     - [fitted points for droplines to surface](theory/08-MultipleRegression/06-fitted-points-for-droplines-to-surface.md)
     - [ANOVA Tabel](theory/08-MultipleRegression/07-anova-tabel.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/08-MultipleRegression/08-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/08-MultipleRegression/08-home-https-gtpb-github-io-psls20.md)
 - **09-NonparametericStatistics-KruskalWallis**
     - [Comparison of $g$ groups](theory/09-NonparametericStatistics-KruskalWallis/01-comparison-of-groups.md)
     - [DMH Voorbeeld](theory/09-NonparametericStatistics-KruskalWallis/02-dmh-voorbeeld.md)
     - [Kruskal-Wallis Rank Test](theory/09-NonparametericStatistics-KruskalWallis/03-kruskal-wallis-rank-test.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/09-NonparametericStatistics-KruskalWallis/04-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/09-NonparametericStatistics-KruskalWallis/04-home-https-gtpb-github-io-psls20.md)
 - **09-NonparametericStatistics-WilcoxonMannWithney**
     - [Introduction](theory/09-NonparametericStatistics-WilcoxonMannWithney/01-introduction.md)
     - [Rank Tests](theory/09-NonparametericStatistics-WilcoxonMannWithney/02-rank-tests.md)
     - [Wilcoxon-Mann-Whitney Test](theory/09-NonparametericStatistics-WilcoxonMannWithney/03-wilcoxon-mann-whitney-test.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/09-NonparametericStatistics-WilcoxonMannWithney/04-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/09-NonparametericStatistics-WilcoxonMannWithney/04-home-https-gtpb-github-io-psls20.md)
 - **10-categoricalDataAnalysis**
     - [Introduction](theory/10-categoricalDataAnalysis/01-introduction.md)
     - [Test for a proportion](theory/10-categoricalDataAnalysis/02-test-for-a-proportion.md)
     - [Test for association between two qualitative variables](theory/10-categoricalDataAnalysis/03-test-for-association-between-two-qualitative-variables.md)
     - [Unpaired observations](theory/10-categoricalDataAnalysis/04-unpaired-observations.md)
     - [Logistic regression](theory/10-categoricalDataAnalysis/05-logistic-regression.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](theory/10-categoricalDataAnalysis/06-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](theory/10-categoricalDataAnalysis/06-home-https-gtpb-github-io-psls20.md)
 
 ### theory/wrapup
 
@@ -277,7 +277,7 @@ Converted material from [https://github.com/GTPB/PSLS20.git](https://github.com/
     - [Data wrangling with dplyr](tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES/05-data-wrangling-with-dplyr.md)
     - [Data Visualization](tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES/06-data-visualization.md)
 - **Data_exploration_NHANES_sol**
-    - [Data exploration NHANES sol Part 01 —](tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol/01-data-exploration-nhanes-sol-part-01.md)
+    - [Tutorial 1.1: Exploring the NHANES dataset](tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol/01-tutorial-1-1-exploring-the-nhanes-dataset.md)
     - [1 The NHANES dataset](tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol/02-1-the-nhanes-dataset.md)
     - [2 Data Import with the readr R package](tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol/03-2-data-import-with-the-readr-r-package.md)
     - [or glimpse(NHANES) to see all the variables in the dataset](tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol/04-or-glimpse-nhanes-to-see-all-the-variables-in-the-dataset.md)
@@ -336,7 +336,7 @@ Converted material from [https://github.com/GTPB/PSLS20.git](https://github.com/
 - **08_multipleRegression_KPNA2**
     - [Introduction](tutorialScripts/solutions/08_multipleRegression/08_multipleRegression_KPNA2/01-introduction.md)
     - [Assessing the significance of all hypothesis of interest](tutorialScripts/solutions/08_multipleRegression/08_multipleRegression_KPNA2/02-assessing-the-significance-of-all-hypothesis-of-interest.md)
-    - [[Home](https://gtpb.github.io/PSLS20/) {-}](tutorialScripts/solutions/08_multipleRegression/08_multipleRegression_KPNA2/03-home-https-gtpb-github-io-psls20.md)
+    - [[Home](https://gtpb.github.io/PSLS20/)](tutorialScripts/solutions/08_multipleRegression/08_multipleRegression_KPNA2/03-home-https-gtpb-github-io-psls20.md)
 
 ## Not converted
 

@@ -1,5 +1,5 @@
 ---
-title: Data exploration NHANES sol
+title: 'Tutorial 1.1: Exploring the NHANES dataset'
 source: https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html
 source_file: sources/gtpb-psls20/tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html
 licence: CC BY 4.0
@@ -8,13 +8,13 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Data exploration NHANES sol
+# Tutorial 1.1: Exploring the NHANES dataset
 
 **Source:** [`tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
 
 Split into 7 sections.
 
-1. [Data exploration NHANES sol Part 01 —](01-data-exploration-nhanes-sol-part-01.md)
+1. [Tutorial 1.1: Exploring the NHANES dataset](01-tutorial-1-1-exploring-the-nhanes-dataset.md)
 2. [1 The NHANES dataset](02-1-the-nhanes-dataset.md)
 3. [2 Data Import with the readr R package](03-2-data-import-with-the-readr-r-package.md)
 4. [or glimpse(NHANES) to see all the variables in the dataset](04-or-glimpse-nhanes-to-see-all-the-variables-in-the-dataset.md)

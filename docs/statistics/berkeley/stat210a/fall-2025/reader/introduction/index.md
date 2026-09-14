@@ -15,10 +15,10 @@ converted: '2026-09-14'
 Split into 5 sections.
 
 1. [Introduction](01-introduction.md)
-2. [About Stat 210A {.anchored anchor-id="about-stat-210a"}](02-about-stat-210a-anchored-anchor-id-about-stat-210a.md)
-3. [Deductive vs inductive reasoning {.anchored anchor-id="deductive-vs-inductive-reasoning"}](03-deductive-vs-inductive-reasoning-anchored-anchor-id-deductiv.md)
-4. [The problem of induction {.anchored anchor-id="the-problem-of-induction"}](04-the-problem-of-induction-anchored-anchor-id-the-problem-of-i.md)
-5. [Introduction Part 05 —](05-introduction-part-05.md)
+2. [About Stat 210A](02-about-stat-210a.md)
+3. [Deductive vs inductive reasoning](03-deductive-vs-inductive-reasoning.md)
+4. [The problem of induction](04-the-problem-of-induction.md)
+5. [Statistical evasions in practice: coin flipping](05-statistical-evasions-in-practice-coin-flipping.md)
 
 ---
 

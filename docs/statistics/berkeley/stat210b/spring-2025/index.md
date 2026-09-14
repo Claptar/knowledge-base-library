@@ -18,7 +18,7 @@ Converted material from [https://github.com/berkeley-stat210b/spring-2025.git](h
 
 ## Contents
 
-- [Syllabus STAT210B Spring2025](Syllabus_STAT210B_Spring2025.md)
+- [Syllabus of STAT210B (Theoretical Statistics)](Syllabus_STAT210B_Spring2025.md)
 - **index**
     - [Description](home/01-description.md)
     - [Announcement](home/02-announcement.md)

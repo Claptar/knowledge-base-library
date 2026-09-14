@@ -959,7 +959,7 @@ Exercise 10.11. Suppose _K ⊂_ R<sup>2</sup> is a compact set and _x ∈_ R<sup
 
 where [ _x, y_ ] denotes the compact line segment connecting _x_ and _y_ . It is natural to ask for the Hausdorff dimension of the visible part of a set _K_ . Assuming that dim _K ≥_ 1, an unresolved conjecture in geometric measure theory claims that, for Lebesgue-almost every _x̸ ∈ K_ , the Hausdorff dimension of _K_ ( _x_ ) is one.
 
-Show that this conjecture holds for the path of planar Brownian motion, _K_ = _B_ [0 _,_ 1], in other words, almost surely, for Lebesgue almost every _x ∈_ R<sup>2</sup> , the Hausdorff dimension of the visible part _B_ [0 _,_ 1](https://www.stat.berkeley.edu/~aldous/205B/_x_) is one.
+Show that this conjecture holds for the path of planar Brownian motion, _K_ = _B_ [0 _,_ 1], in other words, almost surely, for Lebesgue almost every _x ∈_ R<sup>2</sup> , the Hausdorff dimension of the visible part _B_ $$0 _,_ 1$$( _x_ ) is one.
 
 Exercise 10.12. Let _{B_ ( _t_ ): _t ≥_ 0 _}_ be a planar Brownian motion and _α ∈_ [ _π,_ 2 _π_ ). Show that, almost surely, no double points are _α_ -cone points.
 

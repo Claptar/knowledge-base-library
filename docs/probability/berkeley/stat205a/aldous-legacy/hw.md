@@ -1,5 +1,5 @@
 ---
-title: Hw
+title: '205A Homework #1 , due Tuesday 6 September.'
 source: https://www.stat.berkeley.edu/~aldous/205A/hw.pdf
 source_file: sources/berkeley-stat205a/aldous-legacy/hw.pdf
 licence: unresolved
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Hw
+# 205A Homework #1 , due Tuesday 6 September.
 
 **Source:** [`hw.pdf`](https://www.stat.berkeley.edu/~aldous/205A/hw.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# **205A Homework #1** , due Tuesday 6 September.
 
 **1.** [Bill. 2.4] Let _Fn_ be classes of subsets of _S_ . Suppose each _Fn_ is a field, and _Fn ⊂Fn_ +1 for _n_ = 1 _,_ 2 _, . . ._ . Define _F_ = _∪_<sup>_∞_</sup> _n_ =1<sup>_Fn_.Showthat</sup><sup>_F_isa</sup> field. Give an example to show that, if each _Fn_ is a _σ_ -field, then _F_ need not be a _σ_ -field.
 

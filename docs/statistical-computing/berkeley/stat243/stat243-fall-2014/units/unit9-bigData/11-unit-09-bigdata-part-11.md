@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# We can view system status through a web browser interface # on master node of the EC2 cluster, do: MASTER_IP=`cat /root/ephemeral-hdfs/conf/masters` echo ${MASTER_IP} # Point a browser on your own machine to the result of the next command # you'll see info about the "Spark Master", i.e., the cluster overall echo "http://${MASTER_IP}:8080/" # Point a browser on your own machine to the result of the next command # you'll see info about the "Spark Stages", i.e., the status of Spark tasks echo "http://${MASTER_IP}:4040/" # Point a browser on your own machine to the result of the next command # you'll see info about the HDFS" echo "http://${MASTER_IP}:50070/"
+
 
 ---
 

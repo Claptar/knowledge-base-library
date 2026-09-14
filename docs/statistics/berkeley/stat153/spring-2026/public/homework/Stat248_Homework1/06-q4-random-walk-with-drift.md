@@ -1,5 +1,5 @@
 ---
-title: Q4. Random walk with drift {-}
+title: Q4. Random walk with drift
 source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat248_Homework1.ipynb
 source_file: sources/berkeley-stat153/spring-2026/public/homework/Stat248_Homework1.ipynb
 licence: CC BY 4.0
@@ -8,7 +8,7 @@ fidelity: lossless
 converted: '2026-09-14'
 ---
 
-# Q4. Random walk with drift {-}
+# Q4. Random walk with drift
 
 **Source:** [`public/homework/Stat248_Homework1.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat248_Homework1.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
 
@@ -16,4 +16,4 @@ Write some python code to simulate 100 random walks each of length 500, with non
 
 ---
 
-[← Q3. Correlation and independence {-}](05-q3-correlation-and-independence.md) · [Up: contents](index.md) · [Q5. Stationarity {-} →](07-q5-stationarity.md)
+[← Q3. Correlation and independence](05-q3-correlation-and-independence.md) · [Up: contents](index.md) · [Q5. Stationarity →](07-q5-stationarity.md)

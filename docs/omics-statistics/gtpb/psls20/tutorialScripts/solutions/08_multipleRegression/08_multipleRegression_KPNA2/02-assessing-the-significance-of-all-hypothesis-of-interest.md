@@ -47,4 +47,4 @@ In grade 3 patients, however, this association is not significant ($p=$ `r forma
 
 ---
 
-[← Introduction](01-introduction.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](03-home-https-gtpb-github-io-psls20.md)
+[← Introduction](01-introduction.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](03-home-https-gtpb-github-io-psls20.md)

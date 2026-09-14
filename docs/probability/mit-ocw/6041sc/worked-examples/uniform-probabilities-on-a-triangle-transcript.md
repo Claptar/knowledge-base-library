@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Uniform Probabilities on a Triangle**
-
 Hi. In this problem, we're going to get a bunch of practice working with multiple random variables together. And so we'll look at joint PDFs, marginal PDFs, conditional PDFs, and also get some practice calculating expectations as well. So the problem gives us a pair of random variables-- x and y. And we're told that the joint distribution is uniformly distributed on this triangle here, with the vertices being 0, 0 1, 0, and 0, 1. So it's uniform in this triangle.
 
 And the first part of the problem is just to figure out what exactly is disjoint PDF of the two random variables. So in this case, it's pretty easy to calculate, because we have a uniform distribution. And remember, when you have a uniform distribution, you can just imagine it being a sort of plateau coming out of the board. And it's flat.

@@ -24,4 +24,4 @@ In *Introduction to Time Series*, we will cover the basics of time series analys
 
 ---
 
-[Up: contents](index.md) · [Prerequisites {#prerequisites .unnumbered} →](02-prerequisites-prerequisites-unnumbered.md)
+[Up: contents](index.md) · [Prerequisites →](02-prerequisites.md)

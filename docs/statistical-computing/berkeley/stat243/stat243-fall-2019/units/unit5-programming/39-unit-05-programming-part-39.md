@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [1] ".GlobalEnv" ## [2] "/usr/lib/R/library/codetools" ## [3] "/system/linux/lib/R-18.04/3.6/x86_64/site-library/fields" ## [4] "/system/linux/lib/R-18.04/3.6/x86_64/site-library/maps" ## [5] "/system/linux/lib/R-18.04/3.6/x86_64/site-library/spam" ## [6] "/usr/lib/R/library/grid" ## [7] "/system/linux/lib/R-18.04/3.6/x86_64/site-library/dotCall64" ## [8] "/system/linux/lib/R-18.04/3.6/x86_64/site-library/R6" ## [9] "/system/linux/lib/R-18.04/3.6/x86_64/site-library/dplyr" ## [10] "/system/linux/lib/R-18.04/3.6/x86_64/site-library/pryr" ## [11] "/system/linux/lib/R-18.04/3.6/x86_64/site-library/knitr" ## [12] "/usr/lib/R/library/stats"
+
 
 ---
 

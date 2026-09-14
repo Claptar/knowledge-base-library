@@ -15,8 +15,8 @@ converted: '2026-09-14'
 Split into 3 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Resources {.anchored anchor-id="resources"}](02-resources-anchored-anchor-id-resources.md)
-3. [Schedule {.anchored anchor-id="schedule"}](03-schedule-anchored-anchor-id-schedule.md)
+2. [Resources](02-resources.md)
+3. [Schedule](03-schedule.md)
 
 ---
 

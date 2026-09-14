@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`notes/multi-armed.Rmd`](https://leishi-rocks.github.io/courses/ph240c/notes/multi-armed.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
 
-# A/B TEST
+
 
 ---
 

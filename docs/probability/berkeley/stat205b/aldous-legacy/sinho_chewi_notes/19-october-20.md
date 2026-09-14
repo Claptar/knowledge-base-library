@@ -53,7 +53,7 @@ From ( _X, Y_ ) : (Ω _, F, P_ ) _→ S_ 1 _×S_ 2, we get a kernel _Q_ from _S
 
 Write _W_ = _h_ ( _Y_ ), where _h_ : _S_ 2 _→_ R. Write _G_ = _σ_ ( _X_ ). Write _I_ : (Ω _, F_ ) _→_ (Ω _, G_ ), the identity function. We have ( _I, Y_ ) : Ω _→_ (Ω _, G_ ) _×_ ( _S_ 2 _, S_ 2). Write _α_ ( _ω, B_ ) for the kernel associated with ( _I, Y_ ). Then _α_ ( _ω, B_ ) means _P_ ( _Y ∈ B | G_ )( _ω_ ).
 
-We can start from conditional expectation: let _P_ ( _A_ ) = _E_ [1 _A_ ]. Define _P_ ( _A | G_ )( _ω_ ) = _E_ [1 _A | G_ ](https://www.stat.berkeley.edu/~aldous/205B/_ω_). Then _α_ ( _·, B_ ) = _P_ ( _Y ∈ B | G_ ). This is the **regular conditional distribution for** _Y_ **given** _G_ . It is “regular” in the sense that _B �→ α_ ( _ω, B_ ) is a PM.
+We can start from conditional expectation: let _P_ ( _A_ ) = _E_ [1 _A_ ]. Define _P_ ( _A | G_ )( _ω_ ) = _E_ $$1 _A | G_ $$( _ω_ ). Then _α_ ( _·, B_ ) = _P_ ( _Y ∈ B | G_ ). This is the **regular conditional distribution for** _Y_ **given** _G_ . It is “regular” in the sense that _B �→ α_ ( _ω, B_ ) is a PM.
 
 What is this in MT?
 

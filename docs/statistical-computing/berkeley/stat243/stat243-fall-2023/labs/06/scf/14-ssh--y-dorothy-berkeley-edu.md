@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`labs/06/scf.qmd`](https://github.com/berkeley-stat243/stat243-fall-2023/blob/14ac5335a61c8e78d9c36ec381d606a22cb95bf9/labs/06/scf.qmd) · **Licence:** BSD-3-Clause · Converted 2026-09-14 from `.qmd` (lossless)
 
-# ssh -Y <scf-username>@dorothy.berkeley.edu
+
 
 ---
 

@@ -15,8 +15,8 @@ converted: '2026-09-14'
 Split into 3 sections.
 
 1. [Introduction](01-introduction.md)
-2. [A single experiment {.anchored anchor-id="a-single-experiment"}](02-a-single-experiment-anchored-anchor-id-a-single-experiment.md)
-3. [Code Part 03 —](03-code-part-03.md)
+2. [A single experiment](02-a-single-experiment.md)
+3. [Calculating the sampling distribution](03-calculating-the-sampling-distribution.md)
 
 ---
 

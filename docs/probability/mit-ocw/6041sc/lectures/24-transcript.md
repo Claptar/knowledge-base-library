@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 24**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 JOHN TSITSIKLIS: And we're going to continue today with our discussion of classical statistics. We'll start with a quick review of what we discussed last time, and then talk about two topics that cover a lot of statistics that are happening in the real world. So two basic methods. One is the method of linear regression, and the other one is the basic methods and tools for how to do hypothesis testing.

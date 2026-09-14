@@ -15,9 +15,9 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 p-Values {.anchored number="1" anchor-id="p-values"}](02-1-p-values-anchored-number-1-anchor-id-p-values.md)
-3. [2 Confidence Regions {.anchored number="2" anchor-id="confidence-regions"}](03-2-confidence-regions-anchored-number-2-anchor-id-confidence.md)
-4. [Testing interpretation Part 04 —](04-testing-interpretation-part-04.md)
+2. [1 p-Values](02-1-p-values.md)
+3. [2 Confidence Regions](03-2-confidence-regions.md)
+4. [3 Misinterpreting Hypothesis Tests](04-3-misinterpreting-hypothesis-tests.md)
 
 ---
 

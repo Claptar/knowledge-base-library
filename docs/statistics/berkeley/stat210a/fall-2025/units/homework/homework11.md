@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`units/homework/homework11.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/homework/homework11.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
 
-#### Instructions: {#instructions}
-
 See the standing homework instructions on the course web page
 
 **Problem 1** (Some Maximum Likelihood Estimators). Find the MLE for each model below, and find its asymptotic distribution. You do not need to check the conditions for convergence theorems; just calculate assuming they are in force.

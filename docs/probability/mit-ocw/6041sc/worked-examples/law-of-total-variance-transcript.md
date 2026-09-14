@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: Using the Conditional Expectation and Variance**
-
 Hey guys. Welcome back. Today we're going to do a fun problem that will test your knowledge of the law of total variance. And in the process, we'll also get more practice dealing with joint PDFs and computing conditional expectations and conditional variances.
 
 So in this problem, we are given a joint PDF for x and y. So we're told that x and y can take on the following values in the shape of this parallelogram, which I've drawn. And moreover, that x and y are uniformly distributed. So the joint PDF is just flat over this parallelogram. And because the parallelogram has an area of 1, the height of the PDF must also be 1 so that the PDF integrates to 1. OK.

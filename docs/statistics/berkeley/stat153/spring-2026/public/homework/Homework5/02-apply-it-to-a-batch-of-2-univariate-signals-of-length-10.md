@@ -29,4 +29,4 @@ In [ ]:# ---- Predict-then-verify ----
 
 ---
 
-[← Stat 153/248 - Homework 5 - YOUR NAME HERE {-}](01-stat-153-248---homework-5---your-name-here.md) · [Up: contents](index.md) · [Before running the lines below, predict →](03-before-running-the-lines-below-predict.md)
+[← Stat 153/248 - Homework 5 - YOUR NAME HERE](01-stat-153-248---homework-5---your-name-here.md) · [Up: contents](index.md) · [Before running the lines below, predict →](03-before-running-the-lines-below-predict.md)

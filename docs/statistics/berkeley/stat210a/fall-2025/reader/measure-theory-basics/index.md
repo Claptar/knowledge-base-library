@@ -15,13 +15,13 @@ converted: '2026-09-14'
 Split into 8 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Measure theory basics Part 02 —](02-measure-theory-basics-part-02.md)
-3. [Measures {.anchored anchor-id="measures"}](03-measures-anchored-anchor-id-measures.md)
-4. [Integrals {.anchored anchor-id="integrals"}](04-integrals-anchored-anchor-id-integrals.md)
-5. [Densities {.anchored anchor-id="densities"}](05-densities-anchored-anchor-id-densities.md)
-6. [Measure theory basics Part 06 —](06-measure-theory-basics-part-06.md)
-7. [Conditional probability {.anchored anchor-id="conditional-probability"}](07-conditional-probability-anchored-anchor-id-conditional-proba.md)
-8. [More definitions {.anchored anchor-id="more-definitions"}](08-more-definitions-anchored-anchor-id-more-definitions.md)
+2. [Measure theory: a rigorous grounding for probability](02-measure-theory-a-rigorous-grounding-for-probability.md)
+3. [Measures](03-measures.md)
+4. [Integrals](04-integrals.md)
+5. [Densities](05-densities.md)
+6. [Probability spaces and random variables](06-probability-spaces-and-random-variables.md)
+7. [Conditional probability](07-conditional-probability.md)
+8. [More definitions](08-more-definitions.md)
 
 ---
 

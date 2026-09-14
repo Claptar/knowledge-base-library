@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: The Probability of the Difference of Two Events**
-
 Hi. In this problem, we're going to use the set of probability axioms to derive the probability of the difference of two events. Now, before we get started, there's one thing you might notice that, the equation we're trying to prove is actually quite complicated. And I don't like it either, so the first thing we're going to do will be to find a simpler notation for the events that we're interested in.
 
 So we start with two events, A and B, and there might be some intersection between the two events. We'll label the set of points or samples in A that are not in B, as a set C. So C will be A intersection B complement. Similarly, for all points that are in B but not in A, this area, we'll call it D.

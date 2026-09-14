@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`units/handwritten-notes.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/handwritten-notes.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
 
-# Handwritten notes {#handwritten-notes .title}
-
 ## Handwritten lecture notes {.anchored anchor-id="handwritten-lecture-notes"}
 
 - [Lecture 1: Induction](handwritten/lecture01-intro.md)

@@ -1,5 +1,5 @@
 ---
-title: Lecture 25 — bootstrap
+title: Outline
 source: https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture25-bootstrap.pdf
 source_file: sources/berkeley-stat210a/fall-2024/handwritten/lecture25-bootstrap.pdf
 licence: CC BY 4.0
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Lecture 25 — bootstrap
+# Outline
 
 **Source:** [`handwritten/lecture25-bootstrap.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture25-bootstrap.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# Outline
 
 Estimation 1 Nonparametric 2 estimator Plugin 3 errors standard Bootstrap 4 Bootstrap bias estimator correction 5 confidence intervals Bootstrap 6 Double bootstrap
 

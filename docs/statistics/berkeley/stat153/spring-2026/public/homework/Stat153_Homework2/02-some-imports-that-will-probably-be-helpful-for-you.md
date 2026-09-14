@@ -54,4 +54,4 @@ plt.ylabel('Sunspots')
 
 ---
 
-[← Stat 153 - Homework 2 - YOUR NAME HERE {-}](01-stat-153---homework-2---your-name-here.md) · [Up: contents](index.md) · [INSERT CODE HERE →](03-insert-code-here.md)
+[← Stat 153 - Homework 2 - YOUR NAME HERE](01-stat-153---homework-2---your-name-here.md) · [Up: contents](index.md) · [INSERT CODE HERE →](03-insert-code-here.md)

@@ -15,11 +15,11 @@ converted: '2026-09-14'
 Split into 6 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Convergence Part 02 —](02-convergence-part-02.md)
-3. [2 Convergence {.anchored number="2" anchor-id="convergence"}](03-2-convergence-anchored-number-2-anchor-id-convergence.md)
-4. [3 Continuous Mapping Theorem {.anchored number="3" anchor-id="continuous-mapping-theorem"}](04-3-continuous-mapping-theorem-anchored-number-3-anchor-id-con.md)
-5. [4 Slutsky’s Theorem {.anchored number="4" anchor-id="slutskys-theorem"}](05-4-slutsky-s-theorem-anchored-number-4-anchor-id-slutskys-the.md)
-6. [5 Delta Method {.anchored number="5" anchor-id="delta-method"}](06-5-delta-method-anchored-number-5-anchor-id-delta-method.md)
+2. [1 Introduction to Asymptotic Theory](02-1-introduction-to-asymptotic-theory.md)
+3. [2 Convergence](03-2-convergence.md)
+4. [3 Continuous Mapping Theorem](04-3-continuous-mapping-theorem.md)
+5. [4 Slutsky’s Theorem](05-4-slutsky-s-theorem.md)
+6. [5 Delta Method](06-5-delta-method.md)
 
 ---
 

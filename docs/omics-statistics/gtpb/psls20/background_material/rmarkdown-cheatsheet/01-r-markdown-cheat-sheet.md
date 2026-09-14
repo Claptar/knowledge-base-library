@@ -57,7 +57,7 @@ The output value determines which type of file R will build from your .Rmd file 
 ###### **syntax**
 
 
-Plain text End a line with two spaces to start a new paragraph. *italics* and _italics_ **bold** and __bold__ superscript^2^ ~~strikethrough~~ [link](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/background_material/www.rstudio.com)
+Plain text End a line with two spaces to start a new paragraph. *italics* and _italics_ **bold** and __bold__ superscript^2^ ~~strikethrough~~ $$link$$(www.rstudio.com)
 
 ---
 

@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial:A Random Number of Coin Flips**
-
 Hey, everyone. Welcome back. Today, we're going to do another fun problem that has to do with a random number of coin flips. So the experiment we're going to run is as follows. We're given a fair six-sided die, and we roll it.
 
 And then we take a fair coin, and we flip it the number of times indicated by the die. That is to say, if I roll a four on my die, then I flip the coin four times. And then we're interested in some statistics regarding the number of heads that show up in our sequence. In particular, we want to compute the expectation and the variance of the number of heads that we see.

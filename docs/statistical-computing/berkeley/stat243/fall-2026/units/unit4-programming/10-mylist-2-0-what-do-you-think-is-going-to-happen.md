@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`units/unit4-programming.qmd`](https://github.com/berkeley-stat243/fall-2026/blob/c74395ec9c420005c80bbcc5f315729aaee3dc32/units/unit4-programming.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
 
-# myList[2.0]    # What do you think is going to happen?
+
 
 ---
 

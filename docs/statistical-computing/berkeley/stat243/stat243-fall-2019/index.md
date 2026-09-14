@@ -89,24 +89,24 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2019.g
     - [Problems](ps/ps1/03-problems.md)
     - [Ps 01 — Part 04 —](ps/ps1/04-ps-01-part-04.md)
     - [[1] "-rw-r--r-- 1 paciorek scfstaff 5377687 Sep 10 12:09 tmp5.csv"](ps/ps1/05-1--rw-r--r---1-paciorek-scfstaff-5377687-sep-10-12-09-tmp5-c.md)
-- [Ps 02 —](ps/ps2.md)
-- [Ps 03 —](ps/ps3.md)
-- [Ps 04 —](ps/ps4.md)
-- [Ps 05 —](ps/ps5.md)
-- [Ps 06 —](ps/ps6.md)
-- [Ps 07 —](ps/ps7.md)
-- [Ps 08 —](ps/ps8.md)
+- [Stat243: Problem Set 2, Due Friday Sept. 20](ps/ps2.md)
+- [Stat243: Problem Set 3, Due Wednesday Oct. 2](ps/ps3.md)
+- [Stat243: Problem Set 4, Due Monday Oct. 14](ps/ps4.md)
+- [Stat243: Problem Set 5, Due Monday Oct. 28](ps/ps5.md)
+- [Stat243: Problem Set 6, Due Friday November 8](ps/ps6.md)
+- [Stat243: Problem Set 7, Due Monday November 25](ps/ps7.md)
+- [Stat243: Problem Set 8, Due Friday December 6](ps/ps8.md)
 
 ### section/00
 
 - **practice**
     - [Introduction](section/00/practice/01-introduction.md)
-    - [Creating datastructures {#creating-datastructures .unnumbered}](section/00/practice/02-creating-datastructures-creating-datastructures-unnumbered.md)
-    - [Subsetting datastructures {#subsetting-datastructures .unnumbered}](section/00/practice/03-subsetting-datastructures-subsetting-datastructures-unnumber.md)
-    - [Vectorized calculations {#vectorized-calculations .unnumbered}](section/00/practice/04-vectorized-calculations-vectorized-calculations-unnumbered.md)
-    - [Using apply, sapply, and lapply {#using-apply-sapply-and-lapply .unnumbered}](section/00/practice/05-using-apply-sapply-and-lapply-using-apply-sapply-and-lapply.md)
-    - [Functions {#functions .unnumbered}](section/00/practice/06-functions-functions-unnumbered.md)
-    - [Loading (and saving) data {#loading-and-saving-data .unnumbered}](section/00/practice/07-loading-and-saving-data-loading-and-saving-data-unnumbered.md)
+    - [Creating datastructures](section/00/practice/02-creating-datastructures.md)
+    - [Subsetting datastructures](section/00/practice/03-subsetting-datastructures.md)
+    - [Vectorized calculations](section/00/practice/04-vectorized-calculations.md)
+    - [Using apply, sapply, and lapply](section/00/practice/05-using-apply-sapply-and-lapply.md)
+    - [Functions](section/00/practice/06-functions.md)
+    - [Loading (and saving) data](section/00/practice/07-loading-and-saving-data.md)
 
 ### section/01
 

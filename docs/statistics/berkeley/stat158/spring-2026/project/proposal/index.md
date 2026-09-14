@@ -15,8 +15,8 @@ converted: '2026-09-14'
 Split into 3 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Proposal Part 02 —](02-proposal-part-02.md)
-3. [Structure of Proposal {.anchored anchor-id="structure-of-proposal"}](03-structure-of-proposal-anchored-anchor-id-structure-of-propos.md)
+2. [How are experiments run in section?](02-how-are-experiments-run-in-section.md)
+3. [Structure of Proposal](03-structure-of-proposal.md)
 
 ---
 

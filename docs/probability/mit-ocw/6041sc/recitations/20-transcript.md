@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Convergence in Probability Example**
-
 In this problem, we're given a random variable X which has a uniform distribution in the interval negative 1 to 1. In other words, if we were to draw out the PDF of X, we see that in the interval negative 1 to 1, it has value 1/2. Now we're given a sequence random variables X1, X2, and so on, where each Xi has the same distribution as X and different Xi's are independent.
 
 For part a, we would like to know if the sequence Xi converges to some number-- let's call it c-in probability as i goes to infinity-- whether this is true. Let's first recall the definition of convergence in probability. If this does happen, then by definition, we'll have that for every epsilon greater than 0, the probability Xi minus c greater equal to epsilon, this quantity will go to 0 in the limit of i going to infinity. In other words, with very high probability, we will find Xi to be very concentrated around the number c if this were to be the PDF of Xi.

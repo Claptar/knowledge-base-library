@@ -786,4 +786,4 @@ for (protName in sigNames)
 
 ---
 
-[← Outline {-}](02-outline.md) · [Up: contents](index.md) · [Experimental Design →](04-experimental-design.md)
+[← Outline](02-outline.md) · [Up: contents](index.md) · [Experimental Design →](04-experimental-design.md)

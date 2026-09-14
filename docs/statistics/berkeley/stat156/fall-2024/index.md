@@ -18,12 +18,12 @@ Converted material from [https://github.com/berkeley-stat156/fall-2024.git](http
 
 ## Contents
 
-- [Hw 01 —](HW1.md)
-- [Hw 02 —](HW2.md)
-- [Hw 03 —](HW3.md)
-- [Hw 04 —](HW4.md)
-- [Hw 05 —](HW5.md)
-- [Hw 06 —](HW6.md)
+- [Stat 156 HW #1](HW1.md)
+- [Stat 156 HW #2 Due 9/24/2024 by 11:59 pm PT](HW2.md)
+- [Stat 156 HW #3](HW3.md)
+- [Stat 156 HW #4 Due 10/22/2024 by 11:59 pm PT](HW4.md)
+- [Stat 156 HW #5](HW5.md)
+- [Stat 156 HW #4 Due 11/26/2024 by 11:59 pm PT](HW6.md)
 - **ProjectGuidelines**
     - [Introduction](ProjectGuidelines/01-introduction.md)
     - [Paper summary and summary statistics table](ProjectGuidelines/02-paper-summary-and-summary-statistics-table.md)
@@ -35,7 +35,7 @@ Converted material from [https://github.com/berkeley-stat156/fall-2024.git](http
     - [Results & Discussion](ProjectGuidelines/08-results-discussion.md)
     - [Robustness Check](ProjectGuidelines/09-robustness-check.md)
     - [Suggested (Observational Studies) Papers for Replication](ProjectGuidelines/10-suggested-observational-studies-papers-for-replication.md)
-- [VideoGuidelines](VideoGuidelines.md)
+- [Stat 256 Paper Presentation Guidelines](VideoGuidelines.md)
 - **assignments**
     - [Evaluation](assignments/01-evaluation.md)
     - [Papers](assignments/02-papers.md)

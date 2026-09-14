@@ -16,4 +16,4 @@ layer = nn.Conv1d(in_channels=1, out_channels=4, kernel_size=3)
 
 ---
 
-[← Stat 153/248 - Homework 5 - YOUR NAME HERE {-}](01-stat-153-248---homework-5---your-name-here.md) · [Up: contents](index.md) · [Apply it to a batch of 2 univariate signals of length 10 →](03-apply-it-to-a-batch-of-2-univariate-signals-of-length-10.md)
+[← Stat 153/248 - Homework 5 - YOUR NAME HERE](01-stat-153-248---homework-5---your-name-here.md) · [Up: contents](index.md) · [Apply it to a batch of 2 univariate signals of length 10 →](03-apply-it-to-a-batch-of-2-univariate-signals-of-length-10.md)

@@ -20,4 +20,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Confidence Intervals {#confidence-intervals-1}](02-confidence-intervals-confidence-intervals-1.md) · [Up: contents](index.md) · [install.packages("remotes") →](04-install-packages-remotes.md)
+[← Confidence Intervals](02-confidence-intervals.md) · [Up: contents](index.md) · [install.packages("remotes") →](04-install-packages-remotes.md)

@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [14] "/system/linux/lib/R/3.2/x86_64/site-library/SCF"
+
 
 ---
 

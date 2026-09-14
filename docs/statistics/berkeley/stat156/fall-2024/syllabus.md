@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`syllabus.qmd`](https://github.com/berkeley-stat156/fall-2024/blob/bbfe05b00bcc6fcbcf3140ad89cda2c5b36ed75e/syllabus.qmd) · **Licence:** CC BY-NC 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
 
-# Navigation
-
 - About Stat 156/256
 - [Syllabus for Stat 156](#syllabus-for-stat-156)
 - [Syllabus for Stat 256](#syllabus-for-stat-256)

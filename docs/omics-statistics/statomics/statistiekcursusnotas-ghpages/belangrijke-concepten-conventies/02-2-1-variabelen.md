@@ -28,4 +28,4 @@ In de praktijk wil men vaak numerieke rangen toekennen aan de verschillende waar
 
 ---
 
-[← Introduction](01-introduction.md) · [Up: contents](index.md) · [2.2 Populatie {#populatie} →](03-2-2-populatie-populatie.md)
+[← Introduction](01-introduction.md) · [Up: contents](index.md) · [2.2 Populatie →](03-2-2-populatie.md)

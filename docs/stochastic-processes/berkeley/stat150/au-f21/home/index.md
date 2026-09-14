@@ -1,5 +1,5 @@
 ---
-title: Course information {#course-information}
+title: Course information
 source: https://www.stat.berkeley.edu/~bensonau/f21.150/index.html
 source_file: sources/berkeley-stat150/au-f21/index.html
 licence: unresolved
@@ -8,16 +8,16 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Course information {#course-information}
+# Course information
 
 **Source:** [`index.html`](https://www.stat.berkeley.edu/~bensonau/f21.150/index.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
 
 Split into 4 sections.
 
-1. [Course information {#course-information}](01-course-information-course-information.md)
-2. [Exam schedule {#exam-schedule}](02-exam-schedule-exam-schedule.md)
-3. [Homework assignments {#homework-assignments}](03-homework-assignments-homework-assignments.md)
-4. [Course Calendar {#course-calendar}](04-course-calendar-course-calendar.md)
+1. [Course information](01-course-information.md)
+2. [Exam schedule](02-exam-schedule.md)
+3. [Homework assignments](03-homework-assignments.md)
+4. [Course Calendar](04-course-calendar.md)
 
 ---
 

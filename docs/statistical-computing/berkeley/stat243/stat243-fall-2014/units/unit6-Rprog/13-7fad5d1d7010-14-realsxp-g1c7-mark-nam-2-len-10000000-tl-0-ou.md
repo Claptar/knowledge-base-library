@@ -17,7 +17,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## @7fad5d1d7010 14 REALSXP g1c7 [MARK,NAM(2)] (len=10000000, tl=0) out <- **f** (y)
+
 
 ---
 

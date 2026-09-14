@@ -39,4 +39,4 @@ Boardwork Debrief
 
 ---
 
-[← Adaptive Designs {#adaptive-designs .title}](01-adaptive-designs-adaptive-designs-title.md) · [Up: contents](index.md)
+[← Adaptive Designs](01-adaptive-designs.md) · [Up: contents](index.md)

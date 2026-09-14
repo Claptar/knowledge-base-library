@@ -33,4 +33,4 @@ n <- 77; alpha <- 0.05; beta <- 0.1; p0 <- 0.05; p1 <- 0.15
 
 ---
 
-[← Slides Part 01 —](01-slides-part-01.md) · [Up: contents](index.md) · [find cn →](03-find-cn.md)
+[← Sequential Testing for Experimental Design](01-sequential-testing-for-experimental-design.md) · [Up: contents](index.md) · [find cn →](03-find-cn.md)

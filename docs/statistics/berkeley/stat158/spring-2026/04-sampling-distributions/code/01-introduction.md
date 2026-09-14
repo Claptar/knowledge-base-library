@@ -72,4 +72,4 @@ Note that the Average Treatment Effect (ATE), 14, our estimand, can either be ex
 
 ---
 
-[Up: contents](index.md) · [A single experiment {.anchored anchor-id="a-single-experiment"} →](02-a-single-experiment-anchored-anchor-id-a-single-experiment.md)
+[Up: contents](index.md) · [A single experiment →](02-a-single-experiment.md)

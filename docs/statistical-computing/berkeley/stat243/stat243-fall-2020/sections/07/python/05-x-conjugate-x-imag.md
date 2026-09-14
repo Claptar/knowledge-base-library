@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`sections/07/python.md`](https://github.com/berkeley-stat243/stat243-fall-2020/blob/fd024cc8537586f4869f79be1492009acfe62d76/sections/07/python.md) · **Licence:** unresolved · Converted 2026-09-14 from `.md` (lossless)
 
-# x.conjugate         x.imag
+
 
 ---
 

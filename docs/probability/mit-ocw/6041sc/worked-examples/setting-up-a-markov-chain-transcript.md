@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Setting Up a Markov Chain**
-
 Hi. In this problem, we're going to practice setting up a Markov chain by going fishing in this lake, which has n fish in it, some of which are green. And the rest of the fish are blue. So, what we do is, every day we go to this lake, and we catch exactly 1 fish. And all the fish are equally likely to be the 1 that's caught.
 
 Now, if we catch a green fish, we paint it blue, and we throw back into the lake. And if we catch a blue fish, we just keep it blue, and we also throw it back.

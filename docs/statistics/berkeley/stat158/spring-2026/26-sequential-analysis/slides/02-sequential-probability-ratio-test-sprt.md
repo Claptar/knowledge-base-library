@@ -88,4 +88,4 @@ log_lr
 
 ---
 
-[← Sequential Analysis {#sequential-analysis .title}](01-sequential-analysis-sequential-analysis-title.md) · [Up: contents](index.md) · [SPRT thresholds →](03-sprt-thresholds.md)
+[← Sequential Analysis](01-sequential-analysis.md) · [Up: contents](index.md) · [SPRT thresholds →](03-sprt-thresholds.md)

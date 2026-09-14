@@ -17,7 +17,7 @@ Split into 4 sections.
 1. [Comparison of $g$ groups](01-comparison-of-groups.md)
 2. [DMH Voorbeeld](02-dmh-voorbeeld.md)
 3. [Kruskal-Wallis Rank Test](03-kruskal-wallis-rank-test.md)
-4. [[Home](https://gtpb.github.io/PSLS20/) {-}](04-home-https-gtpb-github-io-psls20.md)
+4. [[Home](https://gtpb.github.io/PSLS20/)](04-home-https-gtpb-github-io-psls20.md)
 
 ---
 

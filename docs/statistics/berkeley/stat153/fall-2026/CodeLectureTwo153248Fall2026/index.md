@@ -34,7 +34,7 @@ Split into 39 sections.
 18. [RSS for a given change point c](18-rss-for-a-given-change-point-c.md)
 19. [Try all possible change points](19-try-all-possible-change-points.md)
 20. [Best change point](20-best-change-point.md)
-21. [predicted populations y{n+1},...,y{n+168}](21-predicted-populations-y-n-1-y-n-168.md)
+21. [predicted populations y{n+1},...,y](21-predicted-populations-y-n-1-y.md)
 22. [Growth rates](22-growth-rates.md)
 23. [Dates corresponding to the growth rates](23-dates-corresponding-to-the-growth-rates.md)
 24. [RSS for two change points c1 and c2](24-rss-for-two-change-points-c1-and-c2.md)

@@ -67,4 +67,4 @@ We will use the Rsubread read mapper because that is avaible in R for all platfo
 
 ---
 
-[← Contents {#contents}](02-contents-contents.md) · [Up: contents](index.md) · [2 Get info on experiment →](04-2-get-info-on-experiment.md)
+[← Contents](02-contents.md) · [Up: contents](index.md) · [2 Get info on experiment →](04-2-get-info-on-experiment.md)

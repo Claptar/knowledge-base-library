@@ -25,7 +25,7 @@ Split into 12 sections.
 9. [Direct cholesterol example](09-direct-cholesterol-example.md)
 10. [Statistics](10-statistics.md)
 11. [Convention](11-convention.md)
-12. [[Home](https://gtpb.github.io/PSLS20/) {-}](12-home-https-gtpb-github-io-psls20.md)
+12. [[Home](https://gtpb.github.io/PSLS20/)](12-home-https-gtpb-github-io-psls20.md)
 
 ---
 

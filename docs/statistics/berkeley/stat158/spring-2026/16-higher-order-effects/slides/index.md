@@ -1,5 +1,5 @@
 ---
-title: Higher Order Factorial Designs {#higher-order-factorial-designs .title}
+title: Higher Order Factorial Designs
 source: https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/16-higher-order-effects/slides.html
 source_file: sources/berkeley-stat158/spring-2026/16-higher-order-effects/slides.html
 licence: unresolved
@@ -8,13 +8,13 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Higher Order Factorial Designs {#higher-order-factorial-designs .title}
+# Higher Order Factorial Designs
 
 **Source:** [`16-higher-order-effects/slides.html`](https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/16-higher-order-effects/slides.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
 
 Split into 13 sections.
 
-1. [Higher Order Factorial Designs {#higher-order-factorial-designs .title}](01-higher-order-factorial-designs-higher-order-factorial-design.md)
+1. [Higher Order Factorial Designs](01-higher-order-factorial-designs.md)
 2. [Exploratory Data Analysis](02-exploratory-data-analysis.md)
 3. [Interaction Plots](03-interaction-plots.md)
 4. [Time and Pressure](04-time-and-pressure.md)

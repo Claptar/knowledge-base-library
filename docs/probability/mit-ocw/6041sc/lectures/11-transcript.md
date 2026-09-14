@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 11**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high-quality, educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 PROFESSOR: Good morning. So today we're going to continue the subject from last time. So we're going to talk about derived distributions a little more, how to derive the distribution of a function of a random variable. So last time we discussed a couple of examples in which we had a function of a single variable. And we found the distribution of Y, if we're told the distribution of X.

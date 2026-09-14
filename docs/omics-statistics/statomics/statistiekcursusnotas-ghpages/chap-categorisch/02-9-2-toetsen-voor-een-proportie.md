@@ -255,4 +255,4 @@ Voor de Saksen populatie besluiten we op het 5% significantieniveau dat er meer 
 
 ---
 
-[← 9.1 Inleiding {#inleiding}](01-9-1-inleiding-inleiding.md) · [Up: contents](index.md) · [9.3 Toets voor associatie tussen 2 kwalitatieve variabelen →](03-9-3-toets-voor-associatie-tussen-2-kwalitatieve-variabelen.md)
+[← 9.1 Inleiding](01-9-1-inleiding.md) · [Up: contents](index.md) · [9.3 Toets voor associatie tussen 2 kwalitatieve variabelen →](03-9-3-toets-voor-associatie-tussen-2-kwalitatieve-variabelen.md)

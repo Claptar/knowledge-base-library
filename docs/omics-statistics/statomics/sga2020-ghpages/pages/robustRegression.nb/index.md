@@ -15,7 +15,7 @@ converted: '2026-09-14'
 Split into 8 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Robust Regression {#robust-regression .title .toc-ignore}](02-robust-regression-robust-regression-title-toc-ignore.md)
+2. [Robust Regression](02-robust-regression.md)
 3. [Robust regression in R](03-robust-regression-in-r.md)
 4. [add outlier at high leverage point](04-add-outlier-at-high-leverage-point.md)
 5. [Implement it yourself](05-implement-it-yourself.md)

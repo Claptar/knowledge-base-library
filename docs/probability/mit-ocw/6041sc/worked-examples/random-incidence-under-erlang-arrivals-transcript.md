@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation 1: Random Incidence Under Erlang Arrivals**
-
 Hi. In this problem, we're going to look at random incidence under Erlang arrivals. First, let's parse what that means. In a Poisson process, remember, the time between arrivals, or the interarrival time, is distributed as an exponential random variable. And random incidence for a Poisson process refers to the somewhat surprising result that when you consider a specific time, say, T-star, then the length of the inter-arrival interval that contains that time T-star is not distributed as an exponential random variable. It's actually distributed as an Erlang random variable of order 2 or it's distributed as a sum of two exponential random variables. And the reason for that is that it comprises of two parts. One is the time since the last arrival until T-star, which is exponentially distributed, and the time from T-star until the next arrival, which is also exponentially distributed.
 
 So that brings us to a review of what Erlang random variables are. An Erlang random variable of order k is just the sum of k independent and identically distributed exponential random variables. So to be more specific, if Ti is an exponential random variable with parameter lambda, then if you take kiid copies of Ti and add them up, and call that Yk, then Yk is an Erlang random variable of order k.

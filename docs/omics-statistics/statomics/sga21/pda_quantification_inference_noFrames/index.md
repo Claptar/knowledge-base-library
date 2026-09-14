@@ -14,7 +14,7 @@ converted: '2026-09-14'
 
 Split into 3 sections.
 
-1. [Outline {-}](01-outline.md)
+1. [Outline](01-outline.md)
 2. [Francisella tularensis experiment](02-francisella-tularensis-experiment.md)
 3. [Experimental Design](03-experimental-design.md)
 

@@ -22,4 +22,4 @@ November 14, 2023
 
 ---
 
-[Up: contents](index.md) · [Maximum likelihood Part 02 — →](02-maximum-likelihood-part-02.md)
+[Up: contents](index.md) · [1 Maximum Likelihood Estimation →](02-1-maximum-likelihood-estimation.md)

@@ -17,7 +17,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# code in calc_mean.py will calculate the mean of many random numbers from calc_mean import *
+
 
 ---
 

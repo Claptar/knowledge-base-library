@@ -17,4 +17,4 @@ all_partitions_df <- map_dfr(1:nrow(permmat), ~ anchor_mini_sched, .id = "partit
 
 ---
 
-[← Testing {#testing .title}](01-testing-testing-title.md) · [Up: contents](index.md) · [add the unique permutations as a new column and find yi, the observed responses →](03-add-the-unique-permutations-as-a-new-column-and-find-yi-the.md)
+[← Testing](01-testing.md) · [Up: contents](index.md) · [add the unique permutations as a new column and find yi, the observed responses →](03-add-the-unique-permutations-as-a-new-column-and-find-yi-the.md)

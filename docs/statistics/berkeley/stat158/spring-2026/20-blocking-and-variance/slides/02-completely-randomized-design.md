@@ -6694,4 +6694,4 @@ se_ATE
 
 ---
 
-[← Blocking and Variance {#blocking-and-variance .title}](01-blocking-and-variance-blocking-and-variance-title.md) · [Up: contents](index.md) · [Generalized Complete Block Design \$GCB$$1$$\$ →](03-generalized-complete-block-design.md)
+[← Blocking and Variance](01-blocking-and-variance.md) · [Up: contents](index.md) · [Generalized Complete Block Design \$GCB$$1$$\$ →](03-generalized-complete-block-design.md)

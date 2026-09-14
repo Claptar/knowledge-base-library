@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`pda_tutorialPreprocessing.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/pda_tutorialPreprocessing.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
 
-### References
+
 
 ---
 

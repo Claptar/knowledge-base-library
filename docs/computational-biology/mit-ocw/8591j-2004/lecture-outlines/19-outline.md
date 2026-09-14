@@ -1,5 +1,5 @@
 ---
-title: 19 outline
+title: IX Models for eukaryotic gradient sensing
 source: https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/
 source_file: sources/ocw-8591j-2004/lecture-outlines/19-outline.pdf
 licence: CC BY-NC-SA 4.0
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# 19 outline
+# IX Models for eukaryotic gradient sensing
 
 **Source:** `lecture-outlines/19-outline.pdf` from [ocw-8591j-2004](https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/) · **Licence:** CC BY-NC-SA 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# **IX Models for eukaryotic gradient sensing**
 
 The first model on gradient sensing we discussed was developed by Narang _et al._ :
 

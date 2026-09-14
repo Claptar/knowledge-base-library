@@ -36,4 +36,4 @@ An effect can be extremely statistically significant, but scientifically irrelev
 
 ---
 
-[← Assumptions](03-assumptions.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) {-} →](05-home-https-gtpb-github-io-psls20.md)
+[← Assumptions](03-assumptions.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](05-home-https-gtpb-github-io-psls20.md)

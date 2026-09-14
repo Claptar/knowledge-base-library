@@ -66,4 +66,4 @@ HA_tau <- function(df, tau, reps = 1000, seed = 4892) {
 
 ---
 
-[← Power {#power-1}](04-power-power-1.md) · [Up: contents](index.md)
+[← Power](04-power.md) · [Up: contents](index.md)

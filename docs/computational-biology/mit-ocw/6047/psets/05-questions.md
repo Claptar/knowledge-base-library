@@ -1,5 +1,6 @@
 ---
-title: 05 questions
+title: '6.047/6.878/HSPH IMI.231/HST.507 Fall 2015 Problem Set 5: Clustering Phylogenetic
+  Trees'
 source: https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/
 source_file: sources/ocw-6047/psets/05-questions.pdf
 licence: CC BY-NC-SA 4.0
@@ -8,15 +9,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# 05 questions
+# 6.047/6.878/HSPH IMI.231/HST.507 Fall 2015 Problem Set 5: Clustering Phylogenetic Trees
 
 **Source:** `psets/05-questions.pdf` from [ocw-6047](https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/) · **Licence:** CC BY-NC-SA 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# 6.047/6.878/HSPH IMI.231/HST.507 Fall 2015 Problem Set 5: Clustering Phylogenetic Trees
 
 Due Thursday, December 3 at 8pm (submit on the course website)
 

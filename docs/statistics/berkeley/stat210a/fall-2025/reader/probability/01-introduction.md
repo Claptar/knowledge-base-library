@@ -21,4 +21,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [What is a probability? {.anchored anchor-id="what-is-a-probability"} →](02-what-is-a-probability-anchored-anchor-id-what-is-a-probabili.md)
+[Up: contents](index.md) · [What is a probability? →](02-what-is-a-probability.md)

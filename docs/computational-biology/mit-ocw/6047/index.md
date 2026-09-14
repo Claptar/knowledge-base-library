@@ -291,4 +291,4 @@ Converted material from [https://ocw.mit.edu/courses/6-047-computational-biology
     - [1 Generalized suffix trees (10pts)](psets/04-questions/02-1-generalized-suffix-trees-10pts.md)
     - [2 Finding eQTLs (20pts)](psets/04-questions/03-2-finding-eqtls-20pts.md)
     - [3 Coalescent simulation (6.878 only, 10pts)](psets/04-questions/04-3-coalescent-simulation-6-878-only-10pts.md)
-- [05 questions](psets/05-questions.md)
+- [6.047/6.878/HSPH IMI.231/HST.507 Fall 2015 Problem Set 5: Clustering Phylogenetic Trees](psets/05-questions.md)

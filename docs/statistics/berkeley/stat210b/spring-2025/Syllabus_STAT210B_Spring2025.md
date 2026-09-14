@@ -1,5 +1,5 @@
 ---
-title: Syllabus STAT210B Spring2025
+title: Syllabus of STAT210B (Theoretical Statistics)
 source: https://github.com/berkeley-stat210b/spring-2025/blob/6a725bda2894de573659dd9ae38e3ca1b5cb41d5/Syllabus_STAT210B_Spring2025.pdf
 source_file: sources/berkeley-stat210b/spring-2025/Syllabus_STAT210B_Spring2025.pdf
 licence: CC BY 4.0
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Syllabus STAT210B Spring2025
+# Syllabus of STAT210B (Theoretical Statistics)
 
 **Source:** [`Syllabus_STAT210B_Spring2025.pdf`](https://github.com/berkeley-stat210b/spring-2025/blob/6a725bda2894de573659dd9ae38e3ca1b5cb41d5/Syllabus_STAT210B_Spring2025.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# Syllabus of STAT210B (Theoretical Statistics)
 
 **Instructor:** Song Mei (songmei@berkeley.edu) **Lectures:** T/Th 11:00 - 12:30. Location: Evans 334. **GSI:** Kaihao Jing (khjing@berkeley.edu)
 

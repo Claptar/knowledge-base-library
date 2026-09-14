@@ -39,10 +39,10 @@ Converted material from [https://www.stat.berkeley.edu/~bensonau/f23.150/](https
     - [Contact information](f23.150.syllabus/04-contact-information.md)
     - [Instructor: Benson Au](f23.150.syllabus/05-instructor-benson-au.md)
 - **index**
-    - [Course information {#course-information}](home/01-course-information-course-information.md)
-    - [Exam schedule {#exam-schedule}](home/02-exam-schedule-exam-schedule.md)
-    - [Homework assignments {#homework-assignments}](home/03-homework-assignments-homework-assignments.md)
-    - [Course Calendar {#course-calendar}](home/04-course-calendar-course-calendar.md)
+    - [Course information](home/01-course-information.md)
+    - [Exam schedule](home/02-exam-schedule.md)
+    - [Homework assignments](home/03-homework-assignments.md)
+    - [Course Calendar](home/04-course-calendar.md)
 
 ## Not converted
 

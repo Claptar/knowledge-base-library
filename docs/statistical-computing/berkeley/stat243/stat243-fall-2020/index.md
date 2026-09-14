@@ -89,15 +89,15 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2020.g
     - [Introduction](ps/ps2/01-introduction.md)
     - [Formatting requirements](ps/ps2/02-formatting-requirements.md)
     - [Problems](ps/ps2/03-problems.md)
-- [Ps 03 —](ps/ps3.md)
+- [Stat243: Problem Set 3, Due Friday Oct. 2, 10 am](ps/ps3.md)
 - **ps4**
     - [Introduction](ps/ps4/01-introduction.md)
     - [Problems](ps/ps4/02-problems.md)
     - [Ps 04 — Part 03 —](ps/ps4/03-ps-04-part-03.md)
-- [Ps 05 —](ps/ps5.md)
-- [Ps 06 —](ps/ps6.md)
-- [Ps 07 —](ps/ps7.md)
-- [Ps 08 —](ps/ps8.md)
+- [Stat243: Problem Set 5, Due Monday Oct. 26, 10 am](ps/ps5.md)
+- [Stat243: Problem Set 6, Due Friday November 6](ps/ps6.md)
+- [Stat243: Problem Set 7, Due Tuesday November 17](ps/ps7.md)
+- [Stat243: Problem Set 8, Due Friday December 4](ps/ps8.md)
 
 ### sections/01
 
@@ -246,7 +246,7 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2020.g
 
 ### sections/10
 
-- [Simulation](sections/10/simulation.md)
+- [Thinking about simulation studies](sections/10/simulation.md)
 
 ### sections/11
 

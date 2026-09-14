@@ -1562,4 +1562,4 @@ H_A
 
 ---
 
-[← The Null Hypothesis](02-the-null-hypothesis.md) · [Up: contents](index.md) · [Power {#power-1} →](04-power-power-1.md)
+[← The Null Hypothesis](02-the-null-hypothesis.md) · [Up: contents](index.md) · [Power →](04-power.md)

@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# login to cluster # as root ./spark-ec2 -k chris_paciorek@yahoo.com:stat243-fall-2015 -i login ${mycluster} # or you can ssh in directly if you know the URL # ssh -i ~/.ssh/stat243-fall-2015-ssh_key.pem root@ec2-54-71-204-234.us-west-2.compute.amazonaws.com
+
 
 ---
 

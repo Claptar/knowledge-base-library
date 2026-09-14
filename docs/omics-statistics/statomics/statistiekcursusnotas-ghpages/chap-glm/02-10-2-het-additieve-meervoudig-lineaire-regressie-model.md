@@ -101,4 +101,4 @@ Figuur 10.2: Fit van het additieve model met termen lcavol, lweight en svi. De f
 
 ---
 
-[← 10.1 Inleiding {#inleiding}](01-10-1-inleiding-inleiding.md) · [Up: contents](index.md) · [10.3 Besluitvorming in regressiemodellen →](03-10-3-besluitvorming-in-regressiemodellen.md)
+[← 10.1 Inleiding](01-10-1-inleiding.md) · [Up: contents](index.md) · [10.3 Besluitvorming in regressiemodellen →](03-10-3-besluitvorming-in-regressiemodellen.md)

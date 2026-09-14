@@ -22,4 +22,4 @@ November 30, 2023
 
 ---
 
-[Up: contents](index.md) · [1 Multiple Testing {.anchored number="1" anchor-id="multiple-testing"} →](02-1-multiple-testing-anchored-number-1-anchor-id-multiple-test.md)
+[Up: contents](index.md) · [1 Multiple Testing →](02-1-multiple-testing.md)

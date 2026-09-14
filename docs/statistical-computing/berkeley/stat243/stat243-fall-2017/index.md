@@ -40,7 +40,7 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2017.g
 
 ### ps
 
-- [Lo etal 2001](ps/lo_etal_2001.md)
+- [Biometrika Trust](ps/lo_etal_2001.md)
 - **ps1**
     - [Introduction](ps/ps1/01-introduction.md)
     - [Formatting requirements](ps/ps1/02-formatting-requirements.md)
@@ -56,12 +56,12 @@ Converted material from [https://github.com/berkeley-stat243/stat243-fall-2017.g
     - [ACT Post-Berkeley](ps/ps3/02-act-post-berkeley.md)
     - [Translation](ps/ps3/03-translation.md)
     - [HINTS](ps/ps3/04-hints.md)
-- [Ps 04 —](ps/ps4.md)
-- [Ps 05 —](ps/ps5.md)
-- [Ps 06 —](ps/ps6.md)
-- [Ps 07 —](ps/ps7.md)
-- [Ps 08 —](ps/ps8.md)
-- [Section questions oct30](ps/section_questions_oct30.md)
+- [Stat243: Problem Set 4, Due Wed. October 11](ps/ps4.md)
+- [Stat243: Problem Set 5, Due Wed. October 18](ps/ps5.md)
+- [Stat243: Problem Set 6, Due Wed. November 1](ps/ps6.md)
+- [Stat243: Problem Set 7, Due Fri. November 17](ps/ps7.md)
+- [Stat243: Problem Set 8, Due Friday Dec. 1](ps/ps8.md)
+- [Reading for Oct. 30 section discussion](ps/section_questions_oct30.md)
 
 ### section/s00
 

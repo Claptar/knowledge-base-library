@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: The Coupon Collector Problem**
-
 In this exercise, we'll be looking at a problem, also know as the coupons collector's problem. We have a set of K coupons, or grades in our case. And each time slot we're revealed with one random grade. And we'd like to know how long it would take for us to collect all K grades. In our case, K is equal to 6.
 
 Now the key to solving the problem is essentially twofolds. First, we'll have to find a way to intelligently define sequence random variables that captured, essentially, stopping time of this process. And then we'll employ the idea of linearity of expectations in breaking down this value in simpler terms. So let's get started.

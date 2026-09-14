@@ -19,7 +19,7 @@ Split into 6 sections.
 3. [Sum of squares and Anova](03-sum-of-squares-and-anova.md)
 4. [Post hoc analysis: Multiple comparisons of means](04-post-hoc-analysis-multiple-comparisons-of-means.md)
 5. [Conclusions: Prostacyclin example](05-conclusions-prostacyclin-example.md)
-6. [[Home](https://gtpb.github.io/PSLS20/) {-}](06-home-https-gtpb-github-io-psls20.md)
+6. [[Home](https://gtpb.github.io/PSLS20/)](06-home-https-gtpb-github-io-psls20.md)
 
 ---
 

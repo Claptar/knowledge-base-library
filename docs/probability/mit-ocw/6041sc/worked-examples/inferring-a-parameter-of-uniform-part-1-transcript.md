@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Inferring a Parameter of Uniform Part 1**
-
 Hi. In this problem, Romeo and Juliet are back and they're still looking to meet up for a date. Remember, the last time we met up with them, it was back in the beginning of the course and they were trying to meet up for a date but they weren't always punctual. So we modeled their delay as uniformly distributed between 0 and 1 hour.
 
 So now in this problem, we're actually going to look at variation. And we're going to ask the question, how do we actually know that the distribution is uniformly distributed between 0 and 1 hour? Or it could also be the case that it is uniformly distributed between 0 and half an hour, or zero and two hours. How do we actually know what this parameter of the uniform distribution is?

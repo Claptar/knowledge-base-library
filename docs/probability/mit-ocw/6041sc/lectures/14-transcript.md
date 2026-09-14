@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 14**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 PROFESSOR: So last time we started talking about random processes. A random process is a random experiment that evolves over time. And conceptually, it's important to realize that it's a single probabilistic experiment that has many stages. Actually, it has an infinite number of stages. And we discussed the simplest random process there is, the Bernoulli process, which is nothing but the sequence of Bernoulli trials-- an infinite sequence of Bernoulli trials. For example, flipping a coin over and over.

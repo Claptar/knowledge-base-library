@@ -24,4 +24,4 @@ If you are an undergraduate who wants to take this course, please fill out the [
 
 ---
 
-[Up: contents](index.md) · [Resources {.anchored anchor-id="resources"} →](02-resources-anchored-anchor-id-resources.md)
+[Up: contents](index.md) · [Resources →](02-resources.md)

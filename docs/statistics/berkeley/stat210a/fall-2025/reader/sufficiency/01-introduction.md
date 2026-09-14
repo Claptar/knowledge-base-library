@@ -25,4 +25,4 @@ Will Fithian
 
 ---
 
-[Up: contents](index.md) · [Sufficiency {#sufficiency-1 .anchored anchor-id="sufficiency"} →](02-sufficiency-sufficiency-1-anchored-anchor-id-sufficiency.md)
+[Up: contents](index.md) · [Sufficiency →](02-sufficiency.md)

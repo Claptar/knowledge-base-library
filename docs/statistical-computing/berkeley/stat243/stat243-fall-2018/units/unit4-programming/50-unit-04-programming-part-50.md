@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## function (xy, type, pch = par("pch"), lty = par("lty"), col = par("col"), ## bg = NA, cex = 1, lwd = par("lwd"), ...) ## invisible(.External.graphics(C_plotXY, xy, type, pch, lty, col, ## bg, cex, lwd, ...))
+
 
 ---
 

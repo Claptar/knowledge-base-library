@@ -90,4 +90,4 @@ target<-readRDS("elegansMetaData.rds")
 
 ---
 
-[← Contents {#contents}](02-contents-contents.md) · [Up: contents](index.md) · [2 Data Analysis →](04-2-data-analysis.md)
+[← Contents](02-contents.md) · [Up: contents](index.md) · [2 Data Analysis →](04-2-data-analysis.md)

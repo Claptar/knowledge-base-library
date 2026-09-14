@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 4**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation, or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 PROFESSOR: OK. So today's lecture will be on the subject of counting. So counting, I guess, is a pretty simple affair conceptually, but it's a topic that can also get to be pretty tricky. The reason we're going to talk about counting is that there's a lot of probability problems whose solution actually reduces to successfully counting the cardinalities of various sets.

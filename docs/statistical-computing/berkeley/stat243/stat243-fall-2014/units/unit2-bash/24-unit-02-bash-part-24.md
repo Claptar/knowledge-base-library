@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## git commit --amend --reset-author ## ## 1 file changed, 0 insertions(+), 0 deletions(-) ## rename file1.txt => file-newname.txt (100%)
+
 
 ---
 

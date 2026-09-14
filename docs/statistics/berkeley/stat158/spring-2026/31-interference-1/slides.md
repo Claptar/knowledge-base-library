@@ -1,5 +1,5 @@
 ---
-title: Slides
+title: Interference
 source: https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/31-interference-1/slides.html
 source_file: sources/berkeley-stat158/spring-2026/31-interference-1/slides.html
 licence: unresolved
@@ -8,11 +8,9 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Slides
+# Interference
 
 **Source:** [`31-interference-1/slides.html`](https://github.com/berkeley-stat158/spring-2026/blob/3863c023585286c55df692b83ee6cd5c56dbe822/31-interference-1/slides.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
-
-# Interference {#interference .title}
 
 ## Study: School Attendance
 

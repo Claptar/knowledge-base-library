@@ -22,4 +22,4 @@ November 16, 2023
 
 ---
 
-[Up: contents](index.md) · [1 Likelihood-Based Inference {.anchored number="1" anchor-id="likelihood-based-inference"} →](02-1-likelihood-based-inference-anchored-number-1-anchor-id-lik.md)
+[Up: contents](index.md) · [1 Likelihood-Based Inference →](02-1-likelihood-based-inference.md)

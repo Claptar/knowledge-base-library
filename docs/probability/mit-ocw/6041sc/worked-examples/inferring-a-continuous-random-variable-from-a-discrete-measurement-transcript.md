@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Inferring a Continuous Random Variable from a Discrete Measurement**
-
 In this problem, we're going to look at how to infer a continuous random variable from a discrete measurement. And the continuous random variable that we're interested in in this problem is q, which is given by this PDF. It's 6q times 1 minus q for a q between 0 and 1 and 0 otherwise.
 
 And here is a graph of what it looks like. It just kind of has this curve shape. And it's symmetric. And it's peak is at 1/2.

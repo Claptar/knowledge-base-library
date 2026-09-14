@@ -15,10 +15,10 @@ converted: '2026-09-14'
 Split into 5 sections.
 
 1. [Homework5 Part 01 —](01-homework5-part-01.md)
-2. [Moral: {#moral}](02-moral-moral.md)
-3. [Moral: {#moral-1}](03-moral-moral-1.md)
-4. [Moral: {#moral-2}](04-moral-moral-2.md)
-5. [Moral: {#moral-3}](05-moral-moral-3.md)
+2. [Moral](02-moral.md)
+3. [Moral](03-moral.md)
+4. [Moral](04-moral.md)
+5. [Moral](05-moral.md)
 
 ---
 

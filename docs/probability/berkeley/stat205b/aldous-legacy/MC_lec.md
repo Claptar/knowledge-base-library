@@ -1,5 +1,5 @@
 ---
-title: MC lec
+title: MARKOV CHAINS
 source: https://www.stat.berkeley.edu/~aldous/205B/MC_lec.pdf
 source_file: sources/berkeley-stat205b/aldous-legacy/MC_lec.pdf
 licence: unresolved
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# MC lec
+# MARKOV CHAINS
 
 **Source:** [`MC_lec.pdf`](https://www.stat.berkeley.edu/~aldous/205B/MC_lec.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# MARKOV CHAINS
 
 What I will talk about in class is pretty close to Durrett Chapter 5 sections 1-5. We stick to the countable state case, except where otherwise mentioned.
 

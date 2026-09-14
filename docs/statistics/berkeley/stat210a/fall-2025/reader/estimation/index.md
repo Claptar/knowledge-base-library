@@ -15,8 +15,8 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Statistical models {.anchored anchor-id="statistical-models"}](02-statistical-models-anchored-anchor-id-statistical-models.md)
-3. [Estimation in statistical models {.anchored anchor-id="estimation-in-statistical-models"}](03-estimation-in-statistical-models-anchored-anchor-id-estimati.md)
+2. [Statistical models](02-statistical-models.md)
+3. [Estimation in statistical models](03-estimation-in-statistical-models.md)
 4. [risk function of estimator (X + synth.heads) / (n + synth.flips)](04-risk-function-of-estimator-x-synth-heads-n-synth-flips.md)
 
 ---

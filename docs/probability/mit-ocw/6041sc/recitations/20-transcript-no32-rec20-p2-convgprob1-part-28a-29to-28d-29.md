@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Convergence in Probability and in the Mean Part 1**
-
 In this exercise, we'll be working with the notion of convergence in probability, as well as some other notion of converge of random variables that we'll introduce later. First type of random variable is xn, where xn has probability 1 minus 1 minus over n to be as 0 and probability of 1 over n to be a 1. And graphically, we see that we have a pretty big mess. 1 minus 1 over n at location 0, and a tiny bit somewhere here, only 1 over n. So this will be the PMF for x.
 
 On the other hand, we have the sequence of random variables, yn. Fairly similar to xn with a slight tweak. The similar part says it also has a very high probability of being at 0, mass 1 over 1 minus n. But on the off chance that yn is not at 0, it has a pretty big value n. So it has probability 1 over n of somewhere out there. So to contrast the two graphs, we see at 0, they have the same amount of mass, 1 over 1 minus n, but for y, it's all the way out there that has a small mass 1 over n. So this will be our Pyn of y.

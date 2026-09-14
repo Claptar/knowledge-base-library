@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## R6 Object of class 'tsSimClass' with 100 time points. **set.seed** (1) devs <- master$ **simulate** () **plot** (master$ **getTimes** (), devs, type = 'l', xlab = 'time', ylab = 'process values') master <- tsSimClass$ **new** (1:100, 2, 3)
+
 
 ---
 

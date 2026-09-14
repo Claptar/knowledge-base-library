@@ -18,4 +18,4 @@ Most of the information you will need is covered in modules 1-4 and 6 of the R b
 
 ---
 
-[Up: contents](index.md) · [Creating datastructures {#creating-datastructures .unnumbered} →](02-creating-datastructures-creating-datastructures-unnumbered.md)
+[Up: contents](index.md) · [Creating datastructures →](02-creating-datastructures.md)

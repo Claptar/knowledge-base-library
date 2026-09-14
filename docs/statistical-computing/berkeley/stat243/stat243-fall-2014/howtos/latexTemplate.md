@@ -1,5 +1,5 @@
 ---
-title: LatexTemplate
+title: Problem 1
 source: https://github.com/berkeley-stat243/stat243-fall-2014/blob/49fcee4ef42342d81d010e586b69d92a94bbb12f/howtos/latexTemplate.tex
 source_file: sources/berkeley-stat243/stat243-fall-2014/howtos/latexTemplate.tex
 licence: unresolved
@@ -8,11 +8,9 @@ fidelity: high
 converted: '2026-09-14'
 ---
 
-# LatexTemplate
+# Problem 1
 
 **Source:** [`howtos/latexTemplate.tex`](https://github.com/berkeley-stat243/stat243-fall-2014/blob/49fcee4ef42342d81d010e586b69d92a94bbb12f/howtos/latexTemplate.tex) · **Licence:** unresolved · Converted 2026-09-14 from `.tex` (high)
-
-# Problem 1 {#problem-1}
 
 1.  first thing
 

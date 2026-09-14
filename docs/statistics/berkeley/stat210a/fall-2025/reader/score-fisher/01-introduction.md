@@ -18,4 +18,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [1 Score Function {.anchored number="1" anchor-id="score-function"} →](02-1-score-function-anchored-number-1-anchor-id-score-function.md)
+[Up: contents](index.md) · [1 Score Function →](02-1-score-function.md)

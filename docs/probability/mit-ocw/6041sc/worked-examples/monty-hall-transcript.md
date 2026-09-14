@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: The Monty Hall Problem**
-
 Hi. In the session, we'll be solving the Monty Hall problem. And this problem is based on an old game show that was called "Let's Make a Deal." And the host of this game show, his name was Monty Hall, which is why this problem is now known as the Monty Hall problem.
 
 And this problem is actually pretty well-known, because there was some disagreement at the time over what the right answer to this problem should be. Even some really smart people didn't agree on what the right answer should be. And part of what might explain that disagreement is that they probably were considering slightly different variations of the problem, because as in all probability problems, the assumptions that you're working with are very important, because otherwise you may be solving an actually different problem. And so what we'll do first is really layout concretely what all the assumptions are, what the rules of the game are. And then we'll go through the methodology to solve for the actual answer.

@@ -44,4 +44,4 @@ Let $X_1, \ldots, X_n\overset{\text{i.i.d.}}{\sim}\text{Unif}[\mu-\sigma, \mu + 
 
 ---
 
-[Up: contents](index.md) · [Moral: {#moral} →](02-moral-moral.md)
+[Up: contents](index.md) · [Moral →](02-moral.md)

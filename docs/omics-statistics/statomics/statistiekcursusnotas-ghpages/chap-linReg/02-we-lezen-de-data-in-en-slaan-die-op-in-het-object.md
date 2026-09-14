@@ -16,4 +16,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Hoofdstuk 6 Enkelvoudige lineaire regressie {#hoofdstuk-6-enkelvoudige-lineaire-regressie}](01-hoofdstuk-6-enkelvoudige-lineaire-regressie-hoofdstuk-6-enke.md) · [Up: contents](index.md) · [met de naam borstkanker →](03-met-de-naam-borstkanker.md)
+[← Hoofdstuk 6 Enkelvoudige lineaire regressie](01-hoofdstuk-6-enkelvoudige-lineaire-regressie.md) · [Up: contents](index.md) · [met de naam borstkanker →](03-met-de-naam-borstkanker.md)

@@ -18,4 +18,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [Measure theory basics Part 02 — →](02-measure-theory-basics-part-02.md)
+[Up: contents](index.md) · [Measure theory: a rigorous grounding for probability →](02-measure-theory-a-rigorous-grounding-for-probability.md)

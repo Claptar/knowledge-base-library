@@ -86,4 +86,4 @@ g_pred_md5 = md5.predict(X_future)
 
 ---
 
-[← Try all possible change points](19-try-all-possible-change-points.md) · [Up: contents](index.md) · [predicted populations y{n+1},...,y{n+168} →](21-predicted-populations-y-n-1-y-n-168.md)
+[← Try all possible change points](19-try-all-possible-change-points.md) · [Up: contents](index.md) · [predicted populations y{n+1},...,y →](21-predicted-populations-y-n-1-y.md)

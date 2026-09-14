@@ -82,4 +82,4 @@ The answer is no: the LS imposes a constraint based on the combination of the bl
 
 ---
 
-[← Latin Squares {#latin-squares .title}](01-latin-squares-latin-squares-title.md) · [Up: contents](index.md)
+[← Latin Squares](01-latin-squares.md) · [Up: contents](index.md)

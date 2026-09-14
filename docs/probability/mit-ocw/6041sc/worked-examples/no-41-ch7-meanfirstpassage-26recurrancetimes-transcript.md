@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Tutorial: Mean First Passage and Recurrence Times**
-
 In this problem, we are looking at a student whose performance from day to day sort of oscillates according to a Markov chain. In particular, the student can either be in state 1, which is a state of being up to date, or in state 2, which is a state of being kind of fallen behind. Now, the transition probabilities between these two states are given by the numbers here, which is 0.2 from state 1 to 2, 0.6 from 2 to 1, 0.4 from 2 back to 2, and 0.8 from 1 back to state 1.
 
 The quantity we're interesting calculating is this notion of first passage time. Let me define what that means. Suppose we are looking at a time horizon of time 0, 1, 2, 3. And let's call the state of the Markov chain x of t. Suppose we start from the chain being in state 2 here.

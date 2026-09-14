@@ -18,4 +18,4 @@ converted: '2026-09-14'
 
 ---
 
-[Up: contents](index.md) · [1 Gaussian sequence model {.anchored number="1" anchor-id="gaussian-sequence-model"} →](02-1-gaussian-sequence-model-anchored-number-1-anchor-id-gaussi.md)
+[Up: contents](index.md) · [1 Gaussian sequence model →](02-1-gaussian-sequence-model.md)

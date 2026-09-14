@@ -24,4 +24,4 @@ Then, we can write the *posterior density* (distribution of $\theta$ given $X=x$
 
 ---
 
-[Up: contents](index.md) · [Moral: {#moral} →](02-moral-moral.md)
+[Up: contents](index.md) · [Moral →](02-moral.md)

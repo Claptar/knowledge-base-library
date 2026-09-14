@@ -221,4 +221,4 @@ Om het effect van een gezondheidscampagne in Wales te evalueren, werd een Engels
 
 ---
 
-[← 3.2 Steekproefdesigns {#steekproefdesigns}](02-3-2-steekproefdesigns-steekproefdesigns.md) · [Up: contents](index.md) · [3.4 Observationele studies {#observationele-studies} →](04-3-4-observationele-studies-observationele-studies.md)
+[← 3.2 Steekproefdesigns](02-3-2-steekproefdesigns.md) · [Up: contents](index.md) · [3.4 Observationele studies →](04-3-4-observationele-studies.md)

@@ -19,7 +19,7 @@ Split into 6 sections.
 3. [Salk Study](03-salk-study.md)
 4. [Scientific Method](04-scientific-method.md)
 5. [Role of Statistics in the Life Sciences](05-role-of-statistics-in-the-life-sciences.md)
-6. [[Home](https://gtpb.github.io/PSLS20/) {-}](06-home-https-gtpb-github-io-psls20.md)
+6. [[Home](https://gtpb.github.io/PSLS20/)](06-home-https-gtpb-github-io-psls20.md)
 
 ---
 

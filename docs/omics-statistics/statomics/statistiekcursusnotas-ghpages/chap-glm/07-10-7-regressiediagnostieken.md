@@ -226,4 +226,4 @@ Ga zelf na welke invloed het corrigeren van het prostaatgewicht heeft op het ges
 
 ---
 
-[← 10.6 ANOVA Tabel {#anova-tabel}](06-10-6-anova-tabel-anova-tabel.md) · [Up: contents](index.md)
+[← 10.6 ANOVA Tabel](06-10-6-anova-tabel.md) · [Up: contents](index.md)

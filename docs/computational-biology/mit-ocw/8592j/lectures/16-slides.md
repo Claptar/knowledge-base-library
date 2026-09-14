@@ -1,5 +1,5 @@
 ---
-title: 16 slides
+title: 2.4 DNA structure
 source: https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/
 source_file: sources/ocw-8592j/lectures/16-slides.pdf
 licence: CC BY-NC-SA 4.0
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# 16 slides
+# 2.4 DNA structure
 
 **Source:** `lectures/16-slides.pdf` from [ocw-8592j](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/) · **Licence:** CC BY-NC-SA 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# 2.4 DNA structure
 
 DNA molecules come in a wide range of length scales, from roughly 50,000 monomers in a λ-phage, 6 × 10<sup>9</sup> for human, to 9 × 10<sup>10</sup> nucleotides in the lily. The latter would be around thirty meters long if fully stretched. If we consider DNA as a random (non-self avoiding) chain of persistence length ξp ≈ 50 nm, its typical size would be Rg ≈ �L · Rp, coming to approximately 0.2 mm in human. Excluded volume effects would further increase the extent of the polymer. This is much larger than the size of a typical cell, and thus DNA within cells has to be highly compactified. Eukaryotes organize DNA by wrapping the chain around histone proteins (nucleosomes), which are then packed together.
 

@@ -19,4 +19,4 @@ t = np.arange(1, n_g + 1)
 
 ---
 
-[← predicted populations y{n+1},...,y{n+168}](21-predicted-populations-y-n-1-y-n-168.md) · [Up: contents](index.md) · [Dates corresponding to the growth rates →](23-dates-corresponding-to-the-growth-rates.md)
+[← predicted populations y{n+1},...,y](21-predicted-populations-y-n-1-y.md) · [Up: contents](index.md) · [Dates corresponding to the growth rates →](23-dates-corresponding-to-the-growth-rates.md)

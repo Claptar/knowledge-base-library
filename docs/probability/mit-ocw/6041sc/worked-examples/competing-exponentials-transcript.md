@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Competing Exponentials**
-
 Hi, in this problem, we're going to look at competing exponential. So we have three exponential random variables, X with parameter lambda, Y with parameters mu, and Z with parameter nu. And we want to calculate some probability. And the probability that we want to calculate is the probability that X is less than Y is less than Z.
 
 Now we can reinterpret this as 3 plus Poisson processes. Because the link between exponentials and Poisson processes is that the inter-arrival time of Poisson processes are exponentially distributed. So you can think of X being the time until the first arrival in a Poisson process with parameter lambda. And same thing for Y is the first arrival time of a Poisson process with parameter mu. The same thing for Z and nu.

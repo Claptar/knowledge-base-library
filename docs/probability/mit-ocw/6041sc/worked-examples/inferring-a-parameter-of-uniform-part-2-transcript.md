@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Inferring a Parameter of Uniform Part 2**
-
 Welcome back. So now we're going to finish the rest of this problem. For part e, we've calculated what the map and LMS estimators are. And now we're going to calculate what the conditional mean squared error is. So it's a way to measure how good these estimators are.
 
 So let's start out generically. For any estimator theta hat, the conditional MSE is-- conditional mean squared error-- is equal to this. It's the estimator minus the actual value squared conditioned on X being equal to some little x. So the mean squared error. So you take the error, which is the difference between your estimator and the true value, square it, and then take the mean. And it's conditioned on the actual value of what x is. Or, conditioned on the data that you get is.

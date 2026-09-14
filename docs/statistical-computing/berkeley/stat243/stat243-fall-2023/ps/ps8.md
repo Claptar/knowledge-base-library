@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`ps/ps8.qmd`](https://github.com/berkeley-stat243/stat243-fall-2023/blob/14ac5335a61c8e78d9c36ec381d606a22cb95bf9/ps/ps8.qmd) · **Licence:** BSD-3-Clause · Converted 2026-09-14 from `.qmd` (lossless)
 
-## Comments
-
 - This covers material in Unit 11.
 - It's due at 10 am (Pacific) on December 4, both submitted as a PDF to Gradescope as well as committed to your GitHub repository.
 - Please see PS1 for formatting and attribution requirements.

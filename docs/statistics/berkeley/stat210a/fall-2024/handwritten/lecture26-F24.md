@@ -1,5 +1,5 @@
 ---
-title: Lecture 26 — F24
+title: Outline
 source: https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture26-F24.pdf
 source_file: sources/berkeley-stat210a/fall-2024/handwritten/lecture26-F24.pdf
 licence: CC BY 4.0
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Lecture 26 — F24
+# Outline
 
 **Source:** [`handwritten/lecture26-F24.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture26-F24.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# Outline
 
 > 1 Multiple Testing 2 Family<sup>wise</sup> error rate control 3 Step<sup>down</sup> multiple testing 4 Simultaneous intervals Ideduced<sup>inference</sup>
 

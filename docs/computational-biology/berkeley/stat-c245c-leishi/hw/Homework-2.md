@@ -1,5 +1,5 @@
 ---
-title: Homework 2
+title: PH240C Homework 2
 source: https://leishi-rocks.github.io/courses/ph240c/hw/Homework-2.pdf
 source_file: sources/berkeley-stat-c245c-leishi/hw/Homework-2.pdf
 licence: unresolved
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Homework 2
+# PH240C Homework 2
 
 **Source:** [`hw/Homework-2.pdf`](https://leishi-rocks.github.io/courses/ph240c/hw/Homework-2.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# PH240C Homework 2
 
 ## Due: October 19th at 7pm to your GSI
 

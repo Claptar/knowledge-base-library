@@ -26,4 +26,4 @@ See the standing homework instructions on the course web page
 
 ---
 
-[Up: contents](index.md) · [Moral: {#moral} →](02-moral-moral.md)
+[Up: contents](index.md) · [Moral →](02-moral.md)

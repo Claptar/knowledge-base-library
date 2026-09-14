@@ -478,4 +478,4 @@ What is <span class="math inline">\$ITT\_D\$</span>?
 
 ---
 
-[← Study: Getting out the vote {data-id="quarto-animate-title"}](01-study-getting-out-the-vote-data-id-quarto-animate-title.md) · [Up: contents](index.md) · [gckdtvfbgk table { →](03-gckdtvfbgk-table.md)
+[← Study: Getting out the vote](01-study-getting-out-the-vote.md) · [Up: contents](index.md) · [gckdtvfbgk table { →](03-gckdtvfbgk-table.md)

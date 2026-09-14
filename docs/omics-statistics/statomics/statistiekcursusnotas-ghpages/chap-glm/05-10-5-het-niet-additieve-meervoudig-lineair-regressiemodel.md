@@ -124,4 +124,4 @@ Merk op dat de helling voor lcavol groter is bij patiënten met invasie van de z
 
 ---
 
-[← 10.4 Nagaan van modelveronderstellingen {#nagaan-van-modelveronderstellingen}](04-10-4-nagaan-van-modelveronderstellingen-nagaan-van-modelvero.md) · [Up: contents](index.md) · [10.6 ANOVA Tabel {#anova-tabel} →](06-10-6-anova-tabel-anova-tabel.md)
+[← 10.4 Nagaan van modelveronderstellingen](04-10-4-nagaan-van-modelveronderstellingen.md) · [Up: contents](index.md) · [10.6 ANOVA Tabel →](06-10-6-anova-tabel.md)

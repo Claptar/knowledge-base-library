@@ -1,5 +1,5 @@
 ---
-title: 23 notes
+title: '- Note Final PS'
 source: https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/
 source_file: sources/ocw-8591j-2004/lectures/23-notes.pdf
 licence: CC BY-NC-SA 4.0
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# 23 notes
+# - Note Final PS
 
 **Source:** `lectures/23-notes.pdf` from [ocw-8591j-2004](https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/) · **Licence:** CC BY-NC-SA 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# - Note Final PS
 
 For question 2(a) the value of 'k' in the final equation (Eq. 3b) needs to be rescaled.’ - Tuesday Lecture will be for questions on the last problem set (Juan)
 

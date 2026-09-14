@@ -18,4 +18,4 @@ In order to motivate the main ideas behind Bayesian inference for linear regress
 
 ---
 
-[Up: contents](index.md) · [Simple Question 1 {#simple-question-1} →](02-simple-question-1-simple-question-1.md)
+[Up: contents](index.md) · [Simple Question 1 →](02-simple-question-1.md)

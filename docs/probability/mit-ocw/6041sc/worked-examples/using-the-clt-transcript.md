@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Using the Central Limit Theorem**
-
 Hi. In this video, we're going to do some approximate calculations using the central limit theorem.
 
 We're given that Xn is the number of gadgets produced on day n by a factory. And it has a normal distribution with mean 5 and variance 9. And they're all independent and identically distributed.

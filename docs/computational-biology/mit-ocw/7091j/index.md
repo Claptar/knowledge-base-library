@@ -407,7 +407,7 @@ Converted material from [https://ocw.mit.edu/courses/7-91j-foundations-of-comput
 
 ### other
 
-- [Present tips slides](other/present-tips-slides.md)
+- [General Presentation Tips](other/present-tips-slides.md)
 
 ### psets
 
@@ -485,7 +485,7 @@ Converted material from [https://ocw.mit.edu/courses/7-91j-foundations-of-comput
 
 ### recitations
 
-- [2014 02 11 slides](recitations/2014-02-11-slides.md)
+- [6.874/… Recitation 1](recitations/2014-02-11-slides.md)
 - [2014 02 12 slides](recitations/2014-02-12-slides.md)
 - **2014-02-14-slides**
     - [Introduction](recitations/2014-02-14-slides/01-introduction.md)
@@ -758,7 +758,7 @@ Converted material from [https://ocw.mit.edu/courses/7-91j-foundations-of-comput
     - [Good questions. Any other questions?](recordings/j1s9jfzkfqu-transcript/10-good-questions-any-other-questions.md)
     - [Questions?](recordings/j1s9jfzkfqu-transcript/11-questions.md)
 - [Kkyrr0cfreg captions](recordings/kkyrr0cfreg-captions.md)
-- [Kkyrr0cfreg transcript](recordings/kkyrr0cfreg-transcript.md)
+- [MITOCW | watch?v=kKyrR0cFrEg](recordings/kkyrr0cfreg-transcript.md)
 - [Kun6rj21hno captions](recordings/kun6rj21hno-captions.md)
 - **kun6rj21hno-transcript**
     - [PROFESSOR](recordings/kun6rj21hno-transcript/01-professor.md)
@@ -812,7 +812,7 @@ Converted material from [https://ocw.mit.edu/courses/7-91j-foundations-of-comput
     - [PROFESSOR](recordings/pdyarrnwi7i-transcript/01-professor.md)
     - [AUDIENCE](recordings/pdyarrnwi7i-transcript/02-audience.md)
 - [Rbpckbevk3u captions](recordings/rbpckbevk3u-captions.md)
-- [Rbpckbevk3u transcript](recordings/rbpckbevk3u-transcript.md)
+- [MITOCW | watch?v=RBPcKbEvK3U](recordings/rbpckbevk3u-transcript.md)
 - [So6mk fcp4e captions](recordings/so6mk-fcp4e-captions.md)
 - **so6mk-fcp4e-transcript**
     - [PROFESSOR](recordings/so6mk-fcp4e-transcript/01-professor.md)

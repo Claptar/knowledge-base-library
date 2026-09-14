@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`sections/05/debugging.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2020/blob/fd024cc8537586f4869f79be1492009acfe62d76/sections/05/debugging.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
 
-# estimate standard error with our bootstrap function
+
 
 ---
 

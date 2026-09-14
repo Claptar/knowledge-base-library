@@ -285,4 +285,4 @@ mean(abs(stats) >= obs_stat)
 
 ---
 
-[← Crossover Designs {#crossover-designs .title}](01-crossover-designs-crossover-designs-title.md) · [Up: contents](index.md) · [Model-Based Inference →](03-model-based-inference.md)
+[← Crossover Designs](01-crossover-designs.md) · [Up: contents](index.md) · [Model-Based Inference →](03-model-based-inference.md)

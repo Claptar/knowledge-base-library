@@ -15,12 +15,12 @@ converted: '2026-09-14'
 Split into 7 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 Gaussian sequence model {.anchored number="1" anchor-id="gaussian-sequence-model"}](02-1-gaussian-sequence-model-anchored-number-1-anchor-id-gaussi.md)
-3. [Empirical bayes Part 03 —](03-empirical-bayes-part-03.md)
-4. [3 Empirical Bayes {.anchored number="3" anchor-id="empirical-bayes"}](04-3-empirical-bayes-anchored-number-3-anchor-id-empirical-baye.md)
-5. [4 James-Stein Estimator {.anchored number="4" anchor-id="james-stein-estimator"}](05-4-james-stein-estimator-anchored-number-4-anchor-id-james-st.md)
-6. [5 Stein’s Lemma {.anchored number="5" anchor-id="steins-lemma-1"}](06-5-stein-s-lemma-anchored-number-5-anchor-id-steins-lemma-1.md)
-7. [Empirical bayes Part 07 —](07-empirical-bayes-part-07.md)
+2. [1 Gaussian sequence model](02-1-gaussian-sequence-model.md)
+3. [2 Stein’s Unbiased Risk Estimator](03-2-stein-s-unbiased-risk-estimator.md)
+4. [3 Empirical Bayes](04-3-empirical-bayes.md)
+5. [4 James-Stein Estimator](05-4-james-stein-estimator.md)
+6. [5 Stein’s Lemma](06-5-stein-s-lemma.md)
+7. [6 Stein’s Unbiased Risk Estimator (SURE)](07-6-stein-s-unbiased-risk-estimator-sure.md)
 
 ---
 

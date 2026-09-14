@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 22**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu
 
 PROFESSOR: So we're going to finish today our discussion of Bayesian Inference, which we started last time. As you probably saw there's not a huge lot of concepts that we're introducing at this point in terms of specific skills of calculating probabilities. But, rather, it's more of an interpretation and setting up the framework.

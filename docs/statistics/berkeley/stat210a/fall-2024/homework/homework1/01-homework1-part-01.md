@@ -46,4 +46,4 @@ Because the Lebesgue measure satisfies properties (i)–(iii), it follows that $
 
 ---
 
-[Up: contents](index.md) · [Moral: {#moral} →](02-moral-moral.md)
+[Up: contents](index.md) · [Moral →](02-moral.md)

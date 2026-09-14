@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [1] "00111111 10111111 10011010 11011101 00010101 11011111 00110100 10000111" **bits** (0.12345678123456782)
+
 
 ---
 

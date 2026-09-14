@@ -15,13 +15,13 @@ converted: '2026-09-14'
 Split into 8 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Sufficiency {#sufficiency-1 .anchored anchor-id="sufficiency"}](02-sufficiency-sufficiency-1-anchored-anchor-id-sufficiency.md)
-3. [Visualization of sufficiency {.anchored anchor-id="visualization-of-sufficiency"}](03-visualization-of-sufficiency-anchored-anchor-id-visualizatio.md)
-4. [Factorization theorem {.anchored anchor-id="factorization-theorem"}](04-factorization-theorem-anchored-anchor-id-factorization-theor.md)
-5. [Sufficiency Part 05 —](05-sufficiency-part-05.md)
-6. [Examples {.anchored anchor-id="examples"}](06-examples-anchored-anchor-id-examples.md)
-7. [Sufficiency Part 07 —](07-sufficiency-part-07.md)
-8. [Minimal sufficiency {.anchored anchor-id="minimal-sufficiency"}](08-minimal-sufficiency-anchored-anchor-id-minimal-sufficiency.md)
+2. [Sufficiency](02-sufficiency.md)
+3. [Visualization of sufficiency](03-visualization-of-sufficiency.md)
+4. [Factorization theorem](04-factorization-theorem.md)
+5. [Statement for general \$\\mathcal{X}\$](05-statement-for-general.md)
+6. [Examples](06-examples.md)
+7. [Sufficient statistics under i.i.d. sampling](07-sufficient-statistics-under-i-i-d-sampling.md)
+8. [Minimal sufficiency](08-minimal-sufficiency.md)
 
 ---
 

@@ -15,10 +15,10 @@ converted: '2026-09-14'
 Split into 5 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 Minimax Risk Estimator {.anchored number="1" anchor-id="minimax-risk-estimator"}](02-1-minimax-risk-estimator-anchored-number-1-anchor-id-minimax.md)
-3. [2 Least Favorable Priors {.anchored number="2" anchor-id="least-favorable-priors"}](03-2-least-favorable-priors-anchored-number-2-anchor-id-least-f.md)
-4. [3 Least Favorable Sequence {.anchored number="3" anchor-id="least-favorable-sequence"}](04-3-least-favorable-sequence-anchored-number-3-anchor-id-least.md)
-5. [4 Practical Applications {.anchored number="4" anchor-id="practical-applications"}](05-4-practical-applications-anchored-number-4-anchor-id-practic.md)
+2. [1 Minimax Risk Estimator](02-1-minimax-risk-estimator.md)
+3. [2 Least Favorable Priors](03-2-least-favorable-priors.md)
+4. [3 Least Favorable Sequence](04-3-least-favorable-sequence.md)
+5. [4 Practical Applications](05-4-practical-applications.md)
 
 ---
 

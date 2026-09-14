@@ -12,7 +12,7 @@ converted: '2026-09-14'
 
 **Source:** [`Lab10.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/Lab10.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
 
-# (note there is no intercept term phi_0)
+
 
 ---
 

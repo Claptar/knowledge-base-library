@@ -1,5 +1,5 @@
 ---
-title: Stat 153/248 - Homework 5 - YOUR NAME HERE {-}
+title: Stat 153/248 - Homework 5 - YOUR NAME HERE
 source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Homework5.pdf
 source_file: sources/berkeley-stat153/spring-2026/public/homework/Homework5.pdf
 licence: CC BY 4.0
@@ -8,7 +8,7 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Stat 153/248 - Homework 5 - YOUR NAME HERE {-}
+# Stat 153/248 - Homework 5 - YOUR NAME HERE
 
 **Source:** [`public/homework/Homework5.pdf`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Homework5.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
@@ -18,7 +18,7 @@ converted: '2026-09-14'
 
 Split into 30 sections.
 
-1. [Stat 153/248 - Homework 5 - YOUR NAME HERE {-}](01-stat-153-248---homework-5---your-name-here.md)
+1. [Stat 153/248 - Homework 5 - YOUR NAME HERE](01-stat-153-248---homework-5---your-name-here.md)
 2. [Apply it to a batch of 2 univariate signals of length 10](02-apply-it-to-a-batch-of-2-univariate-signals-of-length-10.md)
 3. [Before running the lines below, predict](03-before-running-the-lines-below-predict.md)
 4. [1. What output shape do you expect if kernelsize is 5 instead of 3?](04-1-what-output-shape-do-you-expect-if-kernelsize-is-5-instead.md)

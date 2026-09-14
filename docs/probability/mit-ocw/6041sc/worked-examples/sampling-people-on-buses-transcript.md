@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Sampling People on Buses**
-
 Hi. In this problem, we're dealing with buses of students going to a job convention. And in the problem, we'll be exercising our knowledge of PMFs-- probability mass functions. So we'll get a couple of opportunities to write out some PMFs, and also calculating expectations or expected values. And also, importantly, we'll actually be exercising our intuition to help us not just rely on numbers, but also to just have a sense of what the answers to some probability questions should be.
 
 So the problem specifically deals with four buses of students. So we have buses, and in each one carries a different number of students. So the first one carries 40 students, the second one 33, the third one has 25, and the last one has 50 students for a total of 148 students. And because these students are smart, and they like probability, they are interested in a couple questions.

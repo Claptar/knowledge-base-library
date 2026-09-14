@@ -1,5 +1,5 @@
 ---
-title: Q1. Autocovariance, autocorrelation, and stationarity {-}
+title: Q1. Autocovariance, autocorrelation, and stationarity
 source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat248_Homework1.ipynb
 source_file: sources/berkeley-stat153/spring-2026/public/homework/Stat248_Homework1.ipynb
 licence: CC BY 4.0
@@ -8,7 +8,7 @@ fidelity: lossless
 converted: '2026-09-14'
 ---
 
-# Q1. Autocovariance, autocorrelation, and stationarity {-}
+# Q1. Autocovariance, autocorrelation, and stationarity
 
 **Source:** [`public/homework/Stat248_Homework1.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat248_Homework1.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
 
@@ -22,4 +22,4 @@ Let $w_t$ be i.i.d. with $\mathbb{E}[w_t]=0$ and $\operatorname{Var}(w_t)=\sigma
 
 ---
 
-[← Collaborated with: {-}](02-collaborated-with.md) · [Up: contents](index.md) · [Q2. Data simulation {-} →](04-q2-data-simulation.md)
+[← Collaborated with](02-collaborated-with.md) · [Up: contents](index.md) · [Q2. Data simulation →](04-q2-data-simulation.md)

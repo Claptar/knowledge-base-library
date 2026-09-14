@@ -88,4 +88,4 @@ De testen geven weer dat de associaties tussen lpsa<span class="math inline">\$\
 
 ---
 
-[← 10.2 Het additieve meervoudig lineaire regressie model](02-10-2-het-additieve-meervoudig-lineaire-regressie-model.md) · [Up: contents](index.md) · [10.4 Nagaan van modelveronderstellingen {#nagaan-van-modelveronderstellingen} →](04-10-4-nagaan-van-modelveronderstellingen-nagaan-van-modelvero.md)
+[← 10.2 Het additieve meervoudig lineaire regressie model](02-10-2-het-additieve-meervoudig-lineaire-regressie-model.md) · [Up: contents](index.md) · [10.4 Nagaan van modelveronderstellingen →](04-10-4-nagaan-van-modelveronderstellingen.md)

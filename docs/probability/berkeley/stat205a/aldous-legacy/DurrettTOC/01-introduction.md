@@ -25,4 +25,4 @@ Index of \\href{http://www.stat.berkeley.edu/users/pitman}{Pitman}'s Graduate Pr
 
 ---
 
-[Up: contents](index.md) · [DurrettTOC Part 02 — →](02-durretttoc-part-02.md)
+[Up: contents](index.md) · [Index of [Pitman](http://www.stat.berkeley.edu/users/pitman)'s Graduate Probability Notes →](02-index-of-pitman-http-www-stat-berkeley-edu-users-pitman-s-gr.md)

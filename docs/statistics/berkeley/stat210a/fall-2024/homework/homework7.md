@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`homework/homework7.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/homework/homework7.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
 
-#### Instructions: {#instructions}
-
 See the standing homework instructions on the course web page
 
 **Problem 1** (Upper-bounding $\theta$).

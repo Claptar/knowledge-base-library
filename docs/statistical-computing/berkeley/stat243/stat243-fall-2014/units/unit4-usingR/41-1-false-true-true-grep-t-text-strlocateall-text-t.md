@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## [1] FALSE TRUE TRUE _## grep('[ \t]', text)_ **str_locate_all** (text, "[ \t]")
+
 
 ---
 

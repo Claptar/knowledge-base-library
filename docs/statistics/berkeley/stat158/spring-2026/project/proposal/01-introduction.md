@@ -37,4 +37,4 @@ Don’t get too caught up into intricate details of every element you need to ta
 
 ---
 
-[Up: contents](index.md) · [Proposal Part 02 — →](02-proposal-part-02.md)
+[Up: contents](index.md) · [How are experiments run in section? →](02-how-are-experiments-run-in-section.md)

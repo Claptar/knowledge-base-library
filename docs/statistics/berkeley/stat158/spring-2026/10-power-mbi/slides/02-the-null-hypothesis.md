@@ -3172,4 +3172,4 @@ right_threshold <- quantile(H_0, .975)
 
 ---
 
-[← Power {#power .title}](01-power-power-title.md) · [Up: contents](index.md) · [An Alternative Hypothesis →](03-an-alternative-hypothesis.md)
+[← Power](01-power.md) · [Up: contents](index.md) · [An Alternative Hypothesis →](03-an-alternative-hypothesis.md)

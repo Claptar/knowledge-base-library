@@ -20,4 +20,4 @@ Het makkelijkst om over een toevalsveranderlijke <span class="math inline">\$X\$
 
 ---
 
-[← 2.2 Populatie {#populatie}](03-2-2-populatie-populatie.md) · [Up: contents](index.md) · [2.4 Beschrijven van de populatie →](05-2-4-beschrijven-van-de-populatie.md)
+[← 2.2 Populatie](03-2-2-populatie.md) · [Up: contents](index.md) · [2.4 Beschrijven van de populatie →](05-2-4-beschrijven-van-de-populatie.md)

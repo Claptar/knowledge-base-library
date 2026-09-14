@@ -1,5 +1,5 @@
 ---
-title: Present tips slides
+title: General Presentation Tips
 source: https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/
 source_file: sources/ocw-7091j/other/present-tips-slides.pdf
 licence: CC BY-NC-SA 4.0
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Present tips slides
+# General Presentation Tips
 
 **Source:** `other/present-tips-slides.pdf` from [ocw-7091j](https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/) · **Licence:** CC BY-NC-SA 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# **General Presentation Tips:**
 
 - Put a title at the top of each slide that states the slide’s main point
 

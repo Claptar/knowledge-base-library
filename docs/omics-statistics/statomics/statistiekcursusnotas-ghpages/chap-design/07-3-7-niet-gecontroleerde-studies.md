@@ -52,4 +52,4 @@ Valdés-López, O., S. Khan, R. Schmitz, S. Cui, J. Qiu, T. Joshi, D. Xu, B. Die
 
 ---
 
-[← 3.6 Retrospectieve studies {#retrospectieve-studies}](06-3-6-retrospectieve-studies-retrospectieve-studies.md) · [Up: contents](index.md)
+[← 3.6 Retrospectieve studies](06-3-6-retrospectieve-studies.md) · [Up: contents](index.md)

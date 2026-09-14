@@ -1,5 +1,5 @@
 ---
-title: Chap describe
+title: Hoofdstuk 4 Data exploratie en beschrijvende statistiek
 source: https://github.com/statOmics/statistiekCursusNotas/blob/a1c505bbdddd3d602fa9cc629bef7ee772233d14/chap-describe.html
 source_file: sources/statomics-statistiekcursusnotas-ghpages/chap-describe.html
 licence: unresolved
@@ -8,13 +8,13 @@ fidelity: good
 converted: '2026-09-14'
 ---
 
-# Chap describe
+# Hoofdstuk 4 Data exploratie en beschrijvende statistiek
 
 **Source:** [`chap-describe.html`](https://github.com/statOmics/statistiekCursusNotas/blob/a1c505bbdddd3d602fa9cc629bef7ee772233d14/chap-describe.html) · **Licence:** unresolved · Converted 2026-09-14 from `.html` (good)
 
 Split into 14 sections.
 
-1. [Chap describe Part 01 —](01-chap-describe-part-01.md)
+1. [Hoofdstuk 4 Data exploratie en beschrijvende statistiek](01-hoofdstuk-4-data-exploratie-en-beschrijvende-statistiek.md)
 2. [We slaan de frequentietabel voor variable Gender](02-we-slaan-de-frequentietabel-voor-variable-gender.md)
 3. [op in object 'tab'](03-op-in-object-tab.md)
 4. [sla freq. tabel op in object 'tabBmi'](04-sla-freq-tabel-op-in-object-tabbmi.md)

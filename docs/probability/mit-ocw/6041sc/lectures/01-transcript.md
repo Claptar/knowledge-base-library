@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Lecture 1**
-
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 PROFESSOR: OK, so welcome to 6.041/6.431, the class on probability models and the like. I'm John Tsitsiklis. I will be teaching this class, and I'm looking forward to this being an enjoyable and also useful experience. We have a fair amount of staff involved in this course, your recitation instructors and also a bunch of TAs, but I want to single out our head TA, Uzoma, who is the key person in this class. Everything has to go through him. If he doesn't know in which recitation section you are, then simply you do not exist, so keep that in mind.

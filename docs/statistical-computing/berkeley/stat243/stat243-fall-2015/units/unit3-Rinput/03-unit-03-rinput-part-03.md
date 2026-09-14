@@ -16,7 +16,7 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-## Warning in readLines("https://wikipedia.org"): incomplete final line found on ’https://wikipedia.org’ wikip <- **readLines** ( **curl** ("https://wikipedia.org"))
+
 
 ---
 

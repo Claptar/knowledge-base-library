@@ -33,4 +33,4 @@ converted: '2026-09-14'
 
 ---
 
-[← Interference {#interference .title}](01-interference-interference-title.md) · [Up: contents](index.md) · [treated students in treated households →](03-treated-students-in-treated-households.md)
+[← Interference](01-interference.md) · [Up: contents](index.md) · [treated students in treated households →](03-treated-students-in-treated-households.md)

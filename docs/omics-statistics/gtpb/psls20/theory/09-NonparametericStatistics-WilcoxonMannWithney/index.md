@@ -17,7 +17,7 @@ Split into 4 sections.
 1. [Introduction](01-introduction.md)
 2. [Rank Tests](02-rank-tests.md)
 3. [Wilcoxon-Mann-Whitney Test](03-wilcoxon-mann-whitney-test.md)
-4. [[Home](https://gtpb.github.io/PSLS20/) {-}](04-home-https-gtpb-github-io-psls20.md)
+4. [[Home](https://gtpb.github.io/PSLS20/)](04-home-https-gtpb-github-io-psls20.md)
 
 ---
 

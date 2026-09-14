@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: Communication over a Noisy Channel**
-
 Hi. In this problem, we'll be talking about communication across a noisy channel. But before we dive into the problem itself, I wanted to first motivate the context a little bit and talk more about what exactly a communication channel is and what "noise" means. So in our everyday life, we deal with a lot of communication channels, for example, the internet, where we download data and we watch videos online, or even just talking to a friend. And the air could be your communication channel for our voice.
 
 But as you probably have experienced, sometimes these channels have noise, which just means that what the sender was trying to send isn't necessarily exactly what the receiver receives. And so in probability, we try to model these communication channels and noise and try to understand the probability behind it. And so now, let's go into the problem itself.

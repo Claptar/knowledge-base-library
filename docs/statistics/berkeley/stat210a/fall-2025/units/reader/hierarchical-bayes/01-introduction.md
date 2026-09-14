@@ -22,4 +22,4 @@ September 28, 2023
 
 ---
 
-[Up: contents](index.md) · [1 Hierarchical Bayes {.anchored number="1" anchor-id="hierarchical-bayes"} →](02-1-hierarchical-bayes-anchored-number-1-anchor-id-hierarchica.md)
+[Up: contents](index.md) · [1 Hierarchical Bayes →](02-1-hierarchical-bayes.md)

@@ -40,7 +40,7 @@ How can we leverage all these unused data points to improve our classifier? The 
 When _B_ =<sup>_n_</sup> _Pn_ goes through all possible combination of sample with repeated data points, the bagged classifier can be written as
 
 
-which indicates Var[ _f_ ( _x_ )] _≤_ Var[ _fb_<sup>_∗_(</sup><sup>_x_)](https://leishi-rocks.github.io/courses/ph240c/notes/how?).</sup>
+which indicates Var[ _f_ ( _x_ )] _≤_ Var$$ _fb_<sup>_∗_(</sup><sup>_x_)$$(how?).</sup>
 
 - Now we agree that bagging reduces the variance of a single bootstrapped classifier _fb_<sup>_∗_(</sup><sup>_·_),butcanwe</sup> do even better in variance reduction? The variance of _f_ ( _x_ ) is of the form
 

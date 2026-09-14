@@ -232,4 +232,4 @@ Of the four estimators we considered above, only <span class="math inline">\$\\d
 
 ---
 
-[← Estimation in statistical models {.anchored anchor-id="estimation-in-statistical-models"}](03-estimation-in-statistical-models-anchored-anchor-id-estimati.md) · [Up: contents](index.md)
+[← Estimation in statistical models](03-estimation-in-statistical-models.md) · [Up: contents](index.md)

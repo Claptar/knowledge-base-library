@@ -15,9 +15,9 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Introduction](01-introduction.md)
-2. [Gaussian sequence model {.anchored anchor-id="gaussian-sequence-model"}](02-gaussian-sequence-model-anchored-anchor-id-gaussian-sequence.md)
-3. [Stein’s Unbiased Risk Estimator {.anchored anchor-id="steins-unbiased-risk-estimator"}](03-stein-s-unbiased-risk-estimator-anchored-anchor-id-steins-un.md)
-4. [Jamesstein Part 04 —](04-jamesstein-part-04.md)
+2. [Gaussian sequence model](02-gaussian-sequence-model.md)
+3. [Stein’s Unbiased Risk Estimator](03-stein-s-unbiased-risk-estimator.md)
+4. [Risk of the James-Stein estimator](04-risk-of-the-james-stein-estimator.md)
 
 ---
 

@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`techvid.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/techvid.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
 
-### Introduction to Proteomics and MS technology by Prof. Lennart Martens, [CompOmpics](https://www.compomics.com/), VIB and UGent, Belgium.
-
 - [Lecture mass spectrometry basics - Part 1 - Amino Acids and Proteins (30:46)](https://www.youtube.com/watch?v=bS78rIYvFBE)
 - [Lecture mass spectrometry basics - Part 2 - Mass Spectrometry: Concepts and Components. Ion Sources (39:30)](https://www.youtube.com/watch?v=vXsotPtOdRY)
 - [Lecture mass spectrometry basics - Part 3 - Mass Spectrometry: Analysers (34:10)](https://www.youtube.com/watch?v=NKXhyjsgT1I)

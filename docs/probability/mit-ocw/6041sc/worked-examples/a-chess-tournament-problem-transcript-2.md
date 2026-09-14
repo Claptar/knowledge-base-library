@@ -16,8 +16,6 @@ converted: '2026-09-14'
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
 
-# **6.041SC Probabilistic Systems Analysis and Applied Probability, Fall 2013 Transcript – Recitation: A Chess Tournament Problem**
-
 Hi. Welcome back. Today, we're going to do a fun problem called the chess tournament problem. Now, it's a very long problem, so I just want to jump straight in.
 
 Essentially, the problem statement describes a very special chess tournament, which involves players named Al, Bo, and Chi. Now Al is the current reigning championship, and Bo and Chi are this year's contenders, and, of course, they're vying with each other to beat out Al and become the new champion. And so essentially, the tournament is divided into two rounds-- a first round, during which Bo and Chi play against each other, and then a second round, during which the surviving contender from the first round plays against Al. And the problem statement also gives you a bunch of information like what's the probability that Bo beats Chi in a particular game, et cetera.

@@ -15,9 +15,9 @@ converted: '2026-09-14'
 Split into 4 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 Completeness {.anchored number="1" anchor-id="completeness"}](02-1-completeness-anchored-number-1-anchor-id-completeness.md)
-3. [2 Ancillarity {.anchored number="2" anchor-id="ancillarity"}](03-2-ancillarity-anchored-number-2-anchor-id-ancillarity.md)
-4. [3 Basu’s Theorem {.anchored number="3" anchor-id="basus-theorem"}](04-3-basu-s-theorem-anchored-number-3-anchor-id-basus-theorem.md)
+2. [1 Completeness](02-1-completeness.md)
+3. [2 Ancillarity](03-2-ancillarity.md)
+4. [3 Basu’s Theorem](04-3-basu-s-theorem.md)
 
 ---
 

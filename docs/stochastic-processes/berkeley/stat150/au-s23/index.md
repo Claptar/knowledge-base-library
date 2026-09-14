@@ -33,10 +33,10 @@ Converted material from [https://www.stat.berkeley.edu/~bensonau/s23.150/](https
 - [150.Hw 08 —](150.hw8.md)
 - [150.Hw 09 —](150.hw9.md)
 - **index**
-    - [Course information {#course-information}](home/01-course-information-course-information.md)
-    - [Exam schedule {#exam-schedule}](home/02-exam-schedule-exam-schedule.md)
-    - [Homework assignments {#homework-assignments}](home/03-homework-assignments-homework-assignments.md)
-    - [Course Calendar {#course-calendar}](home/04-course-calendar-course-calendar.md)
+    - [Course information](home/01-course-information.md)
+    - [Exam schedule](home/02-exam-schedule.md)
+    - [Homework assignments](home/03-homework-assignments.md)
+    - [Course Calendar](home/04-course-calendar.md)
 - **s23.150.syllabus**
     - [STAT 150 - STOCHASTIC PROCESSES](s23.150.syllabus/01-stat-150---stochastic-processes.md)
     - [Textbooks](s23.150.syllabus/02-textbooks.md)

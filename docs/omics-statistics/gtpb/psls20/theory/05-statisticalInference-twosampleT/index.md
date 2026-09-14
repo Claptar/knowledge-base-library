@@ -18,7 +18,7 @@ Split into 5 sections.
 2. [Two sample T-test](02-two-sample-t-test.md)
 3. [Assumptions](03-assumptions.md)
 4. [How to report?](04-how-to-report.md)
-5. [[Home](https://gtpb.github.io/PSLS20/) {-}](05-home-https-gtpb-github-io-psls20.md)
+5. [[Home](https://gtpb.github.io/PSLS20/)](05-home-https-gtpb-github-io-psls20.md)
 
 ---
 

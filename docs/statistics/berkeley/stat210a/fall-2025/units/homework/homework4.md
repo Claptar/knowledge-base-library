@@ -12,8 +12,6 @@ converted: '2026-09-14'
 
 **Source:** [`units/homework/homework4.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/homework/homework4.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
 
-#### Instructions: {#instructions}
-
 You may disregard measure-theoretic niceties about conditioning on measure-zero sets, almost-sure equality vs. actual equality, “all functions” vs. “all measurable functions,” etc. (unless the problem is explicitly asking about such issues).
 
 **Problem 1** (Unbiased estimation in replicated studies). One focal issue in the ongoing scientific replication crisis is the “file drawer problem,” i.e. the tendency of researchers to report findings (or of journals to publish them) only if they have a $p$-value less than 0.05. Replication studies typically represent cleaner estimates of the results under study, since they are reported regardless of whether they are statistically significant. This is one of the reasons that replication studies often find much smaller effect size estimates than the original studies: if the original study had gotten a good estimate of the (small) true effect, we wouldn’t have heard about it.

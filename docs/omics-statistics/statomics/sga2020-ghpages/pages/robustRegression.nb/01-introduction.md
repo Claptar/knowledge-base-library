@@ -70,4 +70,4 @@ Code <span class="caret"></span>
 
 ---
 
-[Up: contents](index.md) · [Robust Regression {#robust-regression .title .toc-ignore} →](02-robust-regression-robust-regression-title-toc-ignore.md)
+[Up: contents](index.md) · [Robust Regression →](02-robust-regression.md)

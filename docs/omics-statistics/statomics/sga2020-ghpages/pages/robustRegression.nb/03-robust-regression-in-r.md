@@ -24,4 +24,4 @@ y<-10+5*x+rnorm(nobs,sd=sdy)
 
 ---
 
-[← Robust Regression {#robust-regression .title .toc-ignore}](02-robust-regression-robust-regression-title-toc-ignore.md) · [Up: contents](index.md) · [add outlier at high leverage point →](04-add-outlier-at-high-leverage-point.md)
+[← Robust Regression](02-robust-regression.md) · [Up: contents](index.md) · [add outlier at high leverage point →](04-add-outlier-at-high-leverage-point.md)

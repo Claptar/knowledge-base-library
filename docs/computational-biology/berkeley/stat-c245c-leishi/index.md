@@ -20,8 +20,8 @@ Converted material from [https://leishi-rocks.github.io/courses/ph240c/](https:/
 
 ### hw
 
-- [Homework 1](hw/Homework-1.md)
-- [Homework 2](hw/Homework-2.md)
+- [PH240C Homework 1](hw/Homework-1.md)
+- [PH240C Homework 2](hw/Homework-2.md)
 - **hw1-sol**
     - [Question 1](hw/hw1-sol/01-question-1.md)
     - [Question 2](hw/hw1-sol/02-question-2.md)
@@ -41,7 +41,7 @@ Converted material from [https://leishi-rocks.github.io/courses/ph240c/](https:/
 
 ### notes
 
-- [Lecture 01 — Scope and Intro](notes/Lecture_01_Scope_and_Intro.md)
+- [PH240C: Scope and Introduction](notes/Lecture_01_Scope_and_Intro.md)
 - **Lecture_02_GLM_SVM**
     - [Introduction](notes/Lecture_02_GLM_SVM/01-introduction.md)
     - [1 Logistic Regression](notes/Lecture_02_GLM_SVM/02-1-logistic-regression.md)
@@ -87,7 +87,7 @@ Converted material from [https://leishi-rocks.github.io/courses/ph240c/](https:/
     - [1 Bayesian statistics](notes/Lecture_14_Adaptive_Clinical_Trial_and_Reinforcement_Learning/01-1-bayesian-statistics.md)
     - [2 Thompson sampling](notes/Lecture_14_Adaptive_Clinical_Trial_and_Reinforcement_Learning/02-2-thompson-sampling.md)
     - [References](notes/Lecture_14_Adaptive_Clinical_Trial_and_Reinforcement_Learning/03-references.md)
-- [PH240C Lab01](notes/PH240C-Lab01.md)
+- [PH240C LAB 01](notes/PH240C-Lab01.md)
 - **PH240C-Lab02**
     - [Classification and Regression Trees (with missingness)](notes/PH240C-Lab02/01-classification-and-regression-trees-with-missingness.md)
     - [Classification and Regression Trees (CART)](notes/PH240C-Lab02/02-classification-and-regression-trees-cart.md)

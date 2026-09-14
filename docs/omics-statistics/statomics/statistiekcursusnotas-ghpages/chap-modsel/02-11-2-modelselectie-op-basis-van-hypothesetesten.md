@@ -318,4 +318,4 @@ De analyse van lpsa in het vorige hoofdstuk zou ook als modelselectie kunnen wor
 
 ---
 
-[← 11.1 Inleiding {#inleiding}](01-11-1-inleiding-inleiding.md) · [Up: contents](index.md) · [11.3 Modelselectie voor predictie →](03-11-3-modelselectie-voor-predictie.md)
+[← 11.1 Inleiding](01-11-1-inleiding.md) · [Up: contents](index.md) · [11.3 Modelselectie voor predictie →](03-11-3-modelselectie-voor-predictie.md)

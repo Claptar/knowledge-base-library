@@ -1,5 +1,5 @@
 ---
-title: Section questions nov9
+title: Reading for Nov. 9 section discussion
 source: https://github.com/berkeley-stat243/stat243-fall-2015/blob/ee3c3c2c523a96eefceddf8703d4938396730993/section/section_questions_nov9.pdf
 source_file: sources/berkeley-stat243/stat243-fall-2015/section/section_questions_nov9.pdf
 licence: unresolved
@@ -8,15 +8,13 @@ fidelity: lossy
 converted: '2026-09-14'
 ---
 
-# Section questions nov9
+# Reading for Nov. 9 section discussion
 
 **Source:** [`section/section_questions_nov9.pdf`](https://github.com/berkeley-stat243/stat243-fall-2015/blob/ee3c3c2c523a96eefceddf8703d4938396730993/section/section_questions_nov9.pdf) · **Licence:** unresolved · Converted 2026-09-14 from `.pdf` (lossy)
 
 !!! warning "Converted from PDF — mathematics may be mangled"
     Prose survives a PDF; equations do not. Check anything symbolic against the
     original before relying on it, and mark repairs `**Unverified.**`
-
-# Reading for Nov. 9 section discussion
 
 ## October 29, 2015
 
