@@ -34,13 +34,13 @@ sources:
 - slug: berkeley-guntuboyina-notes
   material: notes
   subject: statistics
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 4
   bytes: 3331085
   fetched: '2026-09-13'
   kind: files
-  base: https://www.stat.berkeley.edu/~aditya/resources/
+  base: https://www.stat.berkeley.edu/~aditya/styled/index.html
   mirrors_upstream: true
   restorable: upstream
   contents:
@@ -56,16 +56,17 @@ sources:
   - name: FullNotes248Spring2022TimeSeries.pdf
     bytes: 740633
     sha256: f752d67594a87c04943c0560217304c82c034d6c46275e3aac876fb7aa3876d6
+  note: 'licence checked no licence on the Teaching page, the home page or the notes PDF'
 - slug: berkeley-stat-c245b-vanderlaan
   material: course
   subject: statistics
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 16
   bytes: 7462271
   fetched: '2026-09-13'
   kind: files
-  base: https://vanderlaan-lab.org/teach-files/
+  base: https://vanderlaan-lab.org/teaching/
   mirrors_upstream: true
   restorable: upstream
   contents:
@@ -118,16 +119,17 @@ sources:
     bytes: 233005
     sha256: 2033e9d09ab1a0fcd757478cd946bcc2d87e9355842ede84fb292ab8be793eb0
   catalogue: docs/resources/berkeley-statistics.md
+  note: 'licence checked site-wide footer reads "(c) 2018-2021. All rights reserved."'
 - slug: berkeley-stat-c245c-leishi
   material: course
   subject: computational-biology
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 24
   bytes: 10259531
   fetched: '2026-09-13'
   kind: files
-  base: https://leishi-rocks.github.io/courses/ph240c/
+  base: https://leishi-rocks.github.io/courses/ph240c/ph240c.html
   mirrors_upstream: true
   restorable: upstream
   contents:
@@ -204,10 +206,11 @@ sources:
     bytes: 345203
     sha256: 9a32648a3b257e3ffc8076bb8240bf91036d94598ec74587ac5a90c6121aac63
   catalogue: docs/resources/berkeley-statistics.md
+  note: 'licence checked no licence on the course page; backing repo has no LICENSE'
 - slug: berkeley-stat150/aldous-legacy
   material: course
   subject: stochastic-processes
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 40
   bytes: 12390638
@@ -337,10 +340,11 @@ sources:
   - name: takis_exercises.pdf
     bytes: 585081
     sha256: e6f9cc0796575b407869a79c39713de3c61333aff3c276958fcf80cfcd459e9d
+  note: 'licence checked no licence on the course page or Aldous''s parent page'
 - slug: berkeley-stat150/au-f21
   material: course
   subject: stochastic-processes
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 27
   bytes: 1003629
@@ -431,10 +435,11 @@ sources:
   - name: index.html
     bytes: 7405
     sha256: b8d4ca95cc15e471a3ba23e628bde9f540896862a50841170ac7ba8ec63ec939
+  note: 'licence checked no licence on the course page or Au''s parent page'
 - slug: berkeley-stat150/au-f22
   material: course
   subject: stochastic-processes
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 23
   bytes: 894751
@@ -513,10 +518,11 @@ sources:
   - name: index.html
     bytes: 7314
     sha256: 1297a0bb0259fd1daa940fd9af41d7a9f723e61ffe26cb046d03d53ddbf3b621
+  note: 'licence checked no licence on the course page or Au''s parent page'
 - slug: berkeley-stat150/au-f23
   material: course
   subject: stochastic-processes
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 25
   bytes: 1052238
@@ -601,10 +607,11 @@ sources:
   - name: index.html
     bytes: 8155
     sha256: 24653da49bddc503d637b16a99ce279dd3449c5bfc1bc0a2beed4abd930fa723
+  note: 'licence checked no licence on the course page or Au''s parent page'
 - slug: berkeley-stat150/au-s23
   material: course
   subject: stochastic-processes
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 25
   bytes: 1036119
@@ -689,10 +696,11 @@ sources:
   - name: s23.150.syllabus.pdf
     bytes: 140289
     sha256: 3d6d96502507fc3063574951f22e39d9aff76fb40271b54862e9ad0080e5ad16
+  note: 'licence checked no licence on the course page or Au''s parent page'
 - slug: berkeley-stat150/au-s24
   material: course
   subject: stochastic-processes
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 25
   bytes: 1133821
@@ -777,6 +785,7 @@ sources:
   - name: s24.150.syllabus.pdf
     bytes: 142648
     sha256: 46931d5b0eda04263a8da0de392c258576e281186637fe51a609e04597868460
+  note: 'licence checked no licence on the course page or Au''s parent page'
 - slug: berkeley-stat150/spring-2026
   material: course
   subject: stochastic-processes
@@ -848,6 +857,8 @@ sources:
   commit: 60232ff1b10a6e871e4de968015b36891a606030
   restorable: upstream
 - slug: berkeley-stat153/spring-2026
+  exclude:
+  - public/lectures/Ch6_Regularization.pdf          # companion deck to James et al., ISL with Applications in Python
   material: course
   subject: statistics
   licence: CC BY 4.0
@@ -892,7 +903,7 @@ sources:
 - slug: berkeley-stat158/spring-2026
   material: course
   subject: statistics
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 513
   bytes: 143878017
@@ -902,6 +913,7 @@ sources:
   branch: gh-pages
   commit: 3863c023585286c55df692b83ee6cd5c56dbe822
   restorable: upstream
+  note: 'licence checked repo license: null, no license.qmd; spring-2025 has CC BY 4.0, this year does not'
 - slug: berkeley-stat201a/fall-2024
   material: course
   subject: probability
@@ -933,7 +945,7 @@ sources:
 - slug: berkeley-stat205a/aldous-legacy
   material: course
   subject: probability
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 6
   bytes: 1407071
@@ -961,6 +973,7 @@ sources:
   - name: sinho_chewi_notes.pdf
     bytes: 659728
     sha256: 6003458ca28e128812e972e58270e3a0ab9aed3d45bed8f8a9edefc2d509c8ca
+  note: 'licence checked no licence on the course page or Aldous''s parent page'
 - slug: berkeley-stat205a/fall-2024
   material: course
   subject: probability
@@ -978,7 +991,7 @@ sources:
 - slug: berkeley-stat205b/aldous-legacy
   material: course
   subject: probability
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 14
   bytes: 7123462
@@ -1030,6 +1043,7 @@ sources:
   - name: sinho_chewi_notes.pdf
     bytes: 659728
     sha256: 6003458ca28e128812e972e58270e3a0ab9aed3d45bed8f8a9edefc2d509c8ca
+  note: 'licence checked no licence on the course page or Aldous''s parent page'
 - slug: berkeley-stat205b/spring-2026
   material: course
   subject: probability
@@ -1213,9 +1227,11 @@ sources:
   commit: c74395ec9c420005c80bbcc5f315729aaee3dc32
   restorable: upstream
 - slug: berkeley-stat243/stat243-fall-2014
+  exclude:
+  - project/givens_hoeting_ch3.pdf          # Givens & Hoeting, Computational Statistics ch.3 (Wiley)
   material: course
   subject: statistical-computing
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 172
   bytes: 40820269
@@ -1225,10 +1241,11 @@ sources:
   branch: master
   commit: 49fcee4ef42342d81d010e586b69d92a94bbb12f
   restorable: upstream
+  note: 'licence checked — no LICENSE, no license page, no notice in README, syllabus or rendered site'
 - slug: berkeley-stat243/stat243-fall-2015
   material: course
   subject: statistical-computing
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 121
   bytes: 26636703
@@ -1238,10 +1255,13 @@ sources:
   branch: master
   commit: ee3c3c2c523a96eefceddf8703d4938396730993
   restorable: upstream
+  note: 'licence checked — no LICENSE, no license page, no notice in README, syllabus or rendered site'
 - slug: berkeley-stat243/stat243-fall-2017
+  exclude:
+  - project/givens_hoeting_ch3.pdf          # Givens & Hoeting, Computational Statistics ch.3 (Wiley)
   material: course
   subject: statistical-computing
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 122
   bytes: 18517940
@@ -1251,10 +1271,11 @@ sources:
   branch: master
   commit: 0e9c7fe58194834b0d43b3dbf152d28a37044d05
   restorable: upstream
+  note: 'licence checked — no LICENSE, no license page, no notice in README, syllabus or rendered site'
 - slug: berkeley-stat243/stat243-fall-2018
   material: course
   subject: statistical-computing
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 127
   bytes: 30436577
@@ -1264,10 +1285,14 @@ sources:
   branch: master
   commit: be0e210baad11c83cecdb23dcb9e91f609bc536a
   restorable: upstream
+  note: 'licence checked — no LICENSE, no license page, no notice in README, syllabus or rendered site'
 - slug: berkeley-stat243/stat243-fall-2019
+  exclude:
+  - project/givens_hoeting_ch3.pdf          # Givens & Hoeting, Computational Statistics ch.3 (Wiley)
+  - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
   material: course
   subject: statistical-computing
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 187
   bytes: 53690431
@@ -1277,10 +1302,13 @@ sources:
   branch: master
   commit: b2795324dec367a50f578b01c67d907994ff40f5
   restorable: upstream
+  note: 'licence checked — no LICENSE, no license page, no notice in README, syllabus or rendered site'
 - slug: berkeley-stat243/stat243-fall-2020
+  exclude:
+  - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
   material: course
   subject: statistical-computing
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 159
   bytes: 25973229
@@ -1290,7 +1318,11 @@ sources:
   branch: master
   commit: fd024cc8537586f4869f79be1492009acfe62d76
   restorable: upstream
+  note: 'licence checked — no LICENSE, no license page, no notice in README, syllabus or rendered site'
 - slug: berkeley-stat243/stat243-fall-2021
+  exclude:
+  - project/givens_hoeting_ch3.pdf          # Givens & Hoeting, Computational Statistics ch.3 (Wiley)
+  - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
   material: course
   subject: statistical-computing
   licence: CC0-1.0
@@ -1305,9 +1337,11 @@ sources:
   commit: c918dcc56a197cc539e270f1f7d076010b175c52
   restorable: upstream
 - slug: berkeley-stat243/stat243-fall-2022
+  exclude:
+  - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
   material: course
   subject: statistical-computing
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 212
   bytes: 19767727
@@ -1317,10 +1351,13 @@ sources:
   branch: main
   commit: 34dee34760386ed7a0ea4f1fd1c9e7d088e637ff
   restorable: upstream
+  note: 'licence checked — no LICENSE, no license page, no notice in README, syllabus or rendered site'
 - slug: berkeley-stat243/stat243-fall-2023
+  exclude:
+  - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
   material: course
   subject: statistical-computing
-  licence: BSD-3-Clause
+  licence: unresolved
   holds: material
   files: 295
   bytes: 24501006
@@ -1331,11 +1368,12 @@ sources:
   branch: main
   commit: 14ac5335a61c8e78d9c36ec381d606a22cb95bf9
   restorable: upstream
+  note: 'root BSD-3-Clause LICENSE, added at initial commit and referenced nowhere; its terms are software-only (source and binary forms, THIS SOFTWARE IS PROVIDED) and the same instructor picked CC0 in 2021 and CC BY in 2024-26, so it states nothing about the notes. Content coverage unresolved; adapt the CC BY 4.0 years instead'
 - slug: carilli-2026-expression-regulation
   material: thesis
   subject: computational-biology
   provider: caltech-thesis
-  licence: unresolved
+  licence: CC BY-NC-ND 4.0
   holds: material
   files: 1
   bytes: 40294216
@@ -1366,7 +1404,7 @@ sources:
   material: thesis
   subject: computational-biology
   provider: caltech-thesis
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 1
   bytes: 25197916
@@ -1379,7 +1417,7 @@ sources:
   material: thesis
   subject: computational-biology
   provider: caltech-thesis
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 1
   bytes: 8081793
@@ -1392,7 +1430,7 @@ sources:
   material: thesis
   subject: computational-biology
   provider: caltech-thesis
-  licence: unresolved
+  licence: CC BY-NC-ND 4.0
   holds: material
   files: 1
   bytes: 20776508
@@ -1419,7 +1457,7 @@ sources:
   material: thesis
   subject: computational-biology
   provider: caltech-thesis
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 1
   bytes: 36991192
@@ -3558,7 +3596,7 @@ sources:
 - slug: pachter-biophysics-docs
   material: notes
   subject: computational-biology
-  licence: BSD-2-Clause
+  licence: unresolved
   licence_file: LICENSE
   holds: material
   files: 68
@@ -3592,7 +3630,7 @@ sources:
 - slug: statomics-sga2020
   material: course
   subject: omics-statistics
-  licence: unresolved
+  licence: all rights reserved
   holds: scaffolding
   files: 5
   bytes: 6621861
@@ -3602,6 +3640,7 @@ sources:
   branch: master
   commit: 0ee44bf6f117bb7ad65ee3ca3e35b127c91348ff
   restorable: upstream
+  note: 'the CC0 License.md is Karl Broman''s waiver for the simple_site Jekyll THEME, byte-identical to kbroman/simple_site and listed in _config.yml exclude so it never renders; the course material itself carries no licence. GitHub reports license null'
 - slug: statomics-sga2020-data
   material: data
   subject: omics-statistics
@@ -3631,7 +3670,7 @@ sources:
 - slug: statomics-sga2020-ghpages
   material: course
   subject: omics-statistics
-  licence: CC0-1.0
+  licence: all rights reserved
   holds: material
   files: 227
   bytes: 320834307
@@ -3642,10 +3681,15 @@ sources:
   branch: gh-pages
   commit: ded99ebf046477d39ae1950eed10a4ba901b948d
   restorable: upstream
+  note: 'the CC0 License.md is Karl Broman''s waiver for the simple_site Jekyll THEME, not a licence on the course; slides and Rmd tutorials under assets/ and pages/ state none'
 - slug: statomics-sga21
+  exclude:
+  - 'docs/AhlmannEltze2021.pdf'          # third-party published paper, not statOmics' to sublicense
+  - 'docs/Genome Res.-2008-Marioni-1509-17.pdf'          # third-party published paper, not statOmics' to sublicense
+  - 'docs/PCI.2011.45.pdf'          # third-party published paper, not statOmics' to sublicense
   material: course
   subject: omics-statistics
-  licence: unresolved
+  licence: CC BY-NC-SA 4.0
   holds: material
   files: 147
   bytes: 105497551
@@ -3655,10 +3699,11 @@ sources:
   branch: master
   commit: 0ad787d4cc2bb2f4636440840a8a923cf6c09839
   restorable: upstream
+  note: 'stated in the course front page prose (index.Rmd, # License heading) and rendered live; there is no LICENSE file and GitHub reports license null, so a metadata-only check misses it. Share-alike propagates. Third-party papers under docs/ are excluded per file'
 - slug: statomics-statistiekcursusnotas
   material: course
   subject: omics-statistics
-  licence: unresolved
+  licence: all rights reserved
   holds: scaffolding
   files: 1
   bytes: 335
@@ -3668,10 +3713,11 @@ sources:
   branch: master
   commit: 04ba54790276697eac9a9635a2e28ce5c2c83380
   restorable: upstream
+  note: 'no licence file and no licence, copyright or reuse wording on either master or gh-pages'
 - slug: statomics-statistiekcursusnotas-ghpages
   material: course
   subject: omics-statistics
-  licence: unresolved
+  licence: all rights reserved
   holds: material
   files: 219
   bytes: 31931065
@@ -3681,6 +3727,7 @@ sources:
   branch: gh-pages
   commit: a1c505bbdddd3d602fa9cc629bef7ee772233d14
   restorable: upstream
+  note: 'no licence file and no licence wording in any rendered html or in the LaTeX sources'
 - slug: van-kampen-sppc
   material: book
   licence: unresolved
