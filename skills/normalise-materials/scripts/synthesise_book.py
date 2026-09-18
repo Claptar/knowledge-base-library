@@ -179,6 +179,15 @@ def chapter_key(rel: str, doc: str = "") -> tuple[str, int]:
     return (stem or "book"), 0
 
 
+def is_written(course: Path) -> bool:
+    """Whether this course's book has already been written.
+
+    True by construction: `write` emits every chapter with a `chapter:` field in its front matter,
+    and nothing else in the tree carries one."""
+    return any("\nchapter:" in p.read_text(encoding="utf-8", errors="ignore")[:400]
+               for p in course.glob("*.md"))
+
+
 def is_book(chapters: list) -> bool:
     """Whether a course has enough teaching material to be a book at all.
 
@@ -411,15 +420,16 @@ def cmd_tasks(a):
     rows = []
     # A course whose book is already written has had its artefacts deleted and replaced by the
     # chapters, so plan_course() now reads the BOOK and proposes rewriting it from its own
-    # output -- a chapter written from a chapter, with the source material gone. cmd_write()
-    # guards this with the manifest; the work list has to use the same guard or it hands agents
-    # 79 tasks that would quietly corrupt five finished books.
-    written = {json.loads(m.read_text())["course"] for m in MANIFESTS.glob("*.json")}
+    # output -- a chapter written from a chapter, with the source material gone. That is asked
+    # of the tree rather than of the manifest: the manifest is a file that can be absent, and
+    # when it was, this guard silently passed and the work list offered 44 tasks that would have
+    # rewritten two finished books from their own chapters. A written chapter, by contrast,
+    # always says so in its front matter.
     for course in courses():
         name = course.relative_to(DOCS).as_posix()
         if a.course and a.course not in name:
             continue
-        if name in written:
+        if is_written(course):
             continue
         chapters = plan_course(course)
         if not is_book(chapters):
