@@ -94,6 +94,25 @@ def index_of(stem):
     return None
 
 
+# Every value artefact_type() can return, plus the ones FOLDER_TYPE supplies. A stem that already
+# ends in one of these has been through this script before.
+ARTEFACT_TYPES = ("captions", "transcript", "slides", "notes", "outline", "questions",
+                  "solutions", "exam", "compiled", "subs")
+ALREADY_NAMED = re.compile(r"[-_](" + "|".join(ARTEFACT_TYPES) + r")$", re.I)
+
+
+def strip_artefact_suffix(stem: str) -> str:
+    """Make the renamer idempotent.
+
+    `base` was taken from the stem and then `-<type>` appended, so a second run over an
+    already-renamed tree produced `…-transcript-transcript`. Seventy directories carried a doubled
+    suffix into their published URLs before this existed."""
+    prev = None
+    while prev != stem:
+        prev, stem = stem, ALREADY_NAMED.sub("", stem)
+    return stem
+
+
 def artefact_type(path, folder):
     if path.suffix.lower() in CAPTIONS:
         return "captions"
@@ -138,14 +157,15 @@ def plan(root):
         folder = folder_path.name
         for f in sorted(p for p in folder_path.iterdir() if p.is_file()):
             atype = artefact_type(f, folder)
+            bare = strip_artefact_suffix(f.stem)
             if folder in TITLED:
-                base = VIDEO_ID.match(f.stem) and slugify(f.stem) or slugify(f.stem)
+                base = slugify(bare)
                 idx = None
             else:
                 # A dated item is identified by its date, not a fabricated index.
-                idx = date_of(f.stem) or index_of(f.stem)
-                base = idx or slugify(f.stem)
-            title = slugify(f.stem)
+                idx = date_of(bare) or index_of(bare)
+                base = idx or slugify(bare)
+            title = slugify(bare)
             dest = folder_path / f"{base}-{atype}{f.suffix.lower()}"
             if dest in used or (dest.exists() and dest != f):
                 # Quiz 1 from three offerings is quiz01_f09 / _s09 / _revi. All
