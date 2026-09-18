@@ -40,7 +40,6 @@ Dry run by default: without --apply it reports the plan and writes nothing.
 import argparse
 import json
 import os
-import os
 import re
 import shutil
 import sys
@@ -53,6 +52,12 @@ try:
     import yaml
 except ImportError:
     sys.exit("pyyaml missing — run with `uv run --group dev python …`")
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import llm_pdf
+import validate_pages
+from body_rules import (normalise_body, normalise_title, pre_tex, protect_math_spans,
+                        restore_math)
 
 LIBRARY = Path(__file__).resolve().parents[3]   # skills/<name>/scripts/x.py -> repo root
 TODAY = date.today().isoformat()
@@ -69,6 +74,32 @@ TODAY = date.today().isoformat()
 NEVER = {"book"}                           # however obtained, whatever its licence
 NOT_MATERIAL = {"archive", "data", "scaffolding"}
 NEEDS_OPEN_ACCESS = {"paper"}              # assume paywalled unless the lockfile asserts otherwise
+
+# A licence that permits a DERIVATIVE WORK, which is what a book here is. This is a stricter
+# question than redistribution, and the reason it is an allow-list rather than a deny-list is the
+# asymmetry the whole file turns on: a skipped source costs one lockfile edit, a wrongly published
+# derivative of someone's dissertation cannot be recalled. The knowledge base's AGENTS.md already
+# states the rule for its own adaptations -- "unclear -> never published, and say the licence is
+# unresolved" -- and this is the same rule, enforced here rather than trusted to a reader.
+#
+# Deliberately NOT on this list:
+#   * `unresolved` -- means *not found*, which is not *not licensed*. Resolve it, then publish.
+#   * BSD / MIT / Apache -- software licences. On a course repository one of these almost always
+#     covers the scripts, not the notes, and AGENTS.md records the trap: a `*.github.io` repo's
+#     MIT licence is the Jekyll theme's. Where a repo genuinely licenses its CONTENT this way,
+#     record the content licence explicitly and it passes.
+MAY_ADAPT = {
+    "CC0-1.0", "CC0 1.0", "public domain", "public-domain",
+    "CC BY 4.0", "CC-BY-4.0", "CC BY-SA 4.0", "CC-BY-SA-4.0",
+    "CC BY 3.0", "CC-BY-3.0", "CC BY-SA 3.0", "CC-BY-SA-3.0",
+    "CC BY-NC 4.0", "CC-BY-NC-4.0", "CC BY-NC-SA 4.0", "CC-BY-NC-SA-4.0",
+    "CC BY-NC 3.0", "CC-BY-NC-3.0", "CC BY-NC-SA 3.0", "CC-BY-NC-SA-3.0",
+}
+
+
+def may_adapt(licence: str) -> bool:
+    """Whether this licence permits publishing a rewritten book built from the source."""
+    return (licence or "").strip() in MAY_ADAPT
 
 # docs/<subject>/<provider>/<rest of slug>/ — a library is browsed by what a thing is about, not
 # by who published it, so the discipline is the top level. `subject:` is hand-written in the
@@ -112,13 +143,21 @@ ROUTES = {
     ".srt": ("transcript", "speech"),
     ".vtt": ("transcript", "speech"),
     ".html": ("pandoc-html", "good"),
-    ".pdf": ("pdf", "lossy"),
+    # Not a "pdf" route any more. A PDF that survives re-routing is read by a multimodal model,
+    # with pymupdf4llm kept as the cross-check rather than as the output. The deterministic route
+    # produced 55% of the old corpus and almost none of it was worth reading; it is far more
+    # useful as a control. See references/quality-gates.md, "The LLM route".
+    ".pdf": ("llm", "reconstructed"),
 }
 PREFERENCE = [".qmd", ".rmd", ".md", ".rst", ".ipynb", ".tex", ".srt", ".vtt", ".html", ".pdf"]
 
 SKIP_DIRS = {
     ".git", ".github", ".quarto", "_freeze", "_site", "site_libs", "libs", "node_modules",
     "renv", "__pycache__", ".Rproj.user", "assets", "img", "images", "figures", "figure",
+    # `fig` is the Quarto default, and missing it was not free: 72 plot PDFs under
+    # stat153's `lectures/*/fig/` were converted as documents, and each one then grouped
+    # into a lecture chapter as though it were a slide deck. A figure is not a document.
+    "fig",
     "css", "js", "fonts", "data", "_extensions",
 }
 
@@ -150,17 +189,71 @@ CALLOUT_MAP = {"note": "note", "tip": "tip", "warning": "warning",
 FRONTMATTER = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n", re.S)
 HEADING = re.compile(r"^(#{1,4})\s+(.+?)\s*#*\s*$", re.M)
 REF_DEF = re.compile(r"^\[([^\]]+)\]:\s*\S+.*$", re.M)
-MD_LINK = re.compile(r"(!?)\[([^\]]*)\]\(\s*<?([^()>]*?)>?(\s+\"[^\"]*\")?\s*\)")
+# The label allows one level of nested brackets: `[Chapter 3 of [BZ]](BZ.pdf)` is what an
+# HTML `<a>` with a citation in its text converts to, and a label pattern of `[^\]]*` skips
+# it entirely -- so the link is never rewritten and dangles in the built site.
+MD_LINK = re.compile(
+    r"(!?)\[((?:[^\[\]]|\[[^\[\]]*\])*)\]\(\s*<?([^()>]*?)>?(\s+\"[^\"]*\")?\s*\)")
 LATEX_INLINE = re.compile(r"\\\((.+?)\\\)", re.S)
 LATEX_DISPLAY = re.compile(r"\\\[(.+?)\\\]", re.S)
 
 SHORTCODE = re.compile(r"\{\{<\s*(\w+)\s+([^>]*?)\s*>\}\}")
 HTML_TAG = re.compile(r"</?[a-zA-Z][^>]*>")
 # A PDF's first bold line is often a form field, not a title: "Student ID (NOT your name):".
+# A PDF's biggest text is not its title. On an exam paper it is the institution's letterhead, and
+# on a slide deck it is often the course banner -- which is how eleven sibling pages all came to be
+# called `Massachusetts Institute of Technology`. Boilerplate is rejected and the filename is used.
 JUNK_TITLE = re.compile(
-    r"^(student\s*id|name|signature|date|score|total|page\s*\d|do not|instructions?)\b", re.I)
+    r"^(student\s*id|name|signature|date|score|total|page\s*\d|do not|instructions?"
+    r"|massachusetts institute|department of|university of|college of|school of"
+    r"|faculty of|institute of technology|electrical engineering"
+    r"|all rights reserved|copyright|creative commons|table of contents|contents"
+    r"|introduction to probability|this work is licensed)\b", re.I)
 
-MIN_SECTION_CHARS = 400        # below this a "section" is a stub; back off to a shallower level
+# How a source's own name is written, where the slug is not good enough to show a reader.
+SOURCE_TITLES = {
+    "ocw": "MIT", "berkeley": "Berkeley", "statomics": "StatOmics", "gtpb": "GTPB",
+    "pachter": "Pachter Lab", "caltech": "Caltech",
+}
+COURSE_CODE = re.compile(r"^(?:stat|math|cs|ee|ph|bio)?[-_]?(\d+[a-z]*)$", re.I)
+
+
+def source_title(entry):
+    """A readable name for a source.
+
+    `title:` in the lockfile wins and is the right place to put a real course name; this is the
+    fallback, and it exists because `ocw 6041sc` is a slug, not something to show a reader."""
+    if entry.get("title"):
+        return str(entry["title"])
+    words, seen = [], set()
+    for chunk in re.split(r"[/\-_]", entry["slug"]):
+        if not chunk:
+            continue
+        low = chunk.lower()
+        if low in SOURCE_TITLES:
+            word = SOURCE_TITLES[low]
+        elif re.fullmatch(r"\d{4}", chunk):
+            word = chunk
+        elif re.fullmatch(r"(fall|spring|summer|winter)", low):
+            word = low.capitalize()
+        elif re.match(r"^stat\d", low):
+            word = "Stat " + chunk[4:].upper()
+        elif re.fullmatch(r"\d{4}[a-z]{0,2}", low):
+            # MIT numbers the slug flattened: 6041sc -> 6.041SC, 8591j -> 8.591J
+            word = f"{chunk[0]}.{chunk[1:4]}{chunk[4:].upper()}"
+        elif re.fullmatch(r"\d+[a-z]{0,3}", low):
+            word = chunk.upper()
+        else:
+            word = chunk.capitalize()
+        # `berkeley-stat243/stat243-fall-2018` repeats its own course code; say it once.
+        if word.lower() in seen:
+            continue
+        seen.add(word.lower())
+        words.append(word)
+    return " ".join(words)
+
+MIN_SECTION_CHARS = 400        # a lead-in shorter than this is a stray sentence, not an intro
+MIN_PART_CHARS = 1200          # below this a part cannot stand as a page and is merged upward
 MIN_PDF_CHARS_PER_PAGE = 60    # below this the PDF is a scan with no text layer
 
 
@@ -295,6 +388,13 @@ def destination(entry, library):
     if not (entry.get("url") or entry.get("base")):
         # Every page cites its original. One that cannot is not published.
         return None, False, "no source URL to cite"
+    lic = entry.get("licence", "unresolved")
+    if not may_adapt(lic):
+        # Not "unconvertible" -- unlicensed for this use. The catalogue still names it and links
+        # upstream, so the material is findable; what is withheld is the derivative.
+        return None, False, (f"licence: {lic} — does not permit a published derivative"
+                             if lic and lic != "unresolved"
+                             else "licence unresolved — resolve it before publishing a derivative")
     return output_path(entry, library), True, ""
 
 
@@ -351,7 +451,57 @@ def group_documents(root, files):
         route, fidelity = ROUTES[best.suffix.lower()]
         docs.append(Doc(src=best, rel=best.relative_to(root).as_posix(),
                         route=route, fidelity=fidelity))
-    return docs, dropped
+
+    docs, more = drop_transcript_renders(docs, root)
+    return docs, dropped + more
+
+
+ARTEFACT = re.compile(r"^(.*?)[-_](captions?|transcripts?|subs?)(?:-\d+)?$", re.I)
+
+
+def drop_transcript_renders(docs, root):
+    """A caption file beats a PDF of the same transcript.
+
+    OCW ships each lecture's words up to four times: the `.srt` the video was captioned with, a
+    PDF of that same transcript, a `transcripts-pdf/` directory holding it again, and the odd
+    `-transcript-2`. They are the same speech, and only the `.srt` carries timings. Converting the
+    rest produced the duplicate pages that made `6041sc/lectures/` alternate `01-captions`,
+    `01-slides`, `01-transcript` -- and, now that PDFs go out to a model, it would pay for the
+    same words three times over.
+
+    `-slides.pdf` is NOT a transcript render and is kept: a deck is different content."""
+    have_captions = set()
+    for d in docs:
+        if d.route != "transcript":
+            continue
+        m = ARTEFACT.match(Path(d.rel).stem)
+        have_captions.add((str(Path(d.rel).parent), m.group(1) if m else Path(d.rel).stem))
+
+    # A whole directory of transcript PDFs is the same duplication as a single mismatched file.
+    # OCW ships `transcripts-pdf/<youtube-id>-transcript.pdf` beside the `.srt` the video was
+    # captioned with; the stems never match, so a per-file rule misses every one of them, and they
+    # came back as thirteen extra "chapters" repeating lectures the book already had.
+    transcript_dir = re.compile(r"(^|/)(transcripts?[-_]?pdf|transcripts?)(/|$)", re.I)
+
+    keep, dropped = [], []
+    for d in docs:
+        stem = Path(d.rel).stem
+        m = ARTEFACT.match(stem)
+        in_transcript_dir = bool(transcript_dir.search(str(Path(d.rel).parent)))
+        if d.route == "llm" and in_transcript_dir and have_captions:
+            dropped.append((d.rel, "transcript already present as captions"))
+            continue
+        is_transcript_render = (
+            d.route == "llm" and m and m.group(2).lower().startswith(("transcript", "sub")))
+        base = m.group(1) if m else stem
+        parent = str(Path(d.rel).parent)
+        if is_transcript_render and (
+                (parent, base) in have_captions
+                or any(b == base for _, b in have_captions)):
+            dropped.append((d.rel, "transcript already present as captions"))
+            continue
+        keep.append(d)
+    return keep, dropped
 
 
 def pdf_has_text(path):
@@ -440,16 +590,26 @@ def convert_notebook(path):
 
 
 def convert_pandoc(path, fmt):
+    """Pandoc, with the mathematics carried past it by hand when the input is rendered HTML.
+
+    Pandoc's HTML reader does NOT parse `<span class="math inline">\\(x\\)</span>` as mathematics:
+    it treats the payload as literal text and escapes the backslashes. Verified on
+    sources/berkeley-stat210a/fall-2025/homework.html, and it is why 360 pages published raw
+    `<span class="math inline">` to the reader. So the spans are lifted out before conversion and
+    put back after, exactly as they were written.
+    """
     import pypandoc
-    # markdown_strict plus the extensions MkDocs actually renders. Dropping raw_html and the
-    # native div/span extensions keeps Quarto's and MathJax's wrapper markup out of the output;
-    # tex_math_dollars is what keeps the mathematics as $…$, which is the whole point.
     to = ("markdown_strict+pipe_tables+backtick_code_blocks+tex_math_dollars"
-          "+fenced_code_attributes+header_attributes+footnotes+raw_tex")
-    text = pypandoc.convert_file(
-        str(path), to, format=fmt,
-        extra_args=["--wrap=none", "--markdown-headings=atx", "--quiet"],
-    )
+          "+fenced_code_attributes+header_attributes+footnotes+raw_tex-raw_html")
+    args = ["--wrap=none", "--markdown-headings=atx", "--quiet"]
+    if fmt == "html":
+        guarded, store = protect_math_spans(read_text(path))
+        text = pypandoc.convert_text(guarded, to, format=fmt, extra_args=args)
+        return restore_math(text, store), None
+    if fmt == "latex":
+        return pypandoc.convert_text(pre_tex(read_text(path)), to, format=fmt,
+                                     extra_args=args), None
+    text = pypandoc.convert_file(str(path), to, format=fmt, extra_args=args)
     return text, None
 
 
@@ -494,6 +654,37 @@ def convert(doc):
     raise ValueError(doc.route)
 
 
+FIGDIR = "FIGDIR"          # placeholder prefix; pass 2 knows where the page actually lands
+MODEL_IN_USE = [llm_pdf.DEFAULT_MODEL]   # set once from the CLI; the cache key depends on it
+
+
+def convert_llm(path, model, cache_dir):
+    """A PDF, read by a model, cross-checked against the parser. Returns (text, figures, reason).
+
+    The parser is run only when the cache is about to MISS. On a hit the blob already carries the
+    recall the cross-check produced at conversion time, and llm_pdf.convert() re-applies policy to
+    those stored numbers -- so parsing again yields the same verdict at the cost of running
+    pymupdf4llm over the whole corpus. Measured at 29.5s for one 47-page deck, which is how a
+    regeneration that should be free came to take an hour."""
+    key = llm_pdf.cache_key(path, model)
+    deterministic = ""
+    if not (cache_dir / f"{key}.json").exists():
+        import pymupdf4llm
+        try:
+            deterministic = pymupdf4llm.to_markdown(str(path), show_progress=False)
+        except Exception:
+            deterministic = ""
+    figs = cache_dir / "figures" / key
+    r = llm_pdf.convert(path, model=model, cache_dir=cache_dir, figures_dir=figs,
+                        rel_figures=FIGDIR, deterministic=deterministic)
+    if not r.ok:
+        return None, [], r.reason
+    return r.markdown, r.figures, r.reason
+
+
+_QUOTA_GONE = []          # per worker process: stop calling once the day's quota is gone
+
+
 def convert_one(job):
     """Convert a single document. Pure function of its input path — the unit of parallelism.
 
@@ -501,27 +692,60 @@ def convert_one(job):
     output tree or the shared link map. Failures come back as values rather than exceptions,
     because one unreadable PDF in 1,591 must not take the pool down with it.
     """
-    rel, src, route, fidelity = job
+    rel, src, route, fidelity, model, cache, apply, sync = job
     path = Path(src)
-    if route == "pdf":
-        ok, chars = pdf_has_text(path)
-        if not ok:
-            return rel, "scan", chars, None
+    if route == "llm":
+        # The cache is consulted BEFORE credentials are. Converting from the batch cache is the
+        # normal path and needs no API key at all; requiring one made a perfectly good cached
+        # corpus look unconvertible the moment the environment was not sourced.
+        have_cached = (Path(cache) / f"{llm_pdf.cache_key(path, model)}.json").exists()
+        if not have_cached and not (
+                os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")):
+            return rel, "noapi", "not converted yet, and no GEMINI_API_KEY to convert it", None, []
+        # Neither a dry run nor an --apply calls the model by default. The corpus is converted
+        # through llm_batch.py, which is half the price, and a stray --apply that quietly spent
+        # money on 172 PDFs is exactly the accident this prevents. `--llm-sync` opts in.
+        # Uncached documents fall back to the parser's text so that splitting and page counts stay
+        # realistic, and the summary says how many are waiting on the batch.
+        if (not sync or not apply) and not have_cached:
+            try:
+                import pymupdf4llm
+                stand_in = pymupdf4llm.to_markdown(str(path), show_progress=False)
+            except Exception as exc:
+                return rel, "fail", f"{type(exc).__name__}: {exc}", None, []
+            return rel, "planned", tidy(stand_in), None, []
+        if _QUOTA_GONE:
+            return rel, "quota", "daily model quota reached — re-run to continue", None, []
+        try:
+            text, figures, note = convert_llm(path, model, Path(cache))
+        except llm_pdf.QuotaExhausted as exc:
+            # Not a failure of the document: it is simply not converted yet. Saying so keeps it
+            # out of the "unconvertible" list, which is meant to be the material that needs a
+            # different approach rather than the material that needs tomorrow.
+            _QUOTA_GONE.append(True)
+            return rel, "quota", str(exc), None, []
+        except Exception as exc:
+            return rel, "fail", f"{type(exc).__name__}: {exc}", None, []
+        if text is None:
+            return rel, "reject", note, None, []
+        return rel, "ok", tidy(text), None, figures
     try:
         text, meta_title = convert(Doc(src=path, rel=rel, route=route, fidelity=fidelity))
     except Exception as exc:
-        return rel, "fail", f"{type(exc).__name__}: {exc}", None
-    return rel, "ok", tidy(text), meta_title
+        return rel, "fail", f"{type(exc).__name__}: {exc}", None, []
+    return rel, "ok", tidy(text), meta_title, []
 
 
-def convert_all(docs, jobs):
+def convert_all(docs, jobs, model=llm_pdf.DEFAULT_MODEL, cache=None, apply=False,
+                sync=False):
     """Run convert_one over every document, in parallel where it is worth it.
 
-    PDFs are ~90% of the corpus by bytes and pymupdf is CPU-bound, so this is where the wall
-    clock goes. Pass 2 stays serial: it needs the finished map of which file became which page,
+    PDFs are ~90% of the corpus by bytes and now go out to a model, so this is where the wall
+    clock goes -- network-bound rather than CPU-bound, which parallelises just as well. Pass 2 stays serial: it needs the finished map of which file became which page,
     and it is only string work and file writes.
     """
-    work = [(d.rel, str(d.src), d.route, d.fidelity) for d in docs]
+    work = [(d.rel, str(d.src), d.route, d.fidelity, model, str(cache), apply, sync)
+            for d in docs]
     if jobs > 1 and len(work) > 1:
         with ProcessPoolExecutor(max_workers=jobs) as pool:
             return {r[0]: r[1:] for r in pool.map(convert_one, work, chunksize=1)}
@@ -533,41 +757,92 @@ def convert_all(docs, jobs):
 # ---------------------------------------------------------------------------
 
 def tidy(text):
-    """Repo conventions that apply to every route, whatever it came from."""
-    text = LATEX_DISPLAY.sub(lambda m: f"$${m.group(1)}$$", text)
-    text = LATEX_INLINE.sub(lambda m: f"${m.group(1)}$", text)   # arithmatex needs $…$
+    """Whitespace only. Everything else belongs to body_rules.normalise_body().
+
+    This function used to substitute \\[ -> $$ and \\( -> $ across the whole document, which is how
+    `\\EE\\[\\theta_i \\mid X\\]` became `\\EE\\[\\theta_i \\mid X$$`: a lazy match closing on the
+    inner bracket of \\EE[...]. Delimiters are now handled paragraph-wise, first-open to last-close,
+    in body_rules._display_math(), and the maths in rendered HTML never reaches a regex at all -- it
+    is lifted out before pandoc sees the file."""
     text = text.replace("\r\n", "\n")
     text = re.sub(r"\n{4,}", "\n\n\n", text)
     text = re.sub(r"[ \t]+\n", "\n", text)
     return text.strip() + "\n"
 
 
-def split_sections(text):
-    """Split on the shallowest heading level that yields real sections.
+def _heading_positions(text):
+    """Headings outside fenced code.
 
-    Shallowest first, because a lecture's `##` subsections are parts of one argument and the
-    `#` sections are the argument — and a level that produces a crowd of three-line stubs is
-    the wrong level, so it backs off.
-    """
-    headings = [(m.start(), len(m.group(1)), m.group(2).strip()) for m in HEADING.finditer(text)]
+    The old splitter ran HEADING.finditer over the raw document, so a `# comment` inside a Python
+    block counted as a section boundary and the cut landed in the middle of the fence. That is the
+    whole of the 652 pages that render as one giant code block, or as none."""
+    out, fence = [], None
+    offset = 0
+    for line in text.splitlines(keepends=True):
+        stripped = line.lstrip()
+        if fence is None and (stripped.startswith("```") or stripped.startswith("~~~")):
+            fence = stripped[0]
+        elif fence and stripped.startswith(fence * 3):
+            fence = None
+        elif fence is None:
+            m = HEADING.match(line.rstrip("\n"))
+            if m:
+                out.append((offset, len(m.group(1)), m.group(2).strip()))
+        offset += len(line)
+    return out
+
+
+def split_sections(text):
+    """Split into chapter-sized parts: the source's TOP heading level, and no deeper.
+
+    The old rule tried each level shallowest-first and accepted one whose sections averaged over
+    400 characters. Averaging is the flaw -- a single long section drags a crowd of three-line
+    stubs over the bar -- and it produced 11,918 pages of which 2,243 had no body at all.
+
+    So: cut at the top level only, then merge any part that is too thin into the one before it. A
+    section that cannot stand as a page is not a page; it is part of the section above it."""
+    headings = _heading_positions(text)
     if not headings:
         return [(None, text)]
 
-    for level in sorted({h[1] for h in headings}):
-        at = [h for h in headings if h[1] == level]
-        if len(at) < 2:
-            continue
-        cuts = [h[0] for h in at] + [len(text)]
-        bodies = [text[cuts[i]:cuts[i + 1]].strip() for i in range(len(at))]
-        if sum(len(b) for b in bodies) / len(bodies) < MIN_SECTION_CHARS:
-            continue                                   # stubs — try a shallower level
-        parts = []
-        lead = text[:at[0][0]].strip()
+    top = min(h[1] for h in headings)
+    at = [h for h in headings if h[1] == top]
+    if len(at) < 2:
+        # One top-level heading is a document title, not a division. Try the next level down
+        # before giving up, which is what makes a thesis chapter split into its sections.
+        deeper = sorted({h[1] for h in headings if h[1] > top})
+        at = next(([h for h in headings if h[1] == lvl]
+                   for lvl in deeper if len([h for h in headings if h[1] == lvl]) >= 2), [])
+        if not at:
+            return [(None, text)]
+
+    cuts = [h[0] for h in at] + [len(text)]
+    parts = [(at[i][2], text[cuts[i]:cuts[i + 1]].strip()) for i in range(len(at))]
+
+    lead = text[:at[0][0]].strip()
+    if lead:
         if len(lead) >= MIN_SECTION_CHARS:
-            parts.append((None, lead))
-        parts += [(at[i][2], bodies[i]) for i in range(len(at))]
-        return parts
-    return [(None, text)]
+            parts.insert(0, (None, lead))
+        else:                                   # a stray sentence, not an introduction
+            parts[0] = (parts[0][0], lead + "\n\n" + parts[0][1])
+
+    merged = []
+    for title, body in parts:
+        if merged and len(body) < MIN_PART_CHARS:
+            prev_title, prev_body = merged[-1]
+            merged[-1] = (prev_title, prev_body + "\n\n" + body)
+        else:
+            merged.append((title, body))
+
+    # A thin FIRST part has no predecessor to fold into, so it folds forward instead -- and it is
+    # the common case, not an edge one: an exam PDF opens with a letterhead ("Department of
+    # Electrical Engineering & Computer Science"), which became a page of nothing but its own
+    # heading. Seventy-nine such pages in one course.
+    while len(merged) > 1 and len(merged[0][1]) < MIN_PART_CHARS:
+        (_, first_body), (second_title, second_body) = merged[0], merged[1]
+        merged[1] = (second_title, first_body + "\n\n" + second_body)
+        merged.pop(0)
+    return merged if len(merged) > 1 else [(None, text)]
 
 
 def split_footnote_defs(text):
@@ -656,6 +931,11 @@ def rewrite_links(text, doc, out_page_dir, entry, index_by_rel, root, anchors=No
     def sub(m):
         bang, label, target, title = m.group(1), m.group(2), m.group(3), m.group(4) or ""
         if re.match(r"^(https?:|mailto:)", target):
+            # An absolute target needs no work, but its LABEL might: `[![logo](x.png)](https://…)`
+            # is an image nested in a link, and returning the match untouched leaves the inner
+            # relative image dangling in the built site.
+            if "](" in label:
+                return f"{bang}[{MD_LINK.sub(sub, label)}]({target}{title})"
             return m.group(0)
 
         # A fragment-only link: valid before the split, and this is where it gets repaired.
@@ -715,9 +995,32 @@ def _swap_render(rel, index_by_rel):
 # Emitting
 # ---------------------------------------------------------------------------
 
-PDF_BANNER = ("!!! warning \"Converted from PDF — mathematics may be mangled\"\n"
-              "    Prose survives a PDF; equations do not. Check anything symbolic against the\n"
-              "    original before relying on it, and mark repairs `**Unverified.**`\n")
+# The provenance banner, one blockquote per page, immediately after the front matter and before
+# the H1 -- the shape docs/notes uses. It replaces the old two-part header (a `**Source:**` line
+# plus an `!!! warning` admonition), which gave content pages and index pages two different
+# formats for the same information. references/page-template.md is the specification.
+BANNERS = {
+    "lossless": ("**Converted source.**",
+                 "The same text in markdown, split so that every part has a URL; nothing here is "
+                 "rewritten."),
+    "high": ("**Converted source.**",
+             "The same text in markdown, split so that every part has a URL; nothing here is "
+             "rewritten."),
+    "good": ("**Converted source.**",
+             "The same text in markdown, split so that every part has a URL; nothing here is "
+             "rewritten."),
+    "speech": ("**Converted recording.**",
+               "This is a transcript of speech, timestamped. Mathematics spoken aloud is left as "
+               "it was spoken, and whatever was written on the board is not in it."),
+    "lossy": ("**Converted from PDF — check the mathematics.**",
+              "Prose survives a PDF; equations do not. Verify anything symbolic against the "
+              "original before relying on it."),
+    "reconstructed": ("**Reconstructed by a model.**",
+                      "The original is a PDF with no usable text layer. A model read the pages and "
+                      "wrote this markdown: the prose is a paraphrase in places and **every "
+                      "equation is unverified**. Treat it as a pointer into the original, never as "
+                      "a citable source."),
+}
 
 
 def provenance(entry, doc, url, exact):
@@ -728,8 +1031,10 @@ def provenance(entry, doc, url, exact):
         src = f"[`{doc.rel}`]({url})"
     else:
         src = f"`{doc.rel}` from [{entry['slug']}]({url})"
-    return (f"**Source:** {src} · **Licence:** {lic} · "
-            f"Converted {TODAY} from `{doc.src.suffix}` ({doc.fidelity})\n")
+    label, note = BANNERS.get(doc.fidelity, BANNERS["good"])
+    who = entry["slug"].replace("/", " · ")
+    return (f"> {label} {src} — {who}, licensed {lic}. Converted {TODAY} from "
+            f"`{doc.src.suffix}`. {note}\n")
 
 
 def page(title, entry, doc, url, exact, body, nav_links):
@@ -743,71 +1048,96 @@ def page(title, entry, doc, url, exact, body, nav_links):
         "converted": TODAY,
     }
     head = "---\n" + yaml.safe_dump(fm, sort_keys=False, allow_unicode=True).strip() + "\n---\n"
-    out = [head, f"# {title}\n", provenance(entry, doc, url, exact)]
-    if doc.fidelity == "lossy":
-        out.append(PDF_BANNER)
-    out.append(body.strip() + "\n")
+    out = [head, provenance(entry, doc, url, exact), f"# {title}\n",
+           normalise_body(body, title=title, route=doc.route)]
     if nav_links:
         out.append("---\n\n" + nav_links + "\n")
     return "\n".join(out)
 
 
+GROUP_NAMES = {"recordings": "Recordings", "lectures": "Lectures", "psets": "Problem sets",
+               "solutions": "Solutions", "exams": "Exams", "recitations": "Recitations",
+               "tutorials": "Tutorials", "worked-examples": "Worked examples",
+               "sections": "Sections", "labs": "Labs", "slides": "Slides", "notes": "Notes",
+               "handwritten": "Handwritten", "reader": "Reader", "units": "Units",
+               "homework": "Homework", ".": "Contents"}
+
+
+def _group_label(folder):
+    head = folder.split("/")[0] if folder != "." else "."
+    return GROUP_NAMES.get(head, head.replace("-", " ").replace("_", " ").strip().capitalize())
+
+
 def source_index(entry, docs, published, reason, skipped):
+    """The contents page for one source: what it is, what is in it, and what is NOT.
+
+    references/index-template.md is the specification. The front matter and banner are the same
+    shape as a content page's -- they were two different formats for the same information, which
+    is precisely the inconsistency this rebuild exists to remove -- and the `Not converted`
+    section is what makes dropping material honest rather than silent."""
     slug = entry["slug"]
-    title = slug.replace("/", " · ").replace("-", " ")
+    title = source_title(entry)   # already formatted; normalise_title would flatten MIT -> Mit
     origin = entry.get("url") or entry.get("base")
+    licence = entry.get("licence", "unresolved")
+    pages = sum(max(1, len(d.parts)) for d in docs)
+
     lines = [
         "---",
-        f"title: {title}",
+        f'title: "{title}"',
         f"source: {origin or ''}",
-        f"licence: {entry.get('licence', 'unresolved')}",
-        f"converted: {TODAY}",
+        f"licence: {licence}",
+        f"material: {entry.get('material') or 'unclassified'}",
+        f"converted: '{TODAY}'",
         "---",
+        "",
+    ]
+    where = f"[{title}]({origin})" if origin else f"`{slug}`"
+    lines += [
+        f"> **Converted source.** {where} — licensed {licence}. Converted {TODAY}. The same "
+        f"material in markdown, split so that every part has a URL; nothing here is rewritten. "
+        f"It is regenerable output and is never edited by hand — to change the text, fix the "
+        f"converter or make an adaptation.",
         "",
         f"# {title}",
         "",
     ]
-    lines.append(
-        f"Converted material from [{origin}]({origin})." if origin
-        else "Converted material. **No upstream URL recorded** — see `sources.lock.yml`."
-    )
-    lines += [
-        "",
-        f"**Licence:** {entry.get('licence', 'unresolved')} · "
-        f"**Material:** {entry.get('material') or 'unclassified'} · "
-        f"**Converted:** {TODAY}",
-        "",
-        "> Converted, not adapted — the same text in markdown, split so every part has a URL.",
-        "> It is regenerable output and is **never edited by hand**: a hand edit is lost on the",
-        "> next run and silently diverges from the source it claims to reproduce. To change the",
-        "> text, make an adaptation instead.",
-        "",
-        "## Contents",
-        "",
-    ]
+
+    routes = {}
+    for d in docs:
+        routes[d.route] = routes.get(d.route, 0) + 1
+    how = ", ".join(f"{n} from `{r}`" for r, n in sorted(routes.items(), key=lambda kv: -kv[1]))
+    lines += [f"{len(docs)} documents, {pages} pages — {how}." if docs
+              else "Nothing from this source could be converted.", ""]
 
     by_dir = {}
     for d in docs:
-        by_dir.setdefault(str(Path(d.rel).parent), []).append(d)
-    for folder in sorted(by_dir):
-        if folder != ".":
-            lines += [f"### {folder}", ""]
+        by_dir.setdefault(str(Path(d.out_rel or d.rel).parent), []).append(d)
+
+    # Recordings last: a transcript of speech is a different object from a set of notes, and
+    # interleaving them is what made `lectures/` alternate captions, slides and transcript.
+    def order(folder):
+        return (1 if folder.startswith("recordings") else 0, folder)
+
+    for folder in sorted(by_dir, key=order):
+        lines += [f"## {_group_label(folder)}", ""] if folder != "." else ["## Contents", ""]
         for d in sorted(by_dir[folder], key=lambda d: d.rel):
             if len(d.parts) == 1:
                 lines.append(f"- [{d.parts[0][0]}]({d.parts[0][1]})")
-            else:
+            elif d.parts:
                 lines.append(f"- **{Path(d.rel).stem}**")
-                for t, href in d.parts:
-                    lines.append(f"    - [{t}]({href})")
+                for t_, href in d.parts:
+                    lines.append(f"    - [{t_}]({href})")
         lines.append("")
+
     if skipped:
         lines += ["## Not converted", "",
-                  "Listed rather than dropped silently, because this is the material that needs a",
-                  "different approach.", ""]
+                  "Listed rather than dropped silently: a reader cannot otherwise tell an absence",
+                  "from an oversight, and this is the material that needs a different approach.",
+                  ""]
         by_reason = {}
         for rel, why in skipped:
             by_reason.setdefault(why, []).append(rel)
-        for why in sorted(by_reason):
+        for why in sorted(by_reason, key=lambda w: -len(by_reason[w])):
             files = by_reason[why]
             shown = ", ".join(f"`{f}`" for f in sorted(files)[:8])
             more = f" … and {len(files) - 8} more" if len(files) > 8 else ""
@@ -829,7 +1159,8 @@ def footer(prev, nxt, up):
 # One source, end to end
 # ---------------------------------------------------------------------------
 
-def process(entry, sources_dir, library, include_all, apply, jobs=1):
+def process(entry, sources_dir, library, include_all, apply, jobs=1,
+            model=llm_pdf.DEFAULT_MODEL, cache=None, sync=False):
     """Convert one source, in two passes.
 
     Converting first and rendering second is not an optimisation — it is the only way the
@@ -850,26 +1181,66 @@ def process(entry, sources_dir, library, include_all, apply, jobs=1):
         return stats
 
     files, admin_skips = candidate_files(root, include_all)
+    # `exclude:` is hand-written, per file, and names third-party publications that a course
+    # happens to ship inside itself: a Wiley textbook chapter in `project/`, a paywalled RSS
+    # paper in `ps/`, a publisher's own book-companion deck in `lectures/`. `material:` cannot
+    # catch these because it classifies the SOURCE, and the source is a course. The rule it
+    # enforces is already in AGENTS.md -- a book is never converted "however obtained", and a
+    # paper without `open_access` is assumed paywalled -- so this is the missing per-file half
+    # of a policy that already exists. Never detected, for the same reason `material:` is not:
+    # guessing here guesses in the publishing direction.
+    excluded = set(entry.get("exclude") or [])
+    if excluded:
+        keep = []
+        for f in files:
+            rel = f.relative_to(root).as_posix()
+            if rel in excluded:
+                admin_skips.append((rel, "third-party publication — not redistributed"))
+            else:
+                keep.append(f)
+        files = keep
     docs, render_drops = group_documents(root, files)
     skipped = admin_skips + render_drops
 
     # ---- pass 1: convert, split, and decide where every page lands ------------------------
-    converted = convert_all(docs, jobs)
+    cache = Path(cache or LIBRARY / "conversion-cache")
+    MODEL_IN_USE[0] = model
+    converted = convert_all(docs, jobs, model, cache, apply, sync)
 
-    plans, index_by_rel = [], {}
+    plans, index_by_rel, figures_for = [], {}, {}
     for d in docs:
-        status, payload, meta_title = converted[d.rel]
+        status, payload, meta_title, figures = converted[d.rel]
         if status == "scan":
             skipped.append((d.rel, f"no text layer (scan) — {payload} chars/page"))
             continue
         if status == "fail":
             skipped.append((d.rel, f"conversion failed: {payload}"))
             continue
+        if status == "reject":
+            skipped.append((d.rel, payload))
+            continue
+        if status == "noapi":
+            skipped.append((d.rel, payload))
+            continue
+        if status == "quota":
+            stats["pending"] = stats.get("pending", 0) + 1
+            continue
+        if status == "planned":
+            stats["to_model"] = stats.get("to_model", 0) + 1
+        figures_for[d.rel] = figures
         # `index.qmd` would be overwritten by the generated contents page at the same path, so
         # the source's own home page keeps its content under a name of its own.
         out = Path(d.rel).with_suffix("")
         if out.name == "index":
             out = out.with_name("home")
+        # A transcript of speech and a set of typeset notes are different objects, and a directory
+        # that alternates `01-captions`, `01-slides`, `01-transcript` tells a reader nothing about
+        # which to open. Recordings get their own subtree, keeping the source's own grouping
+        # underneath it, so `lectures/01-captions.srt` lands at `recordings/lectures/01`.
+        if d.route == "transcript":
+            out = Path("recordings") / out
+            if out.name.endswith(("-captions", "-transcript", "-subs")):
+                out = out.with_name(out.name.rsplit("-", 1)[0])
         d.out_rel = str(out)
 
         text = expand_shortcodes(payload, d.src, root)
@@ -940,23 +1311,58 @@ def process(entry, sources_dir, library, include_all, apply, jobs=1):
             nxt = ((targets[i + 1][1], _href(targets[i + 1][0], target))
                    if i + 1 < len(targets) else None)
             nav = footer(prev, nxt, _href(landing if split else out_root / "index.md", target))
+            body = place_figures(body, d, target, out_root, figures_for.get(d.rel, []),
+                                 cache, apply)
             rendered.append((target, page(title, entry, d, url, exact, body, nav)))
 
+        # The gates decide what is PUBLISHED, not merely what is reported. This has to happen
+        # before the contents listing is built, or a dropped page stays linked from it and the
+        # strict build fails on the dangling link. references/quality-gates.md is the
+        # specification and validate_pages.py the implementation, so CI and the converter cannot
+        # disagree about what is acceptable.
+        keep = []
+        for target, content in rendered:
+            report = validate_pages.check(target, content)
+            if report.fatal:
+                skipped.append((f"{d.rel} → {target.name}",
+                                report.fatal[0].gate.replace("-", " ")))
+                continue
+            keep.append((target, content))
+        if not keep:
+            continue
+        titles = dict(targets)
+        targets = [(target, titles[target]) for target, _ in keep]
+        rendered = keep
+        split = len(targets) > 1
+
+        figures_found = extract_document_figures(d, out_root, entry, apply)
         if split:
             listing = "\n".join(f"{i}. [{t}]({_href(pt, landing)})"
                                  for i, (pt, t) in enumerate(targets, 1))
             rendered.append((landing, page(
                 doc_title, entry, d, url, exact,
-                f"Split into {len(targets)} sections.\n\n{listing}\n",
+                f"Split into {len(targets)} sections.\n\n{listing}\n"
+                + figures_section(figures_found, landing, out_root, d),
                 f"[Up: contents]({_href(out_root / 'index.md', landing)})")))
+        elif figures_found:
+            # Unsplit: the figures go on the one page there is, after its body.
+            target, content = rendered[0]
+            rendered[0] = (target, content.rstrip("\n") + "\n"
+                           + figures_section(figures_found, target, out_root, d) + "\n")
 
         d.parts = [(t, _href(pt, out_root / "index.md")) for pt, t in targets]
+        if not split and len(rendered) == 1 and rendered[0][0] == landing:
+            landing = rendered[0][0]
         stats["converted"] += 1
         stats["parts"] += len(targets)
         if d.fidelity == "lossy":
             stats["lossy"] += 1
         stats["docs"].append(d)
 
+        # The gates decide what is published, not just what is reported. A page that fails one is
+        # named under "Not converted" on the source's contents page instead of being shipped
+        # broken -- references/quality-gates.md is the specification and validate_pages.py is the
+        # implementation, so CI and the converter cannot disagree about what is acceptable.
         if apply:
             for target, content in rendered:
                 target.parent.mkdir(parents=True, exist_ok=True)
@@ -968,6 +1374,96 @@ def process(entry, sources_dir, library, include_all, apply, jobs=1):
         (out_root / "index.md").write_text(
             source_index(entry, stats["docs"], published, reason, skipped), encoding="utf-8")
     return stats
+
+
+# An extracted figure is redistribution of source content in a way reformatted prose is not, so
+# extraction is gated on the licence rather than attempted everywhere. `unresolved` is the default
+# and costs nothing; a wrongly published figure cannot be recalled from a public site.
+FIGURE_LICENCES = {"cc by 4.0", "cc by-nc 4.0", "cc by-nc-sa 4.0", "cc by-sa 4.0", "cc0-1.0",
+                   "cc0 1.0", "bsd-2-clause", "bsd-3-clause", "mit", "public domain"}
+
+
+def may_extract_figures(entry):
+    return (entry.get("licence") or "unresolved").strip().lower() in FIGURE_LICENCES
+
+
+def extract_document_figures(d, out_root, entry, apply):
+    """Pull a PDF's figures out locally and list them on the document's landing page.
+
+    Local, free and independent of the model: pymupdf reads the images straight out of the file.
+    What it cannot do is place them where they belong in the prose -- the model was not told the
+    filenames, so its markdown does not reference them -- so each figure is listed with the source
+    page it came from rather than dropped into the text at a guessed position. Approximate
+    placement, honestly labelled, beats 3,519 figures reduced to OCR fragments.
+    """
+    if d.route != "llm" or not may_extract_figures(entry):
+        return []
+    try:
+        import pymupdf
+    except ImportError:
+        try:
+            import fitz as pymupdf
+        except ImportError:
+            return []
+    home = out_root / d.out_rel / "figures"
+    found = []
+    try:
+        with pymupdf.open(d.src) as doc:
+            for pno in range(len(doc)):
+                for k, info in enumerate(doc[pno].get_images(full=True)):
+                    try:
+                        img = doc.extract_image(info[0])
+                    except Exception:
+                        continue
+                    data, ext = img["image"], img["ext"]
+                    if not (llm_pdf.MIN_FIGURE_BYTES <= len(data) <= llm_pdf.MAX_FIGURE_BYTES):
+                        continue
+                    name = f"p{pno + 1:03d}-{k + 1}.{ext}"
+                    if apply:
+                        home.mkdir(parents=True, exist_ok=True)
+                        (home / name).write_bytes(data)
+                    found.append((pno + 1, name))
+    except Exception:
+        return []
+    return found
+
+
+def figures_section(found, from_page, out_root, d):
+    if not found:
+        return ""
+    prefix = _href(out_root / d.out_rel / "figures" / "X", from_page).rsplit("/", 1)[0]
+    lines = ["", "## Figures", "",
+             "Extracted from the original PDF. They are listed by the page they came from rather",
+             "than placed in the text: the conversion does not record where on the page each one",
+             "sat.", ""]
+    for page_no, name in found:
+        lines.append(f"![Figure from page {page_no} of the original]({prefix}/{name})")
+        lines.append("")
+    return "\n".join(lines)
+
+
+def place_figures(body, d, target, out_root, figures, cache, apply):
+    """Put extracted figures beside the page that references them.
+
+    The model is given a `FIGDIR/` placeholder rather than a real path, because where a page ends
+    up is only known after the document has been split -- a split document's pages sit one
+    directory deeper than an unsplit one's, and a relative image path has to account for that.
+    Figures nothing references are not copied: the model is the judge of which pages a figure
+    belongs on, and an unreferenced one is usually a decorative rule the extractor picked up."""
+    if FIGDIR + "/" not in body:
+        return body
+    home = out_root / d.out_rel / "figures"
+    prefix = ("figures" if target.parent == out_root / d.out_rel
+              else f"{Path(d.out_rel).name}/figures")
+    wanted = set(re.findall(re.escape(FIGDIR) + r"/([\w.\-]+)", body))
+    if apply and wanted:
+        staged = Path(cache) / "figures" / llm_pdf.cache_key(d.src, MODEL_IN_USE[0])
+        home.mkdir(parents=True, exist_ok=True)
+        for name in wanted:
+            src = staged / name
+            if src.exists():
+                shutil.copy2(src, home / name)
+    return body.replace(FIGDIR + "/", prefix + "/")
 
 
 def _href(target, from_page):
@@ -989,6 +1485,41 @@ def read_title(path):
         except Exception:
             pass
     return path.stem
+
+
+def repair_dangling_links(published_root, apply):
+    """Strip links whose target was not published, after the gates have decided.
+
+    The link map is necessarily built in pass 1, before a page can be rendered and therefore
+    before it can be judged -- so a page that later fails a gate leaves every link to it dangling,
+    and the strict build fails on 215 of them. Rather than publish a broken page to keep a link
+    alive, the link becomes plain text: the material is named on its source's contents page under
+    "Not converted", which is where a reader should be sent anyway.
+    """
+    fixed = pages = 0
+    for md in published_root.rglob("*.md"):
+        text = md.read_text(encoding="utf-8")
+
+        def sub(m):
+            nonlocal fixed
+            bang, label, target, title = m.group(1), m.group(2), m.group(3), m.group(4) or ""
+            if re.match(r"^(https?:|mailto:|#)", target) or not target.strip():
+                return m.group(0)
+            path_part = target.partition("#")[0]
+            if not path_part:
+                return m.group(0)
+            dest = (md.parent / path_part).resolve()
+            if dest.exists() or dest.with_suffix(".md").exists() or (dest / "index.md").exists():
+                return m.group(0)
+            fixed += 1
+            return label if not bang else ""
+
+        out = MD_LINK.sub(sub, text)
+        if out != text:
+            pages += 1
+            if apply:
+                md.write_text(out, encoding="utf-8")
+    return fixed, pages
 
 
 def write_nav(reference_dir, apply):
@@ -1120,6 +1651,17 @@ def main():
     ap.add_argument("--jobs", type=int, default=min(8, os.cpu_count() or 1),
                     help="parallel conversion workers (default: min(8, cores); 1 disables)")
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--clean", action="store_true",
+                    help="delete the published tree before converting. Use with --all: a source "
+                         "whose documents are all pending never gets its directory rebuilt, so "
+                         "output from a previous run survives as orphans -- 894 pages of the old "
+                         "corpus, still carrying a route that no longer exists.")
+    ap.add_argument("--llm-sync", action="store_true",
+                    help="call the model directly instead of using the batch cache. Costs twice "
+                         "as much; use llm_batch.py for the corpus.")
+    ap.add_argument("--llm-model", default=llm_pdf.DEFAULT_MODEL,
+                    help="model for the PDF route (default: %(default)s). The cache key depends "
+                         "on it, so changing it re-converts every PDF.")
     a = ap.parse_args()
 
     published_root = LIBRARY / "docs"
@@ -1144,7 +1686,17 @@ def main():
                 sys.exit(f"{slug} is not in the lockfile — run lock_sources.py first")
             entries.append(by_slug[slug])
 
-    results = [process(e, a.sources, LIBRARY, a.include_all, a.apply, a.jobs) for e in entries]
+    if a.clean and a.apply:
+        # Everything under docs/ is generated except the MathJax config, which is hand-written.
+        keep = {"javascripts"}
+        for child in sorted(published_root.iterdir()):
+            if child.name in keep:
+                continue
+            shutil.rmtree(child) if child.is_dir() else child.unlink()
+        print(f"cleaned {published_root} (kept {', '.join(sorted(keep))})")
+
+    results = [process(e, a.sources, LIBRARY, a.include_all, a.apply, a.jobs,
+                       a.llm_model, None, a.llm_sync) for e in entries]
 
     print(f"{'source':45s} {'dest':8s} {'docs':>5s} {'pages':>6s} {'lossy':>6s} {'skipped':>8s}")
     print("-" * 84)
@@ -1176,7 +1728,20 @@ def main():
         for why, n in sorted(reasons.items(), key=lambda kv: -kv[1]):
             print(f"  {n:5d}  {why}")
 
+    pending = sum(r.get("pending", 0) for r in results)
+    to_model = sum(r.get("to_model", 0) for r in results)
+    if pending:
+        print(f"\n{pending} documents pending: the day's model quota is gone. Everything already "
+              f"converted is cached,\nso re-running tomorrow resumes rather than starting over.")
+    if to_model:
+        print(f"\n{to_model} PDFs are not in the conversion cache yet. Queue them with\n"
+              f"  llm_batch.py submit   (half price, results within 24h)\n"
+              f"then re-run this with --apply. Nothing here called the model.")
+
     if a.apply:
+        fixed, on_pages = repair_dangling_links(published_root, True)
+        if fixed:
+            print(f"\nstripped {fixed} links on {on_pages} pages whose target failed a gate")
         write_library_index(published_root, by_slug.values(), True)
         n = write_nav(published_root, True)
         print(f"\nwrote {tot['parts']} pages; nav has {n} entries")
