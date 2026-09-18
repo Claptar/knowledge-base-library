@@ -25,9 +25,15 @@ dev = [
 # Both ship as wheels with no system libraries: pymupdf4llm replaces poppler for PDFs,
 # pypandoc-binary bundles the pandoc executable itself.
 convert = [
-    "pymupdf4llm",      # PDF -> markdown, preserving headings and layout
+    "pymupdf4llm",      # PDF -> markdown; now the cross-check on the LLM route, not the output
     "pypandoc-binary",  # LaTeX/HTML -> markdown; bundles pandoc, no system install
     "pyyaml",
+    # The LLM route for PDFs. A multimodal model reading page images is the only thing that
+    # recovers a two-column slide deck or a typeset equation; pymupdf4llm turns both into word
+    # salad. It is inference, so it is fenced by references/quality-gates.md: a labelled route, a
+    # banner that says so, a cross-check against the deterministic extraction, and a committed
+    # cache so a regeneration does not re-roll the model.
+    "google-genai",
 ]
 
 # Notebooks are read directly from the .ipynb JSON rather than via nbconvert, which writes
