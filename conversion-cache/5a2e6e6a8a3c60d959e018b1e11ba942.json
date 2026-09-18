@@ -1,0 +1,12 @@
+{
+ "source": "unit12-integ.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 13,
+ "markdown": "## Unit 12: Numerical Integration and Differentiation\n\nNovember 21, 2015\n\nReferences:",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "unit6-numbers.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 23,
+ "markdown": "## Unit 6: Computer numbers\n\nOctober 18, 2019\n\nReferences:\n- Gentle, Computational Statistics, Chapter 2.\n- http://www.lahey.com/float.htm\n- And for more gory detail, see Monahan, Chapter 2.\n\nA quick note that, as we've already seen, R's version of scientific notation is XeY, which means $X \\cdot 10^Y$.\n\nA second note is that the concepts developed here apply outside of R, but we'll illustrate the principles of computer numbers using R. R makes use of the *double* and *int* types in C for the underlying representation of R's numbers in C variables, so what we'll really be seeing is how such types behave in C on most modern machines.\n\n## 1 Basic representations\n\nEverything in computer memory or on disk is stored in terms of bits. A *bit* is essentially a switch than can be either on or off. Thus everything is encoded as numbers in base 2, i.e., 0s and 1s. 8 bits make up a *byte*. For information stored as plain text (ASCII), each byte is used to encode a single character (actually only 7 of the 8 bits are actually used, hence there are $2^7 = 128$ ASCII characters). One way to represent a byte is to write it in hexadecimal, rather than as 8 0/1 bits. Since there are $2^8 = 256$ possible values in a byte, we can represent it more compactly as 2 base-16 numbers, such as \"3e\" or \"a0\" or \"ba\". A file format is nothing more than a way of interpreting the bytes in a file. Here we'll use the `bits` function from `pryr` to look at the underlying binary representation. Note that 'b' is encoded as 1 more than 'a', and similarly for '0', '1', and '2'.\n\n```r\nlibrary(pryr)\nbits('a')\n## [1] \"01100001\"\nbits('b')\n## [1] \"01100010\"\nbits('0')\n## [1] \"0011000",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

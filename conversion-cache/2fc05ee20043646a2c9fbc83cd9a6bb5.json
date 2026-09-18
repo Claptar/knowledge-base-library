@@ -1,0 +1,12 @@
+{
+ "source": "lecture_10_post.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 11,
+ "markdown": "## Lecture 10\n\nDavid Aldous\n\n18 September 2015\n\n---\n\n### Ideas used in Lecture 9.\n\n* If $\\mu(t)$ (the distribution of $X(t)$) converges to a limit distribution $\\pi$, then the limit $\\pi$ must be a stationary distribution and\n  $$(\\text{mean proportion of time at } i \\text{ before } t) \\to \\pi_i.$$\n* Theorem about existence and formula for stationary distribution.\n* Current material treated in sections 4.3",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "dgm.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```mermaid\ngraph TD\n    tau",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

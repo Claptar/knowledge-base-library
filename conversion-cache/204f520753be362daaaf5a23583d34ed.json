@@ -1,0 +1,12 @@
+{
+ "source": "17. Confidence Intervals Starter.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "## **Confidence**\n\n## **Intervals**\n\n**Agenda**\n\n1) Null Hypotheses Revisited\n2) CIs\n   $\\hookrightarrow$ RBI\n\n---\n\n## **Two-way ANOVA Table**\n\n$$Y_i = \\mu + \\alpha_{j(i)} + \\beta_{k(i)} + \\gamma_{j(i), k(i)} + \\varepsilon_i, \\quad \\varepsilon_i \\sim N(0, \\sigma^2)$$\n\n| Source | df | SS | MS | F | $H_0$ |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Factor A | $J - 1$ | $SS_A$ | $MS_A$ | $MS_A / MS_{\\text{resid}}$ | |\n| Factor B | $K - 1$ | $SS_B$ | $MS_B$ | $MS_B / MS_{\\text{resid}}$ | |\n| Interaction A:B | $(J - 1)(K - 1)$ | $SS_{AB}$ | $MS_{AB}$ | $MS_{AB} / MS_{\\text{resid}}$ | |\n| Residual | $n - JK$ | $SS_{\\text{resid}}$ | $MS_{\\text{resid}}$ | | |\n\n**RBI**\n\n---\n\n[Slides]\n\n---\n\n## **Confidence Intervals**\n\n**def** $(LB, UB)$ A random interval that contains the parameter of interest w/ probability $\\ge (1 - \\alpha)$ over whatever random process generated the data.\n\n**Q** - What is our random data generating process?\n\n---\n\n| id | $Y_i(0)$ | $Y_i(1)$ |\n| :--- | :--- | :--- |\n| 1 | 15 | ? |\n| 2 | 30 | ? |\n| 3 | ? | 40 |\n| 4 | $\\vdots$ | $\\vdots$ |\n| $\\downarrow$ | | |",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

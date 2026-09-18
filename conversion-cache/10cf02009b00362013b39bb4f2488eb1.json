@@ -1,0 +1,12 @@
+{
+ "source": "bandits.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "Some resources for multi-arm bandits:\n\n## Theory\n\n- Lecture notes from EE290: Theory of Multi-armed Bandits and Reinforcement Learning\n- Reinforcement Learning: An Introduction. By Sutton & Barto Section III contains many Frontier examples with coding.\n\n## Coding\n\n- Inference-bias-t-test-lambda with R file\n- Multi-Armed Bandits as an A/B Testing Solution\n- Multi-Armed Bandit with Thompson Sampling\n- Exploration & Exploitation & Multi-armed bandits\n- The Multi-Armed Bandit Problem and Its Solutions",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

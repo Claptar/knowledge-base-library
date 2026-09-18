@@ -1,0 +1,12 @@
+{
+ "source": "HW3.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## Stat 156 HW #3\n**Due 10/8/2024 by 11:59 pm PT**\n\nNote that points will be deducted if you fail to\n\u2022 Submit code for coding problems\n\u2022 Assign pages to the corresponding problem in Gradescope\n\nFrom *A First Course In Causal Inference*\n\n1. Problem 7.4\n2. Problem 10.3\n3. Problem 11.3\n4. Problem 11.4\n5. Problem 12.2\n6. Problem 12.4 Analyze the dataset cpsire74.csv (described in Example 10.1) using the outcome regression estimator, IPW estimator, and doubly-robust estimator. How do your estimates compare across methods?\n7. Problem 13.3",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

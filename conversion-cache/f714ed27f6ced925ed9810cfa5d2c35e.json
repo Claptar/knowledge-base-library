@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureTen153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 6,
+ "markdown": "## Lecture Ten\n\n### High-Dimensional Linear Regression\n\n(",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

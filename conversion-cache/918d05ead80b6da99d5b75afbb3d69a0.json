@@ -1,0 +1,12 @@
+{
+ "source": "lecture10-F24.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 13,
+ "markdown": "9/28/2023\n\n## **Outline",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

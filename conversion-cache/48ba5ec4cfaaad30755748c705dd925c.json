@@ -1,0 +1,12 @@
+{
+ "source": "ar-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "### AR(1), phi = +0.9\n\n<!-- Two plots showing time series realizations of AR(1) processes -->\n\n### AR(1), phi = \u22120.9",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

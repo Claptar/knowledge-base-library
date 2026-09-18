@@ -1,0 +1,12 @@
+{
+ "source": "ps4.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "## Stat243: Problem Set 4, Due Wednesday Oct. 13\n\nOctober 8, 2021\n\nThis covers the second half of Unit 5.  \nIt's due as PDF submitted to Gradescope and with all materials submitted via GitHub at 10 am on Oct. 13.\n\n### Comments:\n\n1. The formatting requirements are the same as previous problem sets.\n\n2. Please note my comments in the syllabus about when to ask for help and about working together. In particular, please give the names of any other students that you worked with on the problem set and indicate in comments any ideas or code you borrowed from another student.\n\n3. Note that for problems 4 and 5, you will be inspecting the addresses of objects and determining the copying that takes place. The results when knitting and results in RStudio may differ from results when running R outside of RStudio. If you see inconsistencies, the correct answer is obtained when running R outside of RStudio. So if there are inconsistencies, you may need to include a screenshot or copy the output from the R console into your solution as comments in your code.\n\n## Problems\n\n1. When I run the code `plot(x,y)`, the function `range()` is called when making the axis limits. Suppose I create a function called `range()` in my R session, as follows and then make my plot.\n\n```r\nn <- 10\nx <- rnorm(n)\ny <- rnorm(n)\n\nrange <- function(...) cat(\"Good luck with that.\\n\")\nrange(rnorm(3))\n## Good luck with that.\nplot(x, y)\n```\n\nExplain in detail why can I still make a plot, including exactly where R looks for `range()` and where it finds it. As part of your answer, say what functions are on the call stack at the point that `range()` is called from within `plot()`.\n\n2. Challenge 5 of Section 7.3 of Unit 5.  \nThe function `oneUpdate()` (and a helper function `ll()`) are code used in maximizing",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

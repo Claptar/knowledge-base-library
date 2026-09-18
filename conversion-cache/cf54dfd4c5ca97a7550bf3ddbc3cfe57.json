@@ -1,0 +1,12 @@
+{
+ "source": "lecture15-testonepar.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 11,
+ "markdown": "## Testing with one real parameter\n\n### Outline\n\n1) One-sided tests in general\n2) Two-sided tests\n3) UMP unbiased tests\n\n---\n\n## One-sided tests in general\n\n$\\mathcal{P} = \\{P_\\theta : \\theta \\in \\Theta \\subseteq \\mathbb{R}\\}$, $\\theta_0 \\in \\Theta$\n\n$H_0 : \\theta \\le \\theta_0$ vs $H_1 : \\theta > \\theta_0$ called **one-sided hypothesis**\n\nOften, no UMP test exists.\n\nLRT may vary for different $\\theta_1$ values\n\nIf $n$ large, could prioritize $\\theta_1 = \\theta_0 + \\varepsilon$, $\\varepsilon \\downarrow 0$\n\n$$\\log LR(X) = \\log \\frac{p_{\\theta_0 + \\varepsilon}(X)}{p_{\\theta_0}(X)} \\approx \\varepsilon \\cdot \\dot{\\ell}(\\theta_0; X)$$\n\n$\\implies$ Use **score at $\\theta_0$** $\\dot{\\ell}(\\theta_0; X)$ as test stat.\n\n$$\\phi(X) = \\mathbf{1}\\{\\dot{\\ell}(\\theta_0; X) \\ge c_\\alpha\\}$$\n\nNeed to check $\\beta_\\phi(\\theta) \\le \\alpha$ for $\\theta \\le \\theta_0$.\n\n---\n\n**Ex. Laplace:** $X_1, \\dots, X_n \\overset{iid}{\\sim} \\frac{1}{2} e^{-|x - \\theta|}$\n\nTest $H_0 : \\theta \\le \\theta_0$ vs. $H_1 : \\theta >",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

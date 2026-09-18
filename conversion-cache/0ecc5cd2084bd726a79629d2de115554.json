@@ -1,0 +1,12 @@
+{
+ "source": "04-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "**Problem Set 4**  \n**Assigned: 10.21.04**  \n**Due in class**  \n**Due: 11.16.04**  \n\n### 1. Waiting times for chemical reactions.\n\nWe showed in class that, for a chemical reaction occurring at rate $r$, the distribution of waiting times $\\tau$ between reaction events is given by:\n\n$$\n\\wp(\\tau)d\\tau = r e^{-r\\tau} d\\tau \\tag",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

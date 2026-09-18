@@ -1,0 +1,12 @@
+{
+ "source": "lecture11-bayescompute.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 13,
+ "markdown": "## **Outline**\n\n1) Hierarchical Bayes\n2) Markov Chain Monte Carlo\n3) Gibbs Sampler\n\n---\n\n## **Hierarchical Bayes**\n\n[Full power of Bayes is realized in large, complex problems with repeat structure, allowing us to pool information across many observations.]\n\n**Ex** Predict a batter's \"true\" batting average from $n_i$ at-bats. $X_i = \\text{\\# of hits} \\sim \\text{Binom}(n_i, \\theta_i)$\n\nPool info across players $i=1,\\dots, m$ via **hierarchical model**\n\n$$\n\\begin{aligned}\n\\alpha, \\beta &\\sim \\lambda_0(\\alpha, \\beta) \\\\\n\\theta_i \\mid \\alpha, \\beta &\\overset{\\text{iid}}{\\sim} \\text{Beta}(\\alpha, \\beta) \\quad i \\le m \\\\\nX_i \\mid \\theta_i &\\overset{\\text{indep}}{\\sim} \\text{Binom}(n_i, \\theta_i) \\quad i \\le m\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n\\mathbb{E}[\\theta_i \\mid X] &= \\mathbb{E}\\Big[ \\mathbb{E}[\\theta_i \\mid X, \\alpha, \\beta] \\mid X \\Big] \\\\\n&= \\mathbb{E}\\left[ \\left( \\frac{X_i + \\alpha}{n_i + \\alpha + \\beta} \\right) \\mid X \\right]\n\\end{aligned}\n$$\n\n*(Note above fraction: $X_i, n_i$ are fixed; $\\alpha, \\beta$ are sampled $\\sim \\lambda(\\alpha, \\beta \\mid X)$)*\n\n**Intuition:** Use all $X_1, \\dots, X_m$ to learn good prior on $\\theta_i$\n\n[**Note:** there is always an equivalent model where we marginalize over $\\alpha, \\beta$ and just write a more complicated prior on $\\Theta$. Hierarchical version may give better intuition or computational strategies]\n\n---\n\n## **Gaussian Hierarchical Model:**\n\n$$\n\\begin{aligned}\n\\tau^2 &\\sim \\lambda_0 \\\\\n\\theta_i \\mid \\tau^2 &\\overset{\\text{iid}}{\\sim} N(0, \\tau^2) \\quad i \\le d \\\\",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "solution2024.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 12,
+ "markdown": "Student ID (**NOT your name**):\n\n## Final Examination: QUESTION BOOKLET\n\nProf. Will Fithian\n\nFall 2024\n\n- Do **",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

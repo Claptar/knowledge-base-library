@@ -1,0 +1,12 @@
+{
+ "source": "23-solutions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n(Fall 2010)\n\n---\n\n### Recitation 23 Solutions\n\n1. Example 9.1 in the textbook (page 463)\n\n2. Example 9.4 in the textbook (page 464)\n\n3. Example 9.8 in the textbook (page 474)\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 0.9333333333333333,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

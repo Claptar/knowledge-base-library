@@ -1,0 +1,12 @@
+{
+ "source": "150.hw0.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## STAT 150 HOMEWORK #0\n\nSPRING 2024\n\n**",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

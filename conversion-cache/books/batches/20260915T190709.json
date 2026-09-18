@@ -1,0 +1,19 @@
+{
+ "model": "gemini-3.8-flash",
+ "submitted": [
+  {
+   "job": "batches/kncgjpk1txi9zboh955g1sy39zz2j868pmwn",
+   "first": 0,
+   "count": 1
+  }
+ ],
+ "index": [
+  {
+   "key": "2f29d1f866ee5f7af1fbfa9257f903b1",
+   "course": "computational-biology/pachter-lab/biophysics-docs",
+   "number": 1,
+   "title": "Contributions clustering",
+   "solutions": []
+  }
+ ]
+}

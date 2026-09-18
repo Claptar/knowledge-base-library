@@ -1,0 +1,12 @@
+{
+ "source": "6. Model-Based Inference Starter.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 10,
+ "markdown": "## 6. Model-Based Inference\n\n---\n\n## Goals\n\n1) Convince you Randomization Tests are good approximations of Permutation Tests.\n\n2) Tinker around w/ other test statistics\n\n3) Introduce Model-Based Inference as a **very** different philosophy w/ similar results.\n\n---\n\n**Q** How many unique ways are there to partition 74 elements into two sets of size 33 and 41?",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

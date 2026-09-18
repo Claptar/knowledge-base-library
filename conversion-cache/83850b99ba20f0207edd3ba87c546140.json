@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureTwo153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 6,
+ "markdown": "## Lecture 2 (STAT 153/248)\n\n### Simple Linear Regression\n\n$$y \\longleftrightarrow x \\longrightarrow \\text{Simple Regression}$$\n$$y \\longleftrightarrow (x_1, \\dots, x_p) \\longrightarrow \\text{Multiple Regression}$$\n\n**Eg:**\n- $y$: Height of an Adult\n- $x_1$: Height of",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

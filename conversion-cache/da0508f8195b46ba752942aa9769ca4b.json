@@ -1,0 +1,12 @@
+{
+ "source": "12-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 12\n### October 19, 2010\n\n1. Show $\\rho(aX + b, Y) = \\rho(X, Y)$.\n\n2. Romeo and Juliet have a date at a given time, and each, independently, will be late by amounts of time, $X$ and $Y$, respectively, that are exponentially distributed with parameter $\\lambda$.\n   (a) Find the PDF of $Z = X - Y$ by first finding the CDF and then differentiating.\n   (b) Find the PDF of $Z$ by using the total probability theorem.\n\n3. Problem 4.16, page 248 in text.\n   Let $X$ and $Y$ be independent standard normal random variables. The pair $(X, Y)$ can be described in polar coordinates in terms of random variables $R \\ge 0$ and $\\Theta \\in [0, 2\\pi]$, so that\n   $$X = R\\cos\\Theta, \\quad Y = R\\sin\\Theta.$$\n   Show that $R$ and $\\Theta$ are independent (i.e. show $f_{R,\\Theta}(r, \\theta) = f_R(r)f_\\Theta(\\theta)$).\n   (a) Find $f_R(r)$.\n   (b) Find $f_\\Theta(\\theta)$.\n   (c) Find $f_{R,\\Theta}(r, \\theta)$.\n\n4. Problem 4.20, page 250 in text. **Schwarz inequality**.\n   Show that for any random variables $X$ and $Y$, we have\n   $$(\\mathbf{E}[XY])^2 \\le \\mathbf{E}[X^2]\\mathbf{E}[Y^2].$$\n\nTextbook problems are courtesy of Athena Scientific, and are used with permission.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9861111111111112,
+ "numeral_recall": 0.9444444444444444,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

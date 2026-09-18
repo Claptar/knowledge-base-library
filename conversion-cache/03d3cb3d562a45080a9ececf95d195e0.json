@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureFifteen153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "## LECTURE FIFTEEN\n\n### Spectrum Model\n\n**Periodogram**: $y_0, y_1, \\dots, y_{n-1}$\n\nDFT : $b_0, b_1, \\dots, b_{n-1}$\n\n$$I\\left(\\frac{j}{n}\\right) = \\frac{|b_j|^2}{n}, \\quad 0 < \\frac{j}{n} < \\frac{1",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

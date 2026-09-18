@@ -1,0 +1,12 @@
+{
+ "source": "independentFiltering2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "but only formally tests the most extreme results. If the standard $t$-distribution is used to obtain $p$-values, type I error rate control will clearly be lost.\n\nMore realistic nonspecific filters can also detrimentally affect the",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "periodogram-mix-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "Periodogram\n    800 |           |\n        |           |\n    400 |       |   |\n        |       |   |\n      0 +.......|...|..................................|\n        +---+---+---+---+---+---+---+---+---+---+---+--+\n           0.0     0.1     0.2     0.3     0.4     0.5\n                               Frequency\n\n                Periodogram\n   1500 |                   |\n        |                   |\n        |           |       |\n    500 |       |   |       |\n      0 +.......|...|.......|..........................|\n        +---+---+---+---+---+---+---+---+---+---+---+--+\n           0.0     0.1     0.2     0.3     0.4     0.5\n                               Frequency",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "rw-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "### delta = 0\n\n![delta = 0](image)\n\n*(Graph showing multiple simulated trajectories of $x_t$ plotted against $t$, spreading outwards over time from $x_0 = 0$ across the interval $t \\in [0, 500]$, with a bold line tracing near the mean around $x_t = 0$. Vertical axis: $x\\_t \\in [-60, 40]$; horizontal",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

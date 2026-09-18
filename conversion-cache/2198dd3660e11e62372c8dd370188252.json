@@ -1,0 +1,12 @@
+{
+ "source": "04-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n**Tutorial 4**  \n**October 7/8, 2010**\n\n1. Let $X$ and $Y$ be Gaussian random variables, with $X \\sim N(0, 1)$ and $Y \\sim N(1, 4)$.\n   (a) Find $\\mathbf{P}(X \\le 1.5)$ and $\\mathbf{P}(X \\le -1)$.\n   (b) What is the distribution of $\\frac{Y-1}{2}$?\n   (c) Find $\\mathbf{P}(-1 \\le Y \\le 1)$.\n\n2. Example 3.15, page 169 in text.  \n   Ben throws a dart at a circular target of radius $r$. We assume that he always hits the target, and that all points of impact $(x, y)$ are equally likely. Compute the joint PDF $f_{X,Y}(x, y)$ of the random variables $X$ and $Y$ and compute the conditional PDF $f_{X|Y}(x|y)$.\n\n3. Problem 3.20, page 191 in text.  \n   An absent-minded professor schedules two student appointments for the same time. The appointment durations are independent and exponentially distributed with mean thirty minutes. The first student arrives on time, but the second student arrives five minutes late. What is the expected value of the time between the arrival of the first student and the departure of the second student?\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2010\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9047619047619048,
+ "numeral_recall": 1.0,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

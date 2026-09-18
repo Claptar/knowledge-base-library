@@ -1,0 +1,12 @@
+{
+ "source": "cardio-lasso-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "Lasso\n\n```\nCoefficient estimate\n```\n\nlambda\n\n- Lag 0\n- Lag 4\n- Lag 8\n- Lag 12\n- Lag 16\n- Lag 20\n- Lag 24\n- Lag 28\n- Lag 32\n- Lag 36\n- Lag 40",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

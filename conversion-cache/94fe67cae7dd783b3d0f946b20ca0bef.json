@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureThree153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 9,
+ "markdown": "## LECTURE 3\n\n### Simple Linear Regression\n\n$(x_1, y_1), \\dots, (x_n, y_n) \\qquad y_i \\in \\mathbb{R}, \\quad x_i \\in \\mathbb{R}$\n\n$y_i = \\underbrace{\\beta_0}_{\\",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

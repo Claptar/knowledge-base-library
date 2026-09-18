@@ -1,0 +1,12 @@
+{
+ "source": "boston-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "04:00:00 -|\n         |\n         |\n         |\n03:00:00 -|\n         |\nTime     |\n         |\n02:00:00 -|\n         |\n         +---------+---------+---------+---------+---------+---------+\n                 1900      1925      1950      1975      2000      2025\n                                       Year",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

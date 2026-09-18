@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureFive153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "## LECTURE FIVE\n\n### Multiple Linear Regression\n\n**Data:** $y_i \\quad x_{i1} \\quad x_{i2} \\quad \\cdots \\quad x_{im}, \\quad i = 1, \\dots, n$\n\n**Model:** $y_i = \\beta_0 + \\beta_1 x_{i1} + \\cdots + \\beta_m x_{im} + \\varepsilon_i$\n$$\\varepsilon_i \\overset{\\text{iid}}{\\sim} N(0, \\sigma^2)$$\n\n**Inference:** **Prior:** $\\beta_0, \\dots, \\beta_m, \\log \\sigma \\overset{\\text{iid}}{\\sim} \\text{Unif}(-C, C)$\n\n**Posterior:**\n$$f(\\beta_0, \\dots, \\beta_m \\mid \\text{data}) \\propto \\left[ \\frac{S(\\hat{\\beta}_0, \\dots, \\hat{\\beta}_m)}{S(\\beta_0, \\dots, \\beta_m)} \\right]^{\\frac{n}{2}} \\quad \\text{peaked at the least squares estimator}$$\n\n$$S(\\beta_0, \\dots, \\beta_m) = \\sum_{i=1}^n (y_i - \\beta_0 - \\beta_1 x_{i1}",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

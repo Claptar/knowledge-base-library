@@ -1,0 +1,12 @@
+{
+ "source": "ps8.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Stat243: Problem Set 8, Due Friday Dec. 1\n\nNovember 20, 2017\n\n**Comments:**\n\n\u2022 This covers Units 10 and 11.\n\n\u2022 It's due at the start of class on Dec. 1.\n\n### Questions\n\n1. Let's consider importance sampling and explore the need to have the sampling density have heavier tails than the density of interest. Assume that we want to estimate $\\phi = EX$ and $\\phi = E(X^2)$ with respect to a density, $f$. We'll make use of the Pareto distribution, which has the pdf $p(x) = \\frac{\\beta\\alpha^\\beta}{x^{\\beta+1}}$ for $\\alpha < x < \\infty$, $\\alpha > 0$, $\\beta > 0$. The mean is $\\frac{\\beta\\alpha}{\\beta-1}$ for $\\beta > 1$ and non-existent for $\\beta \\le 1$ and the variance is $\\frac{\\beta\\alpha^2}{(\\beta-1)^2(\\beta-2)}$ for $\\beta > 2$ and non-existent otherwise.\n\n   (a) Does the tail of the Pareto decay more quickly or more slowly than that of an exponential distribution?\n\n   (b) Suppose $f$ is an exponential density with parameter value equal to 1, shifted by two to the right so that $f(x) = 0$ for $x < 2$ and our sampling density, $g$, is a Pareto distribution with $\\alpha = 2$ and $\\beta = 3$. Use $m = 10000$ to estimate $EX$ and $E(X^2)$. Recall that $\\text{Var}(\\hat{\\phi}) \\propto \\text{Var}(h(X)f(X)/g(X))$. Create histograms of $h(x)f(x)/g(x)$ and of the weights $f(x)/g(x)$ to get an idea for whether $\\text{Var}(\\hat{\\phi})$ is large. Note if there are any extreme weights that would have a very strong influence on $\\hat",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

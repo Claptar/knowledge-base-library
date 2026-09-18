@@ -1,0 +1,12 @@
+{
+ "source": "soi-ks-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## Kernel smoother\n\n![Kernel smoother](page1_img.png)\n\nSouthern Oscillation Index vs Time (1950 to 1980)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

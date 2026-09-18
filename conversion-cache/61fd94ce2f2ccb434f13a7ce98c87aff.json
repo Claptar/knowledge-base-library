@@ -1,0 +1,12 @@
+{
+ "source": "sinho_chewi_notes.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 105,
+ "markdown": "## Probability Theory\n\n### Mathematics C218A/Statistics C205A\n### Fall 2016\n\nProfessor David Aldous  \nScribe: Sinho Chewi\n\n## Contents\n\n* **1 August 25** 4\n  * 1.1 Measure Theory (MT): Conceptual Overview . . . . . . . . . . . . . . . . . . . . . 4\n  * 1.2 Abstract Measure Theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n* **2 August 30** 7\n  * 2.1 Measurable Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\n  * 2.2 On $\\mathbb{R}$-Valued Measurable Functions $(S, \\mathcal{S}) \\to \\mathbb{R}$ . . . . . . . . . . . . . . . . . . . . 9\n  * 2.3 Measures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9\n    * 2.3.1 Elementary Properties . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9\n    * 2.3\n\nLet $m \\uparrow \\infty$.\n$$ES_{N\n\nApply the Doob $L^2$ maximal inequality.\n$$E\\left[\\sup_n N_n\\right] \\le 4K$$\nNote that $M_n \\le N_n^2$ since $M_n = N_n^2 \\prod_{i=1}^n a_i^2$. Therefore, $E[\\sup_n M_n] \\le (4K)^2 < \\infty$. This implies that $(M_n, n \\ge 1",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "18-notes.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## creation of membrane associated minD\n\n### Huang\n\nfirst order + autocatalytic (linear, oligomerization)\n\n### Howard\n\nfirst order (inhibited by membrane minE, MM)\n\n---\n\n## removal of membrane associated minD\n\n### Huang\n\nlinear with mine (e also leaves membrane)\n\n### Howard\n\nlinear with mine (e stays in membrane)\n\n---\n\n## creation of membrane associated minE\n\n### Huang\n\nlinear with E, and $\\sim$ to minD in membrane\n\n'membrane recruitment by d'\n\n### Howard\n\nlinear with E, and D\n\n'cytoplasmic recruitment by D (D does not enter membrane)'\n\n---\n\n## removal of membrane associated minE\n\n### KC\n\nlinear with mine\ne leaves membrane together with d\n\n### Howard\n\nlinear with mine\nmind is",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

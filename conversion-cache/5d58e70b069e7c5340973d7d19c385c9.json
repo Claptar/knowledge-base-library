@@ -1,0 +1,12 @@
+{
+ "source": "01-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 10,
+ "markdown": "## 7.36/7.91/20.390/20.490/6.802/6.874\n**PROBLEM SET 1. Sequence search, global alignment, BLAST statistics (19 Points)**\n\n**Due: Thursday, February 20$^{\\text{th}}$ at noon.**\n\n### Problem 1. Sequence search (6 points)\n\nTo better understand inborn disorders of metabolism, you isolate a strain of mice that becomes ill unless fed a diet",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

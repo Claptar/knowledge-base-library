@@ -1,0 +1,12 @@
+{
+ "source": "cramer.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\nstandardized rank\n```\n\n*(Graphic depicting distribution of standardized rank across models by quartiles)*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

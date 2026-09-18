@@ -1,0 +1,12 @@
+{
+ "source": "lecture14-hyptesting.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 10,
+ "markdown": "## **Outline**\n\n1) Hypothesis testing\n2) Neyman-Pearson Lemma\n3) Uniformly most powerful tests\n\n---\n\n## **Hypothesis Testing**\n\n**Model** $\\mathcal{P} = \\{P_\\theta : \\theta \\in \\Theta\\}$\n\n$$\\begin{aligned}\n\\text{Null hypothesis} \\quad & H_0 : \\theta \\in \\Theta_0 \\quad \\text{(\"default\")} \\\\\n\\text{Alternative hyp.} \\quad & H_1 : \\",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

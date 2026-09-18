@@ -1,0 +1,12 @@
+{
+ "source": "LectureSeven153248Spring2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 6,
+ "markdown": "## STAT 153 & 248 - Time Series\n### Lecture Seven\n#### Spring 2025, UC Berkeley\n#### Aditya Guntuboyina\n#### February 11, 2025\n\n## 1 Recap from last lecture\n\nIn the last couple of lectures, we considered fitting the sinusoidal model\n$$\ny_t = \\beta_0 + \\beta_1 \\cos(2\\pi f t) + \\beta_2 \\sin(2\\pi f t) + \\epsilon_t \\quad \\text{with } \\epsilon_t \\overset{\\text{i.i.d}}{\\sim} N(0, \\sigma^2) \\tag{1}\n$$\nto observed time series $y_1, \\dots, y_n$. A key role for inferring the frequency parameter $f$ in this model is played by:\n$$\nRSS(f) := \\min_{\\beta_0, \\beta_1, \\beta_2} \\sum_{t=1}^n (y_t - \\beta",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

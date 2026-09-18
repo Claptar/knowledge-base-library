@@ -1,0 +1,12 @@
+{
+ "source": "covid-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "### Covid\u201319 cases and deaths in California\n\n```\n[Chart: Covid\u201319 cases and deaths in California]\nY-axis (left): Reported Covid\u201319 cases per 100k people (0 to 120)\nY-axis (right): Reported Covid\u201319 deaths per 100k people (0.0",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

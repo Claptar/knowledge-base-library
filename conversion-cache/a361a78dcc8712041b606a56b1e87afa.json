@@ -1,0 +1,12 @@
+{
+ "source": "14-notes.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 3,
+ "markdown": "## L14: 14 Lectures past and 11 to go\n\n### Part I: \u2018The cell as a well-stirred bioreactor\u2019\n\n#### *topics*\n\n- Lambda phage lysis-lysogeny switch\n- Synthetic genetic switch\n- Switches as memory storage\n- Chemotaxis: perfect adaptation or not?\n- Synthetic genetic oscillators\n\n#### *main assumption*\n\n- well-stirred reactor\n- absence of chemical gradients\n(justification: small cells, diffusion mixes)\n\n---\n\n### Switch from\n\n## Systems Microbiology\nto\n## Systems Cell Biology\n\n### The importance of diffusion and gradients for cellular",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

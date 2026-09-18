@@ -1,0 +1,12 @@
+{
+ "source": "11-outline.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "A second study describes the development of a genetic oscillator based on the combination of positive and negative feedback:\n\nM. R. Atkinson, M. A. Savageau, J. T. Myers, and A. J. Ninfa. *Cell* **113**, 597-607 (2003)\n\nIn this lecture we will derive the stability diagram in Fig. 1B. In the model odd subscripts are used for mRNA whereas even subscripts are used for proteins. For example, the translation of mRNA is modeled as:\n\n$$\\frac{dX_2}{dt} = k_p X_1 - \\beta_2 X_2 \\tag{VII.17}$$\n\nwhere $k_p$ is the translation rate constant and $\\beta_2$ is the decay rate constant of the protein $X_2$. When $X_2$ and $X_1$ are normalized to their steady state values: $X_2^{ss} = \\frac{k_p}{\\beta_2} X_1^{ss}$, [VII.7] takes the form:\n\n$$\\frac{dx_2}{dt} = \\beta_2 (x_1 - x_2) \\tag{VII.18}$$\n\nAnalogously the system of equations describing the genetic circuit in Fig.1A is:\n\n$$\\begin{aligned}\n\\frac{dx_1}{dt} &= \\beta_1 (f_1 - x_1) \\\\\n\\frac{dx_2}{dt} &= \\beta_2 (x_1 - x_2) \\\\\n\\frac{dx_3}{dt} &= \\beta_3 (f_3 - x_3) \\\\\n\\frac{dx_4}{dt} &= \\beta_4 (x_3 - x_4) \\\\\n\\frac{dx_5}{dt} &= \\beta_5 (f_5 - x_5) \\\\\n\\frac{dx_6}{dt} &= \\beta_6 (x_5 - x_6)\n\\end{aligned} \\tag{VII.19}$$\n\nThe functions $f_1$, $f_3$, and $f_5$ describe the transcriptional regulation and are defined by tri-phasic functions. For the stability analysis only the first four equations are relevant since no feedback occurs after $x_4$. As described in the Supplementary information of the paper:\n\n$$f_1 = \\begin{cases}\nB & : x_2^{g_{12}} x_4^{g_{14}} < B \\\\\nx_2^{g_{12}} x_4^{g_{14}} & : B < x_2^{g_{12}} x_4^{g_{14}} < M \\\\\nM & : x_2^{g_{12}} x_4^{g_{14}} > M\n\\end{cases} \\tag{VII.20a}$$\n\n$$f_3 = \\begin{cases}\nB & : x_2^{g_{32}} < B \\\\\nx_2^{g_{32}} & : B < x_2^{g_{32}} < M \\\\\nM & : x_2^{g_{32}} > M\n\\end{cases} \\tag{VII.20b}$$\n\nIn the case of a single fixed point, this point occurs at $x_1=x_2=x_3=x_4=1$. The matrix A is now defined as:\n\n$$A = \\begin{bmatrix}\n-\\beta_1 & \\beta_1 g_{12} & 0 & \\beta_1 g_{14} \\\\\n\\beta_2 & -\\beta_2 & 0 & 0 \\\\\n0 & \\beta_3 g_{32} & -\\beta_3 &",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

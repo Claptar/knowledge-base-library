@@ -1,0 +1,12 @@
+{
+ "source": "leisure-6.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\nAR roots\n\narima210110\n```\n\n![AR roots](image_page1.png)\n\n*(Plot of AR roots on the complex plane with axes $\\text{Re}(1/\\text{root})$ from $-1.0$ to $1.0$ and $\\text{Im}(1/\\text{root})$ from $-1.0$ to $1.0$, showing roots within the unit circle with legend `UnitCircle: Within`.)*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

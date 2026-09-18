@@ -1,0 +1,12 @@
+{
+ "source": "unit9-linalg.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 35,
+ "markdown": "## Unit 9: Numerical linear algebra\n\nOctober 26, 2018\n\nReferences:\n- Gentle: Numerical Linear Algebra for Applications in Statistics (my notes here are based primarily on this source) [Gentle-NLA]\n  - Unfortunately, this is not in the UCB library system - I have a copy that you can take a look at.\n- Gentle: Computational Statistics [Gentle-CS]\n- Lange: Numerical Analysis for Statisticians\n- Monahan: Numerical Methods of Statistics\n\nIn working through how to compute something or understanding an algorithm, it can be very helpful to depict the matrices and vectors graphically. We\u2019ll see this on the board in class.\n\n## 1 Preliminaries\n\n### 1.1 Context\n\nMany statistical and machine learning methods involve linear algebra of some sort - at the very least matrix multiplication and very often some sort of matrix decomposition to fit models and do analysis: linear regression, various more sophisticated forms of regression, deep neural networks, principle components analysis (PCA) and the wide varieties of generalizations and variations on PCA, etc., etc.\n\n### 1.2 Goals\n\nHere\u2019s what I\u2019d like you to get out of this unit:\n\n1. How to think about the computational order (number of computations involved) of a problem\n2. How to choose a computational approach to a given linear algebra calculation you need to do.\n3. An understanding of how issues with computer numbers (Unit 6) affect linear algebra calculations.\n\n### 1.3 Key principle\n\n**The form of a mathematical expression and how it should be evaluated on a computer may be very different.** Better computational approaches can increase speed and improve the numerical properties of the calculation.\n\nExample 1 (already seen in Unit 4): If $X$ and $Y$ are matrices and $z$ is a vector, we should compute $X(Yz)$ rather than $(XY)z$; the former is much more computationally efficient.\n\nExample 2: We do not compute $(X^T X)^{-1}X^T Y$ by computing",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

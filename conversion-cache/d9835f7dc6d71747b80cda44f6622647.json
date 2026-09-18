@@ -1,0 +1,12 @@
+{
+ "source": "reich.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\nOutcome\n- Cases\n- Hospitalizations\n- Deaths\n```\n\n*(Graphic displaying 95% PI coverage across Horizon (days) from 0 to 20+ for Cases, Hospitalizations, and Deaths)*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "Lab1_Part2_Solution.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## STAT 153 & 248 -",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

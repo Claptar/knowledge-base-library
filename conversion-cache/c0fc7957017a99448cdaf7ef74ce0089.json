@@ -1,0 +1,12 @@
+{
+ "source": "l9-syllabus-transcript.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## VII Biological Oscillators\n\nDuring class we consider the following two coupled differential equations:\n\n$$\\dot{x} = -x + ay + x^2y$$\n$$\\dot{y} = b",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

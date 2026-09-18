@@ -1,0 +1,12 @@
+{
+ "source": "cardio-cv-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "### Cross\u2013validation, training on trailing window\n\n```\nMAE = 6.01\n```\n\n<!-- The page contains a time-series plot depicting \"Cross\u2013validation, training on trailing window\" with y",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

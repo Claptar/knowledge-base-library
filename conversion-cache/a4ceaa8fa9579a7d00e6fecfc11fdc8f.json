@@ -1,0 +1,12 @@
+{
+ "source": "ps7.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 3,
+ "markdown": "## Stat243: Problem Set 7, Due Fri. November 17\n\nNovember 2, 2017\n\nThis covers Units 9 and 10.\nIt's due **on paper** and submitted via Github at the start of",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

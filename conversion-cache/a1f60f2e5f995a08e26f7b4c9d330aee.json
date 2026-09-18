@@ -1,0 +1,12 @@
+{
+ "source": "lecture11-bayescompute.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 13,
+ "markdown": "## Outline\n\n1) Hierarchical Bayes\n2) Markov Chain Monte Carlo\n3) Gibbs Sampler\n\n---\n\n## Hierarchical Bayes\n\n[Full power of Bayes is realized in large, complex problems with repeat structure, allowing us to pool information across many observations.]\n\n$\\underline{\\text{Ex}}$ Predict a batter's \"true\" batting average from $n_i$ at-bats. $X_i = \\text{\\# of hits} \\sim \\text{Binom}(n_i, \\theta_i)$\n\nPool info across players $i = 1, \\dots, m$ via **hierarchical model**\n\n$$\\alpha, \\beta \\sim \\lambda_0(\\alpha, \\beta)$$\n\n$$\\theta_i \\mid \\alpha, \\beta \\overset{\\text{iid}}{\\sim} \\text{Beta}(\\alpha, \\beta) \\quad i \\le m$$\n\n$$X_i \\mid \\theta_i \\overset{\\text{indep}}{\\sim} \\text{Binom}(n_i, \\theta_i) \\quad i \\le m$$\n\n$$\\begin{aligned}\n\\mathbb{E}[\\theta_i \\mid X] &= \\mathbb{E}\\left[\\mathbb{E}[\\theta_i \\mid X, \\alpha, \\beta] \\mid X\\right] \\\\\n&= \\mathbb{E}\\left",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

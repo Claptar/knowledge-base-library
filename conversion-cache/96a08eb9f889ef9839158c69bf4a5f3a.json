@@ -1,0 +1,12 @@
+{
+ "source": "s23.150.syllabus.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 3,
+ "markdown": "## STAT 150 - STOCHASTIC PROCESSES\n\nSPRING 2023\n\n**Course webpage:** https://www.stat.berkeley.edu/~bensonau/s23.15",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

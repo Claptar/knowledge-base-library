@@ -1,0 +1,12 @@
+{
+ "source": "07-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 7\n### September 30, 2010\n\n1. **Problem 2.35, page 130 in the text.** Verify the expected value rule\n$$E[g(X, Y)] = \\sum_x \\sum_y g(x, y) p_{X,Y}(x, y),$$\nusing the expected value rule for a function of a single random variable. Then, use the rule for the special case of a linear function, to verify the formula\n$$E[aX + bY] = aE[X] + bE[Y],$$\nwhere $a$ and $b$ are given scalars.\n\n2. Random variables $X$ and $Y$ can take any value in the set $\\{1, 2, 3\\}$. We are given the following information about their joint PMF, where the entries indicated by a $*$ are left unspecified:\n\n```\n    y ^\n      |\n    3 +   1/12    1/12      *\n      |\n    2 +   2/12      *       *\n      |\n    1 +   1/12    2/12      0\n      |\n      +-----+-------+-------+---->\n            1       2       3    x\n```\n\n(a) What is $p_X(1)$?\n(b) Provide a clearly labeled sketch of the conditional PMF of $Y$ given that $X = 1$.\n(c) What is $E[Y \\mid X = 1]$?\n(d) Is there a choice for the unspecified entries that would make $X$ and $Y$ independent?\n\nLet $B$ be the event that $X \\le 2$ and $Y \\le 2$. We are told that conditioned on $B$, the random variables $X$ and $Y$ are independent.\n\n(e) What is $p_{X,Y}(2, 2)$?\n(If there is not enough information to determine the answer, say so.)\n(f) What is $p_{X,Y \\mid B}(2, 2 \\mid B)$?\n(If there is not enough information to determine the answer, say so.)\n\n3. **Problem 2.33, page 128 in the text.** A coin that has probability of heads equal to $p$ is tossed successively and independently until a head comes twice in a row or a tail comes twice in a row. Find the expected value of the number of tosses.\n\nTextbook problems are courtesy of Athena Scientific, and are used with permission.\n\n***\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9791666666666666,
+ "numeral_recall": 0.9523809523809523,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

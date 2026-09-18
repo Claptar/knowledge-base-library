@@ -1,0 +1,12 @@
+{
+ "source": "LectureThirteen153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 7,
+ "markdown": "## STAT 153 & 248 - Time Series\n## Lecture Thirteen\nFall 2025, UC Berkeley\n\nAditya Guntuboyina\n\nOctober 9, 2025\n\n## 1 More on Bayesian Regularization\n\n### 1.1 Recap\n\nIn the last lecture, we discussed Bayesian regularization in the context of the following high-dimensional linear regression model:\n$$y_t = \\beta_0 + \\beta_1(t - 1) + \\beta_2\\text{ReLU}(t - 2) + \\dots + \\beta_{n-1}\\text{ReLU}(t - (n - 1)) + \\epsilon_t \\tag{1}$$\nThe unknown parameters in this model are $\\beta_0, \\dots, \\beta_{n-1}$ as well",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

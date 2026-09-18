@@ -1,0 +1,12 @@
+{
+ "source": "l3-syllabus-transcript.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 6,
+ "markdown": "## III A Genetic Switch in Lamba Phage\n\n**References:**\n\n1. J. Hasty, J. Pradines, M. Dolnik, and J. J. Collins. Noise-based switches and amplifiers for gene expression. *PNAS* **97**, 2075-2080 (2000).\n\nThe goal of this Section is to apply our knowledge of reaction kinetics and equilibrium binding to a real biological problem: the lysis-lysogeny decision of the bacterial phage lambda. The first goal is to derive the kinetic equation [7] in Hasty's paper.\n\nFigure 5 schematically depicts the genetic regulation of the $\\text{P}_{\\text{RM}}$ $\\lambda$ promoter. The gene of this promoter, called *cI*, encodes for a repressor protein, which in turn dimerizes and binds to the DNA as a transcription factor. In this model Hasty *et al.* assume that binding to OR2 enhances transcription whereas binding to OR3 switches off transcription. Note that the wild-type lambda operon has three binding sites.\n\n![Figure 5](Figure5)\n\n**Figure 5.** Possible binding states for the lambda promoter considered by Hasty *et al.* In the unbound state the gene is switched off.\n\n$$2\\text{X} \\xrightleftharpoons{K_1} \\text{X}_2$$\n$$\\text{D} + \\text{X}_2 \\xrightleftharpoons{K_2} \\text{DX}_2$$\n$$\\text{D} + \\text{X}_2 \\xrightleftharpoons{K_3} \\text{DX}_2^*$$\n$$\\text{DX}_2 + \\text{X}_2 \\xrightleftharpoons{K_4} \\text{DX}_2\\text{X}_2 \\qquad \\text{[III.1]}$$\n$$\\text{DX}_2 + \\text{P} \\xrightarrow{k_t} \\text{DX}_2 + \\text{P} + n\\text{X}$$\n$$\\text{X",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

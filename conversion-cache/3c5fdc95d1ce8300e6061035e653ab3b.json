@@ -1,0 +1,12 @@
+{
+ "source": "fmri-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## Thalamus & cerebellum\n\n*(Plot showing BOLD signal over Time, ranging from 0 to 120+ on the horizontal axis and -0.6 to 0.6 on the vertical axis, with multiple time series lines in black, blue, red, and green.)*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

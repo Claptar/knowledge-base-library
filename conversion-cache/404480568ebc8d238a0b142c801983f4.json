@@ -1,0 +1,12 @@
+{
+ "source": "lecture07-unbiased.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 10,
+ "markdown": "## **Outline**\n\n1) Convex Loss\n2) Rao-Blackwell Theorem\n3) UMVU Estimators\n4) Examples\n\n---\n\n## **Unbiased Estimation**\n\n**Recall** strategies to choose an estimator\n\n1) Summarize risk by a scalar (avg or sup)\n2) Restrict to a smaller class of estimators\n\n**Today**: Unbiased estimation\n\nRequire $\\mathbb{E}_\\theta \\delta(X) = g(\\theta)$, $\\forall \\theta \\in \\Theta$ (where $g(\\theta)$ is the estimand)\n\nIf we have complete sufficient stat $T(X)$,\n* there is **at most** one unbiased $\\delta^*(T(X))$  \n  (If $\\mathbb{E}_\\theta \\delta_1(T) = \\mathbb{E}_\\theta \\delta_2(T) = g(\\theta)$ $\\forall \\theta$ then $\\delta_1 \\stackrel{a.s.}{=} \\delta_2$)\n* if it exists, it **uniformly minimizes** risk for any convex loss function\n\n---\n\n## **Convex Loss Functions**\n\n**Recall** $f(x)$ is **convex** if, for all $x_1, x_2$, all $\\gamma \\in [0,1]$\n\n$$f(\\gamma x_1 + (1-\\gamma) x_2) \\le \\gamma f(x_1) + (1-\\gamma) f(x_2)$$\n\nstrictly convex if $<$\n\n**$\\underline{\\text{Thm}}$** (Jensen) If $f$ convex then\n$$f(\\mathbb{E} X) \\le \\mathbb{E} f(X) \\quad \\text{for any r.v. } X$$\n$f$ strictly convex then $<$ unless $X \\stackrel{a.s.}{=} c$\n\n**$\\underline{\\text{Convex Loss}}$** $L(\\theta, d)$ means convex **in $d$**\n\n**$\\underline{\\text{Ex.}}$** $L(\\theta, d) = (g(\\theta) - d)^2$\n$$\\begin{aligned}\nMSE(\\theta; \\delta) &= \\mathbb{E}_\\theta [(g(\\theta) - \\delta(X))^2] \\\\\n&= \\text{Bias}_\\theta^2(\\delta) + \\text{Var}_\\theta(\\delta) \\\\\n&= \\text{Var}_\\theta(T) \\quad \\text{if } \\delta \\text{ unbiased}\n\\end{aligned}$$\n\nConvex losses penalize us for making the estimator too noisy\n\n---\n\n## **Rao-Blackwell Theorem**\n\nRecipe to improve any $\\delta(X)$ that violates the suff. principle.\n\n**$\\underline{\\text{Theorem}}$ (Rao-Blackwell)**  \nAssume $T(X)$ sufficient, $\\delta(X)$ estimator  \nLet $\\bar{\\delta}(T(X)) = \\mathbb{E}[\\delta(X) \\mid T(X)]$ (no $\\theta$)\n\nIf $L(\\theta, \\",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

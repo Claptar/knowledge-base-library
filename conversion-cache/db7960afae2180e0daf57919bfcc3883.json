@@ -1,0 +1,12 @@
+{
+ "source": "unit11-optim.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 49,
+ "markdown": "## Unit 11: Optimization\n\nNovember 19, 2019\n\n## 9.4 The dual problem\n\nSometimes a reformulation of the problem eases the optimization. There are different kinds of dual",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

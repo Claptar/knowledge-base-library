@@ -1,0 +1,12 @@
+{
+ "source": "09-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "## 2 Structure\n\n### 2.1 Coulomb interactions\n\nWhile the information needed for reproduction of living systems is chiefly maintained in the sequence of macromolecules, any practical use of this information must rely on the physical forces that shape the molecules into functioning, sequence-dependent, structures. These forces and the resulting structures are the topic of the second segment of this course.\n\nSince neither gravity, nor nuclear interactions, are particularly relevant to most organisms, the forces that shape the molecules of life are various manifestations of the electromagnetic interactions between electrons and nuclei. These include the strong covalent bonds (maintaining the primary connectivity of a molecule), the weaker hydrogen bonds (",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

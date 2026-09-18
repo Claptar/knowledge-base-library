@@ -1,0 +1,12 @@
+{
+ "source": "01-exam.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 11,
+ "markdown": "## 7.32/7.81J/8.591J: Systems Biology\n\n### Exam #1, Fall 2012\n\n**Instructions**\n1) Please do not open the exam until instructed to do so.\n2) This exam is closed-book and closed-notes.\n3) Please do all problems.\n4) Use the back of sheets if you need more space.\n5) Please write clearly\n\nName:\n\nScores\n\n1 (out of 13):\n\n2 (out of 15):\n\n3 (out of 15):\n\n4 (out of 10):\n\n5 (out of 20):\n\n6 (out of 15):\n\n7 (out of 12):\n\nTotal (out of 100):\n\n---\n\n### 1) Response time (13 points)\n\na) Define the response time to be the time necessary to get half way from one equilibrium concentration to a new equilibrium concentration. For simple regulation of a stable protein, how does the ON response time compare to the OFF response time? (3 pts)\n\nb) One way to speed the response time is to actively degrade a protein. In this case, how does the ON response time compare to the OFF response time? (3 pts)\n\nc) In the case of negative autoregulation, how does the ON response time compare to the OFF response time? (3 pts)\n\nd) The coherent type-1 FFL with OR logic leads to a delay when turning ON or when turning OFF? Explain briefly. (4 pts)\n\n---\n\n### 2) Stability analysis (15 points)\n\n$$\\frac{dm}{dt} = \\frac{\\beta}{K + p} - m$$\n\n$$\\frac{dp",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

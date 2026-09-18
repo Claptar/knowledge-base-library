@@ -1,0 +1,12 @@
+{
+ "source": "08-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 8\n### October 5, 2010\n\n1. Let $Z$ be a continuous random variable with probability density function\n   $$f_Z(z) = \\begin{cases} \\gamma(1 + z^2), & \\text{if } -2 < z < 1, \\\\ 0, & \\text{otherwise.} \\end{cases}$$\n\n   (a) For what value of $\\gamma$ is this possible?\n\n   (b) Find the cumulative distribution function of $Z$.\n\n2. Problem 3.9, pages 186\u2013187 in the text.\n\n   The taxi stand and the bus stop near Al's home are in the same location. Al goes there at a given time and if a taxi is waiting, (this happens with probability 2/3) he boards it. Otherwise he waits for a taxi or a bus to come, whichever comes first. The next taxi will arrive in a time that is uniformly distributed between 0 and 10 minutes, while the next bus will arrive in exactly 5 minutes. Find the CDF and the expected value of Al's waiting time.\n\n3. Let $\\lambda$ be a positive number. The continuous random variable $X$ is called **exponential** with parameter $\\lambda$ when its probability density function is\n   $$f_X(x) = \\begin{cases} \\lambda e^{-\\lambda x}, & \\text{if } x \\ge 0, \\\\ 0, & \\text{otherwise.} \\end{cases}$$\n\n   (a) Find the cumulative distribution function (CDF) of $X$.\n\n   (b) Find the mean of $X$.\n\n   (c) Find the variance of $X$.\n\n   (d) Suppose $X_1$, $X_2$, and $X_3$ are independent exponential random variables, each with parameter $\\lambda$. Find the PDF of $Z = \\max\\{X_1, X_2, X_3\\}$.\n\n   (e) Find the PDF of $W = \\min\\{X_1, X_2\\}$.\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.8936170212765957,
+ "numeral_recall": 1.0,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

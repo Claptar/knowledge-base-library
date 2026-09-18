@@ -1,0 +1,12 @@
+{
+ "source": "project.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 3,
+ "markdown": "## Stat243: Final group project\n### Due Wednesday Dec. 12, 5 pm\n\nNovember 13, 2018\n\nThe project will be done in groups of three, with students assigned randomly but balanced between",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

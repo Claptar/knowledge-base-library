@@ -1,0 +1,12 @@
+{
+ "source": "unit13-optim.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 41,
+ "markdown": "http://www.econ.uiuc.edu/~roger/research/conopt/coptr.pdf.\n\nGiven that R is somewhat limited in its treatment of convex optimization, some other resources to consider are\n\n- Python, in particular the *cvxopt* package, and\n- Matlab, in particular the *fmincon()* function, the CVX system, and Matlab's linear and quadratic programming abilities.\n\n## 10 Summary\n\nThe different methods of optimization have different advantages and disadvantages.\n\nAccording to Lange, MM and EM are numerically stable and computationally simple but can converge very slowly. Newton's method shows very fast convergence but has the downsides we've discussed. Quasi-Newton methods fall in between. Convex optimization generally comes up when optimizing under constraints.\n\nOne caution about optimizing under constraints is that you just get a point estimate; quantifying uncertainty in your estimator is more difficult. One strategy is to ignore the inactive inequality constraints and reparameterize (based on the active equality constraints) to get an unconstrained problem in a lower-dimensional space. Then you can make use of the Hessian in the usual fashion to estimate the information matrix.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "unit6-numbers.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 21,
+ "markdown": "## Unit 6: Computer numbers\n\nSeptember 28, 2017\n\nReferences:",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

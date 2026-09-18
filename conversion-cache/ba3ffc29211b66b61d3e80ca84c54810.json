@@ -1,0 +1,12 @@
+{
+ "source": "03-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 56,
+ "markdown": "6.047/6.878/HST.507  \nComputational Biology: Genomes, Networks, Evolution\n\n## Lecture 3  \n## Sequence Alignment II  \n## Database search\n\nGlobal vs. Local alignment  \nExact string matching and Karp-Rabin  \nDatabase search and BLAST  \nDeterministic linear-time string matching\n\n---\n\n## Module 1: Aligning and modeling genomes\n\n- **Module 1: Computational foundations**\n  - Dynamic programming: exploring exponential spaces in poly-time\n  - Introduce Hidden Markov Models (HMMs): Central tool in CS\n  - HMM algorithms: Decoding, evaluation, parsing, likelihood, scoring\n- **This week: Sequence alignment / comparative genomics**\n  - Local/global alignment: infer nucleotide-level evolutionary events\n  - Database search: scan for regions that may have common ancestry\n- **Next week: Modeling genomes / exon / CpG island finding**\n  - Modeling class of elements, recognizing members of a class\n  - Application to gene finding, conservation islands, CpG islands\n\n---\n\n## Remember Lecture 2\n\nSequence alignment  \nand  \nDynamic programming\n\n---\n\n## Duality: seq. alignment $\\Leftrightarrow$ path through the matrix\n\n| $S_1[1..i]$ | $i$ | $S_1[i..n]$ |\n| :--- | :--- | :--- |\n| $S_2[1..j]$ | | |\n| $j$ | $S$ | |\n| $S_2[j..m]$ | | |\n\n$M[i,j]$ stores max score of prefix alignment of $S_1[1..i]$ and $S_2[1..j]$\n\nAlignments $\\Leftrightarrow$ Paths  \nPrefix alignmt score $\\Leftrightarrow M[i,j]$\n\n```",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

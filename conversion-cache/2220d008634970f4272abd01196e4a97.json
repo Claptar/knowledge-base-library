@@ -1,0 +1,12 @@
+{
+ "source": "21-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 21\n### November 23, 2010\n\n1. Let $X_1, \\ldots, X_{10}$ be independent random variables, uniformly distributed over the unit interval $[0,1]$.\n   (a) Estimate $\\mathbf{P}(X_1 + \\cdots + X_{10} \\ge 7)$ using the Markov inequality.\n   (b) Repeat part (a) using the Chebyshev inequality.\n   (c) Repeat part (a) using the central limit theorem.\n\n2. **Problem 10 in the textbook (page 290)**\n   A factory produces $X_n$ gadgets on day $n$, where the $X_n$ are independent and identically distributed random variables, with mean 5 and variance 9.\n   (a) Find an approximation to the probability that the total number of gadgets produced in 100 days is less than 440.\n   (b) Find (approximately) the largest value of $n$ such that\n   $$\\mathbf{P}\\left(X_1 + \\cdots + X_n \\ge 200 + 5n\\right) \\le 0.05.$$\n   (c) Let $N$ be the first day on which the total number of gadgets produced exceeds 1000. Calculate an approximation to the probability that $N \\ge 220$.\n\n3. Let $X_1, X_2, \\ldots$, be independent Poisson random variables with mean and variance equal to 1. For any $n > 0$, let $S_n = \\sum_{i=1}^n X_i$.\n   (a) Show that $S_n$ is Poisson with mean and variance equal to $n$. Hint: Relate $X_1, X_2, \\ldots, X_n$ to a Poisson process with rate 1.\n   (b) Show how the central limit theorem suggests the approximation\n   $$n! \\approx \\sqrt{2\\pi n}\\left(\\frac{n}{e}\\right)^n$$\n   for large values of the positive integer $n$.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9111111111111111,
+ "numeral_recall": 0.9130434782608695,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

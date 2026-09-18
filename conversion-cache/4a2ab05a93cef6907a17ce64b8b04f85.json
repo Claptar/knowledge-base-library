@@ -1,0 +1,12 @@
+{
+ "source": "04-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## Problem Set 4\n\n### 1 Degree distribution of growing networks (14 points)\n\n**COMPUTATION** In this problem, we will perform simulations to explore the degree distribution of growing networks *with* and *without* preferential attachment. For the preferential attachment, we assume that the",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

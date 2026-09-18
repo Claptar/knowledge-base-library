@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureTwentyFour153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 7,
+ "markdown": "## Lecture Twenty Four\n\n### Recurrent Neural Networks (RNN)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

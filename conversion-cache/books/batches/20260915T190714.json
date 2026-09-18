@@ -1,0 +1,89 @@
+{
+ "model": "gemini-3.8-flash",
+ "submitted": [
+  {
+   "job": "batches/jlnnw27mh1wynahsz9o49m8xpqvbh6rxm1n4",
+   "first": 0,
+   "count": 11
+  }
+ ],
+ "index": [
+  {
+   "key": "4c1a1b66509adb0f4390cedda2b7cbd3",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 1,
+   "title": "CptacAvsB lab3.nb Part 01 \u2014",
+   "solutions": []
+  },
+  {
+   "key": "e8b0ce3ee693a0115f7a3d4c02cf5bb7",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 2,
+   "title": "Elegans: DE analysis",
+   "solutions": []
+  },
+  {
+   "key": "ed9a4ae55b9ccb7e4848ea50d061d477",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 3,
+   "title": "1 Background",
+   "solutions": []
+  },
+  {
+   "key": "36462a64c42434f96489553bb0815b53",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 4,
+   "title": "Statistical Genomics Analysis 2020 (SGA2020)",
+   "solutions": []
+  },
+  {
+   "key": "4bc23ef31cfd2b773e2ed7055e5af89f",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 5,
+   "title": "1.1 Basic Statistical Concepts",
+   "solutions": []
+  },
+  {
+   "key": "59c6636e4c1196b909fe1f6b8f6aa80c",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 6,
+   "title": "Statistical Genomics Analysis 2019 (SGA2019)",
+   "solutions": []
+  },
+  {
+   "key": "a7349c8b2a12bb2dde7c81018cb1c781",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 7,
+   "title": "Software for Stats Tutorials",
+   "solutions": []
+  },
+  {
+   "key": "7648d884fe7b6426b6d6876caf0b3578",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 8,
+   "title": "repeat this many times",
+   "solutions": []
+  },
+  {
+   "key": "135ce22b6f14e3a32fdfcbd794a965ea",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 9,
+   "title": "3.1 Basic Statistical Concepts",
+   "solutions": []
+  },
+  {
+   "key": "9aeec0a63d30e312069e39d1717c5518",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 10,
+   "title": "2. Statistical analysis with MSqRob for simple designs",
+   "solutions": []
+  },
+  {
+   "key": "c97bdac0afbab895332de5362a69ab50",
+   "course": "omics-statistics/statomics/sga2020-ghpages",
+   "number": 11,
+   "title": "Introduction to Proteomics and MS technology",
+   "solutions": []
+  }
+ ]
+}

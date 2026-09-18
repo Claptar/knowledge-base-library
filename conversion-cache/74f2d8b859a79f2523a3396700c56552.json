@@ -1,0 +1,12 @@
+{
+ "source": "03-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "## Problem Set 3\n\n## 1 Circadian Clocks (30 points)\n\nSeveral protein expression levels in plant and animal cells go through a daily cycle, driven by exposure to sunlight during the day and darkness at night. However, even in complete darkness, these expression levels oscillate with an intrinsic period of about 24 hours. The systems which drive these oscillations are known as circadian clocks. At the heart of most of these systems is a pair of transcriptionally regulated proteins: an activator (X) and an inhibitor (Y). In this problem set, we will see how such a simple system can be made to generate oscillations. We consider two possible system architectures (arrows represent activation, blunt ends represent inhibition):\n\nProblem by Alexander van Oudenaarden. OCW 8.591J Systems Biology, Fall 2004, Problem Set 3, Problem 1.\n\nThe corresponding dynamical equations are (using $x = [X]$ and $y = [Y]$):\n\n(A)\n$$\n\\begin{aligned}\n\\frac{dx}{dt} &= v_x + k_x \\frac{A_1}{A_1 + y} - \\gamma_x x \\\\\n\\frac{dy}{dt} &= v_y + k_y \\frac{x}{A_2 + x} - \\gamma_y y\n\\end{aligned}\n$$\n\n(B)\n$$\n\\begin{aligned}\n\\frac{dx}{dt} &= v_x + k_x \\frac{x^2}{(A_3)^2 + x^2} \\frac{A_1}{A_1 + y} - \\gamma_x x \\\\\n\\frac{dy}{dt} &= v_y + k_y \\frac{x}{A_2 + x} - \\gamma_y y\n\\end{aligned}\n$$\n\na. Identify the parameters corresponding to basal transcription rate, maximal transcription rate, and degradation rate.\n\nb. We have assumed the following: for both (A) and (B), the X promoter is inactivated by the binding of a single molecule of Y, and the Y promoter is activated by the binding of a single molecule of X. In addition, for (B), the X promoter is activated by the cooperative binding of two molecules of X. The various fractions that appear in the equations represent the activity of promoters. Explain what each of these fractions means in the context of gene regulation.\n\nc. Normalization of units. Assume that $A_2 \\gg x$. Redefine variables and show that by choosing units properly the previous equations can be written in the form\n\n(A)\n$$\n\\begin{aligned}\n\\frac{d\\bar{x}}{d\\bar{t}} &= \\bar{\\gamma}_x (\\bar{v}_x + \\bar{k}_x \\frac{1}{1 + \\bar{y}} - \\bar{x}) \\\\\n\\frac{d\\bar{y}}{d\\bar{t}} &= \\bar{v}_y + \\bar{k}_y \\bar{x} - \\bar{y",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

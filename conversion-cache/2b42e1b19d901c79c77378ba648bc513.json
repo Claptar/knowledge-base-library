@@ -1,0 +1,12 @@
+{
+ "source": "lecture09-F24.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 11,
+ "markdown": "9/26/2023\n\n## **Outline**\n\n1) Interpretations of Probability\n2) Where does prior come from?\n3) Examples\n\n---\n\n## **Interpretations of Probability**\n\nWhy do we model anything as random?\n\nWhat does \"probability\" mean in the real world?\n\n1) **Long",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

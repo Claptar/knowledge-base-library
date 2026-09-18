@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureSeventeen153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 9,
+ "markdown": "## Lecture Seventeen\n\nTopic for today: **Estimation in AR models**\n$AR(p)$\n\n**Revisit: Linear Regression**\n\n$(x_1, y_1), \\dots, (x_n, y_n)$\n\n(A1) $\\rightarrow$ $y_i = \\beta_0 + \\beta_1",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

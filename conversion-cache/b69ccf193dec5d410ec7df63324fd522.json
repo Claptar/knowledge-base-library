@@ -1,0 +1,12 @@
+{
+ "source": "2014-04-09-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 37,
+ "markdown": "## Recitation 4-9-14\n\nEF Lectures #14 & 15  \nProtein Interactions & Gene Networks\n\n---\n\n## Announcements\n\n- Problem Set 4 due next Thursday (April 17)\n- Project write-up due Tuesday, April 22\n\n---\n\n## Outline\n\n- Experimental methods to detect protein interactions\n  - Affinity Purification\n  - Tandem Affinity Purification (TAP)\n  - Mass Spectrometry\n  - Yeast two-hybrid\n- Bayesian Networks\n- Clustering methods\n  - Hierarchical clustering\n  - K-means clustering\n- Linear Regression / Mutual information\n\n---\n\n## Affinity Purification\n\n- To detect interaction partners of a protein of interest (bait), the bait is tagged by introducing protein-tag DNA construct into cells. Once the construct is expressed and incorporated into cellular complexes, the tag is used to pull down other interacting proteins, by Mass Spectrometry.\n- Can do this for every protein to analyze proteins on a proteome-wide scale.\n- Fairly high (~30% for 200",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

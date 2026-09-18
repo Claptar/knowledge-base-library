@@ -1,0 +1,12 @@
+{
+ "source": "02-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 13,
+ "markdown": "7.36/7.91/20.390/20.490/6.802/6.874 \nPROBLEM SET 2. BWT, Library complexity, RNA-seq, Genome assembly, Motifs, Multiple hypothesis testing (31 Points) \n\nDue: Thursday, March 13$^{\\text{th}}$ at noon.\n\n### Python Scripts \nAll Python scripts must work on athena using /usr/athena/bin/python. You may not assume availability of any third party modules unless you are explicitly instructed so. You are advised to test your code on Athena before submitting. Please only modify the code between the indicated bounds, with the exception of adding your name at the top, and remove any print statements that you added before submission. \n\nElectronic submissions are subject to the same late homework policy as outlined in the syllabus and submission times are assessed according to the server clock. All python programs must be submitted electronically, as .py files on the course website using appropriate filename for",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

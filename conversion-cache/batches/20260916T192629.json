@@ -1,0 +1,3329 @@
+{
+ "model": "gemini-3.8-flash",
+ "submitted": [
+  {
+   "job": "batches/tu4bhc2yg0lc9fby2gde2ep6o27ws33luonz",
+   "first": 0,
+   "count": 16
+  },
+  {
+   "job": "batches/v1199z7rucg2fy2ehozf4egnnlxctwmeqtqv",
+   "first": 16,
+   "count": 14
+  },
+  {
+   "job": "batches/vgnnl53bq7dc51utnb3blf6gekqf61zv0plu",
+   "first": 30,
+   "count": 45
+  },
+  {
+   "job": "batches/g01o8r6zt8c7euskvkudp9i8rayd3fo59zhy",
+   "first": 75,
+   "count": 3
+  },
+  {
+   "job": "batches/vw11kfg2oz2ydfgmp6nibpq6ffso5wuowlpz",
+   "first": 78,
+   "count": 8
+  },
+  {
+   "job": "batches/kbas4trtitwv1ug1r4lhfqkujtz7rd9fljdq",
+   "first": 86,
+   "count": 5
+  },
+  {
+   "job": "batches/o79ag9hu62xb1pqz3w8x2fszo5nno0rjon51",
+   "first": 91,
+   "count": 25
+  },
+  {
+   "job": "batches/r0y3gc0go5x3l850neclp6isnn8o8kspadcl",
+   "first": 116,
+   "count": 3
+  },
+  {
+   "job": "batches/g74taaja0sxyi7gfdkezwxiaexrw7tnfd4xi",
+   "first": 119,
+   "count": 2
+  },
+  {
+   "job": "batches/qpcqor55ukgjwdw3ks3ia3fm0j5hd3t76qd3",
+   "first": 121,
+   "count": 2
+  },
+  {
+   "job": "batches/0iddt76bsyt2nsnyzii7ugvg8w3jzrnaprj9",
+   "first": 123,
+   "count": 2
+  },
+  {
+   "job": "batches/zrh2gbl347dwmzgntpruoqfon707gd9uahjl",
+   "first": 125,
+   "count": 2
+  },
+  {
+   "job": "batches/0f3v07puk7ir7xzr4hb58t00yzi9a4nd7ulc",
+   "first": 127,
+   "count": 3
+  },
+  {
+   "job": "batches/yheisp23na6pro9hhapefbhqtwpf3hfovhj4",
+   "first": 130,
+   "count": 2
+  },
+  {
+   "job": "batches/xkvli5sp13kk41ssdtq2t0q6yob7ma8efu48",
+   "first": 132,
+   "count": 2
+  },
+  {
+   "job": "batches/pgv67bxqmp50kupcqi0k8y3zbmzrd65ne38q",
+   "first": 134,
+   "count": 2
+  },
+  {
+   "job": "batches/2lznxy6vu1tx77c3mm20c26zs7rfg3hvgfnc",
+   "first": 136,
+   "count": 2
+  },
+  {
+   "job": "batches/qk0jgpyqbaug2r89kzjwzmtxvpbqxvb8nq5s",
+   "first": 138,
+   "count": 11
+  },
+  {
+   "job": "batches/7m0nlpofa2angqs15wzialqlz8nqalqirtum",
+   "first": 149,
+   "count": 2
+  },
+  {
+   "job": "batches/cl9qle74vs9xynxvbr2rruajwgqu5rt7vngf",
+   "first": 151,
+   "count": 2
+  },
+  {
+   "job": "batches/cpjuuzq5rz2dgob6ddgturgupjnlzwj2ivg2",
+   "first": 153,
+   "count": 2
+  },
+  {
+   "job": "batches/uaxkktsftn4tfg47z0tl2abwht4j9hkeyap6",
+   "first": 155,
+   "count": 2
+  },
+  {
+   "job": "batches/r6i4eiwyisyenilmnl4anb5vf3atgf5fjbci",
+   "first": 157,
+   "count": 2
+  },
+  {
+   "job": "batches/82v28qokg4biazl9w6oldopu3hbrn37frivu",
+   "first": 159,
+   "count": 2
+  },
+  {
+   "job": "batches/efqzk4y13qm0r6h151ej3xethpme4ibki88d",
+   "first": 161,
+   "count": 2
+  },
+  {
+   "job": "batches/jexy9cl6374n6dcrzqq5c3i3pkk7hh602mb7",
+   "first": 163,
+   "count": 1
+  },
+  {
+   "job": "batches/lneva9z2u9610wu4ebcud01ukt3tjc1yzcr0",
+   "first": 164,
+   "count": 4
+  },
+  {
+   "job": "batches/33t3cd9kk2000ojj141mzcb853b749o0vfj5",
+   "first": 168,
+   "count": 36
+  },
+  {
+   "job": "batches/ex58vdjro3fb3ffbc5ff5v892crz1caqhrkq",
+   "first": 204,
+   "count": 34
+  },
+  {
+   "job": "batches/arvpn0xja6tlgqiy5bbpz4d1akwjvxfm3w55",
+   "first": 238,
+   "count": 40
+  },
+  {
+   "job": "batches/x92lotzmql9pxrgy9vnjpfwqpt8k4fn7taki",
+   "first": 278,
+   "count": 39
+  },
+  {
+   "job": "batches/cltnbvw2bdcbyp95fiyw6d8f7zj8rxbkkpgt",
+   "first": 317,
+   "count": 35
+  },
+  {
+   "job": "batches/qzh4k8uvdt6fognyijxmp8xeuor9cqix7cyv",
+   "first": 352,
+   "count": 1
+  },
+  {
+   "job": "batches/u1dazp563kizugggwulsk46muqi8e7znfysh",
+   "first": 353,
+   "count": 1
+  },
+  {
+   "job": "batches/y87zp62pen9wv68k2rdhwrvb6fy83jp7fu7h",
+   "first": 354,
+   "count": 1
+  },
+  {
+   "job": "batches/9z3bu2ibr96vu0ycf7e8bskzuoywn850nt8v",
+   "first": 355,
+   "count": 1
+  },
+  {
+   "job": "batches/2j93vl9x9kv2vnox2w3m3l0axgqi6mm0nl6j",
+   "first": 356,
+   "count": 1
+  },
+  {
+   "job": "batches/279m82jahbrhijpukdwyol0nnqdswi7567tc",
+   "first": 357,
+   "count": 1
+  },
+  {
+   "job": "batches/y3qq18ve9wjtq56d1x8h0po9otno0sts6xkl",
+   "first": 358,
+   "count": 1
+  },
+  {
+   "job": "batches/cbkufe1ydyht4nd6hy8pq2ly8exiepql7pu7",
+   "first": 359,
+   "count": 4
+  },
+  {
+   "job": "batches/9oh0akcc6kg6rrcyh9a83it2uhj8dihlqbye",
+   "first": 363,
+   "count": 2
+  },
+  {
+   "job": "batches/g7fkbs2mskyc0ec5a18koapcdrubbi0akh4s",
+   "first": 365,
+   "count": 2
+  },
+  {
+   "job": "batches/mp996sp2ycrvwr9czetqjpb25d3n1y7ickfv",
+   "first": 367,
+   "count": 2
+  },
+  {
+   "job": "batches/pzlb6rvok02ft33qbhd4vcfra3h912cvosfu",
+   "first": 369,
+   "count": 2
+  },
+  {
+   "job": "batches/cybnevmb8kqfh1yz7xuchj3ixvuwhhif4amv",
+   "first": 371,
+   "count": 1
+  },
+  {
+   "job": "batches/0s96zl6nao1d2orn7inn5wi5fegd13ehk4rt",
+   "first": 372,
+   "count": 1
+  },
+  {
+   "job": "batches/ypgquqtqjy5i0irc08o2nu3btje0chtgwtuk",
+   "first": 373,
+   "count": 1
+  },
+  {
+   "job": "batches/qmxmhx025axystjpf17umpcwojn52ujzsbgp",
+   "first": 374,
+   "count": 1
+  },
+  {
+   "job": "batches/7oncy13pfzuptdqaoy18ytgpzu5rpo9o812k",
+   "first": 375,
+   "count": 2
+  },
+  {
+   "job": "batches/yqi7xc1fcsqpd4dlkvfz7me9lx5zxxetmd6c",
+   "first": 377,
+   "count": 2
+  },
+  {
+   "job": "batches/5g5nnqmdlwq5x32er1ck8a86aee59l6s141x",
+   "first": 379,
+   "count": 2
+  },
+  {
+   "job": "batches/cpbv5pq486vrz4qk6hfygu3c1g6kin4j2olz",
+   "first": 381,
+   "count": 2
+  },
+  {
+   "job": "batches/tcbl05516087mnzimg8l9a2hbk01n3fnf35v",
+   "first": 383,
+   "count": 2
+  },
+  {
+   "job": "batches/7pp3c9onhiqpz80tdkek8tvu1m4w89u7cgpn",
+   "first": 385,
+   "count": 2
+  },
+  {
+   "job": "batches/escrba7t8xilrj7icpwhzaj61igbkoizalxj",
+   "first": 387,
+   "count": 2
+  },
+  {
+   "job": "batches/2ic2fww8tmkaatdaqz37hor4m18kkmai0z1s",
+   "first": 389,
+   "count": 3
+  },
+  {
+   "job": "batches/sxy0qda1la41u3xfgnxtz5iyfjx42x26fzu3",
+   "first": 392,
+   "count": 5
+  },
+  {
+   "job": "batches/4zzyij04hgsthss2u4iobg71cscfqzv42il5",
+   "first": 397,
+   "count": 8
+  },
+  {
+   "job": "batches/j7oi8wsjgmxi9xlmqgqcc2qbx45y8611bwsk",
+   "first": 405,
+   "count": 4
+  },
+  {
+   "job": "batches/8hd1nt62f31v7cwg2rzupv4uln6sx7sluvqa",
+   "first": 409,
+   "count": 3
+  },
+  {
+   "job": "batches/bfrdtqky3f7e3915trjcaxrizm5fueq105xl",
+   "first": 412,
+   "count": 6
+  },
+  {
+   "job": "batches/jawn9109pg03ekxn7j90kf87if2lojnr5o4r",
+   "first": 418,
+   "count": 14
+  },
+  {
+   "job": "batches/gniqpnj9tdfrjb2g3g0dsvfcub7mpfdaqbwf",
+   "first": 432,
+   "count": 29
+  },
+  {
+   "job": "batches/9b2i68y589pss0hy2pteuqni4zo57lx12pfv",
+   "first": 461,
+   "count": 30
+  },
+  {
+   "job": "batches/5osxdwoyt9htzy9sij9iom5upfcvfl77oezi",
+   "first": 491,
+   "count": 3
+  },
+  {
+   "job": "batches/961b3dqlzhrgqs7chrzejzt9l04jmym3cu8b",
+   "first": 494,
+   "count": 1
+  },
+  {
+   "job": "batches/f0bdf3su1rp56i3xhflknvy27qyzrew38rtf",
+   "first": 495,
+   "count": 1
+  },
+  {
+   "job": "batches/zka57de4ulntigx0xa4nsnr44hf19tmahw9s",
+   "first": 496,
+   "count": 1
+  }
+ ],
+ "index": [
+  {
+   "cache_key": "64a058872baf1d6755394da031d3099e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/caus2004.pdf",
+   "pages": 43,
+   "part": 0
+  },
+  {
+   "cache_key": "64a058872baf1d6755394da031d3099e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/caus2004.pdf",
+   "pages": 43,
+   "part": 1
+  },
+  {
+   "cache_key": "22e30618bc9a8c876d82f41969944a46",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/compbio.pdf",
+   "pages": 46,
+   "part": 0
+  },
+  {
+   "cache_key": "22e30618bc9a8c876d82f41969944a46",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/compbio.pdf",
+   "pages": 46,
+   "part": 1
+  },
+  {
+   "cache_key": "0a00bf3d6ffe836e5c9d5beb13dde1a2",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/dsaslides.pdf",
+   "pages": 32,
+   "part": 0
+  },
+  {
+   "cache_key": "1b4f163b108d82b02f60083b74feb7f7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/stat210b.pdf",
+   "pages": 38,
+   "part": 0
+  },
+  {
+   "cache_key": "5a206ed213facf53bafc95db2999aa1e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/stat210bsyl.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "439b690e70701406144bbf28e7a0e598",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/surv2004.pdf",
+   "pages": 65,
+   "part": 0
+  },
+  {
+   "cache_key": "439b690e70701406144bbf28e7a0e598",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/surv2004.pdf",
+   "pages": 65,
+   "part": 1
+  },
+  {
+   "cache_key": "17225ab4d940e15cff13460683a5b46d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/survMSM2004.pdf",
+   "pages": 34,
+   "part": 0
+  },
+  {
+   "cache_key": "e872b8055e48dc082872f294239b69a6",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/syllabus-ph240b_survival-fa2017.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "d4ddc5e2d73dfd99b6cf945b0b9ae48f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245b-vanderlaan/syllabus-ph243d_adaptivedesigns-fa2018.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "2d9e79a2fd10b05eec7861de0c131bd1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/hw/hw1-sol.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "efc6d79f5a7f2ffdb71083ba88a87c01",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/hw/hw2-sol.pdf",
+   "pages": 15,
+   "part": 0
+  },
+  {
+   "cache_key": "f5fe95f593bc4e6c8f27b43de86d1934",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/Lecture_01_Scope_and_Intro.pdf",
+   "pages": 33,
+   "part": 0
+  },
+  {
+   "cache_key": "828111c1396e04ccf2e9a083acd6fe1a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/Lecture_02_GLM_SVM.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "0b13a73a26e97cd874788274e052df84",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/Lecture_03_Empirical_Risk_Kernel.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "0ad975ad60bd31baa1be8cee328ee578",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/Lecture_06_Ensemble_methods.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "581080d687bd7e87e605f42b2cacb1dc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/Lecture_08_Neural_Networks.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "6176cc6bc74060a3263314d1fcf3e585",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/Lecture_11_Streaming_Data_Analyses_in_Electronic_Medical_Record_Data.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "0b96c80facd413a8a680f29b18e5798f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/Lecture_13_Design_of_Experiments.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "5fb7cf3e544749191482f016576d8a44",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/Lecture_14_Adaptive_Clinical_Trial_and_Reinforcement_Learning.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "2023917786fbd5b86fc16143373cd3d4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/PH240C-Lab01.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "0713bb7289d8b99dcac652cbec32b72e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat-c245c-leishi/notes/PH240C-Lab02.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "aa35716deccf65b7e544449e4da0ed87",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/BZ.pdf",
+   "pages": 33,
+   "part": 0
+  },
+  {
+   "cache_key": "82045ac518eb8b3c994ca7a60cc2e3fb",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/coincidence_chapter.pdf",
+   "pages": 17,
+   "part": 0
+  },
+  {
+   "cache_key": "8e1ab0255e6750b38e6271b65d9ead06",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_16_post.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "a855d63878cb644b855be17bbb9f1eef",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_18_post.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "1fad8d97cc64aab23d7efaf56348c567",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_19_post.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "26b312e8c4af6027983bc3a83b86928c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_20_post.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "3705e881004a795859bcaf1909d47465",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_21_post.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "f954a3f56dac0a63361abc1734d45225",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_23_post.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "1a523e88ce1a28d692a0ab347b9931d0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_24_post.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "e0a9da000aed9237355e9ad4e1837949",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_26_post.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "99f5f6f0b75109e9937ec4410c357f32",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_27_post.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "0f6fc615691193c25962cad1680b529c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_2_post.pdf",
+   "pages": 16,
+   "part": 0
+  },
+  {
+   "cache_key": "31cd2433ce3d79a41732a86a2757f4d2",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_30_post.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "48c547a2290251ad63a904070deb9fa5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_33_post.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "fd0c8c321a694e860cc6d7b456c9e258",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_34_post.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "b03f9f4a33f35cd60830e73c35b3d71e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_36_post.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "743a82d9a8224876de5d93581d229cfd",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_37_waves.pdf",
+   "pages": 16,
+   "part": 0
+  },
+  {
+   "cache_key": "e227957e2c8255da2e3fdd86898b3e92",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_3_post.pdf",
+   "pages": 15,
+   "part": 0
+  },
+  {
+   "cache_key": "3c2491ee6d15b081e6a10145d049db6e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_7_post.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "9cd3a80acaf3a57a3094de3028dd981c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_8_post.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "5f62c2107a943fd0e1f87ec1666163ed",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/lecture_9_post.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "cca3a3c422681fa4202e70f529d7e01c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/me134_monthly.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "1cca79a9c3d2c488fa3898099a607d2f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/takis_exercises.pdf",
+   "pages": 74,
+   "part": 0
+  },
+  {
+   "cache_key": "1cca79a9c3d2c488fa3898099a607d2f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/aldous-legacy/takis_exercises.pdf",
+   "pages": 74,
+   "part": 1
+  },
+  {
+   "cache_key": "23c4ce7eec5447884bae3b1e270b662f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/au-f22/f22.150.syllabus.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "bb592b16cd84c7888a4eb8e4c1df3c67",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/au-s23/150.hw0.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "835184050e2f69380ec5217b52a284d6",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat150/au-s24/s24.150.syllabus.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "691d3e50f2ab9bb1369a82c66659f910",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/advanced/cramer.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "1ff14b9c2aa6e89a73d7c0bf5dd97052",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/advanced/fakoor.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "48ed06d27dc1e143eec1904bf09d6b96",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/advanced/fig/pit-ensembles-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "9b88d65f4c31bcac037938ca43c55554",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/advanced/fig/pit-ensembles-2.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "3c75b724b13bd2428a364fe122ec21b0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/advanced/fig/pit-transforms-2.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "48ba5ec4cfaaad30755748c705dd925c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/arima/fig/ar-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "ce62646c85dd5d35ab7aaf6df8171433",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/arima/fig/car-2.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "28877a2b91684c4773736aa6d7a99692",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/arima/fig/leisure-2.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "2e81fe73df83e7fdfb29977c01cf43e0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/arima/fig/leisure-4.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "9d0a36b054dece0e9cdc94a24833878b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/arima/fig/ma-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "8dcc43adc41026f511df10a19e1ae304",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/characteristics/fig/jj-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "f0d69799da47acda0676a4fe8116e58b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/characteristics/fig/speech-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "05af6d4f4a4f654543cdb4dc51d2e4e3",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/dependence/fig/speech-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "b0c93720911fb45cf96d74f253802c97",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/regression/fig/cardio-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "a8eb569aef6618cb5cec905ae80826b4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/regression/fig/cardio-cv-2.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "bbc6fdbe1168fdf6e3b317de9d963f18",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/regression/fig/cardio-mult-2.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "ebf7daca3f40f12aa52cdf26e8ddbe43",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/regression/fig/cardio-mult-4.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "a6d9d26e1da8c8b5edc54cd3deb9b9de",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/regression/fig/cardio-mult-5.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "17d788d92d5378423cf5d40365c64b5f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/regression/fig/cardio-split-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "d025f47ae026bca6f720f73526680410",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/regression/fig/chicken-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "025d036df815d9b67aa955c84b35293a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/smoothing/lasso_ridge.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "2a5c836d7958988d96ccfd2dd5c0d826",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/spectral/fig/periodogram-mix-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "e668a3bc8007c940a51c3dba7ab6bc9a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2024/lectures/spectral/fig/periodogram-star-1.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "ea5db0a46ab5d95f5c742ca45c1e119e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2025/HandwrittenNotesLectureEighteen153248Fall2025.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "92fdecbb696dfd666093b0e3ae1db3ec",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2025/HandwrittenNotesLectureEleven153248Fall2025.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "03d3cb3d562a45080a9ececf95d195e0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/fall-2025/HandwrittenNotesLectureFifteen153248Fall2025.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "8e690aea62555adb9a4366ddf0014cc4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/spring-2025/LectureTwentyFour153248Spring2025.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "4a02b567b5c68d1c1f59966d70fdc982",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/spring-2026/public/lectures/Ch6_Regularization.pdf",
+   "pages": 26,
+   "part": 0
+  },
+  {
+   "cache_key": "6a1be1571894b4cb0f4b22e8c8143c75",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/spring-2026/public/lectures/Lec02_Notes.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "d1f18ee42bd836c6bf670d8b8ce4e94d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/spring-2026/public/lectures/Lec04_Notes.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "b556aae62ca4e40fbdb47ea19c6bf601",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat153/spring-2026/public/lectures/Lec06_Notes.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "b49949af15ca79ecf6e2f25057363d30",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat156/fall-2024/HW6.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "b41553186977d220fc12ae86c86dd05b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat156/fall-2024/VideoGuidelines.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "b33f9fc846e01de83f04a29302a5b775",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat156/fall-2024/stat156-syllabus.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "dd23f3b33aa69ecfc5689c2effcc7521",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/02-components-design-2/2. Components Of An Experiment 2.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "b80a4cc8b54347e9ecc7e5e138960fa2",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/06-model-based-inference/6. Model-Based Inference Starter.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "d013a696fb1ec2d1ba00ef6432e7e1bd",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/07-power-1/7. Power I Starter.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "27f677e1973556dd8c3c470597b03b03",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/08-power-2/8. Power II Starter.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "7901eb80eff9a266de6925041b007265",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/10-power-mbi/10. Power - MBI Starter.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "620f4db10b6d47193c4715f5aadb06fc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/12-f-statistic/12. F Statistic Starter.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "bd584b38603db2eac85a77219eaa6e07",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/16-higher-order-effects/16. Higher Order Effects Starter.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "afe2d635236f97e4141e56e4e3acaeea",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/23-comparing-designs/ws.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "a12da99871eee70ce447313f8a0efc71",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/37-wrap-up/2025-final-exam.pdf",
+   "pages": 16,
+   "part": 0
+  },
+  {
+   "cache_key": "03c81cc327e8afbe3e671123fa1e3ae7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/37-wrap-up/Midterm Review Topics List.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "61a11e994dbdad0625721cad3963d7dd",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/37-wrap-up/ws.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "d3417a8c14b4f15dac8c65200fc9b8f9",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat158/spring-2026/project/protocol.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "5b7c1f8d5c1639215d2937b0e9e32ab4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205a/aldous-legacy/hw.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "1cf2a5dd43be064475b1effb2066ef43",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205a/aldous-legacy/notes.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "61fd94ce2f2ccb434f13a7ce98c87aff",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205a/aldous-legacy/sinho_chewi_notes.pdf",
+   "pages": 105,
+   "part": 0
+  },
+  {
+   "cache_key": "61fd94ce2f2ccb434f13a7ce98c87aff",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205a/aldous-legacy/sinho_chewi_notes.pdf",
+   "pages": 105,
+   "part": 1
+  },
+  {
+   "cache_key": "61fd94ce2f2ccb434f13a7ce98c87aff",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205a/aldous-legacy/sinho_chewi_notes.pdf",
+   "pages": 105,
+   "part": 2
+  },
+  {
+   "cache_key": "3f857b9a791bc9138e6ba8a39e34e522",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/511.pdf",
+   "pages": 38,
+   "part": 0
+  },
+  {
+   "cache_key": "df726f467565d7215822728efd785db1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/MC_lec.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "761afbd0f9e67d9799ce08c9907208dc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/austin_arrays.pdf",
+   "pages": 58,
+   "part": 0
+  },
+  {
+   "cache_key": "761afbd0f9e67d9799ce08c9907208dc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/austin_arrays.pdf",
+   "pages": 58,
+   "part": 1
+  },
+  {
+   "cache_key": "f18081d95c097f98953a3da2f270d378",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/bmbook.pdf",
+   "pages": 357,
+   "part": 0
+  },
+  {
+   "cache_key": "f18081d95c097f98953a3da2f270d378",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/bmbook.pdf",
+   "pages": 357,
+   "part": 1
+  },
+  {
+   "cache_key": "f18081d95c097f98953a3da2f270d378",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/bmbook.pdf",
+   "pages": 357,
+   "part": 2
+  },
+  {
+   "cache_key": "f18081d95c097f98953a3da2f270d378",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/bmbook.pdf",
+   "pages": 357,
+   "part": 3
+  },
+  {
+   "cache_key": "f18081d95c097f98953a3da2f270d378",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/bmbook.pdf",
+   "pages": 357,
+   "part": 4
+  },
+  {
+   "cache_key": "f18081d95c097f98953a3da2f270d378",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/bmbook.pdf",
+   "pages": 357,
+   "part": 5
+  },
+  {
+   "cache_key": "f18081d95c097f98953a3da2f270d378",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/bmbook.pdf",
+   "pages": 357,
+   "part": 6
+  },
+  {
+   "cache_key": "f18081d95c097f98953a3da2f270d378",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/bmbook.pdf",
+   "pages": 357,
+   "part": 7
+  },
+  {
+   "cache_key": "f18081d95c097f98953a3da2f270d378",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/bmbook.pdf",
+   "pages": 357,
+   "part": 8
+  },
+  {
+   "cache_key": "4861a5095ee7308462bafb2932eb7d52",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat205b/aldous-legacy/entropy_chapter.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "bc776be6d9beca63a53a3417e7f76326",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture01-F24 Copy.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "cbae06279f88f94a7187dc4e8392cfee",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture01-intro.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "4451d54a033e4d8d7a5cbcd5f7d2be67",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture02-probability.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "b979a2519d80a534c715b2d5d9bc7a8a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture03-F24.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "289960955a1b61c947e3ba30d49821c5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture03-estimation.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "ebe85d42b48fe853b05505f21b4ec6be",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture04-F24.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "5a72fcd802f70808928cd4794b9b5fb4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture04-exponentialfamilies.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "1359dab3cb8173295a4bd46a2e41b413",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture05-F24.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "57b93ac3a1fa5fe900640668d709dd03",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture05-exponentialfamilies.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "a058e704a6f06765b3ced4d91ff2363a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture05-sufficiency.pdf",
+   "pages": 16,
+   "part": 0
+  },
+  {
+   "cache_key": "10325e80f19ddbc3095aa1639fd28bdc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture06-F24.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "2312454ba428a88fe0bbffa692985abd",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture06-completeness.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "21a35ee92ca52b2cc0cecd6fb61d028a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture07-F24.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "33c6bda846c2cdd2550e8c34c8182d20",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture08-F24.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "918d05ead80b6da99d5b75afbb3d69a0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture10-F24.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "694be2a410a478cae52620e178d4f33b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture11-bayescompute.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "913b24b5ad166da1dd0fe2fddd635277",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture12-F24.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "fce084903598e15524ad9fad46019b12",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture14-hyptesting.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "d93bdc23009a96615be93a208d5dcf67",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture18-F24.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "76a8a89472cfbd282798b3271f4fefe9",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture18-linearmodel.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "dfc186ba7e36cb8eb8d9ecf7109edc84",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture19-F24.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "f2791a23da174867ce4cbbad01edf76b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture19-asymptotics.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "dd6326116ea83cbf19e90a259a9d5ae3",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/handwritten/lecture23-F24.pdf",
+   "pages": 15,
+   "part": 0
+  },
+  {
+   "cache_key": "8c3b7fb25aeea371910348bfd9682807",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/old-exams/final2019.pdf",
+   "pages": 20,
+   "part": 0
+  },
+  {
+   "cache_key": "39468d4034f3270bb5f8a78ac99661a1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/old-exams/final2021.pdf",
+   "pages": 20,
+   "part": 0
+  },
+  {
+   "cache_key": "b29fab211211abc4863effa924faf021",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/old-exams/final2023.pdf",
+   "pages": 18,
+   "part": 0
+  },
+  {
+   "cache_key": "e51293582b228ae426f3439207b59036",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/old-exams/solution2018.pdf",
+   "pages": 15,
+   "part": 0
+  },
+  {
+   "cache_key": "eb0d849fc82186d352808994d0833327",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/old-exams/solution2019.pdf",
+   "pages": 17,
+   "part": 0
+  },
+  {
+   "cache_key": "9213a7a2962b6beeaedb53b64fe91484",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/old-exams/solution2020.pdf",
+   "pages": 20,
+   "part": 0
+  },
+  {
+   "cache_key": "b9331174eaef14dfbae50d0946a26a17",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/old-exams/solution2021.pdf",
+   "pages": 16,
+   "part": 0
+  },
+  {
+   "cache_key": "4c9d1611ae403a5c6eb086ccc8f552d2",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/old-exams/solution2023.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "4a98db9b84c84162b1392691b849726c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/old-exams/solution2024.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "29b2961a244e5a700d7d3b7a61cf5288",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/recitation/recitation4.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "bbcfeea483ce52700fda210f18595764",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2024/recitation/recitation5.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "809eb4dfbc40635a3f2b77c784b8ba57",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture01-intro.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "bb5601067ddcfacb343b16460fd43500",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture02-probability.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "4cf6af744520b16255eec804fced15a5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture03-estimation.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "5afc1960fb16f58f2a8b4a2e153d39bc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture05-exponentialfamilies.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "f2b56d47b2935a108823779901d923cc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture06-completeness.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "404480568ebc8d238a0b142c801983f4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture07-unbiased.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "208016bdeb51b3f4cf000c50b5d881f2",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture08-fisherinfo.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "a651bbbc55ae091874d0d2d9e2b4b56d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture09-bayesestimation.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "a1f60f2e5f995a08e26f7b4c9d330aee",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture11-bayescompute.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "bed85fb4484562d24ab40a93eb81af3c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture12-jamesstein.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "de62a9fa79189cd4489fc6ca5d8bccf1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture17-nuisanceparams.pdf",
+   "pages": 19,
+   "part": 0
+  },
+  {
+   "cache_key": "cc6d92907282705c5089be00bdf52c3e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture19-asymptotics.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "fce216dd61975499b0dec9dae94c573b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture22-mle-consistency.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "8295b9b1f4a0886910e933853ca36ec8",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture23-likelihoodbasedinference.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "4bfe4b6646878d8783b118161165378a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/handwritten/lecture26-multipletesting.pdf",
+   "pages": 18,
+   "part": 0
+  },
+  {
+   "cache_key": "ec6c4ff228db798cb065910f2c7acebf",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat210a/fall-2025/old-exams/solution2024.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "e6313f4ec473757848b0413df9394636",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/fall-2024/project/gilks.etal.1992.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "9dbee50b4cc6d6f7e7e49631da6bf02b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/fall-2024/units/graphics_files/gelmanUnwin2013.pdf",
+   "pages": 28,
+   "part": 0
+  },
+  {
+   "cache_key": "33be38a8c0bb59364a682de863c1274c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/fall-2024/units/graphics_files/gordonFinch2015.pdf",
+   "pages": 21,
+   "part": 0
+  },
+  {
+   "cache_key": "24d543760154ae00f9ca8c30d8a8c925",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/fall-2024/units/graphics_files/wainer1984.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "acb0f2ab63910c4a5a0d19db5bbce174",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/howtos/kdeFit.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "98634218d8b5571419028bbb8f8d61df",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/project/givens_hoeting_ch3.pdf",
+   "pages": 37,
+   "part": 0
+  },
+  {
+   "cache_key": "b74e87ded3e3126c3df82f624d7334c4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/ps/practice.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "ca70f7a5c1cc459904367acae39464d3",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/ps/ps1.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "16b1d7dd9d5894a81f04fcaa87360a83",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/section/chenMixtExample.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "1f0d83bb3bf7ecb4de267cbb20046857",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/section/millman-perez.pdf",
+   "pages": 28,
+   "part": 0
+  },
+  {
+   "cache_key": "8ac723e68fb6986891cd31410053428d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/syllabus/syllabus.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "e2eba41a4d2894208831c537aa39446e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/regexpr-Lang.pdf",
+   "pages": 15,
+   "part": 0
+  },
+  {
+   "cache_key": "64d1c14ab371f443917dbe3720293695",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit1-unix.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "9b4b43c024173b2356c0b4c02c69b48b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit10-python.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "c646d7cdbce522cad50237cb710ee406",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit11-linalg.pdf",
+   "pages": 32,
+   "part": 0
+  },
+  {
+   "cache_key": "59fc0323999162a40d3a0d45a44c0508",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit12-sim.pdf",
+   "pages": 22,
+   "part": 0
+  },
+  {
+   "cache_key": "619ad6b3800b1401e88fcdf1ffb8f41e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit15-graphics.pdf",
+   "pages": 31,
+   "part": 0
+  },
+  {
+   "cache_key": "1d0cb0c7e4084c9284e2099624e73204",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit2-bash.pdf",
+   "pages": 35,
+   "part": 0
+  },
+  {
+   "cache_key": "e3b5fc270f395ed12690cb590901823b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit4-usingR.pdf",
+   "pages": 67,
+   "part": 0
+  },
+  {
+   "cache_key": "e3b5fc270f395ed12690cb590901823b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit4-usingR.pdf",
+   "pages": 67,
+   "part": 1
+  },
+  {
+   "cache_key": "9accef2bcf69230ce17b7c1429d4040a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit6-Rprog.pdf",
+   "pages": 65,
+   "part": 0
+  },
+  {
+   "cache_key": "9accef2bcf69230ce17b7c1429d4040a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit6-Rprog.pdf",
+   "pages": 65,
+   "part": 1
+  },
+  {
+   "cache_key": "cabe26165872ed2db030005c11f0d57e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit8-parallel.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "665c5622bbcb6e16f484e457e24b2ff7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2014/units/unit9-bigData.pdf",
+   "pages": 40,
+   "part": 0
+  },
+  {
+   "cache_key": "6632e7be4dbd5e5171a23a7ecb1c3813",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/project/project.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "0b19d3af4cd6211d5957e78021994fa4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/ps/ps1.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "b722caefe7ed70ceaac29da034f783a3",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/ps/ps2.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "88371bfcecfa5c762aafe1af283b9ef4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/ps/ps3.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "5318ce818972b6c7502c9a7b244b2dfb",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/ps/ps4.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "e14343382ac08c38b2b87f5804a84c88",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/ps/ps5.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "0c697bff0ba367231deff8dea0a9ed1b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/ps/ps6.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "d667557402836ec715b9b62b48ffd09d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/ps/ps7.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "a6edaa632ada88cb57db72e7db434540",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/ps/ps8.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "92a4515f1426fa3ecc525d6fc0ddeb86",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/section/section_questions_nov9.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "76659d2ccb3b712992084ceba9706360",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/section/s12/worksheet.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "75ee31891dbac0b61f8f968f33d8e38d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/syllabus/syllabus.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "8c85b0f67eb5a2e615e5f9fba0b8b20f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit1-unix.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "82495c1ebc2a6d4e539bbda0f1f61642",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit10-sim.pdf",
+   "pages": 18,
+   "part": 0
+  },
+  {
+   "cache_key": "1d699ec9289190947c161a519a290cec",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit11-optim.pdf",
+   "pages": 45,
+   "part": 0
+  },
+  {
+   "cache_key": "1d699ec9289190947c161a519a290cec",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit11-optim.pdf",
+   "pages": 45,
+   "part": 1
+  },
+  {
+   "cache_key": "5a2e6e6a8a3c60d959e018b1e11ba942",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit12-integ.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "8dbafd5959d299ef8084deb10f6e1c32",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit3-Rinput.pdf",
+   "pages": 30,
+   "part": 0
+  },
+  {
+   "cache_key": "0182e61b643e61b50222c6d8bc0f8888",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit4-programming.pdf",
+   "pages": 96,
+   "part": 0
+  },
+  {
+   "cache_key": "0182e61b643e61b50222c6d8bc0f8888",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit4-programming.pdf",
+   "pages": 96,
+   "part": 1
+  },
+  {
+   "cache_key": "0182e61b643e61b50222c6d8bc0f8888",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit4-programming.pdf",
+   "pages": 96,
+   "part": 2
+  },
+  {
+   "cache_key": "c6cd5afb815083b253595a14ca3a7209",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit5-debug.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "75ad2a13f80f521f8489d3ba1712a3e1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit6-numbers.pdf",
+   "pages": 21,
+   "part": 0
+  },
+  {
+   "cache_key": "0109fca8c6d77ef55bed22b35b79e1ef",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit8-parallel.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "f7c2a2a88f94e745476709af62f431b4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2015/units/unit9-linalg.pdf",
+   "pages": 32,
+   "part": 0
+  },
+  {
+   "cache_key": "b8574d397503ffa0670e3c2092d2d054",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/project/project.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "eb4a48e9b3afa922d48fd7ab2c6e0223",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/lo_etal_2001.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "e406fe7eb979ce80df5dbfb1b71af82e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/ps1.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "e4d0fa34dddc93580978832b2c02a32b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/ps2.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "45e64836105cef21629d5508333f78f8",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/ps3.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "43d355be257632e61b40cbc2c58926e5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/ps4.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "111b2fc4acc1a1e584feff9ca256ac6a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/ps5.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "2044bad25c5b6e8cf0cc3e19e624b1f0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/ps6.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "a4ceaa8fa9579a7d00e6fecfc11fdc8f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/ps7.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "2b43264d3970bffaa394f8b9264a0e59",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/ps8.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "bf4d824896dc516eeac8e5cacf8a11f3",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/ps/section_questions_oct30.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "cd9d8b854029d8f05ade3332797a6880",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/section/s00/practice.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "88d8fbe4e533eb49a794868b6318c16d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/section/s04/A Cohort Location Model of Household Sorting in US Metropolitan Regions.pdf",
+   "pages": 20,
+   "part": 0
+  },
+  {
+   "cache_key": "e7d733bcf7f366e7406eec7ee5b295de",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/syllabus/syllabus.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "12fbc1f5a32bc7f62f441aee84aa435c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/obamaTraffic.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "76683dc6385c39435ecfac9ed1bd0c99",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/simulation_tutorial_miratrix.pdf",
+   "pages": 23,
+   "part": 0
+  },
+  {
+   "cache_key": "ef360cc8174e4716ad8f20ea19ddf71c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit1-unix.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "6c343280addf34dac1e6e82c80a7b4c9",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit10-sim.pdf",
+   "pages": 19,
+   "part": 0
+  },
+  {
+   "cache_key": "d33e45ce79cb77d5782951efc648de15",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit11-optim.pdf",
+   "pages": 49,
+   "part": 0
+  },
+  {
+   "cache_key": "d33e45ce79cb77d5782951efc648de15",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit11-optim.pdf",
+   "pages": 49,
+   "part": 1
+  },
+  {
+   "cache_key": "1068663c8d4ad0127b51987daae47e7c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit2-bash.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "50a7e73a14c620da1459849474df4ec3",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit3-dataIO.pdf",
+   "pages": 35,
+   "part": 0
+  },
+  {
+   "cache_key": "4853abf592d3beb5272ed72421a40bf3",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit4-programming.pdf",
+   "pages": 101,
+   "part": 0
+  },
+  {
+   "cache_key": "4853abf592d3beb5272ed72421a40bf3",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit4-programming.pdf",
+   "pages": 101,
+   "part": 1
+  },
+  {
+   "cache_key": "4853abf592d3beb5272ed72421a40bf3",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit4-programming.pdf",
+   "pages": 101,
+   "part": 2
+  },
+  {
+   "cache_key": "f36a6799df383d39426cf94121da7fba",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit5-goodPractices.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "1aa2a8668847a3b22e90b5f9af737229",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit6-numbers.pdf",
+   "pages": 21,
+   "part": 0
+  },
+  {
+   "cache_key": "5898d713b34875bc1a5403eb1c245c91",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit7-parallel.pdf",
+   "pages": 16,
+   "part": 0
+  },
+  {
+   "cache_key": "dbedd829ccd11ce6fd8d462bbbdf5deb",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit8-bigData.pdf",
+   "pages": 52,
+   "part": 0
+  },
+  {
+   "cache_key": "dbedd829ccd11ce6fd8d462bbbdf5deb",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit8-bigData.pdf",
+   "pages": 52,
+   "part": 1
+  },
+  {
+   "cache_key": "608baae5058e5f6d795ea5c6ae5c113f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2017/units/unit9-linalg.pdf",
+   "pages": 33,
+   "part": 0
+  },
+  {
+   "cache_key": "03ec120967e0398caa711a54455a9466",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/lab/S00/practice.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "6a15f493fa4f76c123bb521d4b0133f1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/project/project.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "74bb25e857dcd077c04a19f901271e94",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/ps/ps1.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "707502dc9aa8801ffacf14063247197b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/ps/ps2.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "5d2f4e5d24ec3960cce920abdbba72e9",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/ps/ps3.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "5b7ec9e3cf0b8f696ee80afee2bfcb39",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/ps/ps5.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "6734c263760a7cc4235c709dd12bc73e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/ps/ps6.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "addd9995a5318a2ae8c6483c2e27c7e8",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/ps/ps7.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "58c2c753491107d010f498372118ebaf",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/ps/ps8.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "b7ed50e3cc6feb1d12bfcebc1129a7cd",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/syllabus/syllabus.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "f7bff4e373e9f20590a15752cee787e6",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit1-unix.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "9a11b46823a48383d7249fdf5cfb712c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit10-sim.pdf",
+   "pages": 19,
+   "part": 0
+  },
+  {
+   "cache_key": "276699a0dfad5e1a07bf270303746017",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit11-optim.pdf",
+   "pages": 49,
+   "part": 0
+  },
+  {
+   "cache_key": "276699a0dfad5e1a07bf270303746017",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit11-optim.pdf",
+   "pages": 49,
+   "part": 1
+  },
+  {
+   "cache_key": "323edb956e05e5d2728bf3eff225bb28",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit12-integ.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "90879beb9d915663fb8ba2e66aa46a51",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit13-graphics.pdf",
+   "pages": 35,
+   "part": 0
+  },
+  {
+   "cache_key": "3c5708e24aa3312878358bc119f4ba78",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit2-bash.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "888bc2da85e6851639123d181af1d366",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit3-dataIO.pdf",
+   "pages": 36,
+   "part": 0
+  },
+  {
+   "cache_key": "4d0644165958f115fb03b2f2b1e08417",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit4-programming.pdf",
+   "pages": 105,
+   "part": 0
+  },
+  {
+   "cache_key": "4d0644165958f115fb03b2f2b1e08417",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit4-programming.pdf",
+   "pages": 105,
+   "part": 1
+  },
+  {
+   "cache_key": "4d0644165958f115fb03b2f2b1e08417",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit4-programming.pdf",
+   "pages": 105,
+   "part": 2
+  },
+  {
+   "cache_key": "edd94364805ee25cdfa2039abdbf9b79",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit4-programming-partial.pdf",
+   "pages": 74,
+   "part": 0
+  },
+  {
+   "cache_key": "edd94364805ee25cdfa2039abdbf9b79",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit4-programming-partial.pdf",
+   "pages": 74,
+   "part": 1
+  },
+  {
+   "cache_key": "1d8f52424125e6f875480ac73f1dc7c6",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit5-goodPractices.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "fe359848710381b9049e3aabf3facc8f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit6-numbers.pdf",
+   "pages": 22,
+   "part": 0
+  },
+  {
+   "cache_key": "ee6d7ce1d895f6f2f929521ed0d65f82",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit7-bigData.pdf",
+   "pages": 51,
+   "part": 0
+  },
+  {
+   "cache_key": "ee6d7ce1d895f6f2f929521ed0d65f82",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit7-bigData.pdf",
+   "pages": 51,
+   "part": 1
+  },
+  {
+   "cache_key": "fd014e93f5bc519ff6ad357204860e38",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit8-parallel.pdf",
+   "pages": 22,
+   "part": 0
+  },
+  {
+   "cache_key": "6ebd8043f9510196707dd9c180d80703",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2018/units/unit9-linalg.pdf",
+   "pages": 35,
+   "part": 0
+  },
+  {
+   "cache_key": "4481029f2e2147599dc6bd5deab5efc2",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/project/project.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "156a4b12428d5ff2f1dd9863058b93b5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/ps/cao_etal_2015.pdf",
+   "pages": 22,
+   "part": 0
+  },
+  {
+   "cache_key": "b9acca550878a75d7aaa438030a9b6dd",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/ps/ps2.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "839f2b87b9e97b11ffadcf3b4efced7d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/ps/ps4.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "f103407c47f9d7be58dfa9124b638097",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/ps/ps5.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "ac786f6f2eaa293b8d80a5a5e4af73fa",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/ps/ps6.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "c510dc007d30acb86c7c8dde64d1e19d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/ps/ps7.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "055e289c73a09aff13728ccba95395ea",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/ps/ps8.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "7f869a524f84cfb823335b8fb33bb95a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit1-unix.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "7cb310f48de3701e2d13e3bab7da0c53",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit10-sim.pdf",
+   "pages": 20,
+   "part": 0
+  },
+  {
+   "cache_key": "db7960afae2180e0daf57919bfcc3883",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit11-optim.pdf",
+   "pages": 49,
+   "part": 0
+  },
+  {
+   "cache_key": "db7960afae2180e0daf57919bfcc3883",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit11-optim.pdf",
+   "pages": 49,
+   "part": 1
+  },
+  {
+   "cache_key": "e8fff4d41a21809d8a7f8c74ce0fa7a5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit13-graphics.pdf",
+   "pages": 36,
+   "part": 0
+  },
+  {
+   "cache_key": "fdb78d0e1ee8ed3582d1f1aa5cb4178b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit2-dataIO.pdf",
+   "pages": 36,
+   "part": 0
+  },
+  {
+   "cache_key": "51123ec6c944c52fc8e2129affe14d0c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit3-goodPractices.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "831163525062760e89477013b3c6c4de",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit4-bash.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "95f01edac697a8a4eedeaa65f9b0851d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit5-programming.pdf",
+   "pages": 110,
+   "part": 0
+  },
+  {
+   "cache_key": "95f01edac697a8a4eedeaa65f9b0851d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit5-programming.pdf",
+   "pages": 110,
+   "part": 1
+  },
+  {
+   "cache_key": "95f01edac697a8a4eedeaa65f9b0851d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit5-programming.pdf",
+   "pages": 110,
+   "part": 2
+  },
+  {
+   "cache_key": "32aa90bd121f8ae324a94b38155d0c27",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit6-numbers.pdf",
+   "pages": 23,
+   "part": 0
+  },
+  {
+   "cache_key": "683442694dd6ad9f3ea88da81fb59775",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit7-parallel.pdf",
+   "pages": 25,
+   "part": 0
+  },
+  {
+   "cache_key": "4a8c6c1d07a21c82c125c1325df7eec8",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit8-bigData.pdf",
+   "pages": 56,
+   "part": 0
+  },
+  {
+   "cache_key": "4a8c6c1d07a21c82c125c1325df7eec8",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit8-bigData.pdf",
+   "pages": 56,
+   "part": 1
+  },
+  {
+   "cache_key": "391779d0e9be9fcfb45f5e03d959989e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2019/units/unit9-linalg.pdf",
+   "pages": 35,
+   "part": 0
+  },
+  {
+   "cache_key": "fd68e60060db9e368c6c6928b4a538ed",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/syllabus.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "74b42616211ab8933c0a023d740216d7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/ps/ps1.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "214daf25534a96396b6e07ed95782242",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/ps/ps1_notes.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "3b44737c4fad49eec361b066d0beef30",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/ps/ps2.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "8b164546a3b64929e7dfcc044e288bd6",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/ps/ps3.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "42f801174902fd1459103b795461959f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/ps/ps4.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "ecdf93f1b0463796c0a55753f910b534",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/ps/ps5.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "5122ddfd5fea70a66c0444395d2f4a62",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/ps/ps7.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "a631fbd2aa56620f23a62a5daeb96c8f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/ps/ps8.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "e57111c562862dab415843dd681435f7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/sections/01/R-practice.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "0b952cf12fba5b841b6beffb4a62ba38",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/sections/03/slides.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "ef47125aeb5cf493f45ef9b603662576",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/sections/08/parallelR.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "bbdb7f37d1924f29d443445d2ed58f10",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/sections/08/scfOverview.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "181b18c25f37c92b652984e01d33a30f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit1-unix.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "bbb7cdc45fc8f7b2510363533fcbe1e8",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit10-linalg.pdf",
+   "pages": 35,
+   "part": 0
+  },
+  {
+   "cache_key": "6e270bfac0fc86ecf893ca424cfff11c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit11-optim.pdf",
+   "pages": 47,
+   "part": 0
+  },
+  {
+   "cache_key": "6e270bfac0fc86ecf893ca424cfff11c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit11-optim.pdf",
+   "pages": 47,
+   "part": 1
+  },
+  {
+   "cache_key": "fcc4d8154cbaa817fad42a0f58d915e6",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit12-integ.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "d7d9aaf6dae8e64dc566c8e24da16e52",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit13-graphics.pdf",
+   "pages": 36,
+   "part": 0
+  },
+  {
+   "cache_key": "8bf83d439731f320f2efe1febe223ec0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit2-dataTech.pdf",
+   "pages": 37,
+   "part": 0
+  },
+  {
+   "cache_key": "fab697cc10f2f7125ea09f25f41543e4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit4-goodPractices.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "af6b774b814c63608692e3ac04c8fe34",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit5-programming.pdf",
+   "pages": 115,
+   "part": 0
+  },
+  {
+   "cache_key": "af6b774b814c63608692e3ac04c8fe34",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit5-programming.pdf",
+   "pages": 115,
+   "part": 1
+  },
+  {
+   "cache_key": "af6b774b814c63608692e3ac04c8fe34",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit5-programming.pdf",
+   "pages": 115,
+   "part": 2
+  },
+  {
+   "cache_key": "a0738e98d0a11401822f72721c26c8c5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit6-numbers.pdf",
+   "pages": 23,
+   "part": 0
+  },
+  {
+   "cache_key": "46028ecab695a9f4798693f62e86207b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit7-parallel.pdf",
+   "pages": 23,
+   "part": 0
+  },
+  {
+   "cache_key": "68ba7592d13aa3160ea489a6c412dafb",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit8-bigData.pdf",
+   "pages": 56,
+   "part": 0
+  },
+  {
+   "cache_key": "68ba7592d13aa3160ea489a6c412dafb",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit8-bigData.pdf",
+   "pages": 56,
+   "part": 1
+  },
+  {
+   "cache_key": "be51105aeea6e5b8a1ac178a51f1e047",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2020/units/unit9-sim.pdf",
+   "pages": 20,
+   "part": 0
+  },
+  {
+   "cache_key": "cd2586d73f66db8e683f09e5032c5905",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/syllabus.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "0ace21555e25809c78042cc8311aeb21",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/project/project.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "76e9f5aa726069117867d638818fb58f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/ps/ps1.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "36e6202d8dbc6e4af18836d3e76ad647",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/ps/ps2.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "4c225a5fd872d47140bac3862e1f94de",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/ps/ps3.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "42d93967eae3f0cd03006a87786707fc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/ps/ps4.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "3b400f4135b600dd19c4a99cf5665abc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/ps/ps5.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "5d2e1920e4d3187b370073efc37cb770",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/ps/ps6.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "53104ead50817133abc380f23827854a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/ps/ps7.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "859aefd917ea62749870c8f92aa6226e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/ps/ps8.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "f4299b44de090109ae76ea25c5d1c0b4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/sections/07/parallelR.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "38f35ed499f854e7820476bcb32753d9",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/sections/07/scfOverview.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "7d52ddac9ecd1f915f45ae9bd19e8196",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit10-linalg.pdf",
+   "pages": 35,
+   "part": 0
+  },
+  {
+   "cache_key": "01a1e492752d749e523c9bf196ff8993",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit12-integ.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "c139108ad082640dfecad7d3fa2051eb",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit2-dataTech.pdf",
+   "pages": 39,
+   "part": 0
+  },
+  {
+   "cache_key": "224efbbedca57dcbf4cd68a84bfe4a01",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit3-bash.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "0a1e4b3fefe38e5801c6e49f90c3f40a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit4-goodPractices.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "21154a26d9510bc40923948343b78b60",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit5-programming.pdf",
+   "pages": 115,
+   "part": 0
+  },
+  {
+   "cache_key": "21154a26d9510bc40923948343b78b60",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit5-programming.pdf",
+   "pages": 115,
+   "part": 1
+  },
+  {
+   "cache_key": "21154a26d9510bc40923948343b78b60",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit5-programming.pdf",
+   "pages": 115,
+   "part": 2
+  },
+  {
+   "cache_key": "be0a9de2d3d1f006c21d580d24d95b22",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit7-parallel.pdf",
+   "pages": 24,
+   "part": 0
+  },
+  {
+   "cache_key": "65310ef6ce4754bce16553d6d6f25327",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit8-bigData.pdf",
+   "pages": 56,
+   "part": 0
+  },
+  {
+   "cache_key": "65310ef6ce4754bce16553d6d6f25327",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit8-bigData.pdf",
+   "pages": 56,
+   "part": 1
+  },
+  {
+   "cache_key": "9c9c5a3a08cd9102b1a1430ca17d6bb1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-stat243/stat243-fall-2021/units/unit9-sim.pdf",
+   "pages": 21,
+   "part": 0
+  },
+  {
+   "cache_key": "143b2cc11988134c1e4cff70ffc721fc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/carilli-2026-expression-regulation/Thesis_Carilli_Maria.pdf",
+   "pages": 146,
+   "part": 0
+  },
+  {
+   "cache_key": "143b2cc11988134c1e4cff70ffc721fc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/carilli-2026-expression-regulation/Thesis_Carilli_Maria.pdf",
+   "pages": 146,
+   "part": 1
+  },
+  {
+   "cache_key": "143b2cc11988134c1e4cff70ffc721fc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/carilli-2026-expression-regulation/Thesis_Carilli_Maria.pdf",
+   "pages": 146,
+   "part": 2
+  },
+  {
+   "cache_key": "143b2cc11988134c1e4cff70ffc721fc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/carilli-2026-expression-regulation/Thesis_Carilli_Maria.pdf",
+   "pages": 146,
+   "part": 3
+  },
+  {
+   "cache_key": "5a212aaeade7bb558928ea5520c5751f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/fang-2025-biophysical-normalisation/Thesis.pdf",
+   "pages": 120,
+   "part": 0
+  },
+  {
+   "cache_key": "5a212aaeade7bb558928ea5520c5751f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/fang-2025-biophysical-normalisation/Thesis.pdf",
+   "pages": 120,
+   "part": 1
+  },
+  {
+   "cache_key": "5a212aaeade7bb558928ea5520c5751f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/fang-2025-biophysical-normalisation/Thesis.pdf",
+   "pages": 120,
+   "part": 2
+  },
+  {
+   "cache_key": "3cd6d25823a4c1ae6685c5bc108b97d4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/felce-2026-biophysical-evolution/Thesis_final_CF.pdf",
+   "pages": 160,
+   "part": 0
+  },
+  {
+   "cache_key": "3cd6d25823a4c1ae6685c5bc108b97d4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/felce-2026-biophysical-evolution/Thesis_final_CF.pdf",
+   "pages": 160,
+   "part": 1
+  },
+  {
+   "cache_key": "3cd6d25823a4c1ae6685c5bc108b97d4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/felce-2026-biophysical-evolution/Thesis_final_CF.pdf",
+   "pages": 160,
+   "part": 2
+  },
+  {
+   "cache_key": "3cd6d25823a4c1ae6685c5bc108b97d4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/felce-2026-biophysical-evolution/Thesis_final_CF.pdf",
+   "pages": 160,
+   "part": 3
+  },
+  {
+   "cache_key": "c645cc2f3c9e9714611f395212b90ad7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/gorin-2023-scrnaseq-foundations/gg_thesis_230602.pdf",
+   "pages": 254,
+   "part": 0
+  },
+  {
+   "cache_key": "c645cc2f3c9e9714611f395212b90ad7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/gorin-2023-scrnaseq-foundations/gg_thesis_230602.pdf",
+   "pages": 254,
+   "part": 1
+  },
+  {
+   "cache_key": "c645cc2f3c9e9714611f395212b90ad7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/gorin-2023-scrnaseq-foundations/gg_thesis_230602.pdf",
+   "pages": 254,
+   "part": 2
+  },
+  {
+   "cache_key": "c645cc2f3c9e9714611f395212b90ad7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/gorin-2023-scrnaseq-foundations/gg_thesis_230602.pdf",
+   "pages": 254,
+   "part": 3
+  },
+  {
+   "cache_key": "c645cc2f3c9e9714611f395212b90ad7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/gorin-2023-scrnaseq-foundations/gg_thesis_230602.pdf",
+   "pages": 254,
+   "part": 4
+  },
+  {
+   "cache_key": "c645cc2f3c9e9714611f395212b90ad7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/gorin-2023-scrnaseq-foundations/gg_thesis_230602.pdf",
+   "pages": 254,
+   "part": 5
+  },
+  {
+   "cache_key": "c645cc2f3c9e9714611f395212b90ad7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/gorin-2023-scrnaseq-foundations/gg_thesis_230602.pdf",
+   "pages": 254,
+   "part": 6
+  },
+  {
+   "cache_key": "aef687c5ee77e2bd3047a60e84307f9f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/gtpb-psls20/background_material/rmarkdown-cheatsheet.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "0aa11176a58b01b4c7fb291734dcde48",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/luebbert-2024-transcriptomic-complexity/Laura_Luebbert_thesis_final_final.pdf",
+   "pages": 144,
+   "part": 0
+  },
+  {
+   "cache_key": "0aa11176a58b01b4c7fb291734dcde48",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/luebbert-2024-transcriptomic-complexity/Laura_Luebbert_thesis_final_final.pdf",
+   "pages": 144,
+   "part": 1
+  },
+  {
+   "cache_key": "0aa11176a58b01b4c7fb291734dcde48",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/luebbert-2024-transcriptomic-complexity/Laura_Luebbert_thesis_final_final.pdf",
+   "pages": 144,
+   "part": 2
+  },
+  {
+   "cache_key": "0aa11176a58b01b4c7fb291734dcde48",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/luebbert-2024-transcriptomic-complexity/Laura_Luebbert_thesis_final_final.pdf",
+   "pages": 144,
+   "part": 3
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 0
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 1
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 2
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 3
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 4
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 5
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 6
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 7
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 8
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 9
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 10
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 11
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 12
+  },
+  {
+   "cache_key": "4effa8d6bf4cb56a47048dc2cf684a3a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/compiled/compiled-compiled.pdf",
+   "pages": 547,
+   "part": 13
+  },
+  {
+   "cache_key": "d96e203cb0e68aff8e8082e41ef4525b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/01-slides.pdf",
+   "pages": 120,
+   "part": 0
+  },
+  {
+   "cache_key": "d96e203cb0e68aff8e8082e41ef4525b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/01-slides.pdf",
+   "pages": 120,
+   "part": 1
+  },
+  {
+   "cache_key": "d96e203cb0e68aff8e8082e41ef4525b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/01-slides.pdf",
+   "pages": 120,
+   "part": 2
+  },
+  {
+   "cache_key": "dd1fa20e758180016c29c3b9bdd00844",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/02-slides.pdf",
+   "pages": 58,
+   "part": 0
+  },
+  {
+   "cache_key": "dd1fa20e758180016c29c3b9bdd00844",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/02-slides.pdf",
+   "pages": 58,
+   "part": 1
+  },
+  {
+   "cache_key": "80ee6c10a1c890a1015f941a93cbf0c0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/18-slides.pdf",
+   "pages": 78,
+   "part": 0
+  },
+  {
+   "cache_key": "80ee6c10a1c890a1015f941a93cbf0c0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/18-slides.pdf",
+   "pages": 78,
+   "part": 1
+  },
+  {
+   "cache_key": "f2b2a2b4aad681c34e3954405ff3bf7b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/20-slides.pdf",
+   "pages": 113,
+   "part": 0
+  },
+  {
+   "cache_key": "f2b2a2b4aad681c34e3954405ff3bf7b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/20-slides.pdf",
+   "pages": 113,
+   "part": 1
+  },
+  {
+   "cache_key": "f2b2a2b4aad681c34e3954405ff3bf7b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/lectures/20-slides.pdf",
+   "pages": 113,
+   "part": 2
+  },
+  {
+   "cache_key": "97c8eb788f3705e6d1310971bb072982",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/other/scribingguide-slides.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "694640a40ef7578632c46b2fa582d96d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/psets/01-questions.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "b78be5574e689cfe577f17f051e83a70",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/psets/02-questions.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "90a8c3104783bca4f8c5d74cf5a3dc6e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/psets/03-questions.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "4c040659506bbf5bba5ff34b5a7b46c4",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/psets/04-questions.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "23ba5953a3b91938b0402cd567af7a84",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-6047/psets/05-questions.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "71c3c7a222a8c9243001317c60aa9b87",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/lectures/02-slides.pdf",
+   "pages": 26,
+   "part": 0
+  },
+  {
+   "cache_key": "2194bd1b9f8a8f569141b4ef531b0d08",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/lectures/03-slides.pdf",
+   "pages": 46,
+   "part": 0
+  },
+  {
+   "cache_key": "2194bd1b9f8a8f569141b4ef531b0d08",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/lectures/03-slides.pdf",
+   "pages": 46,
+   "part": 1
+  },
+  {
+   "cache_key": "7260994bc48d8aff0e3e0eb786bb6e5e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/lectures/04-slides.pdf",
+   "pages": 44,
+   "part": 0
+  },
+  {
+   "cache_key": "7260994bc48d8aff0e3e0eb786bb6e5e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/lectures/04-slides.pdf",
+   "pages": 44,
+   "part": 1
+  },
+  {
+   "cache_key": "81a6ac8fddc2c2f19c2967d19d5e7dfe",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/lectures/19-slides.pdf",
+   "pages": 47,
+   "part": 0
+  },
+  {
+   "cache_key": "81a6ac8fddc2c2f19c2967d19d5e7dfe",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/lectures/19-slides.pdf",
+   "pages": 47,
+   "part": 1
+  },
+  {
+   "cache_key": "cdffff64ef5abf35412a06c7863c10fd",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/psets/03-questions.pdf",
+   "pages": 17,
+   "part": 0
+  },
+  {
+   "cache_key": "6894f2a218d5b3b345864559fa4b3375",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/psets/03-questions-pset3-ques.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "14c7ae04a66bae6d74c20af1e02e4778",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/psets/04-questions.pdf",
+   "pages": 20,
+   "part": 0
+  },
+  {
+   "cache_key": "75ecfe8915203c93b91b475b274f28eb",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/recitations/2014-03-07-slides.pdf",
+   "pages": 28,
+   "part": 0
+  },
+  {
+   "cache_key": "45dcd0cc94ebade01ed0c991c3025fba",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/recitations/2014-04-16-slides.pdf",
+   "pages": 49,
+   "part": 0
+  },
+  {
+   "cache_key": "45dcd0cc94ebade01ed0c991c3025fba",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/recitations/2014-04-16-slides.pdf",
+   "pages": 49,
+   "part": 1
+  },
+  {
+   "cache_key": "dbfb83d830451cbd57b764fa1a52b3a6",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/recitations/2014-04-23-slides.pdf",
+   "pages": 30,
+   "part": 0
+  },
+  {
+   "cache_key": "9c0026ae2acede9022e7328d375c7520",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-7091j/recitations/2014-04-30-slides.pdf",
+   "pages": 35,
+   "part": 0
+  },
+  {
+   "cache_key": "302e441168df8b0cf264fc9dfc824bb5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/exams/final-ps-exam.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "fa18eca69a26f83b9766ed6380af6c18",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lecture-outlines/10-outline.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "ee8e7360fa4766f11b5f2f89604dcc43",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lecture-outlines/11-outline.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "7fcb0e1ed4c657efeb7a9f85a3136b0f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lecture-outlines/12-outline.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "a7e643aae14893a96c5115fdc6ca29ea",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lecture-outlines/15-outline.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "73caedea3b40b83f53db265570bbde11",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lecture-outlines/19-outline.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "92540bce17f95ef225e53e09a8579f3f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/01-notes.pdf",
+   "pages": 53,
+   "part": 0
+  },
+  {
+   "cache_key": "92540bce17f95ef225e53e09a8579f3f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/01-notes.pdf",
+   "pages": 53,
+   "part": 1
+  },
+  {
+   "cache_key": "9c67cadbaa494e6c870d915e1dd33c49",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/03-notes.pdf",
+   "pages": 25,
+   "part": 0
+  },
+  {
+   "cache_key": "4a3547d3239fc40580a994a760294637",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/04-notes.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "ef8af26079b2f73e79ee26c87b7a46a9",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/06-notes.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "1fb4c3925daa6946bd15041b93490712",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/07-notes.pdf",
+   "pages": 51,
+   "part": 0
+  },
+  {
+   "cache_key": "1fb4c3925daa6946bd15041b93490712",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/07-notes.pdf",
+   "pages": 51,
+   "part": 1
+  },
+  {
+   "cache_key": "473eb01cb3a8f2ee0718d70986d910fa",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/08-notes.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "a702f43bd4137d8b5ab30c8e6eab5bc2",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/09-notes.pdf",
+   "pages": 39,
+   "part": 0
+  },
+  {
+   "cache_key": "c9a8864bb198eab2668af8ea162ef1cd",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/10-notes.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "9f5a34a9871aa28ed2b0d00e386b51f1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/11-notes.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "a361a78dcc8712041b606a56b1e87afa",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/14-notes.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "ab87db269e4d054fd99fa270ad4b3744",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/16-notes.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "f7996073132db17ebd44e43ed8c12a13",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/17-notes.pdf",
+   "pages": 33,
+   "part": 0
+  },
+  {
+   "cache_key": "0a302eaf7b0427de24b551fdc40b370e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/18-notes.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "6882a44c45ac2a488bdbe6d8f3cca7b5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/20-notes.pdf",
+   "pages": 16,
+   "part": 0
+  },
+  {
+   "cache_key": "cd63f9b13b1561fa64488363e6f49a0e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/23-notes.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "ce5c747cfa4628c4cd38bd46f34785e1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/lectures/25-notes.pdf",
+   "pages": 20,
+   "part": 0
+  },
+  {
+   "cache_key": "4f4d397161e8776e5361e89eacca0de0",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/psets/01-questions.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "0b9820654ee07824a79e70530a56ba19",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/psets/02-questions.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "337a38a22b9a4985e33f7899af55671f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/psets/03-questions.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "0ecc5cd2084bd726a79629d2de115554",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/psets/04-questions.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "2d09c50b1edcd922aaa3182cda9ec466",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/psets/05-questions.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "feed5d563adbd9249f7e880f3e12eaa1",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/recordings/l2-syllabus-transcript.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "cdfcde1f4c2e85f7c204dc9346699d98",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/recordings/l3-syllabus-transcript.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "a84260395cbfad1b186037afca4143ee",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/recordings/l5-syllabus-transcript.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "f443ab1ee677c16139873179613a4d67",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/recordings/l6-syllabus-transcript.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "c6df981c88629b171e6ce56c285c21af",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/recordings/l8-syllabus-transcript.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "c0fc7957017a99448cdaf7ef74ce0089",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/recordings/l9-syllabus-transcript.pdf",
+   "pages": 2,
+   "part": 0
+  },
+  {
+   "cache_key": "bdc5fca641da8ac08404db4baa12263e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2004/recordings/stochastics-transcript.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "5de6625407217427e6ba1bdf56a74b55",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/exams/01-exam.pdf",
+   "pages": 11,
+   "part": 0
+  },
+  {
+   "cache_key": "90d5af9f3b9d933ed5ed304d6c7a4e44",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/exams/01-exam-exam1-2013.pdf",
+   "pages": 12,
+   "part": 0
+  },
+  {
+   "cache_key": "7ff43872b3710360af4a35254c11149f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/exams/02-exam.pdf",
+   "pages": 14,
+   "part": 0
+  },
+  {
+   "cache_key": "7030fc002206a7e96391a58fdc261813",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/exams/02-exam-exam2-2013.pdf",
+   "pages": 13,
+   "part": 0
+  },
+  {
+   "cache_key": "a99abc51ec6582f991ef1f4e47cda783",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/exams/finalexam-2012-exam.pdf",
+   "pages": 21,
+   "part": 0
+  },
+  {
+   "cache_key": "ecb429e52831e0f3ff24c9b8a44e653b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/exams/finalexam-2013-exam.pdf",
+   "pages": 15,
+   "part": 0
+  },
+  {
+   "cache_key": "c33059db83c86995731828531aaaa416",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/psets/01-questions.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "4151d99f927cf6758145f2697b73fa27",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/psets/02-questions.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "74f2d8b859a79f2523a3396700c56552",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/psets/03-questions.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "197072e6e677000e26cff45d6e4f10c7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/psets/05-questions.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "36f4e3de7d87594599a41a095fbacb4a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/psets/06-questions.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "f502a4915eb17ddcabec65d7832aaf19",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/psets/07-questions.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "ec99de9ee4600bc435976b0e3c9ba1bc",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8591j-2014/psets/08-questions.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "b2900247635a25953c18da35f89079b7",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/01-slides.pdf",
+   "pages": 9,
+   "part": 0
+  },
+  {
+   "cache_key": "97c60cf2289dfc58869d822cd8e9e84b",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/03-slides.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "cc709f5f43f24d39e6237093a5a9f078",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/05-slides.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "952f179f762a93234df1b8155efe701d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/08-slides.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "02ffd6df5d20a983fe20d12ab8b625ed",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/09-slides.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "e3c7142972d21966f8ef044497d001d5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/10-slides.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "c1d628890231346d99958752c8891e57",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/11-slides.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "25329352de6b653e69d26d26efd6866e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/16-slides.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "ad192f7b80b68ec7c905ae8f61974a8a",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/17-slides.pdf",
+   "pages": 6,
+   "part": 0
+  },
+  {
+   "cache_key": "e698b1cfa7e2abe898355f4ced553cff",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/20-slides.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "eb8e967baaa6d593f52018fd1c96f83f",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/21-slides.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "62a8f56d330615bb0ee745b1cf8ecd9e",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/22-slides.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "6159b2c937568fcbe42d7a78bb256ed5",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/23-slides.pdf",
+   "pages": 8,
+   "part": 0
+  },
+  {
+   "cache_key": "d966999cc811354960f09c0797f4a2aa",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/lectures/24-slides.pdf",
+   "pages": 7,
+   "part": 0
+  },
+  {
+   "cache_key": "b7e71b9e621d1785e520c0ea514c5213",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/other/mj-table3-slides.pdf",
+   "pages": 1,
+   "part": 0
+  },
+  {
+   "cache_key": "02d02bc491ce86dd3934ef10de4d8080",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/psets/02-questions.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "5db8a2deb7340255af2fc674eb70664c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/psets/03-questions.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "00f4fb1de1ffb95c695fbcc293e9e9fe",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/psets/04-questions.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "a92ac63518350f0918a0a96963b01cfa",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/psets/05-questions.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "8e11f837aa2fd88d007e617b80a63b61",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/psets/06-questions.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "8ea129dbdd7547546f79ba9922ba1a54",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/psets/07-questions.pdf",
+   "pages": 3,
+   "part": 0
+  },
+  {
+   "cache_key": "f55cf7045eba8e90fde64e22cceb4d0c",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/ocw-8592j/psets/08-questions.pdf",
+   "pages": 4,
+   "part": 0
+  },
+  {
+   "cache_key": "f4d8cdd551f417926ccee08111a6b245",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/statomics-sga21/docs/AhlmannEltze2021.pdf",
+   "pages": 18,
+   "part": 0
+  },
+  {
+   "cache_key": "806e5b2ee046d97892833a4895f19b4d",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/statomics-sga21/docs/Genome Res.-2008-Marioni-1509-17.pdf",
+   "pages": 10,
+   "part": 0
+  },
+  {
+   "cache_key": "dc0aaa542384040a1b680b0534c6a439",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/statomics-sga21/docs/PCI.2011.45.pdf",
+   "pages": 5,
+   "part": 0
+  },
+  {
+   "cache_key": "01177a02bf1b4067f8d211a71e7ebbe9",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/statomics-sga21/docs/intro.pdf",
+   "pages": 25,
+   "part": 0
+  },
+  {
+   "cache_key": "da0794943a6e9e05581bb0a94fbff734",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/statomics-sga21/docs/stagewiseTesting.pdf",
+   "pages": 24,
+   "part": 0
+  },
+  {
+   "cache_key": "fa1577acdce57e8100ccd3e9af0fe3ab",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/statomics-sga21/images_sequencing/independentFiltering2.pdf",
+   "pages": 1,
+   "part": 0
+  }
+ ]
+}

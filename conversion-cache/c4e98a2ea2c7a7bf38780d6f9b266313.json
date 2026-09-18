@@ -1,0 +1,12 @@
+{
+ "source": "fastqLine.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## FASTQ format - sequence ID line\n\n```text\n@D7MHBFN1:202:D1BUDACXX:4:1101:1340:1967 1:N:0:CATGCA\nNATCTTCGGATCACTTTGGTCAAATTGAAACGATACAGAGAAGATTGTAAGTAACAATATTTACCAAGGTTCGAGTCATACTAACTCGTTGTCCTATAGT\n+\n#1=DDFFFHHHHHJJJJJJJHIJIJJJIJIJGIIIJJJJJJIIJIJJJHIIFGIIIIJJJJJIIEHJIIHHGFFF@?ADFEDDCDDBDDBDDDCCDDDDEC\n```\n\n* D7MHBFN1 - unique instrument name\n* 202 - run ID\n* D1BUDACXX - flowcell ID\n* 4 - flowcell lane\n* 1101 - tile number within lane\n* 1340 - x-coordinate of cluster within tile\n* 1967 - y-coordinate of cluster within tile\n* 1 - member of pair (1 or 2). Older versions: /1 and /2\n* Y/N - whether the read failed quality control (Y = bad)\n* 0 - none of the control bits are on\n* CATGCA - index sequence (barcode)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "spectral-density-ma-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "theta = 0\ntheta = 0.13\ntheta = 0.26\ntheta = 0.39\ntheta = 0.51\ntheta = 0.64\ntheta = 0.77\ntheta = 0.9",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

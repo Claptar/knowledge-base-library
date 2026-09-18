@@ -1,0 +1,12 @@
+{
+ "source": "06-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "8.592J\u2013HST.452J: Statistical Physics in Biology\nAssignment # 6\n\n## Force-Extension Curves\n\n**1. Linear polymers:** Using optical tweezers, it is now possible to pull on the two ends of a single molecule. (Actually the tweezers pull on latex balls that are attached to the ends of the polymer; a complication that we shall",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "05-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 7,
+ "markdown": "## 1.4 Backward Kolmogorov equation\n\nWhen mutations are less likely, genetic drift dominates and the steady state distributions are peaked at $x = 0$ and $1$. In the limit of $\\mu_1 = 0$ (or $\\mu_2 = 0$), Eq. (1.63) no longer corresponds to a well-defined probability distribution, as the $1/x$ (or $1/(1-x)$) divergence close to $x = 0$ (or $x = 1$) precludes normalization. This is the mathematical signal that our expression for the steady state is no longer valid in this limit. Indeed, in the absence of mutations a homogeneous population (all individuals $A_1$ or $A_2$) cannot change through random mating. In the parlance of dynamics these are absorbing states, where transitions are possible into the state but not away from it. In the",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

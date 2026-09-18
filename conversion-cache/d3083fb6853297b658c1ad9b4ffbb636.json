@@ -1,0 +1,12 @@
+{
+ "source": "rw-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "delta = 0.2\n\n![Graph of $x_t$ vs. $t$ showing multiple sample paths and their mean trend line for $\\text{delta} = 0.2$](image)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

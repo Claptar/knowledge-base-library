@@ -1,0 +1,12 @@
+{
+ "source": "decomposition-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## Holt\u2013Winters: additive seasonality\n\n| | Trips | level | slope | season | remainder |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Quarter** | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 |\n| **y-axis** | 8, 9, 10, 11, 12 | 9.0, 9.5, 10.0, 10.5, 11.0 | -0.10, -0.05, 0.00, 0.05, 0.10 | -0.5, 0.0, 0.5, 1.0, 1.5 | -1.0, -0.5, 0.0, 0.5, 1.0 |\n\n## Holt\u2013Winters: multiplicative seasonality\n\n| | Trips | level | slope | season | remainder |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Quarter** | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 | 2000 Q1, 2005 Q1, 2010 Q1, 2015 Q1 |\n| **y-axis** | 8, 9, 10, 11, 12 | 9.0, 9.5, 10.0, 10.5, 11.0 | -0.05, 0.00, 0.05, 0.10 | 1.0, 1.1 | -1.0, -0.5, 0.0, 0.5, 1.0 |",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

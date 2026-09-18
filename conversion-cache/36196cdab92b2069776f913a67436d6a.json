@@ -1,0 +1,12 @@
+{
+ "source": "present-tips-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## General Presentation Tips:\n\n- Put a title at the top of each slide that states the slide's main point\n- Use large, easy-to-read font (e.g., Arial) throughout\n- Font size: 18 point minimum, 24 point recommended, 36 point or larger for title\n- Fixed-width font (e.g., Courier New) is recommended for DNA or protein sequences, especially alignments\n- Don't use too much text. Bullet points are generally better than full sentences or paragraphs. Avoid reading the slide to the audience.\n- Use primary colors when possible, especially red and blue. Red/green heatmaps are not readable to those who are color blind.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

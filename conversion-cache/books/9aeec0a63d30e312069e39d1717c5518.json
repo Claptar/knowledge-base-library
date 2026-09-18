@@ -1,0 +1,8 @@
+{
+ "key": "9aeec0a63d30e312069e39d1717c5518",
+ "course": "omics-statistics/statomics/sga2020-ghpages",
+ "number": 10,
+ "title": "MSqRob for Simple Experimental Designs",
+ "solutions": [],
+ "markdown": "## What this covers\n\nThis chapter covers the statistical principles and workflow for differential protein abundance analysis in label-free quantitative proteomics using MSqRob for two-group designs. It addresses the distinction between experimental and observational units, summarisation methods, and how sample size governs statistical power. The reader is assumed to be familiar with mass spectrometry identification pipelines (such as MaxQuant) and the basics of hypothesis testing.\n\n## Experimental Units and Observational Units\n\nIn label-free quantitative liquid chromatography\u2013mass spectrometry (LC-MS) experiments, experimental design directly dictates which statistical inferences are mathematically valid. A fundamental distinction must be made between **experimental units** and **observational units**:\n\n* **Experimental units"
+}

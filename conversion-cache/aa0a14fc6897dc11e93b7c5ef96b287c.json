@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureSeven153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "## LECTURE SEVEN\n\n### Sinusoidal Model\n\n$$y_t = \\beta_0 + \\beta_1 \\cos(2\\pi f t) + \\beta_2 \\sin(2\\pi f t) + \\varepsilon_t$$\n\n$f : \\text{frequency}$\n\n### Sinusoid\n\n$$s_t = \\beta_0 + R \\cos(2\\pi f t + \\Phi)$$\n\n(1) $R$ (Amplitude) : Maximum deviation from the center line $\\beta_0$\n\n(2) $f$ (Frequency) : Number",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

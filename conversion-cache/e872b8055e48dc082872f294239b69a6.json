@@ -1,0 +1,12 @@
+{
+ "source": "syllabus-ph240b_survival-fa2017.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 3,
+ "markdown": "## Biostatistical Methods: Survival Analysis and Causality\nPB HLTH C240B / STAT C245B  \nFall 2017\n\n**Registration Information:** Public Health C240B | 4 Units |",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

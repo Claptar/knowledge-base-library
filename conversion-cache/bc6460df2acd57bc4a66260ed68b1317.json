@@ -1,0 +1,12 @@
+{
+ "source": "1. Components Of An Experiment.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 12,
+ "markdown": "## Welcome to Stat 158\n\n<please don't open your paper>\n\n---\n\n## **Nice** **to** **meet** **you**\n\n1. Name\n2. Year/Major\n3. Hometown\n4. Best food eaten over break\n\n---\n\n## About that paper...\n\n1) Write your first/last name on outside.\n\n---\n\n## About that paper...\n\n1) Write your first/last name on outside.\n2) Open the paper, take 30 sec to answer, then fold and pass in.\n\n---\n\n**$Q_1$** Do SAT prep courses improve SAT scores?\nWhy do you think so?\n\n---\n\n---\n\n## **Components** **of** **an** **Experiment**\n\nAn experimental design is characterized by:\n\n\u2460\n\n\u2461\n\n\u2462\n\n\u2463\n\n---\n\n---\n\n**",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "cardio-cv-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "### Cross\u2013validation, training on all past\n\n```\n                 MAE = 8.03                     --- Observed\n                                                --- Predicted\n```\n\n*(",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

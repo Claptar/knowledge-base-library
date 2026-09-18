@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureThree153248Fall2026.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 11,
+ "markdown": "## Lecture Three (153-248) (Sept 03)\n\n### Linear Regression Math\n\n**Simple Question 1**: Suppose I have two numbers $a$ & $b$. I tell you that $a + b = 7$. What can you say about $a$?\n\n**Simple Question 2**: I have two numbers $a$ & $b$. Suppose $b$ is small in magnitude. As before, $a + b = 7$. What can you say about $a$?\n\n**Solution**: $a$ & $b$.\n\nAssume independent:\n- $a \\sim \\text{Unif}(-C, C)$ for a very large $C$.\n- $b \\sim N(0, \\sigma^2)$, $\\sigma^2 = 0.5$\n\nCalculate $a \\mid a + b = 7$\n\nLet $y = a + b$.\n\n$a \\mid y = 7$\n\n$$y = \\underset{\\text{Unif}(-C, C)}{a} + \\underset{N(0, \\sigma^2)}{b}$$\n\n---\n\n$$y \\mid a \\sim N(a, \\sigma^2)$$\n\n$$\\begin{aligned}\nf_{a \\mid y = 7}(a) &= \\frac{f_{y \\mid a}(7) f_a(a)}{f_y(7)} \\quad \\text{Bayes Rule} \\\\\n&\\propto f_{y \\mid a}(7) f_a(a) \\\\\n&= \\frac{1}{\\sqrt{2\\pi}\\sigma} \\exp\\left\\{ -\\frac{(a-y)^2}{2\\sigma^2} \\right\\} \\frac{I\\{-C < a < C\\}}{2C} \\\\\n&\\propto \\frac{1}{\\sigma} \\exp\\left( -\\frac{(a-7)^2}{2\\sigma^2} \\right) \\quad [y=7]\n\\end{aligned}$$\n\n$$a \\mid a + b = 7 \\sim N(7, \\sigma^2)$$\n\n**Answer**: $N(7, \\sigma^2)$\n\n---\n\n**Question 3**: I have $a, b_1, b_2$.\n$b_1$ & $b_2$ are small in magnitude.\n$$a + b_1 = 7$$\n$$a + b_2 = 10$$\nWhat can you say about $a$?\n\n**Solution**: Assume independent:\n$$\\begin{aligned}\na &\\sim \\text{Unif}(-C, C) \\\\\nb_1, b_2 &\\sim N(0, \\sigma^2) \\\\\n\\log \\sigma &\\sim \\text{Unif}(-C, C)\n\\end{aligned}$$\n\n$$a \\mid \\begin{aligned} a + b_1 &= 7 \\\\ a + b_2 &= 10 \\end{aligned} \\qquad \\begin{aligned} y_1 &= a + b_1 \\\\ y_2 &= a + b_2 \\end{aligned}$$\n\n$$a \\mid y_1, y_2$$\n\n$$a, \\sigma \\mid y_1, y_2$$\n\n$$f_{a, \\",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "14-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 118,
+ "markdown": "\u2022 L12 - Introduction to Protein Structure; Structure Comparison & Classification \n\u2022 L13 - Predicting protein structure \n\u2022 L14 - Predicting protein interactions \n\u2022 L15 - Gene Regulatory Networks \n\u2022 L16 - Protein Interaction Networks \n\u2022 L17 - Computable Network Models\n\n---\n\n## Predictions\n\n### Last time: protein structure\nNow: protein interactions\n\n\u00a9 American Association for the Advancement of Science. All rights reserved. This content is excluded from our Creative Commons license. For more information, see http://ocw.mit.edu/help/faq-fair-use/.  \nSource: Lindorff-Larsen, Kresten, Stefano Piana, et al. \"How Fast-folding Proteins Fold.\" *Science* 334, no. 6055 (2011): 517-20.\n\n\u00a9 source unknown. All rights reserved. This content is excluded from our Creative Commons license. For more information, see http://ocw.mit.edu/help/faq-\n\n## Graphical Structure Expresses our Beliefs\n\n* The graphical structure can be decided in advance based on knowledge of the system or learned from the data.\n\n---",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

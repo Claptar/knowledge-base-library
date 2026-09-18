@@ -1,0 +1,12 @@
+{
+ "source": "solution2018.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 15,
+ "markdown": "Student ID:\n\n## Final Examination: QUESTION BOOKLET\n\nProf. William Fithian\n\nFall 2018\n\n\u2022 Do NOT open this question booklet until you are told to do so.\n\n\u2022 Write your Student ID number at the top of this page.\n\n\u2022 Write your solutions in this booklet.\n\n\u2022 No electronic devices are allowed during the exam.\n\n\u2022 Be neat! If we can\u2019t read it, we can\u2019t grade it.\n\n\u2022 You can treat any results from lecture or homework as \u201cknown,\u201d and use them in your work without rederiving them, but do make clear what result you\u2019re using. You do not need to explicitly check regularity conditions for the theorems from class that required them.\n\n\u2022 For a multi-part problem, you may treat the results of previous parts as given (if you don\u2019t prove the result for part (a), you can still use it to solve part (b)).\n\n\u2022 I have starred some parts which I believe are the most difficult, and which I expect most students won\u2019t necessarily be able to solve in the time allotted. They are generally not worth more points than the less difficult parts, so don\u2019t waste too much time on them until you\u2019re happy with your answers to the latter.\n\n\u2022 Be careful to justify your reasoning and answers. We are primarily interested in your understanding of concepts, so show us what you know.\n\n\u2022 Good luck!\n\n---\n\n## 1. A curved Gaussian family (20 points, 4 points / part). Some useful facts for this problem:\n\n\u2022 Recall that the Gaussian density function for $Z \\sim N(\\mu, \\sigma^2)$ is\n$$\\frac{1}{\\sqrt{2\\pi\\sigma^2}} \\exp\\left\\{ -\\frac{(x - \\mu)^2}{2\\sigma^2} \\right\\}$$\n\nSuppose that\n$$X_1, \\ldots, X_n = \\begin{pmatrix} X_{1,1} \\\\ X_{1,2} \\end{pmatrix}, \\ldots, \\begin{pmatrix} X_{n,1} \\\\ X_{n,2} \\end{pmatrix} \\stackrel{\\text{i.i.d.}}{\\sim} N_2(\\mu(\\theta), I_2),$$\nfor $\\theta \\in \\mathbb{R}$ and $\\mu(\\theta) = \\begin{pmatrix} \\theta \\\\ \\theta^2 \\end{pmatrix}$.\n\n(a) Show that $T(X) = \\sum_i X_i \\in \\mathbb{R}^2$ is a minimal sufficient statistic but is not complete",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

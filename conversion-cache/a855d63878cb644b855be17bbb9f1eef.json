@@ -1,0 +1,12 @@
+{
+ "source": "lecture_18_post.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 7,
+ "markdown": "## Lecture 18\n\nDavid Aldous\n\n9 October 2015\n\n---\n\n### Lemma\n\nIf $(\\xi_i)$ are the points of a rate-1 PPP on $",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

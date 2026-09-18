@@ -1,0 +1,12 @@
+{
+ "source": "Lec04_Notes.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## Lecture 4 Notes - Characteristics of Time Series\n\nLiberty Hamilton\n\nFriday $30^{\\text{th}}$ January, 2026\n\n- **Reading**: Chapter 1.3-1.7 -- Shumway and Stoffer\n\n## 1 Today\n\n- Autocovariance, autocorrelation, cross-covariance, cross-correlation\n- Stationarity\n\n### 1.1 Covariance of linear combinations of random variables\n\nIf we have random variables $U = \\sum_{",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

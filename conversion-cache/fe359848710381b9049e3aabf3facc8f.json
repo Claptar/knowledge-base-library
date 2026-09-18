@@ -1,0 +1,12 @@
+{
+ "source": "unit6-numbers.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 22,
+ "markdown": "## Unit 6: Computer numbers\n\nOctober 5, 2018\n\nReferences:\n\u2022 Gentle, Computational Statistics, Chapter 2.\n\u2022 http://www.lahey.com/float.htm\n\u2022 And for more gory detail, see Monahan, Chapter 2.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

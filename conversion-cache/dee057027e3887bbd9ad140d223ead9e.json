@@ -1,0 +1,12 @@
+{
+ "source": "01-solutions-rec01-sol.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n#### (Fall 2010)\n\n### Recitation 1: Solutions\n#### September 9, 2010\n\n1. Since the events $A \\cap B^c$ and $A^c \\cap B$ are disjoint, we have, using the additivity axiom,\n$$P((A \\cap B^c) \\cup (A^c \\cap B)) = P(A \\cap B^c) + P(A^c \\cap B).$$\nSince $A = (A \\cap B) \\cup (A \\cap B^c)$ is the union of two disjoint sets, we have, again by the additivity axiom,\n$$P(A) = P(A \\cap B) + P(A \\cap B^c),$$\nso that\n$$P(A \\cap B^c) = P(A) - P(A \\cap B).$$\nSimilarly,\n$$P(B \\cap A^c) = P(B) - P(A \\cap B).$$\nTherefore,\n$$\\begin{aligned}\nP(A \\cap B^c) + P(A^c \\cap B) &= P(A) - P(A \\cap B) + P(B) - P(A \\cap B) \\\\\n&= P(A) + P(B) - 2P(A \\cap B).\n\\end{aligned}$$\n\n2. Let\n$$\\begin{aligned}\nA &: \\text{The event that the randomly selected student is a genius.} \\\\\nB &: \\text{The event that the randomly selected student loves chocolate.}\n\\end{aligned}$$\nFrom the properties of probability laws proved in lecture, we have\n$$\\begin{aligned}\n1 &= P(A \\cup B) + P((A \\cup B)^c) \\\\\n&= P(A) + P(B) - P(A \\cap B) + P(A^c \\cap B^c) \\\\\n&= 0.6 + 0.7 - 0.4 + P(A^c \\cap B^c) \\\\\n&= 0.9 + P(A^c \\cap B^c).\n\\end{aligned}$$\nTherefore\n$$\\begin{aligned}\nP(\\text{A randomly selected student is neither a genius nor a chocolate lover}) \\\\\n= P(A^c \\cap B^c) = 1 - 0.9 = 0.1.\n\\end{aligned}$$\n\n3. Let $c$ denote the probability of a single odd face. Then the probability of a single even face is $2c$, and by adding the probabilities of the 3 odd faces and the 3 even faces, we get $9c = 1$. Thus, $c = 1/9$. The desired probability is\n$$P(\\{1, 2, 3\\}) = P(\\{1\\}) + P(\\{2\\}) + P(\\{3\\}) = c + 2c + c = 4c = 4/9.$$\n\n4. See the textbook, Example 1.5, page 13.\n\nG1$^\\dagger$. See the textbook, Problem 1.13, page 56.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 0.95,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

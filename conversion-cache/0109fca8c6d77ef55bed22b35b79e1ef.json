@@ -1,0 +1,12 @@
+{
+ "source": "unit8-parallel.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Unit 8: Parallel Processing\n\nOctober 13, 2015\n\n## 1 Computer architecture\n\nComputers now come with multiple processors for doing computation. Basically, physical constraints have made it harder to keep increasing the speed of individual processors, so the chip industry is now putting multiple processing units in a given computer and trying/hoping to rely on implementing",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

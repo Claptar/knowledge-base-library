@@ -1,0 +1,19 @@
+{
+ "model": "gemini-3.8-flash",
+ "submitted": [
+  {
+   "job": "batches/ffrlm6e1l8ns6g2mcfpxuvr9wweg13vruc92",
+   "first": 0,
+   "count": 1
+  }
+ ],
+ "index": [
+  {
+   "key": "0432dfad402f47ab9c202c08c00ebd6b",
+   "course": "statistics/berkeley/stat210b",
+   "number": 1,
+   "title": "Statistics 210b: Theory of Statistics",
+   "solutions": []
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "source": "LectureSix153248Spring2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 6,
+ "markdown": "## STAT 153 & 248 - Time Series",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

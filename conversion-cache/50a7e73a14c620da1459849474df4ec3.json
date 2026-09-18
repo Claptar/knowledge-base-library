@@ -1,0 +1,12 @@
+{
+ "source": "unit3-dataIO.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 35,
+ "markdown": "## Unit 3: Data input/output and webscraping\n\nSeptember 1, 20",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

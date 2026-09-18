@@ -1,0 +1,12 @@
+{
+ "source": "unit13-graphics.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 36,
+ "markdown": "## Unit 13: Graphics\n\nDecember 5, 2019\n\nThis unit first discusses some general concepts and principles of graphics relevant more broadly than R, and then provides implementation details for graphics in R. Note that there is a bunch of example code in the demo code file that is not shown here in these notes.\n\nReferences:\n\n* Adler\n* Chambers\n* Venables and Ripley, Modern Applied Statistics with S\n* Murrell, R Graphics (available electronically through OskiCat: http://uclibs.org/PID/110697)\n* R intro manual (R-intro) on CRAN\n* There is a nice overview on creating good graphics in R at http://teachpress.environmentalinformatics-marburg.de/2013/07/creating-publication-quality-graphs-in-r-7\n\nR has several general graphics packages: *graphics*, *grid*, *lattice*, and *ggplot2*. *graphics* is the original graphics package. *grid* is more object-oriented, and is quite powerful and useful if you\u2019re involved in serious graphics programming. *lattice* and *ggplot2* are more recent packages that use *grid* to provide the user with high-level graphics capabilities.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

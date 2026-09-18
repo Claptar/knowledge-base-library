@@ -1,0 +1,12 @@
+{
+ "source": "06-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 6\n### September 28, 2010\n\n1. Consider an experiment in which a fair four-sided die (with faces labeled 0, 1, 2, 3) is thrown once to determine how many times a fair coin is to be flipped. In the sample space of this experiment, random variables $N$ and $K$ are defined by\n- $N$ = the result of the die roll\n- $K$ = the total number of heads resulting from the coin flips\n\n (a) Determine and sketch $p_N(n)$\n (b) Determine and tabulate $p_{N,K}(n, k)$\n (c) Determine and sketch $p_{K|N}(k \\mid 2)$\n (d) Determine and sketch $p_{N|K}(n \\mid 2)$\n\n2. Consider an outcome space comprising eight equally likely event points, as shown below:\n\n```\ny ^\n  |\n3 +      (1/8)                 (1/8)\n  |\n2 +                    (1/8)   (1/8)\n  |\n1 +      (1/8)         (1/8)   (1/8)\n  |\n0 +----------------------------(1/8)---->\n  0   1    2     3       4       x\n```\n\n (a) Which value(s) of $x$ maximize(s) $\\mathbf{E}[Y \\mid X = x]$?\n (b) Which value(s) of $y$ maximize(s) $\\operatorname{var}(X \\mid Y = y)$?\n (c) Let $R = \\min(X, Y)$. Prepare a neat, fully labeled sketch of $p_R(r)$.\n (d) Let $A$ denote the event $X^2 \\ge Y$. Determine numerical values for the quantities $\\mathbf{E}[XY]$ and $\\mathbf{E}[XY \\mid A]$.\n\n3. **Example 2.17. Variance of the geometric distribution.** You write a software program over and over, and each time there is probability $p$ that it works correctly, independent of previous attempts. What is the variance of $X$, the number of tries until the program works correctly?\n\nTextbook problems are courtesy of Athena Scientific, and are used with permission.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9619047619047619,
+ "numeral_recall": 1.0,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

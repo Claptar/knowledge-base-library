@@ -1,0 +1,12 @@
+{
+ "source": "unit9-linalg.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 33,
+ "markdown": "## Unit 9: Numerical linear algebra\n\nOctober 31, 2017\n\nReferences:\n\n* Gentle: Numerical Linear Algebra for Applications in Statistics (my notes here are based primarily on this source) [Gentle-NLA]\n  - Unfortunately, this is not in the UCB library system - I have a copy that you can take a look at.\n* Gentle: Computational Statistics [Gentle-CS]\n* Lange: Numerical Analysis for Statisticians\n* Monahan: Numerical Methods of Statistics\n\nIn working through how to compute something or understanding an algorithm, it can be very helpful to depict the matrices and vectors graphically. We'll see this on the board in class.\n\n### 1 Preliminaries\n\n#### 1.1 Goals\n\nHere's what I'd like you to get out of this unit:\n\n1. How to think about the computational order (number of computations involved) of a problem\n2. How to choose a computational approach to a given linear algebra calculation you need to do.\n3. An understanding of how issues with computer numbers",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

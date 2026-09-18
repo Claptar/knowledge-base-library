@@ -1,0 +1,12 @@
+{
+ "source": "car-5.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\n          AR roots\n          arima210\n```\n\n![AR roots plot](page1_image.png)\n\n*The plot displays the AR roots for `arima210` on the complex plane with axes $\\text{Re}(1/\\text{root})$ and $\\text{Im}(1/\\text{root})$, indicating that the inverse roots lie within the unit circle.*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

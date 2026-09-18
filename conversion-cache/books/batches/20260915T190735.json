@@ -1,0 +1,26 @@
+{
+ "model": "gemini-3.8-flash",
+ "submitted": [
+  {
+   "job": "batches/jcrj92p5l096zaj15e0mh99kyck7xx2734dx",
+   "first": 0,
+   "count": 2
+  }
+ ],
+ "index": [
+  {
+   "key": "92e6bf7916d28822cd4ac97ad02347f9",
+   "course": "probability/berkeley/stat206b",
+   "number": 1,
+   "title": "Stat 206b: Stochastic Processes",
+   "solutions": []
+  },
+  {
+   "key": "fd54dcfadc9d6b3ecf2ee0045550aed9",
+   "course": "probability/berkeley/stat206b",
+   "number": 2,
+   "title": "Syllabus",
+   "solutions": []
+  }
+ ]
+}

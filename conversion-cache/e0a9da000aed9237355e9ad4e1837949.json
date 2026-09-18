@@ -1,0 +1,12 @@
+{
+ "source": "lecture_26_post.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 9,
+ "markdown": "## Lecture 26\n\nDavid Aldous\n\n28 October 2015\n\n---\n\nFor a real-valued RV $X$ and a $\\sigma$-field $\\mathcal{F}$, we can define the conditional expectation $\\mathbb{E}(X|\\mathcal{F})$.\n\n- The **gambling interpretation** of $\\mathbb{E}(X|\\mathcal{F})$ is as the fair stake $Z$ to pay today in order to receive $X$ tomorrow, when $\\mathcal{F}$ is the known information,\n- The **abstract math definition** of $\\mathbb{E}(X|\\mathcal",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

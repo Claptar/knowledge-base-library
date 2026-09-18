@@ -1,0 +1,12 @@
+{
+ "source": "car-7.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "ARIMA(2,1,0)\n\n!",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

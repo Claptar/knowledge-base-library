@@ -1,0 +1,12 @@
+{
+ "source": "syllabus.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "STAT 243: Introduction to Statistical",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

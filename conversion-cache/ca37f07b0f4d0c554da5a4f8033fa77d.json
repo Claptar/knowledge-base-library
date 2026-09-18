@@ -1,0 +1,12 @@
+{
+ "source": "18-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 3,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 18\n### November 9, 2010\n\n1. There are $n$ fish in a lake, some of which are green and the rest blue. Each day, Helen catches 1 fish. She is equally likely to catch any one of the $n$ fish in the lake. She throws back all the fish, but paints each green fish blue before throwing it back in. Let $G_i$ denote the event that there are $i$ green fish left in the lake.\n\n   (a) Show how to model this fishing exercise as a Markov chain, where $\\{G_i\\}$ are the states. Explain why your model satisfies the Markov property.\n\n   (b) Find the transition probabilities $\\{p_{ij}\\}$.\n\n   (c) List the transient and the recurrent states.\n\nTextbook problem removed due to copyright restrictions.\nDrake, Fundamentals of Applied Probability Theory, Problem 5.02.\n\n3. Consider the following Markov chain, with states labelled from $s_0, s_1, \\dots, s_5$:\n\n<!-- Markov chain diagram:\nStates: S_0, S_1, S_2, S_3, S_4, S_5\nS_0 has transitions to:\n  S_1 with prob 1/3\n  S_3 with prob 1/3\n  S_5 with prob 1/3\nS_1 has self-loop with prob 1\nS_2 has self-loop with prob 1/2, transition to S_1 with prob 1/2\nS_3 has self-loop with prob 1/4, transition to S_2 with prob 1/4, transition to S_4 with prob 1/2\nS_4 has self-loop with prob 1/2, transition to S_5 with prob 1/2\nS_5 has self-loop with prob 1\n-->\n\nGiven that the above process is in state $s_0$ just before the first trial, determine by inspection the probability that:\n\n(a) The process enters $s_2$ for the first time as the result of the $k$th trial.\n\n(b) The process never enters $s_4$.\n\n(c) The process enters $s_2$ and then leaves $s_2$ on the next trial.\n\n(d) The process enters $s_1$ for the first time on the third trial.\n\n(e) The process is in state $s_3$ immediately after the $n$th trial.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.908256880733945,
+ "numeral_recall": 0.9444444444444444,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

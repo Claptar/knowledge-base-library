@@ -1,0 +1,12 @@
+{
+ "source": "unit1-unix.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## Unit 1: Basics of UNIX\n\nSeptember 3, 2015\n\nBy UNIX, I mean any UNIX-like operating system, including Linux and Mac OS X. On the Mac you can access a UNIX terminal window with the Terminal application (under /Applications/Utilities from the Finder). Most modern scientific computing is done on UNIX",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

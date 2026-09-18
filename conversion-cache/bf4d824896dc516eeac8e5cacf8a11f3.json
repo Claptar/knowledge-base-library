@@ -1,0 +1,12 @@
+{
+ "source": "section_questions_oct30.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## Reading for Oct.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "lecture15-testonepar .pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 11,
+ "markdown": "## Testing with one real parameter\n\n### Outline\n\n1) One-sided tests",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

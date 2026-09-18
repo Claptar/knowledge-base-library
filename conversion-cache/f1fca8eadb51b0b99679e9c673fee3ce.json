@@ -1,0 +1,12 @@
+{
+ "source": "notebook-unreproducible.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## test\n\nAugust 14, 2023\n\n```python\n[1]: a=4\n```\n\n```python\n[2]: print(a)\n```\n\n```text\n3\n```",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "cardio-mult-3.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "![Scatter plot of Cardiovascular deaths versus Temperature](image.png)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

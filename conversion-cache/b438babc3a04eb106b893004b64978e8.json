@@ -1,0 +1,12 @@
+{
+ "source": "lecture26-F24.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 15,
+ "markdown": "## Outline\n\n1) Multiple Testing\n2) Familywise error rate control\n3) Stepdown multiple testing\n4) Simultaneous intervals / deduced inference\n5) False Discovery Rate control\n6) Benjamini - Hochberg Procedure\n\n---\n\n## Multiple Testing\n\nIn many testing problems, we want to test many hypotheses at a time, e.g.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

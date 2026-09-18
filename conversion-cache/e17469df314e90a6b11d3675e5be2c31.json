@@ -1,0 +1,12 @@
+{
+ "source": "04-solutions-tut04-sol.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Tutorial 4: Solutions\n\n1. (a) \n$$\\begin{aligned}\n\\mathbf{P}(X \\le 1.5) &= \\Phi(1.5) \\\\\n&= 0.9332.\n\\end{aligned}$$\n\n$$\\begin{aligned}\n\\mathbf{P}(X \\le -1) &= 1 - \\mathbf{P}(X \\le 1) \\\\\n&= 1 - \\Phi(1) \\\\\n&= 1 - 0.8413 \\\\\n&= 0.1587.\n\\end{aligned}$$\n\n(b) \n$$\\begin{aligned}\n\\mathbf{E}\\left[\\frac{Y - 1}{2}\\right] &= \\frac{1}{2}(\\mathbf{E}[Y] - 1) \\\\\n&= 0.\n\\end{aligned}$$\n\n$$\\begin{aligned}\n\\text{var}\\left(\\frac{Y - 1}{2}\\right) &= \\text{var}\\left(\\frac{Y}{2}\\right) \\\\\n&= \\frac{1}{4}\\text{var} Y \\\\\n&= 1.\n\\end{aligned}$$\n\nThus, the distribution of $\\frac{Y - 1}{2}$ is $\\mathcal{N}(0, 1)$.\n\n(c) \n$$\\begin{aligned}\n\\mathbf{P}(-1 \\le Y \\le 1) &= \\mathbf{P}\\left(\\frac{-1 - 1}{2} \\le \\frac{Y - 1}{2} \\le \\frac{1 - 1}{2}\\right) \\\\\n&= \\Phi(0) - \\Phi(-1) \\\\\n&= \\Phi(0) - (1 - \\Phi(1)) \\\\\n&= 0.3413.\n\\end{aligned}$$\n\n2. Example 3.15, page 169 in text. See solutions in the text.\n\n3. Problem 3.20, page 191 in text. See online solutions.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

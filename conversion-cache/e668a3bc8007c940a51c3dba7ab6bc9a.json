@@ -1,0 +1,12 @@
+{
+ "source": "periodogram-star-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "![Star magnitude vs. Day and Periodogram vs. Frequency](page1.png)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

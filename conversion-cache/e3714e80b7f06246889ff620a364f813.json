@@ -1,0 +1,12 @@
+{
+ "source": "LectureTwentyOne153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "## STAT 153 & 248 - Time Series\n## Lecture Twenty One\nFall 2025, UC Berkeley\n\nAditya Guntuboyina\n\nNovember",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

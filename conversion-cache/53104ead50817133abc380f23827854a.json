@@ -1,0 +1,12 @@
+{
+ "source": "ps7.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Stat243: Problem Set 7, Due Wednesday November 17\n\nNovember 11, 2021\n\nThis covers Units 9 and 10.\nIt's due as PDF submitted to Gradescope and submitted via GitHub at 10 am",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

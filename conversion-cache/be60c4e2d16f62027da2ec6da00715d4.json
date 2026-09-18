@@ -1,0 +1,12 @@
+{
+ "source": "LectureThree153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "## STAT 153 & 248 - Time Series\n### Lecture Three\nFall 2025, UC Berkeley\n\nAditya Guntuboyina\n\nSeptember 4, 2025\n\n## 1 Simple Linear Regression\n\nWe observe data $(x_1, y_1), \\dots, (x_n, y_n)$. In the time series context, $y_1, \\dots, y_n$ is the observed time series. For the covariate, we have two options:\n\n1. $x_i = i$ (covariate is time)\n2. $x_i = y_{i-1}$ (covariate is lagged version of the observed time series)\n\nFor now, we focus on the first case $x_i = i$ (AutoRegression will be studied in detail later).\n\nThe linear regression model is:\n$$\ny_i = \\beta_0 + \\beta_1 x",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

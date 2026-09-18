@@ -1,0 +1,12 @@
+{
+ "source": "project.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 3,
+ "markdown": "## Stat243: Final group project\n### Due Friday Dec. 16,",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

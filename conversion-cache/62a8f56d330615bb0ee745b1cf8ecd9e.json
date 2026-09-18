@@ -1,0 +1,12 @@
+{
+ "source": "22-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "## 4 Emergence\n\nWhile it is tempting to focus on individual molecules, such as hemoglobin, or combinations of a few molecules, as in the case of motor\u2013microtubule\u2013ATP, or transcription factor\u2013DNA, it",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

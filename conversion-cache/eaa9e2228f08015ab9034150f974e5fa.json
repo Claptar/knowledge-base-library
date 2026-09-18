@@ -1,0 +1,12 @@
+{
+ "source": "24_CNNs_Part2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 34,
+ "markdown": "## Lecture 24: Convolutional neural networks part 2\n\nLiberty Hamilton  \nApril 23, 2026\n\n*h/t to NeuroMatch academy (Alona Fyshe)*\n\n---\n\n## What do you think would happen?\n\nGiven an image $A$ and the kernel $K$ below\n\n$$K$$\n\n$$\\mathbf{G}_x = \\begin{bmatrix} -1 & 0 & +1 \\\\ -2 & 0 & +2 \\\\ -1 & 0 & +1 \\end{bmatrix} * \\mathbf{A} \\qquad \\mathbf{G}_y = \\begin{bmatrix} -1 & -2 & -1 \\\\ 0 & 0 & 0 \\\\ +1 & +2 & +1 \\end{bmatrix} * \\mathbf{A}$$\n\nImage $A$\n\n---\n\n## But how do we get all the edges?\n\nnonlinear combination of Gx and Gy\n\n- We need a nonlinearity!\n- In CNNs, this is typically done using a ReLU (rectified linear unit)\n  - $\\text{ReLU}(x) = \\max(0, x)$\n\n---\n\n## STRF and time lagged regression as convolution\n\n- Here we are convolving our 2D STRF filter (the beta weights from time lagged regression) with our feature matrix to produce the predicted neural data (red trace on top)\n\n---\n\n## What are the building blocks of CNNs?\n\n---\n\n## Elements of a CNN\n\nConvolution Neural Network (CNN)\n\n1. Input layer\n2. Convolutional layer\n3. Activation layer (introduces nonlinearity)\n4. Pooling layer\n5. Flattening\n6. Fully connected (dense) layer\n7. Output layer\n\n---\n\n## Example convolution operations (from last time)\n\nOutput  \n$Y \\in \\mathbb{R}^{3 \\times 3}$\n\nKernel  \n$K \\in \\mathbb{R}^{3 \\times 3}$\n\nInput $X \\in \\mathbb{R}^{5 \\times 5}$\n\npadding, stride=2\n\nOutput  \n$Y \\in \\mathbb{R}^{5 \\times 5}$\n\nKernel  \n$K \\in \\mathbb{R}^{3 \\times 3}$\n\nInput $X \\in \\mathbb{R}^{5 \\times 5}$\n\n\"same\" padding, stride=1\n\n---\n\n## Combining multiple filters",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

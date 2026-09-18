@@ -1,0 +1,12 @@
+{
+ "source": "boston-hp-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "### Hodrick\u2013Prescott filter\n\n```",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

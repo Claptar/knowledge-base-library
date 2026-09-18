@@ -1,0 +1,12 @@
+{
+ "source": "04-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 42,
+ "markdown": "## What have we learned ?\n\n* Modeling sequential data\n  * Recognize a **type** of sequence, genomic, oral, verbal, visual, etc...\n* Definitions\n  * Markov Chains\n  * Hidden Markov Models (HMMs)\n* Examples of HMMs\n  * Recognizing GC-rich regions, preferentially-conserved elements, coding exons, protein-coding gene structures, chromatin states\n* Our first computations\n  * Running the model: know model $\\rightarrow$ generate sequence of a 'type'\n  * Evaluation: know model, emissions, states $\\rightarrow$ p?\n  * Viterbi",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

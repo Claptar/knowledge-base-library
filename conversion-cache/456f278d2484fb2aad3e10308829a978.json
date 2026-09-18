@@ -1,0 +1,12 @@
+{
+ "source": "spectral-density-ar-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "(phi1, phi2) = (1, -0.9)\n(phi1, phi2) = (0.6, -0.9)\n(phi1, phi2) = (0.5, 0.4)\n(phi1, phi2) = (-0.5, 0.4)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

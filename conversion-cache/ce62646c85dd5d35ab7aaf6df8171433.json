@@ -1,0 +1,12 @@
+{
+ "source": "car-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\n```\n*(The page contains only an uncaptioned line plot showing `difference(Exports)` over `Year` from around 1960 to 2016.)*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

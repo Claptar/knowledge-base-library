@@ -1,0 +1,12 @@
+{
+ "source": "lecture08-F24.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 10,
+ "markdown": "9/21/2023\n\n## **Bayes Estimation**\n\n### **Outline**\n\n1) Bayes risk, Bayes estimator\n2) Examples\n3) Conjugate priors\n\n---\n\n## **Frequentist Motivation**\n\nModel $\\mathcal{P} = \\{P_\\theta : \\theta \\in \\Theta\\}$ for data $X$\n\nLoss $L(\\theta, d)$, Risk $R(\\theta, \\delta) = \\mathbb{E}_\\theta[L(\\theta, \\delta(X))]$\n\nThe **Bayes risk** is the average-case risk, integrated wrt some measure $\\Lambda$, called **prior**\n\nFor now, assume $\\Lambda(\\Theta) = 1$ (prob",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

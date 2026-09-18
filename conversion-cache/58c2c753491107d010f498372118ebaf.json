@@ -1,0 +1,12 @@
+{
+ "source": "ps8.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Stat243: Problem Set 8, Due Fri. November 30\n\nNovember 16, 2018\n\nThis covers Units 10 and 11.\nIt's due as PDF submitted to bCourses and submitted via Github at 2 pm on Nov. 30.\nSome general guidelines on how to present your problem set solutions:\n\n1. Please use Rmd/Rtex as in previous problem sets.\n2. Your",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

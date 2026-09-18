@@ -1,0 +1,12 @@
+{
+ "source": "pit-transforms-3.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\n        F1(x)\n        F2(x)\n```\n\n*(No text content is present on this",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

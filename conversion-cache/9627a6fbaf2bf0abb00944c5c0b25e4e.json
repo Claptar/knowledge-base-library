@@ -1,0 +1,12 @@
+{
+ "source": "st-decomposition-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "![Employed over Date and Periodogram over Frequency](page1_image.png)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "LectureThirteen153248Spring2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## STAT 153 & 248 - Time Series\n## Lecture Thirteen\n### Spring 2025, UC Berkeley\n### Aditya Guntuboyina\n### March 5, 2025\n\nIn this lecture, we shall revisit sines and cosines and discuss a high-dimensional model involving sinusoids (there will be connections to the high-dimensional regression models that we studied last week; even though the main model for this week will be somewhat different from those).\n\n## 1 Recap: Sunspots Data\n\nIn order to motivate the model that we shall study today, consider the annual sunspots dataset $y_t$ that we previously looked at multiple times in this class.\n\nPreviously (e.g., Lecture 8), we used the following models for the sunspots data:\n$$y_t = \\beta_0 + \\beta_1 \\cos(2\\pi f t) + \\beta_2 \\sin(2\\pi f t) + \\epsilon_t \\tag{1}$$\n$$y_t = \\beta_0 + \\beta_1 \\cos(2\\pi f_1 t) + \\beta_2 \\sin(2\\pi f_1 t) + \\beta_3 \\cos(2\\pi f_2 t) + \\beta_4 \\sin(2\\pi f_2 t) + \\epsilon_t \\tag{2}$$\n$$y_t = \\beta_0 + \\beta_1 \\cos(2\\pi f_1 t) + \\beta_2 \\sin(2\\pi f_1 t) + \\beta_3 \\cos(2\\pi f_2 t) + \\beta_4 \\sin(2\\pi f_2 t) + \\beta_5 \\cos(2\\pi f_3 t) + \\beta_6 \\sin(2\\pi f_3 t) + \\epsilon_t \\tag{3}$$\nIn all these models, $\\epsilon_t \\sim N(0, \\sigma^2)$. $f, f_1, f_2, f_3$ represent unknown frequency parameters. These models are helpful for understanding certain aspects of the sunspots data. For example, model (1), when fitted to",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

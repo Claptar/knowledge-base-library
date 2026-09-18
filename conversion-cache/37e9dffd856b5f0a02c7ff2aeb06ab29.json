@@ -1,0 +1,12 @@
+{
+ "source": "17-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 42,
+ "markdown": "## LOGIC MODELING OF CELL SIGNALING NETWORKS\n\nJ Saez-Rodriguez \u2013 **Molecular Systems Biology 5: 331 [2009]**\n\nMK Morris \u2013 **Biochemistry 49: 3216 [2010]**\n\nJ Saez-Rodriguez \u2013 **Cancer Research 71: 5400 [2011]**\n\nMK Morris \u2013 **PLoS Computational Biology 7: e1001099 [2011]**\n\n---\n\n## Central Topic:\n### Regulation of Mammalian Cell Behavior by Receptor-Mediated Signaling\n\nextracellular ligand 'cues' $\\rightarrow$ 'signals' $\\rightarrow$ behavior 'response' (phen\n\n## Model family precision generally presages accuracy\n\nCourtesy of Morris et al. License: CC-BY.  \nSource: Morris, Melody K., Julio Saez-Rodriguez, et al. \"Training Signaling Pathway Maps to Biochemical Data with Constrained Fuzzy Logic: Quantitative Analysis of Liver Cell Responses to Inflammatory Stimuli.\" *PLoS Computational Biology* 7, no. 3 (2011): e1001099.\n\n***\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n7.91J / 20.490J / 20.390J / 7.36J / 6.802J / 6.874J / HST.506J Foundations of Computational and Systems Biology  \nSpring 2014\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

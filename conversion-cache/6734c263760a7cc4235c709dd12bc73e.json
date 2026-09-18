@@ -1,0 +1,12 @@
+{
+ "source": "ps6.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 3,
+ "markdown": "## Stat243: Problem Set 6, Due Wed. October 31\n\nOctober 20, 2018\n\nThis covers Units 7 and 8, as well as a part of Unit 10.\nIt's due as PDF submitted to bCourses and submitted via Github at 2 pm on Oct. 31, with the first question due before Section on October 30.\n\nSome general guidelines on how to present your problem set solutions:\n\n1. Please use Rmd/Rtex as in previous problem sets.\n2. Your solution should not just be code - you should have text describing how you approached the problem and what the various steps were.\n3.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

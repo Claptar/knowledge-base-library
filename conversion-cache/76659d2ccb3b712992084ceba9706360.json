@@ -1,0 +1,12 @@
+{
+ "source": "worksheet.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Stat243: section 12 practice problem\n\nNovember 22, 2015\n\n1. Consider a censored regression problem. We assume a simple linear regression model, $Y_i \\sim \\mathcal{N}(\\beta_0 + \\beta_1 x_i, \\sigma^2)$. Suppose we have an iid sample, but that for any observation with $Y > \\tau$, all we are",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

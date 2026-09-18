@@ -1,0 +1,12 @@
+{
+ "source": "lecture_37_waves.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 16,
+ "markdown": "## Waves in a Spatial Queue: Stop-and-Go at Airport Security\n\nDavid Aldous\n\nHajekfest  \n3 October 2015\n\n---\n\n17 minutes in line at security at Oakland airport\n\n---\n\nThis phenomenon is easy to understand qualitatively. When a person leaves the checkpoint, the next person moves up to the checkpoint, the next person moves up and stops behind the now-first person, and so on, but this \u201c",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "stl-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "STL decomposition  \nEmployed = trend + season_year + remainder\n\n*(Graph: STL decomposition showing four time-series panels over Month from 1990 Jan to 2020 Jan:)*\n\n* **Employed** (values ranging from ~12500 to ~16500)\n* **trend** (values ranging from ~12800 to ~16000)\n* **season_year** (values ranging from \u2212200 to 600)\n* **remainder** (values ranging from \u2212100 to 100)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

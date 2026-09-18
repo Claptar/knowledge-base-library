@@ -1,0 +1,12 @@
+{
+ "source": "cardio-lagged-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## Prospective forecasts\n\n![Prospective forecasts](placeholder.png)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

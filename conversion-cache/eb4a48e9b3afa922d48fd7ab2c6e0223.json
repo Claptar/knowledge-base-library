@@ -1,0 +1,12 @@
+{
+ "source": "lo_etal_2001.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 13,
+ "markdown": "## Testing the Number of Components in a Normal Mixture\n\nAuthor(s): Yungtai Lo, Nancy R. Mendell and Donald B. Rubin  \nSource: *Biometrika*, Vol. 88, No. 3 (Sep., 2001), pp. 767-778  \nPublished",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

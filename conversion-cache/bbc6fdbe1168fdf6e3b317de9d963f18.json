@@ -1,0 +1,12 @@
+{
+ "source": "cardio-mult-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "[A scatter plot showing Cardiovascular deaths (y-axis, ranging from 70 to 130) versus Particulate levels (x-axis, ranging from 20 to 100), with a solid red regression line passing through the data points and a dashed blue line positioned above the data points.]",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

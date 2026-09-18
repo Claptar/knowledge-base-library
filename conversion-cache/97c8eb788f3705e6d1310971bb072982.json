@@ -1,0 +1,12 @@
+{
+ "source": "scribingguide-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "## 6.0",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

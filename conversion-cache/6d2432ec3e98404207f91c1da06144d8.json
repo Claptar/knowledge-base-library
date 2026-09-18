@@ -1,0 +1,12 @@
+{
+ "source": "irlsScheme.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "with\n\n$$W = A\\frac{\\partial \\mu_i}{\\partial \\eta_i}$$\n\nSince we know that the Fisher information matrix is the negative of the Hessian, it equals $X^TWX$.\n\n## 1.1 Optimisation techniques\n\n![Figure 1](screenshot_page_1.png)\n\nFigure 1: Newton Raphson optimisation technique in action. The figure shows estimation of a single $\\beta$ parameter",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

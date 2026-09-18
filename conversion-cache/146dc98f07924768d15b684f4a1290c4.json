@@ -1,0 +1,12 @@
+{
+ "source": "2014-03-05-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 37,
+ "markdown": "## 7.36/7.91 Recitation\n\n3-5-13  \nDG Lectures 7 & 8\n\n---\n\n## Announcements\n\n- Project specific aims due this Friday (2/07)\n  - examples will be posted this evening\n- Pset #2 due in 1 week (02/13)\n  - For problem 2B, Matlab and Mathematica use a (1-p) parameterization in contrast to lecture slides (p):\n    - R or N = 1/k (same as in lecture slides)\n    - $P = \\frac{\\frac{1}{k}}{\\lambda + \\frac{1}{k}}$ for Matlab/Mathematica vs. $\\frac{\\lambda}{\\lambda + \\frac{1}{k}}$ in lecture slides\n\n---\n\n## ChIP-seq\n\n(1) crosslink proteins and DNA  \n$\\downarrow$ tightly but reversibly binds proteins to nearby DNA\n\n(2) fragment DNA (by sonication, etc.)  \n$\\downarrow$\n\n---\n\n## ChIP-seq\n\n(3) immunoprecipitate  \n$\\downarrow$ use antibodies against protein of interest (here protein A)\n\n(4) reverse crosslinks, purify DNA  \n$\\downarrow$\n\n(5) sequence purified DNA, align reads to genome  \n$\\downarrow$ reference genome in black, reads in maroon\n\n---\n\n## ChIP-seq\n\n(3) immunoprecipitate  \n$\\downarrow$ use antibodies against an epitope tag fused to protein of interest\n\n- If a high-quality antibody is not available for your protein of interest, an alternative is to introduce a construct of the protein with an epitope tag into cells and use antibody to epitope\n  - Epitope is a short (5-10) amino acid sequence with antibody available (e.g. HA, His)\n  - Some caveats to keep in mind:\n    - Expression of your construct may not be at WT levels\n    - Epitope tag could alter function and/or localization of the protein, which could lead to non-native binding locations\n\n---\n\n## Peak-calling applications\n\n- ChIP-Seq\n- MeDIP-Seq (Methylated DNA IP)\n  - Finding methylated regions of DNA\n- CLIP-Seq (CrossLinking and ImmunoPrecipitation)\n  - Conceptually similar to ChIP-Seq, but for RNA instead of DNA\n- MeRIP-Seq (aka M6A-Seq)\n  - Post-transcriptional methylation of N6 position of adenosine in RNA\n\n---\n\n## GPS \u2013 genome positioning system\n\n- Find binding sites of DNA binding proteins (e.g. transcription factors) that have sequence specificity (6-8 bp of preferred motifs)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

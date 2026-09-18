@@ -1,0 +1,12 @@
+{
+ "source": "09-solutions-tut09-sol.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Tutorial/Recitation 9: Solutions\n\n1. Problem 7.1, page 380 in textbook. See online solutions.\n\n2. (a) Recurrent: 1, 2, 4, 5 , 6; Transient: 3; Periodic: 4,5,6.\n\n   (b) $0.2^n$\n\n   (c) This is a geometric random variable with parameter $p = 0.5 + 0.3$. Hence, the expected number of trials up to and includ ing the trial on which the process leaves state 3 is $\\mathbf{E}[X] = 1/p = 5/4$.\n\n   (d) 3/8\n\n   (e) $\\mathbf{P}(A) = 0.3 + 0.2^3 0.3 + 0.2^6 0.3 + 0.2^9 0.3 = 0.3024$.\n\n   (f) $0.3/\\mathbf{P}(A) = 0.992$.\n\n3. Problem 7.13, page 385 in textbook. See online solutions.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 0.8571428571428571,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "cardio-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "Cardiovascular deaths\n70 90 110 130\n1970 1972 1974 1976 1978 1980\n\nParticulate levels\n20 40 60 80 100\n1970 1972 1974 1976 1978 1980",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

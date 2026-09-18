@@ -1,0 +1,12 @@
+{
+ "source": "23-notes.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "- Note Final PS\n\n  For question 2(a) the value of 'k' in the final equation (Eq. 3b) needs to be rescaled.'\n\n- Tuesday Lecture will be for questions on the last problem set (Juan)\n\n- No recitation on Wednesday\n\n- Next Thursday will be the last lecture  \n  Topic \u201cModeling drospholia development\u2019\n\n---\n\n| Systems Microbiology | the **single cell** as a well-stirred bio-reactor |\n| :--- | :--- |\n| **Systems Cell Biology** | the importance of diffusion and gradients for cellular regulation in a **single cell** |\n| **Systems Developmental Biology** | How to build a **multicellular** organism from single cells<br>**Cell-Cell communication** |\n\n---\n\n## Quorum sensing in bacteria: a tractable experimental system for cell-cell communication\n\nImage removed due to copyright considerations.\n\n---\n\n## N-acyl-L-homoserine lactones (AHLs) are the main signalling molecules\n\nImage removed due to copyright considerations.\n\n---\n\n## Example of engineering cell-cell communication [You *et al.* Nature 428, 868 (2004)]\n\nImage removed due to copyright considerations. See You, L., R. S. Cox 3rd, R. Weiss, and F. H. Arnold. \"Programmed population control by cell-cell communication and regulated killing.\" *Nature* 428, no. 6985 (Apr 22, 2004): 868-71. Epub 2004 Apr 04.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

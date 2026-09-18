@@ -1,0 +1,12 @@
+{
+ "source": "lecture05-exponentialfamilies.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 14,
+ "markdown": "## Exponential families\n\n### Outline\n\n1) Exponential families\n2) Differential identities\n3) MGF\n\n---\n\n## Exponential Families\n\nAn **$s$-parameter exponential family** is a family $\\mathcal{P} = \\{P_\\eta : \\eta \\in \\Xi\\}$ with densities of the form\n$$p_\\eta(x) = e^{\\eta' T(x) - A(\\eta)} h(x)$$\nwrt base measure $\\mu$ on sample space $\\mathcal{X}$\n\n### Components of $p_\\eta$:\n\n- $\\eta \\in \\Xi \\subseteq \\mathbb{R}^s$ called **natural parameter**\n- $T(x)$ is $s$-dimensional **sufficient statistic**\n  $$\\text{factorization theorem}: \\quad g_\\eta(T(x)) = e^{\\eta' T(x) - A(\\eta)}$$\n- $",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

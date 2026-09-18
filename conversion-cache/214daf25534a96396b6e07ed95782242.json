@@ -1,0 +1,12 @@
+{
+ "source": "ps1_notes.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Problem set 1 notes\n\nZoe Vernon\n\nSeptember 2020\n\n### Code style\n\nA couple of common code style issues were:\n\n- Code lines that were too long. The general rule of thumb is to keep your code lines (including lines with comments) less than 80 characters. In R Studio you can set the UI to have a vertical line at 80 characters as a useful guide. Go to **Preferences**, click on the **Code** tab, and then choose **Display** at the top. You will see",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "03-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Systems Biology\n## 7.81/8.591/9.531\n\n**Problem Set 3**\n**Assigned:** 10.19.04\n**",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

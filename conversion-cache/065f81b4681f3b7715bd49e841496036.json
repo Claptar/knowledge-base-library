@@ -1,0 +1,12 @@
+{
+ "source": "unit13-graphics.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 35,
+ "markdown": "## Unit 13: Graphics\n\nNovember 30, 2017\n\nThis unit first discusses some general concepts and principles of",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

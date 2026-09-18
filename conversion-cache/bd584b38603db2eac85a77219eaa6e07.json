@@ -1,0 +1,12 @@
+{
+ "source": "16. Higher Order Effects Starter.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 7,
+ "markdown": "## **Higher Order**\n## **Effects**\n\n### Agenda\n\n1) Review Estimates\n2) Causal Parameters\n3) 3 Factor Design\n   $\\hookrightarrow$ Making Paper\n\n---\n\n## **The F-statistic**\n\n\"The variability of the group averages relative to the average variability within each group.\"\n\n$$\\frac{A}{B} = \\frac{MS_B}{MS_W} = \\frac{\\frac{1}{J-1} \\sum_{j=1}^J n_j (\\hat{\\bar{Y}}_j - \\hat{\\bar{Y}})^2}{\\frac{1}{n-J} \\sum_{i=1}^n (Y_i - \\hat{\\bar{Y}}_{j(i)})^2}$$\n\n---\n\n## **Estimates**\n\n$$Y_i = \\mu + \\alpha_{j(i)} + \\beta_{k(i)} + \\gamma_{j(i)k(i)} + \\varepsilon_i$$\n\n$$\\hat{\\mu} = \\hat{\\bar{Y}}$$\n$$\\hat{\\alpha}_j = \\hat{\\bar{Y}}_j - \\hat{\\bar{Y}}$$\n$$\\hat{\\beta}_k = \\hat{\\bar{Y}}_k - \\hat{\\bar{Y}}$$\n\n$$\\gamma_{j,k} = \\hat{\\bar{Y}}_{j,k} - \\hat{\\alpha}_j - \\hat{\\beta}_k - \\hat{\\mu}$$\n\n$$Y_i - \\hat{Y}_i = Y_i - (\\hat{\\mu} + \\hat{\\alpha}_{j(i)} + \\hat{\\beta}_{k(i)})$$\n\n$$F_A = \\frac{MS_A}{MS_R} = \\frac{\\frac{1}{J-1} \\sum_{j=1}^J n_j \\alpha_j^2}{\\frac{1}{n - 1 - (J-1) - (K-1)} \\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}$$\n\nIf $\\varepsilon_i \\overset{iid}{\\sim} N(0, \\sigma^2)$\nthen under $H_0: \\alpha_1 = \\alpha_2 = \\dots \\alpha_J = 0$\n\n$$F_A \\sim F(df1 = J-1, df2 = n - 1 - (J-1) - (K-1))$$\n\n---\n\n## **Causal Parameters**\n\n---\n\n[Slides]\n\n---\n\n## **Model for 3 factors w/ interactions**\n\n$$Y_i =$$\n\n---\n\n[Slides]",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

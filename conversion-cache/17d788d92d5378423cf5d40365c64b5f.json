@@ -1,0 +1,12 @@
+{
+ "source": "cardio-split-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## Split\u2013sample forecasts\n\n<!-- Chart: Split-sample forecasts\nY-axis: Cardiovascular deaths (70, 80, 90, 100, 120)\nX-axis: Year (1970, 1972, 1974, 1976, 1978, 1980)\nAnnotations: \n  MAE = 9.39\nLegend:\n  - - - Observed\n  \u2014 Predicted\nThe plot shows a time series from 1970 to 1980 of cardiovascular deaths. The first half (up to roughly 1975) is plotted in black as training data. From 1975 to 1980, the observed series is shown as a grey dashed line, and the predicted series is overlaid as a red solid line.\n-->",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

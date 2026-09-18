@@ -1,0 +1,12 @@
+{
+ "source": "leisure-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\ndifference(Employed, lag = 12) vs Month\n```\n*(The page contains only a line chart with points showing $\\text{difference}(\\text{Employed}, \\text{lag} = 12)$ on the y-axis (ranging from $-0.4$ to $0.6$) plotted against Month on the x-axis (from 2005 Jan to 2020 Jan).)*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

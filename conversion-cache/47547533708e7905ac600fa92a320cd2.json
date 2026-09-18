@@ -1,0 +1,12 @@
+{
+ "source": "11-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n**(Fall 2010)**\n\n### Recitation 11\n**October 14, 2010**\n\n1. Let $X$ be a discrete random variable that takes the values $1$ with probability $p$ and $-1$ with probability $1 - p$. Let $Y$ be a continuous random variable independent of $X$ with the Laplacian (two-sided exponential) distribution\n$$f_Y(y) = \\frac{1}{2}\\lambda e^{-\\lambda|y|},$$\nand let $Z = X + Y$. Find $\\mathbf{P}(X = 1 \\mid Z = z)$. Check that the expression obtained makes sense for $p \\to 0^+$, $p \\to 1^-$, $\\lambda \\to 0^+$, and $\\lambda \\to \\infty$.\n\n2. Let $Q$ be a continuous random variable with PDF\n$$f_Q(q) = \\begin{cases} 6q(1 - q), & \\text{if } 0 \\le q \\le 1, \\\\ 0, & \\text{otherwise.} \\end{cases}$$\nThis $Q$ represents the probability of success of a Bernoulli random variable $X$, i.e.,\n$$\\mathbf{P}(X = 1 \\mid Q = q) = q.$$\nFind $f_{Q \\mid X}(q \\mid x)$ for $x \\in \\{0, 1\\}$ and all $q$.\n\n3. Let $X$ have the normal distribution with mean $0$ and variance $1$, i.e.,\n$$f_X(x) = \\frac{1}{\\sqrt{2\\pi}} e^{-x^2/2}.$$\nAlso, let $Y = g(X)$ where\n$$g(t) = \\begin{cases} -t, & \\text{for } t \\le 0; \\\\ \\sqrt{t}, & \\text{for } t > 0, \\end{cases}$$\nas shown to the right.\nFind the probability density function of $Y$.\n\nMIT OpenCourseWare\nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9516129032258065,
+ "numeral_recall": 0.8235294117647058,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

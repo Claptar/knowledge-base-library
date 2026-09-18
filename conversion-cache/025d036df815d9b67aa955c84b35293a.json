@@ -1,0 +1,12 @@
+{
+ "source": "lasso_ridge.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "![FIGURE 3.11](page",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

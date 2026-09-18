@@ -1,0 +1,12 @@
+{
+ "source": "11-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 115,
+ "markdown": "## Chromatin state recovery with increasing numbers of marks\n\n### Which states are well-recovered?\n### Increasing numbers of marks (greedy)\n\n**State Inferred with all 41 marks**\n**Recovery of states with increasing number of marks**\n\n### Precisely what mistakes are made?\n### (for a given subset of 11 ENCODE marks)\n\n**State",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

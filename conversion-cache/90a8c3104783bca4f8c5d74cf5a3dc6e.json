@@ -1,0 +1,12 @@
+{
+ "source": "03-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## 6.047/6.878/HSPH IMI.231/HST.507 Fall 2015\n## Problem Set 3: Motifs and RNA",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

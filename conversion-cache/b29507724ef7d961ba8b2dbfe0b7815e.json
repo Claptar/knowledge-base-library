@@ -1,0 +1,12 @@
+{
+ "source": "holiday-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "Australian holiday travel\n\nOvernight trips (millions)\n\nlevel\n* 80\n* 95",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

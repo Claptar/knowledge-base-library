@@ -1,0 +1,12 @@
+{
+ "source": "13-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 13\n### October 21, 2010\n\nFor the problems below, recall the Law of Iterated Expectations and the Law of Total Variance:\n\n$$\\mathbf{E}[X] = \\mathbf{E} [\\mathbf{E}[X \\mid Y]]$$\n\n$$\\text{var}(X) = \\mathbf{E} [\\text{var}(X \\mid Y)] + \\text{var} (\\mathbf{E}[X \\mid Y]).$$\n\n1. Let $X$, $Y$, and $Z$ be discrete random variables. Show the following generalizations of the law of iterated expectations.\n   \n   (a) $\\mathbf{E}[Z] = \\mathbf{E}[\\mathbf{E}[Z \\mid X, Y]]$.\n   \n   (b) $\\mathbf{E}[Z \\mid X] = \\mathbf{E}[\\mathbf{E}[Z \\mid X, Y] \\mid X]$.\n   \n   (c) $\\mathbf{E}[Z] = \\mathbf{E}[\\mathbf{E}[\\mathbf{E}[Z \\mid X, Y] \\mid X]]$.\n\n2. Example 4.17, page 223 in text.\n\n   We start with a stick of length $\\ell$. We break it at a point which is chosen randomly and uniformly over its length, and keep the piece that contains the left end of the stick. We then repeat the same process on the piece that we were left with.\n\n   (a) What is the expected value of the length of the piece that we are left with after breaking twice?\n\n   (b) What is the variance of the length of the piece that we are left with after breaking twice?\n\n3. Widgets are stored in boxes, and then all boxes are assembled in a crate. Let $X$ be the number of widgets in any particular box, and $N$ be the number of boxes in a crate. Assume that $X$ and $N$ are independent integer-valued random variables, with expected value equal to 10, and variance equal to 16. Evaluate the expected value and variance of $T$, where $T$ is the total number of widgets in a crate.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9310344827586207,
+ "numeral_recall": 0.9285714285714286,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "03-slides-tut03.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Tutorial 3\n### September 30/October 1, 2010\n\n1. Let $X$ and $Y$ be independent random variables. Random variable $X$ has mean $\\mu_X$ and variance $\\sigma_X^2$, and random variable $Y$ has mean $\\mu_Y$ and variance $\\sigma_Y^2$. Let $Z = 2X - 3Y$. Find the mean and variance of $Z$ in terms of the means and variances of $X$ and $Y$.\n\n2. Problem 2.40, page 133 in the text.\n   A particular professor is known for his arbitrary grading policies. Each paper receives a grade from the set $\\{A, A-, B+, B, B-, C+\\}$, with equal probability, independently of other papers. How many papers do you expect to hand in before you receive each possible grade at least once?\n\n3. The joint PMF of the random variables $X$ and $Y$ is given by the following table:\n\n   | | $x = 1$ | $x = 2$ | $x = 3$ |\n   | :--- | :---: | :---: | :---: |\n   | $y = 3$ | $c$ | $c$ | $2c$ |\n   | $y = 2$ | $2c$ | $0$ | $4c$ |\n   | $y = 1$ | $3c$ | $c$ | $6c$ |\n\n   (a) Find the value of the constant $c$.\n   (b) Find $p_Y(2)$.\n   (c) Consider the random variable $Z = YX^2$. Find $\\mathbf{E}[Z \\mid Y = 2]$.\n   (d) Conditioned on the event that $X \\neq 2$, are $X$ and $Y$ independent? Give a one-line justification.\n   (e) Find the conditional variance of $Y$ given that $X = 2$.\n\nTextbook problems are courtesy of Athena Scientific, and are used with permission.\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9761904761904762,
+ "numeral_recall": 0.9444444444444444,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

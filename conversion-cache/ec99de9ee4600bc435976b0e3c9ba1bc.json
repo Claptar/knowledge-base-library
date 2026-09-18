@@ -1,0 +1,12 @@
+{
+ "source": "08-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## Problem Set 8\n\n### 1 Evolution in Finite Populations (15 points)\n\nIn a population of size $N$, a mutant population of",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

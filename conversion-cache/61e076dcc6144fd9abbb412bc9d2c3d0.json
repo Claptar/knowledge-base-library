@@ -1,0 +1,12 @@
+{
+ "source": "covid-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "Lag\nCross-correlation",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

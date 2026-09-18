@@ -1,0 +1,12 @@
+{
+ "source": "19-outline.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## IX Models for eukaryotic gradient sensing\n\nThe first model on gradient sensing we discussed was developed by Narang *et al.*:\n\nA. Narang, K. K. Subramanian, and D. L. Lauffenburger. A mathematical model for chemoattractant gradient sensing based on receptor-regulated membrane phospholipid signaling dynamics. *Ann. of Biomed. Eng.* **29**, 677-691 (",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

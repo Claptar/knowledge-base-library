@@ -1,0 +1,12 @@
+{
+ "source": "lecture05-sufficiency.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 16,
+ "markdown": "## Sufficiency\n\n###",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

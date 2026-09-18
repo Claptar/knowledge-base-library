@@ -1,0 +1,12 @@
+{
+ "source": "lecture02-probability.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 13,
+ "markdown": "## **Probability as a measure**\n\n### **Outline**\n\n1) What is a probability?\n2) Measures and integrals\n3) Densities\n4) Probability spaces\n\n---\n\n## **Probability as a measure**\n\n### **Outline**\n\n1) What is a probability?\n2) Measures and integrals\n3) Densities\n4) Probability spaces\n\n---\n\n## **What is probability?**\n\n### **Two common answers",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

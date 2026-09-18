@@ -1,0 +1,12 @@
+{
+ "source": "parallelR.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 7,
+ "markdown": "## Parallel R\n\nAndrew Vaughn\n\n18 October, 2021\n\nMany tasks that are computationally expensive are embarrassingly parallel. A few common tasks that fit the description:\n\n* Simulations with independent replicates\n* Bootstrapping\n* Cross-validation\n* Multivariate Imputation by Chained Equations (MICE)\n* Fitting multiple regression models\n* cross-validation\n\n## lapply Refresher\n\nlapply takes one parameter (a vector/list), feeds that variable into the function, and returns a list:\n\n```r\nlapply(1:3, function(x) c(x, x^2, x^3))\n```\n\n```\n## [[1]]\n## [1] 1 1 1\n## \n## [[2]]\n## [1] 2 4 8",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

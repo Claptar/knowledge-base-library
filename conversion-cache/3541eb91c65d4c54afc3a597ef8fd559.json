@@ -1,0 +1,12 @@
+{
+ "source": "08-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 44,
+ "markdown": "## RNA-seq library complexity can help qualify cells for analysis\n\nMichal Grzadkowski\n\n---\n\n## RNA-seq library complexity can help qualify cells for analysis\n\nMichal Grzadkowski\n\n---\n\n## FIN\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n7.91J / 20.490J / 20.390J / 7.36J /",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

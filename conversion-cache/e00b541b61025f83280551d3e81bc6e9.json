@@ -1,0 +1,12 @@
+{
+ "source": "cos-process-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "![](_page_0_Figure_0.jpeg)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "12-slides-lec12bonvid.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041SC Probabilistic Systems Analysis and Applied Probability\n### Lecture 12 Bonus Video Problem\n\n---\n\n**Problem 27.\\*** We toss $n$ times a biased coin whose probability of heads, denoted by $q$, is the value of a random variable $Q$ with given mean $\\mu$ and positive variance $\\sigma^2$. Let $X_i$ be a Bernoulli random variable that models the outcome of the $i$th toss (i.e., $X_i = 1$ if the $i$th toss is a head). We assume that $X_1, \\dots, X_n$ are conditionally independent, given $Q = q$. Let $X$ be the number of heads obtained in the $n$ tosses.\n\n(a) Use the law of iterated expectations to find $\\mathbf{E}[X_i]$ and $\\mathbf{E}[X]$.\n\n(b) Find $\\text{cov}(X_i, X_j)$. Are $X_1, \\dots, X_n$ independent?\n\n(c) Use the law of total variance to find $\\text{var}(X)$. Verify your answer using the covariance result of part (b).\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

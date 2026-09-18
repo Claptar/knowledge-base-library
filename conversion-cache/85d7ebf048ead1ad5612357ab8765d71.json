@@ -1,0 +1,12 @@
+{
+ "source": "lecture21-mle.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 7,
+ "markdown": "## **Outline**\n\n1) Maximum Likelihood Estimator\n2) Asymptotic Distribution of MLE\n3) Consistency of MLE\n\n---\n\n## **Maximum Likelihood Estimation**\n\nFor a generic dominated family $\\mathcal{P} = \\{P_\\theta : \\theta \\in \\Theta\\}$ with densities $p_\\theta$, a simple estimator for $\\theta$ is",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

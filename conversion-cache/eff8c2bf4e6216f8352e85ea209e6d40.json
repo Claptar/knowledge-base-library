@@ -1,0 +1,12 @@
+{
+ "source": "HW4.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Stat 156 HW #4\nDue 10/22/2024 by 11:59 pm PT\n\nNote that points will be deducted if you fail to\n- Submit code for coding problems\n- Assign pages to the corresponding problem in Gradescope\n\n1. Suppose that you are in charge of a non-profit working to improve graduation rates in West Africa. You read a study about an RCT that shows that direct cash transfer significantly improved graduation rates in Mexico. You\u2019d like to investigate whether your non-profit should roll out a direct transfer program in West Africa. What other information would you want to know to inform your decision? (Note there is no right or wrong way to answer this question. A thoughtful answer that explains your reasoning will get full credit).\n2. Problem 15.4 from *A First Course in Causal Inference*\n3. Consider the graph\n\n```\n       X --------> Y\n     ^            ^\n    /            /\n   /            /\n  U --------> Z\n```\n\nA. Describe the path(s) of association between Z and Y. Are there any causal paths? Any backdoor paths?\nB. Identify what variable(s) we need to condition on in order to achieve Ignorability.\n\n4. Consider the graph\n\n```\n  W ------------> Y\n   \\             ^\n    \\           /\n     v         /\n      X       /\n     ^       /\n    /       /\n   /       /\n  U ----> Z\n```\n\nA. Is there confounding of Z and Y in this graph? In other words, do we need to adjust for any variables in order to identify the causal relationship between Z and Y? Explain why or why not.\nB. Can we identify the heterogeneous average causal effect $E[Y(1) - Y(0) \\mid X]$? If yes, provide the identification. If no, describe why not.\n5. Provide a real-life example of M-bias. Draw the M-bias graph structure and describe what each node corresponds to in your example\n6. Problem 16.2 from *A First Course in Causal Inference*\n7. Problem 21.1 from *A First Course in Causal Inference*\n8. Problem 21.8 from *A First Course in Causal Inference*\n9. Problem 21.9 from *A First Course in Causal Inference*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

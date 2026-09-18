@@ -1,0 +1,12 @@
+{
+ "source": "ps1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## Stat243: Problem Set 1, Due Wednesday Sept. 11",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

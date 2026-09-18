@@ -1,0 +1,12 @@
+{
+ "source": "gw-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "[Graph: A time series plot showing Global temperature deviations versus Time.\n- Y-axis label: Global temperature deviations (values ranging from \u22120.4 to 0.8: \u22120.4, 0.0, 0.2, 0.4, 0.6, 0.8)\n- X-axis label: Time (years labeled from 1880 to 2020: 1880, 1900, 1920, 1940, 1960, 1980, 2000, 2020)\n- The plot shows an upward-trending connected scatter plot with open circle markers.]",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

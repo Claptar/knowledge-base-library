@@ -1,0 +1,12 @@
+{
+ "source": "jj-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "![Quarterly earnings per share over Time from 1960 to 1980](page",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

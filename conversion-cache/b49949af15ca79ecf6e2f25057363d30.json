@@ -1,0 +1,12 @@
+{
+ "source": "HW6.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## Stat 156 HW #4\n**Due 11/26/2024 by 11:59 pm PT**\n\nNote that points will be deducted if you fail to\n* Submit code for coding problems\n* Assign pages to the corresponding problem in Gradescope\n\n1. Problem 19.1 from *A First Course in Causal Inference*\n2. Problem 26.2 from *A First Course in Causal Inference*\n3. Problem 27.5 from *A First Course in Causal Inference*\n4. Problem 27.7 from *A First Course in Causal Inference*\n5. Problem 28.2 from *A First Course in Causal Inference*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

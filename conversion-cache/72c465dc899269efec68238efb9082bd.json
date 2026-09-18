@@ -1,0 +1,12 @@
+{
+ "source": "06-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\nTutorial 6\nOctober 21/22, 2010\n\n1. Let $X$ be a discrete random variable with PMF $p_X$ and let $Y$ be a continuous random variable, independent from $X$, with PDF $f_Y$. Derive a formula for the PDF of the random variable $X + Y$.\n\n2. The random variables $X$ and $Y$ are described by a joint PDF which is constant within the unit area quadrilateral with vertices $(0, 0)$, $(0, 1)$, $(1, 2)$, and $(1, 1)$. Use the law of total variance to find the variance of $X + Y$.\n\n3. (a) You roll a fair six-sided die, and then you flip a fair coin the number of times shown by the die. Find the expected value and the variance of the number of heads obtained.\n\n   (b) Repeat part (a) for the case where you roll two dice, instead of one.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9850746268656716,
+ "numeral_recall": 1.0,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

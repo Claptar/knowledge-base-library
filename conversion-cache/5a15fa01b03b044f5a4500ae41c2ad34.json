@@ -1,0 +1,12 @@
+{
+ "source": "cardio-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```dot\n// Scatter plot with linear regression line\n// y-axis: Cardiovascular deaths (range: 70 to 130)\n// x-axis: Particulate levels (range: 20 to 100)\n```\n\n![Cardiovascular deaths vs. Particulate levels scatter plot with linear regression line](image)",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,124 @@
+{
+ "model": "gemini-3.8-flash",
+ "submitted": [
+  {
+   "job": "batches/1t9hp8437dd91ucnskfbew1v9ozb678kf72h",
+   "first": 0,
+   "count": 16
+  }
+ ],
+ "index": [
+  {
+   "key": "edd356498cac53a5a47f41a3f0fae728",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 1,
+   "title": "Introduction",
+   "solutions": []
+  },
+  {
+   "key": "f663077e3bd89f1c18e5c05cb683f443",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 2,
+   "title": "7.1 Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "71419492d86bef70b090bd755ab7adc8",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 3,
+   "title": "5.1 Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "a59298289c49d1d5a635bdf04f6e89f2",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 4,
+   "title": "9.2 Toetsen voor een proportie",
+   "solutions": []
+  },
+  {
+   "key": "a754d89eab4650e72ad59ac90d2785ef",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 5,
+   "title": "4.1 Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "f85e5e679b9afe8377f26f04f1a92b46",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 6,
+   "title": "3.1 Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "56c05ee9e2fb8e8bf722b3487a19e42c",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 7,
+   "title": "10.1 Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "3f470fad4d15bb53a35ca7c611f47dec",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 8,
+   "title": "6.1 Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "6bfda035880b2ac34dc7c9fe8017e6a7",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 9,
+   "title": "11.1 Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "0eef9a33eca2bc5bbafece2bd627aa3a",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 10,
+   "title": "Cursus Statistiek 2019-2020",
+   "solutions": []
+  },
+  {
+   "key": "29688ea07c1fef5eb1736bedcc6af67a",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 11,
+   "title": "Introduction",
+   "solutions": []
+  },
+  {
+   "key": "f2566c7619459df7783a62553b331955",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 12,
+   "title": "8.1 Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "46a1008dc96dfe3c81d0d7abe2a944f4",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 13,
+   "title": "References",
+   "solutions": []
+  },
+  {
+   "key": "c22e375ece2826eab80398111b75479c",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 14,
+   "title": "Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "684c247683257d43cf1bf8bc8397e2f6",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 15,
+   "title": "Inleiding",
+   "solutions": []
+  },
+  {
+   "key": "520a11737cf6c3d89f46121bbb6ecf34",
+   "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
+   "number": 16,
+   "title": "2.1 Inleiding",
+   "solutions": []
+  }
+ ]
+}

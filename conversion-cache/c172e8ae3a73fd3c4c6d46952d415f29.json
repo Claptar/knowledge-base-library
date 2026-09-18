@@ -1,0 +1,12 @@
+{
+ "source": "4. Sampling Distributions Starter.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 7,
+ "markdown": "## 4. Sampling Distributions\n\n---\n\n## **While You're Waiting**\n\n**Q**\n\nA) How many ways can you partition 6 elements into 2 sets of equal size?\n\nB) If each partition is equally likely, what is the probability of drawing one particular partition?\n\n---\n\n## **Causal Notation**\n\n- $Y_i(1)$:\n- $Y_i(0)$:\n- $\\tau_i$:\n- $\\overline{Y}_1, \\overline{Y}_0$:\n- $\\text{ATE}$:\n\n---\n\n## **Causal Notation**\n\n- $Y_i(1)$: the fixed value of the",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

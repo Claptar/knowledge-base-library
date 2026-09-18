@@ -1,0 +1,12 @@
+{
+ "source": "01_intro.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 44,
+ "markdown": "## Welcome to Stat153 / 248  \n## Introduction to Time Series Analysis\n\n- We\n\n## Time-lagged regression models\n\nRMST2\n\n$$y(t)$$\n\n$$y(t) = \\beta_0 + \\sum_{f}\\sum_{\\tau} \\beta(f, \\tau) X(f, t-\\tau) + \\epsilon$$\n\nThese models are used widely in neuroscience to describe what aspects of different sensory stimuli increase or decrease brain activity in a given area\n\nPrediction\n\nTime (s)\n\n$X$\n\nfreq\n\n$t=0$\n\n$t=-1$\n\n$t=-2$\n\n...",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

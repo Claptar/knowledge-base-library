@@ -1,0 +1,12 @@
+{
+ "source": "lecture13-minimax.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 9,
+ "markdown": "## Minimax Estimation\n\n**Outline**\n\n1) Minimax risk, estimator\n2) Least favorable priors\n3) Examples\n\n---\n\n## Minimax risk\n\nLast idea for choosing an estimator: worst-case risk\n\n$$\\min",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "lecture_24_post.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 9,
+ "markdown": "## Lecture 24\n\nDavid Aldous\n\n23 October 2015\n\n---\n\nThis lecture: outline some \"abstract\" ideas --",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

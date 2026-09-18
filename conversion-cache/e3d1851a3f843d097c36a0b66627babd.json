@@ -1,0 +1,12 @@
+{
+ "source": "deAnalysis_para.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "transcripts using Cufflinks (version 1.0.3). Read counts per gene were calculated using HTSeq (version 0.5.1), and differential expression analysis was performed using the edgeR package, (26) employing treatment type, time point, and sample ID as factors in the model. Four different comparisons between sample groups were done: DPN 24 h *vs.* control 24 h, DPN 48 h *vs.* control 48 h, OHT 24 h *vs.* control 24 h, and OHT 48 h *vs.* control 48 h. All raw data are accessible through NCBI GEO Series accession no. GSE37211 (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37211).",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "recitation1-probability.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 7,
+ "markdown": "## Various distributions\n\n###",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

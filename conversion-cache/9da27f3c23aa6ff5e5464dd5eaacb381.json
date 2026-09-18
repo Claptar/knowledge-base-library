@@ -1,0 +1,12 @@
+{
+ "source": "covid-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\nReported Covid-19 deaths per 100k people\n```\n\n| Date | ca | fl | ga | ny | pa | tx |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n\n*(Line chart plotting Reported Covid-19 deaths per 100k people over Date from 2020-0",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

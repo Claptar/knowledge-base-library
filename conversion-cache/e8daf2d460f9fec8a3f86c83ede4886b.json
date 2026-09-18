@@ -1,0 +1,12 @@
+{
+ "source": "HandwrittenNotesLectureTwentyFive153248Fall2025.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "## Lecture Twenty - Five\n\n(1) AR & Nonlinear AR\n(2) RNN\n(3) GRU\n(4) LSTM\n\n---\n\n### AR & NAR\n\n$$y_1, \\dots, y_n$$\n\n$$y_t, \\quad x_t = (y_{t-1}, y_{t-2}, \\dots, y_{t-p})$$\n$$t = p+1, \\dots, n$$\n\n**AR:**\n$$\\to \\mu_t = \\beta_0 + \\beta^T x_t$$\n\n$$\\text{Loss}: \\sum (y_t - \\mu_t)^2$$\n\n$$y_t = \\mu_t + \\varepsilon_t$$\n$$\\varepsilon_t \\overset{iid}{\\sim} N(0, \\sigma^2)$$\n\n**Qn:** How to make AR nonlinear?\n\n$p=1$\n$$x_t = y_{t-1}$$\n$$\\mu_t = \\beta_0 + \\beta_1 (y_{t-1})_+ + \\beta_2 (y_{t-1} - c_1)_+ + \\dots + \\beta_{k+1} (y_{t-1} - c_k)_+$$\n$$c_1, \\dots, c_k$$\n$$\\beta_0, \\beta_1, \\beta_2, \\dots, \\beta_{k+1}$$\n\n$$y_{t",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

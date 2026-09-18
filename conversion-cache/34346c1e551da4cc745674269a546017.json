@@ -1,0 +1,12 @@
+{
+ "source": "22-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 22\n### November 30, 2010\n\n**Examples 8.2, 8.7, 8.12, and 8.15 in the textbook**\n\nRomeo and Juliet start dating, but Juliet will be late on any date by a random amount $X$, uniformly distributed over the interval $[0, \\theta]$. The parameter $\\theta$ is unknown and is modeled as the value of a random variable $\\Theta$, uniformly distributed between zero and one hour.\n\n(a) Assuming that Juliet was late by an amount $x$ on their first date, how should Romeo use this information to update the distribution of $\\Theta$?\n\n(b) How should Romeo update the distribution of $\\Theta$ if he observes that Juliet is late by $x_1, \\dots, x_n$ on the first $n$ dates? Assume that Juliet is late by a random amount $X_1, \\dots, X_n$ on the first $n$ dates where, given $\\theta$, $X_1, \\dots, X_n$ are uniformly distributed between zero and $\\theta$ and are conditionally independent.\n\n(c) Find the MAP estimate of $\\Theta$ based on the observation $X = x$.\n\n(d) Find the LMS estimate of $\\Theta$ based on the observation $X = x$.\n\n(e) Calculate the conditional mean squared error for the MAP and the LMS estimates. Compare your results.\n\n(f) Derive the linear LMS estimator of $\\Theta$ based on $X$.\n\n(g) Calculate the conditional mean squared error for the linear LMS estimate. Compare your answer to the results of part (e).\n\nTextbook problems are courtesy of Athena Scientific, and are used with permission.\n\n***\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9887640449438202,
+ "numeral_recall": 0.9230769230769231,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

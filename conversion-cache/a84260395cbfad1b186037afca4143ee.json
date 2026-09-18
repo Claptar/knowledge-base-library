@@ -1,0 +1,12 @@
+{
+ "source": "l5-syllabus-transcript.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "## IV Synthetic genetic switches\n\n**Reference:**\n1. T. S. Gardner, C. R. Cantor, and J. J. Collins. Construction of a genetic toggle switch in *Escherichia coli*. *Nature*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

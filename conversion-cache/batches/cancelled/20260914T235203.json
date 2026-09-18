@@ -1,0 +1,60 @@
+{
+ "model": "gemini-3.8-flash",
+ "submitted": [
+  {
+   "job": "batches/2140z90zsynng7ankkelkhemwlabuyam3n9q",
+   "first": 0,
+   "count": 8
+  }
+ ],
+ "index": [
+  {
+   "cache_key": "2696f01fd612cb2375e9756da7803eae",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-guntuboyina-notes/FullLectureNotes201AFall2019.pdf",
+   "pages": 134,
+   "part": 0
+  },
+  {
+   "cache_key": "2696f01fd612cb2375e9756da7803eae",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-guntuboyina-notes/FullLectureNotes201AFall2019.pdf",
+   "pages": 134,
+   "part": 1
+  },
+  {
+   "cache_key": "2696f01fd612cb2375e9756da7803eae",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-guntuboyina-notes/FullLectureNotes201AFall2019.pdf",
+   "pages": 134,
+   "part": 2
+  },
+  {
+   "cache_key": "2696f01fd612cb2375e9756da7803eae",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-guntuboyina-notes/FullLectureNotes201AFall2019.pdf",
+   "pages": 134,
+   "part": 3
+  },
+  {
+   "cache_key": "b38f0b301ec7cde967b0753d49d101df",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-guntuboyina-notes/FullNotes201AFall2022.pdf",
+   "pages": 131,
+   "part": 0
+  },
+  {
+   "cache_key": "b38f0b301ec7cde967b0753d49d101df",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-guntuboyina-notes/FullNotes201AFall2022.pdf",
+   "pages": 131,
+   "part": 1
+  },
+  {
+   "cache_key": "b38f0b301ec7cde967b0753d49d101df",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-guntuboyina-notes/FullNotes201AFall2022.pdf",
+   "pages": 131,
+   "part": 2
+  },
+  {
+   "cache_key": "b38f0b301ec7cde967b0753d49d101df",
+   "source": "/Users/ab76/Documents/projects/knowledge-base-library/sources/berkeley-guntuboyina-notes/FullNotes201AFall2022.pdf",
+   "pages": 131,
+   "part": 3
+  }
+ ]
+}

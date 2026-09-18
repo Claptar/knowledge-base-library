@@ -1,0 +1,12 @@
+{
+ "source": "ps6.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Stat243: Problem Set 6, Due Monday November 8\n\nOctober 30, 2021\n\nThis covers Units 8 and 9.  \nIt's due as PDF submitted to Gradescope and submitted via GitHub at 10 am on Nov. 8.  \nComments:\n\n1. The formatting requirements are the same as previous problem sets.\n2. As with PS5, don't wait to get started. Problem 2involves use of the SCF cluster.\n3. Please note my comments in the syllabus about when",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

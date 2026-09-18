@@ -1,0 +1,12 @@
+{
+ "source": "Lec05_Notes.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "Lecture 5 Notes - Simple Linear Regression\n\nLiberty Hamilton\n\nTuesday $3^{\\text{rd}}$ February, 2026\n\n- Reading: Chapter 2 \u2013 Shumway and Stoffer\n\n## 1 Review\n\n### 1.1 Notes on covariance\n\nTo add to your materials from last week, I've created some visualizations.\n\n## 2 Today\n\n### 2.1 Simple linear regression\n\nLet's say we want to learn the relationship between two variables $y$ and $x$ - the goal is to predict $y$ given $x$. For example, we might want to predict the height of an adult man ($y$) given the height of his father ($x$). $y$ is called the response variable or dependent variable, $x$ i the covariate or independent variable. We will start with the more general scenario and then extend this concept specifically to time series.\n\nIn simple linear regression, we are predicting $y$ given one covariate $x$. In the case of multiple $x$, say $\\{x_1, \\dots, x_p\\}$, this is called multiple regression.\n\nFor the simple case, we are predicting $y$ from one covariate $x$. For example:\n$$y = \\beta_0 + \\beta_1 x + \\epsilon$$\n\n$\\beta_0$ and $\\beta_1$ are parameters that we will estimate from the data, where $\\beta_0$ is the intercept, which corresponds to the value of $y$ when $x = 0$, and $\\beta_1$ represents the change in $y$ when $x$ changes by one unit.\n\nWe could observe, for example, pairs of data $(x_1, y_1), \\dots, (x_n, y_n)$ where each of these samples is a pair of fathers and sons. We then might write:\n$$y_i = \\beta_0 + \\beta_1 x_i + \\epsilon_i.$$\n\nWe can then estimate our $\\hat{\\beta}_0$ and $\\hat{\\beta}_1$ from the data, then use these to predict the value",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

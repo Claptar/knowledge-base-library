@@ -1,0 +1,12 @@
+{
+ "source": "boston-3.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\nMen's open division | Men's",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

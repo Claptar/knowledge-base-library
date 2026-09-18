@@ -1,0 +1,12 @@
+{
+ "source": "03-solutions-rec03-sol.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 3: Solutions\n### September 16, 2010\n\n1. See the textbook, Example 1.20, page 37.\n\n2. (a) In order to wind up in the same place after two steps, the tightrope walker can either step forwards, then backwards, or vice versa. Therefore the required probability is:\n$$2 \\cdot p \\cdot (1 - p).$$\n\n (b) The probability that after three steps he will be one step ahead of his starting point is the probability that out of 3 steps in total, 2 of them are forwards, and one is backwards. This equals:\n$$3 \\cdot p^2 \\cdot (1 - p).$$\n\n (c) Given that out of his three steps only one is backwards, the sample space for the experiment is:\n$$\\{(F, F, B); (F, B, F); (B, F, F)\\}$$\nwhere $F$ denotes a step forwards, and $B$ a step backwards. Each of these sample points is equally likely, therefore the probability that his first step is a step forward is $\\frac{2}{3}$.\n\n3. See the textbook, Problem 1.31, page 60.\n\n4. (a) $A$ is independent of itself if and only if $\\mathbf{P}(A \\cap A) = \\mathbf{P}(A)\\mathbf{P}(A)$. Since $A \\cap A = A$ then $A$ must satisfy $\\mathbf{P}(A) = (\\mathbf{P}(A))^2$. Therefore, $A$ is independent of itself if and only if $\\mathbf{P}(A) = 1$ or $\\mathbf{P}(A) = 0$.\n(b) See solution to Problem 1.43(a) in text on pages 63-64.\n(c) See solution to Problem 1.44 in text on page 64.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 0.9523809523809523,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

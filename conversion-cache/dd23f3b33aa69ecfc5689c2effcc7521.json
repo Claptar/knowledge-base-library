@@ -1,0 +1,12 @@
+{
+ "source": "2. Components Of An Experiment 2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 12,
+ "markdown": "## 2. Components of an Experiment II\n\n---",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

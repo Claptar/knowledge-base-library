@@ -1,0 +1,12 @@
+{
+ "source": "5. Testing Starter.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "## 5. **Testing**\n\n---\n\n**Q** Under what conditions will the sampling distribution of $\\hat{\\bar{Y}}_1 - \\hat{\\bar{Y}}_0$ be\n\nA) Normal?\n\nB) $t$?\n\n---\n\nWhat is the **actual** distribution of $\\hat{\\bar{Y}}_1 - \\hat{\\bar{Y}}_0$?\n\n$\\hookrightarrow$ See code\n\n---\n\nWhat is the **actual** distribution of $\\hat{\\bar{Y}}_1 - \\hat{\\bar{Y}}_0$?\n\n$\\hookrightarrow$ See code\n\n**Q** What does this distribution represent?\n\n---\n\n## **Inference**\n\n**Key Question**: Is it possible our estimate is due to chance?\n\n### Steps of **a** Hypothesis Test\n\n1) Choose an alpha-level ($\\alpha$) / decision boundary.\n   - $0 \\le \\alpha \\le 1$\n   - $\\alpha \\ge P_{H_0}(\\text{Reject } H_0)$ $\\leftarrow$ Type I error\n\n2) Define a random data generating process.\n\n3) Determine meaningful null hypothesis, $H_0$, and alt., $H_A$.\n\n4) Determine a test statistic, $T$ (which is a RV).\n\n5) Derive/approximate distribution of $T$.\n\n6) Decide whether or not to reject null, $H_0$.\n\n---\n\n## **Nonparametric Method** (Permutation Test)\n\n1) \n\n2) \n\n3) \n\n---\n\n## **Nonparametric Method** (Permutation Test)\n\n1) $\\alpha = .05$\n\n2) $Y_i(1), Y_i(0)$ are **fixed**. $Y_i$ is random only because $D_i$ is random.\n\n3) $H_0$: \"Previous question does not affect response\"  \n   $\\hookrightarrow H_0: Y_i(1) = Y_i(0)$ for all $i$ $\\leftarrow$ this allows us to populate a full schedule of outcomes.\n\n---\n\n## **This Weekend**\n\n- Finish + submit Lab 1\n- Work on PS 1.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,19 @@
+{
+ "model": "gemini-3.8-flash",
+ "submitted": [
+  {
+   "job": "batches/wt18ty2xqed15hlx8k3vr7d8lal56sb59an4",
+   "first": 0,
+   "count": 1
+  }
+ ],
+ "index": [
+  {
+   "key": "ca6c1a465162b50481c30f14173cae35",
+   "course": "probability/berkeley/stat206a",
+   "number": 1,
+   "title": "Statistics 206a: Advanced Topics in Probability and Stochastic Process",
+   "solutions": []
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "source": "04-questions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## 6.047/6.878/HSPH IMI.2",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

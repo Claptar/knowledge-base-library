@@ -1,0 +1,12 @@
+{
+ "source": "ps5.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Stat243: Problem Set 5, Due Monday Oct. 19\n\nOctober 12, 2015\n\nComments:\n\n- This covers Unit 6.\n- It's due at the start of class",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

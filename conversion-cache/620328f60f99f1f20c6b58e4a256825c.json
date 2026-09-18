@@ -1,0 +1,12 @@
+{
+ "source": "covid-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "[A line graph showing Reported Covid-19 cases per 100k people over time from before 2020-07 to 2022-01 across six states: ca, fl, ga, ny, pa, tx.]",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

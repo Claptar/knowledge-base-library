@@ -1,0 +1,12 @@
+{
+ "source": "22-solutions.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 22 Solutions\n\nThe problem is based on the following examples in the textbook.\n\n(a) Example 8.2 page 414.\n\n(b) Example 8.2 page 414.\n\n(c) Example 8.7 page 424.\n\n(d) Example 8.7 page 424.\n\n(e) Example 8.12 page 432-433.\n\n(f) Example 8.15 page 439-440.\n\n(g) Example 8.15 page 439-440.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 0.9375,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

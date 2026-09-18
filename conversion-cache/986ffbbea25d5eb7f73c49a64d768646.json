@@ -1,0 +1,12 @@
+{
+ "source": "lecture_28_post.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "## Lecture 28\n\nDavid Aldous\n\n2 November 2015\n\n---\n\n### Other examples of martingales.\n\n1. Consider the rate-$\\lambda$ Poisson counting process $(N(t), 0 \\le t < \\infty)$. Here\n$$M_t = N(t) - \\lambda t$$\nis a (continuous-time) martingale. [board]\n\n2. **The Polya urn process.** Consider a box, initially with $r_0 \\ge 1$ red balls and $b_0 \\ge 1$ black balls. At each step, pull out a uniform random ball, and the return it into the box along with another new ball of the same color. Consider\n$$M_t = \\text{proportion of balls that are red at time } t.$$\nThen $(M_t)$ is a martingale. [board]\n\n---\n\n3. **Fisher-Wright genetic model.** (2-type, no mutation or selection) (from Lecture 5)\n* $2N$ genes in each generation, of types $\\",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

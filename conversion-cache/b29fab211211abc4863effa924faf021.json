@@ -1,0 +1,12 @@
+{
+ "source": "final2023.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 18,
+ "markdown": "Student ID (NOT your name):\n\n## Final Examination: QUESTION",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

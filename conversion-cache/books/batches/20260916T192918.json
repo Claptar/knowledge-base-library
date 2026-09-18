@@ -1,0 +1,19 @@
+{
+ "model": "gemini-3.8-flash",
+ "submitted": [
+  {
+   "job": "batches/l5pywrl91ay9q9ahfo6eb078dr3rrzovsija",
+   "first": 0,
+   "count": 1
+  }
+ ],
+ "index": [
+  {
+   "key": "3bf544e30a51ac9f27b54bef75db3358",
+   "course": "statistics/berkeley/stat230a",
+   "number": 1,
+   "title": "Syllabus",
+   "solutions": []
+  }
+ ]
+}

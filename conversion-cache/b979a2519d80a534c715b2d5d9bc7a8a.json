@@ -1,0 +1,12 @@
+{
+ "source": "lecture03-F24.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 11,
+ "markdown": "## Lecture 3\n\n8/31/2023\n\n### **Outline**\n\n1) Review\n2) Exponential families\n3) Differential identities\n4) MGF\n\n---\n\n## **Exponential Families**\n\nAn $s$-parameter **exponential family** is a family $\\mathcal{P} = \\{P_\\eta : \\eta \\in \\Xi\\}$ with densities $p_\\eta$ wrt a common measure $\\mu$ on $\\mathcal{X}$",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

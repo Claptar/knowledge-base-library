@@ -1,0 +1,12 @@
+{
+ "source": "ps7.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 4,
+ "markdown": "## Stat243: Problem Set 7, Due Monday",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

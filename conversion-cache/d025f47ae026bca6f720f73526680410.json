@@ -1,0 +1,12 @@
+{
+ "source": "chicken-1.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "Chicken price (cents per pound)\n110 -\n100 -\n 90 -\n 80 -\n 70 -\n 60 -\n    +------------+------------+------------+\n               2005         2010         2015\n                             Time",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

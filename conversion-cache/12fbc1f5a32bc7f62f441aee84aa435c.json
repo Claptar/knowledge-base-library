@@ -1,0 +1,12 @@
+{
+ "source": "obamaTraffic.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "```\n\\begin{figure}\n\\includegraphics{...}\n\\end{figure}\n```\n*(The page contains only two stacked plots showing time series of \"hits\" against \"time\".)*",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

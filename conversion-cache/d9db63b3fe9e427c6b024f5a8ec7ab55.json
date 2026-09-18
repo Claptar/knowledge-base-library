@@ -1,0 +1,12 @@
+{
+ "source": "lecture_35_post.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 5,
+ "markdown": "## Lecture 35\n\nDavid Aldous\n\n23 November 2015",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

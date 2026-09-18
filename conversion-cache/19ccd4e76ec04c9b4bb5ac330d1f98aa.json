@@ -1,0 +1,12 @@
+{
+ "source": "speech-2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "Auto-correlation\n1.0\n0.5\n0.0\n-0.5\n\n0   50   100   150   200   250\nLag",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

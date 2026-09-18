@@ -1,0 +1,12 @@
+{
+ "source": "09-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 9\n### October 7, 2010\n\n1. Let $X$ be an exponential random variable with parameter $\\lambda > 0$. Calculate the probability that $X$ belongs to one of the intervals $[n, n + 1]$ with $n$ odd.\n\n2. (Example 3.13 of the text book, page 165) **Exponential Random Variable is Memoryless.**\nThe time $T$ until a new light bulb burns out is an exponential random variable with parameter $\\lambda$. Ariadne turns the light on, leaves the room, and when she returns, $t$ time units later, finds that the bulb is still on, which corresponds to the event $A = \\{T > t\\}$. Let $X$ be the additional time until the bulb burns out. What is the conditional CDF of $X$, given the event $A$?\n\n3. Problem 3.23, page 191 in the text.\nLet the random variables $X$ and $Y$ have a joint PDF which is uniform over the triangle with vertices $(0, 0)$, $(0, 1)$, and $(1, 0)$.\n   (a) Find the joint PDF of $X$ and $Y$.\n   (b) Find the marginal PDF of $Y$.\n   (c) Find the conditional PDF of $X$ given $Y$.\n   (d) Find $\\mathbf{E}[X \\mid Y = y]$, and use the total expectation theorem to find $\\mathbf{E}[X]$ in terms of $\\mathbf{E}[Y]$.\n   (e) Use the symmetry of the problem to find the value of $\\mathbf{E}[X]$.\n\n4. We have a stick of unit length, and we break it into three pieces. We choose randomly and independently two points on the stick using a uniform PDF, and we break the stick at these points. What is the probability that the three pieces we are left with can form a triangle?\n\nTextbook problems are courtesy of Athena Scientific, and are used with permission.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 0.9473684210526315,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "lecture08-fisherinfo.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 10,
+ "markdown": "## **Outline**\n\n1) Score function\n2) Fisher information\n3) Cram\u00e9r-Rao Lower Bound\n4) Examples\n\n---",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

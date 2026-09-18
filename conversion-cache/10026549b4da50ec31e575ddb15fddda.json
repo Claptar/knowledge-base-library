@@ -1,0 +1,12 @@
+{
+ "source": "HW2.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 1,
+ "markdown": "## Stat 156 HW #2\nDue 9/24/2024 by 11:59 pm PT\n\nFrom *A First Course In Causal Inference*\n\n1. Problem B.1\n2. Problem B.2\n3. Problem B",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

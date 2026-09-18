@@ -1,0 +1,12 @@
+{
+ "source": "l8-syllabus-transcript.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 8,
+ "markdown": "## VI Modeling Escherichia coli chemotaxis\n\nIn this lecture we will discuss and contrast two models that model bacterial chemotaxis:\n1. P. A. Spiro, J. S. Parkinson, and H. G. Othmer. A model of excitation and adaptation in bacterial chemotaxis. *PNAS* **94**, 7263-7268 (",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": false,
+ "ok": true,
+ "reason": ""
+}

@@ -1,0 +1,12 @@
+{
+ "source": "09-solutions-rec09-sol.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## Massachusetts Institute of Technology\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n### Recitation 9 Solutions\n### October 7, 2010\n\n1. We first compute the probability that $X$ is in interval $[n, n + 1]$ for an arbitrary nonnegative $n$. Then, we will add the probabilities for all odd positive integer values of $n$.\n\nWe could integrate the PDF of $X$ over the given interval but we will use the CDF here. Using the CDF for the exponential random variable,\n\n$$\n\\begin{aligned}\n\\mathbf{P}(n \\le X \\le n + 1) &= F_X(n + 1) - F_X(n) \\\\\n&= \\left(1 - e^{-\\lambda(n+1)}\\right) - \\left(1 - e^{-\\lambda n}\\right) \\\\\n&= e^{-\\lambda n} \\left(1 - e^{-\\lambda}\\right).\n\\end{aligned}\n$$\n\nSince the intervals are disjoint, we can sum this probability for all odd integers $n$ to find the probability of interest:\n\n$$\n\\begin{aligned}\n\\mathbf{P}(\\{X \\in [n, n + 1] \\text{ for some odd } n\\}) \\\\\n&= \\sum_{n \\text{ odd}} e^{-\\lambda n} \\left(1 - e^{-\\lambda}\\right) \\\\\n&= \\left(1 - e^{-\\lambda}\\right) \\sum_{k=0}^{\\infty} e^{-\\lambda(2k+1)} \\\\\n&= \\left(1 - e^{-\\lambda}\\right) e^{-\\lambda} \\sum_{k=0}^{\\infty} \\left(e^{-2\\lambda}\\right)^k \\\\\n&= \\left(1 - e^{-\\lambda}\\right) e^{-\\lambda} \\frac{1}{1 - e^{-2\\lambda}} \\\\\n&= \\left(1 - e^{-\\lambda}\\right) e^{-\\lambda} \\frac{1}{\\left(1 - e^{-\\lambda}\\right)\\left(1 + e^{-\\lambda}\\right)} \\\\\n&= \\frac{e^{-\\lambda}}{1 + e^{-\\lambda}}.\n\\end{aligned}\n$$\n\n2. See Example 3.13 in the textbook on page 165.\n\n3. Problem 3.23, page 191 in text. See online solutions.\n\n4. Problem 3.22, part (i), page 191 in text (see online solution).\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 1.0,
+ "numeral_recall": 1.0,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}

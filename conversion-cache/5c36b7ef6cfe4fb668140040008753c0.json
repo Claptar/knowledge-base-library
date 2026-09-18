@@ -1,0 +1,12 @@
+{
+ "source": "05-slides.pdf",
+ "model": "gemini-3.8-flash",
+ "pages": 2,
+ "markdown": "## MASSACHUSETTS INSTITUTE OF TECHNOLOGY\n### Department of Electrical Engineering & Computer Science\n### 6.041/6.431: Probabilistic Systems Analysis\n### (Fall 2010)\n\n**Tutorial 5**  \n**October 14/15, 2010**\n\n1. Let $Q$ be a random variable which is uniformly distributed between 0 and 1. On any given day, a particular machine is functional with probability $Q$. Furthermore, given the value of $Q$, the status of the machine on different days is independent.\n\n   (a) Find the probability that the machine is functional on a particular day.\n\n   (b) We are told that the machine was functional on $m$ out of the last $n$ days. Find the conditional PDF of $Q$. You may use the identity\n   $$\\int_0^1 p^k (1 - p)^{n-k} dp = \\frac{k!(n - k)!}{(n + 1)!}$$\n\n2. Let $X$ be a random variable with PDF $f_X$. Find the PDF of the random variable $Y = |X|$\n\n   (a) when $f_X(x) = \\begin{cases} 1/3, & \\text{if } -2 < x \\le 1, \\\\ 0, & \\text{otherwise;} \\end{cases}$\n\n   (b) when $f_X(x) = \\begin{cases} 2e^{-2x}, & \\text{if } x > 0, \\\\ 0, & \\text{otherwise;} \\end{cases}$\n\n   (c) for general $f_X(x)$.\n\n3. An ambulance travels back and forth, at a constant specific speed $v$, along a road of length $\\ell$. We may model the location of the ambulance at any moment in time to be uniformly distributed over the interval $(0, \\ell)$. Also at any moment in time, an accident (not involving the ambulance itself) occurs at a point uniformly distributed on the road; that is, the accident's distance from one of the fixed ends of the road is also uniformly distributed over the interval $(0, \\ell)$. Assume the location of the accident and the location of the ambulance are independent.\n\n   Supposing the ambulance is capable of *immediate* U-turns, compute the CDF and PDF of the ambulance's travel time $T$ to the location of the accident.\n\n---\n\nMIT OpenCourseWare  \nhttp://ocw.mit.edu\n\n6.041SC Probabilistic Systems Analysis and Applied Probability  \nFall 2013\n\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+ "figures": [],
+ "recall": 0.9879518072289156,
+ "numeral_recall": 1.0,
+ "baseline_credible": true,
+ "ok": true,
+ "reason": ""
+}
