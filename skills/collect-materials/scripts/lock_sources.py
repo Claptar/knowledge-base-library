@@ -19,6 +19,8 @@ Three fields here are **written by hand and never detected**, and `merge()` carr
 a rescan:
 
     material          course | notes | thesis | paper | book | archive | data
+    exclude           per-file skip list: third-party publications a course ships inside
+                      itself, which `material` cannot catch because it classifies the source
     open_access       true for a paper that may be converted; absent means assume paywalled
     mirrors_upstream  true when base + local path is the publisher's own URL
 
@@ -214,7 +216,7 @@ def merge(old, new):
         if not p:
             continue
         for k in ("base", "note", "catalogue", "material", "open_access",
-                  "mirrors_upstream"):
+                  "mirrors_upstream", "title", "subject", "provider", "exclude"):
             if p.get(k):
                 e[k] = p[k]
         # Detection never downgrades a resolved licence. Several licences here were settled by
