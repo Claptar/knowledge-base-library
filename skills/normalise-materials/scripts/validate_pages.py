@@ -83,6 +83,7 @@ class PageReport:
     route: str = ""
     body_hash: str = ""
     body_chars: int = 0
+    source_file: str = ""      # which source document produced this page
 
     @property
     def fatal(self) -> list[Finding]:
@@ -222,7 +223,8 @@ def check(path: Path, text: str) -> PageReport:
     prose = SVG_FIGURE.sub("", clean)
     rep = PageReport(path=path, route=meta.get("route", ""),
                      body_hash=hashlib.sha256(body.encode()).hexdigest(),
-                     body_chars=substance(body))
+                     body_chars=substance(body),
+                     source_file=meta.get("source_file", ""))
 
     def add(gate, severity, count, sample=""):
         if count:
@@ -338,7 +340,7 @@ def run(root: Path) -> list[PageReport]:
     for group in by_hash.values():
         if len(group) <= 1:
             continue
-        keeper = group[0].path
+        keeper, keeper_src = group[0].path, group[0].source_file
         for dup in group[1:]:
             where = keeper.relative_to(root) if root in keeper.parents else keeper
             # Fatal only WITHIN one source, where it means the same document was converted twice
@@ -346,8 +348,17 @@ def run(root: Path) -> list[PageReport]:
             # it is usually correct: Stat 243 assigns the same two papers in eleven course years,
             # and deleting the reading from ten of them would misrepresent those courses.
             same_source = _source_of(dup.path, root) == _source_of(keeper, root)
+            # ...and only where it is the SAME DOCUMENT, which is what the sentence above means
+            # and what a converter bug looks like. Two different documents of one course sharing
+            # a section is the course's own duplication, not ours: a tutorial's solutions repeat
+            # the exercise's setup verbatim, a page is published with and without frames, four
+            # analyses share a boilerplate index. Keying on the page alone called 61 of those
+            # fatal -- and every one of them is a real section of a real document, whose removal
+            # would leave the other document missing a part and its prev/next chain broken. On
+            # this corpus the same-document case does not occur at all.
+            same_doc = bool(dup.source_file) and dup.source_file == keeper_src
             dup.findings.append(Finding(
-                "duplicate-body", FATAL if same_source else REPAIR, len(group),
+                "duplicate-body", FATAL if (same_source and same_doc) else REPAIR, len(group),
                 f"same body as {where}" + ("" if same_source else " (another source — expected)")))
     return reports
 
