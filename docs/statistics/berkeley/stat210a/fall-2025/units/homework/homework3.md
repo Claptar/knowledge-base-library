@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2025/units/homework/homework3.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Homework3
+> **Converted source.** [`units/homework/homework3.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/homework/homework3.tex) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/homework/homework3.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/homework/homework3.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Homework3
 
 **Problem 1** (Multinomial subfamilies). The multinomial family is a multi-category version of the binomial, it measures the number of times each category comes up if we sample a $d$-category random variable with distribution $\pi$ on $n$ independent trials. Throughout this problem assume $d \geq 3$.
 
@@ -28,7 +28,7 @@ If $X \sim \text{Multinom}(n, \pi)$, with all $\pi_j > 0$ and $\sum_j \pi_j = 1$
 
     Now suppose that we again sample $n$ individuals form our unknown mixture, giving another one-parameter subfamily $\mathcal{Q}$ indexed by $\gamma$. Can $\mathcal{Q}$ be written as a one-parameter exponential family? Find a minimal sufficient statistic for $\mathcal{Q}$, and show whether or not it is complete.
 
-#### Moral: {#moral}
+## Moral: {#moral}
 
 The structure of the families and subfamilies determines the properties of the sufficient statistic.
 

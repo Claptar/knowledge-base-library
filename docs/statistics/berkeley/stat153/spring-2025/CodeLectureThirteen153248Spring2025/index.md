@@ -5,19 +5,18 @@ source_file: sources/berkeley-stat153/spring-2025/CodeLectureThirteen153248Sprin
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`CodeLectureThirteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureThirteen153248Spring2025.ipynb) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # CodeLectureThirteen153248Spring2025
 
-**Source:** [`CodeLectureThirteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureThirteen153248Spring2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+Split into 3 sections.
 
-Split into 4 sections.
-
-1. [Introduction](01-introduction.md)
-2. [Find peaks](02-find-peaks.md)
-3. [Find peaks](03-find-peaks.md)
-4. [Define the peak position and width (smaller width makes it drop quickly)](04-define-the-peak-position-and-width-smaller-width-makes-it-dr.md)
+1. [Sunspots Dataset](02-sunspots-dataset.md)
+2. [Ridge and LASSO regression with sinusoids](03-ridge-and-lasso-regression-with-sinusoids.md)
+3. [The Spectrum Model](04-the-spectrum-model.md)
 
 ---
 

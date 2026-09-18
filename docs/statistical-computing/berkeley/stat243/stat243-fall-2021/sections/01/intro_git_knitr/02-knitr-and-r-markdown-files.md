@@ -5,28 +5,28 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/sections/01/intro_git_kn
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`sections/01/intro_git_knitr.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/01/intro_git_knitr.Rmd) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # knitr and R Markdown Files
 
-**Source:** [`sections/01/intro_git_knitr.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/01/intro_git_knitr.Rmd) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.Rmd` (lossless)
-
-### Learning Objectives:
+## Learning Objectives:
 
  - Differentiate between `.R` and `.Rmd` files
  - To understand dynamic documents
  - To gain familiarity with R Markdown `.Rmd` files
  - To gain familiarity with code chunks
 
-### Useful Links
+## Useful Links
 - SCF tutorial on [dynamic documents](https://github.com/berkeley-scf/tutorial-dynamic-docs)
 - [knitr in a knutshell](http://kbroman.org/knitr_knutshell/) tutorial with information about R Markdown and knitr with LaTeX.
 - [R Markdown cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 - Complete R Markdown [guide](https://bookdown.org/yihui/rmarkdown/)
 - R Sweave [tutorial](https://www.r-bloggers.com/sweave-tutorial-1-using-sweave-r-and-make-to-generate-a-pdf-of-multiple-choice-questions/)
 
-### Opening and knitting an `Rmd` file
+## Opening and knitting an `Rmd` file
 
 In the menu bar of RStudio, click on __File__, then __New File__,
 and choose __R Markdown__. Select the default option (Document),
@@ -38,8 +38,7 @@ needles. Click the button (knit to HTML) so you can see how `Rmd` files are
 rendered and displayed as HTML documents. Alternatively, you can use a keyboard
 shortcut: in Mac `Command+Shift+K`, in Windows `Ctrl+Shift+K`
 
-
-### What is an `Rmd` file?
+## What is an `Rmd` file?
 
 __Rmd__ files are a special type of file, referred to as a _dynamic document_.
 This is the fancy term we use to describe a document that allows us to combine
@@ -65,8 +64,7 @@ Rmd files is just one type of dynamic document that you will find in RStudio.
 In fact, RStudio provides other file formats that can be used
 as dynamic documents: e.g. `.Rnw`, `.Rpres`, `.Rhtml`, etc.
 
-
-### Anatomy of an `Rmd` file
+## Anatomy of an `Rmd` file
 
 The structure of an `.Rmd` file can be divided in two parts: 1) a __YAML header__,
 and 2) the __body__ of the document. In addition to this structure, you should
@@ -95,8 +93,7 @@ There are two types of blocks of code: 1) __code chunks__, and
 2) __inline code__. Code chunks are lines of text separated from any lines of
 narrative text. Inline code is code inserted within a line of narrative text .
 
-
-### How does an Rmd file work?
+## How does an Rmd file work?
 
 Rmd files are plain text files. All that matters is the syntax of its content.
 The content is basically divided in the header, and the body.
@@ -123,8 +120,7 @@ Sometimes, nothing is executed nor included.
 Depending on the specified output format (e.g. HTML, pdf, word), all the
 components are assembled, and one single document is generated.
 
-
-### Yet Another Syntax to Learn
+## Yet Another Syntax to Learn
 
 R markdown (`Rmd`) files use [markdown](https://daringfireball.net/projects/markdown/)
 as the main syntax to write content.Markdown is a very lightweight type of markup
@@ -140,7 +136,7 @@ In an Rmd file, a hash `#` that is inside a code chunk will be treated as
 an R comment. A hash outside a code chunk, will be treated as markdown syntax,
 making its associated text a given type of heading.
 
-### Code chunks
+## Code chunks
 
 There are dozens of options available to control the executation of the code,
 the formatting and display of both the commands and the output, the display
@@ -173,7 +169,7 @@ Additionally, you can include inline code within your work. If you're describing
 results, you don't want to hard-code a number or the amount of repititions you ran.
 Instead, include variables or short functions as **r 2 + 2**, which is rendered as `r 2+2`.
 
-### LaTeX
+## LaTeX
 
 Rmarkdown files render LaTeX through an external generator. This means that you can
 write any math equations or LaTeX syntax within a specific chunk, and install the

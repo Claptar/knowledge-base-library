@@ -5,21 +5,20 @@ source_file: sources/berkeley-stat153/spring-2026/public/homework/Stat248_Homewo
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`public/homework/Stat248_Homework2.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat248_Homework2.ipynb) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Stat 248 - Homework 2 - YOUR NAME HERE
 
-**Source:** [`public/homework/Stat248_Homework2.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/homework/Stat248_Homework2.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+Split into 5 sections.
 
-Split into 6 sections.
-
-1. [Stat 248 - Homework 2 - YOUR NAME HERE](01-stat-248---homework-2---your-name-here.md)
-2. [Some imports that will probably be helpful for you](02-some-imports-that-will-probably-be-helpful-for-you.md)
-3. [INSERT CODE HERE](03-insert-code-here.md)
-4. [FILL IN CODE](04-fill-in-code.md)
-5. [FILL IN CODE](05-fill-in-code.md)
-6. [FILL IN CODE](06-fill-in-code.md)
+1. [Collaborated with](01-collaborated-with.md)
+2. [Q2. Choosing covariates for multiple linear regression](02-q2-choosing-covariates-for-multiple-linear-regression.md)
+3. [Q3. Sinusoidal regression](03-q3-sinusoidal-regression.md)
+4. [Q6. Ridge regression vs. LASSO](04-q6-ridge-regression-vs-lasso.md)
+5. [Q8. Sinusoidal regression and covariance of estimators](05-q8-sinusoidal-regression-and-covariance-of-estimators.md)
 
 ---
 

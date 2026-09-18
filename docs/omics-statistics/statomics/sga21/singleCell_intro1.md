@@ -2,15 +2,15 @@
 title: Single-cell RNA-sequencing intro
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_intro1.Rmd
 source_file: sources/statomics-sga21/singleCell_intro1.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Single-cell RNA-sequencing intro
+> **Converted source.** [`singleCell_intro1.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_intro1.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`singleCell_intro1.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_intro1.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+# Single-cell RNA-sequencing intro
 
 ```r
 if(!"BiocManager" %in% installed.packages()[,1]){
@@ -20,7 +20,6 @@ if(!"scRNAseq" %in% installed.packages()[,1]){
   BiocManager::install("scRNAseq")
 }
 ```
-
 
 ```r
 suppressPackageStartupMessages(library(scRNAseq))
@@ -35,11 +34,9 @@ sce <- sce[,!is.na(colData(sce)$cluster)]
 sce
 ```
 
-
  - Explore this dataset. What do you think is different to these data as compared to a bulk RNA-seq dataset?
  - Try visualizing the structure of this dataset using tools we have worked with before. For example, make a PCA and MDS plot. You can color the cells according to the cluster labels in the `colData`.
  - Try visualizing the structure of this dataset using any tool you want.
-
 
 After trying:
 

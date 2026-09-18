@@ -3,68 +3,75 @@ title: 5 Nonlinear Regression
 source: https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/LectureFive153248Fall2025.pdf
 source_file: sources/berkeley-stat153/fall-2025/LectureFive153248Fall2025.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
+
+> **Reconstructed by a model.** [`LectureFive153248Fall2025.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/LectureFive153248Fall2025.pdf) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
 # 5 Nonlinear Regression
 
-**Source:** [`LectureFive153248Fall2025.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/LectureFive153248Fall2025.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+We shall next start our discussion on models in which certain parameters appear in a non-linear fashion. A simple example is:
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+$$
+y_t = \beta_0 + \beta_1 t + \beta_2 \text{ReLU}(t - c) + \epsilon_t \tag{8}
+$$
 
-We shall next start our discussion on models in which certain parameters appear in a nonlinear fashion. A simple example is:
+with $\epsilon_t \overset{\text{i.i.d}}{\sim} N(0, \sigma^2)$. Here $\text{ReLU}(t - c) = (t - c)_+$ equals $0$ if $t \le c$ and equals $t - c$ if $t \ge c$. We can also write
 
+$$
+\text{ReLU}(t - c) = (t - c)_+ = (t - c)I\{t > c\} = \max(t - c, 0).
+$$
 
-i.i.d with _ϵt ∼ N_ (0 _, σ_<sup>2</sup> ). Here ReLU( _t − c_ ) = ( _t − c_ )+ equals 0 if _t ≤ c_ and equals _t − c_ if _t ≥ c_ . We can also write
+$(\cdot)_+$ is also called the positive part function, or, the ramp function.
 
-ReLU( _t − c_ ) = ( _t − c_ )+ = ( _t − c_ ) _I{t > c}_ = max( _t − c,_ 0) _._
+The model (8) says that for times $t \le c$, the slope of the regression line is $\beta_1$, while for $t > c$, the slope changes to $(\beta_1 + \beta_2)$. We shall refer to (8) as the 'Change of Slope' model. An alternative name for this model is "Broken-stick regression". This is because the function
 
-( _·_ )+ is also called the positive part function, or, the ramp function.
-
-The model (8) says that for times _t ≤ c_ , the slope of the regression line is _β_ 1, while for _t > c_ , the slope changes to ( _β_ 1 + _β_ 2). We shall refer to (8) as the ’Change of Slope’ model. An alternative name for this model is “Broken-stick regression”. This is because the function
-
+$$
+t \mapsto \beta_0 + \beta_1 t + \beta_2 \text{ReLU}(t - c)
+$$
 
 resembles a broken stick.
 
-The unknown parameters for this model are _c, β_ 0 _, β_ 1 _, β_ 2 as well as _σ_ . The unknown parameter _c_ makes (8) a nonlinear regression model. If _c_ were known, then (8) would be a linear regression model:
+The unknown parameters for this model are $c, \beta_0, \beta_1, \beta_2$ as well as $\sigma$. The unknown parameter $c$ makes (8) a nonlinear regression model. If $c$ were known, then (8) would be a linear regression model:
 
+$$
+y = X_c \beta + \epsilon \tag{9}
+$$
 
 with
 
+$$
+X_c = \begin{pmatrix}
+1 & 1 & \text{ReLU}(1 - c) \\
+1 & 2 & \text{ReLU}(2 - c) \\
+1 & 3 & \text{ReLU}(3 - c) \\
+\cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot \\
+\cdot & \cdot & \cdot \\
+1 & n & \text{ReLU}(n - c)
+\end{pmatrix} \quad \text{and } \beta := \begin{pmatrix} \beta_0 \\ \beta_1 \\ \beta_2 \end{pmatrix} \text{ and } \epsilon = \begin{pmatrix} \epsilon_1 \\ \epsilon_2 \\ \cdot \\ \cdot \\ \cdot \\ \epsilon_n \end{pmatrix}.
+$$
 
-5
-
-### **5.1 Estimation of** _c, β_ 0 _, β_ 1 _, β_ 2 _, σ_
+## 5.1 Estimation of $c, \beta_0, \beta_1, \beta_2, \sigma$
 
 Least squares again is the most basic estimation procedure. The sum of squares is given by:
 
+$$
+S(\beta_0, \beta_1, \beta_2, c) := \sum_{t=1}^n (y_t - \beta_0 - \beta_1 t - \beta_2 \text{ReLU}(t - c))^2.
+$$
 
-We need to minimize this over all the four variables _β_ 0 _, β_ 1 _, β_ 2 _, c_ . Using matrix notation, we can write
+We need to minimize this over all the four variables $\beta_0, \beta_1, \beta_2, c$. Using matrix notation, we can write
 
+$$
+S(\beta, c) = \|y - X_c \beta\|^2.
+$$
 
-If we fix _c_ , then it is easy to minimize _S_ ( _β, c_ ) over _β_ . This is the same as linear regression and the minimizing _β_ is given by:
+If we fix $c$, then it is easy to minimize $S(\beta, c)$ over $\beta$. This is the same as linear regression and the minimizing $\beta$ is given by:
 
-
-and the smallest value of _S_ ( _β, c_ ) for fixed _c_ is _S_ ( _β_<sup>ˆ</sup> _c, c_ ) which is just the RSS in the multiple linear regression with fixed _c_ . We use the notation:
-
-
-The least squares estimates of _β_ and _c_ can therefore be found in the following way:
-
-1. Fix a finite set of possible values of _c_ . In this change of slope model, it is reasonable to assume that _c ∈{_ 1 _, . . . , n}_ .
-
-2. For each value of _c_ in the chosen set, calculate _β_<sup>ˆ</sup> _c_ and define _RSS_ ( _c_ ) = _S_ ( _β_<sup>ˆ</sup> _c, c_ ).
-
-3. Take _c_ ˆ to be the value of _c_ which minimizes _RSS_ ( _c_ ).
-
-4. Take _β_ = _β_<sup>ˆ</sup> _c_ ˆ.
-
-We shall revisit this and also look at uncertainty quantification in this model next week .
-
-6
+\$\$
+\hat{\beta}_c := (X_c^T X_c)^{-1} X_c
 
 ---
 

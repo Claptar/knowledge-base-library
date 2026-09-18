@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/testing-linear.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/testing-linear.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-linear.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # t and F Distributions
 
-**Source:** [`reader/testing-linear.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-linear.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-### Definitions and Properties
+## Definitions and Properties
 
 1. $\chi^2_d$: If $X_i \sim N(0,1)$ iid, then $V = \sum_{i=1}^d X_i^2 \sim \chi^2_d$
    - $\mathbb{E}[V] = d$, $\text{Var}(V) = 2d$
@@ -31,7 +31,7 @@ Note: If $T \sim t_d$, then $T^2 \sim F_{1,d}$
 
 Recall: $Z \sim N_d(\mu, \Sigma)$ iff $A Z + b \sim N_d(A\mu + b, A\Sigma A^T)$
 
-### Geometric Interpretation
+## Geometric Interpretation
 
 Let $X \sim N_n(\mu, I_n)$, $\mu = \alpha e_1$, where $\{e_1, \ldots, e_n\}$ is a complete orthonormal basis (e.g., via Gram-Schmidt)
 
@@ -46,7 +46,7 @@ $Z_{2:n} = Q_{2:n}' X \sim N(0, I_{n-1})$
 
 $S^2 = \|Z_{2:n}\|^2 = \sum_{i=2}^n Z_i^2$ and $Z_1$ independent (we already knew from Basu)
 
-### Geometric Interpretation (continued)
+## Geometric Interpretation (continued)
 
 Independent of total magnitude under $H_0$:
 

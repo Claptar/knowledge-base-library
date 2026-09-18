@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit5-programming.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 4. Types and data structures
+> **Converted source.** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 4. Types and data structures
 
 ## Data structures
 
@@ -23,7 +23,6 @@ We'll also see more complicated data structures when we consider objects in the 
 ### Overview and static vs. dynamic typing
 
 The term 'type' refers to how a given piece of information is stored and what operations can be done with the information.
-
 
 'Primitive' types are the most basic types that often relate directly to how data are stored in memory or on disk (e.g., boolean, integer, numeric (real-valued, aka *double* or *floating point*), character, pointer (aka *address*, *reference*).
 
@@ -65,7 +64,6 @@ most importantly lists, tuples, and dictionaries, as well
 as basic scalar types such as integers, floats, and strings.
 
 Let's look at the type of various built-in data structures in Python and in numpy, which provides important types for numerical computing.
-
 
 ```python
 x = 3
@@ -175,7 +173,56 @@ except Exception as error:
     print(error)
 
 myList = [1, 3, 5, 9, 4, 7]
+# myList[2.0]    # What do you think is going to happen?
+# myList[2.73]   # What do you think is going to happen?
+```
+
+R is less strict and will do conversions in some cases that Python won't:
+
+```r
+x <- rnorm(5)
+x[2.0]
+x[2.73]
+```
+
+Question: What are the advantages and disadvantages of the different behaviors of Python and R?
+
+### Dataframes
+
+Hopefully you're also familiar with the Pandas dataframe type.
+
+Pandas picked up the idea of dataframes from R and functionality is similar in many ways to
+what you can do with R's `dplyr` package.
+
+`dplyr` and `pandas` provide a lot of functionality for the "split-apply-combine"
+framework of working with "rectangular" data. Unfortunately, using Pandas can be a bit hard to learn/remember. I suggest looking into learning [`polars`](../unit2-dataTech/index.md) as an alternative.
+
+Often analyses are done in a stratified fashion - the same operation or
+analysis is done on subsets of the data set. The subsets might be
+different time points, different locations, different hospitals,
+different people, etc.
+
+The split-apply-combine framework is intended to operate in this kind of
+context:
+  - first one splits the dataset by one or more variables,
+  - then one does something to each subset, and
+  - then one combines the results.
+
+split-apply-combine is also closely related to the famous Map-Reduce framework
+underlying big data tools such as Hadoop and Spark.
+
+It's also very similar to standard SQL queries involving filtering, grouping, and
+aggregation.
+
+### Python object protocols
+
+There are a number of broad categories of kinds of objects: `mapping`, `number`, `sequence`, `iterator`. These are called object protocols.
+
+All objects that fall in a given category share key characteristics. For example `sequence` objects have notions of length and accessing (ordered) elements by index, while `iterator` objects have notions of "next" and of "stopping".
+
+Object protocols are implemented based on the [Python object model](07-6-object-oriented-programming-oop.md#the-python-object-model-and-dunder-methods) using **dunder** methods.
+For a class (such as one you write) to implement an object protocol, it must define a particular set of class methods, discussed at the link above.
 
 ---
 
-[← 3. Modules and packages](04-3-modules-and-packages.md) · [Up: contents](index.md) · [myList[2.0] # What do you think is going to happen? →](06-mylist-2-0-what-do-you-think-is-going-to-happen.md)
+[← 3. Modules and packages](04-3-modules-and-packages.md) · [Up: contents](index.md) · [5. Programming paradigms: object-oriented and functional programming →](06-5-programming-paradigms-object-oriented-and-functional-progr.md)

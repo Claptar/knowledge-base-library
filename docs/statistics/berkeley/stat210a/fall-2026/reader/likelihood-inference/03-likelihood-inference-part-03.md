@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/likelihood-inference.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Likelihood inference Part 03 —
+> **Converted source.** [`reader/likelihood-inference.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/likelihood-inference.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/likelihood-inference.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/likelihood-inference.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Likelihood inference Part 03 —
 
 Test $H_0: \theta = \theta_0$ vs $H_1: \theta \neq \theta_0$
 
@@ -26,13 +26,13 @@ $\nabla \ell_n(\theta_0; X)^T \hat{J}_n^{-1}(\theta_0) \nabla \ell_n(\theta_0; X
 
 Can do 1-sided tests
 
-### Remarks
+## Remarks
 - No quadratic approx, no MLE
 - No need to estimate Fisher info at $\theta_0$
 - Can be generalized to case with nuisance params
 - Typically estimate via MLE on $\Theta_0$
 
-### Score Test is Invariant to Reparameterization
+## Score Test is Invariant to Reparameterization
 
 Assume $\Theta \subset \mathbb{R}^d$, $\eta = g(\theta)$, $\Psi = g(\Theta)$
 
@@ -48,7 +48,7 @@ So $\nabla_\eta \ell_\eta(x)^T J_\eta^{-1}(\eta) \nabla_\eta \ell_\eta(x) = \nab
 
 if $\eta_0 = g(\theta_0)$
 
-### Example: 1-Parameter Exponential Family
+## Example: 1-Parameter Exponential Family
 
 $X_1, \ldots, X_n \stackrel{\text{iid}}{\sim} e^{\eta T(x) - A(\eta)} h(x)$
 
@@ -60,7 +60,7 @@ $\hat{\eta}_n = \text{MLE} = A'^{-1}(\bar{T})$
 
 $\frac{\sum T(X_i) - n\mu(\eta_0)}{\sqrt{n\text{Var}_{\eta_0}[T(X)]}} \sim N(0,1)$
 
-### Example: $X_1, \ldots, X_n \stackrel{\text{iid}}{\sim} \text{Laplace}(\theta, 2\sqrt{2})$
+## Example: $X_1, \ldots, X_n \stackrel{\text{iid}}{\sim} \text{Laplace}(\theta, 2\sqrt{2})$
 
 Test $H_0: \theta = 0$ vs $H_1: \theta \neq 0$ (two-tailed)
 
@@ -82,7 +82,7 @@ More generally, one-sided score test is almost UMP for nearby alternatives
 
 $p_\theta(x) \approx p_0(x)[1 + \epsilon \ell'_0(X)]$ for small $\epsilon > 0$
 
-### Example: Pearson's $\chi^2$ Test (Goodness of Fit)
+## Example: Pearson's $\chi^2$ Test (Goodness of Fit)
 
 $N = (N_1, \ldots, N_d) \sim \text{Multi}(n, \pi)$, $\pi_i \geq 0$, $\sum \pi_i = 1$
 
@@ -95,7 +95,7 @@ $\nabla \ell_n(\pi; N) = (N_1/\pi_1, \ldots, N_d/\pi_d)^T - n1_d$
 
 $\hat{\pi} = \text{MLE} = (N_1/n, \ldots, N_d/n)$
 
-$J_n(\pi) = n[\text{diag}(\pi_1^{-1}, \ldots, \pi_d^{-1})
+\$J_n(\pi) = n[\text{diag}(\pi_1^{-1}, \ldots, \pi_d^{-1})
 
 ---
 

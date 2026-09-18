@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/05-statisticalInference-twosampleT.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Introduction
+> **Converted source.** [`theory/05-statisticalInference-twosampleT.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/05-statisticalInference-twosampleT.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/05-statisticalInference-twosampleT.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/05-statisticalInference-twosampleT.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Introduction
 
 ```r
 knitr::opts_chunk$set(include = TRUE, comment = NA, echo = TRUE,
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(include = TRUE, comment = NA, echo = TRUE,
 library(tidyverse)
 ```
 
-#Smelly armpit example
+## Smelly armpit example
 
 - Smelly armpits are not caused by sweat, itself. The smell is caused by specific micro-organisms belonging to the group of *Corynebacterium spp.* that metabolise sweat.
 Another group of abundant bacteria are the *Staphylococcus spp.*, these bacteria do not metabolise sweat in smelly compounds.
@@ -39,14 +39,14 @@ Another group of abundant bacteria are the *Staphylococcus spp.*, these bacteria
 
 ---
 
-## Import the data
+### Import the data
 
 ```r
 ap<-read_csv("https://raw.githubusercontent.com/GTPB/PSLS20/master/data/armpit.csv")
 ap
 ```
 
-## Data exploration
+### Data exploration
 
 We plot the direct relative abundances in function of the treatment group. With the ggplot2 library we can easily build plots by adding layers.
 

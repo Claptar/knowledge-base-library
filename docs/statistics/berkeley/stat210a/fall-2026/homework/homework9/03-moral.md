@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework9.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework9.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework9.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework9.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework9.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 The $t$-test of $\mu=0$ that we are familiar with can be derived from the theory of UMPU conditional testing, but we need to additionally use the location family structure to get a conditional interval.
 

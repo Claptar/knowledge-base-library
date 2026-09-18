@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/bayes-estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Frequentist motivation for a Bayes Estimator
+> **Converted source.** [`reader/bayes-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-estimation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/bayes-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Frequentist motivation for a Bayes Estimator
 
 We will motivate Bayes estimation first as a strategy for selecting an estimator in the setting of [Lecture 2](../estimation/index.md). Recall that, when we discussed possible strategies for choosing between different admissible estimators, we suggested using the *average-case risk* to reduce the risk function to a scalar summary. This average must be taken with respect to some measure $\Lambda$ on the parameter space $\Theta$, which we will call the *prior*.
 

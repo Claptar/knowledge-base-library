@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit5-programming.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 1. Text manipulation, string processing and regular expressions (regex)
+> **Converted source.** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 1. Text manipulation, string processing and regular expressions (regex)
 
 Text manipulations in Python have a number of things in common with UNIX, R,
 and Perl, as many of the ideas/software evolved from UNIX. When I use the term
@@ -29,7 +29,6 @@ The `re` package provides Perl-style regular expressions, but it doesn't seem to
 ### Finding patterns
 
 In Python, you can apply a matching function and then query the result to get information about what was matched and where in the string.
-
 
 ```python
 text = "Here's my number: 919-543-3300."
@@ -50,7 +49,6 @@ We can instead use `findall` to get all the matches.
 ```python
 re.findall("\\d+", text)
 ```
-
 
 This is equivalent to:
 
@@ -99,7 +97,6 @@ text = "Here's my number: 919-543-3300. They bought 731 hats. Please call 1.919.
 re.findall("\\d{3}[-.]\\d{3}[-.]\\d{4}", text)
 ```
 
-
 As another example, the phone number detection problem could have been done a bit more compactly (as well as more generally to allow for an initial "1-" or "1.") as:
 
 ```python
@@ -108,7 +105,6 @@ re.findall("((1[-.])?(\\d{3}[-.]){1,2}\\d{4})", text)
 ```
 
 Question: the above regex would actually match something that is not a valid phone number. What can go wrong?
-
 
 When you are searching for all occurrences of a pattern in a large text object, it may be beneficial to use `finditer`:
 
@@ -153,7 +149,6 @@ If we only wanted to full pattern without capturing the inner group, we can use 
 ```python
 re.findall("((?:http|ftp):\\/\\/)", text)
 ```
-
 
 Groups are also used when we need to reference back to a detected pattern when doing a replacement. This is why they are sometimes referred to as "capturing groups". For example, here we’ll find any numbers and add underscores before and after them:
 
@@ -222,7 +217,6 @@ Notice what happens because of greedy matching.
 
 One way to avoid greedy matching is to use a `?` after the repetition specifier.
 
-
 ```python
 re.sub("<.*?>", "", text)
 ```
@@ -254,7 +248,6 @@ In Python 3.11, it was fine to use `\d`, but now we need `\\d`, because Python n
 (like `\n`, but `\d` doesn't exist) and doesn't pass it directly along as regex syntax.
 
 Here are some examples of using special characters.
-
 
 ```python
 tmp = "Harry said, \"Hi\""
@@ -318,7 +311,6 @@ On a more involved note, searching for an actual backslash gets even more
 complicated (you can search online for ["backslash plague"](https://docs.python.org/3/howto/regex.html#the-backslash-plague) or "backslash hell"), because we need to pass two backslashes as the regular expression, so that a literal backslash is searched for. However, to pass two backslashes, we need to escape each of them with a backslash so Python doesn't treat each backslash as part of a special character. So that's four backslashes to search for a single backslash! Yikes. One rule of
 thumb is just to keep entering backslashes until things work!
 
-
 ```python
 ## Use and search for an actual backslash
 tmp = "something \\ other\n"
@@ -339,7 +331,6 @@ re.search(r"\\", tmp)
 ```
 
 The use of the raw string `r"\\"` tells Python to treat this string literal without any escaping, but that does not apply to the regex engine (or else we would have used a single backslash), so we do need the second backslash. So yes. This can be quite confusing.
-
 
 !!! warning "Warning"
 Be careful when cutting and pasting from documents that are not text

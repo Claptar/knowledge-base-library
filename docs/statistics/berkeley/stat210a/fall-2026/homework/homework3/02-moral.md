@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework3.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework3.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework3.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework3.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework3.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 The structure of the families and subfamilies determines the properties of the sufficient statistic.
 
@@ -51,6 +51,10 @@ For the following parts, let $\mathcal{P}= \{P_\theta:\; \theta \in \Theta\}$ be
 
     **Hint:** suppose $f$ is a counterexample function; what is $f(0)$? It may be helpful to recall that $\int f\,d  \mu$ is undefined unless either $\int \max(0,f(x))\,d  \mu(x)$ or $\int \max(0, -f(x))\,d  \mu(x)$ is finite; as a result $\int f\,d  \mu = 0 \Rightarrow \int|f|\,d  \mu < \infty$.
 
+## Moral 1: {#moral-1}
+
+The definition of a complete statistic is easier to remember if we recall its interpretation as saying that the set of distributions $P_\theta^T$ “spans” a certain vector space, so that only the zero function is orthogonal to all $P_\theta^T$.
+
 ---
 
-[← Homework3 Part 01 —](01-homework3-part-01.md) · [Up: contents](index.md) · [Moral 1 →](03-moral-1.md)
+[← Homework3 Part 01 —](01-homework3-part-01.md) · [Up: contents](index.md) · [Moral 2 →](03-moral-2.md)

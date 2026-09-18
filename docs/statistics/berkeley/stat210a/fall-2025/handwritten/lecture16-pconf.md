@@ -1,54 +1,96 @@
 ---
-title: Lecture 16 — pconf
+title: $p$-Values, Confidence Regions
 source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture16-pconf.pdf
 source_file: sources/berkeley-stat210a/fall-2025/handwritten/lecture16-pconf.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Lecture 16 — pconf
+> **Reconstructed by a model.** [`handwritten/lecture16-pconf.pdf`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture16-pconf.pdf) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`handwritten/lecture16-pconf.pdf`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture16-pconf.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# $p$-Values, Confidence Regions
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+### Outline
 
-f<sup>Values</sup> Confidence Regions
+1) $p$-Values
+2) Confidence regions
+3) (Mis-)interpreting tests
 
-## Outline
+---
 
-Values Jp 2 Confidence regions 3 Mis interpreting<sup>tests</sup>
+## $p$-Values
 
+Informal definition: Suppose $\phi(x)$ rejects for large values of $T(x)$.
 
-<!-- Start of picture text -->
-Valuesep<br>X<br>Informal definition Suppose rejects for<br>of X<br>values<br>large<br>that T X is as large<br>Null probability what we observed<br>p x than<br>or larger<br>value<br>I TEX TG p<br>Tcs<br>Tex<br>IPO<br>Ex X Binon n 01 Ho O 0.5 vs H O 0.5<br>One sided test rejects for large<br>Po.s 2x x<br>plx Po<br>EI X N 0,1 Ho O 0 vs H 040<br>Two sided test rejects for large T X 1 1<br>191 1 za<br>x<br>where<br>X<br>is<br>The two sided p<br>p value<br>1 1<br>x IP 1 1<br>p<br>2 1 I 1 1<br><!-- End of picture text -->
+$$p(x) = \text{``Null probability that } T(X) \text{ is as large or larger than what we observed''}$$
 
+$$= \text{``}\mathbb{P}_{H_0}(T(X) \ge T(x))\text{''}$$
 
-<!-- Start of picture text -->
-II<br>i<br>www.thee<br>aI<br>stochastically larger<br>Prof For Oe a<br>Po<br>pix<br>Proof x so if all e o<br>p<br>x a x 1 all e o<br>Po ate<br>Po p<br>Po date x 1<br>to Pote<br>α<br>x can be of as a<br>p thought general purpose<br>test statistic for x o<br>rejects<br>p<br><!-- End of picture text -->
+$$= \sup_{\theta \in \Theta_0} \mathbb{P}_\theta(T(X) \ge T(x))$$
 
-value Interpretationofp
+**Ex** $X \sim \text{Binom}(n, \theta) \quad H_0: \theta \le 0.5 \quad \text{vs} \quad H_1: \theta > 0.5$
 
+One-sided test rejects for large $X$
 
-<!-- Start of picture text -->
-so<br>interesting<br>accept rejectdE.EE<br>0 is<br>care<br>we how big<br>usually<br>0<br>value doesn't imply big<br>p 0 either<br>tiny<br>doesn't imply small<br>big p value<br>Def P Po O<br>o<br>if<br>for g<br>is<br>X a Iconfidenceset<br>Oe<br>d<br>0 t<br>Po X<br>g<br>subject object<br>verb<br>0<br>if x 7g<br>CX<br>We covers glo<br>say<br>Polcas<br>go.IE<br>coglo<br>edtfiffIP<br>random not o<br>CX is<br>Notes g<br>as<br>Often misinterpreted Bayesian guarantee<br>C X has a 95 chance of covering<br>Say<br>not glo has a 95 chance of being in C<br>0 0.5 1.5<br>never 95 chance e.g<br>g<br><!-- End of picture text -->
+$$p(x) = \mathbb{P}_{0.5}(X \ge x) = \sup_{\theta \le 0.5} \mathbb{P}_\theta(X \ge x)$$
 
+**Ex** $X \sim N(\theta, 1) \quad H_0: \theta = 0 \quad \text{vs.} \quad H_1: \theta \ne 0$
 
-# Confidence interval for median
+Two-sided test rejects for large $T(X) = |X|$
 
-modelXi Nonparani.cl F median F F 1 2 assume XndF.Fanyadfg well defined
+$$(\iff \phi(x) = \mathbf{1}\{|X| > z_{\alpha/2}\})$$
 
+The two-sided $p$-value is $p(x)$ where
 
-Confidence Intervals Bounds
+$$p(x) = \mathbb{P}_0(|X| > |x|)$$
+$$= 2(1 - \Phi(|x|))$$
 
+---
 
-<!-- Start of picture text -->
-Xo<br>x O O o<br>X to e<br>Ef Exp o<br>Xo<br>CDF<br>IPO X ex I e<br>Is Invert test for Ho O E Oo<br>Solve a<br>1Pa X doo<br>e<br>Oo<br>Oologl's 0<br>X Ic Oo Oo Z<br>X<br>Ego s<br>UI Similar X C o In<br>Equaltailed<br>Invert equal tiled test of Ho 0 0<br>OEx d X x<br>to<br>equated Toto Teo<br>Ho O Oo<br>a no<br>Cox<br>Eg<br>as<br>Egos Eli<br>Similar for<br>umpu 2 sided test<br><!-- End of picture text -->
+### Formal definition: $\mathcal{P}$, $\Theta_0$, $\Theta_1$
 
-CMis JInterpretingHypothesistests
+Not all tests reject for large $T(X)$
+(e.g. UMPU two-sided test)
+
+Assume we have a test $\phi_\alpha$ for each significance level, $\sup_{\theta \in \Theta_0} \mathbb{E}_\theta \phi_\alpha(X) \le \alpha$ with $\phi_\alpha(x) \nearrow$ in $\alpha$
+
+Then $p(x) = \sup\{\alpha: \phi_\alpha(x) < 1\} = \inf\{\alpha: \phi_\alpha(x) = 1\}$
+
+These definitions coincide if $\phi$ rejects for large $T$
+
+### Prop
+
+If $\phi_\alpha$ rejects for large $T(x)$ with tight cutoffs:
+$$c_\alpha = \min\{c : \mathbb{P}_\theta(T > c) \le \alpha, \text{ all } \theta \in \Theta_0\}$$
+Then $p(x) = \sup_{\theta \in \Theta_0} \mathbb{P}_\theta(T(X) \ge T(x))$
+
+#### Proof
+Let $p_1(x) = \sup_{\theta \in \Theta_0} \mathbb{P}_\theta(T(X) \ge T(x))$, $p_2(x) = \sup\{\alpha : \phi_\alpha(x) < 1\}$
+
+$$p_1(x) > \alpha \iff \mathbb{P}_\theta(T(X) \ge T(x)) > \alpha, \text{ for some } \theta \in \Theta_0$$
+$$\iff x < c_\alpha, \text{ or } c_\alpha = x \text{ and } \gamma_\alpha < 1$$
+$$\iff \phi_\alpha(x) < 1$$
+
+Therefore, $p_2(x) = \sup\{\alpha: p_1(x) > \alpha\} = p_1(x)$ $\blacksquare$
+
+---
+
+## Super-Uniformity
+
+Under $H_0$, the $p$-value is **super-uniform**
+(stochastically larger than $\text{Unif}[0,1]$)
+
+### Prop
+For $\theta \in \Theta_0$, $\mathbb{P}_\theta(p(X) \le \alpha) \le \alpha$
+
+#### Proof
+$p(x) \le \alpha \iff \phi_{\alpha+\varepsilon}(x) = 1$, all $\varepsilon > 0$
+
+$$\mathbb{P}_\theta(p(X) \le \alpha) = \mathbb{P}_\theta(\phi_{\alpha+\varepsilon}(X) = 1, \text{ all } \varepsilon > 0)$$
+$$= \lim_{\varepsilon \downarrow 0} \mathbb{P}_\theta(\phi_{\alpha+\varepsilon}(X) = 1)$$
+\$\$\le \lim_{\varepsilon \downarrow 0} \mathbb{E}_\theta \phi_{\alpha+\varepsilon
 
 ---
 

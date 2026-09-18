@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat230a/spring-2025/unit2.ipynb
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Unit 02 —
+> **Converted source.** [`unit2.ipynb`](https://github.com/berkeley-stat230a/spring-2025/blob/e876671afc2665ae79c2a5263b03c3377f6e2836/unit2.ipynb) — berkeley-stat230a · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`unit2.ipynb`](https://github.com/berkeley-stat230a/spring-2025/blob/e876671afc2665ae79c2a5263b03c3377f6e2836/unit2.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Unit 02 —
 
 ---
 title: "Unit 2: Notebook"

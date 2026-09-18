@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/bayes-interpretation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Example: Hierarchical Gaussian model
+> **Converted source.** [`reader/bayes-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-interpretation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/bayes-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-interpretation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Example: Hierarchical Gaussian model
 
 A closely related example that is worth examining in more detail is the hierarchical Gaussian model. Again, suppose we observe $d$ Gaussian random variables with unit variance, whose location parameters we view as coming from the same Gaussian prior distribution:
 $$
@@ -90,8 +90,8 @@ For $d>2$ we can calculate this expectation, which does not depend on $\zeta$:
 $$
 \begin{aligned}
 \EE\left[\frac{1}{Y}\right]
-&= \int_0^\infty \frac{1}{y}\cdot \frac{1}{\Gamma\left(\frac{d}{2}\right)2^{d/2}} y^{d/2-1}e^{-y/2}\,dy\\[7pt]
-&= \frac{\Gamma\left(\frac{d-2}{2}\right)\cdot 2^{(d-2)/2}}{\Gamma\left(\frac{d}{2}\right)\cdot 2^{d/2}} \cdot \int_0^\infty \frac{1}{\Gamma\left(\frac{d-2}{2}\right)2^{(d-2)/2}} y^{(d-2)/2-1}e^{-y/2}\,dy\\[7pt]
+&= \int_0^\infty \frac{1}{y}\cdot \frac{1}{\Gamma\left(\frac{d}{2}\right)2^{d/2}} y^{d/2-1}e^{-y/2}\,dy[7pt]
+&= \frac{\Gamma\left(\frac{d-2}{2}\right)\cdot 2^{(d-2)/2}}{\Gamma\left(\frac{d}{2}\right)\cdot 2^{d/2}} \cdot \int_0^\infty \frac{1}{\Gamma\left(\frac{d-2}{2}\right)2^{(d-2)/2}} y^{(d-2)/2-1}e^{-y/2}\,dy[7pt]
 &= \frac{\Gamma\left(\frac{d-2}{2}\right)\cdot 2^{(d-2)/2}}{\Gamma\left(\frac{d}{2}\right)\cdot 2^{d/2}},
 \end{aligned}
 $$

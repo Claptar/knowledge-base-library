@@ -5,12 +5,23 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureFour153248Fall2025.ip
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`CodeLectureFour153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFour153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Dataset One: US Population
 
-**Source:** [`CodeLectureFour153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFour153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+---
+title: Linear Regression and Uncertainty Quantification
+---
+
+```python
+import pandas as pd
+import numpy as np
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+```
 
 ```python
 uspop = pd.read_csv("POPTHM_01September2025.csv")
@@ -183,4 +194,4 @@ plt.show()
 
 ---
 
-[Up: contents](index.md) · [Dataset Two: Lake Huron Levels →](02-dataset-two-lake-huron-levels.md)
+Up: contents · Dataset Two: Lake Huron Levels →

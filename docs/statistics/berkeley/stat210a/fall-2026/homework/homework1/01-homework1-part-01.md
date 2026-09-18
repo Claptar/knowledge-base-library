@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework1.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Homework1 Part 01 —
+> **Converted source.** [`homework/homework1.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework1.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework1.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework1.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Homework1 Part 01 —
 
 You may disregard measure-theoretic niceties about conditioning on measure-zero sets, almost-sure equality vs. actual equality, “all functions” vs. “all measurable functions,” etc. (unless the problem is explicitly asking about such issues).
 
@@ -43,6 +43,20 @@ Assume that some measure $\lambda$ exists which satisfies (i)–(iii) and which 
     **Hint:** what does the value of $\lambda(B)$ imply about $\lambda(U)$?
 
 Because the Lebesgue measure satisfies properties (i)–(iii), it follows that $\lambda$ must not be defined for every subset of $U$.
+
+## Moral: {#moral}
+
+One motivation for measure theory is to find a way to exclude counterexamples like this. The pathological sets we’re constructing here do not make it into the Borel $\sigma$-field.
+
+**Problem 2** (A conditional probability paradox).
+
+Let $X,Y \overset{\text{i.i.d.}}{\sim}N(0,1)$. This problem is meant to show that by carelessly conditioning on probability-zero events we can get ourselves into trouble. It is directly inspired by a calculation I personally flubbed in graduate school.
+
+1.  Defining $S = X + Y$ and $D = X - Y$, show $S$ and $D$ are independent and conclude that $$\mathbb{E}[X^2 + Y^2 \mid D] = D^2/2 + 1$$
+
+2.  Now define the polar parameterization $(R,\Theta)$ with $R = \sqrt{X^2 + Y^2}$ and $\Theta \in [0,2\pi)$ such that $X  = R\cos \Theta$ and $Y = R\sin \Theta$. Show that $R$ is independent of $\Theta$ and conclude that $$\mathbb{E}[X^2 + Y^2 \mid \Theta] = 2$$
+
+3.  Use (a) and then (b) to find the expectation of $X^2 + Y^2$ conditional on the event $X = Y$. Can you come up with an intuitive explanation for how we could have arrived at two different answers?
 
 ---
 

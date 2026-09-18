@@ -5,12 +5,24 @@ source_file: sources/berkeley-stat153/spring-2025/CodeLectureEighteen153248Sprin
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`CodeLectureEighteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureEighteen153248Spring2025.ipynb) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Fitting AR(2) to the sunspots dataset
 
-**Source:** [`CodeLectureEighteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureEighteen153248Spring2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+---
+title: AR(p) -- Estimation, Uncertainty and Forecasting
+---
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+from statsmodels.tsa.ar_model import AutoReg
+```
 
 ```python
 sunspots = pd.read_csv('SN_y_tot_V2.0.csv', header = None, sep = ';')
@@ -262,4 +274,4 @@ print(np.column_stack([predvalues, predvalues_sm]))
 
 ---
 
-[Up: contents](index.md) · [DATASET TWO →](02-dataset-two.md)
+Up: contents · DATASET TWO →

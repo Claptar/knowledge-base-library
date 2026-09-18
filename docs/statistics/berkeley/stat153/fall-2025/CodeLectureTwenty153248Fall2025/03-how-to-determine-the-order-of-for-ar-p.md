@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureTwenty153248Fall2025.
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# How to determine the order of $p$ for AR(p)
+> **Converted source.** [`CodeLectureTwenty153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureTwenty153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureTwenty153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureTwenty153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# How to determine the order of $p$ for AR(p)
 
 Here is the method: Calculate PACF(h) for each $h = 1, 2, 3, \dots$. The PACF(h) is defined as the estimate of $\phi_h$ when the AR(h) model is fit to the observed time series data. In other words, PACF(1) is the estimate of $\phi_1$ when AR(1) is fit to the data, PACF(2) is the estimate of $\phi_2$ when AR(2) is fit to the data, and so on. If PACF(h) becomes negligible after a particular value of $h$ (say after $h = p$), then we use $p$ as the AR order.
 

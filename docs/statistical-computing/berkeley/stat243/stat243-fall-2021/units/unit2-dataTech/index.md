@@ -1,29 +1,24 @@
 ---
-title: 'Unit 2: Data technologies'
+title: 1 Data storage and file formats on a computer
 source: https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/units/unit2-dataTech.pdf
 source_file: sources/berkeley-stat243/stat243-fall-2021/units/unit2-dataTech.pdf
 licence: CC0-1.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Unit 2: Data technologies
+> **Reconstructed by a model.** [`units/unit2-dataTech.pdf`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/units/unit2-dataTech.pdf) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`units/unit2-dataTech.pdf`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/units/unit2-dataTech.pdf) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# 1 Data storage and file formats on a computer
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+Split into 5 sections.
 
-Split into 6 sections.
-
-1. [Unit 2: Data technologies](01-unit-2-data-technologies.md)
-2. [Unit 02 — dataTech Part 02 —](02-unit-02-datatech-part-02.md)
-3. [Unit 02 — dataTech Part 03 —](03-unit-02-datatech-part-03.md)
-4. [Unit 02 — dataTech Part 04 —](04-unit-02-datatech-part-04.md)
-5. [Unit 02 — dataTech Part 05 —](05-unit-02-datatech-part-05.md)
-6. [Unit 02 — dataTech Part 06 —](06-unit-02-datatech-part-06.md)
+1. [1 Data storage and file formats on a computer](01-1-data-storage-and-file-formats-on-a-computer.md)
+2. [2 Reading data from text files into R](02-2-reading-data-from-text-files-into-r.md)
+3. [3 Output from R](03-3-output-from-r.md)
+4. [4 Webscraping and working with HTML, XML, and JSON](04-4-webscraping-and-working-with-html-xml-and-json.md)
+5. [5 File and string encodings](05-5-file-and-string-encodings.md)
 
 ---
 

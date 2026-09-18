@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/probability.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Probability as a measure
+> **Converted source.** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Probability as a measure
 
 **Measure theory** is an area of mathematics concerned with measuring the "size" of subsets of a certain set. Soon after it was developed in the the early twentieth century, the great Soviet mathematician Kolmogorov realized it could be applied to give a rigorous grounding to probability theory, it was a major advance in understanding and resolving certain [paradoxes](https://en.wikipedia.org/wiki/Bertrand_paradox_(probability)) in probability theory. David Aldous gives a nice [discussion](https://www.stat.berkeley.edu/~aldous/Real_World/kolmogorov.html) of this history.
 

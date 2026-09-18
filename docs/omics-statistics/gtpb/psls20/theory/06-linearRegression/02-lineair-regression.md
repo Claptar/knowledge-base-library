@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/06-linearRegression.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Lineair Regression
+> **Converted source.** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Lineair Regression
 
 - Statistical method to assess association between two variables $(X_i, Y_i)$, measured on each subject $i = 1, ..., n$.
 
@@ -41,8 +41,6 @@ $$E[Y_i|X_i=x]=g(x)$$
 Hence, $\epsilon_i$ is on average 0 for subjects with same  $X_i$:
 $$E[\epsilon_i|X_i]=0$$
 
-## Lineair regression
-
 - To obtain *accurate* and *interpretable* results one often choose $g(x)$ to be a linear function with unknown parameter.
 
 $$E(Y|X=x)=\beta_0 + \beta_1 x$$
@@ -54,11 +52,13 @@ unknown \alert{intercept} $\beta_0$ and
 
 - *Efficient data-analysis*: because it uses all observations to learn on the expected outcome for $X=x$.
 
-
 ## Use
 
 - *Prediction*: when $Y$ is unknown but $X$ is known we can predict $Y$ using
-$$E(Y|X=x)=\beta_0 + \beta_1 x$$
+
+$$
+E(Y|X=x)=\beta_0 + \beta_1 x
+$$
 
 - *Association*: biological relation between variable $X$ and response $Y$
 - *Intercept:* $E(Y|X=0)=\beta_0$

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2026/units/unit6-parallel.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 4. Introduction to Dask
+> **Converted source.** [`units/unit6-parallel.qmd`](https://github.com/berkeley-stat243/fall-2026/blob/c74395ec9c420005c80bbcc5f315729aaee3dc32/units/unit6-parallel.qmd) — berkeley-stat243 · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit6-parallel.qmd`](https://github.com/berkeley-stat243/fall-2026/blob/c74395ec9c420005c80bbcc5f315729aaee3dc32/units/unit6-parallel.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 4. Introduction to Dask
 
 Before we illustrate implementation of various kinds of parallelization,
 I'll give an overview of the `Dask` package, which we'll use for many
@@ -63,7 +63,6 @@ This table shows the different types of schedulers.
 |    threads*|threads within current Python session   |      no     |            no |
 |    processes  |       background Python sessions       |      no     |            yes |
 |distributed**|Python sessions across multiple nodes   |     yes     |            yes |
-
 
 (*) Note that because of Python's Global Interpreter Lock (GIL) (which
     prevents threading of Python code), many computations done in pure

@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/hypothesis-testing.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/hypothesis-testing.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/hypothesis-testing.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Optimal testing
 
-**Source:** [`reader/hypothesis-testing.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/hypothesis-testing.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-### Likelihood Ratio Test
+## Likelihood Ratio Test
 
 $$
 \newcommand{\LR}{\textnormal{LR}}
@@ -42,7 +42,6 @@ For purposes of defining likelihood ratio tests, we  use the convention that $\L
 $$
 \maxz \int \phi(x)p_1(x)\,d\mu(x) \quad \text{s.t. } \int \phi(x)p_0(x)\,d\mu(x) \leq \alpha.
 $$
-
 
 The Lagrange form is:
 
@@ -75,7 +74,7 @@ $$
 \gamma = \frac{\alpha - \PP_0(\LR(X) > c)}{\PP_0(\LR(X) = c)}.
 $$
 
-### Example: Binomial
+## Example: Binomial
 
 To give a sense of how this works, suppose that we observe a binomial random variable measuring the same-side bias of some human coin flipper
 $$
@@ -118,7 +117,7 @@ Just as before, the likelihood ratio is increasing in $X$, so the test rejects f
 
 Next we will turn this into a general condition for the same test to be optimal across the entire alternative.
 
-### Uniformly most powerful tests
+## Uniformly most powerful tests
 
 **Definition:** We say a test $\phi^*$ is a *uniformly most powerful* (UMP) level-$\alpha$ test of $H_0$ against $H_1$ if it is a valid level $\alpha$ test, and for any other valid test $\phi$, we have $\beta_{\phi^*}(\theta) \geq \beta_\phi(\theta)$ for all $\theta \in \Theta_1$.
 

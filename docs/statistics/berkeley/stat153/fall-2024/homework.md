@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2024/homework.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Homework
+> **Converted source.** [`homework.qmd`](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/homework.qmd) — berkeley-stat153 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework.qmd`](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/homework.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Homework
 
 - Homework 1: [pdf](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/homeworks/homework1/homework1.pdf), [Rmd](homeworks/homework1/homework1/index.md),  [source](https://github.com/berkeley-stat153/fall-2024/tree/master/homeworks/homework1)
 - Homework 2: [pdf](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/homeworks/homework2/homework2.pdf), [Rmd](homeworks/homework2/homework2/index.md),  [source](https://github.com/berkeley-stat153/fall-2024/tree/master/homeworks/homework2)

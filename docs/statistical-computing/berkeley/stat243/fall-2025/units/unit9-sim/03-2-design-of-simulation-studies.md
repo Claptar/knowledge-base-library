@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit9-sim.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 2. Design of simulation studies
+> **Converted source.** [`units/unit9-sim.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit9-sim.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit9-sim.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit9-sim.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 2. Design of simulation studies
 
 Consider the paper that is part of PS5. We can think about
 designing a simulation study in that context.
@@ -123,7 +123,6 @@ plt.xlabel('devs'); plt.ylabel('tdevs')
 plt.plot([min(devs), max(devs)], [min(devs), max(devs)], color='red')
 plt.show()
 ```
-
 
 ## Experimental Design (optional)
 

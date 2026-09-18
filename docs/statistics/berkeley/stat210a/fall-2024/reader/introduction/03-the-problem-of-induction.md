@@ -5,24 +5,24 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/introduction.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/introduction.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/introduction.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # The problem of induction
 
-**Source:** [`reader/introduction.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/introduction.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-#### Hume's problem of induction
+## Hume's problem of induction
 
 Unfortunately, inductive reasoning is not *valid* in the sense meant by logicians or mathematicians. It doesn't matter how many times I've seen real symmetric matrices that had real eigenvalues. Without a proof, I can't make the general claim. There are entertaining examples of patterns being unexpectedly violated in math, such as the [Borwein Integral](https://en.wikipedia.org/wiki/Borwein_integral):
 
 $$
 \begin{aligned}
-\int_0^\infty \frac{\sin x}{x}\,dx &= \frac{\pi}{2}\\[10pt]
-\int_0^\infty \frac{\sin x}{x}\, \frac{\sin(x/3)}{x/3}\,dx &= \frac{\pi}{2}\\[10pt]
-\int_0^\infty \frac{\sin x}{x}\, \frac{\sin(x/3)}{x/3}\, \frac{\sin(x/5)}{x/5}\,dx &= \frac{\pi}{2}\\[10pt]
-&\vdots\\[10pt]
-\int_0^\infty \frac{\sin x}{x}\, \frac{\sin(x/3)}{x/3}\,\cdots\, \frac{\sin(x/13)}{x/13}\,dx &= \frac{\pi}{2}\\[10pt]
+\int_0^\infty \frac{\sin x}{x}\,dx &= \frac{\pi}{2}[10pt]
+\int_0^\infty \frac{\sin x}{x}\, \frac{\sin(x/3)}{x/3}\,dx &= \frac{\pi}{2}[10pt]
+\int_0^\infty \frac{\sin x}{x}\, \frac{\sin(x/3)}{x/3}\, \frac{\sin(x/5)}{x/5}\,dx &= \frac{\pi}{2}[10pt]
+&\vdots[10pt]
+\int_0^\infty \frac{\sin x}{x}\, \frac{\sin(x/3)}{x/3}\,\cdots\, \frac{\sin(x/13)}{x/13}\,dx &= \frac{\pi}{2}[10pt]
 \int_0^\infty \frac{\sin x}{x}\, \frac{\sin(x/3)}{x/3}\,\cdots\, \frac{\sin(x/15)}{x/15}\,dx &= \frac{\pi}{2} - 2.31 \times 10^{-11}.
 \end{aligned}
 $$
@@ -35,7 +35,7 @@ David Hume's work *A Treatise of Human Nature* (1739) first proposed the **probl
 
 Hume allowed that people have to reason inductively all the time, but he called it a "custom" or "habit" and challenged philosophers to justify it. Now almost 300 years later, there does not seem to have been a fully satisfactory answer; most philosophers of science (like Karl Popper, for example) admit that inductive reasoning is fallible, but think there are reasonable ways for scientists to deal with this.
 
-#### Statistical evasions of the problem of induction
+## Statistical evasions of the problem of induction
 
 We seem to be in trouble if we are trying to build a mathematical science of inductive reasoning, when the first thing we know about induction is that it is not mathematically valid. Statisticians have two main ways of evading this problem, which lead to the two main mathematical frameworks for statistical inference:
 

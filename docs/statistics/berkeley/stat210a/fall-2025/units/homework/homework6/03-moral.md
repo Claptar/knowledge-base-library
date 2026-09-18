@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2025/units/homework/homework6.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`units/homework/homework6.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/homework/homework6.tex) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/homework/homework6.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/homework/homework6.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 SURE gives us a reasonable way of selecting a tuning parameter for estimation problems, and can help us choose a tuning parameter that achieves the near optimal performance. Also, regularization methods that set a lot of parameters to zero can substantially reduce the MSE in sparse problems, by eliminating all the variance for most of the coordinates.
 
@@ -38,6 +38,10 @@ Additionally, assume $\eta_i \overset{\text{i.i.d.}}{\sim}\lambda(\eta)$ where $
 
 2.  Use part (a) to find the Bayes posterior mean of $\eta_i$ given $X_i$.
 
+## Moral: {#moral-2}
+
+There are a variety of methods (beyond the scope of this course) to obtain nonparametric density estimators for the marginal density $q(x)$ when we observe $X_1,\ldots,X_n \overset{\text{i.i.d.}}{\sim}q$. This problem shows that such an estimator leads directly to *nonparametric* empirical Bayes estimators for $\eta_i$.
+
 ---
 
-[← Moral](02-moral.md) · [Up: contents](index.md) · [Moral →](04-moral.md)
+[← Moral](02-moral.md) · [Up: contents](index.md)

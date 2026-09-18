@@ -5,21 +5,17 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/06_linearRegression/
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`tutorialScripts/excercises/06_linearRegression/breastcancerExample.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/06_linearRegression/breastcancerExample.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Breast cancer example
 
-**Source:** [`tutorialScripts/excercises/06_linearRegression/breastcancerExample.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/06_linearRegression/breastcancerExample.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
-
-Split into 6 sections.
+Split into 2 sections.
 
 1. [Breast cancer dataset](01-breast-cancer-dataset.md)
-2. [Research question](02-research-question.md)
-3. [Data exploration](03-data-exploration.md)
-4. [Descriptive statistics](04-descriptive-statistics.md)
-5. [Model](05-model.md)
-6. [Conclusion](06-conclusion.md)
+2. [Model](02-model.md)
 
 ---
 

@@ -2,15 +2,15 @@
 title: Statistical Inference
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/recapGeneralLinearModel.Rmd
 source_file: sources/statomics-sga21/recapGeneralLinearModel.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Statistical Inference
+> **Converted source.** [`recapGeneralLinearModel.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/recapGeneralLinearModel.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`recapGeneralLinearModel.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/recapGeneralLinearModel.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+# Statistical Inference
 
 - Researchers want to assess the association of histological grade on KPNA2 gene expression
 - Inference?
@@ -19,9 +19,7 @@ converted: '2026-09-14'
 
 ![](https://raw.githubusercontent.com/statOmics/SGA21/master/figures/statGenomicsGent201718-7.jpeg)
 
-
 ---
-
 
 - Researchers want to assess the association of histological grade on KPNA2 gene expression
 - Inference?
@@ -71,7 +69,6 @@ $$
 \log_2(B) - \log_2(A) = \log_2 \frac{B}{A} = \log_2 FC_{\frac{B}{A}}
 $$
 
-
 ![](https://raw.githubusercontent.com/statOmics/SGA21/master/figures/statGenomicsGent201718-8.jpeg)
 
 ---
@@ -109,11 +106,9 @@ names(log2FC) <- "g3-g1"
 
 There is a extremely significant association of the histological grade on the gene expression in tumor tissue.  On average, the gene expression for the grade 3 patients is `r round(2^log2FC,2)` times higher than the gene expression in grade 1 patients (95\% CI  [`r paste(round(2^-logtest$conf.int[2:1],2),collapse=", ")`], $p<<0.001$).
 
-
 ![](https://raw.githubusercontent.com/statOmics/SGA21/master/figures/statGenomicsGent201718-10.jpeg)
 
 ---
-
 
 ![](https://raw.githubusercontent.com/statOmics/SGA21/master/figures/statGenomicsGent201718-11.jpeg)
 
@@ -129,4 +124,4 @@ Solution??
 
 ---
 
-[← Data Exploration](02-data-exploration.md) · [Up: contents](index.md) · [General Linear Model →](04-general-linear-model.md)
+← Data Exploration · [Up: contents](index.md) · [General Linear Model →](04-general-linear-model.md)

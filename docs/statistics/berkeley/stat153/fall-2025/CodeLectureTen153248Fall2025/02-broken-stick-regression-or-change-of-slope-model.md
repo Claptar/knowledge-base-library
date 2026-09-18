@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureTen153248Fall2025.ipy
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Broken-stick Regression or Change of Slope Model
+> **Converted source.** [`CodeLectureTen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureTen153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureTen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureTen153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Broken-stick Regression or Change of Slope Model
 
 The simple linear regression model obviously does not provide a good fit to the data. For an improved model, let us consider:
 \begin{equation*}

@@ -1,28 +1,22 @@
 ---
-title: Unit 01 — unix
+title: 'Unit 1: Basics of UNIX'
 source: https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/units/unit1-unix.pdf
 source_file: sources/berkeley-stat243/stat243-fall-2021/units/unit1-unix.pdf
 licence: CC0-1.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Unit 01 — unix
+> **Reconstructed by a model.** [`units/unit1-unix.pdf`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/units/unit1-unix.pdf) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`units/unit1-unix.pdf`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/units/unit1-unix.pdf) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Unit 1: Basics of UNIX
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+Split into 3 sections.
 
-Split into 5 sections.
-
-1. [Introduction](01-introduction.md)
-2. [1 UNIX basics](02-1-unix-basics.md)
-3. [2 Version control](03-2-version-control.md)
-4. [3 Connecting to other machines](04-3-connecting-to-other-machines.md)
-5. [4 Editors](05-4-editors.md)
+1. [Unit 1: Basics of UNIX](01-unit-1-basics-of-unix.md)
+2. [2 Version control](02-2-version-control.md)
+3. [4 Editors](03-4-editors.md)
 
 ---
 

@@ -1,28 +1,26 @@
 ---
-title: Probability
+title: What is a probability?
 source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/probability.html
 source_file: sources/berkeley-stat210a/fall-2025/reader/probability.html
 licence: CC BY 4.0
 route: pandoc-html
 fidelity: good
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Probability
+> **Converted source.** [`reader/probability.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/probability.html) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.html`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/probability.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/probability.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
+# What is a probability?
 
-Split into 9 sections.
+Split into 7 sections.
 
-1. [Introduction](01-introduction.md)
-2. [What is a probability?](02-what-is-a-probability.md)
-3. [Probability as a measure](03-probability-as-a-measure.md)
-4. [Measures](04-measures.md)
-5. [Integrals](05-integrals.md)
-6. [Densities](06-densities.md)
-7. [Probability spaces and random variables](07-probability-spaces-and-random-variables.md)
-8. [Conditional probability](08-conditional-probability.md)
-9. [Footnotes](09-footnotes.md)
+1. [What is a probability?](01-what-is-a-probability.md)
+2. [Probability as a measure](02-probability-as-a-measure.md)
+3. [Measures](03-measures.md)
+4. [Integrals](04-integrals.md)
+5. [Densities](05-densities.md)
+6. [Probability spaces and random variables](06-probability-spaces-and-random-variables.md)
+7. [Conditional probability](07-conditional-probability.md)
 
 ---
 

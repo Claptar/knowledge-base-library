@@ -5,12 +5,16 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/minimax-estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/minimax-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/minimax-estimation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Definitions
 
-**Source:** [`reader/minimax-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/minimax-estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+$\DeclareMathOperator*{\minimize}{\textnormal{minimize}}$
+
+## Minimax risk and estimator
 
 Since introducing the basic problem in [Lecture 3](../estimation/index.md) of how to choose between estimators, we have studied two possible answers: First, to constrain our choice of estimator to be unbiased, which in the presence of a complete sufficient statistic narrows our choices to (at most) one good unbiased estimator for any estimand; and second, to summarize risk functions by their average-case risk, which leads us to Bayes estimators. In this lecture, we will consider another idea: to minimize the worst-case risk:
 $$

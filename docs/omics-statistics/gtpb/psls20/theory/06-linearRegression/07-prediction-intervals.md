@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/06-linearRegression.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Prediction-intervals
+> **Converted source.** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Prediction-intervals
 
 - We can also make a prediction for the location of a new observation that would be collected in a new experiment for a patient with a particular value for their ESR1 expression
 
@@ -23,8 +23,9 @@ $$
 with $\epsilon^*\sim N(0,\sigma^2)$ and $\epsilon^*$ independent of the observations in the sample $Y_1,\ldots, Y_n$.
 
 - We predict a new log-S100A8 for a patient with a known log2-ESR1 expression level x
+
 $$
-  \hat{y}(x)=\hat{\beta}_0+\hat{\beta}_1 \times x
+\hat{y}(x)=\hat{\beta}_0+\hat{\beta}_1 \times x
 $$
 
 - The estimated mean outcome and prediction for a new observation are equal.
@@ -32,15 +33,13 @@ $$
 - But, their sample distributions are different!
 
     - Uncertainty on the estimated mean outcome  $\leftarrow$ uncertainty on estimated model parameters $\hat\beta_0$ en $\hat\beta_1$.
-    - Uncertainty on new observation $ $\leftarrow$ *uncertainty on estimated mean* and  *additional uncertainty* because the new observation will deviate around the mean!
-
+    - Uncertainty on new observation $ $\leftarrow\$ *uncertainty on estimated mean* and  *additional uncertainty* because the new observation will deviate around the mean!
 
 $$\text{SE}_{\hat{Y}(x)}=\sqrt{\hat\sigma^2+\hat\sigma^2_{\hat{g}(x)}}=\sqrt{MSE\left\{1+\frac{1}{n}+\frac{(x-\bar X)^2}{\sum\limits_{i=1}^n (X_i-\bar X)^2}\right\}}.$$
 
 $$\frac{\hat{Y}(x)-Y}{\text{SE}_{\hat{Y}(x)}}\sim t_{n-2}$$
 
 - Note, that a **prediction-interval** (PI) is an improved version of a reference-interval when the model parameters are unknown: Uncertainty on model parameters +  t-distribution.
-
 
 ```r
 p <- predict(lm2,newdata=data.frame(ESR1=grid), interval="prediction")
@@ -67,9 +66,7 @@ brca %>% ggplot(aes(x=ESR1,y=S100A8)) +
   geom_line(aes(x=grid,y=upr),preddata,color="blue")
 ```
 
-
-### NHANES voorbeeld
-
+## NHANES voorbeeld
 
 - Replace reference interval for cholesterol level from chapter 2 by prediction-interval.
 
@@ -89,7 +86,6 @@ lmChol <- lm(DirectChol %>% log2~1,data=fem)
 predInt <- predict(lmChol,interval="prediction",newdata=data.frame(noPred=1))
 round(2^predInt,2)
 ```
-
 
 Note, that the prediction interval is almost similar to the reference interval for the large sample. Indeed we could estimate the parameters very precise.
 

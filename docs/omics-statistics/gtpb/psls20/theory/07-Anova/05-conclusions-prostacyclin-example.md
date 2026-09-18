@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/07-Anova.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Conclusions: Prostacyclin example
+> **Converted source.** [`theory/07-Anova.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/07-Anova.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/07-Anova.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/07-Anova.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Conclusions: Prostacyclin example
 
 Entire analysis for prostacyclin example
 
@@ -33,16 +33,16 @@ summary(model1.mcp)
 confint(model1.mcp)
 ```
 
-
 - There is an extreme significant effect of arachidonic acid on the average prostacyclin blood concentration in rats ($p<0.001$).
 The average prostacyclin concentration is higher in the high dose group than in the low and moderate dose group (both p-values are smaller than $p<0.001$).
 - The average concentration in the high dose group is `r round(confint(model1.mcp)$confint[2,1],1)`ng/ml (95% CI [`r paste(round(confint(model1.mcp)$confint[2,2:3],1),collapse=",")`]ng/ml) and `r round(confint(model1.mcp)$confint[3,1],1)`ng/ml (95% BI [`r paste(round(confint(model1.mcp)$confint[3,2:3],1),collapse=",")`]ng/ml) higher than in the low and middle dose group, respectively.
 - The difference in average prostacyclin concentration between the moderate and low dose group is not significant  (p=`r round(summary(model1.mcp)$test$pvalues[1],2)`).
 (All p-values and confidence intervals for post-hoc tests are corrected for multiple testing using the Tukey method).
 
+---
+
+## [Home](https://gtpb.github.io/PSLS20/) {-}
 
 ---
 
----
-
-[← Post hoc analysis: Multiple comparisons of means](04-post-hoc-analysis-multiple-comparisons-of-means.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](06-home-https-gtpb-github-io-psls20.md)
+[← Post hoc analysis: Multiple comparisons of means](04-post-hoc-analysis-multiple-comparisons-of-means.md) · [Up: contents](index.md)

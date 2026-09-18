@@ -5,14 +5,14 @@ source_file: sources/gtpb-psls20/theory/06-linearRegression.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Sum of squares and Anova-table
 
-**Source:** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
-
-##Total sum of squares
+### Total sum of squares
 $$\text{SSTot} = \sum_{i=1}^n (Y_i-\bar{Y})^2.$$
 
 - SStot can be used to estimate the variance of the **marginal distribution** of the response.
@@ -20,7 +20,6 @@ $$\text{SSTot} = \sum_{i=1}^n (Y_i-\bar{Y})^2.$$
 - In this chapter we focused on the **conditional distribution** $f(Y\vert X=x)$.
 
 - We known that MSE is a good estimate of the variance of the conditional distribution of  $Y\vert X=x$.
-
 
 ```r
 brca$log2ESR1<-log2(brca$ESR1)
@@ -30,7 +29,7 @@ abline(h=mean(brca$log2S100A8))
 for (i in 1:length(brca$log2S100A8)) lines(rep(brca$log2ESR1[i],2),c(mean(brca$log2S100A8),brca$log2S100A8[i]),lty=2,col=4)
 ```
 
-## Sum of squares of the regression SSR
+### Sum of squares of the regression SSR
 
 $$\text{SSR} = \sum_{i=1}^n (\hat{Y}_i - \bar{Y})^2 = \sum_{i=1}^n (\hat{g}(x_i) - \bar{Y})^2.$$
 
@@ -51,13 +50,11 @@ points(brca$log2ESR1,lm2$fitted,pch=2,col=2)
 for (i in 1:length(brca$log2S100A8)) lines(rep(brca$log2ESR1[i],2),c(mean(brca$log2S100A8),lm2$fitted[i]),lty=2,col=2)
 ```
 
-
-## Sum of Squares of the Error
+### Sum of Squares of the Error
 
 $$ \text{SSE} = \sum_{i=1}^n (Y_i-\hat{Y}_i )^2 = \sum_{i=1}^n \left\{Y_i-\hat{g}\left(x_i\right)\right\}^2.$$
 
 - The smaller SSE the better the fit.
-
 
 - Least squares method!
 
@@ -82,8 +79,7 @@ We can show that SST can be decomposed in
 -  Total variability in the data (SSTot) is partially explained by the predictor (SSR).
 - Variability that we cannot explain with the regression model is the residual variability (SSE).
 
-
-## Determination coefficient
+### Determination coefficient
 
 $$ R^2 = 1-\frac{\text{SSE}}{\text{SSTot}}=\frac{\text{SSR}}{\text{SSTot}}.$$
 
@@ -97,13 +93,13 @@ $$ R^2 = 1-\frac{\text{SSE}}{\text{SSTot}}=\frac{\text{SSR}}{\text{SSTot}}.$$
   - $R^2$ is determined by SSE and SSTot but not by sample size $n$.
 - Model with low $R^2$ is still useful to study associations as long as the association is modelled correctly!
 
-### Breast cancer example
+#### Breast cancer example
 
 ```r
 summary(lm2)
 ```
 
-## F-Test in simple linear model
+### F-Test in simple linear model
 
 - Sum of squares are the bases for $F$-tests
 $$  F  = \frac{\text{MSR}}{\text{MSE}}$$
@@ -119,20 +115,16 @@ $$H_0:F = \frac{\text{MSR}}{\text{MSE}} \sim F_{1,n-2},$$
 - F-test is always two-sided! $H_1:\beta_1\neq 0$
 $$  p = P_0\left[F\geq f\right]=1-F_F(f;1,n-2)$$
 
-
 ```r
 summary(lm2)
 ```
-
 
 ```r
 grid<-seq(0,10,.1)
 plot(grid,df(grid,1,30),type="l",xlab="F",ylab="Density",main="F-distribution with 1 df in the nominator and 30 in the denominator",cex.main=1.5,cex.axis=1.5,cex.lab=1.5)
 ```
 
-
-## Anova Table
-
+### Anova Table
 
 | |Df|Sum Sq|Mean Sq|F value|Pr(>F)|
 |---|---|---|---|---|---|
@@ -143,8 +135,7 @@ plot(grid,df(grid,1,30),type="l",xlab="F",ylab="Density",main="F-distribution wi
 anova(lm2)
 ```
 
-
-## Dummy variables
+### Dummy variables
 
 - Linear regression model  can also be used to compare two group means.
 - brca: difference in average age between patients with unaffected and affected lymph nodes.
@@ -159,7 +150,6 @@ $$x_i = \left\{ \begin{array}{ll}
 - Regression model remains unaltered,
 $$Y_i = \beta_0 + \beta_1 x_i +\epsilon_i$$
 with $\epsilon_i \text{ iid } N(0,\sigma^2)$
-
 
 Because $x_i$ only can take two values, we can study the regression model for each value of  $x_i$ separately:
 $$ \begin{array}{lcll}
@@ -192,7 +182,6 @@ $$\begin{array}{ccll}
 
 Tests $H_0:\beta_1=0$ vs.  $H_1:\beta_1\neq0$ can be used to assess the null hypothesis of the  two-sample $t$-test, $H_0:\mu_1=\mu_2$ vs $H_1:\mu_1\neq\mu_2$.
 
-
 ```r
 brca$node <- as.factor(brca$node)
 t.test(age~node,brca,var.equal=TRUE)
@@ -207,12 +196,10 @@ summary(lm3)
 plot(lm3)
 ```
 
-
 ```r
 brca %>% ggplot(aes(x=node%>%as.factor,y=age)) +
   geom_boxplot()
 ```
-
 
 ```r
 par(mfrow=c(3,3))
@@ -220,8 +207,7 @@ set.seed(354)
 for(i in 1:9) plot(rnorm(32)~node,brca,ylab="iid N(0,1)")
 ```
 
-
-## Observational study
+### Observational study
 
 - We cannot conclude that age causes a higher risk for affected lymph nodes.
 - Possibly **confounding**: no randomisation $\rightarrow$ groups of patients with affected and unaffected lymph nodes. They can also differ in other characteristics.
@@ -230,16 +216,16 @@ for(i in 1:9) plot(rnorm(32)~node,brca,ylab="iid N(0,1)")
 
 - However, the association does not have to be causal!
 
-
 - Note, that this is also the case for the linear model for $\log_2$-S100A8-expression.
 
     - Because we were not able to fix the  ESR1-expression experimentally we cannot conclude that a higher ESR1-expression causes a decrease in the S100A8-expression.
     - We can only conclude that there is a negative association.
     - To assess the impact of a gene on other gene typically knockout mutants are used in the lab.
 
+---
+
+## [Home](https://gtpb.github.io/PSLS20/) {-}
 
 ---
 
----
-
-[← Prediction-intervals](07-prediction-intervals.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](09-home-https-gtpb-github-io-psls20.md)
+[← Prediction-intervals](07-prediction-intervals.md) · [Up: contents](index.md)

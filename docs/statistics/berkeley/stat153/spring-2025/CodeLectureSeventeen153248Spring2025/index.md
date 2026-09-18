@@ -1,23 +1,22 @@
 ---
-title: CodeLectureSeventeen153248Spring2025
+title: 'Dataset One: California Population'
 source: https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureSeventeen153248Spring2025.ipynb
 source_file: sources/berkeley-stat153/spring-2025/CodeLectureSeventeen153248Spring2025.ipynb
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# CodeLectureSeventeen153248Spring2025
+> **Converted source.** [`CodeLectureSeventeen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureSeventeen153248Spring2025.ipynb) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureSeventeen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureSeventeen153248Spring2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Dataset One: California Population
 
-Split into 4 sections.
+Split into 3 sections.
 
-1. [Introduction](01-introduction.md)
-2. [Dataset One: California Population](02-dataset-one-california-population.md)
-3. [Dataset Two: simulated dataset](03-dataset-two-simulated-dataset.md)
-4. [Dataset Three: Sunspots](04-dataset-three-sunspots.md)
+1. [Dataset One: California Population](01-dataset-one-california-population.md)
+2. [Dataset Two: simulated dataset](02-dataset-two-simulated-dataset.md)
+3. [Dataset Three: Sunspots](03-dataset-three-sunspots.md)
 
 ---
 

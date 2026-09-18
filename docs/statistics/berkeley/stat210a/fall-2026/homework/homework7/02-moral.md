@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework7.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework7.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework7.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework7.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework7.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 In some sense, the Jeffreys prior in scale families plays the same role that the flat prior plays in location families. In this problem, since we chose a scale-invariant loss based on relative error, the problem is equally hard everywhere in the parameter space, so the problem exhibits a kind of scale symmetry that is analogous to the translational symmetry that we see when we have a location family and a translationally invariant loss.
 

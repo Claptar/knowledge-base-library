@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework8.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Homework8 Part 01 —
+> **Converted source.** [`homework/homework8.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework8.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework8.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework8.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Homework8 Part 01 —
 
 See the standing homework instructions on the course web page
 
@@ -25,8 +25,6 @@ Numerically find the equal-tailed and UMPU test for the following hypothesis tes
 1.  derive the appropriate tests (leaving the cutoff values abstract), and
 
 2.  numerically compute the cutoff values $c$ (no $\gamma$ necessary since these are continuous problems)
-
-<!-- -->
 
 1.  $X_i \overset{\text{ind.}}{\sim}N(\theta, \sigma_i^2)$ for $i=1,\ldots,n$, where $\sigma_i^2$ are known positive constants and $\theta \in \mathbb{R}$ is unknown. Test $H_0:\; \theta = 0$ vs. $H_1:\; \theta \neq 0$, with $n = 20$ and $\sigma_i^2 = i$. On your power plot, also plot the power function of the (sub-optimal) test that rejects for extreme values of $\sum_i X_i$.
 

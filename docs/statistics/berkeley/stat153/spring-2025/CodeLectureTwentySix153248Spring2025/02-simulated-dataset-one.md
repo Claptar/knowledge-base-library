@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/spring-2025/CodeLectureTwentySix153248Spri
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Simulated Dataset One
+> **Converted source.** [`CodeLectureTwentySix153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureTwentySix153248Spring2025.ipynb) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureTwentySix153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureTwentySix153248Spring2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Simulated Dataset One
 
 Consider the following simple dataset.
 
@@ -171,7 +171,7 @@ To make the code faster, we can attempt to chunk the original time series into a
 
 Below we illustrate this batching idea.
 
-### Batching
+#### Batching
 
 ```python
 seq_len_batch = 450
@@ -382,7 +382,7 @@ plt.show()
 
 RNN gives predictions that are basically the same as the LSTM predictions.
 
-# Simulated Dataset Two
+## Simulated Dataset Two
 
 We now make two changes to the first simulation above. We increase the true lag. We also add noise slightly differently (noise is now added to the equation $y_t = y_{t-\text{truelag}} + \epsilon_t$).
 
@@ -736,6 +736,56 @@ plt.show()
 
 *(1 figure omitted — see the original notebook.)*
 
+### Sunspots Data
+
+Below we apply LSTM, RNN and GRU to obtain predictions for the sunspots dataset.
+
+```python
+sunspots = pd.read_csv('SN_y_tot_V2.0.csv', header = None, sep = ';')
+print(sunspots.head())
+y = sunspots.iloc[:,1].values
+n = len(y)
+plt.figure(figsize = (12, 6))
+plt.plot(y)
+plt.show()
+print(n)
+n_future = 300
+```
+
+```
+0     1    2  3  4
+0  1700.5   8.3 -1.0 -1  1
+1  1701.5  18.3 -1.0 -1  1
+2  1702.5  26.7 -1.0 -1  1
+3  1703.5  38.3 -1.0 -1  1
+4  1704.5  60.0 -1.0 -1  1
+325
+```
+
+*(1 figure omitted — see the original notebook.)*
+
+Because the data size is not very large, we do not use any batching and directly apply the models on the full sequence. First we prepare $X$ and $Y$.
+
+```python
+mu, sig = y.mean(), y.std()
+y_std = (y - mu) / sig
+
+X = torch.tensor(y_std[:-1], dtype=torch.float32)
+Y = torch.tensor(y_std[1: ], dtype=torch.float32)
+
+X = X.unsqueeze(0).unsqueeze(-1)   # shape (1, seq_len, 1)
+Y = Y.unsqueeze(0).unsqueeze(-1)   # shape (1, seq_len, 1)
+
+seq_len = X.size(1)
+print(seq_len)
+```
+
+```
+324
+```
+
+We fit LSTM with the number of hidden units equaling 200.
+
 ---
 
-[← The LSTM Unit](01-the-lstm-unit.md) · [Up: contents](index.md) · [Sunspots Data →](03-sunspots-data.md)
+[← The LSTM Unit](01-the-lstm-unit.md) · [Up: contents](index.md) · [LSTM for Sunspots →](03-lstm-for-sunspots.md)

@@ -5,17 +5,16 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/probability.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Measures
 
-**Source:** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
 Given a set $\cX$, a measure $\mu$ is a certain kind of function mapping (non-pathological[^1]) subsets $A \subseteq \cX$ to non-negative numbers $\mu(A) \in [0,\infty]$.
 
-
-**Example 1 (Counting measure):** If $\cX$ is countable, e.g. $\cX = \mathbb{Z}$, then a natural measure is the *counting measure* $\#(A)$*,* which simply counts the number of points in a subset $A$. For example, $\#(\{0,1\}) = 2$, and $\#(\{2,4,6,8,\ldots\}) = \infty$ .
+**Example 1 (Counting measure):** If $\cX$ is countable, e.g. $\cX = \mathbb{Z}$, then a natural measure is the *counting measure* $#(A)$*,* which simply counts the number of points in a subset $A$. For example, $#(\{0,1\}) = 2$, and $#(\{2,4,6,8,\ldots\}) = \infty$ .
 
 **Example 2 (Lebesgue measure):** If $\cX = \RR^n$ for some integer $n$, a natural measure is the *Lebesgue measure* $\lambda(A)$, which returns the *volume* of a subset $A$. Roughly speaking, we can write
 
@@ -30,7 +29,6 @@ P_Z(A) = \PP(Z \in A) = \int_A \phi(x)\,d x, \quad \text{ where } \;\phi(x) = \f
 $$
 
 is the probability density function of $Z$.
-
 
 As it turns out, it is not so obvious how to define what exactly we mean by taking an integral when the set is sufficiently pathological: some sets are just called *non-measurable* and we can't hope to meaningfully assign them a measure. Sets of this kind are important to consider when building a rigorous theory about measures but they are not the sort of thing you would stumble upon unless you went out looking for them.
 
@@ -64,11 +62,9 @@ $$
 
 3.  **Empty set maps to zero:** $\mu(\emptyset) = 0$[^2]
 
-
 If $\mu$ is a measure on $(\cX, \cF)$ we call $(\cX, \cF, \mu)$ a *measure space*. In the special case $\mu(\cX) = 1$, we call $\mu$ a *probability measure* and $(\cX, \cF, \mu)$ is called a *probability space*.
 
-
-### Push-forward measure
+## Push-forward measure
 
 If we have a measure space $(\cX, \cF, \mu)$ and a (nice enough) function $f$ from $\mathcal{X}$ to some other sample space $\mathcal{Y}$, we can define a new measure $\nu$ on $\mathcal{Y}$ where $\nu(B)$ is the amount of $\mu$ measure that $f$ maps into $B$. That is, $\nu(B) = \mu(f^{-1}(B))$, where $f^{-1}(B) = \{x\in \cX:\; f(x) \in B\}$ is the preimage of $B$ in $\cX$; more compactly, we can write $\nu = \mu \circ f^{-1}$. This new measure $\nu$ is called a *push-forward* measure.
 

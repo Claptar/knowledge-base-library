@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/06-linearRegression.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Invalid assumptions
+> **Converted source.** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Invalid assumptions
 
 - Transformation of predictor does not change distribution of Y for given X:
 
@@ -19,11 +19,9 @@ converted: '2026-09-14'
     - Often inclusion of higher order terms: $X^2$, $X^3$, ...
     $$Y_i=\beta_0+\beta_1X_i+\beta_2X_i^2+ ... + \epsilon_i$$
 
-
 - Transformation of response Y can be useful to obtain normality and homoscedasticity
 
 -  $\sqrt(Y)$, $\log(Y)$, 1/Y, ...
-
 
 ## Breast cancer example
 
@@ -40,7 +38,6 @@ This is often the case for concentration and intensity measurements
 - We also observed a kind of exponential relation with the smoother
 - In gene expression literature often $\log_2$ transformation is adopted
 - gene-expression on log scale: differences on log scale are fold changes on original scale!
-
 
 ```r
 brca %>% ggplot(aes(x=ESR1,y=S100A8)) +
@@ -60,11 +57,9 @@ plot(lm2)
 summary(lm2)
 ```
 
-
 ```r
 confint(lm2)
 ```
-
 
 ### Interpretation 1
 
@@ -86,16 +81,14 @@ Model on log-scale: upon back-transformation we obtain geometric means
 - Population mean $\mu$ is estimated as a geometric mean
 - Logarithmic transformation is monotone: we can backtransform confidence intervals on log-scale!
 
-
 ```r
 2^lm2$coef[2]
 2^-lm2$coef[2]
 2^-confint(lm2)[2,]
 ```
 
-A patient with an ESR1 expression that is 2 times the expression of that of another patient will on average have an  S100A8 expression that is `r round(2^-lm2$coef[2]
+A patient with an ESR1 expression that is 2 times the expression of that of another patient will on average have an  S100A8 expression that is `r round(2^-lm2\$coef[2]
 ,2)` times lower (95\% CI [`r paste(sort(round(2^-confint(lm2)[2,],2)),collapse=",")`]).
-
 
 $$\log_2 \hat\mu_1=23.401  -1.615 \times \text{logESR}_1,\text{ } \log_2 \hat\mu_2=23.401  -1.615 \times \text{logESR}_2 $$
 $$\log_2 \hat\mu_2-\log_2 \hat\mu_1=  -1.615 (\log_2 \text{ESR}_2-\log_2 \text{ESR}_1) $$
@@ -103,7 +96,6 @@ $$\log_2 \left[\frac{\hat\mu_2}{\hat\mu_1}\right]=  -1.615 \log_2\left[\frac{ \t
 $$\frac{\hat\mu_2}{\hat\mu_1}=\left[\frac{ \text{ESR}_2}{\text{ESR}_1}\right]^{-1.615}=2^ {-1.615} =0.326$$
 or
 $$\frac{\hat\mu_1}{\hat\mu_2}=2^{1.615} =3.06$$
-
 
 ### Interpretation 3
 
@@ -116,7 +108,6 @@ $$\frac{\hat\mu_2}{\hat\mu_1}=\left[\frac{ \text{ESR}_2}{\text{ESR}_1}\right]^{-
 
 This is valid for low to moderate values of $\beta_1$:
 $$-10<\beta_1<10 \rightarrow 1.01^{\beta_1} -1 \approx \frac{\beta_1}{100}.$$
-
 
 ## Inference on the mean outcome
 

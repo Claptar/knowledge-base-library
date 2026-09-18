@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/07_ANOVA/ANOVA_cucko
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Tutorial 7.2: ANOVA on the cuckoo dataset
+> **Converted source.** [`tutorialScripts/excercises/07_ANOVA/ANOVA_cuckoo_half.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/07_ANOVA/ANOVA_cuckoo_half.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`tutorialScripts/excercises/07_ANOVA/ANOVA_cuckoo_half.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/07_ANOVA/ANOVA_cuckoo_half.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Tutorial 7.2: ANOVA on the cuckoo dataset
 
 The common cuckoo does not build its own nest: it prefers
 to lay its eggs in another birds' nest. It is known, since 1892,
@@ -37,7 +37,7 @@ The type column is coded as follows:
 - `type=5`: White wagtail
 - `type=6`: Eurasian wren
 
-# Goal
+## Goal
 
 The researchers want to test if the type of foster parent
 has an effect on the average length of the cuckoo eggs.
@@ -51,28 +51,26 @@ with ANOVA.
 In this short tutorial, we perform a hypothesis test on the
 "cuckoo" dataset.
 
-
-# Load the required libraries
-
-```r
-```
-
-# Import the data
+## Load the required libraries
 
 ```r
 ```
 
-# Data Exploration
+## Import the data
 
 ```r
 ```
 
+## Data Exploration
 
-# Data tidying
+```r
+```
+
+## Data tidying
 
 Set the type column to factor.
 
-# Data exploration
+## Data exploration
 
 How many birds do we have for each type?
 

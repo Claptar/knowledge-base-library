@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Statistical models
+> **Converted source.** [`reader/estimation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/estimation.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/estimation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Statistical models
 
 Until now, we have been discussing the topic of *probability*. Roughly speaking, in probability we fully specify the distribution of some random variables, and then ask what we can say about the distribution. For example, given a complete description of the rules for generating a random walk, we might ask how long, in expectation, it will take to reach a certain threshold. This is an essentially *deductive* exercise: while the mathematics might be very hard, the questions we ask generally have unambiguous answers.
 
@@ -28,7 +28,7 @@ Formally, we could say the family of distributions is $\cP = \{\text{Binom}(n, \
 
 Note that in the previous example, the integer $n$ is another important variable in the problem, but we implicitly assumed that it was "known" by the analyst, meaning that it is the same for all $P \in \cP$. The parameter $\theta$, by contrast, is termed "unknown" in the sense that it varies over the family $\cP$.
 
-### Parametric vs nonparametric models
+## Parametric vs nonparametric models
 
 Many of the models we will consider in this class are *parametric*, typically meaning that they are indexed by finitely many real parameters. That is, we have $\cP = \{P_\theta:\; \theta \in \Theta\}$, typically for some *parameter space* $\Theta \subseteq \RR^d$. Then $\theta$ is called the *parameter* or *parameter vector*.
 
@@ -44,7 +44,7 @@ Formally, if $X = (X_1,\ldots,X_n)$, we can write the family as $\cP = \{P^n:\; 
 
 **Notation:** Much of what we will learn in this course applies to parametric and nonparametric models alike, and indeed there is no crisp demarcation between parametric and nonparametric models in practice. It will often be convenient to use notation $\cP = \{P_\theta :\; \theta \in \Theta\}$, without specifying what kind of set $\Theta$ is; in particular there is nothing to stop $\theta$ from being an infinite-dimensional object such as a density function. We can work in this notation without any loss of generality, since we could always take $\theta = P$ and $\Theta = \cP$.
 
-### Bayesian vs Frequentist inference
+## Bayesian vs Frequentist inference
 
 Thus far we have assumed the data $X$ follows a distribution $P_\theta$, for some unknown parameter $\theta$ which can be any arbitrary member of the set $\Theta$. In some contexts we will introduce an additional assumption we can call the *Bayesian assumption*: that $\theta$ is itself random, drawn from some known distribution $\Lambda$ that we call the *prior*.
 

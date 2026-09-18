@@ -1,65 +1,76 @@
 ---
-title: Lecture 07 — unbiased
+title: Outline
 source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture07-unbiased.pdf
 source_file: sources/berkeley-stat210a/fall-2025/handwritten/lecture07-unbiased.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Lecture 07 — unbiased
+> **Reconstructed by a model.** [`handwritten/lecture07-unbiased.pdf`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture07-unbiased.pdf) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`handwritten/lecture07-unbiased.pdf`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture07-unbiased.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Outline
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+1) Convex Loss
+2) Rao-Blackwell Theorem
+3) UMVU Estimators
+4) Examples
 
-Outline
+---
 
-Loss TConvex Theorem 2 Blackwell Rao UMVU Estimators 3 4 Examples
+## Unbiased Estimation
 
+**Recall** strategies to choose an estimator
 
-# Unbiasedfstination
+1) Summarize risk by a scalar (avg or sup)
+2) Restrict to a smaller class of estimators
 
+**Today**: Unbiased estimation
 
-<!-- Start of picture text -->
-today Unbiased estimation gestimand<br>Voe<br>Eon glo<br>Require<br>Tex<br>sufficient stat<br>If we have complete<br>o there is almost one unbiased YT x<br>V0 then 8 82<br>8 Ct 9101<br>If 08 IT<br>if it exists it uniformly minimizes risk<br>loss function<br>for convex<br>any<br><!-- End of picture text -->
+Require $\mathbb{E}_\theta \delta(X) = g(\theta)$, $\forall \theta \in \Theta$ (where $g(\theta)$ is the estimand)
 
-Convexloss Functions
+If we have complete sufficient stat $T(X)$,
+* there is **at most** one unbiased $\delta^*(T(X))$
+  (If $\mathbb{E}_\theta \delta_1(T) = \mathbb{E}_\theta \delta_2(T) = g(\theta)$ $\forall \theta$ then $\delta_1 \stackrel{a.s.}{=} \delta_2$)
+* if it exists, it **uniformly minimizes** risk for any convex loss function
 
+---
 
-<!-- Start of picture text -->
-Recall is if for all x<br>fly convey xz all 240<br>flax i x l<br>g<br>I yffx g fixe<br>if<br>strictly<br>Jensen If f<br>They convex then<br>f EX E If X ru X<br>for any<br>f<br>convex then<br>strictly a unless<br>X c<br>10 d<br>means<br>Convexly convex ind<br>2<br>d<br>210 d glo<br>Ey<br>O Tx<br>M SECO S<br>Ig<br>o<br>s<br>Biaso Varg<br>Varg t if 8 unbiased<br>Convex losses us for the<br>penalize<br>making<br>too<br>estimator noisy<br><!-- End of picture text -->
+## Convex Loss Functions
 
+**Recall** $f(x)$ is **convex** if, for all $x_1, x_2$, all $\gamma \in [0,1]$
 
-<!-- Start of picture text -->
-a<br>the suff principle<br>Theorem Rao Blackwell<br>sufficient 8 X estimator<br>TCX<br>Tsuneo<br>Let FITCH IE ax Tex<br>no 0<br>If 210 d convex then RCO F ERCO D<br>If convex then RIO F RCO D<br>strictly<br>unless J X<br>ICTCX for all O<br>Prof RCO D ELLO ELE IT<br>E E ELLIOT 5 It<br>o<br>RIO<br>if I<br>unless 8<br>xD<br>strictly<br>fit called the<br>Rao Blackwellization of 81 1<br><!-- End of picture text -->
+$$f(\gamma x_1 + (1-\gamma) x_2) \le \gamma f(x_1) + (1-\gamma) f(x_2)$$
 
-UMVU Estimators
+strictly convex if $<$
 
+**$\underline{\text{Thm}}$** (Jensen) If $f$ convex then
+$$f(\mathbb{E} X) \le \mathbb{E} f(X) \quad \text{for any r.v. } X$$
+$f$ strictly convex then $<$ unless $X \stackrel{a.s.}{=} c$
 
-<!-- Start of picture text -->
-Not all estimands have unbiased estimators<br><!-- End of picture text -->
+**$\underline{\text{Convex Loss}}$** $L(\theta, d)$ means convex **in $d$**
 
+**$\underline{\text{Ex.}}$** $L(\theta, d) = (g(\theta) - d)^2$
+$$\begin{aligned}
+MSE(\theta; \delta) &= \mathbb{E}_\theta [(g(\theta) - \delta(X))^2] \\
+&= \text{Bias}_\theta^2(\delta) + \text{Var}_\theta(\delta) \\
+&= \text{Var}_\theta(T) \quad \text{if } \delta \text{ unbiased}
+\end{aligned}$$
 
-<!-- Start of picture text -->
-is<br>We say glo Uestimable<br>f 781 7 with O<br>Eos glo<br>J X is uniformminimumvariane<br>DIunbiase.de<br>UMI if unbiased<br>for any<br>OE<br>Varo 81 7 Varo ECM<br>theorem for model D Po Oe 3 assume<br>suff<br>i T X<br>complete<br>d estimable<br>ii O<br>g<br>estimator<br>exists a<br>Then there<br>unique<br>ÉT X1 which<br>of the form<br>1 is UMUU and minimizes<br>minimizes risk<br>2<br>among<br>uniformly<br>all unbiased estimators<br><!-- End of picture text -->
+Convex losses penalize us for making the estimator too noisy
 
-Proof Rao Blackwellization All
+---
 
-lead to St
+## Rao-Blackwell Theorem
 
+Recipe to improve any $\delta(X)$ that violates the suff. principle.
 
-<!-- Start of picture text -->
-Effie<br>so<br>any<br>unbiased for glo<br>Let SH<br>It<br>Ef7<br>no O<br>EOE<br>ELEGIT EOE<br>glo<br>t unbiased then<br>LEO SET OCT 0 FOE<br>JET<br>JCT completeness<br>wit convex loss<br>any<br>Optimality<br>I X unbiased uniqueness<br>Suppose y<br>let ECT EX IT ECT<br>Rao Blackwell<br>RIO s RCO E E RIO s<br>Hence M SECO 8 I MSE Oo<br>71<br>Va s<br>Va 60 1<br>So S UM Un XD<br><!-- End of picture text -->
+**$\underline{\text{Theorem}}$ (Rao-Blackwell)**
+Assume $T(X)$ sufficient, $\delta(X)$ estimator
+Let $\bar{\delta}(T(X)) = \mathbb{E}[\delta(X) \mid T(X)]$ (no $\theta$)
 
-
-<!-- Start of picture text -->
-El<br>EI X Xn U 0,0 Oso<br>Te sniff<br>Xen complete<br>t<br>pot In th 19 te O<br>foot Int dt NITO<br>Eat<br>T is UMVU<br>2X is unbiased<br>Alternate<br>T In<br>we<br>n<br>X IT<br>U at<br>we<br>E 2X IT 2T I T<br>HI<br>T<br>T<br>is inadmissible tool<br>Actually<br>Keener shows 7 T has best MSE<br>for estimator c T<br>any<br>do we 0 bias<br>why<br>Raisesques lion require<br><!-- End of picture text -->
-
-amour.IT iit
+If \$L(\theta, \
 
 ---
 

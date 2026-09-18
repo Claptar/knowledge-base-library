@@ -1,38 +1,91 @@
 ---
-title: Lecture 14 — F24
+title: Outline 10/10/2023
 source: https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture14-F24.pdf
 source_file: sources/berkeley-stat210a/fall-2024/handwritten/lecture14-F24.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Lecture 14 — F24
+> **Reconstructed by a model.** [`handwritten/lecture14-F24.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture14-F24.pdf) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`handwritten/lecture14-F24.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture14-F24.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Outline 10/10/2023
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+1) Hypothesis testing
+2) Neyman-Pearson Lemma
 
-> 10 1012023
+---
 
-Outline
+## Hypothesis Testing
 
-D Hypothesis testing 2 Neyman Pearson Lemma
+In hypothesis testing, we use data $X$ to infer which of two submodels generated $X$.
 
+Model $\mathcal{P} = \{P_\theta : \theta \in \Theta\}$
 
-<!-- Start of picture text -->
-X Nco i o o it O 0<br>Ex<br>normal cdf<br>Let Zo I i d<br>111 1 z 2 sided test<br>01 1<br>i s<br>11 783<br>x<br>4<br>I x c z or x É<br>x<br>i<br>é<br>i<br>Zai<br>9<br><!-- End of picture text -->
+Null hypothesis $H_0 : \theta \in \Theta_0$
+Alternative hyp. $H_1 : \theta \in \Theta_1$
 
+(Whenever $H_1$ unspecified, assume $\Theta_1 = \Theta \setminus \Theta_0$)
 
-<!-- Start of picture text -->
-Sometimes a best test exists<br>unique<br>O<br>Ho 0 0 Hi O<br>X N 0,1<br>Ex<br>level a test<br>is best possible<br>Bolo<br>0 Ée<br>_e<br>70<br><!-- End of picture text -->
+$H_0$ is "default choice" : we either
+1. accept $H_0$ (fail to reject, no definite concl.)
+2. reject $H_0$ (conclude $\Theta_0$ false, $\Theta_1$ true)
 
+**Ex** $X \sim N(\theta, 1) \quad H_0 : \theta \le 0 \quad \text{vs} \quad H_1 : \theta > 0$
+or $H_0 : \theta = 0 \quad \text{vs} \quad H_1 : \theta \neq 0$
 
-<!-- Start of picture text -->
-distribution<br>s<br>A<br>É<br>100 or 10<br>When null alt both simple there exists a<br>which for<br>best test large<br>unique rejects<br>values of the likelihood ratio<br>where are densities<br>Let LR x Pitkin p po<br>note measure PotP<br>dominating always exists<br>e g<br>LRT<br>Likelihood ratio test<br>LRU<br>C<br>8I LRIX C<br>XX<br>LRCH CC<br>C Y chosen to make ME x α<br>discrete case<br>Intuitions<br>BANI<br>Power under It<br>f filx dmlx<br>level<br>Sig Sp polx dmlx Bucky<br>100<br>Analogy to buy as much flour as<br>possible<br><!-- End of picture text -->
+**Ex** $X_1, \dots, X_n \sim P \quad Y_1, \dots, Y_m \sim Q \quad H_0 : P = Q \quad \text{vs} \quad H_1 : P \neq Q$
+
+[ Common conceptual objection: we "know" $\theta \neq 0$ or $P \neq Q$ already, why bother?
+We will return to this. ]
+
+---
+
+## Power Function
+
+Can describe a test formally by its critical function (a.k.a. test function)
+
+$$
+\phi(x) = \begin{cases}
+0 & \text{accept } H_0 \\
+\pi \in (0, 1) & \text{reject w.p. } \pi \\
+1 & \text{reject } H_0
+\end{cases}
+$$
+
+In practice, randomization rarely used ($\phi(x) \in \{0, 1\}$)
+(In theory, simplifies discussions.)
+
+A non-randomized test partitions $\mathcal{X}$ into
+$$
+\begin{aligned}
+R &= \{x : \phi(x) = 1\} \quad \text{rejection region} \\
+A &= \{x : \phi(x) = 0\} \quad \text{acceptance region}
+\end{aligned}
+$$
+
+**Power function** :
+$$
+\begin{aligned}
+\beta_\phi(\theta) &= \mathbb{E}_\theta[\phi(X)] \quad \text{rejection prob.} \\
+&= \mathbb{P}_\theta[\text{Reject } H_0]
+\end{aligned}
+$$
+fully summarizes test's behavior
+
+$\phi$ is a **level-$\alpha$ test** ($\alpha \in [0, 1]$) if $\sup_{\theta \in \Theta_0} \beta_\phi(\theta) \le \alpha$
+
+Ubiquitous choice is $\alpha = 0.05$
+["Most influential offhand remark in history of science"]
+
+**Goal**: Maximize $\beta_\phi(\theta)$ on $\Theta_1$, subject to level-$\alpha$ constraint
+
+---
+
+## Examples
+
+**Ex** \$X \sim N(\theta, 1) \qquad
 
 ---
 

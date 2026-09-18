@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureEighteen153248Fall202
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# How are the Prediction Uncertainties actually calculated?
+> **Converted source.** [`CodeLectureEighteen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureEighteen153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureEighteen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureEighteen153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# How are the Prediction Uncertainties actually calculated?
 
 We now calculate the prediction standard errors directly using the method described in class. The first step is to fit the AR(p) model and then to obtain estimates of $\phi_0, \dots, \phi_p$ as well as $\sigma$. There are two estimates of $\sigma$ (only difference being the denominators: $n-p$ vs $n-2p-1$).
 
@@ -180,4 +180,4 @@ print(np.column_stack([predsd, fcast_se]))
 
 ---
 
-[← Dataset Two: House Price Data from FRED](02-dataset-two-house-price-data-from-fred.md) · [Up: contents](index.md)
+← Dataset Two: House Price Data from FRED · [Up: contents](index.md)

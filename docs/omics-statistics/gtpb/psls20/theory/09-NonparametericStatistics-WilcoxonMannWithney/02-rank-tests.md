@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/09-NonparametericStatistics-WilcoxonMann
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Rank Tests
+> **Converted source.** [`theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Rank Tests
 
 - Important group of non-parametric test
   - Non-parametric,
@@ -21,13 +21,13 @@ converted: '2026-09-14'
 
 ---
 
-#Ranks
+## Ranks
 
 Rank tests start from rank-transformed data.
 
 - Let $Y_1, \ldots, Y_n$.
 - In the absence of *ties*
-  $$R_i=R(Y_i) = \#\{Y_j: Y_j\leq Y_i; j=1,\ldots, n\}$$
+  $$R_i=R(Y_i) = #\{Y_j: Y_j\leq Y_i; j=1,\ldots, n\}$$
 - Smallest observation has rank 1, second smallest rank 2, ... , largest observation gets rank $n$
 
 ```r
@@ -37,7 +37,7 @@ rank(chol$cholest)
 
 ---
 
-## ties
+### ties
 
 Sometimes *ties* occur: two observations with identical values
 
@@ -56,7 +56,7 @@ rank(withTies)
 
 ---
 
-## Ranks of pooled sample
+### Ranks of pooled sample
 
 - Let $Y_{ij}$, $i=1,\ldots, n_j$ be observations from two treatment groups $j=1,2$.
 - They can also be represented by $Z_1,\ldots, Z_n$ ($n=n_1+n_2$), the outcomes of the pooled sample

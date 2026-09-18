@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/bayes-interpretation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Interpretations of Probability
+> **Converted source.** [`reader/bayes-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-interpretation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/bayes-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-interpretation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Interpretations of Probability
 
 In this lecture, we will examine more closely the interpretation of Bayesian inference, and the controversy that has at times surrounded it. But first, we must ask the question: Why do we model anything as random? Probability distributions have a crisp mathematical definition as normalized finite measures, but they have also been a very useful conceit in statistics --- of both the frequentist and Bayesian varieties. But how do we justify attaching this mathematical definition to things in the real world?
 
@@ -49,7 +49,6 @@ Now the professor flips the coin in the air, and on the way down he catches it b
 Next, the professor opens his hands and peeks at the coin, but does not tell the students what he sees. He asks again what is the chance that it landed heads. Of the students who previously stuck to $50\%$, some may feel that they can no longer say what the probability is, because evidence has emerged that they have not seen. The subjectivists, however, will be perfectly comfortable admitting that *to them*, it is still $50\%$, even though *to the professor* it has collapsed to $0\%$ or $100\%$.
 
 But how much has really changed, from the students' perspective, since the moment before the professor flipped the coin? Even then, we might have argued that the laws of physics are sufficiently deterministic that the outcome of the coin toss was foreordained. Likewise, even randomization into treatment and control is typically based on pseudo-random number generators that are really deterministic "under the hood." On that view, perhaps aleatory uncertainty is always based implicitly on appeals to (subjective) ignorance.
-
 
 ## Practical considerations
 

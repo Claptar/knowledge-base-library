@@ -2,15 +2,17 @@
 title: 2.2. Starting MSqRob
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/cptac_robust_gui.Rmd
 source_file: sources/statomics-sga21/cptac_robust_gui.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`cptac_robust_gui.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/cptac_robust_gui.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # 2.2. Starting MSqRob
 
-**Source:** [`cptac_robust_gui.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/cptac_robust_gui.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+[](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
 You can find the installation instructions for the installation of msqrob2 and the msqrob2gui graphical user interface (GUI)/shinyApp in [software](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/software.html)
 
@@ -20,7 +22,6 @@ Upon installation
 
 ![Figure 1. RStudio](https://raw.githubusercontent.com/statOmics/SGA21/0ad787d4cc2bb2f4636440840a8a923cf6c09839/figures/rstudio.png)
 
-
 2. Copy and paste following commands in the console window and type enter
 
 ```
@@ -29,7 +30,6 @@ launchMsqrob2App()
 ```
 
 ![Figure 2. Rstudio with launchcommand](https://raw.githubusercontent.com/statOmics/SGA21/0ad787d4cc2bb2f4636440840a8a923cf6c09839/figures/rstudio2.png)
-
 
 - The first line will load the msqrob2gui package and its dependencies
 - The second line will launch the GUI/shinyApp

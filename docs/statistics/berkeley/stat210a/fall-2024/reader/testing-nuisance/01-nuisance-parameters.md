@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/testing-nuisance.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/testing-nuisance.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-nuisance.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Nuisance Parameters
 
-**Source:** [`reader/testing-nuisance.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-nuisance.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-### Common Setup
+## Common Setup
 
 Extra unknown parameters which are not of direct interest:
 
@@ -25,7 +25,7 @@ $H_0: \theta \in \Theta_0$ vs $H_1: \theta \in \Theta_1$
 
 Issue: $\lambda$ unknown but might affect type I error or power of a given test
 
-### Examples
+## Examples
 
 1. $X_1, \ldots, X_n \sim \text{iid } N(\mu, \sigma^2)$, $Y_1, \ldots, Y_m \sim \text{iid } N(\nu, \sigma^2)$
    $\mu, \nu, \sigma^2$ unknown
@@ -39,7 +39,7 @@ Issue: $\lambda$ unknown but might affect type I error or power of a given test
 3. $X \sim N(\mu, \sigma^2)$, $\theta \in \mathbb{R}$, $\lambda \in \mathbb{R}$, both unknown
    How to test $H_0: \theta = 0$ vs $H_1: \theta \neq 0$?
 
-### Idea: Condition on Sufficient Statistic for $\lambda$
+## Idea: Condition on Sufficient Statistic for $\lambda$
 
 Condition on $U(X)$ to eliminate dependence on $\lambda$
 

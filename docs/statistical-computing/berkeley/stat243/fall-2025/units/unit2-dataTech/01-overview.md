@@ -5,12 +5,30 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit2-dataTech.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`units/unit2-dataTech.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit2-dataTech.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Overview
 
-**Source:** [`units/unit2-dataTech.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit2-dataTech.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+```r
+#| echo: false
+reticulate::use_python('/usr/local/linux/miniforge-3.13/bin/python')
+```
+
+```python
+#| echo: false
+import os, io
+import numpy as np
+import pandas as pd
+import subprocess
+
+## So that all objects are printed without explicit `print`.
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
+
+```
 
 References (see [syllabus](../../syllabus/index.md) for links):
 

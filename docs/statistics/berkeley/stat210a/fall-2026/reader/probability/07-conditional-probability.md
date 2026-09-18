@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/probability.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Conditional probability
+> **Converted source.** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Conditional probability
 
 While it is beyond the scope of this course, measure theory also allows us to patch the definition of conditional probability and conditional expectation. Given two events $A$ and $B$, if $\PP(B) > 0$, we can unproblematically define the conditional probability of $A$ given $B$ as $\PP(A \mid B) = \PP(A \cap B) / \PP(B)$, but this definition obviously fails when $\PP(B) = 0$.
 

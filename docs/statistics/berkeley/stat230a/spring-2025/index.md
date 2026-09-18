@@ -1,40 +1,35 @@
 ---
-title: berkeley stat230a · spring 2025
+title: "Berkeley Stat 230A Spring 2025"
 source: https://github.com/berkeley-stat230a/spring-2025.git
 licence: CC BY 4.0
-converted: 2026-09-14
+material: course
+converted: '2026-09-18'
 ---
 
-# berkeley stat230a · spring 2025
+> **Converted source.** [Berkeley Stat 230A Spring 2025](https://github.com/berkeley-stat230a/spring-2025.git) — licensed CC BY 4.0. Converted 2026-09-18. The same material in markdown, split so that every part has a URL; nothing here is rewritten. It is regenerable output and is never edited by hand — to change the text, fix the converter or make an adaptation.
 
-Converted material from [https://github.com/berkeley-stat230a/spring-2025.git](https://github.com/berkeley-stat230a/spring-2025.git).
+# Berkeley Stat 230A Spring 2025
 
-**Licence:** CC BY 4.0 · **Material:** course · **Converted:** 2026-09-14
-
-> Converted, not adapted — the same text in markdown, split so every part has a URL.
-> It is regenerable output and is **never edited by hand**: a hand edit is lost on the
-> next run and silently diverges from the source it claims to reproduce. To change the
-> text, make an adaptation instead.
+3 documents, 4 pages — 1 from `markdown`, 1 from `notebook`, 1 from `llm`.
 
 ## Contents
 
-- [Data](data.md)
-- [Stat 230a: Linear Models](home.md)
-- **syllabus**
-    - [Syllabus](syllabus/01-syllabus.md)
-    - [About Stat 230a](syllabus/02-about-stat-230a.md)
-- [Unit 1: Intro](unit1.md)
+- [Syllabus](syllabus.md)
 - [Unit 02 —](unit2.md)
 
-### files
+## Files
 
 - **syllabus**
-    - [STAT 230A: Linear Models](files/syllabus/01-stat-230a-linear-models.md)
-    - [Anticipated Course Schedule](files/syllabus/02-anticipated-course-schedule.md)
+    - [Assessment](files/syllabus/02-assessment.md)
+    - [Policies](files/syllabus/03-policies.md)
 
 ## Not converted
 
-Listed rather than dropped silently, because this is the material that needs a
-different approach.
+Listed rather than dropped silently: a reader cannot otherwise tell an absence
+from an oversight, and this is the material that needs a different approach.
+
+- **thin body** (4) — `data.md → data.md`, `files/syllabus.pdf → 04-anticipated-course-schedule.md`, `index.md → home.md`, `unit1.md → unit1.md`
 
 - **administrivia** (2) — `README.md`, `calendar.md`
+
+- **extraction debris** (1) — `files/syllabus.pdf → 01-introduction.md`

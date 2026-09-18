@@ -1,36 +1,28 @@
 ---
-title: berkeley stat206b · spring 2026
+title: "Berkeley Stat 206B Spring 2026"
 source: https://github.com/berkeley-stat206b/spring-2026.git
 licence: CC BY 4.0
-converted: 2026-09-14
+material: course
+converted: '2026-09-18'
 ---
 
-# berkeley stat206b · spring 2026
+> **Converted source.** [Berkeley Stat 206B Spring 2026](https://github.com/berkeley-stat206b/spring-2026.git) — licensed CC BY 4.0. Converted 2026-09-18. The same material in markdown, split so that every part has a URL; nothing here is rewritten. It is regenerable output and is never edited by hand — to change the text, fix the converter or make an adaptation.
 
-Converted material from [https://github.com/berkeley-stat206b/spring-2026.git](https://github.com/berkeley-stat206b/spring-2026.git).
+# Berkeley Stat 206B Spring 2026
 
-**Licence:** CC BY 4.0 · **Material:** course · **Converted:** 2026-09-14
-
-> Converted, not adapted — the same text in markdown, split so every part has a URL.
-> It is regenerable output and is **never edited by hand**: a hand edit is lost on the
-> next run and silently diverges from the source it claims to reproduce. To change the
-> text, make an adaptation instead.
+3 documents, 3 pages — 2 from `markdown`, 1 from `notebook`.
 
 ## Contents
 
-- [Data](data.md)
-- **index**
-    - [Course Topics](home/01-course-topics.md)
-    - [Prerequisites](home/02-prerequisites.md)
-- **syllabus**
-    - [Syllabus](syllabus/01-syllabus.md)
-    - [About Dept 999](syllabus/02-about-dept-999.md)
-- [Unit 1: Intro](unit1.md)
+- [Stat 206b: Advanced Topics in Probablity and Stochastic Processes](home.md)
+- [Syllabus](syllabus.md)
 - [Unit 02 —](unit2.md)
 
 ## Not converted
 
-Listed rather than dropped silently, because this is the material that needs a
-different approach.
+Listed rather than dropped silently: a reader cannot otherwise tell an absence
+from an oversight, and this is the material that needs a different approach.
 
 - **administrivia** (5) — `README.md`, `calendar.md`, `scripts/README-course-instance.md`, `scripts/README-github-team.md`, `staff.md`
+
+- **thin body** (2) — `data.md → data.md`, `unit1.md → unit1.md`

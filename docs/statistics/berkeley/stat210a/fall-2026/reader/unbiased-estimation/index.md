@@ -5,22 +5,21 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/unbiased-estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/unbiased-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/unbiased-estimation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Unbiased Estimation
 
-**Source:** [`reader/unbiased-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/unbiased-estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+Split into 6 sections.
 
-Split into 7 sections.
-
-1. [Unbiased Estimation](01-unbiased-estimation.md)
-2. [Convex Loss Functions](02-convex-loss-functions.md)
-3. [The Rao-Blackwell Theorem](03-the-rao-blackwell-theorem.md)
-4. [UMVU estimators](04-umvu-estimators.md)
-5. [Finding the UMVUE](05-finding-the-umvue.md)
-6. [Doubts about unbiasedness](06-doubts-about-unbiasedness.md)
-7. [Expand for answer](07-expand-for-answer.md)
+1. [Convex Loss Functions](01-convex-loss-functions.md)
+2. [The Rao-Blackwell Theorem](02-the-rao-blackwell-theorem.md)
+3. [UMVU estimators](03-umvu-estimators.md)
+4. [Finding the UMVUE](04-finding-the-umvue.md)
+5. [Doubts about unbiasedness](05-doubts-about-unbiasedness.md)
+6. [Expand for answer](06-expand-for-answer.md)
 
 ---
 

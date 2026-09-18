@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/bayes-estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Bayes estimator
+> **Converted source.** [`reader/bayes-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-estimation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/bayes-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Bayes estimator
 
 Whatever our interpretation of the marginal expectation that defines $r_\Lambda$, the way to minimize it is the same: we simply choose $\delta(X)$ to minimize the *conditional* expectation of the loss given the data $X$.
 
@@ -60,7 +60,6 @@ $$
 noting that the cross-term $(g(\theta) - \EE[g(\theta) \mid X])\cdot(\EE[g(\theta) \mid X] - d)$ has zero conditional expectation.
 
 The optimal choice of $d$ is $\EE[g(\theta) \mid X]$, which zeroes the second term, giving Bayes risk $\EE[\Var(g(\theta) \mid X)]$.
-
 
 **Example: Weighted squared error loss**
 

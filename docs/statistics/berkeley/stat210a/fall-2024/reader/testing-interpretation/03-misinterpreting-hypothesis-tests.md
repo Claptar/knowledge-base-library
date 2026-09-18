@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/testing-interpretation.q
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Misinterpreting Hypothesis Tests
+> **Converted source.** [`reader/testing-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-interpretation.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/testing-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-interpretation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Misinterpreting Hypothesis Tests
 
 Hypothesis tests ubiquitous in science
 Common misinterpretations:
@@ -34,7 +34,7 @@ Pretty bad when you think about it
 Hyp. tests can be a good companion to critical thinking, never a substitute
 All models are wrong, some are useful, but need experience and theory to understand when assumptions do or don't cause real trouble
 
-### Common Objections to Hypothesis Testing
+## Common Objections to Hypothesis Testing
 
 1. Why should I test $\theta = 0$? Is $\theta$ ever exactly 0?
 

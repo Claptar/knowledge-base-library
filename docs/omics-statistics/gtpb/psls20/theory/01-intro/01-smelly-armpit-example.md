@@ -5,12 +5,18 @@ source_file: sources/gtpb-psls20/theory/01-intro.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`theory/01-intro.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/01-intro.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Smelly armpit example
 
-**Source:** [`theory/01-intro.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/01-intro.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+```r
+knitr::opts_chunk$set(include = TRUE, comment = NA, echo = TRUE,
+                      message = FALSE, warning = FALSE)
+library(tidyverse)
+```
 
 - Smelly armpits are not caused by sweat itself. The smell is caused by specific micro-organisms belonging to the group of *Corynebacterium spp.* that metabolise sweat.
 Another group of abundant bacteria are the *Staphylococcus spp.*, these bacteria do not metabolise sweat in smelly compounds.
@@ -56,7 +62,6 @@ We first summarize the data and calculate the mean, standard deviation, number o
 1. We pipe the `ap` dataframe to the group_by function to group the data by treatment trt `group_by(trt)`
 2. We pipe the result to the `summarize_at` function to summarize the "rel" variable and calculate the mean, standard deviation and the number of observations
 3. We pipe the result to the `mutate` function to make a new variable in the data frame `se` for which we calculate the standard error
-
 
 ```r
 apRelSum<-ap%>%
@@ -183,7 +188,6 @@ ap2<-ap
 hlp<-lm(rel~trt,ap)
 ap2$rel<-rnorm(20,mean=hlp$fit-20,sd=sigma(hlp)*2)
 ```
-
 
 ```r
 ap %>%

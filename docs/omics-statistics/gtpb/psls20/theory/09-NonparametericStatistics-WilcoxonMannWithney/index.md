@@ -5,19 +5,18 @@ source_file: sources/gtpb-psls20/theory/09-NonparametericStatistics-WilcoxonMann
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # 9. Nonparametric Statistics - Wilcoxon-Mann-Withney test
 
-**Source:** [`theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
-
-Split into 4 sections.
+Split into 3 sections.
 
 1. [Introduction](01-introduction.md)
 2. [Rank Tests](02-rank-tests.md)
 3. [Wilcoxon-Mann-Whitney Test](03-wilcoxon-mann-whitney-test.md)
-4. [[Home](https://gtpb.github.io/PSLS20/)](04-home-https-gtpb-github-io-psls20.md)
 
 ---
 

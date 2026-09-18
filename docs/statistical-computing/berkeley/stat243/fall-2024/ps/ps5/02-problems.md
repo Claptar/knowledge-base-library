@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2024/ps/ps5.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Problems
+> **Converted source.** [`ps/ps5.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/ps/ps5.qmd) — berkeley-stat243 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`ps/ps5.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/ps/ps5.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Problems
 
 1. This problem asks you to use Dask to process some Wikipedia traffic data and makes use of tools discussed in Section on October 11. The files in `/scratch/users/paciorek/wikistats/dated_2017_small/dated` (on the SCF) contain data on the number of visits to different Wikipedia pages on November 4, 2008 (which was the date of the US election in 2008 in which Barack Obama was elected). The columns are: date, time, language, webpage, number of hits, and page size. (Note that the Unit 7 Dask bag example and Question 2 below use a larger set of the same data.)
 
@@ -26,7 +26,9 @@ converted: '2026-09-14'
 
    b. Now replicate steps (i) and (ii) but using `sbatch` to submit your job as a batch job to the SCF Linux cluster, where step (ii) involves running Python from the command line (e.g., `python your_file.py`. You don't need to make the plot again. As discussed [here in the Dask documentation](https://docs.dask.org/en/stable/scheduling.html?highlight=__name__#standalone-python-scripts), put your Python/Dask code inside an `if __name__ == '__main__'` block.
 
-      Note that you need to copy the files to `/tmp` in your submission script, so that the files are copied to `/tmp` on whichever node of the SCF cluster your job gets run on. Make sure that as part of your `sbatch` script you remove the files in `/tmp` at the end of the script. (Why? In general `/tmp` is cleaned out when a machine is rebooted, but this might take a while to happen and many of you will be copying files to the same hard drive so otherwise `/tmp` could run out of space.)
+```
+  Note that you need to copy the files to `/tmp` in your submission script, so that the files are copied to `/tmp` on whichever node of the SCF cluster your job gets run on. Make sure that as part of your `sbatch` script you remove the files in `/tmp` at the end of the script. (Why? In general `/tmp` is cleaned out when a machine is rebooted, but this might take a while to happen and many of you will be copying files to the same hard drive so otherwise `/tmp` could run out of space.)
+```
 
 2. Consider the Wikipedia traffic data for October 15-November 15, 2008 (already available in `/var/local/s243/wikistats/dated_2017_sub` on all of the SCF cluster nodes in the low or high partitions). As in Question 1, explore the variation over time in the number of visits to Barack Obama-related Wikipedia sites, based on searching for “Barack_Obama” on English language Wikipedia pages. You should use Dask with distributed data structures to do the reading and filtering, as seen in Unit 7. Then group by day-hour (it's fine to do the grouping/counting in Python in a way that doesn't use Dask data structures). You can do this either in an interactive session using `srun` or a batch job using `sbatch`. And if you use `srun`, you can run Python itself either interactively or as a background job. Time how long it takes to do the Dask part of the computations to get a sense for how much time is involved working with this much data. Once you have done the filtering and gotten the counts for each day-hour, you can simply use standard Python or R code on your laptop to do some plotting to show how the traffic varied over the days of the full month-long time period and particularly over the hours of November 3-5, 2008 (election day was November 4 and Obama's victory was declared at 11 pm Eastern time on November 4).
 
@@ -42,7 +44,9 @@ converted: '2026-09-14'
 
    a. Find all the users (including their `displayname`) who have asked but never answered a question. You're welcome to set up your solution using views, but you should not need to. In your solution, provide as many separate queries as needed to illustrate **all** of the following SQL functionality: a subquery in the WHERE statement, a subquery in the FROM statement, a set operation using INTERSECT, UNION or EXCEPT), and an outer join (note that SQLite does not have a right outer join). Check the count of the number of results from the different queries to make sure they are the same.
 
-      Note that for reasons I haven't looked into, both the questions and answers tables contain rows where the `ownerid` is `NULL`. These can mess up certain versions of the queries I'm asking you to create. So first create views that omit those cases from those two tables. (One could do the omitting within the main query, but this is a good situation for using views to make the main query easier to understand.)
+```
+  Note that for reasons I haven't looked into, both the questions and answers tables contain rows where the `ownerid` is `NULL`. These can mess up certain versions of the queries I'm asking you to create. So first create views that omit those cases from those two tables. (One could do the omitting within the main query, but this is a good situation for using views to make the main query easier to understand.)
+```
 
    b. Do the different approaches vary much in terms of how much time they take? What about using SQLite versus DuckDB?
 

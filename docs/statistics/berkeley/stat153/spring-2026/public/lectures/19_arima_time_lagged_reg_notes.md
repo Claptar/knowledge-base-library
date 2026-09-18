@@ -5,16 +5,16 @@ source_file: sources/berkeley-stat153/spring-2026/public/lectures/19_arima_time_
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`public/lectures/19_arima_time_lagged_reg_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/19_arima_time_lagged_reg_notes.md) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Lecture 19 Notes - ARIMA Models
 
-**Source:** [`public/lectures/19_arima_time_lagged_reg_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/19_arima_time_lagged_reg_notes.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
-
 * **Reading**: Ch 3 - Shumway and Stoffer
 
-# ARIMA models
+## ARIMA models
 
 Let's end our discussion of ARIMA models by finally putting everything together and adding the "I" term - this is for Autoregressive Integrated Moving Average.
 

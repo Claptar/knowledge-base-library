@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/05_statisticalInfere
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Tutorial 2.3: Hypothesis testing on the shrimps dataset
+> **Converted source.** [`tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_shrimps_half.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_shrimps_half.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_shrimps_half.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_shrimps_half.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Tutorial 2.3: Hypothesis testing on the shrimps dataset
 
 A dataset on PCBs (Polychlorinated biphenyls) accumulation
 in the adipose tissue of shrimps.
@@ -21,14 +21,14 @@ groups of 18 samples (each 100 grams) of shrimps each were cultivated
 in different conditions, one control condition and one condition
 where the medium was poluted with PCBs.
 
-# Goal
+## Goal
 
 The research question is; is there an effect of the
 growth condition on the PCB concentration in the adipose
 tissue of shrimps. Note that the PCB concentrations were
 measured in pg/g adipose tissue.
 
-# Develop a Rmarkdown file that weaves data analyses, plots and results and answers to the following questions.
+## Develop a Rmarkdown file that weaves data analyses, plots and results and answers to the following questions.
 
 1. Explore the data what do you observe?
 

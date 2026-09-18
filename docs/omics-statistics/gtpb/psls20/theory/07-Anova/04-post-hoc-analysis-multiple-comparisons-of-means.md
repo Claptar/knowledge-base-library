@@ -5,19 +5,18 @@ source_file: sources/gtpb-psls20/theory/07-Anova.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Post hoc analysis: Multiple comparisons of means
+> **Converted source.** [`theory/07-Anova.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/07-Anova.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/07-Anova.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/07-Anova.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Post hoc analysis: Multiple comparisons of means
 
 ## Naive method
 
 In the first part we developed the $F$-test to assess
 
 $$  H_0: \mu_1=\cdots = \mu_g \text{ versus } H_1: H_1: \exists\ j,k \in \{1,\ldots,g\} : \mu_j\neq\mu_k$$
-
 
 - If we reject $H_0$ we conclude that at least two means are different
 - The method does not allow to identify which means are different.
@@ -62,7 +61,6 @@ When we perform $m$-tests on the $\alpha$ significance level we cannot correctly
 3. For each simulated dataset we conduct $m=3$ pairwise two-sample $t$-test
 4. As soon as one of the $p$-values is below significance level $\alpha=5\%$, we reject $H_0: \mu_1=\mu_2=\mu_3$ because two means are different according to the  $t$-tests.
 5. We rapport the relative frequency of rejection of the global null hypothesis, i.e. the probability on a type I error  $H_0: \mu_1=\mu_2=\mu_3$.
-
 
 ```r
 g<-3 # number of treatments (g=3)
@@ -180,7 +178,6 @@ if(reject) cnt<-cnt+1
 cnt/N
 ```
 
-
 - We find an FWER of `r round(cnt/N*100,1)`%, which is slightly conservative.
 - For simulations of $g=5$ group the FWER is $4.1\%$ (more conservative).
 
@@ -205,17 +202,15 @@ model1.mcp<-glht(model1,linfct=mcp(dose="Tukey"))
 summary(model1.mcp)
 ```
 
-
 ```r
 confint(model1.mcp)
 ```
-
 
 ```r
 plot(confint(model1.mcp))
 ```
 
-###Evaluate Tukey method
+### Evaluate Tukey method
 
 ```r
 g<-3 # number of treatments (g=3)

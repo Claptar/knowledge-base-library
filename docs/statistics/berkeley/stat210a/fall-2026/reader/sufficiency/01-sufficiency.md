@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/sufficiency.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Sufficiency
+> **Converted source.** [`reader/sufficiency.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/sufficiency.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/sufficiency.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/sufficiency.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Sufficiency
 
 Sufficiency is a central concept in statistics that allows us to focus on the essential aspects of the data set while ignoring details that are irrelevant to the inference problem. As we will see, in many problems we can find a more stripped-down representation of the data that carries all of the relevant information for a statistical problem.
 
@@ -37,8 +37,8 @@ Note that this pmf depends only on $T(x)$: it assigns probability $\theta^t (1-\
 $$
 \begin{aligned}
 \PP_\theta(X = x \mid T(X) = t)
-&= \frac{\PP_\theta(X=x, \sum_i X_i = t)}{\PP_\theta(T(X) = t)} \\[7pt]
-&= \frac{\theta^t (1-\theta)^{n-t}1\{\sum_i x_i = t\}}{\theta^t(1-\theta)^{n-t}\binom{n}{t}}\\[5pt]
+&= \frac{\PP_\theta(X=x, \sum_i X_i = t)}{\PP_\theta(T(X) = t)} [7pt]
+&= \frac{\theta^t (1-\theta)^{n-t}1\{\sum_i x_i = t\}}{\theta^t(1-\theta)^{n-t}\binom{n}{t}}[5pt]
 &= \binom{n}{t}^{-1}1\{T(x) = t\}.
 \end{aligned}
 $$

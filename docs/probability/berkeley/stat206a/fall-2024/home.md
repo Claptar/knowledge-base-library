@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat206a/fall-2024/index.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Statistics 206a: Advanced Topics in Probability and Stochastic Process
+> **Converted source.** [`index.qmd`](https://github.com/berkeley-stat206a/fall-2024/blob/67b33919409b2507b48465b8d9e92b11fb41a983/index.qmd) — berkeley-stat206a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`index.qmd`](https://github.com/berkeley-stat206a/fall-2024/blob/67b33919409b2507b48465b8d9e92b11fb41a983/index.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Statistics 206a: Advanced Topics in Probability and Stochastic Process
 
 High dimensional Gibbs measures are ubiquitous in probability theory, statistical mechanics and theoretical computer science. A generic example, say on the hypercube $Q=\{-1,1\}^n$, is given by a Hamiltonian $H: Q\to \mathbb{R}$, with the measure $\mu$ at $\sigma \in Q$ being proportional to $\exp\left(-\beta H(\sigma)\right)$ where $\beta>0$ is the inverse temperature parameter. $Z$, the normalizing constant, is known as the partition function. Central examples include  the Ising model, spin glass models, exponential random graphs, the hardcore model and so on. Such Gibbs measures also admit natural Glauber dynamics which keep $\mu$ stationary.
 

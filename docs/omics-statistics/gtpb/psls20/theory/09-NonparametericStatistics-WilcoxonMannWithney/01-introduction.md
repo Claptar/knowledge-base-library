@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/09-NonparametericStatistics-WilcoxonMann
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Introduction
+> **Converted source.** [`theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Introduction
 
 ```r
 knitr::opts_chunk$set(include = TRUE, comment = NA, echo = TRUE,
@@ -20,8 +20,7 @@ library(Rmisc)
 set.seed(140)
 ```
 
-
-#Intro
+## Intro
 
 Inference was only correct if distributional assumptions were satisfied
 
@@ -44,7 +43,7 @@ Inference was only correct if distributional assumptions were satisfied
 
 ---
 
-## Cholesterol voorbeeld
+### Cholesterol voorbeeld
 
 - Cholesterol concentration in blood measured for
   - 5 patients (group=1) two days upon a stroke
@@ -61,7 +60,6 @@ chol
 ```
 
 ---
-
 
 ```r
 chol %>%  ggplot(aes(x=group,y=cholest)) + geom_boxplot(outlier.shape=NA) + geom_point(position="jitter")

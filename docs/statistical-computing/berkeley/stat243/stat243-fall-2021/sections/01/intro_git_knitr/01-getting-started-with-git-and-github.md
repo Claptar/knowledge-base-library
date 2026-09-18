@@ -5,25 +5,31 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/sections/01/intro_git_kn
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`sections/01/intro_git_knitr.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/01/intro_git_knitr.Rmd) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Getting started with Git and GitHub
 
-**Source:** [`sections/01/intro_git_knitr.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/01/intro_git_knitr.Rmd) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+```r
+knitr::opts_chunk$set(echo = TRUE)
+```
 
-### Learning Objectives
+In this section we will learn and dicuss some tools that you will need to know to turn in your first problem set, namely git and knitr (either R Markdown, Rtex, or R Sweave). At the end there are also resources about code style and a couple notes to keep in mind when turning in your problem sets.
+
+## Learning Objectives
 
  * Create a GitHub repository
  * Create a local Git repository
  * Practice adding, and committing changes to your (local) Git repo
  * Practice pushing commited changes to a remote repo
 
-### Useful Links
+## Useful Links
 - A nice tutorial is available on the [Berkeley SCF github repo](https://github.com/berkeley-scf/tutorial-git-basics)
 - Save username and password ([Simple Answer](https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git), [Official Documentation](https://git-scm.com/docs/git-credential-store))
 
-### Create a New GitHub Repository
+## Create a New GitHub Repository
 There are two ways to start a repository:
 
 - create the repository on GitHub using your browser and then use `git clone`
@@ -39,8 +45,7 @@ We're going to cover creating one online:
 - add a .gitignore for R files.  Stops items like .Rhistory files from being added to your repo.
 - Click the green button __Create repository__.
 
-
-### Adding a README file
+## Adding a README file
 
 Initially, your repo is located on GitHub. To set it up locally, you must clone
 the repository from GitHub.
@@ -84,7 +89,7 @@ Next, the changes need to __committed__ to the repository.
 git commit -m "Create README"
 ```
 
-### Pushing changes to a remote repo
+## Pushing changes to a remote repo
 
 Now that you have linked your local repo with your remote repo, you can
 start pushing (i.e. uploading) commits to GitHub.

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/sufficiency.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Factorization theorem
+> **Converted source.** [`reader/sufficiency.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/sufficiency.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/sufficiency.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/sufficiency.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Factorization theorem
 
 As we will see next, we didn't really need to go to the trouble of calculating the conditional distribution in the first example. Once we noticed that the density depends on $x$ only through $T(x)$, we could have concluded that $T(X)$ was sufficient.
 
@@ -41,8 +41,8 @@ First, assume that there exists a factorization $p_\theta(x) = g_\theta(T(x)) h(
 $$
 \begin{aligned}
 \PP_\theta(X = x \mid T(X) = t)
-&= \frac{\PP_\theta(X = x, T(X) = t)}{\PP_\theta(T(X) = t)}\\[7pt]
-&= \frac{g_\theta(t) h(x) 1\{T(x) = t\}}{g_\theta(t)\displaystyle\sum_{z:\;T(z) = t} h(z)}\\[7pt]
+&= \frac{\PP_\theta(X = x, T(X) = t)}{\PP_\theta(T(X) = t)}[7pt]
+&= \frac{g_\theta(t) h(x) 1\{T(x) = t\}}{g_\theta(t)\displaystyle\sum_{z:\;T(z) = t} h(z)}[7pt]
 &= \frac{h(x) 1\{T(x) = t\}}{\displaystyle\sum_{z:\;T(z) = t} h(z)},
 \end{aligned}
 $$
@@ -62,6 +62,8 @@ $$
 \PP_\theta(X = x) = \PP_\theta(T(X) = T(x)) \;\cdot\;\PP_\theta(X = x \mid T(X) = T(x)) = g_\theta(T(x)) h(x),
 $$ so $g_\theta(T(x))h(x)$ is indeed the pmf $p_\theta(x)$.
 
+## Statement for general $\cX$
+
 ---
 
-[← Visualization of sufficiency for two binomials](02-visualization-of-sufficiency-for-two-binomials.md) · [Up: contents](index.md) · [Statement for general $\cX$ →](04-statement-for-general.md)
+[← Visualization of sufficiency for two binomials](02-visualization-of-sufficiency-for-two-binomials.md) · [Up: contents](index.md) · [Examples →](04-examples.md)

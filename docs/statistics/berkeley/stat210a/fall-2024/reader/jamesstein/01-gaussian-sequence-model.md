@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/jamesstein.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Gaussian sequence model
+> **Converted source.** [`reader/jamesstein.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/jamesstein.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/jamesstein.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/jamesstein.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Gaussian sequence model
 
 Recall that we have discussed a variety of estimators for
 $\theta \in \RR^d$ in the *Gaussian sequence model*
@@ -33,7 +33,7 @@ $$L(\theta, d) =
 
 The most obvious estimator is $\delta_0(X) = X$ itself, which we could justify in a variety of ways: we've shown that it is the UMVU estimator for $\theta$ and also the objective Bayes estimator, since the flat prior on $\theta$ coincides with the Jeffreys prior (as it does for any location model). It also happens to be the maximum likelihood estimator (MLE), which we'll discuss later in the course.
 
-### Bayes estimators
+## Bayes estimators
 
 If we introduce the Bayesian prior $\theta_i \simiid N(0,\tau^2)$ then we have seen that we arrive at the Bayes estimator $\frac{\tau^2}{1+\tau^2}X$.
 
@@ -52,7 +52,7 @@ $$\EE[1/Y] = \frac{1}{d-2}, \quad \text{ if } Y \sim \chi_d^2 = \text{Gamma}(d/2
 which is proved in the handwritten notes. Plugging in $\hat\zeta_\text{UMVU}$ results in an estimator called the *James-Stein* estimator,
 $$ \delta_{\text{JS}}(X)= \left(1 - \frac{d-2}{\|X\|^2}\right)X = \delta_{\hat\zeta_{\text{UMVU}}}(X) $$
 
-### James-Stein Paradox
+## James-Stein Paradox
 
 While the James-Stein estimator can be motivated as an empirical Bayes estimator, it is surprisingly good even without making any Bayesian assumptions at all.
 
@@ -70,8 +70,7 @@ The translation-invariance of the Gaussian location model means that the James-S
 
 This result was received as a shock in the 1950s when it first came out. It was regarded for a long time as a curiosity, but it was eventually understood to carry the deep implication that shrinkage makes sense, especially in higher-dimensional problems, even when we don't have a Bayes justification for it.
 
-
-### Linear shrinkage estimators
+## Linear shrinkage estimators
 
 Even without introducing a Bayesian prior for $\theta$, we can motivate our linear shrinkage estimator purely from the perspective of trading a bit of bias for a reduction in variance.
 

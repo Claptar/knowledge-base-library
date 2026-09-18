@@ -2,15 +2,15 @@
 title: 2.3.2. The Preprocessing tab
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/cptac_robust_gui.Rmd
 source_file: sources/statomics-sga21/cptac_robust_gui.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 2.3.2. The Preprocessing tab
+> **Converted source.** [`cptac_robust_gui.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/cptac_robust_gui.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`cptac_robust_gui.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/cptac_robust_gui.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+# 2.3.2. The Preprocessing tab
 
 The preprocessing tab features different preprocessing options, many of which can be safely left at their default state. When you click the preprocessing tab, it should now look as follows:
 
@@ -34,6 +34,19 @@ Razor peptides are peptides that cannot be uniquely attributed to a single prote
 
 You can further filter out reverse sequences (left over from the MaxQuant search) and potential contaminants proteins (such as keratin from the operator's skin and hair, or leftover trypsin from digestion) [10], by providing the column names of the peptides file that indicate these sequences in the “Filter columns” field.
 
+## 2.3.3. The Summarization tab
+The preprocessing tab features different summarization options. When you click the preprocessing tab, the following screen is obtained:
+
+![Figure 9. msqrob2 Summarization tab](https://raw.githubusercontent.com/statOmics/SGA21/0ad787d4cc2bb2f4636440840a8a923cf6c09839/figures/guiSummarization.png)
+
+When robust summarization is applied, the novel and much faster two-stage approach is used to fit the MSqRob model. Mean and median summarization are also implemented, but mainly for didactical reasons and to show the problems related to naive summarization methods. You always have to invoke the “Start Summarization!” button in order to create an object needed for downstream quantification. Depending on the method, summarization might take a while.
+
+1. We first select the naive median summarization method and hit the “Start Summarization!” button. When the summarization is finished an MDS plot is generated based on the summarized intensities.
+
+2. We then select the robust method, which we will use in the downstream data analysis method so as to implement the two-stage MSqRob procedure.
+
+What do you see upon summarization with the robust method and why would that be the case? [2.3.3.a]
+
 ---
 
-[← 2.2.1. The Input tab](02-2-2-1-the-input-tab.md) · [Up: contents](index.md) · [2.3.3. The Summarization tab →](04-2-3-3-the-summarization-tab.md)
+[← 2.2.1. The Input tab](02-2-2-1-the-input-tab.md) · [Up: contents](index.md) · [2.3.4. The Model tab →](04-2-3-4-the-model-tab.md)

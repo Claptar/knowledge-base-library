@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/bayes-computation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# MCMC in practice
+> **Converted source.** [`reader/bayes-computation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-computation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/bayes-computation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-computation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# MCMC in practice
 
 The magic of MCMC is that running an irreducible and aperiodic Markov chain with stationary distribution $\lambda(\theta\mid X)$ for *long enough* will eventually give us samples that are approximately drawn from the posterior. The only trouble, in practice, is that this can be very long indeed.
 
@@ -344,4 +344,4 @@ Two additional implementation details commonly used in MCMC are **burn-in**, whe
 
 ---
 
-[← The Gibbs sampler](03-the-gibbs-sampler.md) · [Up: contents](index.md)
+← The Gibbs sampler · [Up: contents](index.md)

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/howtos/gitInstall.Rmd
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# GitInstall
+> **Converted source.** [`howtos/gitInstall.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/howtos/gitInstall.Rmd) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`howtos/gitInstall.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/howtos/gitInstall.Rmd) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# GitInstall
 
 Here are some instructions for installing Git on your computer. Git is the version control software we'll use in the course.
 

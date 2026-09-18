@@ -1,26 +1,23 @@
 ---
-title: Exponential families
+title: Exponential family structure
 source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/reader/exponential-families.html
 source_file: sources/berkeley-stat210a/fall-2025/units/reader/exponential-families.html
 licence: CC BY 4.0
 route: pandoc-html
 fidelity: good
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Exponential families
+> **Converted source.** [`units/reader/exponential-families.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/reader/exponential-families.html) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.html`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/reader/exponential-families.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/reader/exponential-families.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
+# Exponential family structure
 
-Split into 7 sections.
+Split into 4 sections.
 
-1. [Introduction](01-introduction.md)
-2. [Exponential family structure](02-exponential-family-structure.md)
-3. [Differential identities](03-differential-identities.md)
-4. [Other parameterizations](04-other-parameterizations.md)
-5. [Exponential tilting](05-exponential-tilting.md)
-6. [Visualization of exponential tilting](06-visualization-of-exponential-tilting.md)
-7. [Repeated sampling from exponential families](07-repeated-sampling-from-exponential-families.md)
+1. [Exponential family structure](01-exponential-family-structure.md)
+2. [Differential identities](02-differential-identities.md)
+3. [Other parameterizations](03-other-parameterizations.md)
+4. [Repeated sampling from exponential families](05-repeated-sampling-from-exponential-families.md)
 
 ---
 

@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/05-statisticalInference-twosampleT.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Assumptions
+> **Converted source.** [`theory/05-statisticalInference-twosampleT.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/05-statisticalInference-twosampleT.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/05-statisticalInference-twosampleT.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/05-statisticalInference-twosampleT.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Assumptions
 
 Validity of t-test depends on distributional assumptions:
 
@@ -29,7 +29,7 @@ To construct confidence intervals we also rely on these assumptions.
 
 ---
 
-## Evaluate normality
+### Evaluate normality
 
  - Boxplots and histograms: shape of distribution and outliers
 
@@ -55,7 +55,7 @@ Recommendation
 
 ---
 
-## Homoscedasticity
+### Homoscedasticity
 
 - Boxplots: The box size is the inter quartile range (IQR) a robust estimator of the variance.
 
@@ -67,7 +67,7 @@ Recommendation
 
 ---
 
-## Welch modified t-test
+### Welch modified t-test
 
 If the data are heteroscedastic, you can use a Welch two-sample T-test, which no longer uses the pooled variance estimator.
 
@@ -86,6 +86,31 @@ Note that you can see that the Welch T-test is adopted in the title. The adjuste
 
 ---
 
+## How to report?
+
+- In the scientific literature there is too much attention for p-values
+
+- It is much more informative to combine an estimate with its confidence interval.
+
+**Rule of thumb**:
+
+Report an estimate together with its  confidence interval (and its p-value)
+
+1. The result of the test can be derived of the confidence interval
+2. It allows the reader to judge **scientific relevance**.
+
+```r
+t.test(rel~trt,data=ap)
+```
+
+The result of an $\alpha$-level t-test is equivalent with comparing the effect size under $H_0$ with the $1-\alpha$ CI.
+
+An effect can be extremely statistically significant, but scientifically irrelevant. With a CI you will spot this.
+
 ---
 
-[← Two sample T-test](02-two-sample-t-test.md) · [Up: contents](index.md) · [How to report? →](04-how-to-report.md)
+## [Home](https://gtpb.github.io/PSLS20/) {-}
+
+---
+
+[← Two sample T-test](02-two-sample-t-test.md) · [Up: contents](index.md)

@@ -5,20 +5,20 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/introduction.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/introduction.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/introduction.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Statistical evasions in practice: coin flipping
 
-**Source:** [`reader/introduction.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/introduction.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-#### Are coins really fair?
+## Are coins really fair?
 
 Although physical randomizers like coins and dice seem to be the firmest ground on which we can build a theory of probability, recent work has made the surprising finding that most human flippers have a somewhat greater than 50% chance of seeing their coin land on the same side as it started, due to the physics of rotating objects. This was first hypothesized in a theoretical article by Diaconis, Holmes, and Montgomery in 2007, and confirmed in a large experiment by Bartos et al. (2023), in which 48 human coin flippers collectively flipped $n=350,757$ coins — finding, indeed, that $178,079$ ($50.77\%$) of the coins landed on the same side as they started.
 
 In fact, Bartos et al. collected a lot more data than this: each of the 48 flippers recorded the full sequence of all of their coin flips, including which type of coin they were using (coins minted in 46 different countries were used). All flippers even had to submit video of themselves flipping the coins. But the analysis in the next section will use only the summary statistic $X = 178,079$, which records the number of flips that landed same-side-up.
 
-#### Frequentist analysis in the binomial model
+## Frequentist analysis in the binomial model
 
 The data set is simple to analyze if we make two seemingly innocuous simplifying assumptions: first, that the flips were statistically independent, and second, that every flip had an equal probability, which we will call $\theta$, of landing on the same side it started on. In that case, we can conclude (deductively) that the probability that $x$ out of the $n$ flips land on the same side is exactly $\binom{n}{x} \theta^x(1-\theta)^{n-x}$, for the realizable values $x=0,\ldots,n$.
 
@@ -40,7 +40,7 @@ This is a risky conclusion! Even if we were so conservative as to reject the nul
 
 Beyond just knowing that a same-side bias exists, it is interesting to have some sense of how large it is. Using very similar logic to the hypothesis test, the `binom.test` function also returns a $95\%$ **confidence interval** $[50.6\%, 50.9\%]$ for the parameter $\theta$. We will explore how to construct confidence intervals later in the semester, but for now it is sufficient to know that the interval is defined so that it has at least a $95\%$ chance of covering (i.e., including) $\theta$ in any given experiment, no matter what value $\theta$ takes. This is another example of inductive behavior: in producing a confidence interval, we take a risk that our inductive conclusion, in this case "$\theta$ lies between $0.0506$ and $0.0509$," will be wrong. But we are behaving in such a way that we can quantify and limit this risk.
 
-#### Bayesian analysis
+## Bayesian analysis
 
 Another route we could take, if we have a more Bayesian bent, is to introduce another assumption about the distribution that $\theta$ has; for example, that $\theta \sim \text{Unif}[0,1]$. This is a stronger assumption than we made before: in what sense does $\theta$ have this distribution? Compared with the other assumptions, it is very difficult to test: there is only one draw from the distribution of $\theta$, and it is observed only indirectly through the coin flips. However, it turns out in this case not to matter much what prior we picked, in the sense that many other prior distributions would result in almost the same posterior distribution.
 
@@ -48,13 +48,13 @@ If we make this assumption about the distribution of $\theta$, then we can direc
 \theta \mid X = x \sim  \frac{(n + 1)!}{x!(n-x)!} \theta^x (1-\theta)^{n-x}, \quad \text{ for } \theta \in [0,1].
 $$ This distribution is called the **Beta distribution** with parameters $\alpha = x+1$ and $\beta = n-x+1$. Note that this expression is a probability density for the parameter $\theta$, not a distribution for the data $X$. Once we know the distribution of $\theta$ we can make claims about it: for example, after seeing the data, there is only a $3.8 \times 10^{-20}$ chance that $\theta \leq 0.5$. We can also calculate a $95\%$ Bayesian **credible interval**, which includes $95\%$ of the posterior probability mass. In this case, the interval is $[50.6\%, 50.9\%]$, coinciding with the frequentist confidence interval to several decimal points. The credible interval is making a stronger claim than the confidence interval: it is saying, *in this experiment*, there is a $95\%$ chance that $\theta$ falls in the range we calculated.
 
-#### Questioning the binomial model
+## Questioning the binomial model
 
 Bartos et al. stated in their paper that the binomial model is not quite correct: some human flippers had more same-side bias than others. We can modify the binomial model to allow for a different same-side probability $\theta_i$ for flipper $i$ over their $n_i$ coin flips (with $\sum_i n_i = n$). If we retain the independence assumption, this leads to a more complex model where $X_i \sim \text{Binom}(n_i,\theta_i)$ independently for each $i = 1, \ldots, 48$.
 
 There was also evidence that the flippers were improving over time. If we want to accommodate this information we can expand the model yet again, to allow $X_{i,t} \sim \text{Bernoulli}(\theta_{i,t})$ independently for $i = 1,\ldots,48$ and $t = 1,\ldots, n_i$. We might add the constraint that for each $i$, we have $\theta_{i,1} \geq \theta_{i,2} \geq \cdots \geq \theta_{i,n_i}$. With $n = 350,757$ parameters, one for every data point, this is effectively a nonparametric model. We will return to these models in future lectures.
 
-#### Questions we'll return to
+## Questions we'll return to
 
 This example is complex enough to give us a glimpse of some of the questions we'll be interested in throughout the semester:
 

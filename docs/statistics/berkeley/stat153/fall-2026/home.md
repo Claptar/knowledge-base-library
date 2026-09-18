@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2026/index.md
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# STAT 153 - STAT 248: Time Series Analysis
+> **Converted source.** [`index.md`](https://github.com/berkeley-stat153/fall-2026/blob/1df2e362c312415dc83d910dc9e724e1646fafab/index.md) — berkeley-stat153 · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`index.md`](https://github.com/berkeley-stat153/fall-2026/blob/1df2e362c312415dc83d910dc9e724e1646fafab/index.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# STAT 153 - STAT 248: Time Series Analysis
 
 ::::{grid} 1 2 2 2
 
@@ -55,11 +55,11 @@ converted: '2026-09-14'
 
 ::::
 
-# Syllabus
+## Syllabus
 
-Basic information about the course can be found in the [syllabus](syllabus/index.md).
+Basic information about the course can be found in the [syllabus](syllabus.md).
 
-# Schedule
+## Schedule
 
 :::{schedule} ./schedule.yml
 

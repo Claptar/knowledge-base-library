@@ -5,12 +5,19 @@ source_file: sources/gtpb-psls20/theory/06-linearRegression.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Breast cancer dataset
 
-**Source:** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+```r
+knitr::opts_chunk$set(include = TRUE, comment = NA, echo = TRUE,
+                      message = FALSE, warning = FALSE)
+library(Rmisc)
+library(tidyverse)
+```
 
 - Subset of study https://doi.org/10.1093/jnci/djj052
 
@@ -21,7 +28,6 @@ converted: '2026-09-14'
     - size: tumor size in cm,
     - ESR1 and S100A8 gene expression in tumor biopsy (microarray technology)
 
-
 ```r
 brca <- read_csv("https://raw.githubusercontent.com/GTPB/PSLS20/master/data/breastcancer.csv")
 brca
@@ -29,7 +35,6 @@ brca
 
 - For didactical reasons we first remove 3 outliers in the S100A8 expression data.
 - Later in the lecture we will show how to properly deal with all data.
-
 
 ```r
 brca %>% ggplot(aes(x="",y=S100A8)) +

@@ -5,18 +5,17 @@ source_file: sources/berkeley-stat243/fall-2024/ps/ps8.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Problem Set 8
+> **Converted source.** [`ps/ps8.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/ps/ps8.qmd) — berkeley-stat243 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`ps/ps8.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/ps/ps8.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Problem Set 8
 
 - This covers material in Unit 11.
 - It's due at 5 pm (Pacific) (yes, 5 pm) on December 6, both submitted as a PDF to Gradescope as well as committed to your GitHub repository.
 - Please see PS1 for formatting and attribution requirements.
 - Note that is is fine to hand-write solutions to the the non-coding questions, but make sure your writing is neat and insert any hand-written parts in order into your final submission.
-
 
 1. Consider probit regression, which is an alternative to logistic
     regression for binary outcomes. The probit model is
@@ -76,7 +75,6 @@ converted: '2026-09-14'
         can do this via trial and error simply by simulating data for a
         given $\beta_{1}$ and fitting a logistic regression to get the
         estimate and standard error. Then adjust $\beta_{1}$ as needed.
-
 
 2. A different approach to this problem just directly maximizes the
         log-likelihood of the observed data under the original probit model (i.e., without the `z`s).

@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/01-intro.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Salk Study
+> **Converted source.** [`theory/01-intro.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/01-intro.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/01-intro.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/01-intro.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Salk Study
 
 - In 1916, the US experienced the first large epidemic of polio.
 - John Salk developed a vaccine with promising results in the lab in the early fifties.
@@ -48,14 +48,12 @@ What can we conclude?
 
 ## Confounding
 
-
 ```r
 plot(c(0,0,1),c(-2,2,0),pch=c("S","V","P"),xaxt="none",yaxt="none",axes=FALSE,xlab="",ylab="",cex=4,ylim=c(-2.2,2.2))
 arrows(x0=0.1,x1=.9,y0=1.8,y1=0.1,lwd=4)
 arrows(x0=0.1,x1=.9,y0=-1.8,y1=-0.2,lwd=4)
 arrows(x0=0,x1=0,y0=-1.4,y1=1.4,lwd=4)
 ```
-
 
 - We observe a lower polio (P) incidence for children for who no consent was given than for the children in the control group.
 
@@ -69,8 +67,6 @@ arrows(x0=0,x1=0,y0=-1.4,y1=1.4,lwd=4)
     - difference in susceptible for disease.
 
 ---
-
-## Salk Study
 
 ### Design
 A new study was conducted: Randomized double blind study

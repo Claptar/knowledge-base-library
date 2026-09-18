@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat205b/spring-2026/index.md
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# stat205b
+> **Converted source.** [`index.md`](https://github.com/berkeley-stat205b/spring-2026/blob/db22baac43fb4c39112acd706940c72e2deccac4/index.md) — berkeley-stat205b · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`index.md`](https://github.com/berkeley-stat205b/spring-2026/blob/db22baac43fb4c39112acd706940c72e2deccac4/index.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# stat205b
 
 Welcome to Department 999, a comprehensive introduction to the fundamental concepts and methodologies that form the backbone of modern academic inquiry. This course is designed to provide students with both theoretical understanding and practical skills necessary for success in their chosen field of study.
 

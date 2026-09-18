@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Statistical models
+> **Converted source.** [`reader/estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/estimation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Statistical models
 
 Until now, we have been discussing the topic of *probability*. Roughly speaking, in probability we fully specify the distribution of some random variables, and then ask what we can say about aspects of the distribution. For example, given a complete description of the rules for generating a random walk, we might ask how long, in expectation, it will take to reach a certain threshold. This is an essentially *deductive* exercise: while the mathematics might be complicated, and the questions concern probabilities, they ask generally have unambiguous answers.
 
@@ -18,7 +18,7 @@ In statistics, we do essentially the opposite: beginning with the *data* --- the
 
 We will generally use the letter $X$ to denote the full data set, which we assume is drawn randomly from some unknown distribution $P$ over the *sample space* $\cX$. Let $\cP$ denote a family of candidate probability distributions, called the *statistical model*. We presume the analyst is assuming that *some* $P\in \cP$ is the true data-generating distribution $P$, but without knowing which one.
 
-### Example: three models for coin flipping
+## Example: three models for coin flipping
 
 In lecture 1, we discussed a study in which 48 participants flipped coins $n=350,757$ total times, observing that the coin landed on the same side it began $X=178,079$ total times, about $50.8\%$. We discussed three possible models for how the data were generated, in order from simplest to most complicated:
 
@@ -56,7 +56,7 @@ We are essentially dealing with a nonparametric model at this point, and this co
 
 An alert reader might have noticed that the sample space kept changing as we changed the model. This is not because the model affects what data we observe: the experimenters recorded each flipper's entire sequence of flips. Rather, it is because the model affects what data we *retain* after summarizing it as compactly as we can without losing information. Next week, when we study the topic of *sufficiency*, we will learn why.
 
-### Parametric vs nonparametric models
+## Parametric vs nonparametric models
 
 Many of the models we will consider in this class are *parametric*, typically meaning that they are indexed by finitely many real parameters. That is, we have $\cP = \{P_\theta:\; \theta \in \Theta\}$, for some *parameter space* $\Theta$ that is typically in $\RR^d$ for some $d$. Then $\theta$ is called the *parameter* or *parameter vector*, and $d$ is called the *model dimension*.
 
@@ -72,7 +72,7 @@ Formally, if $X = (X_1,\ldots,X_n)$, we can write the family as $\cP = \{P^n:\; 
 
 **Notation:** Much of what we will learn in this course applies to parametric and nonparametric models alike, and indeed there is no crisp demarcation between parametric and nonparametric models in practice. It will often be convenient to use notation $\cP = \{P_\theta :\; \theta \in \Theta\}$, without specifying what kind of set $\Theta$ is; in particular there is nothing to stop $\theta$ from being an infinite-dimensional object such as a density function. We can work in this notation without any loss of generality, since we could always take $\theta = P$ and $\Theta = \cP$.
 
-### Statistical inference: What is $\theta$?
+## Statistical inference: What is $\theta$?
 
 Returning to the simplest model, suppose the analyst observes $X \sim \text{Binom}(n,\theta)$ and wants to know what $\theta$ is. How might we think about answering this question?
 

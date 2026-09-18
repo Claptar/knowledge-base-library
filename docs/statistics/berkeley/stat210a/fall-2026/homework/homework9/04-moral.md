@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework9.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework9.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework9.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework9.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework9.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 When we have paired data, we can often make much more precise comparisons between two distributions; even more precise than our ability to infer things about either of the distributions individually. This is often worth taking into account if we are designing an experiment: for example, if we match patients into pairs on demographic characteristics and then randomize a treatment/placebo assignment within each pair, we may get a very good inference about whether the treatment is better than the placebo, much better than we would get if we randomly assigned all $2n$ subjects independently of each other.
 
@@ -22,6 +22,10 @@ When we have paired data, we can often make much more precise comparisons betwee
 
 Note that the alternative is defined a little vaguely in each part above. If that troubles you, we could formally take the alternative be “$P_i$ are arbitrary but not all equal” in part (a), or “$P \neq P_X \times P_Y$” in part (b). The alternative hypotheses as I’ve defined them informally are meant to suggest which alternatives to prioritize when you design your test.
 
+## Moral: {#moral-3}
+
+We can often design our own nonparametric tests by conditioning on an appropriate sufficient statistic for the null distribution.
+
 ---
 
-[← Moral](03-moral.md) · [Up: contents](index.md) · [Moral →](05-moral.md)
+[← Moral](03-moral.md) · [Up: contents](index.md)

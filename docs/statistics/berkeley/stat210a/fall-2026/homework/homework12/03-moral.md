@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework12.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework12.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework12.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework12.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework12.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 Likelihood-based methods give us good options for estimation in models where exact inference could be difficult.
 
@@ -27,6 +27,10 @@ Assume $\theta^*$ is unique, that the parameter space $\Theta$ is compact, that 
 
 3.  Find the limiting distribution of $\hat\theta_n$ as $n \to \infty$. We can think of a confidence interval for $\theta$ more generally as a confidence interval for the best-fitting parameter value $\theta^*$. Can we expect the Wald confidence interval for the misspecified model to asymptotically achieve the correct coverage of $\theta^*$?
 
+## Moral: {#moral-2}
+
+There is a reasonable fallback interpretation for parameter estimates in misspecified models, but we need to be careful about standard errors and likelihood-based intervals.
+
 ---
 
-[← Moral](02-moral.md) · [Up: contents](index.md) · [Moral →](04-moral.md)
+[← Moral](02-moral.md) · [Up: contents](index.md)

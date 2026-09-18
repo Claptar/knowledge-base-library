@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/introduction.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/introduction.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/introduction.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Deductive vs inductive reasoning
 
-**Source:** [`reader/introduction.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/introduction.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-#### Deductive reasoning
+## Deductive reasoning
 
 Most mathematics courses are entirely concerned with **deductive reasoning**: drawing conclusions that follow logically from premises. For example:
 
@@ -40,7 +40,7 @@ Deductive arguments can involve statements about probability:
 
 A probability course like **Stat 205A** is about statements like this.
 
-#### Inductive reasoning
+## Inductive reasoning
 
 Statistics, on the other hand, is the mathematical science of **inductive reasoning**: reasoning from observations to make general claims about the world. Unlike deductive reasoning, such arguments are inherently *risky*: the conclusions we draw can be false even when the premises are correct.
 

@@ -1,41 +1,172 @@
 ---
-title: HandwrittenNotesLectureSix153248Fall2025
+title: Lecture Six
 source: https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/HandwrittenNotesLectureSix153248Fall2025.pdf
 source_file: sources/berkeley-stat153/fall-2025/HandwrittenNotesLectureSix153248Fall2025.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# HandwrittenNotesLectureSix153248Fall2025
+> **Reconstructed by a model.** [`HandwrittenNotesLectureSix153248Fall2025.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/HandwrittenNotesLectureSix153248Fall2025.pdf) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`HandwrittenNotesLectureSix153248Fall2025.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/HandwrittenNotesLectureSix153248Fall2025.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Lecture Six
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+$$y_t = \beta_0 + \beta_1 t + \beta_2 (t-c)_+ + \varepsilon_t$$
 
-<!-- Start of picture text -->
-aata<br>T.IE<br>tor a bunch of namesC<br>of<br>isEE EFI<br>ceding<br>CE 1,2 000 n<br>c<br>I value which minimizes RSS<br>run<br>c d s linear regression of<br>Fix<br>on<br>I t<br>4<br>y also r<br>to estimate Bo β<br>Ect<br>Least squares Y pt<br>t<br>RSS c min<br>Boilitz<br>inE Y B 1 t 1ct c<br>exPf<br>t.IT<br>1114413<br>a next<br><!-- End of picture text -->
+## Parameter Estimation
 
+(1) Calculate $RSS(c)$ for a bunch of values of $c$.
+$$c \in [1, n]$$
+$$c \in \{1, 2, \dots, n\}$$
 
-<!-- Start of picture text -->
-c<br>t Ect<br>c<br>β t.EC to<br>SAME AS FOR<br>LINEAR REGRESSIO<br>F exp f<br>Remart MLE of ps c Legfquares<br>t<br>fo fila t<br>prior<br>VTEC<br>id<br>Po logo<br>t.EE eEenince<br>4 Et<br>1<br>Y<br>ftp.t<br>It<br>lot<br>lot Elst<br>t 1<br>ftp.t<br>1 t<br>Po<br>Ct 0 ftp.t<br>Natural to restrict c e G n wide<br>region<br>reasonable<br>n 10 our interes<br>10<br>c e<br>reasonablemainly lies in<br>unit i n c<br>away from the<br>a<br>n t<br>edges<br>C Unit 2,3<br><!-- End of picture text -->
+(2) $\hat{c}$ : value which minimizes $RSS(c)$
 
+(3) Fix $c = \hat{c}$ & run linear regression of $y$ on $[1, t, (t-\hat{c})_+] = X$ to estimate $\beta_0, \beta_1, \beta_2$ (also $\sigma$)
 
-<!-- Start of picture text -->
-c<br>independent<br>Prior Bo logs<br>c unita.in<br>x<br>x<br>Unit<br>lost<br>foil Isoso<br>I iccan<br>foif.la t c α I<br>f<br>Rock bait c<br>prior<br>likelihood Ito<br>α<br>posterior Ican<br>a<br>exp<br>11<br>Ifso<br>Iliccan<br>5 exp Is<br>c need to<br>c alone<br>β<br>lz To get posterior for<br>β o<br>as<br>integrate of Δ well<br>t<br>Ect d<br>to<br>S c 4<br>p<br>112<br>My_XP<br>1<br>x.fi<br>im<br>1,1 1<br>Pythagorean Identity<br><!-- End of picture text -->
+**Least Squares:**
 
-e<sup>nieces</sup> LEE IEE TXIx<sup>e</sup> c S p c Rss e Ectains Text posterior 8 parameters<sup>α</sup> extf E.IE in<sup>text</sup> EE 1FJEpl ntetamganEEfi.ae ze<sup>ns</sup> a E Ʃ FLEXI rIT f Ee I<sup>Coso</sup> can Ia α 1 β IxExp Eg Icoso f keen I 5 over posterior<sup>forC</sup> Integrate
+$$\sum_{t=1}^n [y_t - \beta_0 - \beta_1 t - \beta_2(t-c)_+]^2$$
 
-E ixix.it<sup>ext</sup> iccan arI x1xixcTIciccan jintttexp rE Esco sina.pt<sup>E</sup> jc ap.yngguppgppyga posterior<sup>of</sup> othatable 11 aug insEa s anix.it i 1 cent
+$$RSS(c) = \min_{\beta_0, \beta_1, \beta_2} \sum_{t=1}^n [y_t - \beta_0 - \beta_1 t - \beta_2(t-c)_+]^2$$
 
-CEET
+## Uncertainty Quantification
 
+**Likelihood:** $\varepsilon_t \overset{\text{iid}}{\sim} N(0, \sigma^2)$
 
-<!-- Start of picture text -->
-C in n 1<br>values of<br>Take agoid of<br>calculate<br>c in<br>For each the grid<br>1 5 1<br>This<br>gives the unnormalized posterior<br>III<br>these values<br>Normalize<br>E<br>w.IE<br>119<br>Xc cf1<br>RSS ci 5 min<br>rssta.cn<br>lxaixa.cat<br>posterior<br>C1 C2<br>p 4<br><!-- End of picture text -->
+$$\prod_{t=1}^n \frac{1}{\sqrt{2\pi}\sigma} \exp\left( -\frac{1}{2\sigma^2} (y_t - \beta_0 - \beta_1 t - \beta_2(t-c)_+)^2 \right)$$
+
+$$\propto \sigma^{-n} \exp\left[ -\frac{\sum_{t=1}^n (y_t - \beta_0 - \beta_1 t - \beta_2(t-c)_+)^2}{2\sigma^2} \right]$$
+
+---
+
+$$S(\boldsymbol{\beta}, c) = \sum_{t=1}^n (y_t - \beta_0 - \beta_1 t - \beta_2(t-c)_+)^2$$
+
+$$\left. \sigma^{-n} \exp\left[ -\frac{S(\boldsymbol{\beta}, c)}{2\sigma^2} \right] \right\} \text{SAME AS FOR LINEAR REGRESSION}$$
+
+**Remark:** $\text{MLE of } \boldsymbol{\beta} \ & \ c = \text{Least squares of } \boldsymbol{\beta} \ & \ c$
+
+**prior:** $\beta_0, \beta_1, \beta_2, \sigma, c$
+
+$\beta_0, \beta_1, \beta_2, \log \sigma \overset{\text{iid}}{\sim} \text{Unif}[-C, C]$ as $C \to \infty$
+*(previous prior that we used in linear regression)*
+
+$$c \in \{$$
+
+$$y_t = \beta_0 + \beta_1 t + \beta_2 (t-c)_+ + \varepsilon_t$$
+
+$c = 0 : \quad \beta_0 + \beta_1 t + \beta_2 t = \beta_0 + (\beta_1 + \beta_2)t$
+
+$c = 1 : \quad \beta_0 + \beta_1 t + \beta_2 (t-1) = \beta_0 - \beta_2 + (\beta_1 + \beta_2)t$
+
+$c = n : \quad (t-c)_+ = 0 \to \beta_0 + \beta_1 t$
+
+Natural to restrict $c \in (1, n) \to \text{wide region}$
+$c \in (10, n-10) \to \text{reasonable}$
+*(reasonable: our interest mainly lies in $c$ away from the edges)*
+
+$$c \sim \text{Unif}(1, n)$$
+$$c \sim \text{Unif}\{2, 3, \dots, n-1\}$$
+
+---
+
+**Prior:** $\beta_0, \beta_1, \beta_2, \log \sigma, c \text{ independent}$
+
+$$\beta_0, \beta_1, \beta_2, \log \sigma \overset{\text{iid}}{\sim} \text{Unif}(-\infty, \infty), \quad c \sim \text{Unif}(1, n)$$
+
+$$f_{\beta_0, \beta_1, \beta_2, \sigma, c}(\beta_0, \beta_1, \beta_2, \sigma, c) \propto \frac{1}{\sigma} I\{1 < c < n\} I\{\sigma > 0\}$$
+
+$$\text{posterior} \propto \text{likelihood} \times \text{prior}$$
+
+$$\propto \sigma^{-n} \exp\left[ -\frac{S(\boldsymbol{\beta}, c)}{2\sigma^2} \right] \frac{1}{\sigma} I\{1 < c < n\} I\{\sigma > 0\}$$
+
+$$= \sigma^{-n-1} \exp\left[ -\frac{S(\boldsymbol{\beta}, c)}{2\sigma^2} \right] I\{1 < c < n\} I\{\sigma > 0\}$$
+
+To get posterior for $c$ alone, need to integrate $\boldsymbol{\beta}$ ($\beta_0, \beta_1, \beta_2$) as well as $\sigma$.
+
+$$S(\boldsymbol{\beta}, c) = \sum_{t=1}^n [y_t - \beta_0 - \beta_1 t - \beta_2(t-c)_+]^2$$
+
+$$= \|y - X_c \boldsymbol{\beta}\|^2$$
+
+$$y = \begin{pmatrix} y_1 \\ \vdots \\ y_n \end{pmatrix}, \quad X_c = \begin{bmatrix} 1 & 1 & (1-c)_+ \\ 1 & 2 & (2-c)_+ \\ \vdots & \vdots & \vdots \\ 1 & n & (n-c)_+ \end{bmatrix}$$
+$$\quad \downarrow$$
+$$t, t=1, \dots, n$$
+
+**Pythagorean Identity:**
+
+---
+
+$$\|y - X_c \boldsymbol{\beta}\|^2 = \|y - X_c \hat{\boldsymbol{\beta}}_c\|^2 + (\boldsymbol{\beta} - \hat{\boldsymbol{\beta}}_c)^T X_c^T X_c (\boldsymbol{\beta} - \hat{\boldsymbol{\beta}}_c)$$
+$$S(\boldsymbol{\beta}, c) = S(\hat{\boldsymbol{\beta}}_c, c) + (\boldsymbol{\beta} - \hat{\boldsymbol{\beta}}_c)^T X_c^T X_c (\boldsymbol{\beta} - \hat{\boldsymbol{\beta}}_c)$$
+
+$$S(\boldsymbol{\beta}, c) = RSS(c) + (\boldsymbol{\beta} - \hat{\boldsymbol{\beta}}_c)^T X_c^T X_c (\boldsymbol{\beta} - \hat{\boldsymbol{\beta}}_c)$$
+
+$$\underset{\text{for all parameters}}{\text{posterior}} \propto \sigma^{-n-1} \exp\left[ -\frac{S(\boldsymbol{\beta}, c)}{2\sigma^2} \right] \begin{aligned} & I(\sigma > 0) \\ & I(c \in (1, n)) \end{aligned}$$
+
+$$= \sigma^{-n-1} \exp\left[ -\frac{RSS(c)}{2\sigma^2} \right] \exp\left[ -\frac{(\boldsymbol{\beta} - \hat{\boldsymbol{\beta}}_c)^T X_c^T X_c (\boldsymbol{\beta} - \hat{\boldsymbol{\beta}}_c)}{2\sigma^2} \right] I(\sigma > 0) I(1 < c < n)$$
+
+**Formula:**
+$$\int_{\mathbb{R}^p} \exp\left[ -\frac{1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu) \right] dx = (2\pi)^{p/2} \sqrt{\det \Sigma}$$
+$$\Sigma = \sigma^2 (X_c^T X_c)^{-1}$$
+
+$$\underset{\text{for } \sigma, c}{\text{posterior}} \propto \sigma^{-n-1} \exp\left[ -\frac{RSS(c)}{2\sigma^2} \right] (2\pi)^{p/2} \sqrt{\det(\sigma^2 (X_c^T X_c)^{-1})} I(\sigma > 0) I(1 < c < n)$$
+
+$$\propto \sigma^{-n+p-1} |X_c^T X_c|^{-1/2} \exp\left[ -\frac{RSS(c)}{2\sigma^2} \right] I(\sigma > 0) I(1 < c < n)$$
+
+$$\det(a \underset{p \times p}{A}) = a^p \det(A)$$
+
+**posterior for $c$:** Integrate over $\sigma$:
+
+---
+
+$$\propto \int_0^\infty \sigma^{-n+p-1} |X_c^T X_c|^{-1/2} \exp\left( -\frac{RSS(c)}{2\sigma^2} \right) d\sigma \, I(1 < c < n)$$
+
+$$\propto |X_c^T X_c|^{-1/2} I(1 < c < n) \int_0^\infty \sigma^{-n+p-1} \exp\left( -\frac{RSS(c)}{2\sigma^2} \right) d\sigma$$
+
+$$\propto |X_c^T X_c|^{-1/2} \left( \frac{1}{RSS(c)} \right)^{\frac{n-p}{2}} I(1 < c < n)$$
+
+$$\int_0^\infty \sigma^{-n-1} \exp\left( -\frac{S(\beta)}{2\sigma^2} \right) d\sigma \propto \left( \frac{1}{S(\beta)} \right)^{\frac{n}{2}}$$
+$$\text{change of variable } \frac{\sigma}{\sqrt{S(\beta)}} = t$$
+
+$p$ : # columns in $X_c$
+(In our case, $p=3$)
+
+$$\text{posterior of } c \propto \underbrace{|X_c^T X_c|^{-1/2}}_{} \left( \frac{1}{RSS(c)} \right)^{\frac{n-p}{2}} I(1 < c < n)$$
+
+$$X_c = \begin{bmatrix} 1 & 1 & (1-c)_+ \\ 1 & 2 & \vdots \\ \vdots & \vdots & \vdots \\ 1 & n & (n-c)_+ \end{bmatrix}$$
+
+$$\text{If } c=0 : \quad \begin{bmatrix} 1 & 1 & 1 \\ 1 & 2 & 2 \\ \vdots & \vdots & \vdots \\ 1 & n & n \end{bmatrix}$$
+
+$$I(2 \le c \le n-1)$$
+$$c \in [2, n-1]$$
+
+---
+
+(1) Take a grid of values of $c$ in $[2, n-1]$
+
+(2) For each $c$ in the grid, calculate
+$$|X_c^T X_c|^{-1/2} \left( \frac{1}{RSS(c)} \right)^{\frac{n-p}{2}}$$
+This gives the unnormalized posterior
+
+```
+        4.5|  5|  |8.5
+           |   |  |
+      -----+---+--+-----
+          64  65  66
+```
+
+(3) Normalize these values.
+$$\mathbb{P}(c = 65 \mid \text{data}) \quad \mathbb{P}(c = 65.05 \mid \text{data})$$
+
+---
+
+$$y_t = \beta_0 + \beta_1 t + \beta_2 (t-c_1)_+ + \beta_3 (t-c_2)_+ + \varepsilon_t$$
+
+$$RSS(c_1, c_2) = \min_{\boldsymbol{\beta}} \|y - X_{c_1, c_2} \boldsymbol{\beta}\|^2$$
+
+$$\underset{(c_1, c_2)}{\text{posterior}} \propto |X_{c_1, c_2}^T X_{c_1, c_2}|^{-1/2} \left( \frac{1}{RSS(c_1, c_2)} \right)^{\frac{n-p}{2}}$$
+
+$$p = 4$$
 
 ---
 

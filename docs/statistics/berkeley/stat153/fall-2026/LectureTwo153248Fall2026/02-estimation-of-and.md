@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2026/LectureTwo153248Fall2026.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Estimation of $\beta0$ and $\beta1$
+> **Converted source.** [`LectureTwo153248Fall2026.tex`](https://github.com/berkeley-stat153/fall-2026/blob/1df2e362c312415dc83d910dc9e724e1646fafab/LectureTwo153248Fall2026.tex) — berkeley-stat153 · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`LectureTwo153248Fall2026.tex`](https://github.com/berkeley-stat153/fall-2026/blob/1df2e362c312415dc83d910dc9e724e1646fafab/LectureTwo153248Fall2026.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Estimation of $\beta0$ and $\beta1$
 
 ## Least Squares Estimates {#least-squares-estimates}
 
@@ -29,13 +29,16 @@ The estimates of $\beta_0$ and $\beta_1$ reported by standard libraries (such as
 
 ## MLE under Normality of Errors {#mle-under-normality-of-errors}
 
-Suppose we assume that the error terms $\epsilon_1, \dots, \epsilon_n$ in <a href="#linmod" data-reference-type="eqref" data-reference="linmod">[linmod]</a> are i.i.d normal with mean zero and some variance $\sigma^2$: $$\begin{equation}
+Suppose we assume that the error terms $\epsilon_1, \dots, \epsilon_n$ in [linmod] are i.i.d normal with mean zero and some variance $\sigma^2$: $$\begin{equation}
 \label{errgauss}
  \epsilon_1, \dots, \epsilon_n \overset{\text{i.i.d}}{\sim} N(0,
  \sigma^2).
 \end{equation}$$ Then the least squares estimates of $\beta_0$ and $\beta_1$ coincide with the Maximum Likelihood Estimates (MLEs).
 
-Another way of writing the model <a href="#linmod" data-reference-type="eqref" data-reference="linmod">[linmod]</a> and <a href="#errgauss" data-reference-type="eqref" data-reference="errgauss">[errgauss]</a> is: $$\begin{equation*}
+Another way of writing the model
+
+$$
+linmod] and [errgauss] is: $$\begin{equation*}
   y_i \overset{\text{independent}}{\sim} N(\beta_0 + \beta_1 x_i,
   \sigma^2).
 \end{equation*}$$ To obtain the MLEs of the parameters ($\beta_0, \beta_1$ as well as $\sigma$), we need to write the likelihood function and then maximize it. The likelihood function is the joint density of the data for fixed values of the parameters $\beta_0, \beta_1, \sigma$: $$\begin{align}
@@ -52,7 +55,10 @@ Another way of writing the model <a href="#linmod" data-reference-type="eqref" d
     \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i)^2 \right) \nonumber \\
   &= (2 \pi)^{-n/2} \sigma^{-n} \exp \left(-\frac{S(\beta_0,
     \beta_1)}{2 \sigma^2} \right) \label{like}
-\end{align}$$ where $S(\beta_0, \beta_1)$ is the sum of squares <a href="#ss" data-reference-type="eqref" data-reference="ss">[ss]</a>. $$\begin{equation*}
+\end{align}$$ where $S(\beta_0, \beta_1)$ is the sum of squares [ss
+$$
+
+. $$\begin{equation*}
   S(\beta_0, \beta_1) :=
     \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i)^2.
 \end{equation*}$$ To write this likelihood, we are assuming that $x_1, \dots, x_n$ are fixed. This assumption is fine if $x_i = i$ (regression with time as covariate) but not strictly true when $x_i = y_{i-1}$ (auto-regression). We shall see how it is still approximately true in the case of AutoRegression later.
@@ -61,4 +67,4 @@ Maximization of the likelihood is a three variable optimization problem (the var
 
 ---
 
-[← Simple Linear Regression](01-simple-linear-regression.md) · [Up: contents](index.md)
+← Simple Linear Regression · Up: contents

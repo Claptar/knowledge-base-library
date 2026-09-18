@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/hypothesis-testing.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Hypothesis Testing and the Neyman-Pearson Lemma
+> **Converted source.** [`reader/hypothesis-testing.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/hypothesis-testing.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/hypothesis-testing.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/hypothesis-testing.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Hypothesis Testing and the Neyman-Pearson Lemma
 
 Split into 3 sections.
 

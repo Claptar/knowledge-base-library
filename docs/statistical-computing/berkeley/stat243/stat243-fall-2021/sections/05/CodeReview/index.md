@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/sections/05/CodeReview.R
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Homework 3 Code Review
+> **Converted source.** [`sections/05/CodeReview.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/05/CodeReview.Rmd) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`sections/05/CodeReview.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/05/CodeReview.Rmd) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Homework 3 Code Review
 
 Split into 2 sections.
 

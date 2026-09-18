@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/07_ANOVA/07_ANOVA.md
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 07 ANOVA
+> **Converted source.** [`tutorialScripts/excercises/07_ANOVA/07_ANOVA.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/07_ANOVA/07_ANOVA.md) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`tutorialScripts/excercises/07_ANOVA/07_ANOVA.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/07_ANOVA/07_ANOVA.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# 07 ANOVA
 
 On the third day of the "Practical Statistics for the Life Sciences (2020)" course, we will have three tutorials on ANOVA, based on different datasets:
 
@@ -39,7 +39,6 @@ The researchers want to test if  there is an effect of one or more of the treatm
 - Exercise: ["https://raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/07_ANOVA/ANOVA_lettuce_plants_half.Rmd"](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/07_ANOVA/"https:/raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/07_ANOVA/ANOVA_lettuce_plants_half.Rmd")
 - Data: "https://raw.githubusercontent.com/GTPB/PSLS20/master/data/freshweight_lettuce.txt"
 
-
 2) The cuckoo dataset
 
 The common cuckoo does not build its own nest: it prefers to lay its eggs in another birds' nest. It is known, since 1892,
@@ -54,7 +53,6 @@ The researchers want to test if the type of foster parent has an effect on the a
 
 - Exercise: ["https://raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/07_ANOVA/ANOVA_cuckoo_half.Rmd"](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/07_ANOVA/"https:/raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/07_ANOVA/ANOVA_cuckoo_half.Rmd")
 - Data: "https://raw.githubusercontent.com/GTPB/PSLS20/master/data/Cuckoo.txt"
-
 
 3) The NHANES dataset:
 

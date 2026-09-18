@@ -5,12 +5,15 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/05_statisticalInfere
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_armpit_LC.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_armpit_LC.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Smelly armpit dataset
 
-**Source:** [`tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_armpit_LC.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_armpit_LC.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+In this tutorial, we perform a hypothesis test on the
+"smelly armpit" dataset.
 
 Smelly armpits are not caused by sweat, itself. The smell is caused by specific micro-organisms belonging to the group of *Corynebacterium spp.* that metabolise sweat.
 Another group of abundant bacteria are the *Staphylococcus spp.*, these bacteria do not metabolise sweat in smelly compounds.
@@ -31,6 +34,34 @@ The CMET-groep at Ghent University does research to on transplanting the armpit 
       *Staphylococcus spp.* in the microbiome is measured via DGGE (*Denaturing Gradient
       Gel Electrophoresis*).
 
+## Goal
+
+The overarching goal of this research was to assess if the relative abundance
+*Staphylococcus spp.*
+in the microbiome of the armpit is affected by transplanting the microbiome.
+To this end the researchers randomized patients to two treatment:
+A treatment with antibiotics only and a treatment with
+antibiotics and a microbial transplant.
+
+In the tutorial on hypotheses testing we will use a formal statistical test to generalize the results from the sample to that of the population.
+
+## Import the dataset
+
+```r
+#Load the libraries
+library(tidyverse)
+```
+
+Import the data
+
+```r
+ap <- read_csv("https://raw.githubusercontent.com/GTPB/PSLS20/master/data/armpit.csv")
+```
+
+```r
+glimpse(ap)
+```
+
 ---
 
-[Up: contents](index.md) · [Goal →](02-goal.md)
+[Up: contents](index.md) · [Data Exploration →](02-data-exploration.md)

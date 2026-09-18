@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/hw0.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Hw 00 —
+> **Converted source.** [`homework/hw0.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/hw0.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/hw0.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/hw0.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Hw 00 —
 
 Lecture 1 included a “whirlwind tour” of measure theory at the heuristic level that we’ll be using in class. Problem 1 is meant to give a little more intuition about densities and the others are meant to motivate measure-theoretic probability a bit.
 
@@ -22,11 +22,11 @@ For a given point $x \in \mathcal{X}$, the *Dirac measure* is defined as $$\delt
 
 Furthermore, suppose $\mu_1$ and $\mu_2$ are both measures on $\mathcal{X}$, and $a_1,a_2 \geq 0$. You may use without proof that the sum $\nu = a_1\mu_1 + a_2\mu_2$ is also a measure, and that for “nice enough” functions, $$\int f(x)\,\textrm{d}\nu(x) = a_1\int f(x)\,\textrm{d}\mu_1(x) + a_2\int f(x)\,\textrm{d}\mu_2(x).$$
 
-1.  Let $x_1,x_2,\ldots, x_n$ be integers (not necessarily all distinct), and define two measures on the set $\mathbb{Z}$ of all integers: the counting measure $\#$ from class, and the *empirical distribution* $$\widehat{P}_n(A) = \frac{1}{n}\sum_{i=1}^n \delta_{x_i}(A).$$ That is, $\widehat{P}_n(A)$ is the fraction of points that fall into the set $A$.
+1.  Let $x_1,x_2,\ldots, x_n$ be integers (not necessarily all distinct), and define two measures on the set $\mathbb{Z}$ of all integers: the counting measure $#$ from class, and the *empirical distribution* $$\widehat{P}_n(A) = \frac{1}{n}\sum_{i=1}^n \delta_{x_i}(A).$$ That is, $\widehat{P}_n(A)$ is the fraction of points that fall into the set $A$.
 
     **Note:** if $x_1,\ldots, x_n$ are sampled from some distribution $P$ then $\widehat{P}_n$ is a natural nonparametric estimator of the measure $P$.
 
-    Show that $\widehat{P}_n$ is absolutely continuous with respect to $\#$ but not the other way around. What is the density of $\widehat{P}_n$ with respect to $\#$? Is it possible to define a density of $\#$ with respect to $\widehat{P}_n$?
+    Show that $\widehat{P}_n$ is absolutely continuous with respect to $#$ but not the other way around. What is the density of $\widehat{P}_n$ with respect to $#$? Is it possible to define a density of $#$ with respect to $\widehat{P}_n$?
 
 2.  For $\mathcal{X}= [0,\infty)$, define the measure $\mu(A) = \lambda(A) + \delta_0(A)$, where $\lambda$ represents the Lebesgue measure. For fixed $\theta \in \mathbb{R}$, define the random variable $$X = \max(0,Z) \text{ where } Z \sim N(\theta, 1),$$ what is the density of $X$’s distribution with respect to $\mu$?
 

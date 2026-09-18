@@ -5,17 +5,23 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/sections/05/CodeReview.R
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`sections/05/CodeReview.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/05/CodeReview.Rmd) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Code review instructions
 
-**Source:** [`sections/05/CodeReview.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/05/CodeReview.Rmd) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+```r
+knitr::opts_chunk$set(echo = TRUE)
+set.seed(0)
+library(ggplot2)
+```
 
 In section this week we will do a paired code review for Problem 1 of PS3. In order for this to be beneficial,
 you will need to be as honest with your partner as possible. If something is actually hard to follow, tell them! If you thought that something they did was clever, also tell them!
 
-### Procedure
+## Procedure
 We will break up into pairs of 2 (with a possible group of 3 if necessary).
 
 Next, you will spend ~15 minutes reading one partner's code, asking questions to the person whose code you are reviewing.  You will then switch roles and review the code of the other person in your group.
@@ -25,7 +31,7 @@ Finally, each of you will fill out the survey at the following link:
 
 The survey response  is worth 1 point, similar to in class group work or the unit check ins, and will be graded. You will receive credit as long as your response is thoughtful (e.g. at least a couple of sentences). If you choose not to come to section, please find a partner or two on your own to do the paired review with and submit the survey  by Wednesday Oct. 6 at 5:59pm to receive credit.
 
-### Some Guiding Questions
+## Some Guiding Questions
 
 1. Is the code visually easy to break apart? Can you see the entire body of the
 functions without scrolling up/down left/right? The general rule-of-thumb is no

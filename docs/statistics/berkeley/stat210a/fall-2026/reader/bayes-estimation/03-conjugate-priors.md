@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/bayes-estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Conjugate priors
+> **Converted source.** [`reader/bayes-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-estimation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/bayes-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Conjugate priors
 
 A special class of easy-to-update prior distributions is the set of *conjugate priors*. For data $X$ drawn from a likelihood model $\cP = \{P_\theta:\; \theta\in\Theta\}$, we say a family $\mathcal{Q}$ of priors is *conjugate* to $\cP$ if the posterior distribution is also always in $\mathcal{Q}$. Conjugate priors exist for many exponential families.
 
@@ -50,7 +50,7 @@ $$
 
 We can visualize this problem below:
 
-### Beta-binomial example
+## Beta-binomial example
 
 ```ojs
 //| echo: false
@@ -244,8 +244,7 @@ $$
 $$
 giving a similar interpretation as in the Beta-Binomial example.
 
-
-### Conjugate priors for exponential families
+## Conjugate priors for exponential families
 
 Conjugate priors are commonly available for exponential family models. To understand why, consider a generic $s$-parameter exponential family model where
 $$

@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/06-linearRegression.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Parameter estimation
+> **Converted source.** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Parameter estimation
 
 - Least squares
 
@@ -59,15 +59,22 @@ lm1 <- lm(S100A8~ESR1,brcaSubset)
 summary(lm1)
 ```
 
-$$E(Y|X=x)=`r round(lm1$coef[1],2)`-`r abs(round(lm1$coef[2],3))` x$$
+[E(Y|X=x)=`r round(lm1$coef[1],2)`-`r abs(round(lm1$coef[2],3))` x]
 
 - Expected S100A8 expression is on average  `r abs(round(lm1$coef[2],3)*1000)` units lower for patients with ESR1 expression level that is 1000 units higher
 
 - Expected S100A8 expression level for patients with an ESR1 expression level of 2000:
-$$`r round(lm1$coef[1],2)`-`r abs(round(lm1$coef[2],3))`\times 2000=`r round(lm1$coef[1]+lm1$coef[2]*2000,2)`$$
+
+$$
+`r round(lm1$coef[1],2)`-`r abs(round(lm1$coef[2],3))`\times 2000=`r round(lm1$coef[1]+lm1$coef[2]*2000,2)`
+$$
 
 - Expected S100A8 expression level for patients with an ESR1 expression level of 4000:
-$$`r round(lm1$coef[1],2)`-`r abs(round(lm1$coef[2],3))`\times 4000=`r round(lm1$coef[1]+lm1$coef[2]*4000,2)`$$
+
+$$
+`r round(lm1$coef[1],2)`-`r abs(round(lm1$coef[2],3))`\times 4000=`r round(lm1$coef[1]+lm1$coef[2]*4000,2)`
+$$
+
 - Be careful when you extrapolate! (We can only assess the assumption of linearity within the range of the data).
 
 ---

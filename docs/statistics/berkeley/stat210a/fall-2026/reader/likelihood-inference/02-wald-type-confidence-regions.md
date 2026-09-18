@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/likelihood-inference.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Wald-Type Confidence Regions
+> **Converted source.** [`reader/likelihood-inference.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/likelihood-inference.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/likelihood-inference.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/likelihood-inference.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Wald-Type Confidence Regions
 
 Assume we have some estimator $\hat{\theta}_n$ s.t. $\sqrt{n}(\hat{\theta}_n - \theta_0) \xrightarrow{d} N(0, J^{-1}(\theta_0))$. Then we can plug in:
 
@@ -31,7 +31,7 @@ Region $\{\theta: n(\hat{\theta}_n - \theta)^T J(\theta)(\hat{\theta}_n - \theta
 
 More info = smaller ellipse (shrinks like $\sqrt{n}$)
 
-### Estimating $J(\theta)$
+## Estimating $J(\theta)$
 
 Two options is to plug-in the MLE:
 1. MLE for $J_n(\theta)$: $J_n(\hat{\theta}_n) = -\frac{1}{n}\nabla^2 \ell_n(\hat{\theta}_n; X)$
@@ -41,12 +41,12 @@ NB: $\text{Var}_\theta[\nabla \ell_n(\theta; X)] = n\text{Var}_\theta[\nabla \el
 
 Or $\hat{J}_n = \mathbb{E}_{\hat{\theta}_n}[-\nabla^2 \ell_{\hat{\theta}_n}(X)]$
 
-#### Remarks
+### Remarks
 - Both have $\hat{J}_n \xrightarrow{p} J(\theta_0)$ in nice iid sampling setting
 - Both make sense outside of iid setting
 - Heuristically: plug-in measures info about $\theta$ in typical data set, but obs info measures info about $\theta$ in this data set
 
-### Wald Interval for $\theta_j$
+## Wald Interval for $\theta_j$
 
 If $\sqrt{n}(\hat{\theta}_n - \theta_0) \sim N_d(\theta_0, J_n^{-1}(\theta_0))$
 then $\hat{\theta}_n \sim N_d(\theta_0, J_n^{-1}(\theta_0)/n)$
@@ -63,7 +63,7 @@ More generally, if $\sqrt{n}(\hat{\theta}_n - \theta_0) \xrightarrow{d} N(0, \Si
 and $\hat{\Sigma}_n(\theta) \xrightarrow{p} \Sigma(\theta_0)$ (not nec. MLE)
 then we can do the same things
 
-### Example: Generalized Linear Model with Fixed Design
+## Example: Generalized Linear Model with Fixed Design
 
 $X_1, \ldots, X_n \in \mathbb{R}^d$ fixed
 $Y_1, \ldots, Y_n \sim p_{\eta_i}(y)$ indep, $Y_i | X_i \sim p_{\eta_i}(y)$
@@ -93,11 +93,11 @@ $\xrightarrow{d} N(0, J^{-1})$
 Under regularity cond. on $X$:
 Taylor expansion of $\ell_n$ leads to $\sqrt{n}(\hat{\beta}_n - \beta) \xrightarrow{d} N(0, J^{-1})$
 
-#### Advantages of Wald Test
+### Advantages of Wald Test
 1. Easy to invert, simple conf regions
 2. Asymptotically correct
 
-#### Disadvantages
+### Disadvantages
 1. Have to compute MLE
 2. Depends on parameterization
 3. Relies on two approximations:

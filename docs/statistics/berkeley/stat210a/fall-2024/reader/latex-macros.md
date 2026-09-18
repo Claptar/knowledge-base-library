@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/latex-macros.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Latex macros
+> **Converted source.** [`reader/latex-macros.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/latex-macros.tex) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/latex-macros.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/latex-macros.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Latex macros
 
 $$\newcommand{\cB}{\mathcal{B}}
 \newcommand{\cF}{\mathcal{F}}

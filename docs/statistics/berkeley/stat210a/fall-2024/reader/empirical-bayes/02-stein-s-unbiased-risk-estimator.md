@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/empirical-bayes.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Stein's Unbiased Risk Estimator
+> **Converted source.** [`reader/empirical-bayes.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/empirical-bayes.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/empirical-bayes.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/empirical-bayes.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Stein's Unbiased Risk Estimator
 
 ### Stein's Lemma
 
@@ -20,7 +20,6 @@ The first ingredient in finding the MSE of $\delta_\text{JS}$ is a lemma called 
 $$\Cov(X, h(X)) = \EE[(X-\theta)h(X)] = \sigma^2\EE[\dot{h}(X)].$$
 
 *Proof*:
-
 
 Next, we will do the calculation for $\theta = 0$ and $\sigma^2 = 1$. Then
 $$\EE[Xh(X)] = \int_{-\infty}^\infty xh(x)\phi(x)\,dx = \int_{-\infty}^\infty \dot{h}(x)\phi(x)\,dx,$$
@@ -50,6 +49,45 @@ The proof follows easily from the proof of the univariate version, and appears i
 
 ### Risk of James-Stein
 
+## Empirical Bayes
+
+### Common Situation in Hierarchical Bayes Models
+
+1.  $\theta \sim G$, one draw: hard to justify prior
+2.  Lots of info: prior doesn't matter
+3.  $\theta_i \sim G$, only $X_i$ informative: prior helps
+4.  Many draws: can check fit
+
+$$X_i \sim p_{\theta_i}(x), \quad i = 1,\ldots,d$$
+
+### Hybrid Approach
+
+Treat $G$ as fixed:
+
+1.  Estimate $G$ based on observed data
+2.  Plug in $\hat{G}$ as though known
+
+### Example
+
+$\theta_i \sim N(0, \tau^2)$, $\tau^2$ fixed unknown
+$X_i|\theta_i \sim N(\theta_i, 1)$, $i = 1,\ldots,d$
+
+Bayes estimator if we knew $\tau^2$ is:
+
+$$\delta(X) = \frac{\tau^2}{\tau^2 + 1}X_i$$
+
+$\tau^2$ is sufficient.
+
+To estimate $\tau^2$, use $X \sim N(0, \tau^2 I_d + I_d)$:
+
+$$\mathbb{E}\|X\|^2 = d(\tau^2 + 1)$$
+
+$$\hat{\tau}^2 = \max\{\frac{1}{d}\|X\|^2 - 1, 0\}$$
+
+Plug in: $\hat{\delta}(X) = (1 - \frac{d}{\|X\|^2})_+ X_i$
+
+If $d$ large, should be near optimal.
+
 ---
 
-[← Gaussian sequence model](01-gaussian-sequence-model.md) · [Up: contents](index.md) · [Empirical Bayes →](03-empirical-bayes.md)
+[← Gaussian sequence model](01-gaussian-sequence-model.md) · [Up: contents](index.md) · [James-Stein Estimator →](03-james-stein-estimator.md)

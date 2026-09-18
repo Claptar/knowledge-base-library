@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/sufficiency.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Visualization of sufficiency for two binomials
+> **Converted source.** [`reader/sufficiency.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/sufficiency.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/sufficiency.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/sufficiency.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Visualization of sufficiency for two binomials
 
 We now illustrate the concept of sufficiency with a visualization for a closely related example where now the initial data set is a pair of independent binomial random variables $X_1, X_2 \simiid \text{Binom}(n, \theta)$. We can make a similar calculation to show that $T(X) = X_1 + X_2$ is sufficient:
 

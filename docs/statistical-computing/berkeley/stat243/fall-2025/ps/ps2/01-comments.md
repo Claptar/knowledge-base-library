@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2025/ps/ps2.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Comments
+> **Converted source.** [`ps/ps2.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/ps/ps2.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`ps/ps2.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/ps/ps2.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Comments
 
 - This covers material in Units 3 and 4.
 - It's due at 10 am (Pacific) on September 19, both submitted as a PDF to Gradescope as well as committed to your GitHub repository.

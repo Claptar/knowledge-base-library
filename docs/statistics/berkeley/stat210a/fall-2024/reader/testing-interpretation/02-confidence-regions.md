@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/testing-interpretation.q
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Confidence Regions
+> **Converted source.** [`reader/testing-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-interpretation.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/testing-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-interpretation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Confidence Regions
 
 Definition: $C: \cX \to \cP(\Theta)$ is a $1-\alpha$ confidence set for $g(\theta)$ if:
 
@@ -29,7 +29,7 @@ Say "$C(x)$ has a 95% chance of covering"
 Not "$g(\theta)$ has a 95% chance of being in $C$"
 NEVER "95% chance $g(\theta) \in [0.5, 1.5]$" e.g.
 
-### Duality of Tests/Confidence Sets
+## Duality of Tests/Confidence Sets
 
 Suppose we have a level $\alpha$ test $\phi(\cdot, a)$ of $H_0: g(\theta) = a$ vs $H_1: g(\theta) \neq a$, $\forall a \in \Theta$
 
@@ -51,7 +51,7 @@ $$\mathbb{E}_\theta[\phi(X)] = \mathbb{P}_\theta(a \notin C(X)) = \mathbb{P}_\th
 
 This is called inverting a test.
 
-### Confidence Intervals/Bounds
+## Confidence Intervals/Bounds
 
 If $C(X) = [C_L(X), C_U(X)]$, we say:
 - $C(X)$ is a confidence interval (CI)

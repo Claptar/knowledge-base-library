@@ -2,24 +2,23 @@
 title: TechnicalDetailsProteomics
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/technicalDetailsProteomics.Rmd
 source_file: sources/statomics-sga21/technicalDetailsProteomics.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`technicalDetailsProteomics.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/technicalDetailsProteomics.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # TechnicalDetailsProteomics
 
-**Source:** [`technicalDetailsProteomics.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/technicalDetailsProteomics.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+Split into 5 sections.
 
-Split into 6 sections.
-
-1. [Preamble](01-preamble.md)
-2. [Linear regression](02-linear-regression.md)
-3. [Robust regression](03-robust-regression.md)
-4. [Empirical Bayes/Moderated $t$-test.](04-empirical-bayes-moderated--test.md)
-5. [P-values](05-p-values.md)
-6. [Correction for multiple testing](06-correction-for-multiple-testing.md)
+1. [Linear regression](01-linear-regression.md)
+2. [Robust regression](02-robust-regression.md)
+3. [Empirical Bayes/Moderated $t$-test.](03-empirical-bayes-moderated--test.md)
+4. [P-values](04-p-values.md)
+5. [Correction for multiple testing](05-correction-for-multiple-testing.md)
 
 ---
 

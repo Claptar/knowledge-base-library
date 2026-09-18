@@ -1,0 +1,580 @@
+---
+title: Testing nuisance
+source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/testing-nuisance.html
+source_file: sources/berkeley-stat210a/fall-2025/reader/testing-nuisance.html
+licence: CC BY 4.0
+route: pandoc-html
+fidelity: good
+converted: '2026-09-18'
+---
+
+> **Converted source.** [`reader/testing-nuisance.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/testing-nuisance.html) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.html`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
+
+# Testing nuisance
+
+1.  [Course Reader](introduction/index.md)
+2.  [Testing with Nuisance Parameters](testing-nuisance.md)
+
+## Testing with Nuisance Parameters {#testing-with-nuisance-parameters .title}
+
+$$
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\td}{\,\textrm{d}}
+\newcommand{\simiid}{\stackrel{\textrm{i.i.d.}}{\sim}}
+\newcommand{\simind}{\stackrel{\textrm{ind.}}{\sim}}
+\newcommand{\eqas}{\stackrel{\textrm{a.s.}}{=}}
+\newcommand{\eqPas}{\stackrel{\cP\textrm{-a.s.}}{=}}
+\newcommand{\eqmuas}{\stackrel{\mu\textrm{-a.s.}}{=}}
+\newcommand{\eqD}{\stackrel{D}{=}}
+\newcommand{\indep}{\perp\!\!\!\!\perp}
+\DeclareMathOperator*{\minz}{minimize\;}
+\DeclareMathOperator*{\maxz}{maximize\;}
+\DeclareMathOperator*{\argmin}{argmin\;}
+\DeclareMathOperator*{\argmax}{argmax\;}
+\newcommand{\Var}{\textnormal{Var}}
+\newcommand{\Cov}{\textnormal{Cov}}
+\newcommand{\Corr}{\textnormal{Corr}}
+\newcommand{\ep}{\varepsilon}
+$$
+
+## Nuisance Parameters
+
+One-parameter families are the exception in statistics, not the rule. In most testing problems, there are additional unknown quantities which are not of direct interest, but which will generically affect the rejection probability of any test we choose. Formally, we will consider a general setup where we observe $X \sim P_{\theta,\lambda}$ from a statistical model
+
+$$
+\cP = \{P_{\theta,\lambda}:\; (\theta,\lambda) \in \Omega\},
+$$
+
+ where as usual $\theta$ and $\lambda$ could be real vectors or could represent infinite-dimensional parameters such as unknown distributions.
+
+We will assume the null and alternative hypotheses concern $\theta$ only; that is, we still want to test $H_0:\;\theta\in\Theta_0$ vs $H_1:\;\theta\in\Theta_1$. We call $\theta$ the **parameter of interest**, and $\lambda$ the **nuisance parameter**.
+
+**Example (Two-sample Gaussian problem):** We observe $X_1,\ldots,X_n \simiid N(\mu,\sigma^2)$ and $Y_1,\ldots,Y_m \simiid N(\nu,\sigma^2)$. All three parameters $\mu,\nu\in\RR$ and $\sigma^2>0$ are unknown, and we wish to test $H_0:\;\mu = \nu$ vs $H_1:\;\mu \neq \nu$. We can express our hypothesis in terms of a parameter of interest $\theta = \mu - \nu$, in which case our nuisance parameter is $\lambda = (\mu + \nu, \sigma^2)$, or $\lambda = (\mu, \sigma^2)$, or any other representation of the remaining unknown information besides $\theta$.
+
+**Example (Comparing two Poissons):** We observe $X\sim \text{Pois}(\mu)$ and $Y\sim\text{Pois}(\nu)$ and want to test $H_0:\;\mu\leq \nu$ vs $H_1:\;\mu>\nu$. Here, we could call $\mu-\nu$ the parameter of interest, but as we will see shortly it is somewhat more natural to think about the ratio $\frac{\mu}{\nu}$, or $\theta = \frac{\mu}{\mu+\nu}$.
+
+**Example (Two-sample binomial problem):** We might observe $X_1\sim \text{Binom}(n_1,\pi_1)$ and $X_2\sim\text{Binom}(n_2,\pi_2)$ and want to test $H_0:\;\pi_1\leq \pi_2$ vs $H_1:\;\pi_1>\pi_2$. The sample sizes $n_1$ and $n_2$ are typically *known* (so they are not nuisance parameters). Here, we could call $\pi_1-\pi_2$ the parameter of interest, but it is somewhat more natural to think about the **odds ratio** $\rho = \frac{\pi_1}{1-\pi_1}/\frac{\pi_2}{1-\pi_2}$, whose log is the difference between the two natural parameters.
+
+### Conditional testing {.anchored anchor-id="conditional-testing"}
+
+Conditional testing offers very effective and fairly strategy for dealing with nuisance parameters. To introduce the idea, consider a simple problem where we observe a binomial random variable with a random sample size. This is a very common situation: for example, suppose that we conduct a survey asking people which of two candidates they favor, and the number of respondents is a random number.
+
+Let $N$ represent the sample size and assume that, conditional on $N = n$, we will observe a binomial random variable $X \sim \text{Binom}(n,theta)$.
+
+**Example (Random sample size with known distribution):** First, consider a simple setting where we actually know the distribution of $N$, for example $N \sim \text{Pois}(10)$; then having observed $N$ and $X$, we want to test $H_0:\;\theta \leq \frac{1}{2}$ vs $H_1:\;\theta > \frac{1}{2}$. The full likelihood for the model is
+
+$$
+p_\theta(n,x) = \frac{10^n e^{-10}}{n!} \cdot \binom{n}{x}\theta^x(1-\theta)^{n-x}, \quad \text{ for } 0 \leq x \leq n.
+$$
+
+ There is no UMP test[^1], but we have at least two natural options:
+
+**Option 1: Marginal test** Marginally, we have $X \sim \text{Pois}(10\cdot \theta)$. If we ignore $N$, this distribution has monotone likelihood ratio in $X$, so we could reject if $X > c_\alpha^{(1)}$, the upper-$\alpha$ quantile of a $\text{Pois}(5)$ distribution. This marginal test, which we can call $\phi_1$, will certainly have $\EE_\theta \phi_1(X) \leq \alpha$ for any $\theta \leq \frac{1}{2}$.
+
+**Option 2: Conditional test** Conditionally, we have $X \mid N=n \sim \text{Binom}(n,\theta)$, which also has monotone likelihood ratio in $n$. So we can reject if $X > c_\alpha^{(2)}(n)$, the upper-$\alpha$ quantile of a $\text{Binom}\left(n,\frac{1}{2}\right)$ distribution. This conditional test, which we can call $\phi_2$, will have
+
+$$
+\EE_\theta \left[\phi_2(X) \mid N=n\right] \leq \alpha, \quad \text{ for all } n\geq 0, \text{ and } \theta \leq \frac{1}{2},
+$$
+
+ hence we also have $\EE_\theta \phi_2(X) \leq \alpha$ for $\theta \leq \frac{1}{2}$.
+
+If we let $q_{\theta}(x \mid n)$ represent the pmf of $X$ given $N=n$, then the latter test $\phi_2$ is UMP in the **conditional model**
+
+$$
+\mathcal{Q}_n = \{q_\theta(x \mid n):\; \theta \in \Theta\},
+$$
+
+ consisting of the candidate conditional distributions for $X$ given $N=n$ (i.e., $\text{Binom}(n,\theta)$).
+
+In general, any level-$\alpha$ (unbiased) test in the conditional model is also level-$\alpha$ (unbiased) in the marginal model: the marginal power is the average conditional power, so any guarantee that the conditional power is below (or above) $\alpha$ also holds perforce for the marginal power. For the same reason, any valid (unbiased) confidence interval in the conditional model is also valid (resp. unbiased) marginally.
+
+The **conditionality principle** holds that, since $N$ is ancillary in this case, we should condition on its value. Informally, the observed value of $N$ has nothing to do with the parameter $\theta$ that we care about, so we shouldn’t really think of it as data informing our inference about $\theta$ even if it is random. Instead, we should just condition on its value and work in the conditional model, treating it as fixed.
+
+Whether or not we accept the conditionality principle, conditioning on part of the data can be a very helpful way to deal with nuisance parameters, as we see next:
+
+**Example (Random sample size with unknown distribution):** Now, we can modify the previous example to assume that $N$ is drawn from an *unknown* distribution $P^N$ on $\{0,1,\ldots\}$, but continuing to assume that $X \mid N=n \sim \text{Binom}(n,\theta)$. Having introduced the infinite-dimensional nuisance parameter $P^N$, we no longer have the option of rejecting for (marginally) large values of $X$.
+
+Now the marginal test is no longer even an option, but we can still use the conditional test just as before, since the conditional model $\mathcal{Q}_n$ is no different than it was when $N$ was ancillary. In other words, conditioning on $N$ completely removes the nuisance parameter $P^N$ from the problem. This might be a bad thing if $N$ were for some reason highly informative about $\theta$, but if we don’t think it is then we lose little and gain much by conditioning on $N$.
+
+**Example (Comparing two Poissons, continued):** We continue the previous example of comparing independent $X\sim\text{Pois}(\mu)$ and $Y\sim\text{Pois}(\nu)$. If we let $N = X + Y \sim \text{Pois}(\mu + \nu)$, then we have a submodel of the last example:[^2]
+
+$$
+X \mid N = n \sim \text{Binom}(n,\theta), \quad \text{ for } \theta = \frac{\mu}{\mu + \nu}.
+$$
+
+Since $Y = N-X$ is recoverable from $N$ and $X$, we can simply regard $(N,X)$ as our full data set. Conditioning on $N$ removes the nuisance parameter $\lambda = \mu + \nu$ from the problem, leaving $H_0:\;\mu \leq \nu \iff \theta \leq \frac{1}{2}$, and $H_1:\;\mu > \nu \iff \theta > \frac{1}{2}$.
+
+As we will see next, this beautiful reduction was not a miraculous coincidence, but a direct consequence of the exponential family structure of the model.
+
+### Multiparameter exponential families {.anchored anchor-id="multiparameter-exponential-families"}
+
+Consider a generic exponential family where we can partition the natural parameter into a parameter of interest $\theta\in\RR^s$ and nuisance parameter $\lambda\in\RR^r$:
+
+$$
+X \sim p_{\theta,\lambda}(x) = e^{\theta'T(x) + \lambda'U(x) - A(\theta,\lambda)}h(x).
+$$
+
+ Both $\theta$ and $\lambda$ are assumed unknown, and we want to test a hypothesis about $\theta$ with $\lambda$ as a nuisance parameter, i.e. $H_0:\;\theta \in \Theta_0$ vs $H_1:\; \theta \in \Theta_1$. Our basic recipe is to condition on $U(X)$, and then base our inferences on the conditional model for $T(X)$, which depends on $\theta$ alone.
+
+Without loss of generality, we can make a sufficiency reduction to $(T,U)$, since any test $\phi(X)$ has the same power function as $\psi(T(X),U(X))$ where $\psi(t,u) = \EE \left[\phi(X) \mid T=t,U=u\right]$. Then we have
+
+$$
+(T, U) \sim p_{\theta,\lambda}(t,u) = e^{\theta't + \lambda'u - A(\theta,\lambda)}g(t,u).
+$$
+
+ When we calculate the conditional density for $T$ given $U$, the factor $e^{\lambda'u-A(\theta,\lambda)}$ in the numerator and denominator cancels, leaving
+
+$$
+q_\theta(t \mid u) = \frac{p_{\theta,\lambda}(t,u)}{\int p_{\theta,\lambda}(z,u)\,dz} = \frac{e^{\theta't} g(t,u)}{\int e^{\theta'z} g(z,u)\,dz} = e^{\theta't-B_u(\theta)} g(t,u),
+$$
+
+ for $B_u(\theta) = \log\int e^{\theta'z}g(z,u)\,dz$. Because $q_\theta(t \mid u)$ is an exponential family with sufficient statistic $T$ and natural parameter $\theta$, the conditional model $\mathcal{Q}_u$ is an $s$-parameter exponential family, allowing for us to use standard techniques to perform inference on $\theta$ with $\lambda$ removed from the problem.
+
+If $s=1$, the conditional model $\mathcal{Q}_u$ has monotone likelihood ratios in $T$. This makes conditional inference especially simple and appealing, leading to standard one- and two-sided conditional tests and conditional confidence intervals.
+
+The Poisson comparison problem was an example of this:
+
+$$
+\begin{aligned}
+p_{\mu,\nu}(x,y)
+&= \frac{\mu^x e^{-\mu}}{x!}\cdot\frac{\nu^y e^{-\nu}}{y!} \\
+&= \exp\{ x\log \mu + y\log \nu - (\mu+\nu) \}\cdot \frac{1}{x!y!}[5pt]
+&= \exp\left\{ x\log \frac{\mu}{\nu} + (y+x)\log \nu - (\mu + \nu)\right\}\cdot \frac{1}{x!y!}
+\end{aligned}
+$$
+
+ By adding and subtracting $x\log \nu$ in the exponent in the last step, we have obtained a model of the desired form with $\theta = \log \frac{\mu}{\nu}$, $T(X,Y)=X$, $\lambda = \log \nu$, and $U(X,Y) = X+Y$. Thus, our general strategy tells us to condition on $X+Y$, and once we have done so the optimal conditional test rejects for large values of $X$.
+
+As you will show in the problem set, the binomial comparison problem introduced in the first section is another example of this type of setting, which we can deal with in much the same way. The widget below illustrates how the conditional distribution given $T(X) = X_1+X_2$ depends only on the log odds ratio $\rho = \frac{\pi_1}{1-\pi_1} / \frac{\pi_2}{1-\pi_2}$, and not on the nuisance parameter $\pi_2$ (the case $n_1=n_2=n$ is illustrated, but the same is true for general $n_1,n_2$).
+
+``` {.sourceCode .js .code-with-copy}
+binomPMF = (k, n, p) => {
+  if (k < 0 || k > n) return 0;
+  const binomCoeff = factorial(n) / (factorial(k) * factorial(n - k));
+  return binomCoeff * Math.pow(p, k) * Math.pow(1 - p, n - k);
+}
+
+// Factorial function with memoization
+factorial = (n) => {
+  if (n <= 1) return 1;
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+
+// Interactive controls
+viewof n = Inputs.range([4, 20], {value: 8, step: 1, label: "n"})
+viewof theta2 = Inputs.range([0.01, 0.99], {value: 0.30, step: 0.01, label: "π₂"})
+viewof rho = Inputs.range([0.02, 50], {value: 1, transform: Math.log, label: "ρ (odds ratio)"})
+viewof t_select = Inputs.range([0, 2*n], {value: Math.min(6, 2*n), step: 1, label: "T = t"})
+
+odds1 = rho * theta2 / (1-theta2)
+
+theta1 = odds1 / (1 + odds1)
+
+// Select which PMF to use based on dropdown selection
+pmf = binomPMF
+
+// Generate joint distribution data
+jointData = {
+  const data = [];
+  for (let x1 = 0; x1 <= n; x1++) {
+    for (let x2 = 0; x2 <= n; x2++) {
+      const prob = pmf(x1, n, theta1) * pmf(x2, n, theta2);
+      const t = x1 + x2;
+      data.push({
+        x1: x1,
+        x2: x2,
+        prob: prob,
+        t: t,
+        selected: t === t_select
+      });
+    }
+  }
+  return data;
+}
+
+// Generate conditional distribution data (X given T = t)
+conditionalData = {
+  const data = [];
+
+  // Only process if t_select is valid
+  if (t_select <= 2 * n) {
+    // Find all (x1, x2) pairs where x1 + x2 = t
+    const validPairs = jointData.filter(d => d.t === t_select);
+    const totalCondProb = validPairs.reduce((sum, d) => sum + d.prob, 0);
+
+    validPairs.forEach(d => {
+      if (totalCondProb > 0) {
+        data.push({
+          x1: d.x1,
+          x2: d.x2,
+          condProb: d.prob / totalCondProb,
+          t: d.t
+        });
+      }
+    });
+  }
+
+  return data;
+}
+
+// Calculate maximum probability for scaling
+maxProb = Math.max(...jointData.map(d => d.prob))
+maxCondProb = conditionalData.length > 0 ? Math.max(...conditionalData.map(d => d.condProb)) : 1
+
+// Generate marginal distributions
+marginalX1 = {
+  const data = [];
+  for (let x1 = 0; x1 <= n; x1++) {
+    data.push({
+      x1: x1,
+      prob: pmf(x1, n, theta1)
+    });
+  }
+  return data;
+}
+
+marginalX2 = {
+  const data = [];
+  for (let x2 = 0; x2 <= n; x2++) {
+    data.push({
+      x2: x2,
+      prob: pmf(x2, n, theta2)
+    });
+  }
+  return data;
+}
+
+// Generate conditional marginal distributions
+conditionalMarginalX1 = {
+  const data = [];
+  const totalT = Math.min(t_select, 2 * n);
+
+  // Only process if t_select is valid
+  if (t_select <= 2 * n) {
+    // Calculate total probability for normalization
+    let totalProb = 0;
+    for (let x1 = Math.max(0, totalT - n); x1 <= Math.min(n, totalT); x1++) {
+      const x2 = totalT - x1;
+      if (x2 >= 0 && x2 <= n) {
+        totalProb += pmf(x1, n, theta1) * pmf(x2, n, theta2);
+      }
+    }
+
+    for (let x1 = 0; x1 <= n; x1++) {
+      const x2 = totalT - x1;
+      if (x2 >= 0 && x2 <= n && totalProb > 0) {
+        const jointProb = pmf(x1, n, theta1) * pmf(x2, n, theta2);
+        data.push({
+          x1: x1,
+          prob: jointProb / totalProb
+        });
+      }
+    }
+  }
+  return data;
+}
+
+conditionalMarginalX2 = {
+  const data = [];
+  const totalT = Math.min(t_select, 2 * n);
+
+  // Only process if t_select is valid
+  if (t_select <= 2 * n) {
+    // Calculate total probability for normalization
+    let totalProb = 0;
+    for (let x2 = Math.max(0, totalT - n); x2 <= Math.min(n, totalT); x2++) {
+      const x1 = totalT - x2;
+      if (x1 >= 0 && x1 <= n) {
+        totalProb += pmf(x1, n, theta1) * pmf(x2, n, theta2);
+      }
+    }
+
+    for (let x2 = 0; x2 <= n; x2++) {
+      const x1 = totalT - x2;
+      if (x1 >= 0 && x1 <= n && totalProb > 0) {
+        const jointProb = pmf(x1, n, theta1) * pmf(x2, n, theta2);
+        data.push({
+          x2: x2,
+          prob: jointProb / totalProb
+        });
+      }
+    }
+  }
+  return data;
+}
+
+maxRad = 15 * 5 / (n + 1)
+
+maxMarginalProb1 = Math.max(...marginalX1.map(d => d.prob))
+maxMarginalProb2 = Math.max(...marginalX2.map(d => d.prob))
+maxCondMarginalProb = conditionalMarginalX1.length > 0 && conditionalMarginalX2.length > 0 ?
+  Math.max(...conditionalMarginalX1.map(d => d.prob), ...conditionalMarginalX2.map(d => d.prob)) : 1
+
+// Create joint distribution plot with marginal histograms
+jointPlot = Plot.plot({
+  width: 480,
+  height: 480,
+  marginTop: 140,
+  marginLeft: 80,
+  marginBottom: 80,
+  marginRight: 120,
+  style: { fontSize: "20px" },
+
+  r: {
+    type: "linear",
+    domain: [0, maxRad],  // Fixed domain from 0 to maxRad
+    range: [0, maxRad],   // Maps directly to pixel sizes
+    clamp: false       // Prevents values outside domain
+  },
+
+
+  x: {
+    domain: [-0.5, n + 0.5],
+    ticks: Array.from({length: Math.floor(n/2) + 1}, (_, i) => 2 * i),
+    tickFormat: d => d.toString(),
+    label: "X₁",
+    labelAnchor: "center",
+    labelOffset: 50,
+    labelArrow: "none"
+  },
+  y: {
+    domain: [-0.5, n + 0.5],
+    ticks: Array.from({length: Math.floor(n/2) + 1}, (_, i) => 2 * i),
+    tickFormat: d => d.toString(),
+    label: "X₂",
+    labelAnchor: "center",
+    labelOffset: 50,
+    labelArrow: "none"
+  },
+
+  marks: [
+    // Grid lines
+    Plot.ruleX(Array.from({length: n + 1}, (_, i) => i), {stroke: "#f0f0f0"}),
+    Plot.ruleY(Array.from({length: n + 1}, (_, i) => i), {stroke: "#f0f0f0"}),
+
+    // Probability circles
+    Plot.dot(jointData, {
+      x: "x1",
+      y: "x2",
+      r: d => Math.sqrt(d.prob / maxProb) * maxRad,
+      fill: d => d.selected ? "red" : "steelblue",
+      fillOpacity: 0.7,
+      stroke: "black",
+      strokeWidth: 0.5
+    }),
+
+    // Top marginal histogram (X₁)
+    Plot.rect(marginalX1, {
+      x1: d => d.x1 - 0.3,
+      x2: d => d.x1 + 0.3,
+      y1: n + 0.56 + n * .06,
+      y2: d => n + 0.56 + n * .06 + (d.prob / maxMarginalProb1) * (n + 1) * 0.3,
+      fill: "steelblue",
+      fillOpacity: 0.7,
+      stroke: "black",
+      strokeWidth: 0.5
+    }),
+
+    // Right marginal histogram (X₂)
+    Plot.rect(marginalX2, {
+      x1: n + 0.56 + n * .06,
+      x2: d => n + 0.56 + n * .06 + (d.prob / maxMarginalProb2) * (n + 1) * 0.3,
+      y1: d => d.x2 - 0.3,
+      y2: d => d.x2 + 0.3,
+      fill: "steelblue",
+      fillOpacity: 0.7,
+      stroke: "black",
+      strokeWidth: 0.5
+    }),
+
+    // Title
+    Plot.text(["Joint Distribution of X = (X₁, X₂)"], {
+      x: n/2,
+      y: n + 0.5 + (n + 1) * .45,
+      fontSize: 24,
+      fontWeight: "bold",
+      textAnchor: "middle"
+    })
+  ]
+})
+
+// Create conditional distribution plot with conditional marginal histograms
+conditionalPlot = Plot.plot({
+  width: 480,
+  height: 480,
+  marginTop: 140,
+  marginLeft: 80,
+  marginBottom: 80,
+  marginRight: 120,
+  style: { fontSize: "20px" },
+
+  r: {
+    type: "linear",
+    domain: [0, maxRad],  // Fixed domain from 0 to 20
+    range: [0, maxRad],   // Maps directly to pixel   sizes
+    clamp: false       // Prevents values outside domain
+  },
+  x: {
+    domain: [-0.5, n + 0.5],
+    ticks: Array.from({length: Math.floor(n/2) + 1}, (_, i) => 2 * i),
+    tickFormat: d => d.toString(),
+    label: "X₁",
+    labelAnchor: "center",
+    labelOffset: 50,
+    labelArrow: "none"
+  },
+  y: {
+    domain: [-0.5, n + 0.5],
+    ticks: Array.from({length: Math.floor(n/2) + 1}, (_, i) => 2 * i),
+    tickFormat: d => d.toString(),
+    label: "X₂",
+    labelAnchor: "center",
+    labelOffset: 50,
+    labelArrow: "none"
+  },
+
+  marks: [
+    // Grid lines
+    Plot.ruleX(Array.from({length: n + 1}, (_, i) => i), {stroke: "#f0f0f0"}),
+    Plot.ruleY(Array.from({length: n + 1}, (_, i) => i), {stroke: "#f0f0f0"}),
+
+    // All possible points (faded)
+    Plot.dot(jointData, {
+      x: "x1",
+      y: "x2",
+      r: 3,
+      fill: "lightgray",
+      fillOpacity: 0.3
+    }),
+
+    // Conditional probability circles
+    Plot.dot(conditionalData, {
+      x: "x1",
+      y: "x2",
+      r: d => conditionalData.length > 0 ? Math.sqrt(d.condProb / maxCondProb) * maxRad : 5,
+      fill: "red",
+      fillOpacity: 0.8,
+      stroke: "black",
+      strokeWidth: 1
+    }),
+
+    // Top conditional marginal histogram (X₁ | T = t)
+    Plot.rect(conditionalMarginalX1, {
+      x1: d => d.x1 - 0.3,
+      x2: d => d.x1 + 0.3,
+      y1: n + 0.56 + n * .06,
+      y2: d => n + 0.56 + n * .06 + (d.prob / maxCondMarginalProb) * (n + 1) * 0.3,
+      fill: "red",
+      fillOpacity: 0.7,
+      stroke: "black",
+      strokeWidth: 0.5
+    }),
+
+    // Right conditional marginal histogram (X₂ | T = t)
+    Plot.rect(conditionalMarginalX2, {
+      x1: n + 0.56 + n * .06,
+      x2: d => n + 0.56 + n * .06 + (d.prob / maxCondMarginalProb) * (n + 1) * 0.3,
+      y1: d => d.x2 - 0.3,
+      y2: d => d.x2 + 0.3,
+      fill: "red",
+      fillOpacity: 0.7,
+      stroke: "black",
+      strokeWidth: 0.5
+    }),
+
+    // Title
+    Plot.text([`Conditional Distribution P(X | T = ${t_select})`], {
+      x: n/2,
+      y: n + 0.5 + (n + 1) * .45,
+      fontSize: 24,
+      fontWeight: "bold",
+      textAnchor: "middle"
+    })
+  ]
+})
+
+// Display plots side by side
+html`<div style="display: flex; gap: 20px; align-items: center; justify-content: center;">
+  ${jointPlot}
+  ${conditionalPlot}
+</div>`
+```
+
+### Permutation tests {.anchored anchor-id="permutation-tests"}
+
+Even when we can’t get a UMPU test, conditional testing can be very useful.
+
+**Example (Two-sample permutation test):** We observe two independent samples of real-valued random variables $X_1, \ldots, X_n \simiid P$, and $Y_1, \ldots, Y_m \simiid Q$, and we want to test whether the distributions are the same or different; i.e., we test $H_0: P=Q$ vs $H_1: P \neq Q$.
+
+We cannot write this model as an exponential family, but we can condition on a statistic that is sufficient under the null hypothesis. If $P=Q$, then we have
+
+$$
+X_1, \ldots, X_n, Y_1, \ldots, Y_m \simiid P
+$$
+
+ Define the vector $Z = (Z_1, \ldots, Z_{n+m}) = (X_1, \ldots, X_n, Y_1, \ldots, Y_m)$ which concatenates the two samples. Under $H_0$, the vector of **pooled order statistics** $U(Z) = (Z_{(1)}, Z_{(2)}, \ldots, Z_{(n+m)})$ is complete sufficient for $Z=(X,Y)$, and the conditional distribution of $Z$ is uniform on all permutations of $U$; that is, if $\mathcal{S}_{n+m}$ is the group of all permutations on $n+m$ items, then
+
+$$
+Z \mid U(Z) = u \stackrel{H_0}{\sim} \text{Unif}\{\pi u:\; \pi \in \mathcal{S}_{n+m}\}.
+$$
+
+ Because $U$ is sufficient for the null model, $H_0$ is a *simple null* in the conditional model. But the alternative in the conditional model is highly composite: For example, if $Q$ is stochastically larger than $P$, then the last $m$ observations in $Z$ (the $Y$ values) should be systematically larger than the first $n$ (the $X$ values); or, if $Q$ has more variability, then the sample variance of the last $m$ observations should be systematically larger than that of the first $n$, and so on.
+
+Because there are so many ways that $P$ and $Q$ could differ from each other, there is no generically optimal test statistic for us to use. But the good news is that we can perform a valid conditional test using *any* statistic $T(X,Y)$, by conditioning on $U(X,Y)$ (we will slightly abuse notation by using $(X,Y)$ and $Z$ interchangeably as arguments to $T$ and $U$).
+
+In principle, if we had unlimited computational resources (or a way of analytically simplifying the problem) we could simply reject when $T(X)$ is above its conditional $\alpha$ quantile; or equivalently, we reject for small values of the corresponding $p$-value
+
+$$
+p(x,y \mid u) = \PP_{H_0}(T(X,Y) \geq T(x,y) \mid U(X,Y) = u) = \frac{1}{(n+m)!}\sum_{\pi \in \mathcal{S}_{n+m}} 1\{T(\pi u) \geq T(x,y)\}.
+$$
+
+ In practice, enumerating all $(n+m)!$ permutations is unnecessary, so we sample permutations to perform a **Monte Carlo test**: for $\pi_1,\ldots,\pi_B \simiid \text{Unif}(\mathcal{S}_{n+m})$, define the Monte Carlo $p$-value
+
+$$
+p = \frac{1}{B+1} \left(1 + \sum_{b=1}^B 1\left\{T(\pi_b u) \geq T(x,y)\right\}\right).
+$$
+
+ This test is exact: if we let $\pi_0$ denote the permutation for which $\pi_0u = (x,y)$, then under $H_0$, $\pi_0,\pi_1,\ldots,\pi_B$ are i.i.d. draws from $\mathcal{S}_{n+m}$, so $(x,y)=\pi_0 u$ has exactly the same chance to give the largest test statistic as every other permutation has.
+
+Note that usually permutation tests are defined by randomly permutating $(x,y)$, rather than randomly permuting $u$; this is equivalent, since $\tilde\pi_b = \pi_b \circ \pi_0^{-1}$ are also i.i.d. draws from $\mathcal{S}_{n+m}$.
+
+It is worth noting that the concept of a Monte Carlo test can be applied to any situation where we prefer to sample $B$ values from the null distribution rather than directly calculate an exact quantile. There are very interesting extensions to Markov Chain Monte Carlo, that allow us to perform *exact* tests even when we cannot sample
+
+Crucially, $U(Z)$ is *not* sufficient for $Z$ under the *full* model where $P$ and $Q$ vary arbitrarily. Suppose we instead conditioned on the order statistics of each sample separately:
+
+$$
+V(X,Y) = (X_{(1)},\ldots,X_{(n)},Y_{(1)},\ldots,Y_{(m)}).
+$$
+
+ Then, the distribution of $(X,Y)$ given $V$ would be fully known under the null or the alternative: we would have conditioned away the distinction between the null and the alternative, rendering the entire model a singleton. This is *not* what we want to do: whereas conditioning on $U$ and collapsing the null hypothesis to a singleton is convenient, conditioning on $V$ and collapsing the entire model to a singleton renders the data useless.
+
+### Footnotes {#footnotes .anchored .quarto-appendix-heading}
+
+$$
+\begin{aligned}
+\PP_{\mu,\nu}(X=x \mid X+Y=n) &= \frac{\PP_\mu(X=x)\PP_\nu(Y=x-n)}{\PP_{\mu+\nu}(X+Y=n)}[5pt]
+&= \frac{\mu^x\nu^{n-x}e^{-\mu-\nu}}{x!y!} \,\big/\, \frac{n!}{(\mu+\nu)^ne^{-(\mu+\nu)}}[5pt]
+&= \binom{n}{x}\theta^x(1-\theta)^{n-x}.
+\end{aligned}
+$$
+
+[^1]: The likelihood ratio for each alternative $\theta_1 > \frac{1}{2}$ is a different linear combination of $x$ and $n$: $\log \frac{p_{\theta_1}}{p_{1/2}}(n,x) = x \log \frac{\theta_1}{1-\theta_1} - n\log2(1-\theta_1)$
+
+[^2]: To derive this, note that
+
+---
+
+[Up: contents](../index.md)

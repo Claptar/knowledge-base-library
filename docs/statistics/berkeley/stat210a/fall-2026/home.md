@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/index.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Statistics 210a: Theoretical Statistics
+> **Converted source.** [`index.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/index.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`index.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/index.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Statistics 210a: Theoretical Statistics
 
 Stat 210A is an introductory Ph.D.-level course in theoretical statistics. It is a fast-paced and demanding course intended to prepare students for research careers in statistics.
 

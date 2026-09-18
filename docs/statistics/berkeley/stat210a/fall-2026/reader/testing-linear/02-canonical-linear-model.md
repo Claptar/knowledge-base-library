@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/testing-linear.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Canonical Linear Model
+> **Converted source.** [`reader/testing-linear.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/testing-linear.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/testing-linear.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/testing-linear.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Canonical Linear Model
 
 Assume $Z = \begin{pmatrix} Z_1 \\ Z_2 \end{pmatrix} \sim N\left(\begin{pmatrix} \mu \\ 0 \end{pmatrix}, \sigma^2 I_d\right)$, $d = d_0 + d_1$, $\mu \in \mathbb{R}^{d_0}$, $\sigma^2 > 0$
 
@@ -20,7 +20,7 @@ Exponential Family:
 
 $$f(z) = f(z_0, z_1) = \frac{1}{(2\pi\sigma^2)^{d/2}} \exp\left(-\frac{\|z_1\|^2 + \|z_0 - \mu\|^2}{2\sigma^2}\right)$$
 
-### Case 1: $\sigma^2$ Known
+## Case 1: $\sigma^2$ Known
 
 Condition on $Z_1$, reject for large/small/extreme $Z_0$
 
@@ -30,7 +30,7 @@ $\chi^2$ test: Reject for large $\|Z_0\|^2$
 
 t-test: If $d_0 = 1$, reject for large $|Z_0|$
 
-### Case 2: $\sigma^2$ Unknown
+## Case 2: $\sigma^2$ Unknown
 
 Condition on $Z_1$, $\|Z_1\|^2$, $\|Z_0\|^2$ sufficient
 

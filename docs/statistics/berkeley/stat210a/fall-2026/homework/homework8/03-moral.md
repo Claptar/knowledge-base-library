@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework8.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework8.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework8.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework8.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework8.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 We saw before that, while a one-parameter exponential family like the one in part (a) has a complete sufficient statistic that allows for optimal inference throughout the parameter space, a curved exponential family like the mixture family in parts (b-d) has no complete sufficient statistic. Instead, the score acts like a complete sufficient statistic in a local neighborhood of the parameter space, but the score is different in different parts of the parameter space. Hence, the structure of the family has important ramifications for how we should think about statistically efficient inference.
 

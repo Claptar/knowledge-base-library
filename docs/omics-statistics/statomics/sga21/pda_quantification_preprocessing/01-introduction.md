@@ -2,28 +2,38 @@
 title: Introduction
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/pda_quantification_preprocessing.Rmd
 source_file: sources/statomics-sga21/pda_quantification_preprocessing.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`pda_quantification_preprocessing.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/pda_quantification_preprocessing.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Introduction
 
-**Source:** [`pda_quantification_preprocessing.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/pda_quantification_preprocessing.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
-
-<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+[](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
 This is part of the online course [Proteomics Data Analysis 2021 (PDA21)](https://statomics.github.io/PDA21/)
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/V6Ik-SORoKo"
-frameborder="0"
-style="display: block; margin: auto;"
-allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 - [Playlist PDA Preprocessing](https://www.youtube.com/playlist?list=PLZH1hP8_LbJJXQeQ_KYDNoq-AXyFBG6nX)
+
+## Outline {-}
+
+1. Introduction
+
+2. Preprocessing
+
+    - Log-transformation
+    - Filtering
+    - Normalization
+    - Summarization
+
+Note, that the R-code is included for learners who are aiming to develop R/markdown scripts to automate their quantitative proteomics data analyses.
+According to the target audience of the course we either work with a graphical user interface (GUI) in a R/shiny App msqrob2gui (e.g. Proteomics Bioinformatics course of the EBI and the Proteomics Data Analysis course at the Gulbenkian institute) or with R/markdowns scripts (e.g. Bioinformatics Summer School at UCLouvain or the Statistical Genomics Course at Ghent University).
 
 ---
 
-[Up: contents](index.md) · [Outline →](02-outline.md)
+---
+
+[Up: contents](index.md) · [Intro: Challenges in Label-Free Quantitative Proteomics →](02-intro-challenges-in-label-free-quantitative-proteomics.md)

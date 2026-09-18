@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/hierarchical-bayes.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Markov Chain Monte Carlo (MCMC)
+> **Converted source.** [`reader/hierarchical-bayes.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/hierarchical-bayes.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/hierarchical-bayes.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/hierarchical-bayes.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Markov Chain Monte Carlo (MCMC)
 
 Hierarchical models are very flexible, but often create big computational headaches:
 
@@ -22,7 +22,7 @@ Numerator is usually nice, denominator often intractable.
 
 Computational strategy: Set up a Markov chain with stationary distribution $\pi(\theta|x)$, run it to get approximate samples from $\pi(\theta|x)$.
 
-### Definition of Markov Chain
+## Definition of Markov Chain
 
 A stationary Markov chain with transition kernel $Q(y|x)$ and initial distribution $\pi_0(x)$ is a sequence of r.v.'s $X_0, X_1, \ldots$ where $X_0 \sim \pi_0$ and:
 
@@ -52,7 +52,7 @@ $$
 
 A Markov chain with detailed balance is called reversible: $X_{t-1} | X_t \sim X_{t+1} | X_t$ if $\pi_t = \pi$.
 
-### Theory
+## Theory
 
 If a Markov chain with stationary distribution $\pi$ is:
 

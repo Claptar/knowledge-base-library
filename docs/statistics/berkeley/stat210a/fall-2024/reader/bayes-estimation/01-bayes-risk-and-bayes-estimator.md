@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/bayes-estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Bayes Risk and Bayes Estimator
+> **Converted source.** [`reader/bayes-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/bayes-estimation.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/bayes-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/bayes-estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Bayes Risk and Bayes Estimator
 
 ### Definitions
 
@@ -66,6 +66,34 @@ Proof:
 5. If $\delta(x) \in \argmin_d E_x(d)$, then $E_x(\delta(x)) \leq E_x(\delta'(x))$ for all $x$
 6. This implies $r(\pi, \delta) \leq r(\pi, \delta')$
 
+## Special Cases and Examples
+
+### Squared Error Loss
+
+If $L(\theta, d) = (\theta - d)^2$, then the Bayes estimator is the posterior mean:
+
+$$
+\delta_\pi(x) = \EE[\theta|X=x]
+$$
+
+Proof:
+$$
+\begin{aligned}
+\EE[(\theta - d)^2|X=x] &= \EE[\theta^2|X=x] - 2d\EE[\theta|X=x] + d^2 \\
+&= \Var(\theta|X=x) + (\EE[\theta|X=x] - d)^2 + \EE[\theta|X=x]^2 - 2d\EE[\theta|X=x] + d^2
+\end{aligned}
+$$
+
+The minimum occurs when $d = \EE[\theta|X=x]$.
+
+### Weighted Squared Error
+
+For $L(\theta, d) = w(\theta)(\theta - d)^2$ (e.g., squared relative error), the Bayes estimator is:
+
+$$
+\delta_\pi(x) = \frac{\EE[w(\theta)\theta|X=x]}{\EE[w(\theta)|X=x]}
+$$
+
 ---
 
-[Up: contents](index.md) · [Special Cases and Examples →](02-special-cases-and-examples.md)
+[Up: contents](index.md) · [Examples →](02-examples.md)

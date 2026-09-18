@@ -2,23 +2,22 @@
 title: 'Proteomics data analysis: heart'
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/heartMainInteractionStageR.Rmd
 source_file: sources/statomics-sga21/heartMainInteractionStageR.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`heartMainInteractionStageR.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/heartMainInteractionStageR.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Proteomics data analysis: heart
 
-**Source:** [`heartMainInteractionStageR.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/heartMainInteractionStageR.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+Split into 4 sections.
 
-Split into 5 sections.
-
-1. [Background](01-background.md)
-2. [Data](02-data.md)
-3. [Preprocessing](03-preprocessing.md)
-4. [Data Analysis](04-data-analysis.md)
-5. [Large difference in number of proteins that are returned](05-large-difference-in-number-of-proteins-that-are-returned.md)
+1. [Data](01-data.md)
+2. [Preprocessing](02-preprocessing.md)
+3. [Data Analysis](03-data-analysis.md)
+4. [Large difference in number of proteins that are returned](04-large-difference-in-number-of-proteins-that-are-returned.md)
 
 ---
 

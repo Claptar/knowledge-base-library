@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLabOne153248Fall2025.ipynb
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Derivation of the Least Squares Estimators in Simple Linear Regression
+> **Converted source.** [`CodeLabOne153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLabOne153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLabOne153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLabOne153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Derivation of the Least Squares Estimators in Simple Linear Regression
 
 The least squares estimators $\hat{\beta}_0$ and $\hat{\beta}_1$ minimize $$S(\beta_0, \beta_1) := \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i)^2$$ over all values of $\beta_0$ and $\beta_1$. In class, the following formulae were stated:
 \begin{equation*}

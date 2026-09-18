@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/sufficiency.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Visualization of sufficiency
+> **Converted source.** [`reader/sufficiency.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/sufficiency.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/sufficiency.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/sufficiency.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Visualization of sufficiency
 
 The applet below illustrates the concept of sufficiency for a pair of random variables $X_1,X_2 \simiid p_\theta(x)$, where $p_\theta(x)$ is a univariate probability mass function on $\{0,\ldots,n\}$. We illustrate two cases, first the case where $p_\theta(x)$ is the binomial
 $$
@@ -397,7 +397,7 @@ html`<div style="display: flex; gap: 20px; align-items: center; justify-content:
 To understand why $T(X)$ is sufficient in the binomial case, we can make a simple calculation on the joint pmf of the random vector $X = (X_1,X_2)$:
 $$
 \begin{aligned}
-\PP_\theta(X = x) &= \binom{n}{x_1} \theta^{x_1}(1-\theta)^{n-x_1} \cdot \binom{n}{x_2} \theta^{x_2}(1-\theta)^{n-x_2}\\[7pt]
+\PP_\theta(X = x) &= \binom{n}{x_1} \theta^{x_1}(1-\theta)^{n-x_1} \cdot \binom{n}{x_2} \theta^{x_2}(1-\theta)^{n-x_2}[7pt]
 &= \theta^{T(x)}(1-\theta)^{2n-T(x)} \binom{n}{x_1}\binom{n}{x_2},
 \end{aligned}
 $$
@@ -405,7 +405,7 @@ $$
 When we calculate the conditional distribution of $X$ given $T(X) = t$ by Bayes' rule, the factor that depends on $\theta$ drops out as before:
 $$
 \begin{aligned}
-\PP_\theta(X = x \mid T(X) = t) &= \frac{\theta^{t}(1-\theta)^{2n-t} \binom{n}{x_1}\binom{n}{x_2}1\{x_1+x_2=t\} }{\sum_{k=0}^t \theta^t(1-\theta)^{2n-t} \binom{n}{k}\binom{n}{t-k}}\cdot\\[7pt]
+\PP_\theta(X = x \mid T(X) = t) &= \frac{\theta^{t}(1-\theta)^{2n-t} \binom{n}{x_1}\binom{n}{x_2}1\{x_1+x_2=t\} }{\sum_{k=0}^t \theta^t(1-\theta)^{2n-t} \binom{n}{k}\binom{n}{t-k}}\cdot[7pt]
 &= \frac{\binom{n}{x_1}\binom{n}{x_2}1\{x_1+x_2=t\}}{\sum_{k=0}^t \binom{n}{k}\binom{n}{t-k}},
 \end{aligned}
 $$

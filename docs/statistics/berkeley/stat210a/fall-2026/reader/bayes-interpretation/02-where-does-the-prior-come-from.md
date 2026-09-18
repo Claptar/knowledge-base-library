@@ -5,20 +5,18 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/bayes-interpretation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Where Does the Prior Come From?
+> **Converted source.** [`reader/bayes-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-interpretation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/bayes-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-interpretation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Where Does the Prior Come From?
 
 ## Evading the problem of induction
 
 We discussed in [Lecture 1](../introduction/index.md) that there are, broadly speaking, two ways that we can evade the problem of induction. So far in this semester, we have focused on the evasion of *inductive behavior*: as statistical methodologists, we can devise methods for estimation, testing, and other decision problems and analyze these methods' MSEs, or bound their Type I error rates, treating $\theta$ as an unknown quantity that can vary freely over the parameter space (and is not necessarily governed by a prior). A frequentist is willing to present an estimator, prove that it is highly precise (say, that it's off by $0.1$ no more than $1\%$ of the time), and then use it to calculate an estimate $\delta(X)$ for $\theta$ on a given data set $X$. But if you ask them whether we can say that $\theta$ is therefore probably close to the estimate they just calculated, they may deny that the question even makes sense. $X$ has already been realized so there is no more probability left in the problem to talk about; the probability statement they were making before was only with respect to its distribution.
 
 If frequentist methods evade the problem of induction by answering a different question, Bayesian methods evade it by begging the question. In the Bayesian paradigm, we can use the posterior distribution to freely make statements about the posterior distribution of $\theta$. The only trouble is that these statements follow from an assumption we made, before seeing the data, about the prior distribution of $\theta$. So the Bayesian must be prepared to answer questions about where the prior comes from.[^1]
-
-
 
 ## Subjective priors
 
@@ -149,9 +147,7 @@ Recalling that the UMVU estimator was $\|X\|^2 - d$, we may be disturbed to find
 
 Why did we get such a bad estimator? One way to see this is by examining the effective prior on $\rho$: for small $\ep > 0$, the event that $\|\mu\| \in [r,r+\ep]$ is a spherical shell of width $\ep$, whose volume is proportional to $r^{d-1}\ep$, so the probability density grows rapidly in $r$. Because there are many more values of $\mu$ with large $\|\mu\|$ than with small $\|\mu\|$, the prior puts much more mass on them, and this pushes up our estimator.
 
-
 Another conceptual difficulty comes when we try to interpret the posterior. If the prior was no one's subjective belief before seeing the data, the posterior is also no one's subjective belief after seeing the data. But then, what is it?
-
 
 ### Intersubjective Agreement
 
@@ -191,7 +187,6 @@ legend("topleft", legend = c("Uniform","Jeffreys","Subjective prior","Beta(100,0
 ```
 These priors are very different, but what they all have in common is that they are roughly flat on the narrow interval $[0.5,0.515]$.
 
-
 ## Convenience priors
 
 Because Bayesian inference is often computation-heavy, one important practical goal in choosing a prior is computational tractability. In most Bayesian models, the priors used are exponential families, often ones that are conjugate to the likelihood.
@@ -213,7 +208,6 @@ Suppose that we want our prior to have mean $\EE_\lambda\theta = \nu$ and varian
 The best source of a prior, when available, is prior or concurrent experience with other instances of similar statistical problems. If we assume the parameter values for those problems are drawn independently from the same prior, we can fruitfully incorporate all of the data into the model. In this case, even a frequentist might agree that it is reasonable to model the parameter values for the different problems as being drawn from a probability distribution.
 
 There are two closely related ideas for how to learn a prior distribution from a set of similar problem instances. The more frequentist idea is called **empirical Bayes**: instead of inventing the prior, we treat it as an unknown quantity and *estimate* it from the data. The Bayesian idea, called **hierarchical Bayes**, is that we treat the parameters of the prior as additional Bayesian parameters to estimate, assign a prior to them, and learn them from the data using Bayesian inference on the full model. In practice, these two approaches can look and perform very similarly to each other.
-
 
 **Example: Hierarchical Beta-binomial model**
 

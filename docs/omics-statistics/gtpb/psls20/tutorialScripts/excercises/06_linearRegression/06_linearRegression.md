@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/06_linearRegression/
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 06 linearRegression
+> **Converted source.** [`tutorialScripts/excercises/06_linearRegression/06_linearRegression.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/06_linearRegression/06_linearRegression.md) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`tutorialScripts/excercises/06_linearRegression/06_linearRegression.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/06_linearRegression/06_linearRegression.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# 06 linearRegression
 
 On the third day of the "Practical Statistics for the Life Sciences (2020)" course, we will have three tutorials on data linear regression, based on different datasets:
 
@@ -26,7 +26,6 @@ In this tutorial, we will study the association between dose and survival time b
 
 - Exercise: [https://raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/06_linearRegression/Linreg_continuous_fish_tank_half.Rmd](https://raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/06_linearRegression/Linreg_continuous_fish_poison_half.Rmd)
 - Data: "https://raw.githubusercontent.com/GTPB/PSLS20/master/data/poison.csv"
-
 
 3) The FEV dataset:
 

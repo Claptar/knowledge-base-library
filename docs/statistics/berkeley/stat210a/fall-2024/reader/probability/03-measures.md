@@ -5,17 +5,16 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/probability.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/probability.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Measures
 
-**Source:** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/probability.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
 Given a set $\cX$, a measure $\mu$ is a certain kind of function mapping (non-pathological[^1]) subsets $A \subseteq \cX$ to non-negative numbers $\mu(A) \in [0,\infty]$.
 
-
-**Example 1 (Counting measure):** If $\cX$ is countable, e.g. $\cX = \mathbb{Z}$, then a natural measure is the *counting measure* $\#(A)$*,* which simply counts the number of points in a subset $A$. That is, $\#(\{0,1\}) = 2$, and $\#(\{2,4,6,8,\ldots\}) = \infty$ .
+**Example 1 (Counting measure):** If $\cX$ is countable, e.g. $\cX = \mathbb{Z}$, then a natural measure is the *counting measure* $#(A)$*,* which simply counts the number of points in a subset $A$. That is, $#(\{0,1\}) = 2$, and $#(\{2,4,6,8,\ldots\}) = \infty$ .
 
 **Example 2 (Lebesgue measure):** If $\cX = \RR^n$ for some integer $n$, a natural measure is the *Lebesgue measure* $\lambda(A)$, which returns the *volume* of a subset $A$. Roughly speaking, we can write
 
@@ -62,7 +61,6 @@ $$
 $$
 
 3.  **Empty set maps to zero:** $\mu(\emptyset) = 0$[^2]
-
 
 If $\mu$ is a measure on $(\cX, \cF)$ we call $(\cX, \cF, \mu)$ a *measure space*. In the special case $\mu(\cX) = 1$, we call $\mu$ a *probability measure* and $(\cX, \cF, \mu)$ is called a *probability space*.
 

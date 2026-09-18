@@ -5,12 +5,23 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureEighteen153248Fall202
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`CodeLectureEighteen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureEighteen153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Dataset One: Personal Consumption Expenditures from FRED
 
-**Source:** [`CodeLectureEighteen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureEighteen153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+---
+title: Estimation and Prediction in AR models
+---
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+```
 
 The following data is on personal consumption expenditures from FRED (https://fred.stlouisfed.org/series/PCEC). It measures the total amount of money that U.S. households spend on goods and services. This is a time-series record of that spending reported quarterly in billions of dollars (with seasonal adjustment). This measure is compiled by the Bureau of Economic Analysis (BEA) and is a key indicator used to track consumer demand and overall economic activity in the United States.
 
@@ -358,4 +369,4 @@ plt.show()
 
 ---
 
-[Up: contents](index.md) · [Dataset Two: House Price Data from FRED →](02-dataset-two-house-price-data-from-fred.md)
+[Up: contents](index.md) · Dataset Two: House Price Data from FRED →

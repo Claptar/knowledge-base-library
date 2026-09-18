@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureSixteen153248Fall2025
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# AR(2) Model
+> **Converted source.** [`CodeLectureSixteen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureSixteen153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureSixteen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureSixteen153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# AR(2) Model
 
 The Yule model is a special case of the AR(2) model. Specifically, the AR(2) model is: $y_t = \phi_0 + \phi_1 y_{t-1} + \phi_2 y_{t-2} + \epsilon_t$ and the Yule model is a special case obtained by taking $\phi_2 = 1$. Below we fit the AR(2) model to the sunspots data (i.e., we estimate all the parameters $\phi_0, \phi_1, \phi_2$).
 

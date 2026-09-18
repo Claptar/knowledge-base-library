@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2025/homework/homework10.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework10.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework10.tex) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework10.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework10.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 This is an example of a “deduced inference” whereby we arrive at simultaneous confidence regions for many (even infinitely many in this case) estimands at once, by assuming that an initial confidence region covers and then “deducing” all possible conclusions that follow from that assumption. So long as the initial confidence region covers, our deductions will all be simultaneously correct.
 
@@ -38,6 +38,10 @@ Prove the following facts for $X_n, Y_n \in \mathbb{R}^d$:
 
 7.  If $\text{Var}(X_n) = a_n^2 < \infty$, is it impossible to have $X_n = o_p(a_n)$? Prove or give a counterexample.
 
+## Moral: {#moral-3}
+
+This notation is especially handy for dealing with error terms.
+
 ---
 
-[← Moral](03-moral.md) · [Up: contents](index.md) · [Moral →](05-moral.md)
+[← Moral](03-moral.md) · [Up: contents](index.md)

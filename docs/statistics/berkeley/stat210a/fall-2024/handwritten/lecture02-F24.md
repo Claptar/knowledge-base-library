@@ -1,63 +1,238 @@
 ---
-title: Lecture 02 — F24
+title: Lecture 2 (8/29/2023)
 source: https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture02-F24.pdf
 source_file: sources/berkeley-stat210a/fall-2024/handwritten/lecture02-F24.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Lecture 02 — F24
+> **Reconstructed by a model.** [`handwritten/lecture02-F24.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture02-F24.pdf) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`handwritten/lecture02-F24.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture02-F24.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Lecture 2 (8/29/2023)
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+### Outline
 
-e2
+1) Statistical models
 
+2) Estimation
 
-<!-- Start of picture text -->
-8 29 2023<br><!-- End of picture text -->
+3) Decision theory
 
-Outptatistical models 2 Estimation 3 Decision theory
+---
 
+## Statistical Models
 
-<!-- Start of picture text -->
-StatisticalModet<br><!-- End of picture text -->
+### Probability vs statistics
 
+```
+Distribution P  ---- Probability --->  Data X
+                <--- Statistics ----
+```
 
-<!-- Start of picture text -->
-Probabilityustisty<br>Distribution Data<br>P X<br>Istatistics<br>Probability<br>Distribution<br>P fully specified<br>What<br>can we about X P<br>say<br>Deductive<br>Statistics<br>Observe<br>data<br>X<br>from<br>unknown dist P<br>What<br>can we conclude<br>about P<br>Inductive<br>the model<br>y<br>Statisticalmoded<br>Family P of<br>candidate<br>probability distributions<br>for<br>data X<br>Assume<br>X P<br>for<br>some PEP<br>X<br>yields evidence about which P<br>hopefully<br><!-- End of picture text -->
+**Probability:** Distribution $P$ fully specified
+What can we say about $X \sim P$?
+**Deductive**
 
+**Statistics:** Observe data $X$ from unknown dist. $P$
+What can we conclude about $P$?
+**Inductive**
 
-FEnentist e.ee
+**Statistical model** Family $\mathcal{P}$ of candidate probability distributions for data $X$ ("the model")
 
-Assume I
+Assume $X \sim P$ for **some** $P \in \mathcal{P}$
+$X$ yields evidence about which $P$ (hopefully)
 
-O unknown
+---
 
+## Parametric vs. Nonparametric
 
-<!-- Start of picture text -->
-B<br>O<br>esianassumption random with known dist<br>Inference calculating dist O x posterior<br>Considered<br>a assumption<br>strong<br>will<br>consider<br>interp ions later<br>pros<br>Alternate treat O as fixed<br>perspective unknown<br>Methods designed without knowledge of 0<br>as O varies<br>Study frequencyp perties<br><!-- End of picture text -->
+### Parametric model
+dist.s indexed by parameter $\theta \in \Theta$
 
+$$\mathcal{P} = \{P_\theta : \theta \in \Theta\}$$
 
-what is ms.co i I 0 IEo wed MSE O S Eo 0 Varo 011 0 Other based on adding pseudo<sup>flips</sup> possibilities 81<sup>7</sup> 8,1<sup>7</sup> 5,1<sup>1</sup>
+Typically $\Theta \subseteq \mathbb{R}^d$, $d$ called **model dimension**
 
+**Example** $X \sim \text{Binom}(n, \theta)$ for $\theta \in [0, 1]$
+$n$ "known", $\theta$ "unknown" (by analyst)
+$\mathcal{P} = \{\text{Binom}(n, \theta) : \theta \in [0, 1]\}$
 
-<!-- Start of picture text -->
-Comparingestimat<br>We want to choose J to minimize R<br>but this is generally not possible<br>An estimator J is inadmissible if 78 with<br>a RIO 57 e RCO o for all 0<br>for some 0<br>b Rio s Rio<br>We 8 J<br>striatlydominated<br>say<br>dominates it<br>J is inadmissible because do<br><!-- End of picture text -->
+### Nonparametric model
+no natural way to index $\mathcal{P}$
 
+Still usually makes assumptions, e.g.
+- independence
+- shape constraints (e.g. unimodal density)
 
-<!-- Start of picture text -->
-all 07<br>Is there best estimator<br>any uniformly<br>for the binomial<br>example<br><!-- End of picture text -->
+**Example** $X_1, \dots, X_n \overset{\text{iid}}{\sim} P$
+$P$ any distr. on $\mathbb{R}$
+$\mathcal{P} = \{P^n : P \text{ is a distr. on } \mathbb{R}\}$ (for $X = (X_1, \dots, X_n)$)
 
+We can use "parametric notation" $\mathcal{P} = \{P_\theta : \theta \in \Theta\}$ wlog
+(could take $\theta = P$, $\Theta = \mathcal{P}$)
 
-<!-- Start of picture text -->
-2 Rest int choices of<br>estimator<br>a Restrict to unbiased estimators<br>Eofocxi for all 0<br>glo<br>Binomial do is best unbiased estimator<br><!-- End of picture text -->
+---
+
+## Bayesian vs. "Frequentist" Inference
+
+Assume $X \sim P_\theta \qquad \theta$ unknown
+
+### Bayesian assumption:
+$\theta$ random with known dist.
+
+$$\text{Inference} = \text{calculating dist.}(\theta \mid X) \quad (\text{posterior})$$
+
+Considered a strong assumption
+(will consider interp., pros & cons later)
+
+**Alternate perspective:** treat $\theta$ as fixed, unknown
+Methods designed without knowledge of $\theta$
+Study **frequency properties** as $\theta$ varies
+
+---
+
+## Estimation
+
+### Setup
+Model $\mathcal{P} = \{P_\theta : \theta \in \Theta\} \qquad (\text{wlog})$
+
+**Estimand** $g(\theta) \qquad (\text{something we want to know})$
+
+Observe $X$, calculate **estimate** $\delta(X)$
+
+$\delta(\cdot)$ called **estimator**.
+
+We want to **evaluate & compare** estimators
+
+### Example
+Flip a biased coin $n$ times
+$\theta \in [0, 1]$ probability of heads
+
+$X = \text{# heads} \sim \text{Binom}(n, \theta)$
+
+**Goal:** estimate $\theta$
+
+Natural estimator is $\delta_0(X) = \frac{X}{n}$
+How good is it?
+
+---
+
+## Loss and Risk
+
+**Loss function** $L(\theta, d)$
+
+Disutility of guessing $g(\theta) = d$
+
+Typically non-negative, with $L(\theta, d) = 0$ iff $d = g(\theta)$
+[Different for every realization]
+
+**Squared error loss:** $L(\theta, d) = (d - g(\theta))^2$
+
+**Risk function:** expected loss of an estimator
+
+$$R(\theta; \delta(\cdot)) = \mathbb{E}_\theta [L(\theta, \delta(X))]$$
+
+($\theta$ tells us which parameter value is in effect, **NOT** "what randomness to integrate over")
+
+**Risk for sq. error loss** is **mean squared error** (MSE)
+
+$$\text{MSE}(\theta; \delta(\cdot)) = \mathbb{E}_\theta \left[(\delta(X) - g(\theta))^2\right]$$
+
+---
+
+## Binomial example
+
+What is $\text{MSE}(\theta; \delta_0)$? $\qquad \left(\delta_0(X) = \frac{X}{n}\right)$
+
+$$\mathbb{E}_\theta \left[\frac{X}{n}\right] = \theta \qquad (\text{unbiased})$$
+
+$$\implies \text{MSE}(\theta; \delta_0) = \mathbb{E}_\theta \left[\left(\frac{X}{n} - \theta\right)^2\right]$$
+
+$$= \text{Var}_\theta \left(\frac{X}{n}\right)$$
+
+$$= \frac{1}{n} \theta (1 - \theta)$$
+
+**Other possibilities** (based on adding "pseudo-flips")
+
+$$\delta_1(X) = \frac{X+1}{n+2} \qquad \delta_2(X) = \frac{X+2}{n+4} \qquad \delta_3(X) = \frac{X+1}{n}$$
+
+**Mean squared error for binomial estimators (n=16)**
+
+[Graph showing $\text{MSE}(\theta)$ vs $\theta$ for $\theta \in [0.0, 1.0]$ and $\text{MSE}(\theta) \in [0.000, 0.020]$ with curves: $\delta_0$ (black, parabolic peaking at 0.5), $\delta_1$ (red, flatter parabolic peaking at 0.5), $\delta_2$ (blue, flat horizontal line at $\approx 0.010$), and $\delta_3$ (green, higher parabolic peaking at 0.5).]
+
+---
+
+## Comparing estimators
+
+We want to choose $\delta$ to minimize $R$
+...but this is generally not possible
+
+An estimator $\delta$ is **inadmissible** if $\exists \delta^*$ with
+
+a) $R(\theta; \delta^*) \le R(\theta, \delta) \quad$ for all $\theta$
+
+b) $R(\theta, \delta^*) < R(\theta, \delta) \quad$ for some $\theta$
+
+We say $\delta^*$ **strictly dominates** $\delta$
+
+$\delta_3$ is inadmissible because $\delta_0$ dominates it
+
+Is there any **uniformly** best estimator for the binomial example? (all $\theta$)
+
+---
+
+## Resolving ambiguity
+
+**Main strategies to resolve ambiguity:**
+
+1) **Summarize risk function by a scalar:**
+
+   a) **Average-case risk**
+
+   $$\text{Minimize} \quad \int_\Theta R(\theta; \delta) \, d\pi(\theta)$$
+
+   for some measure $\pi$, called **prior**
+
+   If $\pi$ is probability measure, same as
+
+   $$\mathbb{E}_{\theta \sim \pi} \left[ R(\theta; \delta) \right]$$
+
+   $\rightsquigarrow$ **Bayes estimator**
+
+   **Binomial:** $\delta_1$ is Bayes wrt $\pi = \lambda$ on $[0, 1]$
+   $\delta_2$ also Bayes wrt $\pi = \text{Beta}(2, 2)$
+
+   b) **Worst-case risk**
+
+   $$\text{Minimize} \quad \sup_\theta R(\theta; \delta)$$
+
+   $\rightsquigarrow$ **Minimax estimator**
+
+   Closely related to Bayes
+
+   **Binomial:** $\delta_2$ is minimax (for $n=16$)
+
+---
+
+2) **Restrict choices of estimators**
+
+   a) **Restrict to unbiased estimators:**
+
+   $$\mathbb{E}_\theta [\delta(X)] = g(\theta) \quad \text{for all } \theta$$
+
+   **Binomial:** $\delta_0$ is best unbiased estimator
 
 ---
 
 [Up: contents](../index.md)
+
+## Figures
+
+Extracted from the original PDF. They are listed by the page they came from rather
+than placed in the text: the conversion does not record where on the page each one
+sat.
+
+![Figure from page 7 of the original](lecture02-F24/figures/p007-2.png)
+

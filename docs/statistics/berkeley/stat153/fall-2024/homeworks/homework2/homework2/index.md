@@ -5,22 +5,19 @@ source_file: sources/berkeley-stat153/fall-2024/homeworks/homework2/homework2.Rm
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`homeworks/homework2/homework2.Rmd`](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/homeworks/homework2/homework2.Rmd) — berkeley-stat153 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Homework 2: [YOUR NAME HERE]
 
-**Source:** [`homeworks/homework2/homework2.Rmd`](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/homeworks/homework2/homework2.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+Split into 4 sections.
 
-Split into 7 sections.
-
-1. [Introduction](01-introduction.md)
-2. [Simple regression](02-simple-regression.md)
-3. [Multiple regression](03-multiple-regression.md)
-4. [Covariance calculations](04-covariance-calculations.md)
-5. [Metrics matter](05-metrics-matter.md)
-6. [Cross-validation](06-cross-validation.md)
-7. [More features, the merrier?](07-more-features-the-merrier.md)
+1. [Simple regression](01-simple-regression.md)
+2. [Covariance calculations](02-covariance-calculations.md)
+3. [Metrics matter](03-metrics-matter.md)
+4. [Cross-validation](04-cross-validation.md)
 
 ---
 

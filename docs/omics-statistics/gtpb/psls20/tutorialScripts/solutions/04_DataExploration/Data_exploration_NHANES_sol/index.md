@@ -1,26 +1,22 @@
 ---
-title: 'Tutorial 1.1: Exploring the NHANES dataset'
+title: 2 Data Import with the readr R package
 source: https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html
 source_file: sources/gtpb-psls20/tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html
 licence: CC BY 4.0
 route: pandoc-html
 fidelity: good
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Tutorial 1.1: Exploring the NHANES dataset
+> **Converted source.** [`tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.html`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/solutions/04_DataExploration/Data_exploration_NHANES_sol.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
+# 2 Data Import with the readr R package
 
-Split into 7 sections.
+Split into 3 sections.
 
-1. [Tutorial 1.1: Exploring the NHANES dataset](01-tutorial-1-1-exploring-the-nhanes-dataset.md)
-2. [1 The NHANES dataset](02-1-the-nhanes-dataset.md)
-3. [2 Data Import with the readr R package](03-2-data-import-with-the-readr-r-package.md)
-4. [or glimpse(NHANES) to see all the variables in the dataset](04-or-glimpse-nhanes-to-see-all-the-variables-in-the-dataset.md)
-5. [3 Data Tidying](05-3-data-tidying.md)
-6. [4 Data wrangling with dplyr](06-4-data-wrangling-with-dplyr.md)
-7. [5 Data Visualization](07-5-data-visualization.md)
+1. [2 Data Import with the readr R package](01-2-data-import-with-the-readr-r-package.md)
+2. [4 Data wrangling with dplyr](02-4-data-wrangling-with-dplyr.md)
+3. [5 Data Visualization](03-5-data-visualization.md)
 
 ---
 

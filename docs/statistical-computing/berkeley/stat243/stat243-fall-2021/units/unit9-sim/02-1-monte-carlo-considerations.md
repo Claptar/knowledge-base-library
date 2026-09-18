@@ -3,132 +3,127 @@ title: 1 Monte Carlo considerations
 source: https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/units/unit9-sim.pdf
 source_file: sources/berkeley-stat243/stat243-fall-2021/units/unit9-sim.pdf
 licence: CC0-1.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
+
+> **Reconstructed by a model.** [`units/unit9-sim.pdf`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/units/unit9-sim.pdf) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
 # 1 Monte Carlo considerations
 
-**Source:** [`units/unit9-sim.pdf`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/units/unit9-sim.pdf) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.pdf` (lossy)
+## 1.1 Motivating example
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+Let's consider linear regression, with observations $Y = (y_1, y_2, \dots, y_n)$ where $\hat{\beta} = (X^\top X)^{-1} X^\top Y$. If we know that we have $EY = X\beta$ and $\text{Var}(Y) = \sigma^2 I$, then we can determine analytically that we have
 
-### **1.1 Motivating example**
+$$E\hat{\beta} = \beta$$
+$$\text{Var}(\hat{\beta}) = E((\hat{\beta} - E\hat{\beta})^2) = \sigma^2(X^\top X)^{-1}$$
+$$\text{MSPE}(Y^*) = E(Y^* - \hat{Y})^2) = \sigma^2(1 + X^{*\top}(X^\top X)^{-1}X^*).$$
 
-Let’s consider linear regression, with observations _Y_ = ( _y_ 1 _, y_ 2 _, . . . , yn_ ) where _β_<sup>ˆ</sup> = ( _X_<sup>_⊤_</sup> _X_ )<sup>_−_1</sup> _X_<sup>_⊤_</sup> _Y_ . If we know that we have _EY_ = _Xβ_ and Var( _Y_ ) = _σ_<sup>2</sup> _I_ , then we can determine analytically that we have
+where $Y^*$ is some new observation we'd like to predict given $X^*$.
 
+But suppose that we're interested in the properties of regression estimation when in reality the mean is not linear in $X$ or the properties of the errors are more complicated than having independent homoscedastic errors. Or suppose we have a modified procedure to produce $\hat{\beta}$, such as a procedure that is robust to outliers. In those cases, we cannot compute the expectations above analytically.
 
-where _Y_<sup>_∗_</sup> is some new observation we’d like to predict given _X_<sup>_∗_</sup> .
+Instead we decide to use a Monte Carlo estimate. To keep the notation more simple, let's just consider one element of the vector $\beta$ (i.e., one of the regression coefficients) and continue to call that $\beta$. If we randomly generate $m$ different datasets from some distribution $f$, and $\hat{\beta}_i$ is the estimated coefficient based on the $i$th dataset: $Y_i = (y_{i1}, y_{i2}, \dots, y_{in})$, then we can estimate $E\hat{\beta}$ under that distribution $f$ as
 
-But suppose that we’re interested in the properties of regression estimation when in reality the mean is not linear in _X_ or the properties of the errors are more complicated than having independent homoscedastic errors. Or suppose we have a modified procedure to produce _β_<sup>ˆ</sup> , such as a procedure that is robust to outliers. In those cases, we cannot compute the expectations above analytically.
-
-Instead we decide to use a Monte Carlo estimate. To keep the notation more simple, let’s just consider one element of the vector _β_ (i.e., one of the regression coefficients) and continue to call that _β_ . If we randomly generate _m_ different datasets from some distribution _f_ , and _β_<sup>ˆ</sup> _i_ is the estimated coefficient based on the _i_ th dataset: _Yi_ = ( _yi_ 1 _, yi_ 2 _, . . . , yin_ ), then we can estimate _Eβ_<sup>ˆ</sup> under that distribution _f_ as
-
+$$\widehat{E(\hat{\beta})} = \bar{\hat{\beta}} = \frac{1}{m} \sum_{i=1}^m \hat{\beta}_i$$
 
 Or to estimate the variance, we have
 
+$$\widehat{\text{Var}(\hat{\beta})} = \frac{1}{m} \sum_{i=1}^m (\hat{\beta}_i - \bar{\hat{\beta}})^2.$$
 
-In evaluating the performance of regression under non-standard conditions or the performance of
+In evaluating the performance of regression under non-standard conditions or the performance of our robust regression procedure, what decisions do we have to make to be able to carry out our Monte Carlo procedure?
 
-2
+Next let's think about Monte Carlo methods in general.
 
-our robust regression procedure, what decisions do we have to make to be able to carry out our Monte Carlo procedure?
+## 1.2 Monte Carlo basics
 
-Next let’s think about Monte Carlo methods in general.
+### 1.2.1 Monte Carlo overview
 
-### **1.2 Monte Carlo basics**
+The basic idea is that we often want to estimate $\phi \equiv E_f(h(Y))$ for $Y \sim f$. Note that if $h$ is an indicator function, this includes estimation of probabilities, e.g., for a scalar $Y$, we have $p = P(Y \le y) = F(y) = \int_{-\infty}^y f(t)dt = \int I(t \le y)f(t)dt = E_f(I(Y \le y))$. We would estimate variances or MSEs by having $h$ involve squared terms.
 
-#### **1.2.1 Monte Carlo overview**
+We get an MC estimate of $\phi$ based on an iid sample of a large number of values of $Y$ from $f$:
 
-The basic idea is that we often want to estimate _φ ≡ Ef_ ( _h_ ( _Y_ )) for _Y ∼ f_ . Note that if _h_ is an indicator function, this includes estimation of probabilities, e.g., for a scalar _Y_ , we have _p_ = _P_ ( _Y ≤ y_ ) = _F_ ( _y_ ) = � _−∞y_<sup>_f_(</sup><sup>_t_)</sup><sup>_dt_=</sup> � _I_ ( _t ≤ y_ ) _f_ ( _t_ ) _dt_ = _Ef_ ( _I_ ( _Y ≤ y_ )). We would estimate variances or MSEs by having _h_ involve squared terms.
-
-We get an MC estimate of _φ_ based on an iid sample of a large number of values of _Y_ from _f_ :
-
+$$\hat{\phi} = \frac{1}{m} \sum_{i=1}^m h(Y_i),$$
 
 which is justified by the Law of Large Numbers:
 
+$$\lim_{m\to\infty} \frac{1}{m} \sum_{i=1}^m h(Y_i) = E_f h(Y)$$
 
-Note that in most simulation studies, _Y_ is an entire dataset, and the “iid sample” means generating _m_ different datasets from _f_ , i.e., _Yi ∈{Y_ 1 _, . . . , Ym}_ not _m_ different scalar values. If the dataset has _n_ observations, then _Yi_ = ( _Yi_ 1 _, . . . , Yin_ ).
+Note that in most simulation studies, $Y$ is an entire dataset, and the "iid sample" means generating $m$ different datasets from $f$, i.e., $Y_i \in \{Y_1, \dots, Y_m\}$ not $m$ different scalar values. If the dataset has $n$ observations, then $Y_i = (Y_{i1}, \dots, Y_{in})$.
 
-**Back to the regression example** Let’s relate that back to our regression example. In that particular case, if we’re interested in whether the regression estimator is biased, we want to know:
+**Back to the regression example** Let's relate that back to our regression example. In that particular case, if we're interested in whether the regression estimator is biased, we want to know:
 
+$$\phi = E\hat{\beta}.$$
 
-We can use the Monte Carlo estimate of _φ_ :
+We can use the Monte Carlo estimate of $\phi$:
 
+$$\hat{\phi} = \frac{1}{m}\sum_{i=1}^m h(Y_i) = \frac{1}{m}\sum_{i=1}^m \hat{\beta}_i = \widehat{E(\hat{\beta})}.$$
 
 For the variance, we have
 
+$$\phi = \text{Var}(\hat{\beta}) = E_f((\hat{\beta} - E\hat{\beta})^2)$$
 
-3
+and we can use the Monte Carlo estimate of $\phi$:
 
-and we can use the Monte Carlo estimate of _φ_ :
-
+$$\hat{\phi} = \frac{1}{m} \sum_{i=1}^m h(Y_i) = \frac{1}{m} \sum_{i=1}^m (\hat{\beta}_i - E\hat{\beta})^2 = \widehat{\text{Var}}(\hat{\beta})$$
 
 where
 
+$$h(Y) = (\hat{\beta} - E\hat{\beta})^2.$$
 
-Finally note that we also need to use the Monte Carlo estimate of _Eβ_<sup>ˆ</sup> in the Monte Carlo estimation of the variance.
+Finally note that we also need to use the Monte Carlo estimate of $E\hat{\beta}$ in the Monte Carlo estimation of the variance.
 
 We might also be interested in the coverage of a confidence interval. In that case we have
 
+$$h(Y) = 1_{\beta \in CI(Y)}$$
 
 and we can estimate the coverage as
 
+$$\hat{\phi} = \frac{1}{m} \sum_{i=1}^m 1_{\beta \in CI(y_i)}.$$
 
-Of course we want that _φ_<sup>ˆ</sup> _≈_ 1 _− α_ for a 100(1 _− α_ ) confidence interval. In the standard case of a 95% interval we want _φ_<sup>ˆ</sup> _≈_ 0 _._ 95.
+Of course we want that $\hat{\phi} \approx 1 - \alpha$ for a $100(1 - \alpha)$ confidence interval. In the standard case of a 95% interval we want $\hat{\phi} \approx 0.95$.
 
-#### **1.2.2 Simulation uncertainty**
+### 1.2.2 Simulation uncertainty
 
-Since _φ_<sup>ˆ</sup> is simply an average of _m_ identically-distributed values, _h_ ( _Y_ 1) _, . . . , h_ ( _Ym_ ), the simulation variance of _φ_<sup>ˆ</sup> is Var( _φ_<sup>ˆ</sup> ) = _σ_<sup>2</sup> _/m_ , with _σ_<sup>2</sup> = Var( _h_ ( _Y_ )). An estimator of _σ_<sup>2</sup> = _Ef_ (( _h_ ( _Y_ ) _− φ_ )<sup>2</sup> ) is
+Since $\hat{\phi}$ is simply an average of $m$ identically-distributed values, $h(Y_1), \dots, h(Y_m)$, the simulation variance of $\hat{\phi}$ is $\text{Var}(\hat{\phi}) = \sigma^2/m$, with $\sigma^2 = \text{Var}(h(Y))$. An estimator of $\sigma^2 = E_f((h(Y) - \phi)^2)$ is
 
+$$\hat{\sigma}^2 = \frac{1}{m-1} \sum_{i=1}^m (h(Y_i) - \hat{\phi})^2$$
 
 So our MC simulation error is based on
 
+$$\widehat{\text{Var}}(\hat{\phi}) = \frac{\hat{\sigma}^2}{m} = \frac{1}{m(m-1)} \sum_{i=1}^m (h(Y_i) - \hat{\phi})^2.$$
 
-� Note that� this is particularly confusing if we have _φ_<sup>ˆ</sup> = Var( _β_<sup>ˆ</sup> ) because then we have Var<sup>�</sup> ( _φ_<sup>ˆ</sup> ) = Var�(Var( _β_<sup>ˆ</sup> ))!
+Note that this is particularly confusing if we have $\hat{\phi} = \widehat{\text{Var}}(\hat{\beta})$ because then we have $\widehat{\text{Var}}(\hat{\phi}) = \widehat{\text{Var}}(\widehat{\text{Var}}(\hat{\beta}))$!
 
-The simulation variance is _O_ ( _m_<sup><u>1</u>)becausewehave</sup><sup>_m_2inthedenominatorandasumover</sup><sup>_m_</sup> terms in the numerator.
+The simulation variance is $O(\frac{1}{m})$ because we have $m^2$ in the denominator and a sum over $m$ terms in the numerator.
 
-Note that in the simulation setting, the randomness in the system is very well-defined (as it is in survey sampling, but unlike in most other applications of statistics), because it comes from the
-
-4
-
-RNG that we perform as part of our attempt to estimate _φ_ . Happily, we are in control of _m_ , so in principle we can reduce the simulation error to as little as we desire. Unhappily, as usual, the standard error goes down with the square root of _m_ .
+Note that in the simulation setting, the randomness in the system is very well-defined (as it is in survey sampling, but unlike in most other applications of statistics), because it comes from the RNG that we perform as part of our attempt to estimate $\phi$. Happily, we are in control of $m$, so in principle we can reduce the simulation error to as little as we desire. Unhappily, as usual, the standard error goes down with the square root of $m$.
 
 **Back to the regression example** Some examples of simulation variances we might be interested in in the regression example include:
 
--
+- Uncertainty in our estimate of bias: $\widehat{\text{Var}}(\widehat{E(\hat{\beta})} - \beta)$.
+- Uncertainty in the estimated variance of the estimated coefficient: $\widehat{\text{Var}}(\widehat{\text{Var}}(\hat{\beta}))$
+- Uncertainty in the estimated mean square prediction error: $\widehat{\text{Var}}(\widehat{\text{MSPE}}(Y^*))$
 
-- • Uncertainty in our estimate of bias: Var<sup>�</sup> ( _E_ ( _β_<sup>ˆ</sup> ) _− β_ ).
+In all cases we have to estimate the simulation variance, hence the $\widehat{\text{Var}}()$ notation.
 
--
+### 1.2.3 Final notes
 
-- • Uncertainty in the estimated variance of the estimated coefficient: Var<sup>�</sup> (Var( _β_<sup>ˆ</sup> ))
+Sometimes the $Y_i$ are generated in a dependent fashion (e.g., sequential MC or MCMC), in which case this variance estimator, $\widehat{\text{Var}}(\hat{\phi})$ does not hold because the samples are not IID, but the estimator $\hat{\phi}$ is still a valid, unbiased estimator of $\phi$.
 
-- Uncertainty in the estimated mean square prediction error: Var<sup>�</sup> (MSPE�( _Y_<sup>_∗_</sup> ))
+## 1.3 Variance reduction (optional)
 
-In all cases we have to estimate the simulation variance, hence the Var<sup>�</sup> () notation.
+There are some tools for variance reduction in MC settings. One is importance sampling (see Section 3). Others are the use of control variates and antithetic sampling. I haven't personally run across these latter in practice, so I'm not sure how widely used they are and won't go into them here.
 
-#### **1.2.3 Final notes**
+In some cases we can set up natural strata, for which we know the probability of being in each stratum. Then we would estimate $\mu$ for each stratum and combine the estimates based on the probabilities. The intuition is that we remove the variability in sampling amongst the strata from our simulation.
 
-Sometimes the _Yi_ are generated in a dependent fashion (e.g., sequential MC or MCMC), in which case this variance estimator, Var<sup>�</sup> ( _φ_<sup>ˆ</sup> ) does not hold because the samples are not IID, but the estimator _φ_ ˆ is still a valid, unbiased estimator of _φ_ .
+Another strategy that comes up in MCMC contexts is *Rao-Blackwellization*. Suppose we want to know $E(h(X))$ where $X = \{X_1, X_2\}$. Iterated expectation tells us that $E(h(X)) = E(E(h(X)|X_2))$. If we can compute $E(h(X)|X_2) = \int h(x_1, x_2)f(x_1|x_2)dx_1$ then we should avoid introducing stochasticity related to the $X_1$ draw (since we can analytically integrate over that) and only average over stochasticity from the $X_2$ draw by estimating $E_{X_2}(E(h(X)|X_2))$. The estimator is
 
-### **1.3 Variance reduction (optional)**
+$$\hat{\mu}_{RB} = \frac{1}{m} \sum_{i=1}^m E(h(X)|X_{2,i})$$
 
-There are some tools for variance reduction in MC settings. One is importance sampling (see Section 3). Others are the use of control variates and antithetic sampling. I haven’t personally run across these latter in practice, so I’m not sure how widely used they are and won’t go into them here.
-
-In some cases we can set up natural strata, for which we know the probability of being in each stratum. Then we would estimate _µ_ for each stratum and combine the estimates based on the probabilities. The intuition is that we remove the variability in sampling amongst the strata from our simulation.
-
-Another strategy that comes up in MCMC contexts is _Rao-Blackwellization_ . Suppose we want to know _E_ ( _h_ ( _X_ )) where _X_ = _{X_ 1 _, X_ 2 _}_ . Iterated expectation tells us that _E_ ( _h_ ( _X_ )) = _E_ ( _E_ ( _h_ ( _X_ ) _|X_ 2). If we can compute _E_ ( _h_ ( _X_ ) _|X_ 2) = � _h_ ( _x_ 1 _, x_ 2) _f_ ( _x_ 1 _|x_ 2) _dx_ 1 then we should avoid introducing stochasticity related to the _X_ 1 draw (since we can analytically integrate over that) and only average over stochasticity from the _X_ 2 draw by estimating _EX_ 2( _E_ ( _h_ ( _X_ ) _|X_ 2). The estimator is
-
-
-5
-
-where we either draw from the marginal distribution of _X_ 2, or equivalently, draw _X_ , but only use _X_ 2. Our MC estimator averages over the simulated values of _X_ 2. This is called Rao-Blackwellization because it relates to the idea of conditioning on a sufficient statistic. It has lower variance because the variance of each term in the sum of the Rao-Blackwellized estimator is Var( _E_ ( _h_ ( _X_ ) _|X_ 2), which is less than the variance in the usual MC estimator, Var( _h_ ( _X_ )), based on the usual iterated variance formula: _V_ ( _X_ ) = _E_ ( _V_ ( _X|Y_ )) + _V_ ( _E_ ( _X|Y_ )) _⇒ V_ ( _E_ ( _X|Y_ )) _< V_ ( _X_ ).
+where we either draw from the marginal distribution of $X_2$, or equivalently, draw $X$, but only use $X_2$. Our MC estimator averages over the simulated values of $X_2$. This is called Rao-Blackwellization because it relates to the idea of conditioning on a sufficient statistic. It has lower variance because the variance of each term in the sum of the Rao-Blackwellized estimator is $\text{Var}(E(h(X)|X_2))$, which is less than the variance in the usual MC estimator, $\text{Var}(h(X))$, based on the usual iterated variance formula: $V(X) = E(V(X|Y)) + V(E(X|Y)) \Rightarrow V(E(X|Y)) < V(X)$.
 
 ---
 
-[← Introduction](01-introduction.md) · [Up: contents](index.md) · [2 Design of simulation studies →](03-2-design-of-simulation-studies.md)
+[← Unit 9: Simulation](01-unit-9-simulation.md) · [Up: contents](index.md) · [2 Design of simulation studies →](03-2-design-of-simulation-studies.md)

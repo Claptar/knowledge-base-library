@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/testing-nuisance.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Multiparameter exponential families
+> **Converted source.** [`reader/testing-nuisance.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/testing-nuisance.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/testing-nuisance.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/testing-nuisance.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Multiparameter exponential families
 
 Consider a generic exponential family where we can partition the natural parameter into a parameter of interest $\theta\in\RR^s$ and nuisance parameter $\lambda\in\RR^r$:
 $$
@@ -35,14 +35,13 @@ $$
 \begin{aligned}
 p_{\mu,\nu}(x,y)
 &= \frac{\mu^x e^{-\mu}}{x!}\cdot\frac{\nu^y e^{-\nu}}{y!} \\
-&= \exp\{ x\log \mu + y\log \nu - (\mu+\nu) \}\cdot \frac{1}{x!y!}\\[5pt]
+&= \exp\{ x\log \mu + y\log \nu - (\mu+\nu) \}\cdot \frac{1}{x!y!}[5pt]
 &= \exp\left\{ x\log \frac{\mu}{\nu} + (y+x)\log \nu - (\mu + \nu)\right\}\cdot \frac{1}{x!y!}
 \end{aligned}
 $$
 By adding and subtracting $x\log \nu$ in the exponent in the last step, we have obtained a model of the desired form with $\theta = \log \frac{\mu}{\nu}$, $T(X,Y)=X$, $\lambda = \log \nu$, and $U(X,Y) = X+Y$. Thus, our general strategy tells us to condition on $X+Y$, and once we have done so the optimal conditional test rejects for large values of $X$.
 
 As you will show in the problem set, the binomial comparison problem introduced in the first section is another example of this type of setting, which we can deal with in much the same way. The widget below illustrates how the conditional distribution given $T(X) = X_1+X_2$ depends only on the log odds ratio $\rho = \frac{\pi_1}{1-\pi_1} / \frac{\pi_2}{1-\pi_2}$, and not on the nuisance parameter $\pi_2$ (the case $n_1=n_2=n$ is illustrated, but the same is true for general $n_1,n_2$).
-
 
 ```ojs
 //| echo: false

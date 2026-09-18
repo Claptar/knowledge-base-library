@@ -5,12 +5,25 @@ source_file: sources/berkeley-stat153/spring-2025/CodeLectureTwentyOne153248Spri
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`CodeLectureTwentyOne153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureTwentyOne153248Spring2025.ipynb) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Sample PACF
 
-**Source:** [`CodeLectureTwentyOne153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureTwentyOne153248Spring2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+---
+title: ACF, PACF, AR models and Stationarity
+---
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+from statsmodels.tsa.ar_model import AutoReg
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+```
 
 Towards the end of last  lecture, we discussed the Sample PACF (Partial Autocorrelation Function) that is used as an exploratory data analysis tool mainly for determining an appropriate order $p$ for fitting the AR($p$) model to the data. The sample PACF at lag $p$ is simply equal to the esimate $\hat{\phi}_p$ of $\phi_p$ when an AR($p$) model is fit to the data. We also discussed briefly why this quantity (obtained by fitting AR($p$) models for various $p$  is has "partial autocorrelation" in its name). You will revisit this again in tomorrow's lab.
 

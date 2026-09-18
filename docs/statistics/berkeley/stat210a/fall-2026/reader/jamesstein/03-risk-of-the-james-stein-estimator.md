@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/jamesstein.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Risk of the James-Stein estimator
+> **Converted source.** [`reader/jamesstein.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/jamesstein.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/jamesstein.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/jamesstein.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Risk of the James-Stein estimator
 
 We are now ready to calculate the risk of the James--Stein estimator $\delta_{JS}(X) = \left(1 - \frac{d-2}{\|X\|^2}\right)X$. We can drop the assumption $\sigma^2 = $, under the assumption $\sigma^2 = 1$ (for general $\sigma^2$, we should replace the numerator $d-2$ with $(d-2)\sigma^2$. Then ).
 
@@ -44,7 +44,7 @@ Note that, for more general $\sigma^2$, the James--Stein estimator is $\left(1-\
 $$h(X) = \sigma^2\frac{d-2}{\|X\|^2} \Rightarrow \|h(X)\|^2 = \sigma^4 \frac{(d-2)^2}{\|X\|^2}, \quad \text{tr} Dh(X) = \sigma^2 \frac{(d-2)^2}{\|X\|^2},$$
 leading to the estimator $\widehat{\text{MSE}}(X) = \sigma^2 d - \sigma^4\frac{(d-2)^2}{\|X\|^2}$, and plugging in $\EE_0 1/\|X\|^2 = 1/(d-2)\sigma^2$, the MSE at $\theta=0$ is $2\sigma^2$.
 
-### Final thoughts
+## Final thoughts
 
 A few more notes: first, $\delta_{JS}(X)$ also inadmissible, since $\delta_{+}(X) = (1 - \frac{d-2}{\|X\|^2})_+ X$ is strictly better since we never benefit from using a shrinkage parameter $\zeta > 1$.
 

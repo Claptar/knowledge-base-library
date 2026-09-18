@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/homework/homework7.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Homework7
+> **Converted source.** [`homework/homework7.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/homework/homework7.tex) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework7.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/homework/homework7.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Homework7
 
 See the standing homework instructions on the course web page
 
@@ -55,8 +55,6 @@ See the standing homework instructions on the course web page
 2.  numerically compute the cutoff value $c$ (and $\gamma$ if necessary), and
 
 3.  plot the power function of the level-$\alpha$ test for an appropriate range of parameter values.
-
-<!-- -->
 
 1.  $X_i \overset{\text{ind.}}{\sim}\text{Pois}(a_i \lambda)$ for $i=1,\ldots,n$, where $a_1,\ldots,a_n$ are known positive constants and $\lambda > 0$ is unknown. Test $H_0:\; \lambda = 1$ vs. $H_1:\; \lambda > 1$, with $n = 5$ and $a_i = i$.
 

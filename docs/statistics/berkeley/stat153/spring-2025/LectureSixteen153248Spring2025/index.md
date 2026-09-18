@@ -1,27 +1,21 @@
 ---
-title: 1 ARIMA Models
+title: 2 AR (Auto-Regressive) Models
 source: https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureSixteen153248Spring2025.pdf
 source_file: sources/berkeley-stat153/spring-2025/LectureSixteen153248Spring2025.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# 1 ARIMA Models
+> **Reconstructed by a model.** [`LectureSixteen153248Spring2025.pdf`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureSixteen153248Spring2025.pdf) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`LectureSixteen153248Spring2025.pdf`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureSixteen153248Spring2025.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# 2 AR (Auto-Regressive) Models
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+Split into 2 sections.
 
-Split into 4 sections.
-
-1. [1 ARIMA Models](01-1-arima-models.md)
-2. [2 AR (Auto-Regressive) Models](02-2-ar-auto-regressive-models.md)
-3. [3 AR Models for the Sunspots Data](03-3-ar-models-for-the-sunspots-data.md)
-4. [References](04-references.md)
+1. [2 AR (Auto-Regressive) Models](01-2-ar-auto-regressive-models.md)
+2. [3 AR Models for the Sunspots Data](02-3-ar-models-for-the-sunspots-data.md)
 
 ---
 

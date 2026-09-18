@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2025/index.md
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Fall 153: Introduction to Time Series
+> **Converted source.** [`index.md`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/index.md) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`index.md`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/index.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# Fall 153: Introduction to Time Series
 
 ::::{grid} 1 2 2 2
 
@@ -58,11 +58,11 @@ converted: '2026-09-14'
 
 ::::
 
-# Syllabus
+## Syllabus
 
-Basic information about the course can be found in the [syllabus](syllabus/index.md).
+Basic information about the course can be found in the [syllabus](syllabus.md).
 
-# Schedule
+## Schedule
 
 :::{schedule} ./schedule.yml
 

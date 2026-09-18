@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2025/homework/homework4.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Homework4 Part 01 —
+> **Converted source.** [`homework/homework4.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework4.tex) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework4.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework4.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Homework4 Part 01 —
 
 You may disregard measure-theoretic niceties about conditioning on measure-zero sets, almost-sure equality vs. actual equality, “all functions” vs. “all measurable functions,” etc. (unless the problem is explicitly asking about such issues).
 
@@ -28,4 +28,4 @@ Consider an i.i.d. sample from the nonparametric family of *all* distributions o
 
 ---
 
-[Up: contents](index.md) · [Moral →](02-moral.md)
+[Up: contents](index.md) · Moral →

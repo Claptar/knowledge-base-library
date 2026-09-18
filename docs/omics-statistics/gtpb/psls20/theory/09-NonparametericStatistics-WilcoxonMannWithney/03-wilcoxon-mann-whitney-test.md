@@ -5,26 +5,25 @@ source_file: sources/gtpb-psls20/theory/09-NonparametericStatistics-WilcoxonMann
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Wilcoxon-Mann-Whitney Test
 
-**Source:** [`theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/09-NonparametericStatistics-WilcoxonMannWithney.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
-
 Simultaneously developed by Wilcoxon, and,  Mann and Whitney:  **Wilcoxon-Mann-Whitney**, **Wilcoxon rank sum test**  or **Mann-Whitney U test**
 
-## hypotheses
+### hypotheses
 
 Under $H_0$ the distributions of the two groups are equal
 $$H_0: f_1=f_2$$
-
 
 Under the alternative $H_1$ the distributions differ in location $$H_1: \mu_1\neq \mu_2$$
 
 $H_1$ assumes **location-shift**, we will relax this assumption later on.
 
-## Test statistic
+### Test statistic
 
 Classic T-test: difference in sample means $\bar{Y}_1-\bar{Y}_2$.
 
@@ -33,7 +32,7 @@ Here: Difference in sample means based on rank transformed data
 Ranks based on the pooled sample (upon joining the observations from the two groups): $R_{ij}=R(Y_{ij})$ is de rank of observation $Y_{ij}$ in the pooled sample.
 
 $$
-  T = \frac{1}{n_1}\sum_{i=1}^{n_1} R(Y_{i1}) - \frac{1}{n_2}\sum_{i=1}^{n_2} R(Y_{i2}) .
+T = \frac{1}{n_1}\sum_{i=1}^{n_1} R(Y_{i1}) - \frac{1}{n_2}\sum_{i=1}^{n_2} R(Y_{i2}) .
 $$
 
 - Under $H_0$ we expect the average rank of the first group to be close to that of the second group so $T$ is close to zero.
@@ -46,10 +45,10 @@ $$
 - $S_1$ is the sum of the ranks of the first group: *rank sum test*.
 
 - This holds because
-$$
-  S_1+S_2 = \text{sum of all ranks} = 1+2+\cdots + n=\frac{1}{2}n(n+1).
-$$
 
+$$
+S_1+S_2 = \text{sum of all ranks} = 1+2+\cdots + n=\frac{1}{2}n(n+1).
+$$
 
 - $S_1$ (or $S_2$) is a good test statistic
 
@@ -62,30 +61,33 @@ $$
 
 ---
 
-## Standardized statistic
+### Standardized statistic
 
 Often the standardized test statistic is used
+
 $$
-  T = \frac{S_1-\text{E}_{0}\left[S_1\right]}{\sqrt{\text{Var}_{0}\left[S_1\right]}},
+T = \frac{S_1-\text{E}_{0}\left[S_1\right]}{\sqrt{\text{Var}_{0}\left[S_1\right]}},
 $$
 
 - with $\text{E}_{0}\left[S_1\right]$ and $\text{Var}_{0}\left[S_1\right]$ the expect mean and variance of S1 under $H_0$.
 
 - Under $H_0$
- $$
-   \text{E}_{0}\left[S_1\right]= \frac{1}{2}n_1(n+1) \;\;\;\;\text{ en }\;\;\;\; \text{Var}_{0}\left[S_1\right]=\frac{1}{12}n_1n_2(n+1).
- $$
+
+$$
+\text{E}_{0}\left[S_1\right]= \frac{1}{2}n_1(n+1) \;\;\;\;\text{ en }\;\;\;\; \text{Var}_{0}\left[S_1\right]=\frac{1}{12}n_1n_2(n+1).
+$$
 
 - Under $H_0$ and when $\min(n_1,n_2)\rightarrow \infty$
- $$
-    T = \frac{S_1-\text{E}_{0}\left[S_1\right]}{\sqrt{\text{Var}_{0}\left[S_1\right]}} \rightarrow N(0,1).
- $$
+
+$$
+T = \frac{S_1-\text{E}_{0}\left[S_1\right]}{\sqrt{\text{Var}_{0}\left[S_1\right]}} \rightarrow N(0,1).
+$$
 
 Asymptotically the standardised statistic follows a standard normal distribution!
 
 ---
 
-## Cholesterol example
+### Cholesterol example
 
 We illustrate the result for the cholesterol example using the R function `wilcox.test`.
 ```r
@@ -108,11 +110,12 @@ S2
 
 ---
 
-## Mann and Whitney test
+### Mann and Whitney test
 
 Mann and Whitney test in absence of ties:
+
 $$
- U_1 = \sum_{i=1}^{n_1}\sum_{k=1}^{n_2} \text{I}\left\{Y_{i1}\geq Y_{k2}\right\}.
+U_1 = \sum_{i=1}^{n_1}\sum_{k=1}^{n_2} \text{I}\left\{Y_{i1}\geq Y_{k2}\right\}.
 $$
 
 - with $\text{I}\left\{.\right\}$ an indicator that equals 1  if the expression is true and is zero otherwise.
@@ -143,7 +146,7 @@ S1-nGroups[1]*(nGroups[1]+1)/2
 
 ---
 
-## Probabilistic index
+### Probabilistic index
 
 - $U_1$ has a better interpretation feature
 - Let $Y_j$ a random observation from group $j$ ($j=1,2$). Then
@@ -184,16 +187,19 @@ Without the location-shift assumption the conclusion in terms of the probabilist
 
   - So when we do not assume location shift we test for
 
-$$H_0: F_1=F_2 \text{ vs } H_1: P[Y_1 \geq Y_2] \neq 0.5.$$
+$$
+H_0: F_1=F_2 \text{ vs } H_1: P[Y_1 \geq Y_2] \neq 0.5.
+$$
 
-
-## Conclusion
+### Conclusion
 
 There is a significant difference in the distribution of the cholesterol concentration of hart patients two days upon a stroke and that of healthy subject (($p=$ `r format(wTest$p.value,digits=3)`). It is more likely to observe higher cholesterol levels for hart patients then for healthy subjects. The point estimator for this probability is `r probInd*100`%.
 
+---
+
+## [Home](https://gtpb.github.io/PSLS20/) {-}
+s
 
 ---
 
----
-
-[← Rank Tests](02-rank-tests.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](04-home-https-gtpb-github-io-psls20.md)
+[← Rank Tests](02-rank-tests.md) · [Up: contents](index.md)

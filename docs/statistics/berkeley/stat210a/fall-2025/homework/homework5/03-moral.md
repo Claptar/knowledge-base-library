@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2025/homework/homework5.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework5.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework5.tex) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework5.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework5.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 Minimizing average-case risk is closely related to admissibility, though the general relationship is not quite as tight as what we’ve shown in this problem for finite parameter spaces. In more general parameter spaces, there is a more general result which roughly states that all admissible estimators are limits of Bayes estimators, under relatively mild conditions.
 
@@ -26,4 +26,4 @@ Assume for each problem below that there exists an estimator with finite Bayes r
 
 ---
 
-[← Moral](02-moral.md) · [Up: contents](index.md) · [Moral →](04-moral.md)
+[← Moral](02-moral.md) · [Up: contents](index.md) · Moral →

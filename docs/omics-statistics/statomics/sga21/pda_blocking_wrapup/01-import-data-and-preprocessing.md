@@ -2,18 +2,18 @@
 title: Import Data and Preprocessing
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/pda_blocking_wrapup.Rmd
 source_file: sources/statomics-sga21/pda_blocking_wrapup.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`pda_blocking_wrapup.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/pda_blocking_wrapup.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Import Data and Preprocessing
 
-**Source:** [`pda_blocking_wrapup.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/pda_blocking_wrapup.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
-
 ## Data
-<details><summary> Click to see code  </summary><p>
+ Click to see code
 ```r
 library(tidyverse)
 library(limma)
@@ -87,14 +87,12 @@ colData(pe3)$mouse <- pe3[[1]] %>%
   sapply(function(x) x[3]) %>%
   as.factor
 ```
-</p></design>
 
 ## Preprocessing
 
-
 ### Log-transform
 
-<details><summary> Click to see code to log-transfrom the data </summary><p>
+ Click to see code to log-transfrom the data
 - We calculate how many non zero intensities we have for each peptide and this can be useful for filtering.
 
 ```r
@@ -125,11 +123,9 @@ pe2 <- logTransform(pe2, base = 2, i = "peptideRaw", name = "peptideLog")
 
 pe3 <- logTransform(pe3, base = 2, i = "peptideRaw", name = "peptideLog")
 ```
-</p></details>
-
 
 ### Filtering
-<details><summary> Click to see details on filtering </summary><p>
+ Click to see details on filtering
 
 1. Handling overlapping protein groups
 
@@ -175,11 +171,9 @@ pe3 <- filterFeatures(pe3,~nNonZero >= 2)
 nrow(pe3[["peptideLog"]])
 ```
 
-</p></details>
-
 ## Normalization
 
-<details><summary> Click to see code to normalize the data </summary><p>
+ Click to see code to normalize the data
 ```r
 pe <- normalize(pe,
                 i = "peptideLog",
@@ -198,11 +192,9 @@ pe3 <- normalize(pe3,
                 method = "center.median")
 ```
 
-</p></details>
-
 ## Summarization
 
-<details><summary> Click to see code to summarize the data </summary><p>
+ Click to see code to summarize the data
 
 ```r
 pe <- aggregateFeatures(pe,
@@ -225,11 +217,9 @@ pe3 <- aggregateFeatures(pe3,
  name = "protein")
 ```
 
-</p></details>
-
 ## Data Exploration: what is impact of blocking?
 
-<details><summary> Click to see code </summary><p>
+ Click to see code
 ```r
 levels(colData(pe3)$mouse) <- paste0("m",1:7)
 mdsObj3 <- plotMDS(assay(pe3[["protein"]]), plot = FALSE)
@@ -348,7 +338,7 @@ mdsCRD <- colData(pe2) %>%
     ) +
   ggtitle("Completely Randomized Design (CRD)")
 ```
-</p></details>
+
 ```r
 mdsOrig
 mdsRCB
@@ -393,7 +383,6 @@ VisualizeDesign(colData(pe),~ celltype + mouse)$plotlist
 VisualizeDesign(colData(pe2),~ celltype)$plotlist
 ```
 
-
 ```r
 L <- makeContrast("celltypeTreg = 0", parameterNames = c("celltypeTreg"))
 pe <- hypothesisTest(object = pe, i = "protein", contrast = L)
@@ -403,4 +392,4 @@ pe2 <- hypothesisTest(object = pe2, i = "protein", contrast = L)
 
 ---
 
-[Up: contents](index.md) · [Advantage of Blocking: comparison between designs →](02-advantage-of-blocking-comparison-between-designs.md)
+Up: contents · Advantage of Blocking: comparison between designs →

@@ -5,17 +5,16 @@ source_file: sources/berkeley-stat153/spring-2026/index.md
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`index.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/index.md) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Stat 153 / Stat 248: Introduction to Time Series
 
-**Source:** [`index.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/index.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
-
 An introduction to time series analysis in the time domain and spectral domain. Topics will include: estimation of trends and seasonal effects, autoregressive moving average models, forecasting, indicators, harmonic analysis, spectra. This course uses Python as its primary computing language.
 
-
-# Instructor and GSIs
+## Instructor and GSIs
 
 ::::{grid} 1 2
 
@@ -58,20 +57,18 @@ An introduction to time series analysis in the time domain and spectral domain. 
 
 :::
 
-
 ::::
 
-# Important Info
+## Important Info
 
 * **Class times:** Tuesdays and Thursdays, 8-9:30am, VLSB 2060
 * **Lab times:** Fridays, 9-11am, 11-1pm Evans 330 and 1-3pm, 3-5pm, Evans 342
 
+## Syllabus
 
-# Syllabus
+Basic information about the course can be found in the syllabus (pdf).
 
-Basic information about the course can be found in the [syllabus](syllabus/index.md) ([pdf](syllabus/index.md)).
-
-## Schedule
+### Schedule
 
 :::{schedule} ./schedule.yml
 

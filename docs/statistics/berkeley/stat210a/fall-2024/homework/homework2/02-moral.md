@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/homework/homework2.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework2.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/homework/homework2.tex) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework2.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/homework/homework2.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 If we have a prior opinion about $\theta$ in the form of a distribution, and then we update our opinion using Bayes’ rule after observing $X$, then we will naturally adhere to the sufficiency principle. This gives an alternative epistemological motivation for the principle. Another interpretation of the result of this exercise is that, in the Bayesian model, $\theta$ is conditionally independent of $X$ given $T(X)$ if and only if $T(X)$ is sufficient.
 
@@ -44,4 +44,4 @@ Let $X_1, \ldots, X_n\overset{\text{i.i.d.}}{\sim}\text{Unif}[\mu-\sigma, \mu + 
 
 ---
 
-[← Homework2 Part 01 —](01-homework2-part-01.md) · [Up: contents](index.md) · [Moral →](03-moral.md)
+[← Homework2 Part 01 —](01-homework2-part-01.md) · [Up: contents](index.md) · Moral →

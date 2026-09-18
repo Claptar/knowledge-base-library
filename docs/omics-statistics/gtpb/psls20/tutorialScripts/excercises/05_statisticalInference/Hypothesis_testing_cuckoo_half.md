@@ -5,17 +5,17 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/05_statisticalInfere
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Tutorial 2.4: Hypothesis testing on the cuckoo dataset
+> **Converted source.** [`tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_cuckoo_half.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_cuckoo_half.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_cuckoo_half.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/05_statisticalInference/Hypothesis_testing_cuckoo_half.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Tutorial 2.4: Hypothesis testing on the cuckoo dataset
 
 In this short tutorial, we perform a hypothesis test on the
 "cuckoo" dataset.
 
-# Cuckoo dataset
+## Cuckoo dataset
 
 The common cuckoo does not build its own nest: it prefers
 to lay its eggs in another birds' nest. It is known, since 1892,
@@ -42,7 +42,7 @@ The type column is coded as follows:
 - `type=5`: White wagtail
 - `type=6`: Eurasian wren
 
-# Goal
+## Goal
 
 The researchers want to test if the type of foster parent
 has an effect on the average length of the cuckoo eggs.
@@ -69,18 +69,17 @@ Load the required libraries
 ```r
 ```
 
-# Import the data
+## Import the data
 
 ```r
 ```
 
-# Data Exploration
+## Data Exploration
 
 ```r
 ```
 
-
-# Data tidying
+## Data tidying
 
 For this exercise, we only care about the European robin
 and the Eurasian wren. Therefore, we can remove the observations
@@ -93,8 +92,7 @@ Cuckoo <- Cuckoo %>%
   mutate(type = as.factor(type))
 ```
 
-
-# Data exploration
+## Data exploration
 
 How many birds do we have for each type?
 

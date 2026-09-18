@@ -5,12 +5,20 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/sections/09/py_vs_R.Rmd
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`sections/09/py_vs_R.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/09/py_vs_R.Rmd) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Py vs R Part 01 —
 
-**Source:** [`sections/09/py_vs_R.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/09/py_vs_R.Rmd) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+This week, we will be exploring the behavior of Python for several common
+actions that we have previously covered in R. The final product of today's work
+will be a pdf which is uploaded as a group submission to Gradescope.
+
+There is some example python code in `syntax.py`
+
+## Instructions
 
 1) We will separate into groups of (ideally) 3 or (if necessary) 4.
 2) Groups should try to answer every question in the Main Questions section. There are 2 ways to go

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2024/units/unit9-sim.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 3. Implementation of simulation studies
+> **Converted source.** [`units/unit9-sim.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/units/unit9-sim.qmd) — berkeley-stat243 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit9-sim.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/units/unit9-sim.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 3. Implementation of simulation studies
 
 Luke Miratrix (a UCB Stats PhD alum) has prepared a nice tutorial on
 carrying out a simulation study, including helpful R code. So if the
@@ -39,7 +39,6 @@ n = [10, 100, 1000]
 tVsNorm = ["t", "norm"]
 levels = list(itertools.product(thetaLevels, tVsNorm, n))
 ```
-
 
 ## Analysis and reporting
 
@@ -79,7 +78,7 @@ documented and the data should be made available as on online
 supplement. Exceptions for reasons of security or confidentiality may be
 granted by the Editor. Whenever specific code has been used to implement
 or illustrate the results of a paper, that code should be made available
-if possible. $$\....snip\....$$ Articles reporting results based on
+if possible. [\....snip\....] Articles reporting results based on
 computation should provide enough information so that readers can
 evaluate the quality of the results. Such information includes estimated
 accuracy of results, as well as descriptions of pseudorandom-number

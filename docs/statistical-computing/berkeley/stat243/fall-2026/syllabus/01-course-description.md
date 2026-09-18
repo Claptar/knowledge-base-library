@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2026/syllabus.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Course description
+> **Converted source.** [`syllabus.qmd`](https://github.com/berkeley-stat243/fall-2026/blob/c74395ec9c420005c80bbcc5f315729aaee3dc32/syllabus.qmd) — berkeley-stat243 · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`syllabus.qmd`](https://github.com/berkeley-stat243/fall-2026/blob/c74395ec9c420005c80bbcc5f315729aaee3dc32/syllabus.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Course description
 
 Statistics 243 is an introduction to statistical computing, taught using
 Python, with 'statistical' defined broadly to include data science and machine learning.
@@ -63,12 +63,75 @@ will know the basics of Python, at the level of the
 you'll need to spend time in the initial couple weeks getting up to
 speed. The workshop materials are a good resource.
 
-
 #### Stat 243B
 
 For Stat 243B, you should be comfortable with calculus and linear algebra.
 In addition, you should be comfortable programming in Python, but your experience does not need to be equivalent to Stat 243A.
 
+## Objectives of the courses {#objectives-of-the-course .unnumbered}
+
+The goals of the courses are that, by the end of the course, students be
+able to:
+
+-   operate effectively in a UNIX environment and on remote servers and
+    compute clusters;
+
+-   have a solid understanding of general programming concepts
+    and principles, and be able to program effectively (including having an advanced knowledge of Python functionality);
+
+-   be familiar with concepts and tools for reproducible research and
+    good scientific computing practices; and
+
+-   understand in depth and be able to make use of principles of
+    numerical precision, numerical linear algebra, optimization, and simulation for
+    statistics- and data science-related analyses and research.
+
+## Topics (in order with rough timing) {#topics-in-order-with-rough-timing .unnumbered}
+
+The 'days' here are (roughly) class sessions, as general guidance.
+
+### Stat 243A
+
+1.  Introduction to UNIX, operating on a compute server (1 day)
+
+2.  The bash shell and shell scripting, version control (3 days)
+
+3.  Debugging, good programming practices, reproducible research (1 day)
+
+4.  Programming concepts and advanced Python programming: text processing and
+    regular expressions, object-oriented programming,
+    functions and variable scope, memory use, efficient programming (9 days)
+
+5.  Working with databases, hashing, and big data (3 days)
+
+6.  Parallel processing (2 days)
+
+7.  Data formats, data access, webscraping, data structures (2 days)
+
+### Stat 243B
+
+8.  Computer arithmetic/representation of numbers on a computer (3 days)
+
+9.  Simulation studies and Monte Carlo (2 days)
+
+10. Numerical linear algebra (4 days)
+
+11. Optimization (6 days)
+
+12. Optimization for Deep Learning (2 days)
+
+## Personnel {#personnel .unnumbered}
+
+-   Instructor:
+
+    -   Chris Paciorek (paciorek@berkeley.edu)
+
+-   GSI
+
+    -   Reece Huff (rdhuff@berkeley.edu)
+
+-   Office hours can be found here.
+
 ---
 
-[Up: contents](index.md) · [Objectives of the courses →](02-objectives-of-the-courses.md)
+[Up: contents](index.md) · [Course websites: GitHub, Ed Discussion, Gradescope, and bCourses →](02-course-websites-github-ed-discussion-gradescope-and-bcourses.md)

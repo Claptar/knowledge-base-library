@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework4.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework4.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework4.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework4.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework4.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 This is a nice estimator that transitions adaptively between the data splitting estimator (when $X_1$ is subject to extreme selection bias) and the unadjusted sample mean (when $X_1$ is nearly unaffected by selection bias). It manages to do this even though we don’t know how bad the selection bias is, since that depends on $\mu$. It would be difficult to come up with an estimator like this without the theory of exponential families and UMVU estimators, specifically the idea of Rao-Blackwellization. You can read more about problems like this in \citet{hung2020statistical}.
 
@@ -28,4 +28,4 @@ Let $p(x)$ and $q(x)$ denote two strictly positive probability densities with re
 
 ---
 
-[← Moral](02-moral.md) · [Up: contents](index.md) · [Moral →](04-moral.md)
+← Moral · [Up: contents](index.md) · [Moral →](04-moral.md)

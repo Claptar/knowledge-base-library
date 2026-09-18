@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework11.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework11.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework11.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework11.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework11.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 This is an example of an estimator that’s adaptive to an unknown problem parameter, in this case the ratio $\rho = \sigma^2/\tau^2$ which tells us how to choose the optimal value of some tuning parameter $\gamma^*(\rho,m,n)$. A tried and true method in statistics is to get a consistent estimator for the unknown parameter and just plug it in. Asymptotically, this very often works just as well as knowing the value of the nuisance parameter (it’s not necessarily that we don’t pay a price for not knowing $\rho$, it’s just that the price we pay might be lower order than the source of error that matters).
 

@@ -5,12 +5,18 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLabOne153248Fall2025.ipynb
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`CodeLabOne153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLabOne153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # US Population Dataset
 
-**Source:** [`CodeLabOne153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLabOne153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+---
+title: Fitting simple trends to data using linear regression
+---
+
+We shall see how simple trend functions can be fit to time series data using linear regression over the time variable (and over other functions of the time variable such as higher powers and sines and cosines). We start with the US population dataset.
 
 This dataset is downloaded from FRED and gives monthly population of the United States in thousands.
 
@@ -153,7 +159,9 @@ print(linmod.get_prediction([1, 800]).summary_frame())
 mean     mean_se  mean_ci_lower  mean_ci_upper   obs_ci_lower  \
 0  345407.562715  188.487027   345037.57306  345777.552369  340170.212653
 
-    obs_ci_upper
+```
+obs_ci_upper
+```
 0  350644.912776
 ```
 

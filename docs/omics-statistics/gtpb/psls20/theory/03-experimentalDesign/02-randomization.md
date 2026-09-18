@@ -5,16 +5,16 @@ source_file: sources/gtpb-psls20/theory/03-experimentalDesign.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`theory/03-experimentalDesign.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/03-experimentalDesign.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Randomization
 
-**Source:** [`theory/03-experimentalDesign.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/03-experimentalDesign.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
-
 - Randomization completely at random (no systematic allocation).
 
-## Simple Randomization
+### Simple Randomization
 
 - Can lead to differences in the number of experimental units in each treatment arm
 
@@ -26,7 +26,7 @@ converted: '2026-09-14'
 
 ---
 
-## Balanced Randomization
+### Balanced Randomization
 
 - Equal numbers of each treatment are assigned to a block of 2 or 4 patients.
     - (1) AB, (2) BA
@@ -42,7 +42,7 @@ converted: '2026-09-14'
 
 ---
 
-## Stratified randomization**
+### Stratified randomization**
 
 - The imbalance according to for instance gender can be avoided using stratified Randomization: balanced randomization per stratum
 
@@ -50,6 +50,50 @@ converted: '2026-09-14'
 
 ---
 
+## Blocking
+
+### Gene expression example
+
+- dm: diabetic medium, nd: non diabetic medium, co: control
+- 4 bio-reps, 2 techreps/biorep
+![](https://raw.githubusercontent.com/GTPB/PSLS20/gh-pages/assets/figs/qpcrBadDesign1.png){ width=100% }
+
+- dm: diabetic medium, nd: non diabetic medium, co: control
+- 4 bio-reps, 2 techreps/biorep, 2 plates A & B
+- Treatment and plate almost entirely confounded
+
+![](https://raw.githubusercontent.com/GTPB/PSLS20/gh-pages/assets/figs/qpcrBadDesign2.png){ width=100% }
+
+### Nature methods: Points of significance - Blocking
+
+![](https://www.nature.com/articles/nmeth.3005.pdf){ width=100% }
+
 ---
 
-[← Introduction](01-introduction.md) · [Up: contents](index.md) · [Blocking →](03-blocking.md)
+## Sample size
+
+- The sample size and the design are crucial.
+
+- The larger the sample size, the more precise the results.
+
+## Wrap-up
+
+- Sample size is very important.
+
+- To assess the effect of a treatment, we should compare comparable and representative groups of subjects with and without the treatment (a good control!).
+
+- In observational studies, the researcher cannot choose the treatment. It was the patient or their MD who had chosen it
+
+- In experimental studies, the researcher assigns the treatment.
+
+- Confounding can be avoided via randomization.
+
+- We can also correct for confounding in the statistical analysis for the confounders that have been registered.
+
+---
+
+## [Home](https://gtpb.github.io/PSLS20/) {-}
+
+---
+
+[← Introduction](01-introduction.md) · [Up: contents](index.md)

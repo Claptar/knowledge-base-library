@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/introduction.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/introduction.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/introduction.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # About Stat 210A
 
-**Source:** [`reader/introduction.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/introduction.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-#### What is the theory of statistics?
+## What is the theory of statistics?
 
 Statistics is the study of methods that use data to understand the world. Statistical methods are used throughout the natural and social sciences, in machine learning and artificial intelligence, and in engineering. Despite the ubiquitous use of statistics, its practitioners are perpetually accused of not actually understanding what they are doing. Statistics theory is, broadly speaking, about trying to understand what we are doing when we use statistical methods.
 
@@ -20,7 +20,7 @@ While there are many possible ways to analyze data, most (but certainly not all)
 
 In this course we will instead focus on how the analyst can use the data most effectively within the context of a given mathematical setup. We will discuss the structure of statistical models, how to evaluate the quality of a statistical method, how to design good methods for new settings, and the philosophy of Bayesian vs frequentist modeling frameworks. We will cover estimation, confidence intervals, and hypothesis testing, in parametric and nonparametric methods, in finite samples and asymptotic regimes.
 
-#### Relationship of Stat 210A to other Berkeley courses
+## Relationship of Stat 210A to other Berkeley courses
 
 Stat 210A focuses on *classical* statistical contexts: either inference in finite samples, or in fixed-dimensional asymptotic regimes. Stat 210B (for which 210A is a prerequisite) is more technical and covers topics like empirical process theory and high-dimensional statistics.
 

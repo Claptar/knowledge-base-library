@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/minimax-estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Game theoretic interpretation
+> **Converted source.** [`reader/minimax-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/minimax-estimation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/minimax-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/minimax-estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Game theoretic interpretation
 
 We can think of the minimax risk as the expected payoff in an adversarial zero-sum game between the analyst, who chooses the estimator to make the risk as small as possible, and "Nature," who waits to see what estimator the analyst chooses and then assigns the parameter to make the risk as large as possible. If the analyst plays first and selects the estimator $\delta$, then Nature will always select the value of $\theta$ that maximizes $R(\theta;\delta)$; then $r^*$ corresponds to the attained risk in this game, and $\delta^*$ to the analyst's optimal move.
 

@@ -5,36 +5,125 @@ source_file: sources/berkeley-stat210a/fall-2025/reader/bayes-interpretation.htm
 licence: CC BY 4.0
 route: pandoc-html
 fidelity: good
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/bayes-interpretation.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/bayes-interpretation.html) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.html`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # 3 Example: Hierarchical Gaussian model
 
-**Source:** [`reader/bayes-interpretation.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/bayes-interpretation.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
+A closely related example that is worth examining in more detail is the hierarchical Gaussian model. Again, suppose we observe $d$ Gaussian random variables with unit variance, whose location parameters we view as coming from the same Gaussian prior distribution:
 
-A closely related example that is worth examining in more detail is the hierarchical Gaussian model. Again, suppose we observe <span class="math inline">\$d\$</span> Gaussian random variables with unit variance, whose location parameters we view as coming from the same Gaussian prior distribution: <span class="math display">\\$$ \\begin{aligned} \\theta\_i &\\simiid N(0,\\tau^2), \\quad \\text{ for } i = 1,\\ldots,d\\\\ X\_i \\mid \\theta &\\simind N(\\theta\_i,1), \\end{aligned} \\$$</span> Again, if <span class="math inline">\$\\tau^2\$</span> is fixed then applying our result from the previous lecture gives Bayes estimator <span class="math inline">\$\\frac{\\tau^2}{1+\\tau^2}X\_i\$</span> for <span class="math inline">\$\\theta\_i\$</span>.
+$$
+\begin{aligned}
+\theta_i &\simiid N(0,\tau^2), \quad \text{ for } i = 1,\ldots,d\\
+X_i \mid \theta &\simind N(\theta_i,1),
+\end{aligned}
+$$
 
-## <span class="header-section-number">3.1</span> Hierarchical Bayes approach {.anchored number="3.1" anchor-id="hierarchical-bayes-approach"}
+ Again, if $\tau^2$ is fixed then applying our result from the previous lecture gives Bayes estimator $\frac{\tau^2}{1+\tau^2}X_i$ for $\theta_i$.
 
-The hierarchical Bayes approach to this problem again introduces a hyperprior on <span class="math inline">\$\\tau^2\$</span>: <span class="math display">\\$$ \\begin{aligned} \\tau^2 &\\sim \\lambda\_0\\\\ \\theta\_i &\\simiid N(0,\\tau^2), \\quad \\text{ for } i = 1,\\ldots,d\\\\ X\_i \\mid \\theta &\\simind N(\\theta\_i,1) \\end{aligned} \\$$</span> Then we have the Bayes estimator <span class="math display">\\$$ \\EE\[\\theta\_i \\mid X$$ = \\EE\\left$$ \\; \\frac{\\tau^2}{1+\\tau^2} X\_i \\mid X \\;\\right$$ = \\EE\\left$$ \\frac{\\tau^2}{1+\\tau^2} \\mid X\\right$$ \\cdot X\_i. \\\]</span>
+## 3.1 Hierarchical Bayes approach {.anchored number="3.1" anchor-id="hierarchical-bayes-approach"}
 
-It will be convenient to parameterize using <span class="math inline">\$\\zeta(\\tau^2) = \\frac{1}{1+\\tau^2}\$</span>, giving the *linear shrinkage estimator* <span class="math display">\\$$ \\delta\_{\\zeta}(X) = (1-\\zeta)X, \\$$</span> so that <span class="math inline">\$\\zeta \\in (0,1)\$</span> reflects what we might call the *shrinkage factor*. Then we see that the hierarchical Bayesian estimator <span class="math display">\\$$ \\EE\[\\theta\_i \\mid X$$ = \\EE$$1-\\zeta\\mid X$$\\cdot X\_i = (1-\\EE$$\\zeta\\mid X$$)X\_i \\\]</span>
+The hierarchical Bayes approach to this problem again introduces a hyperprior on $\tau^2$:
 
-is simply <span class="math inline">\$\\delta\_{\\hat\\zeta}(X)\$</span>, where <span class="math inline">\$\\hat\\zeta = \\EE$$\\zeta \\mid X$$\$</span> is the posterior mean of <span class="math inline">\$\\zeta\$</span> given all the data. This case shows the very close relationship between hierarchical Bayes and empirical Bayes: here, the hierarchical Bayes solution itself amounts to plugging a (Bayes) estimate for the hyperparameter <span class="math inline">\$\\zeta\$</span> into our formula for the optimal Bayes shrinkage rule if we knew <span class="math inline">\$\\zeta\$</span>.
+$$
+\begin{aligned}
+\tau^2 &\sim \lambda_0\\
+\theta_i &\simiid N(0,\tau^2), \quad \text{ for } i = 1,\ldots,d\\
+X_i \mid \theta &\simind N(\theta_i,1)
+\end{aligned}
+$$
 
-To find <span class="math inline">\$\\EE$$\\zeta \\mid X$$\$</span>, it is again helpful to consider the likelihood model with <span class="math inline">\$\\theta\$</span> marginalized out. Then, we have <span class="math display">\\$$ \\begin{aligned} \\zeta &\\sim \\lambda\_0^{(\\zeta)}\\\\ X\_i \\mid \\zeta &\\simiid N(0, \\zeta^{-1}), \\end{aligned} \\$$</span> since <span class="math display">\\$$ \\Var(X\_i \\mid \\zeta) = \\Var(\\theta\_i \\mid \\zeta) + \\EE\[\\Var(X\_i \\mid \\zeta, \\theta\_i)$$ = \\tau^2+1 \\\]</span> The likelihood of <span class="math inline">\$X\$</span>, then, is <span class="math display">\\$$ X\\mid \\zeta \\sim N\_d(0,I\_d/\\zeta) = \\frac{\\zeta^{d/2}}{(2\\pi)^{d/2}} e^{-\\zeta\\\|x\\\|^2/2}, \\$$</span> an exponential family with sufficient statistic <span class="math inline">\$T(X)= \\\|X\\\|^2 \\sim \\frac{1}{\\zeta}\\chi\_d^2\$</span>.
+ Then we have the Bayes estimator
 
-A conjugate prior for <span class="math inline">\$\\zeta\$</span> in this model is the Gamma prior, but the calculations work out slightly better if we use a scaled <span class="math inline">\$\\chi^2\$</span> prior: <span class="math display">\\$$ \\zeta \\sim \\frac{1}{s}\\chi\_k^2 = \\text{Gamma}(k/2,2/s) = \\frac{1}{\\Gamma(k/2)(2/s)^{k/2}}\\zeta^{k/2-1}e^{-\\zeta s/2}, \\$$</span> which has mean <span class="math inline">\$k/s\$</span> and variance <span class="math inline">\$2k/s^2\$</span>. Then <span class="math display">\\$$ \\lambda(\\zeta \\mid x) \\propto\_\\zeta \\zeta^{(k+d)/2-1} e^{-\\zeta (\\\|x\\\|^2 + s)/2)} \\propto\_\\zeta \\frac{1}{s+\\\|x\\\|^2}\\chi\_{k+d}^2, \\$$</span> giving <span class="math inline">\$\\EE$$\\zeta \\mid X$$ = \\frac{k+d}{s+\\\|x\\\|^2}\$</span>.
+$$
+\EE[\theta_i \mid X] = \EE\left[ \; \frac{\tau^2}{1+\tau^2} X_i \mid X \;\right] = \EE\left[ \frac{\tau^2}{1+\tau^2} \mid X\right] \cdot X_i.
+$$
 
-Note that to be more correct, we should truncate our prior to the unit interval since <span class="math inline">\$\\zeta \\in (0,1)\$</span>. Then our calculations would have to remain numerical, but for large <span class="math inline">\$d\$</span> the prior would be concentrated in <span class="math inline">\$(0,1)\$</span> and they would turn out much the same.
+It will be convenient to parameterize using $\zeta(\tau^2) = \frac{1}{1+\tau^2}$, giving the *linear shrinkage estimator*
 
-## <span class="header-section-number">3.2</span> Empirical Bayes approach {.anchored number="3.2" anchor-id="empirical-bayes-approach"}
+$$
+\delta_{\zeta}(X) = (1-\zeta)X,
+$$
 
-The empirical Bayes approach would estimate <span class="math inline">\$\\zeta\$</span> and plug the estimator into the Bayes rule formula <span class="math inline">\$(1-\\zeta)X\$</span>, again based on the sufficient statistic <span class="math inline">\$T(X) = \\\|X\\\|^2 \\sim \\frac{1}{\\zeta}\\chi\_d^2\$</span>. If we used as our estimator any Bayes posterior mean for a prior <span class="math inline">\$\\lambda\_0\$</span> on <span class="math inline">\$\\zeta\$</span>, we would simply recover the hierarchical Bayes estimator from above.
+ so that $\zeta \in (0,1)$ reflects what we might call the *shrinkage factor*. Then we see that the hierarchical Bayesian estimator
 
-Another choice is the maximum likelihood estimator, which in exponential families (as we will see) simply solves for the value of <span class="math inline">\$\\zeta\$</span> at which the sufficient statistic’s expectation <span class="math inline">\$\\EE\_\\zeta T(X) = d/\\zeta\$</span> is equal to its realized value; hence <span class="math inline">\$\\hat\\zeta\_{\\text{MLE}}(X) = \\frac{d}{\\\|X\\\|^2}\$</span>.
+$$
+\EE[\theta_i \mid X] = \EE[1-\zeta\mid X]\cdot X_i = (1-\EE[\zeta\mid X])X_i
+$$
 
-A third choice is the UMVU estimator. Because <span class="math inline">\$T(X)= Y/\\zeta\$</span> for <span class="math inline">\$Y \\sim \\chi\_d^2\$</span>, we must have <span class="math display">\\$$ \\EE\\left\[\\frac{1}{\\\|X\\\|^2}\\right$$ = \\EE\\left$$\\frac{1}{Y}\\right$$ \\cdot \\zeta. \\\]</span> For <span class="math inline">\$d&gt;2\$</span> we can calculate this expectation, which does not depend on <span class="math inline">\$\\zeta\$</span>: <span class="math display">\\$$ \\begin{aligned} \\EE\\left\[\\frac{1}{Y}\\right$$ &= \\int\_0^\\infty \\frac{1}{y}\\cdot \\frac{1}{\\Gamma\\left(\\frac{d}{2}\\right)2^{d/2}} y^{d/2-1}e^{-y/2}\\,dy\\\\$$7pt$$ &= \\frac{\\Gamma\\left(\\frac{d-2}{2}\\right)\\cdot 2^{(d-2)/2}}{\\Gamma\\left(\\frac{d}{2}\\right)\\cdot 2^{d/2}} \\cdot \\int\_0^\\infty \\frac{1}{\\Gamma\\left(\\frac{d-2}{2}\\right)2^{(d-2)/2}} y^{(d-2)/2-1}e^{-y/2}\\,dy\\\\$$7pt$$ &= \\frac{\\Gamma\\left(\\frac{d-2}{2}\\right)\\cdot 2^{(d-2)/2}}{\\Gamma\\left(\\frac{d}{2}\\right)\\cdot 2^{d/2}}, \\end{aligned} \\\]</span> since the last integrand is the <span class="math inline">\$\\chi\_{d-2}^2\$</span> density. Since <span class="math inline">\$\\Gamma(x+1) = x\\Gamma(x)\$</span> for all <span class="math inline">\$x&gt;0\$</span>, the final expression can be simplified to <span class="math inline">\$\\frac{1}{d-2}\$</span>. As a result, <span class="math inline">\$\\frac{d-2}{\\\|X\\\|^2}\$</span> is UMVU, giving empirical Bayes estimator <span class="math display">\\$$ \\delta\_{\\text{JS}}(X) = \\left(1-\\frac{d-2}{\\\|X\\\|^2}\\right) X. \\$$</span> This estimator, called the James–Stein estimator, is very interesting in its own right, as we will see in two lectures.
+is simply $\delta_{\hat\zeta}(X)$, where $\hat\zeta = \EE[\zeta \mid X]$ is the posterior mean of $\zeta$ given all the data. This case shows the very close relationship between hierarchical Bayes and empirical Bayes: here, the hierarchical Bayes solution itself amounts to plugging a (Bayes) estimate for the hyperparameter $\zeta$ into our formula for the optimal Bayes shrinkage rule if we knew $\zeta$.
+
+To find $\EE[\zeta \mid X]$, it is again helpful to consider the likelihood model with $\theta$ marginalized out. Then, we have
+
+$$
+\begin{aligned}
+\zeta &\sim \lambda_0^{(\zeta)}\\
+X_i \mid \zeta &\simiid N(0, \zeta^{-1}),
+\end{aligned}
+$$
+
+ since
+
+$$
+\Var(X_i \mid \zeta) = \Var(\theta_i \mid \zeta) + \EE[\Var(X_i \mid \zeta, \theta_i)] = \tau^2+1
+$$
+
+ The likelihood of $X$, then, is
+
+$$
+X\mid \zeta \sim N_d(0,I_d/\zeta) = \frac{\zeta^{d/2}}{(2\pi)^{d/2}} e^{-\zeta\|x\|^2/2},
+$$
+
+ an exponential family with sufficient statistic $T(X)= \|X\|^2 \sim \frac{1}{\zeta}\chi_d^2$.
+
+A conjugate prior for $\zeta$ in this model is the Gamma prior, but the calculations work out slightly better if we use a scaled $\chi^2$ prior:
+
+$$
+\zeta \sim \frac{1}{s}\chi_k^2 = \text{Gamma}(k/2,2/s) = \frac{1}{\Gamma(k/2)(2/s)^{k/2}}\zeta^{k/2-1}e^{-\zeta s/2},
+$$
+
+ which has mean $k/s$ and variance $2k/s^2$. Then
+
+$$
+\lambda(\zeta \mid x) \propto_\zeta \zeta^{(k+d)/2-1} e^{-\zeta (\|x\|^2 + s)/2)} \propto_\zeta \frac{1}{s+\|x\|^2}\chi_{k+d}^2,
+$$
+
+ giving $\EE[\zeta \mid X] = \frac{k+d}{s+\|x\|^2}$.
+
+Note that to be more correct, we should truncate our prior to the unit interval since $\zeta \in (0,1)$. Then our calculations would have to remain numerical, but for large $d$ the prior would be concentrated in $(0,1)$ and they would turn out much the same.
+
+## 3.2 Empirical Bayes approach {.anchored number="3.2" anchor-id="empirical-bayes-approach"}
+
+The empirical Bayes approach would estimate $\zeta$ and plug the estimator into the Bayes rule formula $(1-\zeta)X$, again based on the sufficient statistic $T(X) = \|X\|^2 \sim \frac{1}{\zeta}\chi_d^2$. If we used as our estimator any Bayes posterior mean for a prior $\lambda_0$ on $\zeta$, we would simply recover the hierarchical Bayes estimator from above.
+
+Another choice is the maximum likelihood estimator, which in exponential families (as we will see) simply solves for the value of $\zeta$ at which the sufficient statistic’s expectation $\EE_\zeta T(X) = d/\zeta$ is equal to its realized value; hence $\hat\zeta_{\text{MLE}}(X) = \frac{d}{\|X\|^2}$.
+
+A third choice is the UMVU estimator. Because $T(X)= Y/\zeta$ for $Y \sim \chi_d^2$, we must have
+
+$$
+\EE\left[\frac{1}{\|X\|^2}\right] = \EE\left[\frac{1}{Y}\right] \cdot \zeta.
+$$
+
+ For $d>2$ we can calculate this expectation, which does not depend on $\zeta$:
+
+$$
+\begin{aligned}
+\EE\left[\frac{1}{Y}\right]
+&= \int_0^\infty \frac{1}{y}\cdot \frac{1}{\Gamma\left(\frac{d}{2}\right)2^{d/2}} y^{d/2-1}e^{-y/2}\,dy[7pt]
+&= \frac{\Gamma\left(\frac{d-2}{2}\right)\cdot 2^{(d-2)/2}}{\Gamma\left(\frac{d}{2}\right)\cdot 2^{d/2}} \cdot \int_0^\infty \frac{1}{\Gamma\left(\frac{d-2}{2}\right)2^{(d-2)/2}} y^{(d-2)/2-1}e^{-y/2}\,dy[7pt]
+&= \frac{\Gamma\left(\frac{d-2}{2}\right)\cdot 2^{(d-2)/2}}{\Gamma\left(\frac{d}{2}\right)\cdot 2^{d/2}},
+\end{aligned}
+$$
+
+ since the last integrand is the $\chi_{d-2}^2$ density. Since $\Gamma(x+1) = x\Gamma(x)$ for all $x>0$, the final expression can be simplified to $\frac{1}{d-2}$. As a result, $\frac{d-2}{\|X\|^2}$ is UMVU, giving empirical Bayes estimator
+
+$$
+\delta_{\text{JS}}(X) = \left(1-\frac{d-2}{\|X\|^2}\right) X.
+$$
+
+ This estimator, called the James–Stein estimator, is very interesting in its own right, as we will see in two lectures.
 
 ## Footnotes {#footnotes .anchored .quarto-appendix-heading}
 

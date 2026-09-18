@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/spring-2026/public/lectures/12_spectral_an
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Periodogram
+> **Converted source.** [`public/lectures/12_spectral_analysis_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/12_spectral_analysis_notes.md) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`public/lectures/12_spectral_analysis_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/12_spectral_analysis_notes.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# Periodogram
 
 Now let's say we wanted to estimate the component frequencies of a signal like this, where we didn't know what the underlying components were. One way to do this is using the *periodogram*.
 

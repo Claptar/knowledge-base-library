@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/exponential-families.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Other parameterizations
+> **Converted source.** [`reader/exponential-families.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/exponential-families.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/exponential-families.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/exponential-families.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Other parameterizations
 
 Sometimes instead of parameterizing $\cP$ by the natural parameter $\eta$, it is more convenient to parameterize the family by another parameter $\theta$. Then we can write the density in terms of this alternative parameterization as
 
@@ -70,7 +70,7 @@ which we recognize as an exponential family structure with $T(x)=x$, natural par
 $$
 \begin{aligned}
 p_{\alpha,\beta}(x)
-&= \frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}\\[5pt]
+&= \frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}[5pt]
 &= \exp\{\alpha \log x + \beta\log (1-x) - \log B(\alpha,\beta)\}\cdot \frac{1}{x(1-x)},
 \end{aligned}
 $$
@@ -79,6 +79,12 @@ where $B(\alpha,\beta) = \int_0^1 t^{\alpha-1}(1-t)^{\beta-1}\td t$ is called th
 
 In addition to these examples, we could add most of the distributional families detailed on Wikipedia: the Gamma, multinomial, Dirichlet, Pareto, Wishart, and many others. We will see more exponential family examples throughout the course.
 
+## Exponential tilting
+
+To help interpret what it means for a model to have an exponential family structure, we can think of $p_\eta(x) = e^{\eta'T(x) - A(\eta)} h(x)$ as an *exponential tilt* of the carrier density $h(x)$. That is, beginning with $h(x)$, we first multiply by $e^{\eta'T(x)}$, increasing the density of points in the sample space for which $\eta'T(x)$ is largest relative to those for which $\eta'T(x)$ is smaller. Then, we re-normalize by $e^{-A(\eta)}$ to obtain a probability distribution.
+
+This is easiest to understand in a one-parameter family with sufficient statistic $T(X) = X$, (need to finish)
+
 ---
 
-[← Differential identities](02-differential-identities.md) · [Up: contents](index.md) · [Exponential tilting →](04-exponential-tilting.md)
+[← Differential identities](02-differential-identities.md) · [Up: contents](index.md) · Visualization of exponential tilting →

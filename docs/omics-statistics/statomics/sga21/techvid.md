@@ -2,15 +2,15 @@
 title: Mass Spectrometry & Bioinformatics for Proteomics
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/techvid.Rmd
 source_file: sources/statomics-sga21/techvid.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Mass Spectrometry & Bioinformatics for Proteomics
+> **Converted source.** [`techvid.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/techvid.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`techvid.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/techvid.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+# Mass Spectrometry & Bioinformatics for Proteomics
 
 - [Lecture mass spectrometry basics - Part 1 - Amino Acids and Proteins (30:46)](https://www.youtube.com/watch?v=bS78rIYvFBE)
 - [Lecture mass spectrometry basics - Part 2 - Mass Spectrometry: Concepts and Components. Ion Sources (39:30)](https://www.youtube.com/watch?v=vXsotPtOdRY)

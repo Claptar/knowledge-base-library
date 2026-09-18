@@ -3,86 +3,72 @@ title: 4 Complex Sinuoids and Orthogonality
 source: https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/LectureEight153248Fall2025.pdf
 source_file: sources/berkeley-stat153/fall-2025/LectureEight153248Fall2025.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
+
+> **Reconstructed by a model.** [`LectureEight153248Fall2025.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/LectureEight153248Fall2025.pdf) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
 # 4 Complex Sinuoids and Orthogonality
 
-**Source:** [`LectureEight153248Fall2025.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/LectureEight153248Fall2025.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+## 4.1 Complex Sinusoids
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
-
-### **4.1 Complex Sinusoids**
-
-As we saw in the last lecture, sinusoids are linear combinations of cos(2 _πft_ ) and sin(2 _πft_ ). While doing algebra with sinusoids, it is very useful to represent them in terms of complex exponentials as:
-
-
-In the last lecture, we saw that while dealing with sinusoids at integer valued time points _t_ , we can restrict the frequency _f_ to [0 _,_ 1 _/_ 2]. However, if we use the formulae above, note that we have to deal with _−f_ as well (because of the second term _e_<sup>_−_2</sup><sup>_πift_</sup> = _e_<sup>2</sup><sup>_πi_(</sup><sup>_−f_)</sup><sup>_t_</sup> ) and _−f_ lies between _−_ 1 _/_ 2 and 0. Thus when discussing sinusoids in terms of complex exponentials _e_<sup>2</sup><sup>_πift_</sup> _, t_ = 0 _,_ 1 _, . . . , n −_ 1, one takes _f ∈_ [ _−_ 0 _._ 5 _,_ 0 _._ 5) (note that _f_ = _−_ 0 _._ 5 leads to the same _e_<sup>2</sup><sup>_πift_</sup> as _f_ = 0 _._ 5 so we drop _f_ = 0 _._ 5 from consideration). For example, the function `np.fft.fftfreq(n)` gives all Fourier frequencies in [ _−_ 0 _._ 5 _,_ 0 _._ 5).
+As we saw in the last lecture, sinusoids are linear combinations of $\cos(2\pi f t)$ and $\sin(2\pi f t)$. While doing algebra with sinusoids, it is very useful to represent them in terms of complex exponentials as:
+$$\cos(2\pi f t) = \frac{1}{2}\exp(2\pi i f t) + \frac{1}{2}\exp(-2\pi i f t) \quad \text{and} \quad \sin(2\pi f t) = \frac{1}{2i}\exp(2\pi i f t) - \frac{1}{2i}\exp(-2\pi i f t)$$
+In the last lecture, we saw that while dealing with sinusoids at integer valued time points $t$, we can restrict the frequency $f$ to $[0, 1/2]$. However, if we use the formulae above, note that we have to deal with $-f$ as well (because of the second term $e^{-2\pi i f t} = e^{2\pi i (-f)t}$) and $-f$ lies between $-1/2$ and $0$. Thus when discussing sinusoids in terms of complex exponentials $e^{2\pi i f t}, t = 0, 1, \dots, n - 1$, one takes $f \in [-0.5, 0.5)$ (note that $f = -0.5$ leads to the same $e^{2\pi i f t}$ as $f = 0.5$ so we drop $f = 0.5$ from consideration). For example, the function `np.fft.fftfreq(n)` gives all Fourier frequencies in $[-0.5, 0.5)$.
 
 If one does not want to deal with negative frequencies, then we can use
+$$e^{-2\pi i f t} = \cos(2\pi f t) - i\sin(2\pi f t) = \cos(2\pi (1 - f)t) + i\sin(2\pi(1 - f)t) = e^{2\pi i(1-f)t}$$
+because $\cos(2\pi (1 - f)t) = \cos(2\pi t - 2\pi f t) = \cos(2\pi f t)$ (note $t$ is an integer) and $\sin(2\pi(1 - f)t) = \sin(2\pi t - 2\pi f t) = -\sin(2\pi f t)$.
 
+Therefore, if we want to use complex exponentials $e^{2\pi i f t}$ but we do not want to deal with negative frequencies, then we can restrict $f$ to $[0, 1)$. From here on, whenever we consider the complex sinusoid $x_t = e^{2\pi i f t}$ for $t = 0, 1, \dots, n - 1$, we restrict $f \in [0, 1)$.
 
-because cos(2 _π_ (1 _− f_ ) _t_ ) = cos(2 _πt −_ 2 _πft_ ) = cos(2 _πft_ ) (note _t_ is an integer) and sin(2 _π_ (1 _− f_ ) _t_ ) = sin(2 _πt −_ 2 _πft_ ) = _−_ sin(2 _πft_ ).
+## 4.2 Complex Sinusoidal Vectors
 
-Therefore, if we want to use complex exponentials _e_<sup>2</sup><sup>_πift_</sup> but we do not want to deal with negative frequencies, then we can restrict _f_ to [0 _,_ 1). From here on, whenever we consider the complex sinusoid _xt_ = _e_<sup>2</sup><sup>_πift_</sup> for _t_ = 0 _,_ 1 _, . . . , n −_ 1, we restrict _f ∈_ [0 _,_ 1).
+For every $0 \le j \le (n - 1)$, let us define the $n \times 1$ vector
+$$u^j = (1, \exp(2\pi i j/n), \exp(2\pi i 2j/n), \dots, \exp(2\pi i (n - 1)j/n))^T.$$
+This vector can be interpreted as the complex sinusoid $e^{2\pi i f t}$ with Fourier frequency $f = j/n$ evaluated at the time points $t = 0, 1, \dots, (n - 1)$. It is easy to see that
 
-### **4.2 Complex Sinusoidal Vectors**
+1. When $j = 0$, we have $u^0 = (1, 1, \dots, 1)$.
 
-For every 0 _≤ j ≤_ ( _n −_ 1), let us define the _n ×_ 1 vector
+2. When $1 \le j \le n - 1$, we have $u^j = \bar{u}^{n-j}$. Here $\bar{u}$ denotes complex conjugate of $u$ (the complex conjugate $\bar{u}$ of a vector $u$ is defined as the vector obtained by taking the complex conjugates of each entry of $u$).
 
+The most important property of these complex valued vectors $u^0, u^1, \dots, u^{n-1}$ is orthogonality. Specifically, for $0 \le j \ne k \le n - 1$, we have
+$$\langle u^j, u^k \rangle = 0. \tag{6}$$
+Recall that the inner product between two complex valued vectors $a = (a_1, \dots, a_n)^T$ and $b = (b_1, \dots, b_n)^T$ is given by
+$$\langle a, b \rangle = \sum_{j=1}^n a_j \bar{b}_j.$$
+Note specially the complex conjugate of $b_j$ above.
 
-This vector can be interpreted as the complex sinusoid _e_<sup>2</sup><sup>_πift_</sup> with Fourier frequency _f_ = _j/n_ evaluated at the time points _t_ = 0 _,_ 1 _, . . . ,_ ( _n −_ 1). It is easy to see that
+Here is the proof of (6). Fix $0 \le j \ne k \le n - 1$ and write
+$$\begin{aligned}
+\langle u^j, u^k \rangle &= \sum_{t=0}^{n-1} \exp\left(2\pi i \frac{j}{n} t\right) \overline{\exp\left(2\pi i \frac{k}{n} t\right)} \\
+&= \sum_{t=0}^{n-1} \exp\left(2\pi i \frac{j}{n} t\right) \exp\left(-2\pi i \frac{k}{n} t\right) \\
+&= \sum_{t=0}^{n-1} \exp\left(2\pi i \frac{j - k}{n} t\right) \\
+&= \sum_{t=0}^{n-1} \left[\exp\left(2\pi i \frac{j - k}{n}\right)\right]^t \\
+&= \frac{1 - \left(\exp\left(2\pi i \frac{j - k}{n}\right)\right)^n}{1 - \exp\left(2\pi i \frac{j - k}{n}\right)} \\
+&= \frac{1 - \exp(2\pi i(j - k))}{1 - \exp\left(2\pi i \frac{j - k}{n}\right)} \\
+&= \frac{1 - \cos(2\pi(j - k)) - i\sin(2\pi(j - k))}{1 - \exp\left(2\pi i \frac{j - k}{n}\right)} = \frac{1 - 1 - 0}{1 - \exp\left(2\pi i \frac{j - k}{n}\right)} = 0
+\end{aligned}$$
+This proves (6). It is also easy to see that (just take $j = k$ in the above calculation and the answer can be found in the third line)
+$$\langle u^j, u^j \rangle = \|u^j\|^2 = n.$$
+Therefore the $n$ complex-valued vectors $u^0, u^1, \dots, u^{n-1}$ are orthogonal and they all have the same squared length equal to $n$. This immediately implies that they form a basis for the space $\mathbb{C}^n$ consisting of all complex-valued vectors of length $n$. In other words, every complex-valued vector of length $n$ can be written as a linear combination of $u^0, u^1, \dots, u^{n-1}$.
 
-1. When _j_ = 0, we have _u_<sup>0</sup> = (1 _,_ 1 _, . . . ,_ 1).
+## 4.3 The Inverse DFT formula
 
-> 2. When 1 _≤ j ≤ n −_ 1, we have _u_<sup>_j_</sup> = _u_<sup>_n−j_</sup> . Here _u_ ¯ denotes complex conjugate of _u_ (the complex conjugate _u_ ¯ of a vector _u_ is defined as the vector obtained by taking the complex conjugates of each entry of _u_ ).
+The inverse DFT formula recovers the data $y_0, \dots, y_{n-1}$ from their DFT $b_0, \dots, b_{n-1}$. We derive this formula below.
 
-4
-
-The most important property of these complex valued vectors _u_<sup>0</sup> _, u_<sup>1</sup> _, . . . , u_<sup>_n−_1</sup> is **orthogonality** . Specifically, for 0 _≤ j̸_ = _k ≤ n −_ 1, we have
-
-
-Recall that the inner product between two complex valued vectors _a_ = ( _a_ 1 _, . . . , an_ )<sup>_T_</sup> and _b_ = ( _b_ 1 _, . . . , bn_ )<sup>_T_</sup> is given by
-
-
-Note specially the complex conjugate of _bj_ above.
-
-Here is the proof of (6). Fix 0 _≤ j̸_ = _k ≤ n −_ 1 and write
-
-
-This proves (6). It is also easy to see that (just take _j_ = _k_ in the above calculation and the answer can be found in the third line)
-
-
-Therefore the _n_ complex-valued vectors _u_<sup>0</sup> _, u_<sup>1</sup> _, . . . , u_<sup>_n−_1</sup> are orthogonal and they all have the same squared length equal to _n_ . This immediately implies that they form a **basis** for the space C<sup>_n_</sup> consisting of all complex-valued vectors of length _n_ . In other words, every complex-valued vector of length _n_ can be written as a linear combination of _u_<sup>0</sup> _, u_<sup>1</sup> _, . . . , u_<sup>_n_</sup> .
-
-### **4.3 The Inverse DFT formula**
-
-The inverse DFT formula recovers the data _y_ 0 _, . . . , yn−_ 1 from their DFT _b_ 0 _, . . . , bn−_ 1. We derive this formula below.
-
-The main observation is the following: Because _u_<sup>0</sup> _, . . . , u_<sup>_n−_1</sup> form a basis, we can write any _n ×_ 1 vector of complex entries:
-
-
-5
-
-as a linear combination of _u_<sup>0</sup> _, . . . , u_<sup>_n−_1</sup> . More specifically, we can write
-
-
-Take the inner product of both sides of the above equation with _u_<sup>_j_</sup> for a fixed _j_ and use orthogonality so that � _u_<sup>_j_</sup> _.u_<sup>_k_�</sup> = 0 for _k̸_ = _j_ and the fact that � _u_<sup>_j_</sup> _, u_<sup>_j_�</sup> = _n_ to obtain
-
-
-By the formula (4) for the DFT _bj_ , it is easy to see that _aj_ = _bj/n_ . As a consequence (7) becomes:
-
-
-Writing the _t_ -th entry on both sides, we get
-
-
-This is the inverse DFT formula. Note that the inverse DFT formula (9) as well as the DFT definition (4) look similar; the differences being in the sign of the exponent in the complex exponential and the presence of the factor 1 _/n_ in (9).
-
-6
+The main observation is the following: Because $u^0, \dots, u^{n-1}$ form a basis, we can write any $n \times 1$ vector of complex entries:
+$$y = (y_0, \dots, y_{n-1})^T$$
+as a linear combination of $u^0, \dots, u^{n-1}$. More specifically, we can write
+$$y = a_0 u^0 + a_1 u^1 + \dots + a_{n-1} u^{n-1} \tag{7}$$
+Take the inner product of both sides of the above equation with $u^j$ for a fixed $j$ and use orthogonality so that $\langle u^j, u^k \rangle = 0$ for $k \ne j$ and the fact that $\langle u^j, u^j \rangle = n$ to obtain
+$$a_j = \frac{1}{n} \langle y, u^j \rangle = \frac{1}{n} \sum_{t=0}^{n-1} y_t \exp\left(-\frac{2\pi i j t}{n}\right). \tag{8}$$
+By the formula (4) for the DFT $b_j$, it is easy to see that $a_j = b_j/n$. As a consequence (7) becomes:
+$$y = \frac{1}{n} (b_0 u^0 + b_1 u^1 + \dots + b_{n-1} u^{n-1}).$$
+Writing the $t$-th entry on both sides, we get
+$$y_t = \frac{1}{n} \sum_{j=0}^{n-1} b_j \exp\left(\frac{2\pi i j t}{n}\right) \quad \text{for each } t = 0, 1, \dots, n - 1. \tag{9}$$
+This is the inverse DFT formula. Note that the inverse DFT formula (9) as well as the DFT definition (4) look similar; the differences being in the sign of the exponent in the complex exponential and the presence of the factor $1/n$ in (9).
 
 ---
 

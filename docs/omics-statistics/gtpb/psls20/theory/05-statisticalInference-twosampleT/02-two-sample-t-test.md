@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/05-statisticalInference-twosampleT.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Two sample T-test
+> **Converted source.** [`theory/05-statisticalInference-twosampleT.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/05-statisticalInference-twosampleT.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/05-statisticalInference-twosampleT.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/05-statisticalInference-twosampleT.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Two sample T-test
 
 ## Notation
 
@@ -70,7 +70,6 @@ And we can combine them into one estimator based on all $n_1+n_2$ observations:
 $$  S_p^2 = \frac{n_1-1}{n_1+n_2-2} S_1^2 + \frac{n_2-1}{n_1+n_2-2} S_2^2 = \frac{1}{n_1+n_2-2}\sum_{j=1}^2\sum_{i=1}^{n_j} (Y_{ij} - \bar{Y}_j)^2.$$
 
 $$ S_p^2= \sum\limits_{j=1}^2\sum\limits_{i=1}^{n_j} \frac{(Y_{ij}-\bar{Y}_{.j})^2}{n_1+n_2-2}$$
-
 
 The pooled variance estimator uses the squared deviations of the observations from their group mean and has $n_1+n_2-2$ degrees of freedom.
 

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework8.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework8.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework8.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework8.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework8.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 Whereas Bayesian statistics is an excellent framework for incorporating a wealth of prior knowledge into our final inference, a great strength of hypothesis testing and confidence intervals is their power to let analysts remain agnostic when they want to remain agnostic. To get a Bayesian posterior distribution for the median, we would need to fully specify our prior distribution over the infinite-dimensional object $F$; but we can derive a simple frequentist confidence interval that has $90\%$ coverage for every possible $F$ without doing anything like this.
 
@@ -28,6 +28,10 @@ Suppose $X\sim N_d(\mu,I_d)$ for unknown $\mu\in\mathbb{R}^d$. Consider testing 
 
 3.  Suppose the prior $\Lambda_1$ (not necessarily multivariate Gaussian) is rotationally invariant, meaning $\Lambda_1(Q A) = \Lambda_1(A)$ where $A \subseteq \mathbb{R}^d$, $Q$ is any rotation matrix and $QA = \{Qa:\; a\in A\}$. Show that the $\chi^2$ test that rejects for large $\|X\|^2$ maximizes the average power.
 
+## Moral: {#moral-3}
+
+Choosing a test in higher dimensions requires us to think harder about how to compromise across different alternative directions, and Bayesian thinking can give us some guidance.
+
 ---
 
-[← Moral](03-moral.md) · [Up: contents](index.md) · [Moral →](05-moral.md)
+[← Moral](03-moral.md) · [Up: contents](index.md)

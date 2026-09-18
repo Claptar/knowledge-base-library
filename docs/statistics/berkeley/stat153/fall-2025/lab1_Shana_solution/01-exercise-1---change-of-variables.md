@@ -3,53 +3,57 @@ title: Exercise 1 - Change of Variables
 source: https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/lab1_Shana_solution.pdf
 source_file: sources/berkeley-stat153/fall-2025/lab1_Shana_solution.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
+
+> **Reconstructed by a model.** [`lab1_Shana_solution.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/lab1_Shana_solution.pdf) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
 # Exercise 1 - Change of Variables
 
-**Source:** [`lab1_Shana_solution.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/lab1_Shana_solution.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+September 8, 2025
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+Let $n > 0$. Consider the unnormalized function on $(0, \infty)$
 
-Let _n >_ 0. Consider the unnormalized function on (0 _, ∞_ )
-
+$$g_n(s) = s^{-n-1} \exp\left(-\frac{1}{2s^2}\right).$$
 
 Show that
 
+$$\int_0^\infty s^{-n-1} \exp\left(-\frac{1}{2s^2}\right) ds = 2^{\frac{n}{2}-1} \Gamma\left(\frac{n}{2}\right).$$
 
-_Hint:_ Use change of variables _u_ =
+*Hint:* Use change of variables $u = \frac{1}{2s^2}$
 
-1 2 _s_<sup>2</sup>
+*Proof.* Let $n > 0$ and consider
 
-_Proof._ Let _n >_ 0 and consider
+$$I = \int_0^\infty s^{-n-1} \exp\left(-\frac{1}{2s^2}\right) ds.$$
 
+Use the change of variables $u = \frac{1}{2s^2}$ so that
 
-1 Use the change of variables _u_ = 2 _s_<sup>2sothat</sup>
-
+$$s = (2u)^{-1/2}, \quad ds = -(2u)^{-3/2} du.$$
 
 Then
 
+$$s^{-(n+1)} ds = ((2u)^{-1/2})^{-(n+1)} (-(2u)^{-3/2} du) = -(2u)^{(n-2)/2} du.$$
 
-As _s_ : 0 _→∞_ , we have _u_ : _∞→_ 0, hence
+As $s : 0 \to \infty$, we have $u : \infty \to 0$, hence
 
+$$\begin{aligned}
+I &= \int_\infty^0 e^{-u} (-(2u)^{(n-2)/2}) du = \int_0^\infty e^{-u} (2u)^{\frac{n}{2}-1} du \\
+&= 2^{\frac{n}{2}-1} \int_0^\infty u^{\frac{n}{2}-1} e^{-u} du = 2^{\frac{n}{2}-1} \Gamma\left(\frac{n}{2}\right).
+\end{aligned}$$
 
-Recall the Gamma( _α, β_ ) density (shape–rate parameterization)
+Recall the $\text{Gamma}(\alpha, \beta)$ density (shape–rate parameterization)
 
+$$f(u) = \frac{\beta^\alpha}{\Gamma(\alpha)} u^{\alpha-1} e^{-\beta u}, \quad u > 0, \ \alpha > 0, \ \beta > 0.$$
 
-1
+Thus the integrand $u^{\frac{n}{2}-1}e^{-u}$ is the (unnormalized) Gamma kernel with $\alpha = \frac{n}{2}$ and $\beta = 1$, so
 
-Thus the integrand _u_ _<u>n</u>_ 2<sup>_−_1</sup> _e_<sup>_−u_</sup> is the (unnormalized) Gamma kernel with _α_ =<sup>_<u>n</u>_</sup> 2<sup>and</sup><sup>_β_= 1,so</sup>
-
+$$\int_0^\infty u^{\frac{n}{2}-1} e^{-u} du = \Gamma\left(\frac{n}{2}\right).$$
 
 Therefore,
 
-
-2
+$$\boxed{\int_0^\infty s^{-n-1} \exp\left(-\frac{1}{2s^2}\right) ds = 2^{\frac{n}{2}-1} \Gamma\left(\frac{n}{2}\right).}$$
 
 ---
 

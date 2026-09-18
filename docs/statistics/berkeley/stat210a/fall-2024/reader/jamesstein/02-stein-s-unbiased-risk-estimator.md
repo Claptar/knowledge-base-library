@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/jamesstein.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/jamesstein.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/jamesstein.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Stein's Unbiased Risk Estimator
 
-**Source:** [`reader/jamesstein.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/jamesstein.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-### Stein's Lemma
+## Stein's Lemma
 
 The first ingredient in finding the MSE of $\delta_\text{JS}$ is a lemma called *Stein's Lemma*:
 
@@ -20,7 +20,6 @@ The first ingredient in finding the MSE of $\delta_\text{JS}$ is a lemma called 
 $$\Cov(X, h(X)) = \EE[(X-\theta)h(X)] = \sigma^2\EE[\dot{h}(X)].$$
 
 *Proof*:
-
 
 Next, we will do the calculation for $\theta = 0$ and $\sigma^2 = 1$. Then
 $$\EE[Xh(X)] = \int_{-\infty}^\infty xh(x)\phi(x)\,dx = \int_{-\infty}^\infty \dot{h}(x)\phi(x)\,dx,$$
@@ -52,7 +51,7 @@ $$ \EE\left[(X_i - \theta_i)h_i(X)\right]
 = \sigma^2 \EE\left[\frac{\partial h_i}{\partial x_i}(X_i) \right],$$
 and summing over $i$ gives the result.
 
-### Stein's unbaised risk estimator (SURE)
+## Stein's unbaised risk estimator (SURE)
 
 We can obtain an unbiased estimator of the MSE for almost any differentiable estimator $\delta(X)$ in the Gaussian sequence model, if we apply Stein's lemma to the function $h(x) = x - \delta(x)$. We only need the derivative of $h$ to satisfy the condition of Stein's lemma, which it does for most differentiable estimators.
 
@@ -69,7 +68,7 @@ $$
 Thus, if $\sigma^2$ is known, we obtain the unbiased estimator
 $$ \widehat{\text{MSE}}(X) = \sigma^2 d +  \|h(X)\|^2 - 2 \sigma^2 \text{tr}(Dh(X)).$$
 
-### Example: shrinking toward $\overline{X}$
+## Example: shrinking toward $\overline{X}$
 
 As an example, we can estimate the MSE of an estimator that shrinks $X_i$ partway toward the average estimate across the $d$ coordinates, $\overline{X} = \frac{1}{d}\sum_i X_i$:
 $$

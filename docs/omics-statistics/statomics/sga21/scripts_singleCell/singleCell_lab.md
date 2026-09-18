@@ -2,15 +2,15 @@
 title: Single-cell lab session
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/scripts_singleCell/singleCell_lab.Rmd
 source_file: sources/statomics-sga21/scripts_singleCell/singleCell_lab.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Single-cell lab session
+> **Converted source.** [`scripts_singleCell/singleCell_lab.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/scripts_singleCell/singleCell_lab.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`scripts_singleCell/singleCell_lab.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/scripts_singleCell/singleCell_lab.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+# Single-cell lab session
 
 Introduce a single-cell paper, and let them download the data and manuscript.
 

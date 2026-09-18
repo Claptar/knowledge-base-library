@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/bayes-computation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Markov chains
+> **Converted source.** [`reader/bayes-computation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-computation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/bayes-computation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/bayes-computation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Markov chains
 
 ## Markov chains and stationarity
 
@@ -52,7 +52,7 @@ The idea of Markov chain Monte Carlo methods is to devise a Markov chain transit
 **Theorem (Markov chain convergence):** Suppose $X^{(0)},X^{(1)},\ldots$ is a Markov chain with transition kernel $Q$ and stationary distribution $\pi$. If additionally the chain is:
 1. Irreducible: for all $x,y\in\cX$, there is some $n$ for which $Q^n(y \mid x)>0$, and
 2. Aperiodic: for all $x\in\cX$, the greatest common divisor of $\{n:\; Q^n(x \mid x)>0\}$ is $1$.
-Then, regardless of the initial distribution $\pi_0$, $\pi_t \to \pi$ in total variation distance as $t\to\infty$, meaning
+Then, regardless of the initial distribution $\pi_0$, $\pi_t \to \pi$ in total variation distance as $t\to\infty\$, meaning
 $$
 \|\pi_t-\pi\|_{\text{TV}} = \sup_{A \in \cX} |\pi_t(A)-\pi(A)| \to 0
 $$
@@ -74,9 +74,8 @@ $$
 $$
 since $Z^{(t)}=Y^{(t)}$ on the event $\{\tau \leq t\}$. The key step, which we omit here for brevity, is that the irreducibility and aperiodicity conditions, plus the existence of a stationary distribution $\pi$, guarantee that $\tau < \infty$ with probability $1$, so $\PP(\tau>t)\to 0$. $\blacksquare$
 
-
 The important implication of this theorem from our perspective is that, if we can only find an irreducible and aperiodic transition kernel $Q$ on the state space $\Theta$, whose stationary distribution is the posterior $\lambda(\theta \mid x)$, we will be able to sample from the posterior by running the Markov chain $\theta^{(0)},\theta^{(1)},\ldots$ from any initialization $\theta^{(0)}$.
 
 ---
 
-[← Why Bayesian computation is difficult](01-why-bayesian-computation-is-difficult.md) · [Up: contents](index.md) · [The Gibbs sampler →](03-the-gibbs-sampler.md)
+[← Why Bayesian computation is difficult](01-why-bayesian-computation-is-difficult.md) · [Up: contents](index.md) · The Gibbs sampler →

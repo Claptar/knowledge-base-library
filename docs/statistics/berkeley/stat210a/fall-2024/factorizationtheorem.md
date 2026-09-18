@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/factorizationtheorem.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Factorizationtheorem
+> **Converted source.** [`factorizationtheorem.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/factorizationtheorem.tex) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`factorizationtheorem.tex`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/factorizationtheorem.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Factorizationtheorem
 
 **Theorem 1** (Factorization Theorem). *Let $(\mathcal{X}, \mathcal{A})$ be a measurable space, and let $\mathcal{P} = \{P_\theta : \theta \in \Theta\}$ be a family of probability measures on $(\mathcal{X}, \mathcal{A})$. Suppose there exists a $\sigma$-finite measure $\mu$ on $(\mathcal{X}, \mathcal{A})$ such that each $P_\theta$ is absolutely continuous with respect to $\mu$, and let $p_\theta(x) = \dfrac{dP_\theta}{d\mu}(x)$ denote the Radon-Nikodym derivative.*
 

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/spring-2026/public/lectures/TippyTaps.ipyn
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Stat153/248 - Lecture 7 and 8 Finger Tapping Exercise
+> **Converted source.** [`public/lectures/TippyTaps.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/TippyTaps.ipynb) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`public/lectures/TippyTaps.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/TippyTaps.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Stat153/248 - Lecture 7 and 8 Finger Tapping Exercise
 
 This is the (in progress) notebook from our exercise in class. We will continue with this during Lecture 8.
 
@@ -366,7 +366,9 @@ Timestamp  ntaps handedness finger   hand gamer  sleep_hrs  sport  \
 63  2/10/26 9:06    328      Right  Index   Left    No       8.50      7
 64  2/10/26 9:06    424      Right  Pinky  Right    No       8.00      4
 
-    dominant_hand
+```
+dominant_hand
+```
 0           False
 1            True
 2            True
@@ -510,7 +512,9 @@ tap_index  t_seconds  dt_seconds  subj finger   hand handedness  \
 34111        346     59.411       0.182   100  index  right      right
 34112        347     59.591       0.180   100  index  right      right
 
-       dominant_hand
+```
+   dominant_hand
+```
 0               True
 1               True
 2               True

@@ -1,25 +1,21 @@
 ---
-title: 'STAT 230A: Linear Models'
+title: Syllabus
 source: https://github.com/berkeley-stat230a/spring-2025/blob/e876671afc2665ae79c2a5263b03c3377f6e2836/files/syllabus.pdf
 source_file: sources/berkeley-stat230a/spring-2025/files/syllabus.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# STAT 230A: Linear Models
+> **Reconstructed by a model.** [`files/syllabus.pdf`](https://github.com/berkeley-stat230a/spring-2025/blob/e876671afc2665ae79c2a5263b03c3377f6e2836/files/syllabus.pdf) — berkeley-stat230a · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`files/syllabus.pdf`](https://github.com/berkeley-stat230a/spring-2025/blob/e876671afc2665ae79c2a5263b03c3377f6e2836/files/syllabus.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
-
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+# Syllabus
 
 Split into 2 sections.
 
-1. [STAT 230A: Linear Models](01-stat-230a-linear-models.md)
-2. [Anticipated Course Schedule](02-anticipated-course-schedule.md)
+1. [Assessment](02-assessment.md)
+2. [Policies](03-policies.md)
 
 ---
 

@@ -5,19 +5,18 @@ source_file: sources/berkeley-stat210a/fall-2025/units/reader/bayes-interpretati
 licence: CC BY 4.0
 route: pandoc-html
 fidelity: good
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`units/reader/bayes-interpretation.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/reader/bayes-interpretation.html) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.html`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Bayes interpretation
 
-**Source:** [`units/reader/bayes-interpretation.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/reader/bayes-interpretation.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
-
-Split into 4 sections.
+Split into 3 sections.
 
 1. [Introduction](01-introduction.md)
-2. [1 Interpretations of Probability](02-1-interpretations-of-probability.md)
-3. [2 Where Does the Prior Come From?](03-2-where-does-the-prior-come-from.md)
-4. [3 Gaussian Hierarchical Model](04-3-gaussian-hierarchical-model.md)
+2. [2 Where Does the Prior Come From?](02-2-where-does-the-prior-come-from.md)
+3. [3 Gaussian Hierarchical Model](03-3-gaussian-hierarchical-model.md)
 
 ---
 

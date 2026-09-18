@@ -1,45 +1,217 @@
 ---
-title: HandwrittenNotesLectureThirteen153248Fall2025
+title: Lecture THIRTEEN
 source: https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/HandwrittenNotesLectureThirteen153248Fall2025.pdf
 source_file: sources/berkeley-stat153/fall-2025/HandwrittenNotesLectureThirteen153248Fall2025.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# HandwrittenNotesLectureThirteen153248Fall2025
+> **Reconstructed by a model.** [`HandwrittenNotesLectureThirteen153248Fall2025.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/HandwrittenNotesLectureThirteen153248Fall2025.pdf) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`HandwrittenNotesLectureThirteen153248Fall2025.pdf`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/HandwrittenNotesLectureThirteen153248Fall2025.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Lecture THIRTEEN
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+$$y_t = \beta_0 + \beta_1(t-1)_+ + \beta_2(t-2)_+ + \dots + \beta_{n-1}(t-(n-1))_+ + \varepsilon_t$$
 
-<!-- Start of picture text -->
-aae ait<br>ii<br>YIE.IE<br>f<br>1115<br>on UnitEC C<br>C C log<br>Unit<br>log<br>t<br>β T<br>In 1<br>b T<br>What is the posterior<br>5<br>N<br>E of<br>β date<br>ofpi when<br>T e are fixed<br>ft<br>a<br>0<br>f<br>5<br>5<br>1 9<br><!-- End of picture text -->
+$$\beta_0, \beta_1 \overset{\text{i.i.d.}}{\sim} N(0, C) \quad \text{or} \quad \text{Unif}(-C, C), \quad \beta_2, \dots, \beta_{n-1} \overset{\text{i.i.d.}}{\sim} N(0, \tau^2)$$
 
-N E 415 E II xtx E5 E<sup>sjxty.at</sup> N Ex Ridge<sup>Regression</sup> Ily PIE Eh T.ae date mean of posterior xxsj'xtyTHte 1 12 provided I r e f e dat exec 1 FEET 051 exp 1 e c e c Q diag deta c 252 15 5 over a Evaluate the posterior<sup>of</sup> 5 of<sup>values</sup> of grid r Generate posterior<sup>samplesofc</sup>
+$$\log \tau \sim \text{Unif}(-C, C), \quad \log \sigma \sim \text{Unif}(-C, C)$$
 
-not are IFIit.it FeFE too<sup>large</sup> AVIPERFITTING 0 5 e 2 17 t.fi<sup>t</sup> 25 MMM 2 0.05 f date prefers e whorchtware small tape AVOID<sup>UNDERFITTING</sup> t.FIei i ninformative E F data Tdata Likelihood jexp E Staattetee
+$$\beta, \sigma, \tau$$
+$$\beta_0, \beta_1, \dots, \beta_{n-1}$$
 
+What is the posterior?
 
-<!-- Start of picture text -->
-Integrated Eichhood<br>Likelihood<br>data<br>Livelihood<br>will be large for<br>values<br>of β which<br>lead to overfitting<br>data<br>F<br>f<br>e<br>data<br>Staff t<br>eext fe<br>Celarge N 0,4<br>will be small<br>usually<br>e small NO E<br>µ<br>be<br>will<br>flatten small<br>To<br>slightlyditter<br><!-- End of picture text -->
+$$\beta \mid \underset{n \times 1}{\text{data}}, \sigma, \tau \sim N\left(\left(\frac{X^T X}{\sigma^2} + Q^{-1}\right)^{-1} \frac{X^T y}{\sigma^2}, \left(\frac{X^T X}{\sigma^2} + Q^{-1}\right)^{-1}\right)$$
 
+posterior of $\beta$ when $\sigma, \tau$ are fixed
 
-<!-- Start of picture text -->
-I ox 6<br>Reparametrize<br>to<br>prior<br>change the<br>Unit GC C<br>id<br>lose log<br>CHANGE<br>C<br>C<br>Unit C<br>log 8 logo id<br>of<br>Vowstratableintegration<br>in farfalla<br>8<br>0<br>I<br>x<br>Ridge<br>E 1 r<br>Posterior<br>β 0,8<br>5<br>Is<br>NC<br>1 15<br>05<br>of<br>to date<br><!-- End of picture text -->
+Here
 
-data tw E.ite.t dat r 1 Gamma<sup>E</sup> date I take a grid<sup>forV</sup> s<sup>compute</sup> First 8 Samples<sup>for</sup> posterior each<sup>8samplegenerate</sup> For t.EE EIEI etes of means<sup>models</sup> are examples eei Edition
+$$Q = \begin{bmatrix}
+C & & & 0 \\
+& C & & \\
+& & \tau^2 & & \\
+0 & & & & \tau^2
+\end{bmatrix}$$
 
+$$Q^{-1} = \begin{bmatrix}
+1/C & & & 0 \\
+& 1/C & & \\
+& & 1/\tau^2 & & \\
+0 & & & & 1/\tau^2
+\end{bmatrix} \approx \begin{bmatrix}
+0 & & & 0 \\
+& 0 & & \\
+& & 1/\tau^2 & & \\
+0 & & & & 1/\tau^2
+\end{bmatrix} = \frac{1}{\tau^2} J$$
 
-<!-- Start of picture text -->
-Et<br>Me<br>MT<br>defends<br>EL<br>ed cniml<br>rfa.IE<br>EI<br>Yn<br>Y<br>Data 2<br>independent q<br>Model y<br>Mn<br>means Mc<br>To estimate the<br>Goal<br>Assume smoothness<br>Estimate CmTM d<br>Ma<br>X É<br>G ME<br>OF A MEAN MODEL<br>THIS IS AN EETPLE<br>Hmmmm<br>Contrast Variance Model example<br>In<br>In<br>Y<br>i n<br>t<br>intro<br><!-- End of picture text -->
+$$J = \begin{bmatrix}
+0 & & & 0 \\
+& 0 & & \\
+& & 1 & & \\
+0 & & & & 1
+\end{bmatrix}$$
 
+---
 
-<!-- Start of picture text -->
-If<br>4<br>exp<br>I<br>o F<br>y depth<br>Lamma<br><!-- End of picture text -->
+$$\beta \mid \underset{\tau, \sigma}{\text{data}} \sim N\left(\left(\frac{X^T X}{\sigma^2} + \frac{J}{\tau^2}\right)^{-1} \frac{X^T y}{\sigma^2}, \left(\frac{X^T X}{\sigma^2} + \frac{J}{\tau^2}\right)^{-1}\right)$$
+
+$$= N\left(\left(X^T X + \frac{\sigma^2}{\tau^2} J\right)^{-1} X^T y, \, \sigma^2 \left(X^T X + \frac{\sigma^2}{\tau^2} J\right)^{-1}\right)$$
+
+Ridge Regression:
+
+$$\|y - X \beta\|^2 + \lambda \sum_{j=2}^{n-1} \beta_j^2$$
+
+$$\hat{\beta}_{\text{ridge}}(\lambda) = (X^T X + \lambda J)^{-1} X^T y$$
+
+$$= \text{posterior mean of } \beta \mid \underset{\sigma, \tau}{\text{data}}$$
+$$\text{provided } \lambda = \frac{\sigma^2}{\tau^2}.$$
+
+$\beta \mid \sigma, \tau, \text{data}$
+
+$$f(\sigma, \tau \mid \text{data}) \propto \frac{\sigma^{-n - 1} \tau^{-1}}{\sqrt{\det Q}} \sqrt{\det\left(\frac{X^T X}{\sigma^2} + Q^{-1}\right)^{-1}} \exp\left(-\frac{y^T y}{2\sigma^2}\right) \exp\left(\frac{y^T X \left(\frac{X^T X}{\sigma^2} + Q^{-1}\right)^{-1} X^T y}{2\sigma^2}\right)$$
+
+$$Q = \text{diag}(C, C, \tau^2, \dots, \tau^2) \implies Q^{-1} \approx J/\tau^2$$
+$$\det Q = C^2 (\tau^2)^{n-2} \propto (\tau^2)^{n-2}$$
+
+Evaluate the posterior of $(\tau, \sigma)$ over a grid of values of $(\tau, \sigma)$.
+
+(1) Generate posterior samples of $\tau, \sigma$
+
+---
+
+(2) Generate $\beta$ given $\tau, \sigma$.
+
+Most cases:
+
+(a) $f(\tau, \sigma \mid \text{data})$ prefers $\tau$ which are not too large. (AVOID OVERFITTING)
+
+$\tau = 0.5$
+$\sigma = 2$
+$f(0.5, 2 \mid \text{data}) = 17$
+$f(0.05, 2 \mid \text{data}) = 25$
+
+(b) $f(\tau, \sigma \mid \text{data})$ prefers $\tau$ which are not too small. (AVOID UNDERFITTING)
+
+$$f(\tau, \sigma \mid \text{data}) \propto f(\text{data} \mid \tau, \sigma) f(\tau, \sigma)$$
+
+$$f(\tau, \sigma) \propto \frac{1}{\tau \sigma}$$
+$$\log \tau \sim \text{Unif}(-C, C)$$
+$$\log \sigma \sim \text{Unif}(-C, C)$$
+Uninformative
+
+$$f(\text{data} \mid \tau, \sigma)$$
+
+Likelihood: $f(\text{data} \mid \beta, \sigma) = \left(\frac{1}{\sqrt{2\pi}\sigma}\right)^n \exp\left(-\frac{\|y - X \beta\|^2}{2\sigma^2}\right)$
+
+$$f(\text{data} \mid \tau, \sigma) = \int f(\text{data} \mid \beta, \sigma, \tau) f(\beta \mid \tau, \sigma) \, d\beta$$
+
+---
+
+Integrated Likelihood (Marginal Likelihood)
+
+$$f(\text{data} \mid \tau, \sigma)$$
+Integrated Likelihood
+
+$$f(\text{data} \mid \beta, \sigma)$$
+Original likelihood $\downarrow$ will be large for values of $\beta$ which lead to overfitting
+
+$$f(\text{data} \mid \tau, \sigma) = \int f(\text{data} \mid \beta, \sigma) f(\beta \mid \tau) \, d\beta$$
+
+(1) $\tau$ large: $N(0, \tau^2) \quad \frac{1}{\sqrt{2\pi}\tau} \exp\left(-\frac{\beta_i^2}{2\tau^2}\right)$
+$\rightarrow$ usually will be small.
+
+(2) $\tau$ small: $N(0, \tau^2)$
+$\rightarrow f(\text{data} \mid \tau, \sigma)$ will be small.
+
+**Slightly Different Prior**
+
+$$\tau, \sigma$$
+
+---
+
+Reparametrize $\tau = \sigma \times \gamma$
+
+Change the prior to
+$$\log \tau, \log \sigma \overset{\text{i.i.d.}}{\sim} \text{Unif}(-C, C)$$
+$$\downarrow \text{CHANGE}$$
+$$\log \gamma, \log \sigma \overset{\text{i.i.d.}}{\sim} \text{Unif}(-C, C)$$
+
+allows tractable integration of $\sigma$ in $f(\sigma, \gamma \mid \text{data})$.
+
+Ridge: $\lambda = \frac{\sigma^2}{\tau^2}, \quad \tau = \sigma \times \gamma$.
+
+$$\lambda = \frac{1}{\gamma^2} \quad \text{or} \quad \gamma = \frac{1}{\sqrt{\lambda}}$$
+
+Posterior: $(\beta, \sigma, \gamma)$
+
+$$\beta \mid \text{data}, \sigma, \gamma \sim N\left(\left(\frac{X^T X}{\sigma^2} + Q^{-1}\right)^{-1} \frac{X^T y}{\sigma^2}, \left(\frac{X^T X}{\sigma^2} + Q^{-1}\right)^{-1}\right)$$
+
+$$Q = \begin{bmatrix}
+C & & & 0 \\
+& C & & \\
+& & \sigma^2 \gamma^2 & & \\
+0 & & & & \sigma^2 \gamma^2
+\end{bmatrix}$$
+
+$$f(\sigma, \gamma \mid \text{data})$$
+
+---
+
+$$\gamma \mid \text{data}$$
+
+$$f(\gamma \mid \text{data}) = \frac{\gamma^{-n+1} |X^T X + \gamma^{-2} J|^{-1/2}}{\left(y^T y - y^T X (X^T X + \gamma^{-2} J)^{-1} X^T y\right)^{\frac{n}{2} - 1}}$$
+
+$$\sigma \mid \gamma, \text{data}$$
+
+$$\frac{1}{\sigma^2} \mid \text{data}, \gamma \sim \text{Gamma}\left(\frac{n}{2} - 1, \, \frac{y^T y - y^T X (X^T X + \gamma^{-2} J)^{-1} X^T y}{2}\right)$$
+
+(1) First take a grid for $\gamma$ & compute posterior samples for $\gamma$.
+(2) For each $\gamma$ sample, generate $\sigma$.
+(3) Given $\gamma$ & $\sigma$, generate $\beta$.
+
+## VARIANCE MODELS (SPECTRAL ANALYSIS)
+
+ALL THE MODELS we studied so far are examples of **mean** models.
+
+e.g.:
+$$y_t = \beta_0 + \beta_1(t-1)_+ + \beta_2(t-2)_+ + \dots + \beta_{n-1}(t-(n-1))_+ + \varepsilon_t$$
+
+$$\sum [y_t - (\dots)]^2 + \lambda \sum \beta_j^2$$
+or $\lambda \sum |\beta_j|$
+
+---
+
+$$y_t = \mu_t + \varepsilon_t$$
+
+$$\sum_{t=1}^n (y_t - \mu_t)^2 + \lambda \sum_{j=2}^{n-1} ((\mu_j - \mu_{j-1}) - (\mu_{j-1} - \mu_{j-2}))^2$$
+
+$$\sum_{t=1}^n (y_t - \mu_t)^2 + \lambda \sum_{t=2}^{n-1} |(\mu_t - \mu_{t-1}) - (\mu_{t-1} - \mu_{t-2})|$$
+
+Data: $y_1, \dots, y_n$
+Model: $y_t \overset{\text{independent}}{\sim} N(\mu_t, \sigma^2)$
+Goal: To estimate the means $\mu_1, \dots, \mu_n$
+Estimate: Assume smoothness.
+
+$$\sum (y_t - \mu_t)^2 + \lambda \sum_{t=2}^{n-1} ((\mu_t - \mu_{t-1}) - (\mu_{t-1} - \mu_{t-2}))^2$$
+
+THIS IS AN EXAMPLE OF A MEAN MODEL
+
+In Contrast, Variance Model example:
+$$y_1, \dots, y_n$$
+$$[y_t \overset{\text{independent}}{\sim} N(0, \sigma_t^2)], \quad t = 1, \dots, n$$
+
+---
+
+$\alpha_t$ vs. $t$
+
+$$\sigma_t = \exp(\alpha_t)$$
+$$y_t \overset{\text{independent}}{\sim} N(0, \sigma_t^2)$$
+
+$\rightarrow$ Variance model.
 
 ---
 

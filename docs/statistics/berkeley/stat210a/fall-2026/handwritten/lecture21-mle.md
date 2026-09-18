@@ -1,69 +1,124 @@
 ---
-title: Lecture 21 — mle
+title: Outline
 source: https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/handwritten/lecture21-mle.pdf
 source_file: sources/berkeley-stat210a/fall-2026/handwritten/lecture21-mle.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Lecture 21 — mle
+> **Reconstructed by a model.** [`handwritten/lecture21-mle.pdf`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/handwritten/lecture21-mle.pdf) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`handwritten/lecture21-mle.pdf`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/handwritten/lecture21-mle.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Outline
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+1) Maximum Likelihood Estimator
+2) Asymptotic Distribution of MLE
+3) Consistency of MLE
 
-Outline
+---
 
-Likelihood Estimator 1 Maximum MLE 2 Distribution of Asymptotic MLE 3 Consistency<sup>of</sup>
+## Maximum Likelihood Estimation
 
+For a generic dominated family $\mathcal{P} = \{P_\theta : \theta \in \Theta\}$ with densities $p_\theta$, a simple estimator for $\theta$ is
 
-# Maximum Likelihoodestimation
+$$\hat{\theta}_{\text{MLE}}(X) = \operatorname*{argmax}_{\theta \in \Theta} p_\theta(X)$$
+$$= \operatorname*{argmax}_{\theta \in \Theta} \ell(\theta; X)$$
 
+**Remark 1:** $\operatorname*{argmax}$ may not exist, be unique, or be computable
 
-<!-- Start of picture text -->
-AG<br>h x I EIR<br>Ex Xi id et ye<br>F F I ET XD<br>Z x<br>46 IG O f yet<br>Assume<br>ye 7,0<br>so m<br>G<br>4 cts p at<br>I I n<br>Consistency<br>3<br>F itn<br>Cts Y<br>mapping<br>NCO Varntex<br>Since 5nF m<br>Acn<br>NCO<br>Recall J m Var t<br>Delta method Aint<br>rn y<br>Tn ie z yet<br>Aid<br>Nco Icp<br>NCO Is<br>Recall J Var Taxi z<br>y<br>1 obs<br>Fisher info from<br>NG In<br>CRIB<br>achieves<br>Gaussian<br>unbiased<br>1<br>Asymptotically<br>corr 27<br><!-- End of picture text -->
+**Remark 2:** doesn't depend on parameterization or base measure, MLE for $g(\theta)$ is $g(\hat{\theta}_{\text{MLE}})$
 
+**Ex** $p_\eta(x) = e^{\eta' T(x) - A(\eta)} h(x)$
 
-<!-- Start of picture text -->
-rid Pois O<br>X y logo<br>Ex Xi<br>O<br>O Nco<br>I EX<br>Z log<br>Tn ni z rn lost logo<br>N O O E Delta method<br>NCO O<br>o<br>A finite n to<br>But<br>o x o<br>Po<br>Poly<br>On<br>O<br>e<br>o<br>o Vara<br>End<br>MLE can have embarrassing finite sample<br>optimal<br>being asy<br>despite<br>performance<br>Prof If IP Bn 30 Xn X Zn arbitrary<br>then X<br>Xu 1B t Zntis<br>Proof e I O 0<br>P 1121,11 IP Bn so Zn1<br>Also I 1 a<br>1B apply Slutsky<br>o has no effect on in dist<br>zany behavior<br>aug<br><!-- End of picture text -->
+$$\ell(\eta; X) = \eta' T(X) - A(\eta) + \log h(X)$$
 
+$$\nabla \ell(\eta; X) = T(X) - \mathbb{E}_\eta T(X)$$
 
-<!-- Start of picture text -->
-tI.E ii<br>ene.in<br>in the family<br>exponential<br>broader class<br>to a much<br>X<br>ᵈ polx<br>Setting<br>2 cts<br>smooth in 0<br>Po e.g<br>can be<br>Let lilo X Into<br>log po Xi<br>5,10 Varo Dl O X<br><!-- End of picture text -->
+$$\implies \hat{\eta}_{\text{MLE}} \quad \text{solves} \quad T = \mathbb{E}_{\hat{\eta}} T \quad \text{if such } \eta \text{ exists}$$
 
+Because $\nabla^2 \ell(\eta; X) = -\operatorname{Var}_\eta(T)$ is negative definite unless $v' T \stackrel{\text{a.s.}}{=} 0$ (in which case param. redundant)
+$\implies$ at most 1 solution exists
 
-<!-- Start of picture text -->
-case<br>generalizes<br>of models<br>OE Rd<br>integrable derives<br>relaxed<br>CO X<br>X<br>ELTI.co X<br><!-- End of picture text -->
+Let $\mu = \dot{\psi}(\eta) = \nabla A(\eta)$, $\hat{\eta} = \dot{\psi}^{-1}(T)$
 
+---
 
-<!-- Start of picture text -->
-nJ.IO<br>asymptoticallyfficient<br>IR<br>g<br>g 0<br>5,1058910<br>diff<br>g<br><!-- End of picture text -->
+**Ex** $X_i \stackrel{\text{iid}}{\sim} e^{\eta T(x) - A(\eta)} h(x) \qquad \eta \in \Xi \subseteq \mathbb{R}$
 
-Delta
+$\hat{\eta} = \dot{\psi}^{-1}(\bar{T}), \quad \bar{T} = \frac{1}{n}\sum T(X_i)$
 
+Assume $\eta \in \Xi^\circ$. $\dot{\psi}(\eta) = \ddot{A}(\eta) > 0 \quad \forall\, \eta \in \Xi^\circ$
 
-<!-- Start of picture text -->
-AsymptoticDistof MLE<br><!-- End of picture text -->
+so $\dot{\psi}^{-1} \text{ cts}$, $(\dot{\psi}^{-1})'(\mu) = \frac{1}{\dot{\psi}(\dot{\psi}^{-1}(\mu))} = \frac{1}{\ddot{A}(\eta)}$
 
-Gaussian efficient mild conditions Dme is asy Under as a<sup>function</sup> of<sup>O</sup> We will be interested in 110 X Notate true value as 0 X Poo 01 Derivatives of In at 00 00 Tl Oo<sup>X</sup> id 0 5,100 in Etl Coo X N O J.co Pln<sup>Orix</sup> J 00 X IEo.TL<sup>ooixi</sup> I<sup>P ln0</sup> between<sup>DoI</sup> É<sup>jÉonix</sup> 7110 Flato 8 00 in On D 021m o EVenloo 5100 wanFJ.JIN.to Naco 51005 More rigorous<sup>proof</sup> later but note we need n first to even consistency<sup>of</sup> justify Taylor expansion
+**Consistency:** $\bar{T} \xrightarrow{P_\eta} \mu$
 
+**Cts mapping:** $\dot{\psi}^{-1}(\bar{T}) \xrightarrow{P_\eta} \dot{\psi}^{-1}(\mu) = \eta$
 
-<!-- Start of picture text -->
-sna<br>00<br>9 0 00<br>I0<br>curvature<br><!-- End of picture text -->
+Since $\sqrt{n}(\bar{T} - \mu) \Rightarrow N(0, \operatorname{Var}_\eta(T(X_1)))$
+$$= N(0, \ddot{A}(\eta))$$
+$(\text{Recall } J_1(\mu) = \operatorname{Var}(T)^{-1} = \ddot{A}(\eta)^{-1})$
 
+**Delta method:**
 
-<!-- Start of picture text -->
-l.CO 1.100<br>1,5<br><!-- End of picture text -->
+$$\sqrt{n}(\hat{\eta} - \eta) = \sqrt{n}(\dot{\psi}^{-1}(\bar{T}) - \eta)$$
 
+$$\Rightarrow N\left(0, \frac{1}{\ddot{A}(\eta)^2} \cdot \ddot{A}(\eta)\right)$$
 
-<!-- Start of picture text -->
-s<br>t.e.me.io<br>next page<br>1<br>i<br>On<br>t.co<br>ns<br><!-- End of picture text -->
+$$= N\left(0, \frac{1}{\ddot{A}(\eta)}\right)$$
 
-110
+Recall $J_1(\eta) = \operatorname{Var}_\eta(T(X_i)) = \ddot{A}(\eta)$
+$$= \text{Fisher info from 1 obs}$$
+
+$$\hat{\eta} \approx N\left(\eta, \frac{1}{n J_1(\eta)}\right)$$
+
+Asymptotically unbiased, Gaussian, achieves CRLB
+$(\operatorname{corr}(\bar{T}, \hat{\eta}) \to 1)$
+
+---
+
+**Ex** $X_1, \dots, X_n \stackrel{\text{iid}}{\sim} \text{Pois}(\theta)$, $\eta = \log \theta$
+
+$\hat{\eta} = \log \bar{X}$, $\sqrt{n}(\bar{X} - \theta) \Rightarrow N(0, \theta)$
+
+$$\sqrt{n}(\hat{\eta} - \eta) = \sqrt{n}(\log \bar{X} - \log \theta)$$
+
+$$\Rightarrow N\left(0, \theta \cdot \frac{1}{\theta^2}\right) \qquad (\text{Delta method})$$
+
+$$= N(0, \theta^{-1})$$
+
+But $\forall \text{ finite } n, \quad \forall \theta > 0$:
+$$P_\theta(\hat{\eta} = -\infty) = P_\theta(X_1 = 0)^n$$
+$$= e^{-\theta n} > 0$$
+
+$$\implies \mathbb{E}\hat{\eta} = -\infty \qquad \operatorname{Var}(\hat{\eta}) = \infty$$
+
+[MLE can have embarrassing finite-sample performance despite being asy. optimal!]
+
+**Prop:** If $P(B_n) \to 0$, $X_n \Rightarrow X$, $Z_n$ arbitrary then $X_n \mathbf{1}_{B_n^c} + Z_n \mathbf{1}_{B_n} \Rightarrow X$
+
+**Proof** $P(\|Z_n \mathbf{1}_{B_n}\| > \varepsilon) \le P(B_n) \to 0 \implies Z_n \mathbf{1}_{B_n} \xrightarrow{P} 0$
+
+Also $\mathbf{1}_{B_n^c} \xrightarrow{P} 1$, apply Slutsky $\boxtimes$
+
+[So zany behavior has no effect on cvg. in dist]
+
+---
+
+## Asymptotic Efficiency
+
+[The nice behavior of MLE we found in the exponential family case generalizes to a much broader class of models]
+
+**Setting** $X_1, \dots, X_n \stackrel{\text{iid}}{\sim} p_\theta(x) \qquad \theta \in \Theta \subseteq \mathbb{R}^d$
+
+$p_\theta$ "smooth" in $\theta$, e.g.: 2 cts integrable derivs (can be relaxed)
+
+Let $\ell_1(\theta; X_i) = \log p_\theta(X_i)$, $\ell_n(\theta; X) = \sum_{i=1}^n \ell_1(\theta; X_i)$
+
+$$J_1(\theta) = \operatorname{Var}_\theta(\nabla \ell_1(\theta; X_i)) = -\mathbb{E}\left[\nabla^2 \ell_1(\theta; X_i)\right]$$
+
+\$\$J_n(\theta) = \operatorname{Var}_\theta(\nabla \ell_n(\theta; X)) = n J_
 
 ---
 

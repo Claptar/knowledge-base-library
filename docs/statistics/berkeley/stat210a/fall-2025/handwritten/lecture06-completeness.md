@@ -1,59 +1,207 @@
 ---
-title: Lecture 06 — completeness
+title: Completeness
 source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture06-completeness.pdf
 source_file: sources/berkeley-stat210a/fall-2025/handwritten/lecture06-completeness.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Lecture 06 — completeness
+> **Reconstructed by a model.** [`handwritten/lecture06-completeness.pdf`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture06-completeness.pdf) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`handwritten/lecture06-completeness.pdf`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/handwritten/lecture06-completeness.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Completeness
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+### Outline
 
-<!-- Start of picture text -->
-Completeness<br><!-- End of picture text -->
+1) Completeness
+2) Ancillarity
+3) Basu's Theorem
 
-Outgicompleteness 2 Ancillarity 3 Basu's Theorem
+---
 
+**Def** $T(X)$ is complete for $\mathcal{P} = \{P_\theta : \theta \in \Theta\}$ if
+$$\mathbb{E}_\theta f(T(X)) = 0 \quad \forall \theta \implies f(T) \overset{\text{a.s.}}{=} 0 \quad \forall \theta$$
 
-<!-- Start of picture text -->
-Completeness<br>TX is 04<br>Def<br>complete for P 18<br>if Eof Tex 0 O<br>f t 0 O<br>Name that<br>comes from a notion<br>prior<br>basis<br>Oe is complete<br>Pot<br>wit inner f Pf f e digit<br>product<br>see HW 3<br>has<br>cont'd Laplace location family<br>Ey<br>S<br>minimal sniff stat Xii Complete<br>No Let MCS median x<br>Xs EX<br>Eox̅ IE M 0 by symmetry<br>O<br>Eo x̅ 5 MAY O<br>S still has a lot of extra fluff<br><!-- End of picture text -->
+[Name comes from a prior notion that $\mathcal{P}^T = \{P_\theta^T : \theta \in \Theta\}$ is "complete basis" w.r.t inner product $\langle f, P_\theta^T \rangle = \int f(t)\, dP_\theta^T(t)$ (see HW 3)]
 
+**Ex.** (Cont'd) Laplace location family has minimal suff stat $S = (X_{(i)})_{i=1}^n$. Complete?
 
-<!-- Start of picture text -->
-X<br>Ex Xn u 0,0 Oe o e<br>1E<br>1<br>03<br>O<br>polx Xim<br>f<br>mail.at<br>d<br>tifi<br>text<br>The<br>in<br>minimal suf<br>Find density of T X<br>Po Tst Ent<br>E n<br>Po Tet<br>Polt 1 0<br>ntft<br>Suppose 0 E f t 0 0<br>40 0<br>In Sff e that<br>f e E'dt o O 0<br>flt t 0 a e t 0<br><!-- End of picture text -->
+No: Let $M(S) = \text{median}(X)$
+$$\bar{X}(S) = \frac{1}{n} \sum X_i$$
 
+$$\mathbb{E}_\theta \bar{X} = \mathbb{E}_\theta M = \theta \quad (\text{by symmetry})$$
+$$\mathbb{E}_\theta [\bar{X}(S) - M(S)] = 0 \quad \forall \theta$$
 
-<!-- Start of picture text -->
-Def Assume D has densities<br>P2 zeE<br>h x<br>140,0<br>pyxt<br>x α<br>satisfies no linear constraint B<br>If T X<br>and I contains an open set we say<br>P is full rat<br>If P is not full rank we it is cured<br>say<br>Note If T x satisfies linear constraint then<br>P might still be full rank for a lower dim<br>sufficient statistic<br>Proof in Lehmann Romano Thm 4.3<br>If P is full rank then<br>Theff is complete sufficient<br>Proof of<br>uses<br>mgts<br>uniqueness<br><!-- End of picture text -->
+$S(X)$ still has "a lot of extra fluff"
 
+---
 
-<!-- Start of picture text -->
-112<br>Proof Canonical form palx e<br>Oe 0<br>Assume Alot<br>w og<br>ok<br>0<br>0 Pal<br>Suppose IPolfix<br>and If 1 1 0 ye I<br>x for 20<br>write f x ft x f fff<br>x<br>Inf x1<br>Ezft z<br>fe f xldulx e f x dulx<br>MGFs for<br>r.us Yt ft f<br>y<br>w og Sftda f dm 1<br>uniqueness of MGFs Yt e y ft f<br>But ft x f 1 1<br>only if fixt 0<br><!-- End of picture text -->
+**Ex** $X_1, \dots, X_n \overset{\text{iid}}{\sim} \mathcal{U}[0, \theta] \quad \theta \in (0, \infty)$
 
+$$p_\theta(x) = \prod_i \frac{1}{\theta} \mathbf{1}\{x_i \le \theta\} = \frac{1}{\theta^n} \mathbf{1}\{X_{(n)} \le \theta\}$$
 
-<!-- Start of picture text -->
-Difranagain<br>5 2<br>1<br>y<br>Full Rank B<br>c<br>i<br>i<br>ii<br>Text<br>definitely complete for CAI<br>Maybe not for B IC<br>converse not true could be complete<br>suff for all 3<br><!-- End of picture text -->
+$$\frac{p_\theta(x)}{p_\theta(y)} = \frac{\mathbf{1}\{x_{(n)} \le \theta\}}{\mathbf{1}\{y_{(n)} \le \theta\}}$$
 
+$$\implies T(X) = X_{(n)} \text{ minimal suff.}$$
 
-<!-- Start of picture text -->
-sufficient<br>If TX<br>theorem<br>complete<br>for P ther TX is minimal<br>Game plan for completeness proofs show two things are<br>a s equal by showing they have expectation<br>Assume S<br>Proof X is minimal suff<br>six<br>Let sax<br>ELISE<br>F TIX<br>Sixt<br>Claim<br>We have S S minimal suff<br>x f tax<br>Let t t FCF t<br>g<br>IEolgCTa LEOTA ELF SAD<br>IOTA ELITIST<br>O<br>x Is O<br>completeness<br>g<br>D<br><!-- End of picture text -->
+Find density of $T(X)$
+$$\mathbb{P}_\theta(T \le t) = \left(\frac{t}{\theta} \wedge 1\right)^n = \left(\frac{t}{\theta}\right)^n \wedge 1$$
+$$\implies p_\theta(t) = \frac{d}{dt} \mathbb{P}_\theta(T \le t) = n \frac{t^{n-1}}{\theta^n} \mathbf{1}\{t \le \theta\}$$
 
+Suppose
+$$0 = \mathbb{E}_\theta f(T) \quad \forall \theta > 0$$
+$$= \frac{n}{\theta^n} \int_0^\theta f(t) t^{n-1}\, dt \quad \forall \theta > 0$$
+$$\implies \int_0^\theta f(t) t^{n-1}\, dt = 0 \quad \forall \theta > 0$$
+$$\implies f(t) t^{n-1} = 0 \quad \text{a.e. } t > 0$$
 
-<!-- Start of picture text -->
-Basistheorentheorem.IR<br>asn<br>If T X is sufficient and<br>complete<br>X is ancillary for P then<br>x TEX for all Oe<br>Ive A te B Polve A Polte B all A B 0<br>Let TX IT<br>PHY<br>g<br>pA<br>PEV.EE<br>0 O<br>Eo qaCT pA Pa Pa<br>T O<br>pA<br>qa<br>Po VEA TEB galt 1 teB dP I<br>Pa 51St EB d Pott<br>IP VEA ITO TE B<br><!-- End of picture text -->
+---
 
+**Def** Assume $\mathcal{P} = \{P_\eta : \eta \in \Xi\}$ has densities
+$$p_\eta(x) = e^{\eta' T(x) - A(\eta)} h(x)$$
 
-<!-- Start of picture text -->
-are<br>Ancillary all<br>wit a P<br>properties family<br>of a<br>Independence is a property distribution<br>the thm's<br>If can't verify hypotheses<br>you<br>one<br>for family a different family<br>try<br>dN n o MEIR o o<br>Xi X<br>Ex<br>I<br>Elemean I E Xi<br>s Xi X<br>I E<br>Samplevatiane<br>I 1 S<br>to show<br>Want<br>or sufficient<br>neither stat is ancillary<br>But<br>with M or unknown<br>in the<br>full family<br>with o known<br>use<br>To Basu family<br>apply<br>P Nlm oD<br>MEIR<br><!-- End of picture text -->
+If $T(X)$ satisfies no linear constraint $\left(\nexists\ \beta \ne 0, \alpha : \beta' T(X) \overset{\text{a.s.}}{=} \alpha\right)$ and $\Xi$ contains an open set, we say $\mathcal{P}$ is **full-rank**.
 
-P X is complete sufficient In and S is ancillary since 5 z z for Zi Xi<sup>Midnio</sup> not statistics but doesn't matter Therefore I 15 to do with known Conclusion has nothing or unknown parameters
+If $\mathcal{P}$ is not full-rank we say it is curved.
+
+[Note: If $T(X)$ satisfies linear constraint, then $\mathcal{P}$ might still be full-rank for a lower-dim. sufficient statistic]
+
+*Proof in Lehmann & Romano, Thm. 4.3.1*
+
+**Theorem** If $\mathcal{P}$ is full rank then $T(X)$ is complete sufficient
+
+Proof uses uniqueness of mgfs
+
+---
+
+**Proof** (Canonical form) $p_\eta(x) = e^{\eta' x - A(\eta)}$
+
+Assume wlog $0 \in \Xi^\circ$, $A(0) = 0$
+
+Suppose $\mathbb{P}_0(f(X) \ne 0) > 0 \quad (\iff \mathbb{P}_\eta(\cdot) > 0\ \forall \eta)$
+and $\mathbb{E}_\eta f(X) = 0 \quad \forall\ \eta \in \Xi$
+
+Write $f(x) = f^+(x) - f^-(x)$, for $f^+, f^- \ge 0$
+$$\implies \mathbb{E}_\eta f^+(X) = \mathbb{E}_\eta f^-(X) \quad \forall \eta$$
+$$\implies \int e^{\eta' x} f^+(x)\, d\mu(x) = \int e^{\eta' x} f^-(x)\, d\mu(x)$$
+
+MGFs for r.v.s $Y^+ \sim f^+$, $Y^- \sim f^-$
+(wlog $\int f^+ d\mu = \int f^- d\mu = 1$)
+
+Uniqueness of MGFs $\implies Y^+ \overset{\mathcal{D}}{=} Y^- \implies f^+ \overset{\text{a.s.}}{=} f^-$
+
+But $f^+(x) = f^-(x)$ only if $f(x) = 0$
+$\blacksquare$
+
+---
+
+## Diagram again
+
+$s=2$
+
+- $\Xi_1$
+- (A) Full Rank
+- (B) Curved (Minimal)
+- (C) Not minimal (Full-rank for $s=1$)
+
+$T(X)$ definitely complete for (A)
+Maybe not for (B), (C)
+
+(Converse not true: could be complete suff for all 3)
+
+---
+
+**Theorem** If $T(X)$ complete sufficient for $\mathcal{P}$ then $T(X)$ is minimal
+
+*Game plan for completeness proofs: show two things are a.s. equal by showing they have = expectation.*
+
+**Proof** Assume $S(X)$ is minimal suff
+
+Let $\bar{T}(S(X)) = \mathbb{E}_{\cancel{\theta}}[T(X) \mid S(X)]$ (since $S$ suff.)
+
+Claim: $\bar{T}(S(X)) \overset{\text{a.s.}}{=} T(X)$
+
+We have $S(X) \overset{\text{a.s.}}{=} f(T(X))$ ($S$ minimal suff)
+
+Let $g(t) = t - \bar{T}(f(t))$
+
+$$\mathbb{E}_\theta [g(T(X))] = \mathbb{E}_\theta T(X) - \mathbb{E}_{\cancel{\theta}}[\bar{T}(S(X))]$$
+$$= \mathbb{E}_\theta T(X) - \mathbb{E}_\theta [\mathbb{E}[T \mid S]]$$
+$$= 0$$
+$$\implies g(T(X)) \overset{\text{a.s.}}{=} 0 \quad (\text{completeness})$$
+$\blacksquare$
+
+---
+
+## Ancillarity
+
+Two reasons to care about completeness:
+1) Uniqueness of unbiased estimators using $T$
+If $\mathbb{E}_\theta \delta_1(T) = \mathbb{E}_\theta \delta_2(T) = g(\theta), \ \forall \theta \in \Theta$
+Then $\mathbb{E}_\theta[\delta_1 - \delta_2] = 0 \implies \delta_1 \overset{\text{a.s.}}{=} \delta_2$
+[We will explore this further next time]
+2) Basu's theorem: neat way to show independence
+
+**Def** $V(X)$ is **ancillary** for $\mathcal{P} = \{P_\theta : \theta \in \Theta\}$ if its distribution does not depend on $\theta$. ($V$ carries no info. about $\theta$)
+
+**(Aside:) Conditionality Principle**
+If $V(X)$ is ancillary then all inference should be conditional on $V(X)$
+[will return to this in testing & CI unit]
+
+---
+
+## Basu's Theorem
+
+**Theorem (Basu)**
+If $T(X)$ is complete sufficient and $V(X)$ is ancillary for $\mathcal{P}$, then
+$$V(X) \perp\!\!\!\perp T(X) \quad \text{for all } \theta \in \Theta$$
+
+**Proof**
+Want $\mathbb{P}_\theta(V \in A, T \in B) = \mathbb{P}(V \in A) \mathbb{P}_\theta(T \in B)$ all $A, B, \theta$
+
+Let
+$$q_A(T(X)) = \mathbb{P}_{\cancel{\theta}}(V \in A \mid T) \quad (\text{T suff.})$$
+$$p_A = \mathbb{P}_{\cancel{\theta}}(V \in A) \quad (\text{V ancillary})$$
+
+$$\mathbb{E}_\theta [q_A(T) - p_A] = p_A - p_A = 0, \quad \forall \theta$$
+$$\implies q_A(T) \overset{\text{a.s.}}{=} p_A \quad \forall \theta$$
+
+$$\mathbb{P}_\theta(V \in A, T \in B) = \int_B q_A(t) \mathbf{1}\{t \in B\}\, dP_\theta^T(t)$$
+$$= p_A \int \mathbf{1}\{t \in B\}\, dP_\theta^T(t)$$
+$$= \mathbb{P}(V \in A) \mathbb{P}_\theta(T \in B) \quad \blacksquare$$
+
+---
+
+## Using Basu's Theorem
+
+Ancillarity, Completeness, Sufficiency are all properties w.r.t a family $\mathcal{P}$
+
+Independence is a property of a **distribution**
+
+If you can't verify the thm's hypotheses for one family, try a different family!
+
+**Ex.** $X_1, \dots, X_n \overset{\text{iid}}{\sim} \mathcal{N}(\mu, \sigma^2) \quad \mu \in \mathbb{R}, \sigma^2 > 0$
+
+**Sample mean** $\bar{X} = \frac{1}{n} \sum_{i=1}^n X_i$
+
+**Sample variance** $S^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - \bar{X})^2$
+
+Want to show $\bar{X} \perp\!\!\!\perp S^2$
+
+But neither stat. is ancillary or sufficient in the full family with $\mu, \sigma^2$ unknown.
+
+To apply Basu, use family with $\sigma^2$ known:
+$$\mathcal{P} = \{\mathcal{N}(\mu, \sigma^2)^n : \mu \in \mathbb{R}\}$$
+
+---
+
+In $\mathcal{P}$, $\bar{X}$ is complete sufficient and $S^2$ is ancillary since
+$$S^2 = \sum (Z_i - \bar{Z})^2 \quad \text{for } Z_i = X_i - \mu \overset{\text{iid}}{\sim} \mathcal{N}(0, \sigma^2)$$
+(not statistics, but doesn't matter)
+
+Therefore $\bar{X} \perp\!\!\!\perp S^2$
+
+[Conclusion has nothing to do with "known" or "unknown" parameters]
 
 ---
 

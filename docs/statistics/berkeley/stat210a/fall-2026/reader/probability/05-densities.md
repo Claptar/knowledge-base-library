@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/probability.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Densities
+> **Converted source.** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Densities
 
 We have just seen in the last two examples that there is a special relationship between the Lebesgue measure $\lambda$ on $\RR$ and the Gaussian measure $P_Z$, allowing us to evaluate integrals with respect to $P_Z$ by turning them into integrals with respect to $\lambda$, namely $\int f(x)\,d P_Z(x) = \int f(x)\phi(x) \,d\lambda(x)$.
 

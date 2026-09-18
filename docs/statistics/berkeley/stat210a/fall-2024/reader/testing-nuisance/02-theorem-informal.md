@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/testing-nuisance.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Theorem (Informal)
+> **Converted source.** [`reader/testing-nuisance.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-nuisance.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/testing-nuisance.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-nuisance.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Theorem (Informal)
 
 Let $\cP$ be full rank exp. fam. with densities $p_{\theta, \lambda}(x) = e^{\theta \cdot T(x) + \lambda \cdot U(x) - A(\theta, \lambda)}h(x)$
 
@@ -40,7 +40,7 @@ b) To test $H_0: \theta \leq \theta_0$ vs $H_1: \theta > \theta_0$, there is a U
 
 Note: $h$ has disappeared from the problem.
 
-### Example: Poisson Ratio
+## Example: Poisson Ratio
 
 $X_i \sim \text{iid Poisson}(\mu_i)$, $i=1,2$
 

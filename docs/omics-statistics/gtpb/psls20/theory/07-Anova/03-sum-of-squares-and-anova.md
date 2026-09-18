@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/07-Anova.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Sum of squares and Anova
+> **Converted source.** [`theory/07-Anova.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/07-Anova.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/07-Anova.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/07-Anova.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Sum of squares and Anova
 
 Similar to simple linear regression we will use sum of squares to derive the F-test.
 \vspace{-10pt}
@@ -23,7 +23,6 @@ Similar to simple linear regression we will use sum of squares to derive the F-t
 \end{eqnarray*}
 with $n_1$, $n_2$ en $n_3$ the number of observations in each group (here $n-1=n_2=n_3=12$).
 
-
 \begin{eqnarray*}
 \text{SSR}&=&\sum\limits_{i=1}^n (\hat Y_i -\bar Y)^2
 \end{eqnarray*}
@@ -35,7 +34,6 @@ with $n_1$, $n_2$ en $n_3$ the number of observations in each group (here $n-1=n
   - g=3 model parameters - 1 parameter to estimate overall sample mean or
   - g=3 par. in complex model - 1 par. in reduced model.
 
-
 ## Decomposition of Total Sum of Squares
 
  - The convention in the Anova setting is to denote the sum of squares as SST, the **Sum of Squares of the Treatment (treatment)** or as SSBetween.
@@ -43,11 +41,12 @@ with $n_1$, $n_2$ en $n_3$ the number of observations in each group (here $n-1=n
 - The corresponding mean sum of squares becomes  $\text{MST}=\text{SST}/2$.
 
 The decomposition of SSTot can be written as
+
 $$
-  \text{SSTot} = \text{SST} + \text{SSE}
+\text{SSTot} = \text{SST} + \text{SSE}
 $$
 
-##SSTot
+## SSTot
 
 \vspace{10pt}
 
@@ -68,8 +67,7 @@ points(rep(1,36),prostacyclin$prostac-mean(prostacyclin$prostac),pch=1,col=4)
 axis(at=1:3,labels=c(expression(paste(y[i]," - ",bar(y))),expression(paste(bar(y)[j]," - ",bar(y))),expression(paste(y[i]," - ",bar(y)[j]))),side=1,cex.axis=1.5)
 ```
 
-
-##SST
+## SST
 
 \vspace{10pt}
 
@@ -90,7 +88,7 @@ points(rep(2,3),predict(model1,data.frame(dose=factor(c(10,25,50))))-mean(prosta
 axis(at=1:3,labels=c(expression(paste(y[i]," - ",bar(y))),expression(paste(bar(y)[j]," - ",bar(y))),expression(paste(y[i]," - ",bar(y)[j]))),side=1,cex.axis=1.5)
 ```
 
-##SSE
+## SSE
 
 \vspace{10pt}
 
@@ -114,12 +112,12 @@ points(rep(3,36),model1$res,pch=1)
 axis(at=1:3,labels=c(expression(paste(y[i]," - ",bar(y))),expression(paste(bar(y)[j]," - ",bar(y))),expression(paste(y[i]," - ",bar(y)[j]))),side=1,cex.axis=1.5)
 ```
 
-
 ## Anova test
 
 Test $H_0: \beta_1=\beta_2=0$ with $F$-test.
+
 $$
-  F = \frac{\text{MST}}{\text{MSE}}
+F = \frac{\text{MST}}{\text{MSE}}
 $$
 
 with
@@ -136,7 +134,6 @@ or
 \vspace{10pt}
 - Under $H_0$: $F \sim F_{g-1,n-g}$, with g=3.
 
-
 ## Anova Table
 
 | |Df|Sum Sq|Mean Sq|F value|Pr(>F)|
@@ -147,7 +144,6 @@ or
 ```r
 anova(model1)
 ```
-
 
 ### F-distribution with critical value  ($\alpha$=5%) and observed F-statistic for prostacyclin example
 ```r
@@ -171,7 +167,6 @@ text(15.5,.97,labels=paste0("p-value\n",format(anova(model1)[1,5],digits=2)),col
 arrows(x0=17.5,x1=fval,y0=.9,y1=.9,col="darkorange")
 ```
 
-
 ### F-distributions with different number of degrees of freedom in the nominator and denominator
 ```r
 plot(grid,df(grid,1,5),type="l",ylab="Density",xlab="F-statistic",xlim=c(0,5),ylim=c(0,1.5),lwd=2,cex.axis=1.5,cex.lab=1.5)
@@ -182,7 +177,7 @@ lines(grid,df(grid,50,50),type="l",col=5,lwd=2)
 legend("topright",lty=1,col=c(1,2,3,4,5),legend=c("F(1,5)","F(5,5)","F(10,30)","F(20,30)","F(50,50)"),lwd=2,cex=1.5)
 ```
 
-###Prostacyclin example: which groups are different?
+### Prostacyclin example: which groups are different?
 
 ```r
 summary(model1)

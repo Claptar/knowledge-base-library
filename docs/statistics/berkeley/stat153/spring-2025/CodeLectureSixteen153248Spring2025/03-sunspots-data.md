@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/spring-2025/CodeLectureSixteen153248Spring
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Sunspots Data
+> **Converted source.** [`CodeLectureSixteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureSixteen153248Spring2025.ipynb) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureSixteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureSixteen153248Spring2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Sunspots Data
 
 We will apply AR models to the sunspots data and obtain predictions.
 
@@ -25,7 +25,7 @@ plt.show()
 
 *(1 figure omitted — see the original notebook.)*
 
-### Yule Model
+## Yule Model
 
 Yule model is given by:
 \begin{equation*}
@@ -296,4 +296,4 @@ These datasets are quite smooth. This shows that the two "sinusoid + noise" mode
 
 ---
 
-[← Dataset Two: House Price Data from FRED](02-dataset-two-house-price-data-from-fred.md) · [Up: contents](index.md) · [AR(2) Model →](04-ar-2-model.md)
+← Dataset Two: House Price Data from FRED · [Up: contents](index.md) · [AR(2) Model →](04-ar-2-model.md)

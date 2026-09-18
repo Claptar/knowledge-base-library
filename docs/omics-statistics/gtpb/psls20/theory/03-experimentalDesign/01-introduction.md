@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/03-experimentalDesign.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Introduction
+> **Converted source.** [`theory/03-experimentalDesign.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/03-experimentalDesign.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/03-experimentalDesign.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/03-experimentalDesign.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Introduction
 
 ```r
 knitr::opts_chunk$set(include = TRUE, comment = NA, echo = TRUE,
@@ -69,7 +69,7 @@ text(7.5,.5,"DATA EXPLORATION &\nDESCRIPTIVE STATISTICS (2)",col="black",cex=1.2
 
 ---
 
-#Need for a good control
+## Need for a good control
 
 - A good control group is crucial.
 

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureTwenty153248Fall2025.
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Preprocessing using logarithms and differences
+> **Converted source.** [`CodeLectureTwenty153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureTwenty153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureTwenty153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureTwenty153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Preprocessing using logarithms and differences
 
 If we want to fit stationary AR models to this GNP dataset, we can first preprocess the data by taking logarithms, and then by taking differences of the logarithms. Note that differenced log data (multiplied by 100) leads to percentage change interpretation. In other words, $100 \left(\log \text{GNP}_t - \log \text{GNP}_{t-1} \right)$ represents the percent change in GNP from one quarter to the next.
 
@@ -70,7 +70,7 @@ AR.1            4.0208           +0.0000j            4.0208            0.0000
 
 This fitted AR(1) clearly has $|\hat{\phi}_1| < 1$ so it corresponds to a causal-stationary regime.
 
-### Causal Stationarity for AR($p$) with $p \geq 2$
+## Causal Stationarity for AR($p$) with $p \geq 2$
 
 When $p \geq 2$, causal-stationarity is determined by the roots of the AR polynomial $\phi(z) = 1 - \phi_1 z - \dots - \phi_p z^p$. Specifically, the AR($p$) is causal stationary if every root of the AR polynomial has modulus strictly larger than 1.
 

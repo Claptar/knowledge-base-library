@@ -5,12 +5,25 @@ source_file: sources/berkeley-stat153/spring-2025/CodeLectureSixteen153248Spring
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`CodeLectureSixteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureSixteen153248Spring2025.ipynb) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Dataset One: Liquor Sales Data from FRED
 
-**Source:** [`CodeLectureSixteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureSixteen153248Spring2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+---
+title: AutoRegressive (AR) Models
+---
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+```
+
+We will fit AutoRegressive Models to some time series datasets, and obtain predictions for future values of the time series.
 
 ```python
 #The following is FRED data on retail sales (in millions of dollars) for beer, wine and liquor stores (https://fred.stlouisfed.org/series/MRTSSM4453USN)
@@ -192,4 +205,4 @@ The predictions depend crucially on the order $p$ of the model. If $p \geq 12$, 
 
 ---
 
-[Up: contents](index.md) · [Dataset Two: House Price Data from FRED →](02-dataset-two-house-price-data-from-fred.md)
+[Up: contents](index.md) · Dataset Two: House Price Data from FRED →

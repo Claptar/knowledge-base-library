@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2025/project/project.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Final Project
+> **Converted source.** [`project/project.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/project/project.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`project/project.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/project/project.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Final Project
 
 The project will be done in groups of three, with students assigned randomly.
 
@@ -26,7 +26,7 @@ Please use standard citation practices to cite any papers/code/online resources/
 
 You can use AI, but you should limit it to brainstorming and help with small components of the coding. In particular, you should decide on the structure (OOP vs. functional programming, what functions/methods, the arguments) yourself. You should carefully check and understand any code produced by AI assistance.
 
-# Problem
+## Problem
 
 Your task is to implement and experiment with the use of genetic algorithms for variable selection. Some details on genetic algorithms are available in [Section 3.4 of the Givens and Hoeting book on Computational Statistics](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118555552) and the baseball data discussed there are in the class GitHub repository as [`project/baseball.dat`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/project/baseball.dat). You should also be able to find plenty of other information about genetic algorithms online. The result should be an Python package that I can easily use, as discussed below in detail. In particular, I will be testing your code on my own test cases). My grading will be largely based on the following items.
 
@@ -54,15 +54,17 @@ Formatting requirements and additional information
 
    a. A Python package named `GA`, following the placeholder package in [my template repository](https://github.com/paciorek/GA-dev). Your work should be done in a private repository named `GA-dev` within the Berkeley GitHub account or github.com account of one of the project members. **Make sure to share the repository with me.** Note that if you use `github.berkeley.edu`, you won't be able to automate your testing via GitHub Actions.
 
-       The package should include:
+```
+   The package should include:
 
-       i. A primary function called `select` that carries out the variable selection, including appropriate code comments.
+   i. A primary function called `select` that carries out the variable selection, including appropriate code comments.
 
-       ii. Other supporting code in the same or additional files (please think about clear organization), including appropriate code comments.
+   ii. Other supporting code in the same or additional files (please think about clear organization), including appropriate code comments.
 
-       iii. Formal tests set up using `pytest` and included in the package.
+   iii. Formal tests set up using `pytest` and included in the package.
 
-       iv. Help information for the main function, in the form of a standard Python doc string for `select`. As part of this, you should have brief working examples in the example section. You do not need extensive doc strings for your auxiliary functions but there should be a brief doc string just stating what each function does.
+   iv. Help information for the main function, in the form of a standard Python doc string for `select`. As part of this, you should have brief working examples in the example section. You do not need extensive doc strings for your auxiliary functions but there should be a brief doc string just stating what each function does.
+```
 
    b. The README for your GitHub repository should present your package and how to use it, including an overview of your approach and demos of how to use the package. It must include a paragraph describing the specific contributions of each team member and which person/people were responsible for each component of the work. Part of your grade will be based on the clarity and helpfulness of your README. You can find lots of examples of software package READMEs at the GitHub repositories for those packages. If you want to be able to generate demo results automatically, you should be able to have a qmd version of the README that you render as `quarto render README.qmd --to md` before committing `README.md`.
 

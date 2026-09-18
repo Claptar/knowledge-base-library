@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/first_three_weeks.md
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`first_three_weeks.md`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/first_three_weeks.md) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Assignments / to-dos
 
-**Source:** [`first_three_weeks.md`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/first_three_weeks.md) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.md` (lossless)
-
-### Week 1
+## Week 1
 
 - (Required) By Friday August 27 at noon, fill out this class survey: https://forms.gle/iwXEoibrdHRG7aGu6. This is required and will be 'counted' in the class participation portion of your grade.
 
@@ -24,7 +24,7 @@ converted: '2026-09-14'
 
 - (Optional) By Monday August 30, if you are not comfortable with the basic UNIX usage we saw in the first class, please work through the [UNIX basics tutorial here](https://github.com/berkeley-scf/tutorial-unix-basics/archive/master.zip) and answer the questions at the end. You don't need to turn anything in. If you'd think you're going to like help, please come to the UNIX help session on Friday August 27.
 
-### Weeks 2-3
+## Weeks 2-3
 
 - (Optional) If you are not familiar with R at the level of [modules
 1-5 of the R bootcamp](https://github.com/berkeley-scf/r-bootcamp-fall-2021/archive/main.zip),

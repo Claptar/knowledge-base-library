@@ -2,15 +2,15 @@
 title: 'Single-cell RNA-sequencing: variance stabilizing transformations'
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_varStabilization.Rmd
 source_file: sources/statomics-sga21/singleCell_varStabilization.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Single-cell RNA-sequencing: variance stabilizing transformations
+> **Converted source.** [`singleCell_varStabilization.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_varStabilization.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`singleCell_varStabilization.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_varStabilization.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
+# Single-cell RNA-sequencing: variance stabilizing transformations
 
 ```r
 if(!"BiocManager" %in% installed.packages()[,1]){
@@ -18,7 +18,7 @@ if(!"BiocManager" %in% installed.packages()[,1]){
 }
 ```
 
-# Approximating the variance stabilizing transformation of a Poisson random variable
+## Approximating the variance stabilizing transformation of a Poisson random variable
 
  - A random variable $Y \sim Poi(\mu)$ has $Var(Y) = E(Y) = \mu$.
  - We are looking for a variance stabilizing transformation (VST) $f(Y)$ such that $Var(f(Y)) = c$, with $c$ any constant. In particular, we need $Var(f(Y))$ to be independent of $\mu$.
@@ -29,7 +29,6 @@ if(!"BiocManager" %in% installed.packages()[,1]){
  - The last bullet point can be written as $f'(\mu) = \frac{1}{\sqrt{\mu}}$ and therefore $f(\mu) = \int \frac{1}{\sqrt{\mu}} d\mu = 2 \mu^{1/2}$.
  - Finally, this shows us that the transformation $f(Y) = 2 Y^{1/2}$ ensures $Var(f(Y)) = 1$. Similar, as is often written in the scientific literature, the transformation $f(Y) = Y^{1/2}$ ensures $Var(f(Y)) = 1/4$.
  - Note that these derivations all **rely on the first-order Taylor expansion to be a good approximation**. The VST will therefore work better for random variables with a high mean $\mu$ as the distribution will be more discrete for random variables with a low mean. We show this using simulation below.
-
 
 ```r
 set.seed(871)
@@ -52,11 +51,10 @@ plot(x=df$mean, y=df$transVar,
 
 **Question**. Why is the first plot heteroscedastic?
 
-<details><summary> Answer. </summary><p>
+ Answer.
 Remember that $Var(\hat{\mu}) = \frac{\hat{\mu}}{n}$.
 Since for all random variables in our simulation $n$ is equal, in our case we have that $Var(\hat{\mu}) = c\hat{\mu}$.
 The variance on estimating the mean thus increases with the mean.
-</p></details>
 
 ---
 

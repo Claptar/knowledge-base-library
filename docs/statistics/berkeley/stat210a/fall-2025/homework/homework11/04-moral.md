@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2025/homework/homework11.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework11.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework11.tex) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework11.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework11.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 If $P^n$ is the distribution of $(X_1,\ldots,X_n)$ then it is easy to check that the set of all square-integrable random variables of the form $f(X_1,\ldots,X_n)$ (where $f:\; \mathcal{X}^n \to \mathbb{R}$ is measurable) forms a vector space over $\mathbb{R}$, which we call $L^2(P^n)$, where we can define an inner product as $$\langle f(X), g(X) \rangle_{L^2} = \mathbb{E}[ f(X)g(X)] \leq \sqrt{\mathbb{E}[f(X)^2] \mathbb{E}[g(X)^2]} < \infty.$$
 
@@ -24,6 +24,10 @@ Let $X_1,\ldots,X_n \overset{\text{i.i.d.}}{\sim}N(\theta,1)$ and consider estim
 
 2.  Show that, pointwise in $\theta$, as $n\to\infty$, $$n\,\text{MSE}(\delta_n;\theta) \to 1\{\theta\neq 0\},$$ but that the convergence is not uniform in $\theta$; in fact, $$\sup_{\theta\in\mathbb{R}}\;\; n\,\text{MSE}(\delta_n;\theta) \rightarrow \infty.$$ (**Note**: this is an example of a situation where it is incorrect to exchange a limit with a supremum.)
 
+## Moral: {#moral-3}
+
+The sense in which asymptotically efficient estimators are “optimal” is not easy to define, and it isn’t obvious how we should compare the asymptotic behavior of different estimators. In this example it would appear initially that the super-efficient estimator renders the sample mean inadmissible. But this is only true if we look at the pointwise limit for fixed $\theta$; at any $n$ there are some values of $\theta$ for which the estimator is performing very badly, and this gets worse and worse as $n$ gets larger.
+
 ---
 
-[← Moral](03-moral.md) · [Up: contents](index.md) · [Moral →](05-moral.md)
+[← Moral](03-moral.md) · [Up: contents](index.md)

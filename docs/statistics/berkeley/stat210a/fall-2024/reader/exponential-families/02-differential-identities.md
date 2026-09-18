@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/exponential-families.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Differential identities
+> **Converted source.** [`reader/exponential-families.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/exponential-families.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/exponential-families.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/exponential-families.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Differential identities
 
 Exponentiating @eq-log-partition, we obtain the equation
 
@@ -20,15 +20,15 @@ $$ {#eq-partition}
 
 We can derive many interesting identities by differentiating this function, and related functions, with respect to $\eta$. We will always evaluate derivatives by differentiating under the integral sign. This is not always a correct operation, but by Theorem 2.4 in Keener, it is correct on the interior of the natural parameter space $\Xi_1$. We refer the reader to Keener for details.
 
-### Mean of $T(X)$
+## Mean of $T(X)$
 
 Partially differentiating @eq-partition once with respect to a generic coordinate $\eta_j$, for $j =1, \ldots, s$, we obtain
 
 $$
 \begin{aligned}
-\frac{\partial}{\partial \eta_j} e^{A(\eta)} &= \int_\cX \frac{\partial}{\partial \eta_j} e^{\eta'T(x)}h(x)\td\mu(x)\\[7pt]
-e^{A(\eta)} \frac{\partial A}{\partial \eta_j}(\eta) &= \int_\cX T_j(x) e^{\eta'T(x)}h(x)\td\mu(x)\\[7pt]
-\frac{\partial A}{\partial \eta_j}(\eta) &= \int_\cX T_j(x) e^{\eta'T(x) - A(\eta)}h(x)\td\mu(x)\\[7pt]
+\frac{\partial}{\partial \eta_j} e^{A(\eta)} &= \int_\cX \frac{\partial}{\partial \eta_j} e^{\eta'T(x)}h(x)\td\mu(x)[7pt]
+e^{A(\eta)} \frac{\partial A}{\partial \eta_j}(\eta) &= \int_\cX T_j(x) e^{\eta'T(x)}h(x)\td\mu(x)[7pt]
+\frac{\partial A}{\partial \eta_j}(\eta) &= \int_\cX T_j(x) e^{\eta'T(x) - A(\eta)}h(x)\td\mu(x)[7pt]
 &= \EE_\eta \left[\,T_j(X)\,\right]\\
 \end{aligned}
 $$
@@ -41,14 +41,14 @@ $$
 
 which gives us a very convenient method for evaluating the expectation of the sufficient statistic.
 
-### Variance of $T(X)$
+## Variance of $T(X)$
 
 Pushing our luck further, we can take a second partial derivative:
 
 $$
 \begin{aligned}
-\frac{\partial^2}{\partial \eta_j\partial \eta_k} e^{A(\eta)} &= \int_\cX \frac{\partial^2}{\partial \eta_j\partial \eta_k} e^{\eta'T(x)}h(x)\td\mu(x)\\[7pt]
-e^{A(\eta)}\left(\frac{\partial^2 A}{\partial \eta_j\partial \eta_k} + \frac{\partial A}{\partial \eta_j} \frac{\partial A}{\partial \eta_k} \right)&= \int_\cX T_j(x) T_k(x)e^{\eta'T(x)}h(x)\td\mu(x)\\[7pt]
+\frac{\partial^2}{\partial \eta_j\partial \eta_k} e^{A(\eta)} &= \int_\cX \frac{\partial^2}{\partial \eta_j\partial \eta_k} e^{\eta'T(x)}h(x)\td\mu(x)[7pt]
+e^{A(\eta)}\left(\frac{\partial^2 A}{\partial \eta_j\partial \eta_k} + \frac{\partial A}{\partial \eta_j} \frac{\partial A}{\partial \eta_k} \right)&= \int_\cX T_j(x) T_k(x)e^{\eta'T(x)}h(x)\td\mu(x)[7pt]
 \frac{\partial^2 A}{\partial \eta_j\partial \eta_k} + \EE_\eta[T_j(X)]\EE_\eta[T_k(X)] &= \EE_\eta \left[\,T_j(X) T_k(X)\,\right]\\
 \frac{\partial^2 A}{\partial \eta_j\partial \eta_k} &= \text{Cov}_\eta\left(T_j(X), T_k(X)\right).
 \end{aligned}
@@ -66,7 +66,7 @@ where the right-hand side denotes the $s\times s$ variance-covariance matrix of 
 
 **Note:** This calculation would not have worked correctly if we had instead said $A(\eta) = \lambda$, and differentiated that expression with respect to $\lambda$. We would then get $\EE_\eta[X] = 1$ and $\text{Var}_\eta(X) = 0$, which are clearly incorrect.
 
-### Moment-generating function and cumulant-generating function
+## Moment-generating function and cumulant-generating function
 
 The moment generating function (MGF) of a $d$-dimensional random vector $X\sim P$ is defined as $M^X(u) = \EE[e^{u'X}]$, for $u\in \RR^d$. If the MGF is well-defined in a neighborhood of $u=0$, then we can use it to calculated moments of $X$ by evaluating its derivatives at 0.
 
@@ -90,9 +90,9 @@ In an exponential family, the MGF of $T(X)$, under sampling from $P_\eta$, is si
 
 $$
 \begin{aligned}
-M^{T(X)}_\eta(u) &= \EE_\eta\left[\,e^{u'T(X)}\,\right]\\[5pt]
-&= \int_\cX e^{u'T(x)}e^{\eta'T(x) - A(\eta)}h(x)\td\mu(x) \\[5pt]
-&= e^{-A(\eta)}\int_\cX e^{(u+\eta)'T(x)} h(x)\td\mu(x)\\[5pt]
+M^{T(X)}_\eta(u) &= \EE_\eta\left[\,e^{u'T(X)}\,\right][5pt]
+&= \int_\cX e^{u'T(x)}e^{\eta'T(x) - A(\eta)}h(x)\td\mu(x) [5pt]
+&= e^{-A(\eta)}\int_\cX e^{(u+\eta)'T(x)} h(x)\td\mu(x)[5pt]
 &= e^{A(\eta+u)-A(\eta)}
 \end{aligned}
 $$

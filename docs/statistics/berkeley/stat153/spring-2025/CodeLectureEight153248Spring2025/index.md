@@ -1,22 +1,21 @@
 ---
-title: CodeLectureEight153248Spring2025
+title: Audio Data
 source: https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureEight153248Spring2025.ipynb
 source_file: sources/berkeley-stat153/spring-2025/CodeLectureEight153248Spring2025.ipynb
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# CodeLectureEight153248Spring2025
+> **Converted source.** [`CodeLectureEight153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureEight153248Spring2025.ipynb) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureEight153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureEight153248Spring2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Audio Data
 
-Split into 3 sections.
+Split into 2 sections.
 
-1. [Introduction](01-introduction.md)
-2. [Audio Data](02-audio-data.md)
-3. [Sunspots Dataset](03-sunspots-dataset.md)
+1. [Audio Data](01-audio-data.md)
+2. [Sunspots Dataset](02-sunspots-dataset.md)
 
 ---
 

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit5-programming.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 3. Modules and packages
+> **Converted source.** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 3. Modules and packages
 
 Scripting languages that become popular generally have an extensive collection
 of add-on packages available online (the causal relationship of the popularity and
@@ -58,7 +58,7 @@ The import statement allows one to get access to code in a module.
 Importantly it associates the names of the objects in the module with
 a name accessible in the scope in which it was imported (i.e., the current context). The mapping of
 names (references) to objects is called a *namespace*. We discuss
-[scopes and namespaces](19-syntaxerror-positional-argument-follows-keyword-argument.md#namespaces-and-scopes) in more detail later.
+[scopes and namespaces](08-7-functional-programming.md#namespaces-and-scopes) in more detail later.
 
 ```python
 #| error: true
@@ -180,7 +180,6 @@ mypkg.myfun10(7.3)
 del mypkg
 ```
 
-
 ### Subpackages
 
 Packages can also have modules in nested directories, achieving additional modularity
@@ -218,7 +217,6 @@ up in this rendered document.
 If we wanted to automatically import the subpackage we would add
 `from . import mysubpkg` to `mypkg/__init__.py`, which uses [relative imports](https://docs.python.org/3/reference/import.html). The alternative "absolute" import would be `import mypkg.mysubpkg`, which finds `mypkg` using `sys.path` (which specifies a set of paths of where to look).
 
-
 One would generally not import the items from `mysubpkg` directly into the `mypkg` namespace
 but there may be cases one would do something like this. For example `numpy.linspace` is actually
 found in `numpy/core/function_base.py`, but we don't need to refer to `numpy.core.linspace`
@@ -250,7 +248,6 @@ In recent versions of Conda, you can also use the Mamba's dependency resolver wh
 It's also generally recommended to use the `conda-forge` *channel* (i.e., location) when installing packages with Conda
 (this is done automatically when using `mamba`). `conda-forge` provides a wide variety of up-to-date packages, maintained by the community.
 :::
-
 
 ### Making your package installable (optional)
 

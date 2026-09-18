@@ -5,15 +5,14 @@ source_file: sources/berkeley-stat210a/fall-2024/units/unit1.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`units/unit1.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/units/unit1.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Unit 1: Intro
 
-**Source:** [`units/unit1.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/units/unit1.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
 This is an example of using qmd as the source document.
-
 
 ## Evaluated Python code chunk, with a plot
 
@@ -25,7 +24,6 @@ plt.hist(x)
 plt.show()
 np.mean(x)
 ```
-
 
 ## $\LaTeX$
 

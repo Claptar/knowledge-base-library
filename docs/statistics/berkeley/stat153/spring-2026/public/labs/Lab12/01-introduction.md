@@ -5,18 +5,18 @@ source_file: sources/berkeley-stat153/spring-2026/public/labs/Lab12.ipynb
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`public/labs/Lab12.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/labs/Lab12.ipynb) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Introduction
 
-**Source:** [`public/labs/Lab12.ipynb`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/labs/Lab12.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
-
-# Lab 12: Convolutional Neural Networks
+## Lab 12: Convolutional Neural Networks
 
 Here we will implement a CNN to classify spoken numerals.
 
-Please follow <a href="https://pytorch.org">these instructions</a> to install pytorch.
+Please follow [these instructions](https://pytorch.org) to install pytorch.
 
 Run the first two cells to import the relevant libraries
 
@@ -51,7 +51,7 @@ torch.backends.cudnn.benchmark = False
 torch.backends.cudnn.deterministic = True
 ```
 
-## 1-D CNNs and model interpretation
+### 1-D CNNs and model interpretation
 
 In this problem you will train a 1-D CNN on audio data, here to classify spoken numerals (e.g. "one", "two"). Then you will use additional techniques to interpret (since it's audio, one can't really say "visualize", but same idea) what the model is doing. Run these cells first to set things up.
 
@@ -142,6 +142,22 @@ test_loader = torch.utils.data.DataLoader(
 )
 ```
 
+#### Plot the waveform and play the audio for one training sample
+Set the x-axis values so that they show seconds.
+
+```python
+# plot the waveform for one example (e.g., sc_training[150])
+
+plt.figure(figsize=(5,2))
+print(sc_training[150][0])
+plt.plot(sc_training[150][0].t().numpy())
+plt.xlabel("Time (seconds)")
+plt.axis("on")
+
+# play the audio
+ipd.Audio(sc_training[150][0], rate=16000)
+```
+
 ---
 
-[Up: contents](index.md) · [Plot the waveform and play the audio for one training sample →](02-plot-the-waveform-and-play-the-audio-for-one-training-sample.md)
+[Up: contents](index.md) · [Define model →](02-define-model.md)

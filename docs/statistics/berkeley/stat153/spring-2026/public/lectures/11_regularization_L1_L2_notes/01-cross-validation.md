@@ -5,12 +5,14 @@ source_file: sources/berkeley-stat153/spring-2026/public/lectures/11_regularizat
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`public/lectures/11_regularization_L1_L2_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/11_regularization_L1_L2_notes.md) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Cross-validation
 
-**Source:** [`public/lectures/11_regularization_L1_L2_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/11_regularization_L1_L2_notes.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+* **Reading**: Chapter 6 (and 6.2) - An Introduction to Statistical Learning
 
 How can we avoid overfitting? One way is to seek models that minimize the MSE on *held out data*, that is, data that was not used to train our model.
 
@@ -28,6 +30,13 @@ In the past, cross-validation was not used as it was computationally prohibitive
 
 It works for any model without you needing to know anything about the error distribution. This is why this is more popularly used now as compared to parametric approaches such as AIC and BIC (which assume Gaussian errors).
 
+## Alternative fitting procedures
+
+So what do we do in these cases where we have potentially many parameters and few observations, but we want an accurate and interpretable model? We can constrain or *shrink* the coefficients to reduce the variance of our estimates at the cost of slightly increasing bias. This also can allow for improved model interpretability - by forcing some coefficients to be very small or to zero, we can more easily interpret our model by removing irrelevant covariates. We will discuss two major ways:
+
+1. Ridge regression (L2 regularization)
+2. LASSO regression (L1 regularization)
+
 ---
 
-[Up: contents](index.md) · [Alternative fitting procedures →](02-alternative-fitting-procedures.md)
+[Up: contents](index.md) · [Ridge regression →](02-ridge-regression.md)

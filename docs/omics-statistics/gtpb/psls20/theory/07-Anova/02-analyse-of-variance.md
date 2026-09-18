@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/07-Anova.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Analyse of Variance
+> **Converted source.** [`theory/07-Anova.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/07-Anova.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/07-Anova.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/07-Anova.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Analyse of Variance
 
 Correct solution for testing problem: ANalysis Of VAriance (ANOVA)
 
@@ -63,7 +63,6 @@ Interpretation of model parameters:
  2.  $\beta_1$ is effect (difference in mean  concentration) of group M vs group L
  \vspace{7pt}
  3.  $\beta_2$ is effect of group H vs group L
-
 
 We reformulate the model by using $\mu$-notations:
  \vspace{-7pt}

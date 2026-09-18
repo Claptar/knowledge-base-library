@@ -5,15 +5,19 @@ source_file: sources/gtpb-psls20/theory/06-linearRegression.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Statistical inference
 
-**Source:** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
-
 To draw conclusions based on the regression model
-$$E(Y|X)=\beta_0+\beta_1 X$$
+
+$$
+E(Y|X)=\beta_0+\beta_1 X
+$$
+
 we need to know
 
 - How the least squares parameter estimators vary from sample to sample, and
@@ -33,7 +37,6 @@ we need to know
 4. *Normality*: the residuals $\epsilon_i$ are normally distributed
 
 ![](https://raw.githubusercontent.com/GTPB/PSLS20/gh-pages/assets/figs/RegModel3.png){width=100%}
-
 
 - Given 2, 3 and 4
 $$\epsilon_i \text{ i.i.d.} N(0,\sigma^2).$$
@@ -67,8 +70,10 @@ $$T=\frac{\hat{\beta}_k-\beta_k}{SE(\hat{\beta}_k)} \text{ with } k=1,2.$$
 - If all assumptions are valid $T$ follows t-verdeling with n-2 degrees of freedom.
 \vspace{15pt}
 - If no normality, but independence, linearity, equality of mean and large dataset
-$$\rightarrow \text{Central Limit theorem}$$
 
+$$
+\rightarrow \text{Central Limit theorem}
+$$
 
 ### Breast cancer example
 
@@ -82,7 +87,6 @@ confint(lm1)
 ```
 
 - Negative association is significant on 5% significance level.
-
 
 ## Hypothesis test
 
@@ -99,12 +103,11 @@ $$T=\frac{\hat{\beta}_1-0}{SE(\hat{\beta}_k)}$$
 \vspace{15pt}
 - Under $H_0$ the statistics follows a t-distribution with n-2 degrees of freedom.
 
-###brca dataset
+### brca dataset
 
 ```r
 summary(lm1)
 ```
-
 
 - The association between the S100A8 and ESR1 expression is extremely significant  (p<<0.001).
 - But, we first have to check all assumptions!

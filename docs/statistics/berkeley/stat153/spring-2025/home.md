@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/spring-2025/index.md
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Stat 153: Introduction to Time Series
+> **Converted source.** [`index.md`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/index.md) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`index.md`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/index.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# Stat 153: Introduction to Time Series
 
 ::::{grid} 1 2 2 2
 
@@ -26,7 +26,6 @@ converted: '2026-09-14'
 :::{card}
 :header: **Dohyeong Ki (GSI)**
 
-
 +++
 
 * **Office Hours**: Friday 9-10 am, 1-2 pm, 5-6 pm (Evans 446)
@@ -36,11 +35,11 @@ converted: '2026-09-14'
 
 ::::
 
-# Syllabus
+## Syllabus
 
 Basic information about the course can be found in the [syllabus](syllabus.md).
 
-# Schedule
+## Schedule
 
 :::{schedule} ./schedule.yml
 

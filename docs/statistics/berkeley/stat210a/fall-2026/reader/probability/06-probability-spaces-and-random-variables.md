@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/probability.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Probability spaces and random variables
+> **Converted source.** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Probability spaces and random variables
 
 In a typical statistics problem we may have multiple random variables, some continuous and some discrete, some random variables may be functions of others, and we want to have good notation for the probability that "something happens," like $\PP(X^2 < (Y+Z)/ W)$, or the expectation of a random variable, like $\EE[(XY-ZW)^2]$. What does this kind of expression have to do with the measures and integrals we have been discussing so far?
 

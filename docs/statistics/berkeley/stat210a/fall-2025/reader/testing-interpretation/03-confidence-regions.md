@@ -5,50 +5,96 @@ source_file: sources/berkeley-stat210a/fall-2025/reader/testing-interpretation.h
 licence: CC BY 4.0
 route: pandoc-html
 fidelity: good
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/testing-interpretation.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/testing-interpretation.html) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.html`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Confidence Regions
 
-**Source:** [`reader/testing-interpretation.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/testing-interpretation.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
+Suppose we are testing $H_0:\theta = 0$ vs $H_1:\; \theta \neq 0$. When the $p$-value is very small, it gives us a strong indication that the data set we observed is inconsistent with the parameter value $\theta=0$. It does *not* necessarily follow that the data set is indicating that the $\theta$ value is *far* from zero: for example, if we have a huge data set we might be able to say with very high confidence that $\theta$ is in the range $[0.0011,0.0012]$. Depending on the context, this could practically amount to *confirming* the informal scientific null that $\theta$ is too small to care about. But if we looked at the $p$-value it will tell us (accurately) that the formal statistical null $\theta=0$ is highly implausible.
 
-Suppose we are testing <span class="math inline">\$H\_0:\\theta = 0\$</span> vs <span class="math inline">\$H\_1:\\; \\theta \\neq 0\$</span>. When the <span class="math inline">\$p\$</span>-value is very small, it gives us a strong indication that the data set we observed is inconsistent with the parameter value <span class="math inline">\$\\theta=0\$</span>. It does *not* necessarily follow that the data set is indicating that the <span class="math inline">\$\\theta\$</span> value is *far* from zero: for example, if we have a huge data set we might be able to say with very high confidence that <span class="math inline">\$\\theta\$</span> is in the range <span class="math inline">\$$$0.0011,0.0012$$\$</span>. Depending on the context, this could practically amount to *confirming* the informal scientific null that <span class="math inline">\$\\theta\$</span> is too small to care about. But if we looked at the <span class="math inline">\$p\$</span>-value it will tell us (accurately) that the formal statistical null <span class="math inline">\$\\theta=0\$</span> is highly implausible.
+By the same token, we could also be mistaken if we observe that the $p$-value is large and conclude that $\theta$ must be close to zero. It *could* be the case that the data set establishes that $\theta$ is in a narrow range around zero, *or* it could simply be that the data give very poor evidence about $\theta$ so we still don’t know very much about it.
 
-By the same token, we could also be mistaken if we observe that the <span class="math inline">\$p\$</span>-value is large and conclude that <span class="math inline">\$\\theta\$</span> must be close to zero. It *could* be the case that the data set establishes that <span class="math inline">\$\\theta\$</span> is in a narrow range around zero, *or* it could simply be that the data give very poor evidence about <span class="math inline">\$\\theta\$</span> so we still don’t know very much about it.
-
-Confidence intervals, and more generally confidence regions, are a more reliable guide than <span class="math inline">\$p\$</span>-values if we want to know what range of <span class="math inline">\$\\theta\$</span> values are plausible in light of the data. As we will see, they can be obtained using the same machinery we have developed for hypothesis tests. Whereas the <span class="math inline">\$p\$</span>-value tells us what our test would decide for all values of <span class="math inline">\$k\$</span>, we can think of a confidence region as telling us what our test of a point null <span class="math inline">\$H\_0:\\; \\theta = \\theta\_0\$</span> vs <span class="math inline">\$H\_1:\\; \\theta\\neq 0\$</span> would decide for all values of <span class="math inline">\$\\theta\_0\$</span>.
+Confidence intervals, and more generally confidence regions, are a more reliable guide than $p$-values if we want to know what range of $\theta$ values are plausible in light of the data. As we will see, they can be obtained using the same machinery we have developed for hypothesis tests. Whereas the $p$-value tells us what our test would decide for all values of $k$, we can think of a confidence region as telling us what our test of a point null $H_0:\; \theta = \theta_0$ vs $H_1:\; \theta\neq 0$ would decide for all values of $\theta_0$.
 
 ## Definition of a confidence region {.anchored anchor-id="definition-of-a-confidence-region"}
 
-**Definition:** We say that <span class="math inline">\$C(X)\$</span> is a <span class="math inline">\$1-\\alpha\$</span> confidence region for <span class="math inline">\$g(\\theta)\$</span> if:
+**Definition:** We say that $C(X)$ is a $1-\alpha$ confidence region for $g(\theta)$ if:
 
-<span class="math display">\\$$ \\PP\_\\theta(C(X) \\ni g(\\theta)) \\geq 1-\\alpha, \\quad \\text{for all } \\theta \\in \\Theta \\$$</span> We say that <span class="math inline">\$C(x)\$</span> **covers** <span class="math inline">\$g(\\theta)\$</span> if <span class="math inline">\$C(x) \\ni g(\\theta)\$</span>, and the **coverage probability** at a parameter value <span class="math inline">\$\\theta\$</span> is <span class="math inline">\$\\PP\_\\theta(C(X) \\ni g(\\theta))\$</span>. The **confidence level** of <span class="math inline">\$C(X)\$</span> is <span class="math inline">\$\\inf\_{\\theta\\in\\Theta} \\mathbb{P}\_\\theta(C(X) \\ni g(\\theta))\$</span>.
+$$
+\PP_\theta(C(X) \ni g(\theta)) \geq 1-\alpha, \quad \text{for all } \theta \in \Theta
+$$
 
-The use of the “<span class="math inline">\$\\ni\$</span>” symbol in the above definition is deliberate. To avoid common misinterpretations, we should always think and speak of the interval or region <span class="math inline">\$C(X)\$</span> as the random “subject” of the mathematical sentence and the estimand <span class="math inline">\$g(\\theta)\$</span> as the fixed “object.”
+ We say that $C(x)$ **covers** $g(\theta)$ if $C(x) \ni g(\theta)$, and the **coverage probability** at a parameter value $\theta$ is $\PP_\theta(C(X) \ni g(\theta))$. The **confidence level** of $C(X)$ is $\inf_{\theta\in\Theta} \mathbb{P}_\theta(C(X) \ni g(\theta))$.
 
-The confidence interval is commonly misinterpreted as a Bayesian guarantee, where <span class="math inline">\$C(X)\$</span> is first realized and then <span class="math inline">\$g(\\theta)\$</span> has some probability of falling into <span class="math inline">\$C(X)\$</span>. This interpretation is incorrect: confidence intervals are frequentist objects whose guarantee is intended to apply for fixed <span class="math inline">\$\\theta\$</span> values. Once <span class="math inline">\$X\$</span> is realized <span class="math inline">\$C(X)\$</span> either does or does not contain the estimand <span class="math inline">\$g(\\theta)\$</span>; there is no remaining randomness in the problem.
+The use of the “$\ni$” symbol in the above definition is deliberate. To avoid common misinterpretations, we should always think and speak of the interval or region $C(X)$ as the random “subject” of the mathematical sentence and the estimand $g(\theta)$ as the fixed “object.”
+
+The confidence interval is commonly misinterpreted as a Bayesian guarantee, where $C(X)$ is first realized and then $g(\theta)$ has some probability of falling into $C(X)$. This interpretation is incorrect: confidence intervals are frequentist objects whose guarantee is intended to apply for fixed $\theta$ values. Once $X$ is realized $C(X)$ either does or does not contain the estimand $g(\theta)$; there is no remaining randomness in the problem.
 
 Thus, while the following formulations are technically mathematically equivalent, the second one tends to give people the wrong impression and is not recommended:
 
-- **Formulation 1 (recommended):** <span class="math inline">\$C(X)\$</span> has a <span class="math inline">\$95\\%\$</span> chance of covering <span class="math inline">\$g(\\theta)\$</span>
+- **Formulation 1 (recommended):** $C(X)$ has a $95\%$ chance of covering $g(\theta)$
 
-- **Formulation 2 (not recommended):** <span class="math inline">\$g(\\theta)\$</span> has a <span class="math inline">\$95\\%\$</span> chance of falling in <span class="math inline">\$C(X)\$</span>
+- **Formulation 2 (not recommended):** $g(\theta)$ has a $95\%$ chance of falling in $C(X)$
 
-Once we have calculated, say, <span class="math inline">\$C(X) = $$0.8, 1.1$$\$</span>, it is *never* correct to say “there is a <span class="math inline">\$95\\%\$</span> chance <span class="math inline">\$g(\\theta) \\in $$0.8, 1.1$$\$</span>” on the basis of a confidence interval guarantee. Under a frequentist model this is a category error since <span class="math inline">\$g(\\theta)\$</span> is not random, and even under a Bayesian model where there is an *a posteriori* probability, that probability depends on our prior.
+Once we have calculated, say, $C(X) = [0.8, 1.1]$, it is *never* correct to say “there is a $95\%$ chance $g(\theta) \in [0.8, 1.1]$” on the basis of a confidence interval guarantee. Under a frequentist model this is a category error since $g(\theta)$ is not random, and even under a Bayesian model where there is an *a posteriori* probability, that probability depends on our prior.
 
 ## Duality of tests and confidence regions {.anchored anchor-id="duality-of-tests-and-confidence-regions"}
 
 Confidence regions are closely related to hypothesis tests, and one can be constructed from the other, as we see below.
 
-Suppose we have a level <span class="math inline">\$\\alpha\$</span> test <span class="math inline">\$\\phi(X; a)\$</span> of <span class="math inline">\$H\_0: g(\\theta) = a\$</span> vs <span class="math inline">\$H\_1: g(\\theta) \\neq a\$</span>, for every value <span class="math inline">\$a\$</span>. Then we can use these tests to construct a (non-randomized) confidence region for <span class="math inline">\$g(\\theta)\$</span> as follows:
+Suppose we have a level $\alpha$ test $\phi(X; a)$ of $H_0: g(\theta) = a$ vs $H_1: g(\theta) \neq a$, for every value $a$. Then we can use these tests to construct a (non-randomized) confidence region for $g(\theta)$ as follows:
 
-<span class="math display">\\$$ C(X) = \\{a: \\phi(X; a) &lt; 1\\} \\$$</span> That is, <span class="math inline">\$C(X)\$</span> is all *non-rejected* values of <span class="math inline">\$a\$</span>. <span class="math inline">\$C(X)\$</span> is a valid confidence region because <span class="math display">\\$$ \\mathbb{P}\_\\theta(C(X) \\ni g(\\theta)) = \\mathbb{P}\_\\theta(\\phi(X; g(\\theta)) &lt; 1) \\geq 1-\\alpha \\$$</span> Constructing an interval in this way is called **inverting** a test (or more precisely, a family of tests, one for each <span class="math inline">\$a\$</span> value).
+$$
+C(X) = \{a: \phi(X; a) < 1\}
+$$
 
-Conversely, we can obtain a test by inverting a confidence region. Suppose <span class="math inline">\$C(X)\$</span> is a <span class="math inline">\$1-\\alpha\$</span> confidence region for <span class="math inline">\$g(\\theta)\$</span>. Then <span class="math display">\\$$ \\phi(x; a) = 1\\{a \\notin C(x)\\} \\$$</span> is a valid level-<span class="math inline">\$\\alpha\$</span> test of the null <span class="math inline">\$H\_0: g(\\theta) = a\$</span> vs. the alternative <span class="math inline">\$H\_1: g(\\theta) \\neq a\$</span>, because <span class="math display">\\$$ \\mathbb{E}\_\\theta \\phi(X; g(\\theta)) = \\mathbb{P}\_\\theta(g(\\theta) \\notin C(X)) \\leq \\alpha \\$$</span> A confidence region is called **unbiased** if its probability of including any value *other than* the true <span class="math inline">\$g(\\theta)\$</span> is *at most* <span class="math inline">\$1-\\alpha\$</span>: <span class="math display">\\$$ \\PP\_\\theta( C(X) \\ni a) \\leq 1-\\alpha, \\quad \\text{ for all } a \\neq g(\\theta). \\$$</span> It is immediate from the definition that <span class="math inline">\$C(X)\$</span> is unbiased if and only if the test we obtain by inverting it is unbiased. Likewise, the confidence region obtained by inverting an unbiased *non-randomized* test is also unbiased.
+ That is, $C(X)$ is all *non-rejected* values of $a$. $C(X)$ is a valid confidence region because
 
-**Example (Multivariate Gaussian confidence ellipse)** Suppose that we observe <span class="math inline">\$X \\sim N\_d(\\mu, \\Sigma)\$</span>, where the covariance matrix <span class="math inline">\$\\Sigma\$</span> is known and <span class="math inline">\$\\mu\\in\\RR^d\$</span> is unknown. We can define <span class="math display">\\$$ Z = \\Sigma^{-1/2}(X-\\mu) \\sim N\_d(0,I\_d). \\$$</span>
+$$
+\mathbb{P}_\theta(C(X) \ni g(\theta)) = \mathbb{P}_\theta(\phi(X; g(\theta)) < 1) \geq 1-\alpha
+$$
 
-A natural test of the point null <span class="math inline">\$H\_0:\\; \\mu = \\mu\_0\$</span> vs <span class="math inline">\$H\_1:\\; \\mu \\neq \\mu\_0\$</span> is to reject for large values of <span class="math display">\\$$ \\\|\\Sigma^{-1/2} (X-\\mu\_0)\\\|^2 \\stackrel{H\_0}{\\sim} \\chi\_d^2. \\$$</span> Let <span class="math inline">\$c\_\\alpha\$</span> denote the upper <span class="math inline">\$\\alpha\$</span> quantile of the null distribution. The confidence region we obtain by inverting this test is the ellipse: <span class="math display">\\$$ C(X) = \\left\\{\\mu\_0:\\; \\\|\\Sigma^{-1/2}(X-\\mu\_0)\\\|^2 \\leq c\_\\alpha\\right\\}. \\$$</span>
+ Constructing an interval in this way is called **inverting** a test (or more precisely, a family of tests, one for each $a$ value).
+
+Conversely, we can obtain a test by inverting a confidence region. Suppose $C(X)$ is a $1-\alpha$ confidence region for $g(\theta)$. Then
+
+$$
+\phi(x; a) = 1\{a \notin C(x)\}
+$$
+
+ is a valid level-$\alpha$ test of the null $H_0: g(\theta) = a$ vs. the alternative $H_1: g(\theta) \neq a$, because
+
+$$
+\mathbb{E}_\theta \phi(X; g(\theta)) = \mathbb{P}_\theta(g(\theta) \notin C(X)) \leq \alpha
+$$
+
+ A confidence region is called **unbiased** if its probability of including any value *other than* the true $g(\theta)$ is *at most* $1-\alpha$:
+
+$$
+\PP_\theta( C(X) \ni a) \leq 1-\alpha, \quad \text{ for all } a \neq g(\theta).
+$$
+
+ It is immediate from the definition that $C(X)$ is unbiased if and only if the test we obtain by inverting it is unbiased. Likewise, the confidence region obtained by inverting an unbiased *non-randomized* test is also unbiased.
+
+**Example (Multivariate Gaussian confidence ellipse)** Suppose that we observe $X \sim N_d(\mu, \Sigma)$, where the covariance matrix $\Sigma$ is known and $\mu\in\RR^d$ is unknown. We can define
+
+$$
+Z = \Sigma^{-1/2}(X-\mu) \sim N_d(0,I_d).
+$$
+
+A natural test of the point null $H_0:\; \mu = \mu_0$ vs $H_1:\; \mu \neq \mu_0$ is to reject for large values of
+
+$$
+\|\Sigma^{-1/2} (X-\mu_0)\|^2 \stackrel{H_0}{\sim} \chi_d^2.
+$$
+
+ Let $c_\alpha$ denote the upper $\alpha$ quantile of the null distribution. The confidence region we obtain by inverting this test is the ellipse:
+
+$$
+C(X) = \left\{\mu_0:\; \|\Sigma^{-1/2}(X-\mu_0)\|^2 \leq c_\alpha\right\}.
+$$
 
 The widget below illustrates the process of sampling these confidence regions.
 
@@ -317,19 +363,45 @@ html`<div style="font-size: 16px; margin-top: 20px; font-family: sans-serif;">
 
 ## Confidence intervals and confidence bounds {.anchored anchor-id="confidence-intervals-and-confidence-bounds"}
 
-While confidence regions can come in all shapes (with ellipses and rectangles being common in dimensions greater than one), the most common shape in <span class="math inline">\$\\RR\$</span> is an interval or half-interval. When <span class="math inline">\$C(X) = $$C\_L(X), C\_U(X)$$ \\subseteq \\RR\$</span>, we call it a **confidence interval** (CI); when it is of the form <span class="math inline">\$$$C\_L(X), \\infty)\$</span> or <span class="math inline">\$(-\\infty, C\_U(X)$$\$</span> we call <span class="math inline">\$C\_L(X)\$</span> a **lower confidence bound** (LCB), and <span class="math inline">\$C\_U(X)\$</span> an **upper confidence bound** (UCB). We typically obtain confidence intervals by inverting a two-sided test of a point null, and confidence bounds by inverting a one-sided test in the appropriate direction.
+While confidence regions can come in all shapes (with ellipses and rectangles being common in dimensions greater than one), the most common shape in $\RR$ is an interval or half-interval. When $C(X) = [C_L(X), C_U(X)] \subseteq \RR$, we call it a **confidence interval** (CI); when it is of the form $[C_L(X), \infty)$ or $(-\infty, C_U(X)]$ we call $C_L(X)$ a **lower confidence bound** (LCB), and $C_U(X)$ an **upper confidence bound** (UCB). We typically obtain confidence intervals by inverting a two-sided test of a point null, and confidence bounds by inverting a one-sided test in the appropriate direction.
 
 A confidence bound is called **uniformly most accurate** (UMA) if it inverts a (non-randomized) UMP test, and a confidence interval is called **uniformly most accurate unbiased** (UMAU) if it inverts a (non-randomized) UMPU test.
 
-**Example (Exponential):** As an example, suppose we observe <span class="math inline">\$X\\sim \\text{Exp}(\\theta)\$</span> and want to construct confidence bounds or a confidence interval for <span class="math inline">\$\\theta\$</span>. The cumulative distribution function is <span class="math inline">\$\\PP\_\\theta(X\\leq x) = 1-e^{-x/\\theta}\$</span>, for <span class="math inline">\$x&gt;0\$</span>.
+**Example (Exponential):** As an example, suppose we observe $X\sim \text{Exp}(\theta)$ and want to construct confidence bounds or a confidence interval for $\theta$. The cumulative distribution function is $\PP_\theta(X\leq x) = 1-e^{-x/\theta}$, for $x>0$.
 
-To find a lower confidence bound, we invert the UMP test of <span class="math inline">\$H\_0:\\;\\theta \\leq \\theta\_0\$</span> vs <span class="math inline">\$H\_1:\\; \\theta &gt; \\theta\_0\$</span>, which rejects for large values of <span class="math inline">\$X\$</span>. The cutoff solves for <span class="math display">\\$$ \\alpha = \\PP\_{\\theta\_0}(X&gt;c\_\\alpha) = e^{-c\_\\alpha/\\theta\_0} \\iff c\_\\alpha = -\\theta\_0 \\log (\\alpha). \\$$</span> To invert this test, observe that the test rejects <span class="math inline">\$H\_0\$</span> if and only if <span class="math inline">\$X &gt; -\\theta\_0\\log (\\alpha)\$</span>. Hence, our confidence region is <span class="math display">\\$$ C(X) = \\{\\theta\_0:\\; X \\leq -\\theta\_0\\log(\\alpha)\\} = \\left\[\\frac{X}{-\\log(\\alpha)}, \\infty\\right), \\$$</span> giving lower confidence bound <span class="math inline">\$C\_L(X) = \\frac{X}{-\\log \\alpha}\$</span>.
+To find a lower confidence bound, we invert the UMP test of $H_0:\;\theta \leq \theta_0$ vs $H_1:\; \theta > \theta_0$, which rejects for large values of $X$. The cutoff solves for
 
-By the same token, we can obtain an upper confidence bound by inverting the UMP test for <span class="math inline">\$H\_0:\\; \\theta \\geq \\theta\_0\$</span> vs <span class="math inline">\$H\_1:\\;\\theta &lt; \\theta\_0\$</span>. That test rejects when <span class="math inline">\$X &lt; -\\theta\_0\\log (1-\\alpha)\$</span>, giving confidence region <span class="math display">\\$$ C(X) = \\left\\{\\theta\_0:\\; X \\geq -\\theta\_0\\log(1-\\alpha)\\right\\} = \\left(-\\infty, \\frac{X}{-\\log(1-\\alpha)}\\right$$, \\\]</span> and UCB <span class="math inline">\$C\_U(X)=\\frac{X}{-\\log(1-\\alpha)}\$</span>.
+$$
+\alpha = \PP_{\theta_0}(X>c_\alpha) = e^{-c_\alpha/\theta_0} \iff c_\alpha = -\theta_0 \log (\alpha).
+$$
 
-To obtain a <span class="math inline">\$1-\\alpha\$</span> confidence interval by inverting the equal-tailed test, we simply intersect the two confidence regions above, both computed at level <span class="math inline">\$1-\\alpha/2\$</span>; hence <span class="math display">\\$$ C(X)=\\left\[\\frac{X}{-\\log(\\alpha/2)}, \\frac{X}{-\\log(1-\\alpha/2)}\\right$$ \\\]</span>
+ To invert this test, observe that the test rejects $H_0$ if and only if $X > -\theta_0\log (\alpha)$. Hence, our confidence region is
 
-To invert the UMPU test can be more involved in general, but we can exploit the fact that the exponential is a scale family. If <span class="math inline">\$c\_1\$</span> and <span class="math inline">\$c\_2\$</span> are the left and right cutoff for the UMPU test of <span class="math inline">\$H\_0:\\;\\theta=1\$</span> vs <span class="math inline">\$H\_0:\\;\\theta\\neq 1\$</span>, then the corresponding cutoffs for testing <span class="math inline">\$H\_0:\\;\\theta=\\theta\_0\$</span> are <span class="math inline">\$\\theta\_0 c\_1\$</span> and <span class="math inline">\$\\theta\_0 c\_2\$</span>. Hence, the confidence interval is <span class="math display">\\$$ C(X) = \\left\\{ \\theta\_0:\\; \\theta\_0 c\_1 \\leq X \\leq \\theta\_0 c\_2 \\right\\} = \\left\[\\frac{X}{c\_2}, \\frac{X}{c\_1}\\right$$. \\\]</span>
+$$
+C(X) = \{\theta_0:\;  X \leq -\theta_0\log(\alpha)\} = \left[\frac{X}{-\log(\alpha)}, \infty\right),
+$$
+
+ giving lower confidence bound $C_L(X) = \frac{X}{-\log \alpha}$.
+
+By the same token, we can obtain an upper confidence bound by inverting the UMP test for $H_0:\; \theta \geq \theta_0$ vs $H_1:\;\theta < \theta_0$. That test rejects when $X < -\theta_0\log (1-\alpha)$, giving confidence region
+
+$$
+C(X) = \left\{\theta_0:\; X \geq -\theta_0\log(1-\alpha)\right\} = \left(-\infty, \frac{X}{-\log(1-\alpha)}\right],
+$$
+
+ and UCB $C_U(X)=\frac{X}{-\log(1-\alpha)}$.
+
+To obtain a $1-\alpha$ confidence interval by inverting the equal-tailed test, we simply intersect the two confidence regions above, both computed at level $1-\alpha/2$; hence
+
+$$
+C(X)=\left[\frac{X}{-\log(\alpha/2)}, \frac{X}{-\log(1-\alpha/2)}\right]
+$$
+
+To invert the UMPU test can be more involved in general, but we can exploit the fact that the exponential is a scale family. If $c_1$ and $c_2$ are the left and right cutoff for the UMPU test of $H_0:\;\theta=1$ vs $H_0:\;\theta\neq 1$, then the corresponding cutoffs for testing $H_0:\;\theta=\theta_0$ are $\theta_0 c_1$ and $\theta_0 c_2$. Hence, the confidence interval is
+
+$$
+C(X) = \left\{ \theta_0:\; \theta_0 c_1 \leq X \leq \theta_0 c_2  \right\} = \left[\frac{X}{c_2}, \frac{X}{c_1}\right].
+$$
 
 ---
 

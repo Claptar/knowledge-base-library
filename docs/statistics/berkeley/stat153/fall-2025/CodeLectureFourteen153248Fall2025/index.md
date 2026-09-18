@@ -5,20 +5,18 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureFourteen153248Fall202
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`CodeLectureFourteen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFourteen153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # CodeLectureFourteen153248Fall2025
 
-**Source:** [`CodeLectureFourteen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFourteen153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+Split into 3 sections.
 
-Split into 5 sections.
-
-1. [Introduction](01-introduction.md)
-2. [Download S&P 500 data](02-download-s-p-500-data.md)
-3. [----- Left subplot: Eyes Open -----](03-------left-subplot-eyes-open.md)
-4. [----- Right subplot: Eyes Closed -----](04-------right-subplot-eyes-closed.md)
-5. [Find peaks](05-find-peaks.md)
+1. [Model ONE](02-model-one.md)
+2. [Model TWO](03-model-two.md)
+3. [Model THREE](04-model-three.md)
 
 ---
 

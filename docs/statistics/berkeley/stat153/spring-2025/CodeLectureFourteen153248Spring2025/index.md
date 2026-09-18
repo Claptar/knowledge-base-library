@@ -5,17 +5,18 @@ source_file: sources/berkeley-stat153/spring-2025/CodeLectureFourteen153248Sprin
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`CodeLectureFourteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureFourteen153248Spring2025.ipynb) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Three High-Dimensional Models for Time Series
 
-**Source:** [`CodeLectureFourteen153248Spring2025.ipynb`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/CodeLectureFourteen153248Spring2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+Split into 3 sections.
 
-Split into 2 sections.
-
-1. [Three High-Dimensional Models for Time Series](01-three-high-dimensional-models-for-time-series.md)
-2. [Download S&P 500 data](02-download-s-p-500-data.md)
+1. [Model ONE](01-model-one.md)
+2. [Model TWO](02-model-two.md)
+3. [Model THREE](03-model-three.md)
 
 ---
 

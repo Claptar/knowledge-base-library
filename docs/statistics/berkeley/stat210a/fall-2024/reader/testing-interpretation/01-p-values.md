@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/testing-interpretation.q
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/testing-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-interpretation.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # p-Values
 
-**Source:** [`reader/testing-interpretation.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-interpretation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-### Informal Definition
+## Informal Definition
 
 Suppose $\phi(x)$ rejects for $T(x) > c$. The p-value is:
 
@@ -28,7 +28,7 @@ The two-sided p-value is $p(X)$, where:
 
 $$p(x) = \mathbb{P}_0(|X| \geq |x|) = 2\min\{\Phi(x), 1-\Phi(x)\}$$
 
-### Formal Definition
+## Formal Definition
 
 Assume we have a test $\phi_\alpha$ for each significance level $\alpha$: $\mathbb{E}_0[\phi_\alpha(X)] \leq \alpha$
 
@@ -66,7 +66,7 @@ or $T(x) = \max_i |x_i|$ (max test)
 Very different p-values, power if $d$ large
 Choice reflects belief about whether $\theta$ is sparse
 
-### Accept/Reject Decisions
+## Accept/Reject Decisions
 
 Accept/reject decisions are not interesting
 Usually, we care how big $\theta$ is

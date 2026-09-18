@@ -3,34 +3,25 @@ title: 4 Comments on Bayesian Regularization
 source: https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureTwelve153248Spring2025.pdf
 source_file: sources/berkeley-stat153/spring-2025/LectureTwelve153248Spring2025.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
+
+> **Reconstructed by a model.** [`LectureTwelve153248Spring2025.pdf`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureTwelve153248Spring2025.pdf) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
 # 4 Comments on Bayesian Regularization
 
-**Source:** [`LectureTwelve153248Spring2025.pdf`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureTwelve153248Spring2025.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+In practice, the posterior $f_{\tau,\sigma \mid \text{data}}(\tau, \sigma)$ tends to prefer $\tau$ values which are neither too small nor too large. Because
+$$f_{\tau,\sigma \mid \text{data}}(\tau, \sigma) \propto f_{\text{data} \mid \tau,\sigma}(\tau, \sigma) f_{\tau,\sigma}(\tau, \sigma),$$
+and the prior $f_{\tau,\sigma}(\tau, \sigma)$ is quite flat, the likelihood $f_{\text{data} \mid \tau,\sigma}(\tau, \sigma)$ must prefer values of $\tau$ which are neither too small nor too large. Note that there is a big difference between the two likelihoods:
+$$f_{\text{data} \mid \beta,\sigma}(\text{data}) \quad \text{and} \quad f_{\text{data} \mid \tau,\sigma}(\text{data}).$$
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+Maximizing $f_{\text{data} \mid \beta,\sigma}(\text{data})$ leads to the unregularized least squares estimate which leads to overfitting. On the other hand, maximizing $f_{\text{data} \mid \tau,\sigma}(\text{data})$ often leads to a fairly small estimate of $\hat{\tau}$ leading to a smooth trend function. The reason for this discrepancy can be understood by noting that
+$$f_{\text{data} \mid \tau,\sigma}(\text{data}) = \int f_{\text{data} \mid \beta,\sigma}(\text{data}) f_{\beta \mid \tau}(\beta) d\beta.$$
 
-In practice, the posterior _fτ,σ|_ data( _τ, σ_ ) tends to prefer _τ_ values which are neither too small nor too large. Because
-
-
-5
-
-and the prior _fτ,σ_ ( _τ, σ_ ) is quite flat, the likelihood _f_ data _|τ,σ_ ( _τ, σ_ ) must prefer values of _τ_ which are neither too small nor too large. Note that there is a big difference between the two likelihoods:
-
-
-Maximizing _f_ data _|β,σ_ (data) leads to the unregularized least squares estimate which leads to overfitting. On the other hand, maximizing _f_ data _|τ,σ_ (data) often leads to a fairly small estimate of _τ_ ˆ leading to a smooth trend function. The reason for this discrepancy can be understood by noting that
-
-
-When _τ_ is large, the term _fβ|τ_ ( _β_ ) will be small simply because the normal density with variance _τ_<sup>2</sup> will be flat for large _τ_ . On the other hand, when _τ_ is too small, the weight _fβ|τ_ ( _β_ ) will be significant only for very smooth _β_ s but these _β_ s will have poor values for _f_ data _|β,σ_ (data).
-
-6
+When $\tau$ is large, the term $f_{\beta \mid \tau}(\beta)$ will be small simply because the normal density with variance $\tau^2$ will be flat for large $\tau$. On the other hand, when $\tau$ is too small, the weight $f_{\beta \mid \tau}(\beta)$ will be significant only for very smooth $\beta$s but these $\beta$s will have poor values for $f_{\text{data} \mid \beta,\sigma}(\text{data})$.
 
 ---
 
-[← 3 Bayesian approach for dealing with unknown τ and σ](03-3-bayesian-approach-for-dealing-with-unknown-τ-and-σ.md) · [Up: contents](index.md)
+[← 3 Bayesian approach for dealing with unknown $\tau$ and $\sigma$](03-3-bayesian-approach-for-dealing-with-unknown-and.md) · [Up: contents](index.md)

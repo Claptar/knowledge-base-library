@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit9-sim.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 5. Generating random variables
+> **Converted source.** [`units/unit9-sim.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit9-sim.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit9-sim.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit9-sim.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 5. Generating random variables
 
 There are a variety of methods for generating from common distributions
 (normal, gamma, beta, Poisson, t, etc.). Since these tend to be built
@@ -32,7 +32,6 @@ method based on the Cholesky decomposition:
 L = np.linalg.cholesky(covMat) # L is lower-triangular
 x = L @ np.random.normal(size = covMat.shape[0])
 ```
-
 
 Side note: for a singular covariance matrix we can use the Cholesky with
 pivoting, setting as many rows to zero as the rank deficiency. Then when

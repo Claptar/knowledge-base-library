@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/05_statisticalInfere
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 05 statisticlInference
+> **Converted source.** [`tutorialScripts/excercises/05_statisticalInference/05_statisticlInference.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/05_statisticalInference/05_statisticlInference.md) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`tutorialScripts/excercises/05_statisticalInference/05_statisticlInference.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/05_statisticalInference/05_statisticlInference.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# 05 statisticlInference
 
 On the second day of the "Practical Statistics for the Life Sciences (2020)" course, we will have three tutorials on data exploration, based on different datasets:
 
@@ -24,7 +24,6 @@ In this tutorial on data exploration, you will learn how to deal with data from 
 
 - Exercise: "https://raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/04_DataExploration/Hypothesis_testing_captopril.Rmd"
 - Data: "https://raw.githubusercontent.com/GTPB/PSLS20/master/data/captopril.txt"
-
 
 2) The armpit dataset:
 
@@ -42,7 +41,6 @@ has helped in decreasing the (average) relative abundance Staphylococcus spp. in
 - Exercise: "https://raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/04_DataExploration/Hypothesis_testing_armpit.Rmd"
 - Data: "https://raw.githubusercontent.com/GTPB/PSLS20/master/data/armpit.csv"
 
-
 3) The Shrimps dataset:
 
 PCBs are often present in coolants, and are know to accumulate easily in the adipose tissue of shrimps. In this experiment, two
@@ -53,7 +51,6 @@ The research question is; is there an effect of the  growth condition on the PCB
 
 - Exercise: "https://raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/04_DataExploration/Hypothesis_testing_shrimps.Rmd"
 - Data: "https://raw.githubusercontent.com/GTPB/PSLS20/master/data/shrimps.txt"
-
 
 4) The Cuckoo dataset:
 

@@ -5,19 +5,17 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/testing-one-parameter.qm
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/testing-one-parameter.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-one-parameter.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Testing with One Real Parameter
 
-**Source:** [`reader/testing-one-parameter.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-one-parameter.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+Split into 2 sections.
 
-Split into 4 sections.
-
-1. [Testing with one real parameter](01-testing-with-one-real-parameter.md)
-2. [One-sided testing](02-one-sided-testing.md)
-3. [Sample mean](03-sample-mean.md)
-4. [Two-sided alternatives](04-two-sided-alternatives.md)
+1. [One-sided testing](01-one-sided-testing.md)
+2. [Two-sided alternatives](02-two-sided-alternatives.md)
 
 ---
 

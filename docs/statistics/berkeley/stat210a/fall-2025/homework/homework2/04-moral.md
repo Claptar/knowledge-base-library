@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2025/homework/homework2.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework2.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework2.tex) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework2.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework2.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 This exercise confirms something that we should intuitively expect to be true: that increasing the natural parameter $\eta$, which “tilts” the distribution toward larger values of $T(X)$, will also shift the distribution of $X$ to the right if $T$ is an increasing function. It also illustrates the usefulness of differential identities for understanding exponential families’ structure.
 
@@ -30,6 +30,10 @@ Throughout this problem, you may use without proof that if the variance of any s
 
 3.  Combine (a) and (b) to show that $\eta \mapsto \mathbb{E}_\eta[T(X)]$ is a one-to-one mapping for $s \geq 1$.
 
+## Moral: {#moral-3}
+
+We can always parameterize an exponential family by the mean of $T(X)$. This parameterization is very often more intuitive than the natural parameterization, and it gives us the standard parameterization for families like the Poisson (with sufficient statistic $T(X)=X$) and binomial (with sufficient statistic $T(X)=X/n$).
+
 ---
 
-[← Moral](03-moral.md) · [Up: contents](index.md) · [Moral →](05-moral.md)
+[← Moral](03-moral.md) · [Up: contents](index.md)

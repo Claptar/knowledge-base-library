@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2024/labs/lab9-git.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Some review of key commands you should already know
+> **Converted source.** [`labs/lab9-git.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/labs/lab9-git.qmd) — berkeley-stat243 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`labs/lab9-git.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/labs/lab9-git.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Some review of key commands you should already know
 
 When using Git for collaboration, you will often find that much of your workflow
 remains similar to how you used Git when working alone. That is, you will still
@@ -76,7 +76,6 @@ of the code. For example, if you work linearly through your problem sets then it
 is better to commit after completing each individual problem or even
 sub-problem, rather than making a single commit when the full problem set is
 complete.
-
 
 **When to use**: after finishing work on a particular task; incrementally, when
 some contained change is complete; as often as needed so that you can create

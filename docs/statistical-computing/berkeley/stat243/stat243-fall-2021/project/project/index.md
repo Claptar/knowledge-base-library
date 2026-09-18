@@ -1,26 +1,21 @@
 ---
-title: Project
+title: Problem
 source: https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/project/project.pdf
 source_file: sources/berkeley-stat243/stat243-fall-2021/project/project.pdf
 licence: CC0-1.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Project
+> **Reconstructed by a model.** [`project/project.pdf`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/project/project.pdf) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`project/project.pdf`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/project/project.pdf) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Problem
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+Split into 2 sections.
 
-Split into 3 sections.
-
-1. [Introduction](01-introduction.md)
-2. [Problem](02-problem.md)
-3. [Formatting requirements and additional information](03-formatting-requirements-and-additional-information.md)
+1. [Problem](01-problem.md)
+2. [Formatting requirements and additional information](02-formatting-requirements-and-additional-information.md)
 
 ---
 

@@ -5,18 +5,17 @@ source_file: sources/gtpb-psls20/theory/06-linearRegression.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Assess assumptions
+> **Converted source.** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/06-linearRegression.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/06-linearRegression.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Assess assumptions
 
 - Independence: design
 - Linearity: inference is useless if the association is not linear
 - Homoscedasticity: inference/p-value is incorrect if data are heteroscedastic
 - Normality: inference/p-value is incorrect if data are not normally distributed in small samples
-
 
 ## Linearity
 
@@ -27,7 +26,6 @@ brcaSubset %>%
   geom_smooth(se=FALSE,col="grey") +
   geom_smooth(method="lm",se=FALSE)
 ```
-
 
 ### Residual analysis
 
@@ -69,7 +67,6 @@ qqline(y)
 lmH<-lm(y~x)
 plot(lmH,which=2,main="Residuals")
 ```
-
 
 ```r
 plot(lm1,which=2)

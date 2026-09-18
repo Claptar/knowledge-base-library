@@ -5,16 +5,16 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/testing-linear.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/testing-linear.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-linear.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # General Linear Model
 
-**Source:** [`reader/testing-linear.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/testing-linear.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
 Many problems can be put into canonical linear model after change of basis.
 
-### Basic Setup
+## Basic Setup
 
 Observe $Y \sim N(X\beta, \sigma^2 I_n)$, $\sigma^2$ known or unknown
 Test $\beta \in \Theta_0$ vs $\beta \in \Theta_1$
@@ -34,7 +34,7 @@ $H_0: Q_1'\beta = 0$
 
 Do $Z$ $\chi^2$ or $F$ test as appropriate
 
-### Example 1: Linear Regression
+## Example 1: Linear Regression
 
 $Y_i = X_i'\beta + \epsilon_i$, $\epsilon_i \sim N(0, \sigma^2)$
 $Y \sim N_n(X\beta, \sigma^2 I_n)$, $X \in \mathbb{R}^{n \times p}$
@@ -71,7 +71,7 @@ $\text{SE}(\hat{\beta}_1) = \hat{\sigma}^2 (X_1^{\perp'} X_1^\perp)^{-1}$
 
 t-statistic: $t = \frac{\hat{\beta}_1}{\text{SE}(\hat{\beta}_1)} \sim t_{n-d}$
 
-### Example 2: Two-sample t-test (equal variance)
+## Example 2: Two-sample t-test (equal variance)
 
 $Y_1, \ldots, Y_n \sim N(\mu_1, \sigma^2)$, $Y_{n+1}, \ldots, Y_{n+m} \sim N(\mu_2, \sigma^2)$
 
@@ -90,7 +90,7 @@ $$t = \frac{\bar{Y}_1 - \bar{Y}_2}{\hat{\sigma}\sqrt{\frac{1}{n} + \frac{1}{m}}}
 
 where $\hat{\sigma}^2 = \frac{\sum_{i=1}^n (Y_i - \bar{Y}_1)^2 + \sum_{i=1}^m (Y_i - \bar{Y}_2)^2}{n+m-2}$
 
-### Example 3: One-way ANOVA (fixed effects)
+## Example 3: One-way ANOVA (fixed effects)
 
 $Y_{ki} \sim N(\mu_k, \sigma^2)$, $k=1,\ldots,m$, $i=1,\ldots,n$
 
@@ -98,7 +98,7 @@ $H_0: \mu_1 = \cdots = \mu_m$
 
 $Y_{ki} = \mu + \alpha_k + \epsilon_{ki}$, $\sum \alpha_k = 0$
 
-$\bar{Y}_{k\cdot} = \frac{1}{n} \sum_{i=1}^n Y_{ki}$, $\bar{Y} = \frac{1}{mn
+$\bar{Y}_{k\cdot} = \frac{1}{n} \sum_{i=1}^n Y_{ki}$, \$\bar{Y} = \frac{1}{mn
 
 ---
 

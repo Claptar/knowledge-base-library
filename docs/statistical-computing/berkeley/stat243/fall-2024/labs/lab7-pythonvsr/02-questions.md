@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2024/labs/lab7-pythonvsr.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Questions
+> **Converted source.** [`labs/lab7-pythonvsr.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/labs/lab7-pythonvsr.qmd) — berkeley-stat243 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`labs/lab7-pythonvsr.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/labs/lab7-pythonvsr.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Questions
 
 ### Main Questions
 
@@ -60,7 +60,6 @@ look for variables in the environment where a function was defined?
 
 6. Can you create a closure with embedded data, like we did in Python?
 
-
 ### Additional Questions
 
 !!! tip "Tip"
@@ -78,6 +77,10 @@ the equivalent operations in python.
 with the size of the vector (this will indicate if something like hashing is
 going on or if the lookup has to scan through all the elements).
 
+## Acknowledgements
+
+This lab was developed by Zoe Vernon, Andrew Vaughn and James Duncan.
+
 ---
 
-[← Lab7 pythonvsr Part 01 —](01-lab7-pythonvsr-part-01.md) · [Up: contents](index.md) · [Acknowledgements →](03-acknowledgements.md)
+[← Lab7 pythonvsr Part 01 —](01-lab7-pythonvsr-part-01.md) · [Up: contents](index.md)

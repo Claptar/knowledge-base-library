@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/sections/01/intro_git_kn
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# R Sweave
+> **Converted source.** [`sections/01/intro_git_knitr.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/01/intro_git_knitr.Rmd) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`sections/01/intro_git_knitr.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/01/intro_git_knitr.Rmd) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# R Sweave
 
 An alternative to R Markdown is R Sweave.  R Sweave knits R code together in the form of a LaTeX document.  There is an example R Sweave document `example_sweave.Rnw` included in this folder.  This can serve as a template for you if you choose to use this format for your problem sets.
 
@@ -33,6 +33,11 @@ And you should be able to see a file with some default content.
 If you opened an Rnw file before changing the from Sweave to knitr, the default content will contain `\SweaveOpts{concordance=TRUE}` you will need to remove this line of code if you have changed the preferences to generate the PDF
 using knitr.
 
+## Rtex
+The final option is to use the Rtex file format. This file format again uses knitr to combine code chunks with text in the form of a LaTeX document.
+
+For instructions of how to use this see the [dynamic documents](https://github.com/berkeley-scf/tutorial-dynamic-docs) tutorial.  The integration with RStudio is not great, so there is no automated way to open a .Rtex file from RStudio's menu.  Also you will need to use the command line to compile.
+
 ---
 
-[← knitr and R Markdown Files](02-knitr-and-r-markdown-files.md) · [Up: contents](index.md) · [Rtex →](04-rtex.md)
+[← knitr and R Markdown Files](02-knitr-and-r-markdown-files.md) · [Up: contents](index.md) · [Code style →](04-code-style.md)

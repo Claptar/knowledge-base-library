@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/01-intro.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Sample to sample variability
+> **Converted source.** [`theory/01-intro.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/01-intro.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/01-intro.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/01-intro.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Sample to sample variability
 
 National Health NHanes study
 
@@ -30,7 +30,6 @@ glimpse(NHANES)
 ---
 
 ## Data exploration
-
 
 Suppose that we are interested in assessing the difference in direct cholesterol levels between males and females older than 25 years.
 
@@ -158,7 +157,6 @@ t.test(cholLog~Gender,samp,var.equal=TRUE)
 ## Repeat the experiment
 
 If we do the experiment again we select other people and we obtain different results.
-
 
 ```r
 fem<-nhanesSub%>%filter(Gender=="female")%>%sample_n(size=10)

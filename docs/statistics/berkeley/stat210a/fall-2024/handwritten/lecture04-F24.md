@@ -1,86 +1,141 @@
 ---
-title: Lecture 04 — F24
+title: Sufficiency
 source: https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture04-F24.pdf
 source_file: sources/berkeley-stat210a/fall-2024/handwritten/lecture04-F24.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Lecture 04 — F24
+> **Reconstructed by a model.** [`handwritten/lecture04-F24.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture04-F24.pdf) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
-**Source:** [`handwritten/lecture04-F24.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture04-F24.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+# Sufficiency
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
+9/5/2023
 
-9 5 2023 Sufficiency
+### Outline
 
-Ontyreview 2 Sufficiency 3 Factorization Theorem
+1) Review
+2) Sufficiency
+3) Factorization Theorem
 
+---
 
-# Factorizationtheoren
+### Motivation: Coin flipping
 
+Suppose $X_1, \dots, X_n \overset{\text{iid}}{\sim} \text{Bernoulli}(\theta)$
 
-<!-- Start of picture text -->
-Proof discrete X Assume on X<br>wlog µ<br><!-- End of picture text -->
+$\Rightarrow X \sim \prod_i \theta^{X_i}(1-\theta)^{1-X_i}$ on $\{0, 1\}^n$
 
+Then $T(X) = \sum X_i \sim \text{Binom}(n, \theta)$
 
-<!-- Start of picture text -->
-Po X x Tet<br><!-- End of picture text -->
+$= \theta^t (1-\theta)^{n-t} \binom{n}{t}$ on $\{0, \dots, n\}$
 
+$(X_1, \dots, X_n) \to T(X)$ is throwing away data. How do we justify this?
 
-<!-- Start of picture text -->
-Po x x TA t<br>IPO Ttx t<br><!-- End of picture text -->
+In exp. fam. lingo, $T(X)$ is the "sufficient statistic" for $X$. Today we'll see why we call it that.
 
+### Definition
 
-<!-- Start of picture text -->
-h x 1 TG<br>got<br>T t 9H46<br><!-- End of picture text -->
+Let $\mathcal{P} = \{P_\theta : \theta \in \Theta\}$ be a statistical model for data $X$. $T(X)$ is **sufficient** for $\mathcal{P}$ if $P_\theta(X \mid T)$ does not depend on $\theta$.
 
+### Example (cont'd)
 
-<!-- Start of picture text -->
-Assume T x sufficient<br>t 106<br>Take<br>go<br>Po TX t<br>For any O E let<br>10<br>Ʃ<br>h po.cz<br>T z T I<br>P x IT XI TE<br>Then on 0<br>no dep<br>T D h x<br>IPO T TH IP X x IT Tx<br>go<br>Po X x<br><!-- End of picture text -->
+$$P_\theta(X = x \mid T = t) = \frac{P_\theta(X = x, \, T = t)}{P_\theta(T = t)}$$
 
+$$= \frac{\theta^{\sum x_i} (1-\theta)^{n - \sum x_i} \mathbf{1}\{\sum x_i = t\}}{\theta^t (1-\theta)^{n-t} \binom{n}{t}}$$
 
-<!-- Start of picture text -->
-Exampf<br>Families<br>Ex Exponential<br>BCO<br>x do't<br>ha<br>Tante<br>Ey Uniform location family<br>I<br>Xi X U O Oti<br>110 EXE 0 13<br>x 0 1<br>exit<br>po II 190<br>190s Xa 1 Xan E 0 1<br>Xen Xen is sufficient<br><!-- End of picture text -->
+$$= \mathbf{1}\{\sum x_i = t\} / \binom{n}{t}$$
 
-Statistics
+So given $T(X) = t$, $X$ is uniform on all seq.s with $\sum x_i = t$.
 
-Empirical<sup>Distribution</sup>
+---
 
-Order
+## Factorization Theorem
 
+Often, we can identify sufficient stats by inspecting the density.
 
-<!-- Start of picture text -->
-Ex Xi for model<br>Xn'd Po<br>any<br>P Pol Oe on X E IR<br>3<br>to s of X Xi Xn<br>is invariant<br>Po perm<br>All of x are<br>equally likely<br>permutations<br>let smallest<br>order statistics Xcp Xc<br>are sufficient Note Xi Xc É<br>loses information specifically the orig ordering<br>For more we can the<br>X<br>general say<br>empiricaldistribution Pnc E Ex C<br>is sufficient where A I Xie A<br>Ty<br>x<br>PICA<br>É<br>t th<br>track of which values<br>context<br>just keeps<br>t.EE<br>t<br><!-- End of picture text -->
+### Theorem (Factorization Theorem)
 
+Let $\mathcal{P} = \{P_\theta : \theta \in \Theta\}$ be a model with densities $p_\theta(x)$ wrt common measure $\mu$.
 
-<!-- Start of picture text -->
-can<br>x.III.it 5<br>0 x2<br>pkxl Ex<br>Tex x<br>exponential family with<br>TEX EX sufficient<br>I In EX also<br>SCX Xo Xens too<br>Xi Xn too<br>X<br>which can be recovered from which others<br>be compressed<br>these can<br>further<br>fats most<br>the<br>as<br>are<br>d IV These they<br>Are<br>Xi I compressed<br>as possible<br>compressed<br><!-- End of picture text -->
+$T(X)$ is sufficient iff there exist $g_\theta(t)$, $h(x)$ with
 
+$$p_\theta(x) = g_\theta(T(x)) \, h(x)$$
 
-<!-- Start of picture text -->
-If TX is sufficient and TIX f scx<br>Prof<br>then SCX is sufficient<br>TED ha<br>Proof polx<br>go<br>goof sext ha<br>Definition Tex is minimal sufficient if<br>1 TEX is sufficient<br>sufficient SCX<br>2 For other<br>any<br>for some f<br>TX f sax<br>Cars in<br><!-- End of picture text -->
+for $\mu$-almost-every $x$ : $\mu(\{x : p_\theta(x) \neq g_\theta(T(x)) \cdot h(x)\}) = 0$
 
+[Avoids counterexamples from changing $p_{\theta_0}(x_0)$ some $\theta_0, x_0$]
 
-Likelihood Shape is Minimal
+Rigorous proof in Keener 6.4
 
+---
 
-<!-- Start of picture text -->
-Recognizing Minimal Sufficient Statistics<br>TX is minimal sufficient if<br>check<br>don't forget to<br>1 TX sufficient<br>is<br>2 Tx can be recovered from the likelihood<br>shape<br>Keener Than 3.11 formalizes condition 2<br>Lik<br>ix a Lik<br>TG<br>y Tty<br>equivalently<br>lf ix lf constlx Tix<br>Ty<br>iy<br><!-- End of picture text -->
+### **Proof (discrete $\mathcal{X}$):** Assume wlog $\mu = #$ on $\mathcal{X}$
 
+$(\Leftarrow)$
 
-<!-- Start of picture text -->
-EI Laplace location family<br>lx ol<br>Xi x I e<br>i Xn<br>p<br>X ol<br>110<br>nlog2<br>E lx<br>Piecewise linear in O knots at<br>Xc<br>i<br>On<br>Xin Xia<br>Slope n 2k<br>ÉÉM<br>j<br>y<br>1<br>I<br>110 X<br>lo y const X Y same order<br>statistics<br>order stats are minimal suff<br><!-- End of picture text -->
+$$P_\theta(X = x \mid T = t) = \frac{P_\theta(X = x, \, T(x) = t)}{P_\theta(T(x) = t)}$$
 
+$$= \frac{g_\theta(t) \, h(x) \, \mathbf{1}\{T(x) = t\}}{\sum_{T(z) = t} g_\theta(t) \, h(z)}$$
 
-<!-- Start of picture text -->
-fam.s<br>Minimal<br>sufficiency for exp<br>t'd<br>Ak<br>Suppose pyx e h x<br>TIX t<br>X Aly loghlx<br>fly<br>tzTanaoIonst<br>I.it gdI<br>Is TX minimal always sufficient<br>x and same<br>Suppose y give likelihood shape<br>l const<br>xx<br>llyix zip<br>Then Tx Thy const x y for ZE I<br>Thx<br>Tty<br>Tx I<br>Span z 32 ZEE<br>Thy<br>If Span IRS TX is minimal<br>That is if I is not contained in a lower din affiance<br>Otherwise might not be<br>If 5 2 I 8 OER then T x minimal<br>Can we<br>conclude TX is not minimal<br><!-- End of picture text -->
+$(\Rightarrow)$ Assume $T(x)$ sufficient.
 
-Other parameterization<sup>s</sup> Bio E'd't ha Oe poly TIX minimal if Spady10,1 O Oaf y<sup>0,1</sup> A 7 git 05 Éi sufficient
+Take $g_\theta(t) = \sum_{T(x) = t} p_\theta(x)$
+
+$$= P_\theta(T(X) = t)$$
+
+For any $\theta_0 \in \Theta$, let
+
+$$h(x) = p_{\theta_0}(x) \Big/ \sum_{T(z) = T(x)} p_{\theta_0}(z)$$
+
+$$= P_{\theta_0}(X = x \mid T(X) = T(x))$$
+$$\hspace{1.5cm} \nwarrow \text{no dep. on } \theta$$
+
+Then,
+
+$$g_\theta(T(x)) \, h(x) = P_\theta(T = T(x)) \, P(X = x \mid T = T(x))$$
+
+$$= P_\theta(X = x) \quad \square$$
+
+---
+
+## Interpretations of Sufficiency
+
+$X$ is informative about $\theta$ only because its distribution depends on $\theta$.
+
+We can think of the data as being generated in two stages:
+
+1) Generate $T$ : distribution dep. on $\theta$
+2) Generate $X \mid T$ : does not dep. on $\theta$
+
+### Sufficiency Principle
+
+If $T(X)$ is sufficient for $\mathcal{P}$ then any statistical procedure should depend on $X$ only through $T(X)$
+
+In fact, we could throw away $X$ and generate a new $\tilde{X} \sim P(X \mid T)$ (no $\theta$) and it would be just as good as $X$ since $\tilde{X} \sim P_\theta$
+
+In graphical model form:
+
+$\theta \xrightarrow{\text{Step 1}} T(X) \xrightarrow{\text{Step 2}} X$
+
+$\text{Fake Step 2} \searrow \tilde{X}$
+
+- From $T(X) \to X$: No reason to pay any attention
+- From $\tilde{X}$: Just as good as $X$
+
+---
+
+## Examples
+
+### **Ex.** Exponential Families
+
+$$p_\theta(x) = \underbrace{e^{\eta(\theta)' T(x) - B(\theta)}}_{g_\theta(T(x))} \underbrace{h(x)}_{h(x)}$$
+
+### **Ex.** Uniform location family
+
+\$\$X_1, \dots, X_n \overset{\text{iid}}{\sim} U
 
 ---
 

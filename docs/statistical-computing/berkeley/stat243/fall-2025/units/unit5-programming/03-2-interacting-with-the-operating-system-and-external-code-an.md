@@ -6,12 +6,12 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit5-programming.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 2. Interacting with the operating system and external code and configuring Python
+> **Converted source.** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 2. Interacting with the operating system and external code and configuring Python
 
 ## Interacting with the operating system
 
@@ -111,7 +111,6 @@ Here are a variety of tools for interacting with the operating system:
     be a long delay. This can be frustrating, particularly since a
     primary reason you would want to interrupt is when Python runs out of
     memory.
-
 
 ## Interacting with external code
 

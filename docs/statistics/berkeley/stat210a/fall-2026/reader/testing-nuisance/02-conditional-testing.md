@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/testing-nuisance.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Conditional testing
+> **Converted source.** [`reader/testing-nuisance.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/testing-nuisance.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/testing-nuisance.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/testing-nuisance.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Conditional testing
 
 Conditional testing offers very effective and fairly strategy for dealing with nuisance parameters. To introduce the idea, consider a simple problem where we observe a binomial random variable with a random sample size. This is a very common situation: for example, suppose that we conduct a survey asking people which of two candidates they favor, and the number of respondents is a random number.
 
@@ -57,12 +57,11 @@ $$
 
 $$
 \begin{aligned}
-\PP_{\mu,\nu}(X=x \mid X+Y=n) &= \frac{\PP_\mu(X=x)\PP_\nu(Y=x-n)}{\PP_{\mu+\nu}(X+Y=n)}\\[5pt]
-&= \frac{\mu^x\nu^{n-x}e^{-\mu-\nu}}{x!y!} \,\big/\, \frac{n!}{(\mu+\nu)^ne^{-(\mu+\nu)}}\\[5pt]
+\PP_{\mu,\nu}(X=x \mid X+Y=n) &= \frac{\PP_\mu(X=x)\PP_\nu(Y=x-n)}{\PP_{\mu+\nu}(X+Y=n)}[5pt]
+&= \frac{\mu^x\nu^{n-x}e^{-\mu-\nu}}{x!y!} \,\big/\, \frac{n!}{(\mu+\nu)^ne^{-(\mu+\nu)}}[5pt]
 &= \binom{n}{x}\theta^x(1-\theta)^{n-x}.
 \end{aligned}
 $$
-
 
 Since $Y = N-X$ is recoverable from $N$ and $X$, we can simply regard $(N,X)$ as our full data set. Conditioning on $N$ removes the nuisance parameter $\lambda = \mu + \nu$ from the problem, leaving $H_0:\;\mu \leq \nu \iff \theta \leq \frac{1}{2}$, and $H_1:\;\mu > \nu \iff \theta > \frac{1}{2}$.
 

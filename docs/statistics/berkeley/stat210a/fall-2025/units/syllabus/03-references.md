@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2025/units/syllabus.html
 licence: CC BY 4.0
 route: pandoc-html
 fidelity: good
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# References
+> **Converted source.** [`units/syllabus.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/syllabus.html) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.html`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/syllabus.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/units/syllabus.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
+# References
 
 The online notes for this course are self-contained, however it can be helpful to see a different presentation in the following supplementary texts (all links are to public websites or Springer Link):
 

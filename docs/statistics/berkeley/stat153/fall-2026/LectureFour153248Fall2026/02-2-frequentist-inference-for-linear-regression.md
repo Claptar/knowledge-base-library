@@ -3,126 +3,81 @@ title: 2 Frequentist Inference for Linear Regression
 source: https://github.com/berkeley-stat153/fall-2026/blob/1df2e362c312415dc83d910dc9e724e1646fafab/LectureFour153248Fall2026.pdf
 source_file: sources/berkeley-stat153/fall-2026/LectureFour153248Fall2026.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
+
+> **Reconstructed by a model.** [`LectureFour153248Fall2026.pdf`](https://github.com/berkeley-stat153/fall-2026/blob/1df2e362c312415dc83d910dc9e724e1646fafab/LectureFour153248Fall2026.pdf) — berkeley-stat153 · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
 # 2 Frequentist Inference for Linear Regression
 
-**Source:** [`LectureFour153248Fall2026.pdf`](https://github.com/berkeley-stat153/fall-2026/blob/1df2e362c312415dc83d910dc9e724e1646fafab/LectureFour153248Fall2026.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
-
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
-
 The basic ideas behing frequentist inference are as follows:
 
-1. Construct a method for estimating the unknown parameters. In the simple linear regression context, one can use least squares to estimate _β_ 0 _, β_ 1 _, . . . , βm_ . Probably the most popular estimation strategy is Maximum Likelihood Estimation (this requires writing down a likelihood function).
+1. Construct a method for estimating the unknown parameters. In the simple linear regression context, one can use least squares to estimate $\beta_0, \beta_1, \dots, \beta_m$. Probably the most popular estimation strategy is Maximum Likelihood Estimation (this requires writing down a likelihood function).
 
 2. Calculate (exactly or using some approximations) the distribution of the estimators. Use quantiles of the distribution for obtaining interval estimates for the unknown parameters. The quantiles might themselves depend on other unknown parameters (which would then have to be replaced by estimates).
 
-### **2.1 Estimates**
+## 2.1 Estimates
 
-#### **2.1.1 Least Squares Estimates**
+### 2.1.1 Least Squares Estimates
 
 For linear regression, the estimates are obtained by the method of least squares, where the sum of squares
 
+$$S(\beta_0, \beta_1, \dots, \beta_m) = \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_{i1} - \dots - \beta_m x_{im})^2 \tag{2}$$
 
-is minimized over all values of _β_ 0 _, β_ 1 _, . . . , βm_ . The minimizing values _β_<sup>ˆ</sup> 0 _, . . . , β_<sup>ˆ</sup> _m_ are known as least squares estimates.
+is minimized over all values of $\beta_0, \beta_1, \dots, \beta_m$. The minimizing values $\hat{\beta}_0, \dots, \hat{\beta}_m$ are known as least squares estimates.
 
 Using the notation:
 
+$$y = \begin{pmatrix} y_1 \\ \cdot \\ \cdot \\ \cdot \\ y_n \end{pmatrix} \quad X = \begin{pmatrix} 1 & x_{11} & \dots & x_{1m} \\ 1 & x_{21} & \dots & x_{2m} \\ \cdot & \cdot & \dots & \cdot \\ \cdot & \cdot & \dots & \cdot \\ \cdot & \cdot & \dots & \cdot \\ 1 & x_{n1} & \dots & x_{nm} \end{pmatrix} \quad \beta = \begin{pmatrix} \beta_0 \\ \beta_1 \\ \cdot \\ \cdot \\ \cdot \\ \beta_m \end{pmatrix} \quad \hat{\beta} = \begin{pmatrix} \hat{\beta}_0 \\ \hat{\beta}_1 \\ \cdot \\ \cdot \\ \cdot \\ \hat{\beta}_m \end{pmatrix},$$
 
-the sum of squares function _S_ ( _β_ 0 _, . . . , βm_ ) can be written as
+the sum of squares function $S(\beta_0, \dots, \beta_m)$ can be written as
 
-_S_ ( _β_ ) = _∥y − Xβ∥_<sup>2</sup> _._
+$$S(\beta) = \|y - X\beta\|^2.$$
 
-2
+The least squares estimator $\hat{\beta}$ is given by the formula:
 
-The least squares estimator _β_<sup>ˆ</sup> is given by the formula:
+$$\hat{\beta} = (X^T X)^{-1} X^T y. \tag{3}$$
 
+The proof of (3) is as follows. The gradient of $S(\beta)$ is given by
 
-The proof of (3) is as follows. The gradient of _S_ ( _β_ ) is given by
+$$\nabla S(\beta) = \nabla \left[ \|y - X\beta\|^2 \right]$$
+$$= \nabla \left[ (y - X\beta)^T (y - X\beta) \right]$$
+$$= \nabla \left[ y^T y - \beta^T X^T y - y^T X\beta + \beta^T X^T X\beta \right] = 2X^T y - 2X^T X\beta.$$
 
+Because $\hat{\beta}$ minimizes $S(\beta)$, the gradient should equal zero when $\beta = \hat{\beta}$, and this leads to
 
-Because _β_<sup>ˆ</sup> minimizes _S_ ( _β_ ), the gradient should equal zero when _β_ = _β_<sup>ˆ</sup> , and this leads to
+$$X^T (y - X\hat{\beta}) = 0 \implies X^T X\hat{\beta} = X^T y \implies \hat{\beta} = (X^T X)^{-1} X^T y. \tag{4}$$
 
+### 2.1.2 Maximum Likelihood Estimates (MLEs)
 
-#### **2.1.2 Maximum Likelihood Estimates (MLEs)**
+Under the assumption $\epsilon_i \overset{\text{i.i.d}}{\sim} N(0, \sigma^2)$, we can write the likelihood explicitly and maximize it to obtain MLEs. As seen below, the MLE of $\beta_0, \dots, \beta_m$ will coincide with least squares, but the ML method additionally will give an estimate of $\sigma$.
 
-i.i.d Under the assumption _ϵi ∼ N_ (0 _, σ_<sup>2</sup> ), we can write the likelihood explicitly and maximize it to obtain MLEs. As seen below, the MLE of _β_ 0 _, . . . , βm_ will coincide with least squares, but the ML method additionally will give an estimate of _σ_ .
+With the normality assumption $\epsilon_i \overset{\text{i.i.d}}{\sim} N(0, \sigma^2)$, the linear regression model can be rewritten as:
 
-i.i.d With the normality assumption _ϵi ∼ N_ (0 _, σ_<sup>2</sup> ), the linear regression model can be rewritten as:
-
+$$y_i \overset{\text{independent}}{\sim} N(\beta_0 + \beta_1 x_{i1} + \dots + \beta_m x_{im}, \sigma^2). \tag{5}$$
 
 The likelihood then becomes:
 
+$$f_{y_1, \dots, y_n \mid \beta_0, \dots, \beta_m, \sigma}(y_1, \dots, y_n) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sigma} \exp\left(-\frac{(y_i - \beta_0 - \beta_1 x_{i1} - \dots - \beta_m x_{im})^2}{2\sigma^2}\right)$$
+$$= (2\pi)^{-n/2} \sigma^{-n} \exp\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_{i1} - \dots - \beta_m x_{im})^2\right)$$
+$$= (2\pi)^{-n/2} \sigma^{-n} \exp\left(-\frac{S(\beta_0, \dots, \beta_m)}{2\sigma^2}\right) \tag{6}$$
 
-Recall _S_ ( _β_ 0 _, . . . , βm_ ) above is the sum of squares defined in (2). To write this likelihood, we are assuming that _x_ 1 _, . . . , xn_ are fixed. This assumption is fine if _xi_ = _i_ (regression with time as covariate) but not strictly true when _xi_ = _yi−_ 1 (auto-regression). We shall see how it is still approximately true in the case of AutoRegression later.
+Recall $S(\beta_0, \dots, \beta_m)$ above is the sum of squares defined in (2). To write this likelihood, we are assuming that $x_1, \dots, x_n$ are fixed. This assumption is fine if $x_i = i$ (regression with time as covariate) but not strictly true when $x_i = y_{i-1}$ (auto-regression). We shall see how it is still approximately true in the case of AutoRegression later.
 
 Another way to write the likelihood is to note that (5) is equivalent to:
 
+$$y \sim N_n(X\beta, \sigma^2 I_n). \tag{7}$$
 
-In other words, the _n_ -dimensional vector _y_ is multivariate normal with mean _Xβ_ and covariance _σ_<sup>2</sup> _In_ . Recall that the density of the multivariate normal _y ∼ Nn_ ( _µ,_ Σ) is given by:
+In other words, the $n$-dimensional vector $y$ is multivariate normal with mean $X\beta$ and covariance $\sigma^2 I_n$. Recall that the density of the multivariate normal $y \sim N_n(\mu, \Sigma)$ is given by:
 
+$$\frac{1}{(2\pi)^{n/2}} \frac{1}{\sqrt{\det \Sigma}} \exp\left(-\frac{1}{2}(y - \mu)^T \Sigma^{-1} (y - \mu)\right).$$
 
 Thus the density corresponding to (7) is:
 
-
-3
-
-which is the same as (6) because _S_ ( _β_ ) = _∥y − Xβ∥_<sup>2</sup> .
-
-The Maximum Likelihood Estimates of the parameters _β, σ_ are obtained by maximizing the likelihood. As maximizing a function is equivalent to maximizing its logarithm, we attempt to maximize the log-likelihood which leads to an easier maximization. The log-likelihood is:
-
-
-To maximize the log-likelihood, we simply take derivatives with respect to the unknown parameters _β, σ_ and equate those to zero:
-
-
-The first equation coincide with the corresponding equations (4) for minimizing least squares. This shows that the MLE for _β_ coincides with the least squares estimators (3). The MLE for _σ_ is given by the third equation above (with _β_ replaced by _β_<sup>ˆ</sup> respectively):
-
-
-i.i.d To summarize, under the assumption of normality on the errors _ϵi ∼ N_ (0 _, σ_<sup>2</sup> ), the MLE of _β_ coincides with the least squares estimator (3), and the MLE of _σ_ is given by (8).
-
-### **2.2 Distribution of Estimates**
-
-Here we need to calculate the distribution of the estimates. For _β_<sup>ˆ</sup> (given by (3)), using the fact (7) we can write
-
-_β_ ˆ = ( _X_<sup>_T_</sup> _X_ )<sup>_−_1</sup> _X_<sup>_T_</sup> _y ∼ N_ (( _X_<sup>_T_</sup> _X_ )<sup>_−_1</sup> _X_<sup>_T_</sup> _Xβ, σ_<sup>2</sup> ( _X_<sup>_T_</sup> _X_ )<sup>_−_1</sup> _X_<sup>_T_</sup> _X_ ( _X_<sup>_T_</sup> _X_ )<sup>_−_1</sup> ) = _N_ ( _β, σ_<sup>2</sup> ( _X_<sup>_T_</sup> _X_ )<sup>_−_1</sup> ) _._ Here we used the following fact:
-
-
-Because _β_<sup>ˆ</sup> _∼ N_ ( _β, σ_<sup>2</sup> ( _X_<sup>_T_</sup> _X_ )<sup>_−_1</sup> ), it is clear that _β_<sup>ˆ</sup> is unbiased for _β_ .
-
-The distribution of _σ_ ˆMLE is given by:
-
-
-where _χ_<sup>2</sup> _n−m−_ 1<sup>isthechi-squareddistributionwith</sup><sup>_n −m −_1degreesoffreedom.Wewill</sup> not go into the proof of this fact.
-
-The mean of the chi-squared distribution equals its degrees of freedom which implies that
-
-
-4
-
-Therefore the MLE for _σ_<sup>2</sup> is not unbiased (in contrast, the MLEs _β_<sup>ˆ</sup> 0 and _β_<sup>ˆ</sup> 1 are unbiased). It is easy to correct the bias leading to the following unbiased estimator of _σ_<sup>2</sup> :
-
-
-Usage of ˆ _σ_ unbiased is much more common than that of ˆ _σ_ MLE (note that ˆ _σ_ unbiased is not unbiased for _σ_ ; rather the square of _σ_ ˆunbiased is unbiased for _σ_<sup>2</sup> ).
-
-Another fact is that _β_<sup>ˆ</sup> and _σ_ ˆunbiased<sup>2areindependent.</sup>
-
-These facts are used to derive the following confidence interval for a component _βj_ of _β_ :
-
-
-where _tn−m−_ 1 _,α/_ 2 is the positive point such that P _{tn−m−_ 1 _≥ tn−m−_ 1 _,α/_ 2 _}_ = _α/_ 2 (i.e., the _t_ -distribution with _n − m −_ 1 degrees of freedom assigns probability mass _α/_ 2 to the right of _tn−m−_ 1 _,α/_ 2). Also ( _X_<sup>_T_</sup> _X_ )<sup>_j_+1</sup><sup>_,j_+1</sup> is the ( _j_ + 1 _, j_ + 1)-th diagonal entry of ( _X_<sup>_T_</sup> _X_ )<sup>_−_1</sup> . Note that _β_<sup>ˆ</sup> _∼ N_ ( _β, σ_<sup>2</sup> ( _X_<sup>_T_</sup> _X_ )<sup>_−_1</sup> ) so that _β_<sup>ˆ</sup> _j ∼ N_ ( _βj, σ_<sup>2</sup> ( _X_<sup>_T_</sup> _X_ )<sup>_j_+1</sup><sup>_,j_+1</sup> ) (the index is _j_ + 1 instead of _j_ on the right hand side because the first component of _β_<sup>ˆ</sup> is _β_<sup>ˆ</sup> 0 and not _β_<sup>ˆ</sup> 1).
-
-(9) is a valid confidence interval because:
-
-
-where _tn−m−_ 1 is the _t_ -distribution with _n − m −_ 1 degrees of freedom.
-
-This section on deriving the distributions of the frequentist estimates has been discussed for completeness. We will not be using these facts or ideas in this course.
+\$\$(2\pi)^{-n/2} \sigma^{-n} \exp\left(-\frac{1}{2}(y - X\beta)^T (\sigma^2 I_n)^{-1} (y - X\beta)\right) = (2\pi)^{-n/2} \sigma^{-n
 
 ---
 
-[← 1 Multiple Linear Regression](01-1-multiple-linear-regression.md) · [Up: contents](index.md) · [3 Bayesian Inference for Linear Regression →](03-3-bayesian-inference-for-linear-regression.md)
+[← 1 Multiple Linear Regression](01-1-multiple-linear-regression.md) · [Up: contents](index.md)

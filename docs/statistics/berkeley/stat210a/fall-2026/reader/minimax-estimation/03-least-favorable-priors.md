@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/minimax-estimation.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Least Favorable Priors
+> **Converted source.** [`reader/minimax-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/minimax-estimation.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/minimax-estimation.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/minimax-estimation.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Least Favorable Priors
 
 Since $r_\Lambda$ for any prior $\Lambda$ lower-bounds the minimax risk, we have $\sup_\Lambda r_\Lambda \leq r^*$. If a prior $\Lambda^*$ attains this supremum, we call it **least favorable prior**. When the supremum is not attainable by any prior, we can still attain it in the limit by defining a sequence of priors $\Lambda_1,\Lambda_2,\ldots$ with $r_{\Lambda_n}\to \sup_\Lambda r_\Lambda$; such a sequence is called a least favorable sequence of priors.
 
@@ -81,7 +81,7 @@ Thus, the MSE is
 $$
 \begin{aligned}
 \text{MSE}(\theta;\delta_\alpha)
-&= \frac{\alpha^2(1-2\theta)^2+ n\theta(1-\theta)}{(n+2\alpha)^{2}} \\[7pt]
+&= \frac{\alpha^2(1-2\theta)^2+ n\theta(1-\theta)}{(n+2\alpha)^{2}} [7pt]
 &= \frac{\alpha^2+(n-4\alpha^2)\theta(1-\theta)}{(n+2\alpha)^{2}}.
 \end{aligned}
 $$
@@ -115,6 +115,34 @@ abline(h=n/4/(n+sqrt(n))^2)
 legend("bottomright",lty=1,col=1:2,legend=c("Minimax estimator","UMVU estimator"))
 ```
 
+## Least Favorable Sequence
+
+Sometimes there is no least favorable prior, because $\sup_\Lambda r_\Lambda$ is not attainable, but a sequence $\Lambda_1,\Lambda_2,\ldots$ is least favorable in the sense defined above, that $\lim_n r_{\Lambda_n} = \sup_\Lambda r_\Lambda$.
+
+**Theorem:** Suppose $\delta$ is an estimator and $\Lambda_1,\Lambda_2,\ldots$ is a sequence of priors such that
+$$
+\sup_\theta R(\theta;\delta) = \lim_{n\to\infty} r_{\Lambda_n}.
+$$
+Then $\delta$ is minimax, the sequence is least favorable, and $r^* = \lim_n r_{\Lambda_n}$.
+
+*Proof:* Our proof follows the same structure as our previous theorem. For another estimator $\tilde\delta$, and any $n$,
+$$
+\begin{aligned}
+\sup_\theta R(\theta;\tilde\delta)
+&\geq \int R(\theta; \tilde\delta)\,d\Lambda_n(\theta)\\
+&\geq r_{\Lambda_n}
+\end{aligned}
+$$
+As a result, we have
+$$
+\sup_\theta R(\theta;\tilde\delta) \geq \lim_{n\to\infty} r_{\Lambda_n} = \sup_\theta R(\theta;\delta),
+$$
+and $\delta$ is minimax. Moreover,
+$$
+\lim_{n\to\infty} r_{\Lambda_n} \leq r^* \leq \sup_\theta R(\theta;\delta) = \lim_{n\to\infty} r_{\Lambda_n},
+$$
+so the sequence is least favorable and $\lim_{n\to\infty} r_{\Lambda_n}=r^*$. $\blacksquare$
+
 ---
 
-[← Game theoretic interpretation](02-game-theoretic-interpretation.md) · [Up: contents](index.md) · [Least Favorable Sequence →](04-least-favorable-sequence.md)
+[← Game theoretic interpretation](02-game-theoretic-interpretation.md) · [Up: contents](index.md) · [Bounding the minimax risk →](04-bounding-the-minimax-risk.md)

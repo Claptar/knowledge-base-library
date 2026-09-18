@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/spring-2026/public/lectures/09_nonlinear_r
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Lecture 9 - Nonlinear Regression
+> **Converted source.** [`public/lectures/09_nonlinear_regression.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/09_nonlinear_regression.md) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`public/lectures/09_nonlinear_regression.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/09_nonlinear_regression.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# Lecture 9 - Nonlinear Regression
 
 * **Reading**: Chapter 2 (somewhat), Chapter 4.1 – Shumway and Stoffer (this week will mostly be outside of Shumway and Stoffer, though some of these concepts will be helpful. We'll preview content from Chapter 4 that we will explore in more detail later).
 * [Slides](09_nonlinear_regression_notes/index.md)

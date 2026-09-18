@@ -5,62 +5,153 @@ source_file: sources/berkeley-stat210a/fall-2025/reader/testing-interpretation.h
 licence: CC BY 4.0
 route: pandoc-html
 fidelity: good
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/testing-interpretation.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/testing-interpretation.html) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.html`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # p-Values
 
-**Source:** [`reader/testing-interpretation.html`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/reader/testing-interpretation.html) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.html` (good)
-
 ## Informal definition {.anchored anchor-id="informal-definition"}
 
-The <span class="math inline">\$p\$</span>-value <span class="math inline">\$p(X)\$</span> is a measure of whether our data set would have led us to reject the null at various different <span class="math inline">\$\\alpha\$</span> values. If we are rejecting for large values of a test statistic <span class="math inline">\$T(X)\$</span> then this boils down to asking how extreme <span class="math inline">\$T(X)\$</span> is relative to its null distribution, leading to the familiar informal definition of the <span class="math inline">\$p\$</span>-value:
+The $p$-value $p(X)$ is a measure of whether our data set would have led us to reject the null at various different $\alpha$ values. If we are rejecting for large values of a test statistic $T(X)$ then this boils down to asking how extreme $T(X)$ is relative to its null distribution, leading to the familiar informal definition of the $p$-value:
 
-**Definition (Informal):** The <span class="math inline">\$p\$</span>-value is the probability for a test statistic <span class="math inline">\$T(X)\$</span> to be at least as large as its realized value, under the assumption that the null is true. That is, for a fixed value <span class="math inline">\$x\\in\\cX\$</span>, the <span class="math inline">\$p\$</span>-value <span class="math inline">\$p(x)\$</span> should be <span class="math inline">\$\\PP\_{H\_0}(T(X)\\geq T(x))\$</span>, or more precisely <span class="math display">\\$$ p(x) = \\sup\_{\\theta\\in\\Theta\_0} \\PP\_{\\theta}(T(X) \\geq T(x)), \\$$</span> allowing for the possibility of a composite null. Then the random variable <span class="math inline">\$p(X)\$</span> is the <span class="math inline">\$p\$</span>-value.
+**Definition (Informal):** The $p$-value is the probability for a test statistic $T(X)$ to be at least as large as its realized value, under the assumption that the null is true. That is, for a fixed value $x\in\cX$, the $p$-value $p(x)$ should be $\PP_{H_0}(T(X)\geq T(x))$, or more precisely
 
-**Example: Binomial** If <span class="math inline">\$X\\sim \\text{Binom}(n,\\theta)\$</span> and we want to test <span class="math inline">\$H\_0:\\;\\theta\\leq 0.5\$</span> vs <span class="math inline">\$H\_0:\\;\\theta &gt; 0.5\$</span>, the UMP test rejects for large values of <span class="math inline">\$X\$</span>. Thus, the <span class="math inline">\$p\$</span>-value is <span class="math display">\\$$ p(x) = \\sup\_{\\theta\\leq 0.5} \\PP\_\\theta(X\\geq x) = \\PP\_{0.5}(X\\geq x), \\$$</span> since <span class="math inline">\$X\$</span> is stochastically increasing and the probability is therefore maximized at the boundary.
+$$
+p(x) = \sup_{\theta\in\Theta_0} \PP_{\theta}(T(X) \geq T(x)),
+$$
 
-**Example: <span class="math inline">\$Z\$</span>-test** If <span class="math inline">\$X\\sim N(\\theta,1)\$</span> and we are testing <span class="math inline">\$H\_0:\\;\\theta = 0\$</span> vs <span class="math inline">\$H\_1:\\;\\theta \\neq 0\$</span>, the two-sided test rejects for large <span class="math inline">\$T(X)=\|X\|\$</span>. The two-sided <span class="math inline">\$p\$</span>-value is therefore <span class="math display">\\$$ p(x) = \\PP\_0(\|X\|&gt;\|x\|) = 2(1-\\Phi(\|x\|)). \\$$</span>
+ allowing for the possibility of a composite null. Then the random variable $p(X)$ is the $p$-value.
+
+**Example: Binomial** If $X\sim \text{Binom}(n,\theta)$ and we want to test $H_0:\;\theta\leq 0.5$ vs $H_0:\;\theta > 0.5$, the UMP test rejects for large values of $X$. Thus, the $p$-value is
+
+$$
+p(x) = \sup_{\theta\leq 0.5} \PP_\theta(X\geq x) = \PP_{0.5}(X\geq x),
+$$
+
+ since $X$ is stochastically increasing and the probability is therefore maximized at the boundary.
+
+**Example: $Z$-test** If $X\sim N(\theta,1)$ and we are testing $H_0:\;\theta = 0$ vs $H_1:\;\theta \neq 0$, the two-sided test rejects for large $T(X)=|X|$. The two-sided $p$-value is therefore
+
+$$
+p(x) = \PP_0(|X|>|x|) = 2(1-\Phi(|x|)).
+$$
 
 ## Formal definition {.anchored anchor-id="formal-definition"}
 
-Not all tests are easily characterized as rejecting when some <span class="math inline">\$T(X)\$</span> is above a threshold; for example, a two-sided UMPU test rejects when some <span class="math inline">\$T(X)\$</span> is either large or small. Thus it is useful to have a more general definition:
+Not all tests are easily characterized as rejecting when some $T(X)$ is above a threshold; for example, a two-sided UMPU test rejects when some $T(X)$ is either large or small. Thus it is useful to have a more general definition:
 
-Assume we are testing <span class="math inline">\$H\_0:\\;\\theta\\in\\Theta\_0\$</span> vs <span class="math inline">\$H\_1:\\;\\theta\\in\\Theta\_1\$</span> in a model <span class="math inline">\$\\cP\$</span> based on data <span class="math inline">\$X\$</span>, and that we have a test <span class="math inline">\$\\phi\_\\alpha\$</span> for every significance <span class="math inline">\$\\alpha \\in $$0,1$$\$</span>: <span class="math display">\\$$ \\sup\_{\\theta\\in\\Theta\_0} \\EE\_\\theta \\phi\_\\alpha(X) \\leq \\alpha. \\$$</span> Assume further that <span class="math inline">\$\\phi\_{\\alpha}\$</span> is non-decreasing in <span class="math inline">\$\\alpha\$</span> (when the test rejects for smaller/stricter <span class="math inline">\$\\alpha\$</span>, it also rejects for larger/more lenient <span class="math inline">\$\\alpha\$</span>): <span class="math display">\\$$ \\phi\_{\\alpha\_1}(X) \\leq \\phi\_{\\alpha\_2}(X) \\quad \\text{ if } \\alpha\_1\\leq \\alpha\_2. \\$$</span>
+Assume we are testing $H_0:\;\theta\in\Theta_0$ vs $H_1:\;\theta\in\Theta_1$ in a model $\cP$ based on data $X$, and that we have a test $\phi_\alpha$ for every significance $\alpha \in [0,1]$:
 
-**Definition (Formal):** Then, we can define the <span class="math inline">\$p\$</span>-value with respect to this family of tests as the value of <span class="math inline">\$\\alpha\$</span> for which the test barely rejects: <span class="math display">\\$$ p(x) = \\sup \\{\\alpha:\\; \\phi\_\\alpha(x) &lt; 1\\} = \\inf \\{\\alpha:\\; \\phi\_\\alpha(x) = 1\\}, \\$$</span> and in terms of the rejection regions: <span class="math display">\\$$ p(x) = \\sup \\{\\alpha:\\; x \\notin R\_\\alpha\\} = \\inf\\{\\alpha:\\; x \\in R\_\\alpha\\}. \\$$</span>
+$$
+\sup_{\theta\in\Theta_0} \EE_\theta \phi_\alpha(X) \leq \alpha.
+$$
 
-**Example: Exponential** Suppose that we are testing <span class="math inline">\$H\_0:\\;\\theta=1\$</span> vs <span class="math inline">\$H\_1:\\;\\theta\\neq 1\$</span> in the model <span class="math inline">\$X \\sim \\text{Exp}(\\theta)\$</span>. We can use either the equal-tailed test, or the UMPU test. Consider a value <span class="math inline">\$x&gt;1\$</span>, which will be in the acceptance region (for sufficiently small <span class="math inline">\$\\alpha\$</span>) or the right lobe of the rejection region (for sufficiently large <span class="math inline">\$\\alpha\$</span>). For either test, the acceptance region’s right boundary decreases continuously with <span class="math inline">\$\\alpha\$</span>, so the <span class="math inline">\$p\$</span>-value is the unique value of <span class="math inline">\$\\alpha\$</span> for which <span class="math inline">\$x\$</span> is on the boundary. For the equal-tailed test, we have at that <span class="math inline">\$\\alpha\$</span> value <span class="math display">\\$$ \\alpha/2 = \\PP\_1(X&gt;x) = e^{-x}, \\$$</span> so <span class="math inline">\$p(x) = 2e^{-x}\$</span>. For the UMPU test <span class="math inline">\$p(x)\$</span> is defined implicitly as the value of <span class="math inline">\$\\alpha\$</span> for which <span class="math inline">\$c\_2(\\alpha) = x\$</span>, which we can solve for numerically.
+ Assume further that $\phi_{\alpha}$ is non-decreasing in $\alpha$ (when the test rejects for smaller/stricter $\alpha$, it also rejects for larger/more lenient $\alpha$):
 
-This formal definition reduces to our informal definition if the test <span class="math inline">\$\\phi\_\\alpha\$</span> rejects for large <span class="math inline">\$T(X)\$</span> and the critical threshold is tight:
+$$
+\phi_{\alpha_1}(X) \leq \phi_{\alpha_2}(X) \quad \text{ if } \alpha_1\leq \alpha_2.
+$$
 
-**Proposition:** Assume that for each <span class="math inline">\$\\alpha\$</span>, we reject for large <span class="math inline">\$T(X)\$</span>, taking the threshold <span class="math inline">\$c\_\\alpha\$</span> as small as possible while achieving Type I error control:$$^1$$ <span class="math display">\\$$ c\_\\alpha = \\min \\left\\{c:\\; \\PP\_\\theta(T(X) &gt; c) \\leq \\alpha, \\text{ for all } \\theta\\in\\Theta\_0 \\right\\}, \\$$</span> noting that the minimum is well-defined because (complementary) CDFs are right-continuous.
+**Definition (Formal):** Then, we can define the $p$-value with respect to this family of tests as the value of $\alpha$ for which the test barely rejects:
+
+$$
+p(x) = \sup \{\alpha:\; \phi_\alpha(x) < 1\} = \inf \{\alpha:\; \phi_\alpha(x) = 1\},
+$$
+
+ and in terms of the rejection regions:
+
+$$
+p(x) = \sup \{\alpha:\; x \notin R_\alpha\} = \inf\{\alpha:\; x \in R_\alpha\}.
+$$
+
+**Example: Exponential** Suppose that we are testing $H_0:\;\theta=1$ vs $H_1:\;\theta\neq 1$ in the model $X \sim \text{Exp}(\theta)$. We can use either the equal-tailed test, or the UMPU test. Consider a value $x>1$, which will be in the acceptance region (for sufficiently small $\alpha$) or the right lobe of the rejection region (for sufficiently large $\alpha$). For either test, the acceptance region’s right boundary decreases continuously with $\alpha$, so the $p$-value is the unique value of $\alpha$ for which $x$ is on the boundary. For the equal-tailed test, we have at that $\alpha$ value
+
+$$
+\alpha/2 = \PP_1(X>x) = e^{-x},
+$$
+
+ so $p(x) = 2e^{-x}$. For the UMPU test $p(x)$ is defined implicitly as the value of $\alpha$ for which $c_2(\alpha) = x$, which we can solve for numerically.
+
+This formal definition reduces to our informal definition if the test $\phi_\alpha$ rejects for large $T(X)$ and the critical threshold is tight:
+
+**Proposition:** Assume that for each $\alpha$, we reject for large $T(X)$, taking the threshold $c_\alpha$ as small as possible while achieving Type I error control:[^1]
+
+$$
+c_\alpha = \min \left\{c:\; \PP_\theta(T(X) > c) \leq \alpha, \text{ for all } \theta\in\Theta_0 \right\},
+$$
+
+ noting that the minimum is well-defined because (complementary) CDFs are right-continuous.
 
 At the boundary, we either
 
-- (non-randomized <span class="math inline">\$\\phi\$</span>) reject if <span class="math inline">\$\\PP\_\\theta(T(X) \\geq c\_\\alpha) \\leq \\alpha\$</span> for all <span class="math inline">\$\\theta\\in\\Theta\_0\$</span>, or
+- (non-randomized $\phi$) reject if $\PP_\theta(T(X) \geq c_\alpha) \leq \alpha$ for all $\theta\in\Theta_0$, or
 
-- (randomized <span class="math inline">\$\\phi\$</span>) reject with probability <span class="math display">\\$$ \\gamma\_\\alpha = \\max\\left\\{ \\gamma:\\; \\PP\_\\theta(T &gt; c\_\\alpha) + \\gamma\\PP\_\\theta(T = c\_\\alpha) \\leq \\alpha, \\forall \\theta\\in\\Theta\_0\\right\\} \\$$</span>
+- (randomized $\phi$) reject with probability
 
-Then the two definitions of <span class="math inline">\$p(x)\$</span> coincide.
+$$
+\gamma_\alpha = \max\left\{ \gamma:\; \PP_\theta(T > c_\alpha) + \gamma\PP_\theta(T = c_\alpha)  \leq \alpha, \forall \theta\in\Theta_0\right\}
+$$
 
-*Proof:* In the non-randomized case, define <span class="math inline">\$\\gamma\_\\alpha = 1\$</span> if we reject at the boundary and <span class="math inline">\$0\$</span> otherwise.
+Then the two definitions of $p(x)$ coincide.
 
-Let <span class="math inline">\$p\_1(x) = \\sup\_{\\theta\\in\\Theta\_0} \\PP\_\\theta(T(X)\\geq T(x))\$</span>, and <span class="math inline">\$p\_2(x) = \\sup\\{\\alpha:\\; \\phi\_\\alpha(x) &lt; 1\\}\$</span>. We have <span class="math display">\\$$ \\begin{aligned} p\_1(x) &gt; \\alpha &\\iff \\PP\_\\theta(T(X) \\geq T(x)) &gt; \\alpha, \\text{ for some } \\theta\\in\\Theta\_0\\\\ &\\iff c\_\\alpha &gt; x, \\text{ or } c\_\\alpha = x \\text{ and } \\gamma\_\\alpha &lt; 1\\\\ &\\iff \\phi\_\\alpha(x) &lt; 1. \\end{aligned} \\$$</span> But then <span class="math display">\\$$ p\_2(x) = \\sup\\{\\alpha:\\; p\_1(x) &gt; \\alpha\\} = p\_1(x), \\$$</span> as desired.<span class="math inline">\$\\blacksquare\$</span>
+*Proof:* In the non-randomized case, define $\gamma_\alpha = 1$ if we reject at the boundary and $0$ otherwise.
+
+Let $p_1(x) = \sup_{\theta\in\Theta_0} \PP_\theta(T(X)\geq T(x))$, and $p_2(x) = \sup\{\alpha:\; \phi_\alpha(x) < 1\}$. We have
+
+$$
+\begin{aligned}
+p_1(x) > \alpha
+&\iff \PP_\theta(T(X) \geq T(x)) > \alpha, \text{ for some } \theta\in\Theta_0\\
+&\iff c_\alpha > x, \text{ or } c_\alpha = x \text{ and } \gamma_\alpha < 1\\
+&\iff \phi_\alpha(x) < 1.
+\end{aligned}
+$$
+
+ But then
+
+$$
+p_2(x) = \sup\{\alpha:\; p_1(x) > \alpha\} = p_1(x),
+$$
+
+ as desired.$\blacksquare$
 
 ## Super-uniformity {.anchored anchor-id="super-uniformity"}
 
-The <span class="math inline">\$p\$</span>-value for any valid test <span class="math inline">\$\\phi\_\\alpha\$</span> is **super-uniform** on the null, meaning it is stochastically larger than uniform: <span class="math display">\\$$ \\PP\_\\theta( p(X) \\leq \\alpha ) \\leq \\alpha, \\text{ for all } \\theta\\in\\Theta\_0. \\$$</span> Note that <span class="math inline">\$p(x) \\leq \\alpha\$</span> if and only <span class="math inline">\$\\phi\_{\\alpha+\\ep}(x) = 1\$</span>, for all <span class="math inline">\$\\ep&gt;0\$</span>. Thus, for <span class="math inline">\$\\theta \\in \\Theta\_0\$</span>, we have <span class="math display">\\$$ \\begin{aligned} \\PP\_\\theta(p(X) \\leq \\alpha) &= \\PP\_\\theta\\left( \\phi\_{\\alpha+\\ep}(X) = 1, \\text{ for all } \\ep&gt;0 \\right)\\\\ &= \\lim\_{\\ep \\downarrow 0} \\PP\_\\theta\\left(\\phi\_{\\alpha+\\ep}(X) = 1\\right)\\\\ &\\leq \\lim\_{\\ep \\downarrow 0} \\EE\_\\theta \\left\[ \\phi\_{\\alpha+\\ep}(X)\\right$$\\\\ &\\leq \\alpha \\end{aligned} \\\]</span>
+The $p$-value for any valid test $\phi_\alpha$ is **super-uniform** on the null, meaning it is stochastically larger than uniform:
 
-## Interpreting the <span class="math inline">\$p\$</span>-value {.anchored anchor-id="interpreting-the-p-value"}
+$$
+\PP_\theta( p(X) \leq \alpha ) \leq \alpha, \text{ for all } \theta\in\Theta_0.
+$$
 
-One important thing to remember when we interpret the <span class="math inline">\$p\$</span>-value that it depends on which statistical test we choose (as well as the data, the model, and the null hypothesis). When the null and/or alternative hypothesis are composite, there may be a range of different but justifiable choices of test. In that case, it would be a mistake to think of the <span class="math inline">\$p\$</span>-value for any one of those tests as the canonical summary of the evidence in the data against the null.
+ Note that $p(x) \leq \alpha$ if and only $\phi_{\alpha+\ep}(x) = 1$, for all $\ep>0$. Thus, for $\theta \in \Theta_0$, we have
 
-**Example: (Multivariate Gaussian)** Suppose we observe <span class="math inline">\$X \\sim N\_d(\\mu, I\_d)\$</span> and wish to test the point null <span class="math inline">\$H\_0: \\mu = 0\$</span> against the composite alternative <span class="math inline">\$H\_1: \\mu \\neq 0\$</span>. For <span class="math inline">\$d \\geq 1\$</span>, the alternative is bi-directional, but most analysts will agree on the standard two-sided test. By constrast, for <span class="math inline">\$d\\geq 2\$</span>, the alternative is *multidirectional*, so there are different tests we could choose depending on our beliefs about which alternatives are more likely than others; the higher the dimension of the problem, the higher the stakes of this choice.
+$$
+\begin{aligned}
+\PP_\theta(p(X) \leq \alpha)
+&= \PP_\theta\left( \phi_{\alpha+\ep}(X) = 1, \text{ for all } \ep>0 \right)\\
+&= \lim_{\ep \downarrow 0} \PP_\theta\left(\phi_{\alpha+\ep}(X) = 1\right)\\
+&\leq \lim_{\ep \downarrow 0} \EE_\theta \left[ \phi_{\alpha+\ep}(X)\right]\\
+&\leq \alpha
+\end{aligned}
+$$
 
-For example, if we want our test to be invariant to the direction <span class="math inline">\$\\frac{\\theta}{\\\|\\theta\\\|}\$</span>, we should reject for large values of the two-norm <span class="math inline">\$\\\|X\\\|\_2\$</span>. But suppose instead we expect <span class="math inline">\$\\theta\$</span> to be sparse if it is nonzero; then <span class="math inline">\$\\\|X\\\|\_\\infty = \\max\_{i=1}^d \|X\_i\|\$</span> might be a much better choice. The first test is called the <span class="math inline">\$\\chi^2\$</span> test, because <span class="math inline">\$\\\|X\\\|\_2^2\$</span> has a <span class="math inline">\$\\chi\_d^2\$</span> distribution under the null, and the second is called the max test; each dominates the other in different sparsity regimes.
+## Interpreting the $p$-value {#interpreting-the-math101-value .anchored anchor-id="interpreting-the-p-value"}
 
-The widget below shows the power curves as a function of <span class="math inline">\$\\theta\$</span> when <span class="math inline">\$\\mu\$</span> is a <span class="math inline">\$k\$</span>-sparse unit vector with equal nonzero entries and total norm <span class="math inline">\$\\\|\\mu\\\|\_2=\\theta\$</span>: <span class="math display">\\$$ \\mu = \\theta \\cdot \\frac{1}{\\sqrt{k}} \\binom{1\_k}{0\_{d-k}}, \\$$</span> where <span class="math inline">\$1\_n\$</span> and <span class="math inline">\$0\_n\$</span> are respectively the all-ones and all-zeros vectors in <span class="math inline">\$\\RR^n\$</span>. By playing with <span class="math inline">\$d\$</span> and <span class="math inline">\$k\$</span> you can see that the max-test outperforms the <span class="math inline">\$\\chi^2\$</span> test when <span class="math inline">\$\\mu\$</span> is sufficiently sparse, but the reverse is true if <span class="math inline">\$\\mu\$</span> is dense; and the differences become more pronounced as <span class="math inline">\$d\$</span> grows larger.
+One important thing to remember when we interpret the $p$-value that it depends on which statistical test we choose (as well as the data, the model, and the null hypothesis). When the null and/or alternative hypothesis are composite, there may be a range of different but justifiable choices of test. In that case, it would be a mistake to think of the $p$-value for any one of those tests as the canonical summary of the evidence in the data against the null.
+
+**Example: (Multivariate Gaussian)** Suppose we observe $X \sim N_d(\mu, I_d)$ and wish to test the point null $H_0: \mu = 0$ against the composite alternative $H_1: \mu \neq 0$. For $d \geq 1$, the alternative is bi-directional, but most analysts will agree on the standard two-sided test. By constrast, for $d\geq 2$, the alternative is *multidirectional*, so there are different tests we could choose depending on our beliefs about which alternatives are more likely than others; the higher the dimension of the problem, the higher the stakes of this choice.
+
+For example, if we want our test to be invariant to the direction $\frac{\theta}{\|\theta\|}$, we should reject for large values of the two-norm $\|X\|_2$. But suppose instead we expect $\theta$ to be sparse if it is nonzero; then $\|X\|_\infty = \max_{i=1}^d |X_i|$ might be a much better choice. The first test is called the $\chi^2$ test, because $\|X\|_2^2$ has a $\chi_d^2$ distribution under the null, and the second is called the max test; each dominates the other in different sparsity regimes.
+
+The widget below shows the power curves as a function of $\theta$ when $\mu$ is a $k$-sparse unit vector with equal nonzero entries and total norm $\|\mu\|_2=\theta$:
+
+$$
+\mu = \theta \cdot \frac{1}{\sqrt{k}} \binom{1_k}{0_{d-k}},
+$$
+
+ where $1_n$ and $0_n$ are respectively the all-ones and all-zeros vectors in $\RR^n$. By playing with $d$ and $k$ you can see that the max-test outperforms the $\chi^2$ test when $\mu$ is sufficiently sparse, but the reverse is true if $\mu$ is dense; and the differences become more pronounced as $d$ grows larger.
 
 ``` {.sourceCode .js .code-with-copy}
 normalCDF = (x) => {
@@ -178,7 +269,7 @@ Plot.plot({
 })
 ```
 
-Thus, depending on what test we use on the same data set, we can get very different <span class="math inline">\$p\$</span>-values.
+Thus, depending on what test we use on the same data set, we can get very different $p$-values.
 
 ---
 

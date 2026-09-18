@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit6-parallel.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 5. Illustrating the principles in specific case studies
+> **Converted source.** [`units/unit6-parallel.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit6-parallel.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit6-parallel.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit6-parallel.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 5. Illustrating the principles in specific case studies
 
 ## Scenario 1: one model fit
 
@@ -116,7 +116,6 @@ the code is being run on).
 Under the hood, there are different implementations (sometimes called *kernels*) of a given computation
 For example, there would be both parallelized CPU and GPU implementations of matrix multiplication.
 
-
 ```python
 #| eval: false
 import torch
@@ -210,7 +209,6 @@ CPU time: 4.709
 So the GPU is much faster, even though the JAX CPU implementation uses multiple threads (as can be seen with `top`).
 
 Forcing JAX to use the CPU when a GPU is available is a bit of a hassle. When I tried to use `jax.config.update('jax_platform_name', 'cpu')`, it didn't seem to work for some reason.
-
 
 ## Scenario 2: three different prediction methods on your data
 
@@ -318,6 +316,436 @@ def cv_fit(fold_idx):
 
 np.random.seed(1)
 
+# Generate data
+n = 1000
+p = 50
+X = pd.DataFrame(np.random.normal(size = (n, p)),\
+                 columns=[f"X{i}" for i in range(1, p + 1)])
+Y = X['X1'] + np.sqrt(np.abs(X['X2'] * X['X3'])) +\
+    X['X2'] - X['X3'] + np.random.normal(size = n)
+
+n_folds = 10
+seq = np.arange(n_folds)
+folds = np.random.permutation(np.repeat(seq, 100))
+```
+
+To do a parallel map, we need to use the distributed scheduler, but it's
+fine to do that with multiple cores on a single machine (such as a
+laptop).
+
+```python
+n_cores = 2
+from dask.distributed import Client, LocalCluster
+cluster = LocalCluster(n_workers = n_cores)
+c = Client(cluster)
+
+tasks = c.map(cv_fit, range(n_folds))
+results = c.gather(tasks)
+# We'd need to sort the results appropriately to align them with the observations.
+```
+
+Now suppose you have 4 cores (and therefore won't have an equal number
+of tasks per core with the 10 tasks). The approach in the next scenario should work
+better.
+
+## Scenario 4: parallelizing over prediction methods
+
+**Scenario**: parallelizing over prediction methods or other cases where
+execution time varies.
+
+If you need to parallelize over prediction methods or in other contexts
+in which the computation time for the different tasks varies widely, you
+want to avoid having the parallelization group the tasks into batches in
+advance, because some cores may finish a lot more quickly than others.
+Starting the tasks one by one (not in batches) is called *dynamic allocation*.
+
+In contrast, if the computation time is about the same for the different tasks
+and you have a large number of tasks (in which case the effect of averaging may also help with load-balancing)
+then you want to group the tasks into batches.  This is called *static allocation* or *prescheduling*.
+This avoids the extra overhead (~1 millisecond per task) of scheduling many tasks.
+
+### Dynamic allocation
+
+With Dask's `distributed` scheduler, Dask starts up each delayed evaluation separately (i.e., dynamic allocation).
+
+We’ll set up an artificial example with four slow tasks and 12 fast tasks and see the speed of running with the default of dynamic allocation under Dask's distributed scheduler. Then in the next section, we’ll compare to a situation in which more than one slow task may end up in a single batch/chunk.
+
+```python
+import scipy.special
+
+n_cores = 4
+from dask.distributed import Client, LocalCluster
+cluster = LocalCluster(n_workers = n_cores)
+c = Client(cluster)
+
+## 4 slow tasks and 12 fast ones.
+n = np.repeat([5*10**7, 10**6, 10**6, 10**6], 4)
+print(n)
+
+def fun(i):
+    print(f"Working on {i}.")
+    out = np.mean(scipy.special.gammaln(np.exp(np.random.normal(size = n[i]))))
+    print(f"Finishing {i}.")
+    return out
+
+
+t0 = time.time()
+out = fun(1)
+print(time.time() - t0)
+
+t0 = time.time()
+out = fun(5)
+print(time.time() - t0)
+
+t0 = time.time()
+tasks = c.map(fun, range(len(n)))
+results = c.gather(tasks)
+print(time.time() - t0)
+
+cluster.close()
+```
+
+For some reason the logging messages show up in the Quarto rendering output and not here in the document.
+
+Note that (even with dynamic allocation) with relatively few tasks per core here, we could have gotten unlucky
+if the tasks were in a random order and multiple slow tasks happen to be done by a single worker.
+
+### Static allocation
+
+Next, note that by default the ‘processes’ scheduler sets up tasks in batches, with a default chunksize of 6. However, it's difficult to understand out how Dask chooses to assign tasks to chunks (based on running this repeatedly there seems to be some randomness).
+
+```python
+dask.config.set(scheduler='processes', num_workers = 4)
+
+tasks = []
+p = len(n)
+for i in range(p):
+    tasks.append(dask.delayed(fun)(i))  # add lazy task
+
+t0 = time.time()
+results = dask.compute(tasks)  # compute all in parallel
+print(time.time() - t0)
+```
+
+To force dynamic allocation, we can set `chunksize = 1` (as was shown in our original example of using the `processes` scheduler).
+
+```python
+#| eval: true
+dask.config.set(scheduler='processes', num_workers = 4, chunksize = 1)
+
+tasks = []
+p = len(n)
+for i in range(p):
+    tasks.append(dask.delayed(fun)(i))  # add lazy task
+
+t0 = time.time()
+results = dask.compute(tasks)  # compute all in parallel
+print(time.time() - t0)
+```
+
+In some cases when this has run, the times above are pretty similar.
+
+In principle, with variability in execution time for the tasks, dynamic allocation should be faster than with static allocation, unless the static assignment of tasks to chunks is carefully done to achieve good load-balancing (or the assignment just happens to work out that way). It's also complicated by the fact that with dynamic allocation, one is essentially relying on the dynamics of the allocation resulting in achieving good load-balancing, which may not always happen.
+
+We haven't illustrated it here, but if each task is quick and we have a lot of tasks, we likely want static allocation to avoid the extra overhead of starting each task individually. In fact, that is a main  motivation for static allocation.
+
+### Choosing static vs. dynamic allocation in Dask
+
+With the `distributed` scheduler, Dask starts up each delayed evaluation separately (i.e., dynamic allocation).
+And even with a distributed `map()` it doesn’t appear possible to ask that the tasks be broken up into batches.
+Therefore if you want static allocation, you could use the `processes` scheduler if using a single machine, or
+if you need to use the `distributed` schduler you could break up the tasks into batches manually.
+
+With the `processes` scheduler, static allocation is the default, with a default chunksize of 6 tasks per batch.
+You can force dynamic allocation by setting `chunksize = 1`.
+
+(Note that in R, static allocation is the default when using the `future` package.)
+
+## Scenario 5: 10-fold CV across multiple methods with many more than 10 cores
+
+**Specific scenario**: You are running an ensemble prediction method such as
+SuperLearner or Bayesian model averaging on 10 cross-validation folds,
+with many statistical/machine learning methods.
+
+**General scenario**: parallelizing nested tasks or a large number of tasks,
+ideally across multiple machines.
+
+Here you want to take advantage of all the cores you have available, so
+you can't just parallelize over folds.
+
+First we'll discuss how to deal with the nestedness of the problem and
+then we'll talk about how to make use of many cores across multiple
+nodes to parallelize over a large number of tasks.
+
+### Scenario 5A: nested parallelization
+
+One can always flatten the looping, either in a for loop or in similar
+ways when using apply-style statements.
+
+```python
+#| eval: false
+
+## original code: multiple loops
+for fold in range(n):
+  for method in range(M):
+     ### code here
+
+## revised code: flatten the loops
+for idx in range(n*M):
+    fold = idx // M
+    method = idx % M
+    print(idx, fold, method)### code here
+```
+
+Rather than flattening the loops at the loop level (which you'd need to do to use `map`), one could just
+generate a list of delayed tasks within the nested loops.
+
+```python
+#| eval: false
+for fold in range(n):
+  for method in range(M):
+     tasks.append(dask.delayed(myfun)(fold,method))
+```
+
+The future package in R has some nice functionality for easily parallelizing with nested loops.
+
+### Scenario 5B: Parallelizing across multiple nodes
+
+If you have access to multiple machines networked together, including a
+Linux cluster, you can use Dask to start workers across
+multiple nodes (either in a nested parallelization situation with many
+total tasks or just when you have lots of unnested tasks to parallelize
+over). Here we'll just illustrate how to use multiple nodes, but if you
+had a nested parallelization case you can combine the ideas just above
+with the use of multiple nodes.
+
+Simply start Python as you usually would. Then the following code
+will parallelize on workers across the machines specified.
+
+```python
+#| eval: false
+from dask.distributed import Client, SSHCluster
+# First host is the scheduler.
+cluster = SSHCluster(
+    ["gandalf.berkeley.edu", "radagast.berkeley.edu", "radagast.berkeley.edu",
+    "arwen.berkeley.edu", "arwen.berkeley.edu"]
+)
+c = Client(cluster)
+
+## On the SCF, Savio and other clusters using the SLURM scheduler,
+## you can figure out the machine names like this, repeating the name of the
+## first machine to account for the main/scheduler/controller process:
+##
+## machines = subprocess.check_output("srun hostname", shell = True,
+##            universal_newlines = True).strip().split('\n')
+## machines = [machines[0]] + machines
+
+def fun(i, n=10**6):
+    return np.mean(np.random.normal(size = n))
+
+n_tasks = 120
+
+tasks = c.map(fun, range(n_tasks))
+results = c.gather(tasks)
+
+## And just to check we are actually using the various machines:
+import subprocess
+
+c.gather(c.map(lambda x: subprocess.check_output("hostname", shell = True), \
+               range(4)))
+
+cluster.close()
+```
+
+## Scenario 6: Stratified analysis on a very large dataset
+
+**Specific scenario**: You are doing stratified analysis on a very large dataset
+and want to avoid unnecessary copies.
+
+**General scenario**: Avoiding copies when working with large data in parallel.
+
+In many parallelization tools, if you try to parallelize this case on a single node, you end up making copies of the original dataset, which both takes up time and eats up memory. That is because the separate processes do not have access to objects used in the main (or other) processes, even though they are sharing the same physical memory. So the data needs to be sent to each process (or task) individually and then stored as distinct objects in memory.
+
+Here when we use the `processes` scheduler, we make copies. Whether there is a copy per task or a copy per process seems to depend on exactly what the parallelized code is doing, and I don't have additional information about this. In this case we see one copy per task, the worst case situation.
+
+```python
+import os
+
+def do_analysis(i,x):
+    '''
+    A fake "analysis", identical for each task.
+    '''
+    # Check number of processes and copies.
+    print(f"Object id: {id(x)}, process id: {os.getpid()}")
+    return np.mean(x)
+
+n_cores = 4
+
+x = np.random.normal(size = 5*10**7)   # our big "dataset"
+
+dask.config.set(scheduler='processes', num_workers = n_cores, chunksize = 1)
+
+tasks = []
+p = 8
+for i in range(p):
+    tasks.append(dask.delayed(do_analysis)(i,x))
+
+t0 = time.time()
+results = dask.compute(tasks)
+t_elapsed = time.time() - t0
+```
+
+```
+Object id: 128054524603408, process id: 257843
+Object id: 126667880147984, process id: 257847
+Object id: 123521035054096, process id: 257849
+Object id: 125675309853712, process id: 257848
+Object id: 128054526286832, process id: 257843
+Object id: 126667881831408, process id: 257847
+Object id: 123521036737520, process id: 257849
+Object id: 125675311537136, process id: 257848
+```
+
+```python
+print(t_elapsed)
+```
+
+A much better approach here would be to use the `threads` scheduler, in which case all workers can access the same data objects with no copying (but of course we cannot modify the data in that case without potentially causing problems for the other tasks). Without the copying, this is really fast.
+
+```python
+dask.config.set(scheduler='threads', num_workers = n_cores)
+
+tasks = []
+p = 8
+for i in range(p):
+    tasks.append(dask.delayed(do_analysis)(i,x))
+
+t0 = time.time()
+results = dask.compute(tasks)
+print(time.time() - t0)
+```
+
+We can also consider using the the `distributed` scheduler (which is fine to use on a single machine or multiple machines). In order to have one copy per worker instead of one copy per task, we can apply `delayed()` to the global data object.
+
+However, with the Dask distributed scheduler, it is complicated to assess what is going on, because the scheduler seems to try to optimize assignment of tasks to workers in a way that may cause an imbalance in the number of tasks assigned to each worker. In this example, all the tasks are assigned to a single worker.
+
+(If instead the `do_analysis` function ran this: `np.mean(x + np.random.normal(size=5*10**7))`, we'd see the tasks be done on more than one worker.)
+
+```python
+from dask.distributed import Client, LocalCluster
+cluster = LocalCluster(n_workers = n_cores)
+c = Client(cluster)
+
+x = dask.delayed(x)  # To have one copy per worker.
+
+tasks = []
+p = 8
+for i in range(p):
+    tasks.append(dask.delayed(do_analysis)(i,x))
+
+t0 = time.time()
+results = dask.compute(tasks)
+print(time.time() - t0)
+
+cluster.close()
+```
+
+Also, Dask gives a warning about sending the data to the workers in advance. I’m not sure of the distinction between what it is recommending and use of `dask.delayed(x)`. When I tried to use `scatter()` in various ways, I wasn't able to silence the warning.
+
+## Scenario 7: Simulation study with n=1000 replicates: parallel random number generation
+
+We’ll probably skip this for now and come back to it when we discuss random number generation in the Simulation Unit.
+
+The key thing when thinking about random numbers in a parallel context
+is that you want to avoid having the same 'random' numbers occur on
+multiple processes. On a computer, random numbers are not actually
+random but are generated as a sequence of pseudo-random numbers designed
+to mimic true random numbers. The sequence is finite (but very long) and
+eventually repeats itself. When one sets a seed, one is choosing a
+position in that sequence to start from. Subsequent random numbers are
+based on that subsequence. All random numbers can be generated from one
+or more random uniform numbers, so we can just think about a sequence of
+values between 0 and 1.
+
+**Specific scenario**: You are running a simulation study with n=1000 replicates.
+
+**General scenario**: Safely handling random number generation in parallel.
+
+Each replicate involves fitting two statistical/machine learning
+methods.
+
+Here, unless you really have access to multiple hundreds of cores, you
+might as well just parallelize across replicates.
+
+However, you need to think about random number generation. One option is to set the random number seed to different values for each replicate. One danger in setting the seed like that is that the random numbers in the different replicate could overlap somewhat. This is probably somewhat unlikely if you are not generating a huge number of random numbers, but it’s unclear how safe it is.
+
+We can use functionality with numpy's PCG64 or MT19937 generators to be completely safe in our parallel random number generation. Each provide a `jumped()` function that moves the RNG ahead as if one had generated a very large number of random variables ($2^{128}$) for the Mersenne Twister and nearly that for the PCG64).
+
+Here’s how we can set up the use of the PCG64 generator:
+
+```python
+bitGen = np.random.PCG64(1)
+rng = np.random.Generator(bitGen)
+rng.random(size = 3)
+```
+
+Now let’s see how to jump forward. And then verify that jumping forward two increments is the same as making two separate jumps.
+
+```python
+bitGen = np.random.PCG64(1)
+bitGen = bitGen.jumped(1)
+rng = np.random.Generator(bitGen)
+rng.normal(size = 3)
+
+bitGen = np.random.PCG64(1)
+bitGen = bitGen.jumped(2)
+rng = np.random.Generator(bitGen)
+rng.normal(size = 3)
+
+bitGen = np.random.PCG64(1)
+bitGen = bitGen.jumped(1)
+bitGen = bitGen.jumped(1)
+rng = np.random.Generator(bitGen)
+rng.normal(size = 3)
+```
+
+We can also use `jumped()` with the Mersenne Twister.
+
+```python
+bitGen = np.random.MT19937(1)
+bitGen = bitGen.jumped(1)
+rng = np.random.Generator(bitGen)
+rng.normal(size = 3)
+```
+
+So the strategy to parallelize across tasks (or potentially workers if random number generation is done sequentially for tasks done by a single worker) is to give each task the same seed and use `jumped(i)` where `i` indexes the tasks (or workers).
+
+```python
+#| eval: false
+def myrandomfun(i):
+    bitGen = np.random.PCG(1)
+    bitGen = bitGen.jumped(i)
+    # insert code with random number generation
+```
+
+One caution is that it appears that the period for PCG64 is $2^{128}$ and that `jumped(1)` jumps forward by nearly that many random numbers. That seems quite strange, and I don’t understand it.
+
+Alternatively as [recommended in the docs](https://numpy.org/doc/stable/reference/random/bit_generators/pcg64.html):
+
+```python
+#| eval: false
+n_tasks = 10
+sg = np.random.SeedSequence(1)
+rngs = [Generator(PCG64(s)) for s in sg.spawn(n_tasks)]
+## Now pass elements of rng into your function that is being computed in parallel
+
+def myrandomfun(rng):
+    # insert code with random number generation, such as:
+    z = rng.normal(size = 5)
+```
+
+In R, the `rlecuyer` package deals with this. The L’Ecuyer algorithm has a period of $2^{191}$, which it divides into subsequences of length $2^{127}$.
+
 ---
 
-[← 4. Introduction to Dask](05-4-introduction-to-dask.md) · [Up: contents](index.md) · [Generate data →](07-generate-data.md)
+[← 4. Introduction to Dask](05-4-introduction-to-dask.md) · [Up: contents](index.md) · [6. Additional details and topics (optional) →](07-6-additional-details-and-topics-optional.md)

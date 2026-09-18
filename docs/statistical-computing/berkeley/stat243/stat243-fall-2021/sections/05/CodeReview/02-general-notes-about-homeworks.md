@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/sections/05/CodeReview.R
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# General notes about homeworks
+> **Converted source.** [`sections/05/CodeReview.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/05/CodeReview.Rmd) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`sections/05/CodeReview.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/05/CodeReview.Rmd) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# General notes about homeworks
 
 Below are a couple notes about to keep in mind when doing your problem sets.
 
@@ -50,7 +50,6 @@ sum(x)/length(x)
 mean(x)
 ```
 but the third option is preferable. Simple code helps with debugging (as there are fewer lines of code to check), improves readability (both for yourself and others), and can often (though not always) result in faster code.
-
 
 8. Plots and Comments
 Plots need to have a title, axis labels, and a key if there are several types of data.  Code and comment lines should be ~80 characters in length.  e.g.

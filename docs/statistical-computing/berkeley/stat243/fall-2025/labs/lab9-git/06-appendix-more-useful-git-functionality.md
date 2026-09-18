@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat243/fall-2025/labs/lab9-git.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`labs/lab9-git.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/labs/lab9-git.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Appendix: More Useful Git Functionality
 
-**Source:** [`labs/lab9-git.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/labs/lab9-git.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-## Importing a Project
+### Importing a Project
 
 I __do not__ recommend this process for initiating a new project. These steps are simple,
 until you get to creating the remote repository. Then, just like in the intro tutorial,
@@ -54,7 +54,7 @@ git commit -m "add"
 This will prompt you for a commit message. You've now stored the first version of
 your project in Git.
 
-## Making Changes
+### Making Changes
 
 If we make changes to files `file1`, `file2` and `file3` we can add them to be
 committed with `git add` as we have discussed before:
@@ -88,7 +88,7 @@ git commit -a
 which will automatically notice any modified (but not new) files, add them to
 the index, and commit, all in one step.
 
-## Amending file to commit
+### Amending file to commit
 
 What if, in the files you just committed, there was a file you forgot?  This
 situation is handled via git's `amend` option in git commit.  Say we have added and
@@ -110,17 +110,17 @@ git commit --amend -m "adding second file"
 This allows you to add more files to a commit and then update the message, while
 keeping your original message/committed-files there.
 
-## Undoing mistakes: `checkout`, `reset`, and `revert`
+### Undoing mistakes: `checkout`, `reset`, and `revert`
 
 !!! important "Important"
-## Danger zone
+### Danger zone
 
 Some of the commands below can get you into trouble if you aren't 100% sure of
 what you're doing. Use them with extreme caution.
 
 :::
 
-### Checkout
+#### Checkout
 
 `git checkout` can be used to look at a previous commit. It can also be used to
 move to a different branch, which we will look at in the next section. Here we
@@ -141,7 +141,7 @@ Once you have looked at the commit you can go back to the most recent update usi
 git checkout main # or replacing main with whatever branch you are on
 ```
 
-### Revert
+#### Revert
 
 `git revert` is used when you want to undo the changes made in a previous
 commit. It will undo a commit by creating a new commit. Consider using `git
@@ -154,7 +154,7 @@ git revert HEAD~2
 git revert <commit_hash>
 ```
 
-### Reset
+#### Reset
 
 If you added something that shouldn't be committed or you want to reset your repo
 to what it looked like at a previous commit, then you need to use
@@ -163,6 +163,36 @@ the `git reset` feature.
 ```bash
 man git-reset
 
+# e.g.
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+```
+
+Git reset moves the tip of your working tree back to the specified revision
+(here, we go back one revision). The `--soft` flag means that the changes in the
+files are preserved, so all that was done was to undo the commit. If you use the
+`--hard` flag, then all changes are reverted to the specified time and **later
+changes are lost forever**.
+
+## Additional references
+
+Here are some links that you may want to bookmark for future reference and to
+deepen your Git expertise.
+
+- [Berkeley SCF Git
+Basics](https://htmlpreview.github.io/?https://github.com/berkeley-scf/tutorial-git-basics/blob/master/git-intro.html)
+- [Software Carpentry Collection of Information on
+Git](https://swcarpentry.github.io/git-novice/)
+- [Basic Branching and
+Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+- [Interactive Branching Tutorial](https://learngitbranching.js.org/)
+- [Advanced Merging](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging#_advanced_merging)
+- [Undoing Things](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things)
+
+### Acknowledgements
+
+This lab was developed by Zoey Vernon, Andrew Vaughn, James Duncan and Ahmed Eldeeb.
+
 ---
 
-[← Pair exercises](05-pair-exercises.md) · [Up: contents](index.md) · [e.g. →](07-e-g.md)
+[← Pair exercises](05-pair-exercises.md) · [Up: contents](index.md)

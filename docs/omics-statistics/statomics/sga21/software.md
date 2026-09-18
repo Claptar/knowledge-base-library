@@ -2,17 +2,17 @@
 title: 2. Software for Proteomics Data Analysis 2021 (PDA21)
 source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/software.Rmd
 source_file: sources/statomics-sga21/software.Rmd
-licence: unresolved
+licence: CC BY-NC-SA 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`software.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/software.Rmd) — statomics-sga21, licensed CC BY-NC-SA 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # 2. Software for Proteomics Data Analysis 2021 (PDA21)
 
-**Source:** [`software.Rmd`](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/software.Rmd) · **Licence:** unresolved · Converted 2026-09-14 from `.Rmd` (lossless)
-
-<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+[](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
 - Install [R version 4.1 or higher] (https://cran.r-project.org/)
 - Install [Rstudio](https://www.rstudio.com/products/rstudio/download/)
@@ -46,7 +46,6 @@ pe <- aggregateFeatures(pe,i="peptide",fcol="Proteins",name="protein")
 pe <- msqrob(pe,i="protein",formula=~condition,modelColumnName="rlm")
 getCoef(rowData(pe[["protein"]])$rlm[[1]])
 ```
-
 
 - For testing our package without installation: you can launch an R studio interface in an R docker along with bioconductor packages for proteomics that is running on top of one of our github repositories.
 

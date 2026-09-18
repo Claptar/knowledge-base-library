@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/spring-2026/public/lectures/13_spectral_an
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Spectral Density
+> **Converted source.** [`public/lectures/13_spectral_analysis_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/13_spectral_analysis_notes.md) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`public/lectures/13_spectral_analysis_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/13_spectral_analysis_notes.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# Spectral Density
 
 Consider a periodic stationary process with fixed frequency $\omega_0 \in (0, 1/2)$:
 
@@ -57,6 +57,15 @@ $$\gamma(0) = \text{var}(x_t) = \int_{-\frac{1}{2}}^{\frac{1}{2}} f(\omega)d\ome
 
 This quantity expresses the total variance as the integrated spectral density over all frequencies.
 
+## Autocovariance vs. spectral distribution functions
+
+These contain similar information but expressed in different ways!
+
+* Autocovariance function expresses information in terms of lags
+* Spectral distribution expresses information in terms of cycles / frequencies
+
+Some problems are easier in the time domain (lagged information), whereas some are easier in the spectral domain (if they contain periodic information).
+
 ---
 
-[← Discrete Fourier Transform](01-discrete-fourier-transform.md) · [Up: contents](index.md) · [Autocovariance vs. spectral distribution functions →](03-autocovariance-vs-spectral-distribution-functions.md)
+[← Discrete Fourier Transform](01-discrete-fourier-transform.md) · [Up: contents](index.md) · [Theoretical spectra of different processes →](03-theoretical-spectra-of-different-processes.md)

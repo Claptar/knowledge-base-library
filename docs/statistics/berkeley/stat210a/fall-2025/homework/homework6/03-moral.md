@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2025/homework/homework6.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework6.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework6.tex) — berkeley-stat210a · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework6.tex`](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/homework/homework6.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 SURE gives us a reasonable way of selecting a tuning parameter for estimation problems, and can help us choose a tuning parameter that achieves the near optimal performance. Also, regularization methods that set a lot of parameters to zero can substantially reduce the MSE in sparse problems, by eliminating all the variance for most of the coordinates.
 
@@ -30,6 +30,10 @@ We will instead consider a popular version of the James–Stein estimator, which
 
 4.  Now make a change of variables to $Z = Q'X$, where $q_1 = d^{-1/2}1_d$ and $q_2,\ldots,q_d$ are any completion of an orthonormal basis for $\mathbb{R}^d$, and $Q= [q_1 \cdots q_d] \in \mathbb{R}^{d\times d}$. Show that $$Z \sim  N_d(\mu, I_d), \quad \text{ where } \mu_1 = d^{-1/2}\sum_i\theta_i.% \quad \text{ and } \|\theta\|^2 = \left(\begin{pmatrix}d^{-1/2}\sum_i\theta_i\\ \nu\end{pmatrix}$$ Show that $Q'\delta_{\text{JS}_2}(X)$, as an estimator of $\mu$, could be characterized as estimating $\mu_1$ as $Z_1$ (without any shrinkage), and estimating $\mu_{-1}=(\mu_2,\ldots,\mu_d)$ via the original James–Stein estimator on the $(d-1)$-variate normal $Z_{-1} \sim N_{d-1}(\mu_{-1},I_{d-1})$. Use this construction to re-derive the results in part (c).
 
+## Moral: {#moral-2}
+
+If we think of the James–Stein estimator as implementing an *inductive bias* where we believe $\|\theta\|$ to be small, then different variants of the James-Stein estimator allow for implementing different inductive biases, for example that the $\theta_i$ values should be near each other, or (in a later problem) that they should lie close to a regression line $w_i'\beta$ for covariates $w_i$.
+
 ---
 
-[← Moral](02-moral.md) · [Up: contents](index.md) · [Moral →](04-moral.md)
+[← Moral](02-moral.md) · [Up: contents](index.md)

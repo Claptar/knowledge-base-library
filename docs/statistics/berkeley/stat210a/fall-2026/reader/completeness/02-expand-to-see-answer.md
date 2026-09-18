@@ -5,26 +5,56 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/completeness.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/completeness.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/completeness.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Expand to see answer
 
-**Source:** [`reader/completeness.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/completeness.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+**Yes, $T(X)$ is complete.**
 
-**No, $S(X)$ is not complete.**
+As we showed previously, the density of $T(X)$ for $t > 0$ is
+$$
+p_\theta(t) =  \frac{nt^{n-1}}{\theta^n}\,\cdot \;1\{t \leq \theta\}.
+$$
 
-One simple way to see this is that $X_{(n)}-X_{(1)}$ has the same distribution for every $\theta$, because we can write $X_i = \theta + Z_i$ for $Z_1,\ldots,Z_n \simiid \text{Lap}(0)$ and then $X_{(n)}-X_{(1)} = Z_{(n)}-Z_{(1)}$.
-
-Another evocative counterexample is that both the sample median $\text{Med}(X)$ and sample mean $\overline{X}$ can be calculated using $S(X)$ alone, and both are unbiased estimators for $\theta$ (since the distribution is symmetric for $\theta=0$ and $\text{Med}(X) = \theta + \text{Med}(Z)$). Hence $f(S) = \text{Med}(X) - \overline{X}$ has expectation zero, but is not almost surely equal to zero because the median and mean are a.s. unequal for $n>2$.
+Suppose we could find $f(t)$ such that
+$$
+0 = \EE_\theta f(T) = \frac{n}{\theta^n}\int_0^\theta f(t) t^{n-1} \,dt, \quad \text{ for all } \theta > 0.
+$$
+Dividing the last expression by $n/\theta^n$ and then differentiating with respect to $\theta$, we obtain
+$$
+0 = f(\theta) \theta^{n-1}, \quad \text{ for all } \theta > 0,
+$$
+hence $f \equiv 0$.
 
 :::
 
+## Full-rank exponential families
 
-**Example 1 (Uniform scale family)**: Let $X_1, \ldots, X_n \simiid U[0, \theta]$, for $\theta > 0$. We showed previously that the maximum $T(X) = X_{(n)}$ is minimal sufficient. Is it complete?
+In the general case where $T(X)$ can take on infinitely many values, it can be hard to show completeness because the space of possible counterexample functions $f$ is infinite-dimensional. But there is an important class of examples where we can quickly verify complete sufficiency, as we see next.
+
+**Definition:** Let $\cP = \{P_\eta:\; \eta \in \Xi\}$ be an $s$-parameter exponential family with densities
+$$
+p_\eta(x) = e^{\eta'T(x) - A(\eta)} h(x),
+$$
+with respect to some carrier measure $\mu$. Assume further that the sufficient statistic $T(X)$ satisfies no affine constraint: that is, there is no $\alpha \in \RR$ and nonzero $\beta \in \RR^s$ with $\beta'T(x) \eqPas \alpha$.
+
+If $\Xi$ contains an open set we say $\cP$ is *full-rank*; otherwise we say it is *curved*.
+
+::: callout-note
+
+If $T(X)$ does satisfy a linear constraint, that means $\cP$ can be defined equivalently as an $r$-parameter exponential family for some $r < s$. It may be full-rank or curved depending on the parameter space in a lower-dimensional parameterization.
+
+:::
+
+**Theorem (Complete sufficiency in full-rank exponential families):** If $\cP$ is a full-rank $s$-parameter exponential family, then $T(X)$ is complete sufficient.
+
+The proof is somewhat technical and uses the uniqueness of moment-generating functions.
 
 !!! important "Important"
 
 ---
 
-[← Completeness](01-completeness.md) · [Up: contents](index.md) · [Expand to see answer →](03-expand-to-see-answer.md)
+[← Completeness](01-completeness.md) · [Up: contents](index.md) · [Expand for proof →](03-expand-for-proof.md)

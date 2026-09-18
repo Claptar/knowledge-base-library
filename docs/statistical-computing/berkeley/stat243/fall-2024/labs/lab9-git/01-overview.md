@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2024/labs/lab9-git.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Overview
+> **Converted source.** [`labs/lab9-git.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/labs/lab9-git.qmd) — berkeley-stat243 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`labs/lab9-git.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/labs/lab9-git.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Overview
 
 !!! tip "Tip"
 ## Objectives and purpose
@@ -37,7 +37,6 @@ appendix at the end for those of you that are curious.
 
 We'll work in pairs to practice collaboration with Git and how to fix issues
 that can arise when working in a shared Git repo.
-
 
 First, we'll do some reading to get familiar with Git and GitHub's main features
 that facilitate collaboration.

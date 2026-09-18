@@ -5,16 +5,16 @@ source_file: sources/berkeley-stat210a/fall-2024/reader/hierarchical-bayes.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/hierarchical-bayes.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/hierarchical-bayes.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Hierarchical Bayes
 
-**Source:** [`reader/hierarchical-bayes.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/reader/hierarchical-bayes.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
 The full power of Bayes is realized in large, complex problems with repeat structure, allowing us to pool information across many observations.
 
-### Example: Predicting Batting Averages
+## Example: Predicting Batting Averages
 
 Predict a batter's true batting average from $n_i$ at-bats, $X_i$ hits: $X_i|\theta_i \sim \text{Binom}(n_i, \theta_i)$
 
@@ -36,7 +36,7 @@ Use all $X_1,\ldots,X_m$ to learn a good prior on $\theta_i$.
 
 Note: There is always an equivalent model where we marginalize over $\alpha, \beta$ and just write a more complicated prior on $\theta$. The hierarchical version may give better intuition or computational strategies.
 
-### Gaussian Hierarchical Model
+## Gaussian Hierarchical Model
 
 $$
 \begin{aligned}
@@ -100,7 +100,7 @@ Pseudo-data: $\nu, \lambda$ with $\nu \approx 2, \lambda \approx \nu\sigma^2$
 
 Might want to truncate prior to $[\sigma^2, \infty)$ if $\lambda$ small.
 
-### Graphical Form
+## Graphical Form
 
 For hyperparameters $\alpha, \beta$:
 

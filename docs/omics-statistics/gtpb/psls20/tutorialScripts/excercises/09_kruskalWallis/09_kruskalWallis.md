@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/09_kruskalWallis/09_
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 09 kruskalWallis
+> **Converted source.** [`tutorialScripts/excercises/09_kruskalWallis/09_kruskalWallis.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/09_kruskalWallis/09_kruskalWallis.md) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`tutorialScripts/excercises/09_kruskalWallis/09_kruskalWallis.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/09_kruskalWallis/09_kruskalWallis.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# 09 kruskalWallis
 
 On the third day of the "Practical Statistics for the Life Sciences (2020)" course, we will have one exrecise on non-parametric, multigroup analysis.
 We base ourselves on the lettuce freshweight dataset.

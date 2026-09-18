@@ -3,48 +3,49 @@ title: 2 The Box-Jenkins Time Series Modeling Strategy
 source: https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureTwentyThree153248Spring2025.pdf
 source_file: sources/berkeley-stat153/spring-2025/LectureTwentyThree153248Spring2025.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
+
+> **Reconstructed by a model.** [`LectureTwentyThree153248Spring2025.pdf`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureTwentyThree153248Spring2025.pdf) — berkeley-stat153 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
 # 2 The Box-Jenkins Time Series Modeling Strategy
 
-**Source:** [`LectureTwentyThree153248Spring2025.pdf`](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/LectureTwentyThree153248Spring2025.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
+Box and Jenkins popularized the following strategy for modeling an observed time series $y_1, \dots, y_n$:
 
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
-
-Box and Jenkins popularized the following strategy for modeling an observed time series _y_ 1 _, . . . , yn_ :
-
-1. Generally _y_ 1 _, . . . , yn_ will exhibit various kinds of trends. Preprocess the data to transform it to another series _xt_ which does not have any discernible trends.
-
-2. Fit an ARMA(p, q) model for appropriate _p_ and _q_ to the transformed data _xt_ .
+1. Generally $y_1, \dots, y_n$ will exhibit various kinds of trends. Preprocess the data to transform it to another series $x_t$ which does not have any discernible trends.
+2. Fit an $\text{ARMA}(p, q)$ model for appropriate $p$ and $q$ to the transformed data $x_t$.
 
 The preprocessing in the first step above is usually done in one of the following two ways:
 
-1. **Differencing** . The first difference of _{yt}_ is given by _∇yt_ := _yt − yt−_ 1 for _t_ = 2 _, . . . , n_ . The second difference is given by
+1. **Differencing.** The first difference of $\{y_t\}$ is given by $\nabla y_t := y_t - y_{t-1}$ for $t = 2, \dots, n$. The second difference is given by
+$$\begin{aligned}
+\nabla^2 y_t &= \nabla (\nabla y_t) \\
+&= \nabla(y_t - y_{t-1}) = \nabla y_t - \nabla y_{t-1} = (y_t - y_{t-1}) - (y_{t-1} - y_{t-2}) = y_t - 2y_{t-1} + y_{t-2}.
+\end{aligned}$$
+Higher order differences $\nabla^k y_t$ are defined recursively. Note that the length of the time series comes down after each successive differencing. For example, $\nabla y_t$ has length $n-1$, $\nabla^2 y_t$ has length $n - 2$ and so on. Differencing usually eliminates increasing/decreasing trends. Usually one or two orders of differencing is enough to take care of increasing/decreasing trends.
 
-   - _∇_<sup>2</sup> _yt_ = _∇_ ( _∇yt_ )
-
-
-Higher order differences _∇_<sup>_k_</sup> _yt_ are defined recursively. Note that the length of the time series comes down after each successive differencing. For example, _∇yt_ has length _n−_ 1, _∇_<sup>2</sup> _yt_ has length _n −_ 2 and so on. Differencing usually eliminates increasing/decreasing trends. Usually one or two orders of differencing is enough to take care of increasing/decreasing trends.
-
-2. **Seasonal Differencing** . Seasonal differencing is used to eliminate seasonal trends. Suppose we have a dataset having seasonal trends with period _s_ (for example, for monthly datasets, _s_ = 12). The seasonal first difference of _yt_ with period _s_ is defined as
-
-
-Note that _∇syt_ is a time series of length _n − s_ . The second order seasonal difference is
-
-
+2. **Seasonal Differencing.** Seasonal differencing is used to eliminate seasonal trends. Suppose we have a dataset having seasonal trends with period $s$ (for example, for monthly datasets, $s = 12$). The seasonal first difference of $y_t$ with period $s$ is defined as
+$$\nabla_s y_t := y_t - y_{t-s}$$
+Note that $\nabla_s y_t$ is a time series of length $n - s$. The second order seasonal difference is
+$$\nabla_s^2 y_t = \nabla_s (\nabla_s y_t) = y_t - 2y_{t-s} + y_{t-2s}$$
 and higher order seasonal differences are defined recursively. Seasonal differences eliminate seasonal trends. Usually, in datasets having seasonal and increasing/decreasing
-
-2
 
 trends, one first takes a seasonal difference. This often eliminates seasonality and might also eliminate the linear trend. If a linear trend still persists, one takes a regular difference of the seasonal differenced series. This will often give a series with no trend and seasonality.
 
-To the transformed data _xt_ , one fits an ARMA(p, q) model which can be done via the `ARIMA` function from the statsmodels library. The order _p_ and _q_ can be determined via a model selection criterion such as AIC or BIC.
+To the transformed data $x_t$, one fits an $\text{ARMA}(p, q)$ model which can be done via the `ARIMA` function from the `statsmodels` library. The order $p$ and $q$ can be determined via a model selection criterion such as AIC or BIC.
+
+## 3 ARIMA models
+
+ARIMA stands for AutoRegressive Integrated Moving Average. ARIMA is essentially differencing plus ARMA.
+
+**Definition 3.1** (ARIMA). A time series model $y_t$ is said to be $\text{ARIMA}(p, d, q)$ if
+$$\phi(B)((\nabla^d y_t) - \mu) = \theta(B)\epsilon_t,$$
+where $\epsilon_t \overset{\text{i.i.d}}{\sim} N(0, \sigma^2)$.
+
+ARIMA models are fit by the function `ARIMA()` in `statsmodels`. The mean $\mu$ above is taken to be zero by default when the order parameter $d$ in ARIMA is strictly larger than zero.
 
 ---
 
-[← 1 ARMA( p , q ) Model](01-1-arma-p-q-model.md) · [Up: contents](index.md) · [3 ARIMA models →](03-3-arima-models.md)
+[← 1 $\text{ARMA}(p, q)$ Model](01-1-model.md) · [Up: contents](index.md) · [4 Seasonal ARMA Models →](03-4-seasonal-arma-models.md)

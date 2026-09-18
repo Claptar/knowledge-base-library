@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/tutorialScripts/excercises/04_DataExploration/0
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 04 instructions
+> **Converted source.** [`tutorialScripts/excercises/04_DataExploration/04_instructions.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/04_DataExploration/04_instructions.md) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`tutorialScripts/excercises/04_DataExploration/04_instructions.md`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/tutorialScripts/excercises/04_DataExploration/04_instructions.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# 04 instructions
 
 In the first day of the "Practical Statistics for the Life Sciences (2020)" course, we will have four tutorials on data exploration, based on different datasets:
 
@@ -43,7 +43,6 @@ In this tutorial, you will use your acquired skills from exercise 1 to explore t
 - Exercise: "https://raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/04_DataExploration/Data_exploration_armpit.Rmd"
 - Data: "https://raw.githubusercontent.com/GTPB/PSLS20/master/data/armpit.csv"
 
-
 3) The captopril dataset:
 
 The captopril dataset holds information on a small experiment with 15 patients that have increased blood pressure values.
@@ -63,7 +62,6 @@ these children: their `age`, their `height`, their `gender` and, most importantl
 The goal of this experiment was to find out whether or not smoking has an effect on the FEV of children.
 
 In this tutorial, you will learn about the importance of confounders in real-life datasets.
-
 
 - Exercise: "https://raw.githubusercontent.com/GTPB/PSLS20/master/tutorialScripts/excercises/04_DataExploration/Data_exploration_FEV.Rmd"
 - Data: "https://raw.githubusercontent.com/GTPB/PSLS20/master/data/fev.txt"

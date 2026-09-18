@@ -5,12 +5,22 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit5-programming.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Overview
 
-**Source:** [`units/unit5-programming.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit5-programming.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+```r
+#| echo: false
+reticulate::use_python('/usr/local/linux/miniforge-3.13/bin/python')
+```
+
+```python
+#| echo: false
+import re, os, sys, time, math
+```
 
 This unit covers a variety of programming concepts, illustrated in the
 context of Python and with comments about and connections to other languages. It also serves as a way to teach some advanced features of

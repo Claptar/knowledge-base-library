@@ -5,12 +5,12 @@ source_file: sources/gtpb-psls20/theory/01-intro.Rmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Role of Statistics in the Life Sciences
+> **Converted source.** [`theory/01-intro.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/01-intro.Rmd) — gtpb-psls20, licensed CC BY 4.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`theory/01-intro.Rmd`](https://github.com/GTPB/PSLS20/blob/55acd654e639f1d5297dc0f2e46d8fd6855b5bad/theory/01-intro.Rmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.Rmd` (lossless)
+# Role of Statistics in the Life Sciences
 
 - We have seen that
     - it is important to carefully specify the scope of the study before the experiment,
@@ -21,7 +21,6 @@ converted: '2026-09-14'
 $\rightarrow$ Good experimental design is crucial!
 
 - We also observed that there is variability in the population and because we can only sample a small part of the population our results and conclusions are subjected to uncertainty.
-
 
 - Statistics is the science on
     1. collecting (experimental design),
@@ -80,9 +79,10 @@ text(8.5,5,"ESTIMATION &\nINFERENCE (3)",col="black",cex=1.2)
 text(7.5,.5,"DATA EXPLORATION &\nDESCRIPTIVE STATISTICS (2)",col="black",cex=1.2)
 ```
 
+---
+
+## [Home](https://gtpb.github.io/PSLS20/) {-}
 
 ---
 
----
-
-[← Scientific Method](04-scientific-method.md) · [Up: contents](index.md) · [[Home](https://gtpb.github.io/PSLS20/) →](06-home-https-gtpb-github-io-psls20.md)
+[← Scientific Method](04-scientific-method.md) · [Up: contents](index.md)

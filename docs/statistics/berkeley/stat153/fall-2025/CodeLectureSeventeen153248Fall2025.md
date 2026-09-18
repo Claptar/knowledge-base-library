@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureSeventeen153248Fall20
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# CodeLectureSeventeen153248Fall2025
+> **Converted source.** [`CodeLectureSeventeen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureSeventeen153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureSeventeen153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureSeventeen153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# CodeLectureSeventeen153248Fall2025
 
 ---
 title: Estimation for the AR(1) model
@@ -25,7 +25,7 @@ import statsmodels.api as sm
 
 Let us explore estimation and inference for the AR(1) model using the US population dataset.
 
-### US Population Dataset
+## US Population Dataset
 
 ```python
 #US Population Dataset from FRED

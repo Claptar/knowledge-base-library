@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2024/syllabus.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Grading
+> **Converted source.** [`syllabus.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/syllabus.qmd) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`syllabus.qmd`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/syllabus.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Grading
 
 Your final grade is based on:
 
@@ -34,6 +34,14 @@ Your final grade is based on:
 
 While the final exam is nominally one half of the grade, it is quite difficult and typically accounts for most of the variance in final course grades. If you take shortcuts on the homework, you will save yourself time in the short run, but you may do quite poorly on the final.
 
+## Accommodations
+
+**Students with disabilities:** Please see me as soon as possible if you need particular accommodations, and we will work out the necessary arrangements.
+
+**Scheduling conflicts:** Please notify me in writing by the second week of the semester about any known or potential extracurricular conflicts (such as religious observances, graduate or medical school interviews, or team activities). I will try my best to help you with making accommodations, but cannot promise them in all cases. In the event there is no mutually-workable solution, you may be dropped from the class.
+
+**Exam accommodations:** If you need accommodations on the final exam due to disability, or unavoidable travel or time conflict, please fill out the exam [exam accommodation form](https://forms.gle/jM42sqruRMkMNsa6A) **by Friday, October 4** so that I can make arrangements. To ensure exam integrity I much prefer for all students to take the exam in Berkeley at the regularly scheduled time (8am December 18th), but will try to work with you if you have a conflict.
+
 ---
 
-[← References](03-references.md) · [Up: contents](index.md) · [Accommodations →](05-accommodations.md)
+[← References](03-references.md) · [Up: contents](index.md)

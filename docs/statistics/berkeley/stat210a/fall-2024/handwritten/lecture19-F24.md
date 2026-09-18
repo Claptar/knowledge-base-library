@@ -1,86 +1,147 @@
 ---
-title: Lecture 19 — F24
+title: Outline
 source: https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture19-F24.pdf
 source_file: sources/berkeley-stat210a/fall-2024/handwritten/lecture19-F24.pdf
 licence: CC BY 4.0
-route: pdf
-fidelity: lossy
-converted: '2026-09-14'
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
 ---
 
-# Lecture 19 — F24
-
-**Source:** [`handwritten/lecture19-F24.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture19-F24.pdf) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.pdf` (lossy)
-
-!!! warning "Converted from PDF — mathematics may be mangled"
-    Prose survives a PDF; equations do not. Check anything symbolic against the
-    original before relying on it, and mark repairs `**Unverified.**`
-
-11 2 2.2
+> **Reconstructed by a model.** [`handwritten/lecture19-F24.pdf`](https://github.com/berkeley-stat210a/fall-2024/blob/812543bde50398a54db3044bf8ba7120189a4dfa/handwritten/lecture19-F24.pdf) — berkeley-stat210a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
 # Outline
 
-1 in and Distribution Probability Convergence
+11/2/2023
 
-> 2 Continuous Mapping Slutsky's<sup>Theorem</sup>
+1) Convergence in Probability and Distribution
+2) Continuous Mapping, Slutsky's Theorem
+3) Delta method
 
-> 3 Delta method
+---
 
+## Asymptotics
 
-<!-- Start of picture text -->
-Convergency<br>Let Xi Xz E Ird of<br>sequence<br>We care about 2 kinds of<br>convergence<br>in X a<br>probability<br>1 org<br>Xn<br>2 in distribution<br>Naco<br>org<br>We the<br>sequence convergesinprobability<br>say<br>c<br>to e Ird<br>X I c if<br>O<br>IP Axn all e<br><!-- End of picture text -->
+[So far, everything has been finite-sample, often using special properties of model $\mathcal{P}$ (e.g. exp. fam.) to do exact calculations.]
 
+[For "generic" models, exact calculations may be intractable or impossible. But we may be able to approximate our problem with a simpler problem in which calculations are easy]
 
-<!-- Start of picture text -->
-random vectors<br>constant<br> Id usually<br>o<br>Ye<br><!-- End of picture text -->
+[Typically approximate by Gaussian, by taking limit as # observations $\to \infty$. But this is only interesting if approx. is good for "reasonable" sample size.]
 
+---
 
-<!-- Start of picture text -->
-X<br>any<br>don't need this<br>X X if<br>bdd cts f X r<br>FG PCXex<br>Ax Fats atx<br><!-- End of picture text -->
+## Convergence
 
-Can We
+Let $X_1, X_2, \dots \in \mathbb{R}^d$ sequence of random vectors
 
-Thy
+We care about 2 kinds of convergence:
+1) cvg. in probability ($X_n \approx \text{constant}$)
+2) cvg. in distribution ($X_n \approx \mathcal{N}_d(0, I_d)$, usually)
 
+We say the sequence **converges in probability** to $c \in \mathbb{R}^d$ ($X_n \xrightarrow{p} c$) if
+$$\mathbb{P}(\|X_n - c\| > \varepsilon) \to 0, \quad \forall \varepsilon > 0$$
+(could really be any distance on any $\mathcal{X}$)
 
-<!-- Start of picture text -->
-If Xu d then<br>x<br>Ez g<br>Ex<br>Fn x 1ft Ex 110<br>F<br>Fn<br>o o<br>Prof X I c if X<br>1<br>Proof Let felx max<br>O<br>IP IX all e e IE feck<br>f odd cts note E f X fl<br>Ve 0 Fda o s.t I x all eda<br><!-- End of picture text -->
+[Can converge to a r.v. $X$ too, but we don't need this]
 
+We say the sequence **converges in distribution** to random variable $X$ ($X_n \Rightarrow X$, $X_n \xrightarrow{d} X$) if
+$$\mathbb{E} f(X_n) \to \mathbb{E} f(X) \quad \text{for all bdd, cts } f: \mathcal{X} \to \mathbb{R}$$
 
-<!-- Start of picture text -->
-X<br>Xn<br>x 0<br>except<br>a<br>Ye z 1 tix all e<br>Ifl flake<br><!-- End of picture text -->
+**Thm** $X_1, X_2, \dots \in \mathbb{R}$, $F_n(x) = \mathbb{P}(X_n \le x)$, $F(x) = \mathbb{P}(X \le x)$
 
+Then $X_n \Rightarrow X$ iff $F_n(x) \to F(x) \quad \forall x: F \text{ cts at } x$
 
-<!-- Start of picture text -->
-alledlatal n d<br>sylflx fol<br>n DX<br>suff large<br>Oe<br>Pmo<br>is consistent<br>meaning<br>implicit<br><!-- End of picture text -->
+Also known as **weak convergence**
 
-In
+---
 
-Usually
+**Ex**: If $X_n \sim \delta_{1/n}$, ($X_n \stackrel{\text{a.s.}}{=} \frac{1}{n}$), $X \sim \delta_0$, then $X_n \Rightarrow X$
+$$F_n(x) = \mathbf{1}\{\frac{1}{n} \le x\} \longrightarrow \mathbf{1}\{0 \le x\} \quad \text{except } x = 0$$
 
+**Prop** $X_n \xrightarrow{p} c \quad \text{iff} \quad X_n \Rightarrow \delta_c$
 
-<!-- Start of picture text -->
-FI<br>Let x.IE<br>In<br>IE.XiLawoflazenunbers<br>Ln<br>then In x n<br>In<br>If E Xiao Exim<br>finite<br>Var Xn E<br>ÉI<br>NCO e<br>m<br>Then<br>FCI<br>of both the<br>There are stronger versions<br>but this<br>2 LN CLT will generally<br>us<br>be for<br>enough<br><!-- End of picture text -->
+**Proof** $(\Leftarrow)$ Let $f_\varepsilon(x) = \max(1, \frac{\|x-c\|}{\varepsilon}) \ge \mathbf{1}\{\|x-c\| > \varepsilon\}$
+$$\mathbb{P}(\|X_n - c\| > \varepsilon) \le \mathbb{E} f_\varepsilon(X_n) \to 0$$
 
+$(\Rightarrow)$ $f$ bdd, cts, note $\mathbb{E} f(X) = f(c)$
+$$\forall \varepsilon > 0, \ \exists d(\varepsilon) > 0 \text{ s.t. } \|x - c\| \le d(\varepsilon) \Rightarrow |f(x) - f(c)| \le \varepsilon$$
+$$\begin{aligned}
+\mathbb{E} f(X_n) - f(c) &\le \mathbb{E}[|f(X_n) - f(c)| \cdot (\mathbf{1}\{\|X_n - c\| \le d(\varepsilon)\} + \mathbf{1}\{\|\cdot\| > d\})] \\
+&\le \varepsilon + \mathbb{P}(\|X_n - c\| > d(\varepsilon)) \cdot \sup |f(x) - f(c)| \\
+&\le 2\varepsilon \cdot \sup |f| \quad \text{for suff. large } n \quad \boxtimes
+\end{aligned}$$
 
-<!-- Start of picture text -->
-continuous Mains<br>theorem cts Mapping cts X Xz r v s<br>g<br>If<br>Xn X then g Xn glx<br>If Xa I c then<br>g xn go<br>Prot f bdd cts bold cts<br>fog<br>If<br>Xn X then I XD X<br>fly<br>Efly<br>with X<br>Xn Ic case E<br>special<br>Assume<br>X X Y.sc<br>theorem Slutsky<br>Then Katy Xtc<br>ex<br>Xn Y<br>Xnly Xtc if a 0<br>Show<br>Proof Xn Y X c<br>apply cts mapping<br>Wouldn't be true that Xn X Y<br>normally y<br>implies An Yn<br>xx<br>without specifying joint<br>dist<br><!-- End of picture text -->
+In a sequence of statistical models $\mathcal{P}_n = \{P_{n,\theta} : \theta \in \Theta\}$ with $X_n \sim P_{n,\theta}$, we say $\delta_n(X_n)$ is **consistent** for $g(\theta)$ if $\delta_n(X_n) \xrightarrow{P_\theta} g(\theta)$, meaning
+$$P_\theta(\|\delta_n(X_n) - g(\theta)\| > \varepsilon) \to 0$$
 
+Usually we omit the index $n$; sequence is implicit.
 
-<!-- Start of picture text -->
-Delta Method<br>theorem<br>If Tn Xn n Nco 5<br>f x differentiable at x M<br>Then rn f Xn Acn Nco two<br>instant<br>f CX N flu Icn o<br>X Ncu<br>Proof f Xn Her f n Xn n t o Xin<br>rn o Xin<br>rn f Xn Hu Icm sn Xin<br>50<br>Nco Ica E<br>Multivariate rn Xn n Naco E f Rd IRK<br>Derivative DfE exists at n<br>I<br>n<br>Then rn Xn f u ErnDfln Xn<br>Dfw E Dfw<br>Nfo<br>NCO of n E f n if k l<br><!-- End of picture text -->
+---
 
+## Limit Theorems
 
-<!-- Start of picture text -->
-Deltmethod<br>fan<br>i<br>i<br>i<br>ta<br>n<br>In<br>Scaling factor doesn't need to be In<br>but n 50<br>need Xn<br><!-- End of picture text -->
+Let $X_1, X_2, \dots$ iid random vectors
+$$\bar{X}_n = \frac{1}{n} \sum_{i=1}^n X_i$$
 
+**Law of large numbers (LLN)**
 
-<!-- Start of picture text -->
-In can do<br>general<br>higher order Taylor expansions<br>for delta method if derivatives O<br><!-- End of picture text -->
+If $\mathbb{E}|X_i| < \infty$, $\mathbb{E} X_i = \mu$, then $\bar{X}_n \xrightarrow{p} \mu$ ($\bar{X}_n \xrightarrow{\text{a.s.}} \mu$)
 
+**Central limit theorem (CLT)**
 
-<!-- Start of picture text -->
-f Xn f n t Icn xn n t x It<br>OLD<br>0p n Ya Oe ri<br>If f n 0 use second order term<br>n FCK Hn rnCxinD<br>Iin<br>x<br><!-- End of picture text -->
+If $\mathbb{E} X = \mu \in \mathbb{R}^d$, $\text{Var}(X_n) = \Sigma$ (finite)
+
+Then $\sqrt{n}(\bar{X}_n - \mu) \Rightarrow \mathcal{N}(0, \Sigma)$
+
+[There are stronger versions of both the LLN & CLT, but this will generally be enough for us]
+
+---
+
+## Continuous Mapping
+
+**Theorem (Cts Mapping)** $g$ cts; $X_1, X_2, \dots$ r.v.s
+$$\begin{aligned}
+\text{If } X_n \Rightarrow X \quad &\text{then} \quad g(X_n) \Rightarrow g(X) \\
+\text{If } X_n \xrightarrow{p} c \quad &\text{then} \quad g(X_n) \xrightarrow{p} g(c)
+\end{aligned}$$
+
+**Proof** $f$ bdd, cts $\Rightarrow$ $f \circ g$ bdd, cts
+$$\text{If } X_n \Rightarrow X \text{ then } \mathbb{E} f(g(X_n)) \to \mathbb{E} f(g(X))$$
+$X_n \xrightarrow{p} c$ special case with $X \sim \delta_c \ \boxtimes$
+
+**Theorem (Slutsky)** Assume $X_n \Rightarrow X$, $Y_n \xrightarrow{p} c$
+
+Then:
+$$\begin{aligned}
+X_n + Y_n &\Rightarrow X + c \\
+X_n \cdot Y_n &\Rightarrow c X \\
+X_n / Y_n &\Rightarrow X / c \quad \text{if } c \ne 0
+\end{aligned}$$
+
+**Proof** Show $(X_n, Y_n) \Rightarrow (X, c)$, apply cts mapping.
+
+[Wouldn't normally be true that $X_n \Rightarrow X$, $Y_n \Rightarrow Y$ implies $(X_n, Y_n) \Rightarrow (X, Y)$ without specifying joint dist.]
+
+---
+
+## Theorem (Delta Method)
+
+If $\cdot \ \sqrt{n}(X_n - \mu) \Rightarrow \mathcal{N}(0, \sigma^2)$
+$\cdot \ f(x)$ differentiable at $x = \mu$
+
+Then $\sqrt{n}(f(X_n) - f(\mu)) \Rightarrow \mathcal{N}(0, \dot{f}(\mu)^2 \sigma^2)$
+
+**Informal statement:**
+$$X_n \approx \mathcal{N}(\mu, \frac{\sigma^2}{n}) \Rightarrow f(X_n) \approx \mathcal{N}(f(\mu), \dot{f}(\mu) \frac{\sigma^2}{n})$$
+
+**Proof**
+$$f(X_n) = f(\mu) + \dot{f}(\mu)(X_n - \mu) + o(X_n - \mu)$$
+$$\begin{aligned}
+\sqrt{n}(f(X_n) - f(\mu)) &= \dot{f}(\mu) \cdot \sqrt{n}(X_n - \mu) + \underbrace{\sqrt{n} \cdot o(X_n - \mu)}_{\xrightarrow{p} 0} \\
+&= \mathcal{N}(0, \dot{f}(\mu)^2 \sigma^2)
+\end{aligned}$$
+
+**Multivariate:** $\sqrt{n}(X_n - \mu) \Rightarrow \mathcal{N}_d(0, \Sigma)$, \$f: \mathbb{R}^d \to \mathbb{R}^
 
 ---
 

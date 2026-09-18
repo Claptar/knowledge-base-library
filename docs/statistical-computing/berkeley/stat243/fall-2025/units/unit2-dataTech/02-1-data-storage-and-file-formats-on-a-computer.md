@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2025/units/unit2-dataTech.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# 1. Data storage and file formats on a computer
+> **Converted source.** [`units/unit2-dataTech.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit2-dataTech.qmd) — berkeley-stat243 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`units/unit2-dataTech.qmd`](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/units/unit2-dataTech.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# 1. Data storage and file formats on a computer
 
 This unit largely covers topics relevant for early on in the data analysis pipeline: getting data,
 reading data in, writing data out to disk, and webscraping. We'll focus
@@ -46,7 +46,6 @@ case letters in English, 10 digits, punctuation and a few other things
 Some text file formats, such as JSON or HTML, are not easily interpretable/manipulable
 on a line-by-line basis (unlike, e.g., CSV), so they are not as amenable
 to processing using shell commands.
-
 
 A **binary file** is one in which the bits in the file encode the
 information in a custom format and not simply individual characters.
@@ -135,7 +134,6 @@ Here are some of the common file types, some of which are text formats and some 
 8.  Python can easily interact with databases (SQLite, DuckDB, PostgreSQL, MySQL,
     Oracle, etc.), querying the database using SQL and returning results
     to Python. More in Unit 7 and in the [large datasets tutorial](https://computing.stat.berkeley.edu/tutorial-databases/).
-
 
 ## CSV vs. specialized formats such as Parquet
 

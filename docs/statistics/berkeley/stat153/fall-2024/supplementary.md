@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2024/supplementary.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Supplementary
+> **Converted source.** [`supplementary.qmd`](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/supplementary.qmd) — berkeley-stat153 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`supplementary.qmd`](https://github.com/berkeley-stat153/fall-2024/blob/94c943d315ea7361f1f660f42881d219a7e7f009/supplementary.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Supplementary
 
 We will (roughly) follow some chapters of the following two books, which you can look at as supplements to the lecture notes. The first should be available to you by searching for it online through the UC Berkeley Library, and the second is freely available at the link below.
 

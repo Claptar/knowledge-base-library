@@ -5,14 +5,14 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/sections/09/py_vs_R.Rmd
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`sections/09/py_vs_R.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/09/py_vs_R.Rmd) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.Rmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Questions
 
-**Source:** [`sections/09/py_vs_R.Rmd`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/sections/09/py_vs_R.Rmd) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.Rmd` (lossless)
-
-### Main Questions
+## Main Questions
 
 (Ideally, you will make it through all of these, although there if you run out
 of time that is okay.)
@@ -49,8 +49,7 @@ in modules (e.g., a file test.py in your working directory that you can import
 using 'import test'). E.g. consider math.cos and create your own 'cos' function.
 How does this compare to how R finds objects?
 
-
-### Additional Questions
+## Additional Questions
 
 (Work on these if you finish quickly/are curious)
 

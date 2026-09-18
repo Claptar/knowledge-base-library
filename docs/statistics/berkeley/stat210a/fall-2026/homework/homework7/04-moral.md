@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/homework/homework7.tex
 licence: CC BY 4.0
 route: pandoc-latex
 fidelity: high
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Moral
+> **Converted source.** [`homework/homework7.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework7.tex) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.tex`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`homework/homework7.tex`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/homework/homework7.tex) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.tex` (high)
+# Moral
 
 Once again, when we use the right test we often can deliver noticeably better power than if we chose an *ad hoc* test.
 
@@ -32,6 +32,10 @@ Consider a univariate Gaussian problem with $X\mid \theta \sim N(\theta, 1)$, wh
 
 4.  Now assume we observe a value of $X$ such that the two-sided $p$-value $p(X)$ (i.e., $p(x) = \mathbb{P}_0(|X|>|x|)$) takes the values $0.05, 0.01, 0.005$, or $0.001$. Numerically compute $\pi_{\text{post}}^*$ and $\pi_{\text{post},N}^*$ for each value and make a small table. In words, interpret the results.
 
+## Moral: {#moral-3}
+
+$p$-values are commonly misinterpreted as representing “the probability that the null hypothesis is true, given the data.” This is an Bayesian statement and it depends on our prior beliefs. In fact, as this problem shows, even in a Bayesian setting, the $p$-value is generally not a good approximation for the posterior probability that the null is true.
+
 ---
 
-[← Moral](03-moral.md) · [Up: contents](index.md) · [Moral →](05-moral.md)
+[← Moral](03-moral.md) · [Up: contents](index.md)

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/stat243-fall-2021/first_three_weeks.md
 licence: CC0-1.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Events
+> **Converted source.** [`first_three_weeks.md`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/first_three_weeks.md) — berkeley-stat243 · stat243-fall-2021, licensed CC0-1.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`first_three_weeks.md`](https://github.com/berkeley-stat243/stat243-fall-2021/blob/c918dcc56a197cc539e270f1f7d076010b175c52/first_three_weeks.md) · **Licence:** CC0-1.0 · Converted 2026-09-14 from `.md` (lossless)
+# Events
 
 - (Optional) Thursday August 26 or Wednesday September 8, 4-5:30 pm: [introductory LaTeX sessions](https://berkeley.libcal.com/calendar/workshops) run by the library. In particular I highly recommend (in particular if you are a Statistics graduate student) that you know how to create equations in LaTeX.
 

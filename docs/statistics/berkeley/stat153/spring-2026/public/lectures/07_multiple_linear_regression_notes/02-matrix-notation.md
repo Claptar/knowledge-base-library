@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/spring-2026/public/lectures/07_multiple_li
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Matrix notation
+> **Converted source.** [`public/lectures/07_multiple_linear_regression_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/07_multiple_linear_regression_notes.md) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`public/lectures/07_multiple_linear_regression_notes.md`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/07_multiple_linear_regression_notes.md) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.md` (lossless)
+# Matrix notation
 
 We can also write this equation in a more general matrix form:
 
@@ -41,6 +41,14 @@ $$\underset{p \times 1}{\hat{\beta}} = \underset{p \times p}{(X^\intercal X)}^{-
 
 An important note here is that we assume that the columns of $X$ (sometimes called our *features*) are *linearly independent*. This can only happen for $p\leq n$ - where we have no more features than samples. Otherwise, $X \intercal X $ will not have an inverse, but we will be able to deal with this using regularization (which we will cover later).
 
+## Finger tapping demo
+
+Next we will try collecting some data in class and fitting a multiple linear regression model to the data. We will collect data based on a finger tapping task, which is sometimes used as a clinical diagnostic tool to assess fine motor speed, coordination, and brain function. For these tests, typically the experimenter assesses the number of taps that a person makes over a given period of time. As you might imagine, we can also look at whether the number of taps is fairly steady over time, or whether the person is showing some fatigue (slowing down their taps over time).
+
+We will use the [following website](https://stat153.berkeley.edu/spring-2026/lectures/07_finger-tap.html) to test your finger taps, then analyze the resulting data.
+
+We will also chat about what external factors might influence the data and which might make the most sense to add to our model predicting the data.
+
 ---
 
-[← Simple and multiple linear regression](01-simple-and-multiple-linear-regression.md) · [Up: contents](index.md) · [Finger tapping demo →](03-finger-tapping-demo.md)
+[← Simple and multiple linear regression](01-simple-and-multiple-linear-regression.md) · [Up: contents](index.md)

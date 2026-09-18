@@ -5,21 +5,20 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/empirical-bayes.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
+
+> **Converted source.** [`reader/empirical-bayes.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/empirical-bayes.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # The James-Stein Estimator
 
-**Source:** [`reader/empirical-bayes.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/empirical-bayes.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
-
-Split into 6 sections.
+Split into 5 sections.
 
 1. [Gaussian sequence model](01-gaussian-sequence-model.md)
 2. [Stein's Unbiased Risk Estimator](02-stein-s-unbiased-risk-estimator.md)
-3. [Empirical Bayes](03-empirical-bayes.md)
-4. [James-Stein Estimator](04-james-stein-estimator.md)
-5. [Stein's Lemma](05-stein-s-lemma.md)
-6. [Stein's Unbiased Risk Estimator (SURE)](06-stein-s-unbiased-risk-estimator-sure.md)
+3. [James-Stein Estimator](03-james-stein-estimator.md)
+4. [Stein's Lemma](04-stein-s-lemma.md)
+5. [Stein's Unbiased Risk Estimator (SURE)](05-stein-s-unbiased-risk-estimator-sure.md)
 
 ---
 

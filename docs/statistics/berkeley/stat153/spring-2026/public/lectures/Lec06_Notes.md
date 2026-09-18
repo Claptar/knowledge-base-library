@@ -1,0 +1,121 @@
+---
+title: Lecture 6 Notes - Linear Regression Continued
+source: https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/Lec06_Notes.pdf
+source_file: sources/berkeley-stat153/spring-2026/public/lectures/Lec06_Notes.pdf
+licence: CC BY 4.0
+route: llm
+fidelity: reconstructed
+converted: '2026-09-18'
+---
+
+> **Reconstructed by a model.** [`public/lectures/Lec06_Notes.pdf`](https://github.com/berkeley-stat153/spring-2026/blob/c08dd12c146698bb6ea1d0c6887d1898a8d98c6e/public/lectures/Lec06_Notes.pdf) — berkeley-stat153 · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
+
+# Lecture 6 Notes - Linear Regression Continued
+
+Liberty Hamilton
+
+Friday $6^{\text{th}}$ February, 2026
+
+* Reading: Chapter 2 -- Shumway and Stoffer
+
+## 1 Simple linear regression
+
+Last time we spoke about regression models where we have two parameters, $\beta_0$ and $\beta_1$ that we use to estimate the relationship between our response variable $y$ and our covariate $x$:
+
+$$y = \beta_0 + \beta_1 x + \epsilon \tag{1}$$
+
+For example, $y$ is height of an adult and $x$ is the height of their parent, or $y$ is the price of chicken and $x$ is time.
+
+### 1.1 Revisiting OLS
+
+We also talked about ordinary least squares (OLS), which is where we want to solve:
+
+$$Q = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i)^2 \tag{2}$$
+
+We can do this by differentiating $Q$ with respect to each parameter and setting it equal to zero:
+
+First, for $\beta_0$:
+
+$$\begin{aligned}
+\frac{\delta Q}{\delta \beta_0} &= \sum_{i=1}^n 2(y_i - \beta_0 - \beta_1 x_i)(-1) \\
+&= \sum_{i=1}^n 2(\beta_0 + \beta_1 x_i - y_i) = 0 \\
+&= 2\sum_{i=1}^n \beta_0 + 2\sum_{i=1}^n \beta_1 x_i - 2\sum_{i=1}^n y_i \\
+&= 2n\beta_0 + 2n\beta_1 \bar{x} - 2n\bar{y}
+\end{aligned} \tag{3}$$
+
+$$\therefore \beta_0 = \bar{y} - \beta_1 \bar{x} \tag{4}$$
+
+And for $\beta_1$:
+
+$$\begin{aligned}
+Q &= \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i)^2 \\
+&= \sum_{i=1}^n (y_i - \bar{y} + \beta_1 \bar{x} - \beta_1 x_i)^2 \\
+\frac{\delta Q}{\delta \beta_1} &= \sum_{i=1}^n 2(y_i - \bar{y} + \beta_1 \bar{x} - \beta_1 x_i)(\bar{x} - x_i) \\
+&= 2\sum_{i=1}^n [((y_i - \bar{y}) + \beta_1(\bar{x} - x_i))(\bar{x} - x_i)] \\
+&= -2\sum_{i=1}^n (y_i - \bar{y})(x_i - \bar{x}) + 2\beta_1 \sum_{i=1}^n (x_i - \bar{x})^2
+\end{aligned} \tag{5}$$
+
+Then it follows that:
+
+$$\beta_1 = \frac{\sum_{i=1}^n (y_i - \bar{y})(x_i - \bar{x})}{\sum_{i=1}^n (x_i - \bar{x})^2} = \frac{\text{Cov}(x, y)}{\text{Var}(x)} \tag{6}$$
+
+Notice now how our solution for the slope, $\beta_1$, is related to the covariance of $x$ and $y$ and the variance of $x$!
+
+Another note here is that to calculate $\bar{x}$ and $\bar{y}$, we often must use the sample means (e.g. across all time points), because we do not have multiple samples for each time point.
+
+### 1.2 Maximum likelihood estimation (MLE)
+
+We can also calculate these terms using MLE, In this case, we normally assume that the errors are normally distributed i.i.d, e.g.:
+
+$$\epsilon_1, \dots, \epsilon_n \stackrel{\text{i.i.d}}{\sim} N(0, \sigma^2) \tag{7}$$
+
+With this assumption, we can rewrite our linear regression model as:
+
+$$y_i \stackrel{\text{independent}}{\sim} N(\beta_0 + \beta_1 x_i, \sigma^2)$$
+
+The likelihood is expressed as:
+
+$$f_{y_1, \dots, y_n \mid \beta_0, \beta_1, \sigma}(y_1, \dots, y_n) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sigma} \exp\left(-\frac{(y_i - \beta_0 - \beta_1 x_1)^2}{2\sigma^2}\right)$$
+
+To maximize the likelihood, we can maximize the log-likelihood, which is easier to deal with:
+
+$$\begin{aligned}
+\text{log-likelihood} &= \sum_{i=1}^n \log \frac{1}{\sqrt{2\pi}\sigma} - \sum_{i=1}^n \frac{(y_i - \beta_0 - \beta_1 x_1)^2}{2\sigma^2} \\
+&= -\frac{n}{2}\log(2\pi) - n\log\sigma - \frac{1}{2\sigma^2}\sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_1)^2
+\end{aligned} \tag{8}$$
+
+Since we know the sum of squared error $Q = \sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i)^2 = S(\beta_0, \beta_1)$, we can take the derivative with respect to unknown parameters $\beta_0$, $\beta_1$, and $\sigma$:
+
+$$\begin{aligned}
+\frac{\delta}{\delta \beta_0}\text{log-likelihood} &= -\frac{1}{2\sigma^2}\frac{\delta}{\delta \beta_0}S(\beta_0, \beta_1) = 0 \implies \frac{\delta}{\delta \beta_0}S(\beta_0, \beta_1) = 0 \\
+\frac{\delta}{\delta \beta_1}\text{log-likelihood} &= -\frac{1}{2\sigma^2}\frac{\delta}{\delta \beta_1}S(\beta_0, \beta_1) = 0 \implies \frac{\delta}{\delta \beta_1}S(\beta_0, \beta_1) = 0 \\
+\frac{\delta}{\delta \sigma}\text{log-likelihood} &= -\frac{n}{\sigma} + \frac{S(\beta_0, \beta_1)}{\sigma^3} = 0 \implies \sigma = \sqrt{\frac{S(\beta_0, \beta_1)}{n}}
+\end{aligned} \tag{9}$$
+
+These first two equations are the same as what we derived before. However, we now have a new term in which we get the MLE estimate for $\sigma$ from the third equation (with $\beta_0$ and $\beta_1$ replaced by $\hat{\beta}_0$ and $\hat{\beta}_1$, respectively):
+
+$$\hat{\sigma}_{\text{MLE}} = \sqrt{\frac{S(\hat{\beta}_0, \hat{\beta}_1)}{n}} \tag{10}$$
+
+From this, we can get $\hat{\sigma}^2_{\text{MLE}} = \frac{1}{n}S(\hat{\beta}_0, \hat{\beta}_1)$.
+
+But as it turns out, this is a biased estimator (unlike those for $\beta_0$ and $\beta_1$, which are not! We often instead use a corrected, unbiased estimator of $\hat{\sigma}^2$ where we divide by $n - p$, where $p$ is the number of parameters estimated (here, $p = 2$, one for $\beta_0$ and one for $\beta_1$). That is:
+
+$$\hat{\sigma}^2_{\text{unbiased}} = \frac{S(\hat{\beta}_0, \hat{\beta}_1)}{n - 2} \tag{11}$$
+
+Let's look at a simulation to show how this happens!
+
+Next time, we will look at how this extends to multiple linear regression. Later this bias will also become important when we think about regularization.
+
+## 2 A note on assumptions
+
+* What assumptions have we made in the example regressions we have fit so far? **None!** In fact, we don't need to assume the true relationship between $y$ and $x$ is linear to perform linear regression.
+
+* Sometimes it is useful to fit sample coefficients $\beta_0$ and $\beta_1$ and use them to make predictions, even if this model isn't fully correct or the "best" model.
+
+* Often we may use linear models as they are convenient to interpret, not necessarily because they are the best or most correct model.
+
+* If we do want to perform inference, however, we require that many more assumptions are satisfied.
+
+---
+
+[Up: contents](../../index.md)

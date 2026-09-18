@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat243/fall-2024/ps/ps2.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Problems
+> **Converted source.** [`ps/ps2.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/ps/ps2.qmd) — berkeley-stat243 · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`ps/ps2.qmd`](https://github.com/berkeley-stat243/fall-2024/blob/9c62305d05fca31df0d9c6a3b68b350ad8722fee/ps/ps2.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Problems
 
 1. A friend of mine is planning to get married in Death Valley National
     Park in March (this problem is based on real events...). She
@@ -62,9 +62,8 @@ converted: '2026-09-14'
         Hint: to check for equality in an if statement, you generally
         need syntax like:
         ```
-        if [ "${var}" == "7" ]
+        if [ "\${var}" == "7" ]
         ```
-
 
 2. Add documentation, error-trapping and testing for your code from Problem 4, parts (b) and (c) of PS1. You may use a modified version of your PS1 solution, perhaps because you found errors in what you did or wanted to make changes based on Chris' solutions (to be distributed in class on Friday Sep. 13) or your discussions with other students. These topics will be covered in Lab 2 (Sep. 13) and are also discussed in Unit 4.
    a. Add informative doc strings to your functions.

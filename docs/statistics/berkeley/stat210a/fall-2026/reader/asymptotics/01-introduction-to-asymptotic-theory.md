@@ -5,18 +5,18 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/asymptotics.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Introduction to Asymptotic Theory
+> **Converted source.** [`reader/asymptotics.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/asymptotics.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/asymptotics.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/asymptotics.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Introduction to Asymptotic Theory
 
 So far, everything we have seen in this class has dealt with the exact distributions of finite data sets. In many cases we have needed to exploit special properties of the model $\cP$ (e.g., that it has a complete sufficient statistic, it is an exponential family, it is a multivariate Gaussian distribution, etc.) to make exact calculations easier. In generic models, however, the tools we have learned so far may fail us.
 
 For generic models, exact calculations may be intractable or impossible. However, we may be able to approximate our problem with a simpler problem in which calculations are easy. Typically, we approximate by Gaussian by taking the limit as observations $n \to \infty$. This is only interesting if the approximation is good for reasonable sample sizes, but fortunately it very often is.
 
-### Example: Logistic regression
+## Example: Logistic regression
 
 To take a specific example, suppose that we modify the linear regression example from the last lecture to allow for a binary rather than a continuous response. We retain the feature vector $x_i \in \RR^d$ and regression coefficients $\beta \in \RR^d$, but instead of observing outcome $y_i \simind N(\beta'x_i, \sigma^2)$, we now observe $y_i \simind \text{Bern}(\mu(\beta'x_i))$, where
 
@@ -91,7 +91,17 @@ for (b in 1:B) {
   ## Std. error estimate is sqrt(-diag(Hessian) at MLE)
   sigma.hat[b,] <- coef(summary(mod))[,"Std. Error"]
 }
+## "True" Fisher information
+sigma <- sqrt(colMeans(sigma.hat^2))
+hist(beta.hat[,2], freq=FALSE, breaks=50, main = expression(paste("Simulated distribution of ", hat(beta)[1])), xlab=expression(hat(beta)[1]))
+curve(dnorm(x, mean = beta[2], sd = sigma[2]), add=TRUE)
+
+hist((beta.hat[,2] - beta[2])/sigma.hat[,2], freq=FALSE, breaks=30, main = expression(paste("Simulated distribution of ", Z[1] == (hat(beta)[1]-beta[1])/hat(sigma)[1])), xlab=expression(Z[1]))
+curve(dnorm(x), add=TRUE)
+```
+
+These results about the MLE apply far beyond logistic regression, to a wide variety of other models. To begin to prove them, however, we will need to be more precise about what we mean by $\hat\beta$ approximately following a normal distribution, or by the estimator $\hat\Sigma$ being approximately equal to the estimand $\Sigma(\beta)$.
 
 ---
 
-[Up: contents](index.md) · ["True" Fisher information →](02-true-fisher-information.md)
+[Up: contents](index.md) · [Convergence →](02-convergence.md)

@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/probability.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Integrals
+> **Converted source.** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/probability.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/probability.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Integrals
 
 One very nice thing about measures is that they let us define integrals of (nice enough) real-valued functions on $\cX$ with respect to the measure $\mu$, meaning the integral is "weighted" in a way that assigns total weight $\mu(A)$ to each set $A$. We will use the notation $\int f(x)\,\,d\mu(x)$, or just $\int f \,d\mu$.
 
@@ -270,10 +270,10 @@ As a result, we have defined $\int f\,d\mu$ for any function $f$ whose positive 
 
 We can now return to our previous examples of measures and ask what the corresponding integrals are:
 
-**Example 1, continued (Counting measure):** An integral with respect to $\#$ just adds up all the values of $f(x)$:
+**Example 1, continued (Counting measure):** An integral with respect to $#$ just adds up all the values of $f(x)$:
 
 $$
-\int f\,d\# = \sum_{x\in \cX} f(x)
+\int f\,d# = \sum_{x\in \cX} f(x)
 $$
 
 **Example 2, continued (Lebesgue measure):** An integral with respect to the Lebesgue measure is called a *Lebesgue integral*, which is essentially just the usual integral you are used to from calculus class:

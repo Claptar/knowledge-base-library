@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat210a/fall-2026/reader/maximum-likelihood.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Maximum Likelihood Estimation
+> **Converted source.** [`reader/maximum-likelihood.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/maximum-likelihood.qmd) — berkeley-stat210a · fall-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`reader/maximum-likelihood.qmd`](https://github.com/berkeley-stat210a/fall-2026/blob/7dc8f80da94dff74532d9e3923afdb16a255262d/reader/maximum-likelihood.qmd) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.qmd` (lossless)
+# Maximum Likelihood Estimation
 
 For a generic dominated family $\cP = \{P_\theta: \theta \in \Theta\}$ with densities $f_\theta$, a simple estimator for $\theta$ is:
 
@@ -85,6 +85,26 @@ Also, $1_{B_n} \xrightarrow{p} 1$, apply Slutsky
 
 Any zany behavior has no effect on convergence in distribution
 
+## Asymptotic Efficiency
+
+In the exponential family case, generalizes to a much broader class of models
+
+Setting: $X_1, \ldots, X_n \stackrel{\text{iid}}{\sim} p_\theta(x)$, $\theta \in \mathbb{R}^d$
+
+$p_\theta$ smooth in $\theta$ (e.g., 2 cts integrable derives, can be relaxed)
+
+Let $\ell_i(\theta; X) = \log p_\theta(X_i)$, $\ell_n(\theta; X) = \sum_{i=1}^n \ell_i(\theta; X)$
+
+$S_n(\theta) = \nabla_\theta \ell_n(\theta; X)$, $J_n(\theta) = \text{Var}_\theta[\nabla_\theta \ell_n(\theta; X)] = nJ_1(\theta)$
+
+We say an estimator is asymptotically efficient if $\sqrt{n}(\hat{\theta}_n - \theta) \xrightarrow{d} N(0, J_1^{-1}(\theta))$
+
+Delta method for differentiable estimand $g(\theta)$:
+
+$\sqrt{n}(g(\hat{\theta}_n) - g(\theta)) \xrightarrow{d} N(0, \nabla g(\theta)^T J_1^{-1}(\theta) \nabla g(\theta))$
+
+Also achieves CRLB if $\hat{\theta}_n$ does, $g$ diff
+
 ---
 
-[Up: contents](index.md) · [Asymptotic Efficiency →](02-asymptotic-efficiency.md)
+[Up: contents](index.md) · [Asymptotic Distribution of MLE →](02-asymptotic-distribution-of-mle.md)

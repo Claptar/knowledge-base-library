@@ -5,12 +5,12 @@ source_file: sources/berkeley-stat153/fall-2025/CodeLectureEleven153248Fall2025.
 licence: CC BY 4.0
 route: notebook
 fidelity: lossless
-converted: '2026-09-14'
+converted: '2026-09-18'
 ---
 
-# Introduction
+> **Converted source.** [`CodeLectureEleven153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureEleven153248Fall2025.ipynb) — berkeley-stat153 · fall-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.ipynb`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
-**Source:** [`CodeLectureEleven153248Fall2025.ipynb`](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureEleven153248Fall2025.ipynb) · **Licence:** CC BY 4.0 · Converted 2026-09-14 from `.ipynb` (lossless)
+# Introduction
 
 ---
 title: Ridge and LASSO Regularization
@@ -293,101 +293,6 @@ print(y[4] - y[3] - y[3] + y[2], mdfull.params.iloc[4])
 0.004000542782827132 0.0040005427827803555
 ```
 
-## Ridge and LASSO regularized estimation
-
-We now compute the ridge and lasso regularized estimators using the optimization library `cvxpy`. `cvxpy` is a library for formulating and solving convex optimization problems. It is widely used in Machine Learning, Statistics, Engineering etc.
-
-```python
-import cvxpy as cp
-```
-
-Here is the function for solving the ridge optimization problem. Given $y_{n \times 1}$, $X_{n  \times m}$ and $\lambda$, this code solves the problem:
-\begin{align*}
-    \text{Minimize} ~ \left[\|y - X \beta\|^2 + \lambda (\beta_s^2 + \dots + \beta_m^2) \right]
-\end{align*}
-Here $s$ denotes `penalty_start` in the code (the penalty does not involve $\beta_j$ for $j < s$).
-
-```python
-def solve_ridge(X, y, lambda_val, penalty_start=2):
-    n, p = X.shape
-
-    # Define variable
-    beta = cp.Variable(p)
-
-    # Define objective
-    loss = cp.sum_squares(X @ beta - y)
-    reg = lambda_val * cp.sum_squares(beta[penalty_start:])
-    objective = cp.Minimize(loss + reg)
-
-    # Solve problem
-    prob = cp.Problem(objective)
-    prob.solve()
-
-    return beta.value
-```
-
-Below is the code for computing the ridge estimator with a fixed value of $\lambda$. We also plot the fitted values (these are the values $\hat{\mu}^{\text{ridge}}(\lambda) = X \hat{\beta}^{\text{ridge}}(\lambda)$) corresponding to the Ridge estimate.
-
-Play around with  different values of $\lambda$ and see how the estimator changes.
-
-```python
-b_ridge = solve_ridge(Xfull, y, lambda_val = 10000) #lambda = 10000 seems to work well
-#print(b_ridge)
-plt.plot(y)
-ridge_fitted = np.dot(Xfull, b_ridge)
-plt.plot(ridge_fitted, color = 'red')
-plt.show()
-```
-
-*(1 figure omitted — see the original notebook.)*
-
-Here is the function for minimizing the LASSO objective function. Given $y_{n \times 1}$, $X_{n  \times m}$ and $\lambda$, this code solves the problem:
-\begin{align*}
-    \text{Minimize} ~ \left[\|y - X \beta\|^2 + \lambda (|\beta_s| + \dots + |\beta_m|) \right]
-\end{align*}
-Here $s$ denotes `penalty_start` in the code (the penalty does not involve $\beta_j$ for $j < s$).
-
-```python
-def solve_lasso(X, y, lambda_val, penalty_start=2):
-    n, p = X.shape
-
-    # Define variable
-    beta = cp.Variable(p)
-
-    # Define objective
-    loss = cp.sum_squares(X @ beta - y)
-    reg = lambda_val * cp.norm1(beta[penalty_start:])
-    objective = cp.Minimize(loss + reg)
-
-    # Solve problem
-    prob = cp.Problem(objective)
-    prob.solve()
-
-    return beta.value
-```
-
-Below is the code for computing the ridge estimator with a fixed value of $\lambda$. We also plot the fitted values (these are the values $\hat{\mu}^{\text{lasso}}(\lambda) = X \hat{\beta}^{\text{lasso}}(\lambda)$) corresponding to the Ridge estimate.
-
-Play around with  different values of $\lambda$ and see how the estimator changes.
-
-```python
-b_lasso = solve_lasso(Xfull, y, lambda_val = 25) #10 seems to work well
-#print(b_lasso)
-plt.plot(y)
-lasso_fitted = np.dot(Xfull, b_lasso)
-plt.plot(lasso_fitted, color = 'red')
-plt.show()
-```
-
-*(1 figure omitted — see the original notebook.)*
-
-The LASSO estimator is typically sparse. This can be checked by the code below where we only display the estimated coefficients which cross a threshold in absolute value.
-
-```python
-threshold = 1e-6
-significant_idx = np.where(np.abs(b_lasso) > threshold)[0]
-print(b_lasso[significant_idx])
-
 ---
 
-[Up: contents](index.md) · [Or to see index-value pairs →](02-or-to-see-index-value-pairs.md)
+[Up: contents](index.md) · [Ridge and LASSO regularized estimation →](02-ridge-and-lasso-regularized-estimation.md)
