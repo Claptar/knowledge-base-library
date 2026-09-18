@@ -43,8 +43,11 @@ BARE_NUMBER = re.compile(r"^\s*\(?\d{1,4}\)?\s*$")
 PAGE_MARKER = re.compile(r"^\s*(page\s+\d+|\d+\s+of\s+\d+|\d+\s*/\s*\d+)\s*$", re.I)
 PICTURE_TEXT = re.compile(r"<!--\s*Start of picture text\s*-->")
 MATH_SPAN = re.compile(r"<span class=\"math")
-LATEX_PAREN = re.compile(r"\\\(|\\\)")
-LATEX_BRACKET = re.compile(r"\\\[|\\\]")
+# A `\[` whose backslash is itself escaped is not a display delimiter: `\\[4pt]` is a row break
+# followed by LaTeX's row-spacing argument, valid inside a pmatrix or cases and rendered correctly
+# by MathJax. Matching it called eight correct matrices a repair across five chapters.
+LATEX_PAREN = re.compile(r"(?<!\\)\\\(|(?<!\\)\\\)")
+LATEX_BRACKET = re.compile(r"(?<!\\)\\\[|(?<!\\)\\\]")
 ESCAPED_DOLLAR = re.compile(r"\\\$")
 TEX_COMMAND = re.compile(r"\\(?:frac|sum|int|mathbb|theta|tau|alpha|beta|sigma|mu|left|right|begin|cdot|times|leq|geq|infty)\b")
 ESCAPED_UNDERSCORE = re.compile(r"\\_")
