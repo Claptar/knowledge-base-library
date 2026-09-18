@@ -19,6 +19,11 @@ collect-materials  ->  normalise-materials  ->  adapt-material  ->  study-mentor
    fetch it            make it linkable         rewrite it         work through it
 ```
 
+**Conversion preserves; the book rewrites.** The two steps are deliberately separate and the
+boundary matters: everything up to step 3a changes format only, and step 3b writes new prose from
+what those steps produced. If you find yourself improving the text during conversion, stop — that
+belongs in the book, where it is marked as a rewrite and carries its source's licence.
+
 **It preserves; it does not rewrite.** An adapted document reorders the material motivation-first
 and converts proofs to exercises — that is the `adapt-material` skill, in the knowledge base
 repository, and it is a different job.
@@ -82,78 +87,102 @@ a real licence, it goes in the front matter and its conditions hold: share-alike
 | Format | Route | Fidelity |
 | --- | --- | --- |
 | `.md` `.qmd` `.Rmd` | strip front matter and code chunks | lossless |
-| `.tex` | pandoc | high — maths intact |
-| `.html` | pandoc | good; MathJax output is uglier than source |
-| `.ipynb` | nbconvert | good |
-| `.srt` `.vtt` | `scripts/transcript_text.py` | speech, and **read that skill first** |
-| `.pdf` | pymupdf4llm | **prose only — maths destroyed. Mark it** |
+| `.tex` | pandoc, after rewriting knitr's `\KeywordTok{}` highlighting as `verbatim` | high — maths intact |
+| `.rst` | pandoc | high |
+| `.html` | pandoc, with the maths lifted out first — see below | good |
+| `.ipynb` | read from the JSON, not nbconvert | lossless |
+| `.srt` `.vtt` | `scripts/transcript_text.py` | speech, and **read `adapt-recordings` first** |
+| `.pdf` | **a multimodal model** — `scripts/llm_pdf.py` | reconstructed |
 
-Install the toolchain with `uv sync --group convert`; it is declared in `pyproject.toml` and needs
-no system packages.
+Install the toolchain with `uv sync --group convert`.
 
-Where a document exists in several formats the script keeps only the best: a lecture present as
-`.qmd`, `.html` and `.pdf` converts once, from the `.qmd`, and the other two are reported as
-dropped renders. Course administrivia — install guides, rubrics, codes of conduct — is skipped by
-default and listed; `--include-all` keeps it. A syllabus is **not** administrivia.
+**There is no plain PDF route any more.** `pymupdf4llm` produced 55% of the old corpus and almost
+none of it was worth reading; it is now the *cross-check* rather than the output. A PDF that
+survives re-routing goes to a model, under the four controls in
+[`references/quality-gates.md`](references/quality-gates.md) § *The LLM route*.
 
-A transcript is not a document, and converting one is not this skill's job beyond the mechanical
-step. The `adapt-recordings` skill, in the knowledge base repository, owns what speech requires —
-reconstructing mathematics spoken aloud and written on a board the transcript cannot see — and it
-is the authority on it.
+**Two traps in the pandoc routes, both of which cost real time:**
 
-## Step 3 — split it
+- **Pandoc's HTML reader does not parse `<span class="math inline">\(x\)</span>` as mathematics.**
+  It treats the payload as literal text and escapes the backslashes. A later `\[` → `$$`
+  substitution over that escaped output is what turned `\EE\[\theta_i \mid X\]` into
+  `\EE\[\theta_i \mid X$$` on 360 published pages. The maths is now lifted out *before* pandoc
+  sees the file and put back afterwards, untouched.
+- **knitr writes R code into LaTeX as `\begin{Shaded}` with every token in a `\NormalTok{}`
+  macro**, which pandoc renders as bold prose: `m1 <- **lm**(lpsa ** ** 1, data = prostate)`.
+  Those environments are rewritten as `verbatim` first.
 
-**One file per lecture, section or coherent block**, because the point of the exercise is a URL per
-idea. Split on the source's own structure — `#`/`##` headings, or one file per lecture in a course
-repo — rather than on length.
+Where a document exists in several formats the script keeps only the best, and reports the rest as
+dropped renders. **A caption file beats a PDF of the same transcript**: OCW ships each lecture's
+words up to four times, and converting the rest produced duplicate pages and, now, duplicate bills.
 
-Keep the source's numbering where it has one (`lecture07`, `chapter03`): it is how he will refer to
-it, and renumbering breaks the correspondence with the original. Where there is none, number in
-document order.
+Course administrivia is skipped by default and listed; `--include-all` keeps it. A syllabus is
+**not** administrivia.
 
-Each output file carries, generated rather than hand-written:
+## Step 3 — split it, and shape it
 
-```markdown
----
-title: <section title, from the source>
-source: <URL of the original>
-source_file: sources/<slug>/<path>
-licence: <the source's, and therefore this file's>
-converted: YYYY-MM-DD from .qmd
----
-```
+**Chapter-sized pages.** Split on the source's *top* heading level and no deeper, then merge any
+part too thin to stand as a page into its neighbour — backwards, or forwards when it is the first
+part, because an exam PDF opens with a letterhead that otherwise becomes a page of nothing.
 
-Add `**Converted from PDF — mathematics may be mangled. Check against the original.**` when the
-route was a PDF. That warning is the honest half of a lossy conversion and must not be omitted to
-make the output look tidier.
+The old rule tried each level shallowest-first and accepted one whose sections *averaged* over 400
+characters. Averaging is the flaw: one long section drags a crowd of three-line stubs over the bar,
+and it produced 11,918 pages of which 2,243 had no body at all.
+
+**The shape of a page is not described here.** It is in
+[`references/page-template.md`](references/page-template.md), which is the single authority, and
+`scripts/body_rules.py` implements it. This file used to carry a front-matter block that had
+already drifted out of step with the script — one copy, referenced, is the rule for skills as much
+as for notes.
 
 ## Step 3a — repairing mangled mathematics
 
-A PDF conversion leaves equations broken in a way a parser cannot fix: `λ(t) = Sf((tt))because...`
-is recoverable as $\lambda(t) = f(t)/S(t)$ only by *reading it and knowing what it must have said*.
-That is a job for a model, not a regex, and it is worth doing — but it is **inference about what
-was written**, and this repo already has a rule for that.
+**This step is now mostly the LLM route, and that is the point.** The old instruction was to run a
+separate manual pass over converted files, reading `λ(t) = Sf((tt))because...` against the original
+and restoring `$\lambda(t) = f(t)/S(t)$` by hand, marking each repair `**Unverified.**`. It was
+specified, never built, and the count of `**Unverified.**` marks in the corpus stayed at zero while
+6,506 pages carried the mangled-mathematics banner.
 
-**The precedent is the `adapt-recordings` skill's step 3**, which reconstructs spoken mathematics
-and
-marks every reconstruction. The discipline is identical here and not negotiable:
+A model reading the page does that job, at scale, and the honest bookkeeping moved with it: instead
+of marking each repaired expression, the whole page declares itself reconstructed in its banner,
+because a page written end-to-end by a model is not a record with repairs in it.
 
-- **Mark every repaired expression `**Unverified.**`** unless it is confirmed against a source
-  format or a clean copy. Confirmation demotes it to plain text; nothing else does.
+**The marking discipline still holds wherever a human or an agent edits a converted page by hand:**
+
+- **Mark every repaired expression `**Unverified.**`** unless confirmed against a source format.
 - **Repair against the original page, not from context alone.** Guessing a plausible equation from
   surrounding prose is the worst available failure: undetectable, and confidently wrong.
-- **Where the reading genuinely cannot be settled, give both** and say so, exactly as for a
-  transcript.
-- **Report the count of `**Unverified.**` marks left in the file.** That number is how much of the
-  document is reconstruction rather than record.
+- **Where the reading cannot be settled, give both** and say so.
 
-Run it as a separate pass over already-converted files, never inline with the mechanical
-conversion — the two have different failure modes and should be reviewable apart. A conversion that
-is merely lossy is honest; a conversion silently improved by a model is not, which is the whole
-reason for the marking.
+And the rule above it still holds hardest: **a source format beats any reconstruction.** A `.tex`
+gives the LaTeX its author typed. No model improves on that, and none is asked to.
 
-A dedicated lightweight skill for this pass is a reasonable thing to add; until one exists, it is
-this step, with the rules above.
+## Step 3b — write the book
+
+**Conversion is not the product.** A converted page answers *what did page 19 say*, which the PDF
+already answered. The library ships **one book per course**: coherent lecture notes written from
+the slides and the transcript together, exercises from the course's own problem sets, solutions as
+a linked appendix, and the same structure for every course.
+
+`references/book-template.md` is the specification; `scripts/synthesise_book.py` implements it.
+
+```bash
+synthesise_book.py plan  <course>            # chapters it would write, from what, and the cost
+synthesise_book.py submit <course>           # queue them (Batch API, half price)
+synthesise_book.py submit <course> --sync    # or straight to the model, twice the price, no wait
+synthesise_book.py collect                   # finished chapters into the cache
+synthesise_book.py write <course> --apply    # write the book AND delete the artefacts it replaces
+```
+
+Three things about this that cost real time to learn:
+
+- **Course years merge.** Stat 243 ran twelve times and Stat 150 seven. That is one book each, not
+  twelve directories side by side.
+- **Practice binds to its lecture.** Recitation 7 is the exercises for chapter 7, not a chapter
+  between 7 and 8. Treating every recitation and worked example as its own chapter turned one
+  course into 86 "chapters" — the same fragmentation wearing a different label.
+- **A chapter is keyed on its input material**, so writing a book before its slides have finished
+  converting means paying for every chapter twice. Wait for the conversion.
 
 ## Step 4 — file it
 
@@ -178,9 +207,21 @@ the one worth acting on — it is the list of material that needs a different ap
 
 ## Reference files
 
-- `scripts/normalise_source.py` — the converter. Dry run by default.
+- [`references/page-template.md`](references/page-template.md) — **the authority on what a
+  converted page looks like.** Front matter, banner, headings, maths, HTML, figures, footer.
+- [`references/quality-gates.md`](references/quality-gates.md) — what is rejected and why, the
+  measured baseline, and the rules fencing the LLM route.
+- [`references/book-template.md`](references/book-template.md) — **what the library ships**: one
+  book per course, and the motto every choice here is judged by.
+- [`references/index-template.md`](references/index-template.md) — the per-source contents page.
+- `scripts/normalise_source.py` — the converter. Dry run by default, and a dry run never calls a
+  model.
+- `scripts/body_rules.py` — the body pipeline.
+- `scripts/validate_pages.py` — the gates, as code. Also CI.
+- `scripts/llm_pdf.py` — the PDF route, its cross-check and its cache.
+- `scripts/llm_batch.py` — the same route at half price, through the Batch API.
+- `scripts/synthesise_book.py` — converted material to a course book.
 - `scripts/transcript_text.py` — captions to timestamped prose.
-- `../collect-materials/SKILL.md` — how material gets here in the first place.
 - [`AGENTS.md`](../../AGENTS.md) — what is converted, what is not, and the traps.
 
 In the **knowledge base** repository, not this one: `adapt-recordings` is the authority on
