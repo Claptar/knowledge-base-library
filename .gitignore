@@ -14,3 +14,11 @@ sources/*
 # Site build
 _site/
 .venv/
+
+# Credentials for the LLM conversion route. Never committed.
+.env
+
+# PDF page slices: scratch from an older batch route, written by nothing in the tree now.
+# Regenerable from sources/ at zero cost, and 335MB of the 352MB cache. The chapters and
+# conversions beside them ARE paid artefacts and are committed.
+conversion-cache/slices/
