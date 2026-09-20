@@ -787,6 +787,9 @@ sources:
     sha256: 46931d5b0eda04263a8da0de392c258576e281186637fe51a609e04597868460
   note: 'licence checked no licence on the course page or Au''s parent page'
 - slug: berkeley-stat150/spring-2026
+  exclude:
+  - unit1.md          # Quarto/MyST starter scaffolding, not course material
+  - unit2.ipynb          # Quarto/MyST starter scaffolding, not course material
   material: course
   subject: stochastic-processes
   licence: CC BY 4.0
@@ -815,6 +818,9 @@ sources:
   commit: 94c943d315ea7361f1f660f42881d219a7e7f009
   restorable: upstream
 - slug: berkeley-stat153/fall-2025
+  exclude:
+  - unit1.md          # Quarto/MyST starter scaffolding, not course material
+  - unit2.ipynb          # Quarto/MyST starter scaffolding, not course material
   material: course
   subject: statistics
   licence: CC BY 4.0
@@ -829,6 +835,9 @@ sources:
   commit: df8e8e972b95eb1235ce8a17f88722e852802200
   restorable: upstream
 - slug: berkeley-stat153/fall-2026
+  exclude:
+  - unit1.md          # Quarto/MyST starter scaffolding, not course material
+  - unit2.ipynb          # Quarto/MyST starter scaffolding, not course material
   material: course
   subject: statistics
   licence: CC BY 4.0
@@ -843,6 +852,9 @@ sources:
   commit: 1df2e362c312415dc83d910dc9e724e1646fafab
   restorable: upstream
 - slug: berkeley-stat153/spring-2025
+  exclude:
+  - unit1.md          # Quarto/MyST starter scaffolding, not course material
+  - unit2.ipynb          # Quarto/MyST starter scaffolding, not course material
   material: course
   subject: statistics
   licence: CC BY 4.0
@@ -873,6 +885,10 @@ sources:
   commit: c08dd12c146698bb6ea1d0c6887d1898a8d98c6e
   restorable: upstream
 - slug: berkeley-stat156/fall-2024
+  exclude:
+  - units/unit1.qmd          # Quarto/MyST starter scaffolding, not course material
+  - units/unit2.ipynb          # Quarto/MyST starter scaffolding, not course material
+  - units/unit3.qmd          # Quarto/MyST starter scaffolding, not course material
   material: course
   subject: statistics
   licence: CC BY-NC 4.0
@@ -1087,6 +1103,9 @@ sources:
   commit: 010df60fbc31daa6fbb19503f12d1b45ff8d8e6d
   restorable: upstream
 - slug: berkeley-stat206b/spring-2026
+  exclude:
+  - unit1.md          # Quarto/MyST starter scaffolding, not course material
+  - unit2.ipynb          # Quarto/MyST starter scaffolding, not course material
   material: course
   subject: probability
   licence: CC BY 4.0
@@ -1101,6 +1120,10 @@ sources:
   commit: 3f3ba771e972d8544e021243999531ad753161b9
   restorable: upstream
 - slug: berkeley-stat210a/fall-2024
+  exclude:
+  - units/unit1.qmd          # Quarto/MyST starter scaffolding, not course material
+  - units/unit2.ipynb          # Quarto/MyST starter scaffolding, not course material
+  - units/unit3.qmd          # Quarto/MyST starter scaffolding, not course material
   material: course
   subject: statistics
   licence: CC BY 4.0
@@ -1115,6 +1138,9 @@ sources:
   commit: 812543bde50398a54db3044bf8ba7120189a4dfa
   restorable: upstream
 - slug: berkeley-stat210a/fall-2025
+  exclude:
+  - units/unit1.html          # Quarto/MyST starter scaffolding, not course material
+  - units/unit3.html          # Quarto/MyST starter scaffolding, not course material
   material: course
   subject: statistics
   licence: CC BY 4.0
@@ -1157,6 +1183,9 @@ sources:
   commit: 6a725bda2894de573659dd9ae38e3ca1b5cb41d5
   restorable: upstream
 - slug: berkeley-stat230a/spring-2025
+  exclude:
+  - unit1.md          # Quarto/MyST starter scaffolding, not course material
+  - unit2.ipynb          # Quarto/MyST starter scaffolding, not course material
   material: course
   subject: statistics
   licence: CC BY 4.0
