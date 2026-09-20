@@ -38,6 +38,7 @@ HTML_TAG_BUDGET = 0            # raw HTML in a body is always a repair, never to
 
 FRONTMATTER = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n", re.S)
 FENCE = re.compile(r"^\s{0,3}(`{3,}|~{3,})", re.M)
+LIST_ITEM = re.compile(r"^\s*(?:\d+[.)]|[-*+])\s")
 HEADING = re.compile(r"^(#{1,6})[ \t]*(.*?)[ \t]*#*\s*$", re.M)
 BARE_NUMBER = re.compile(r"^\s*\(?\d{1,4}\)?\s*$")
 PAGE_MARKER = re.compile(r"^\s*(page\s+\d+|\d+\s+of\s+\d+|\d+\s*/\s*\d+)\s*$", re.I)
@@ -114,18 +115,45 @@ def split_frontmatter(text: str) -> tuple[dict, str]:
 
 
 def strip_code(text: str) -> str:
-    """Blank out fenced blocks and inline spans, preserving line count so offsets stay usable."""
-    out, in_fence = [], False
+    """Blank out fenced blocks and inline spans, preserving line count so offsets stay usable.
+
+    Two things here are easy to get wrong, and both produced FATAL false positives on correct
+    chapters. A fence closes only on a marker of the same character and at least its own length,
+    so a ```` block quoting ``` inside it stays one block -- tracking a bare boolean let the
+    nesting invert, and a page of R leaked into prose where `input$data` read as an unmatched
+    maths delimiter. And an inline span may wrap across a line break, because the prose is
+    wrapped at ~100 characters: a line-bounded regex left the `$` in `` `tail -n\n${1}` `` behind.
+    Spans are therefore blanked over the whole text, with newlines kept so line numbers hold."""
+    out, fence, in_list = [], None, False
     for line in text.splitlines():
-        if FENCE.match(line):
-            in_fence = not in_fence
+        m = FENCE.match(line)
+        if fence is None:
+            if m:
+                fence = m.group(1)
+                out.append("")
+                continue
+        else:
+            if m and m.group(1)[0] == fence[0] and len(m.group(1)) >= len(fence):
+                fence = None
             out.append("")
             continue
-        if in_fence or (line.startswith("    ") and line.strip()):
-            out.append("")                     # fenced or indented: both are code
+        # An indented line inside a list is the item's own continuation, not code. Everything a
+        # numbered exercise carries is indented under it -- wrapped prose, bullets, a $$ display
+        # block -- and blanking those deleted half of a maths span and left its partner bare, so
+        # correct chapters failed a FATAL gate. Looking only at the PREVIOUS line was not enough:
+        # once the first continuation was blanked the lookback saw a blank and ate the rest of
+        # the item. The list runs until a line starts back at column 0.
+        if LIST_ITEM.match(line):
+            in_list = True
+        elif line.strip() and not line[0].isspace():
+            in_list = False
+        if line.startswith("    ") and line.strip() and not in_list:
+            out.append("")
             continue
-        out.append(re.sub(r"`[^`\n]+`", "", line))
-    return "\n".join(out)
+        out.append(line)
+    return re.sub(r"`[^`]+`",
+                  lambda m: re.sub(r"[^\n]", " ", m.group()),
+                  "\n".join(out))
 
 
 def body_of(text: str) -> str:
