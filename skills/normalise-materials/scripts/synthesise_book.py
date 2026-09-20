@@ -30,7 +30,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import llm_pdf                                                        # noqa: E402
-from body_rules import (_fix_stray_dollars, _protect_svg,             # noqa: E402
+from body_rules import (_fix_stray_dollars, _protect_svg, fix_escaped_closer,   # noqa: E402
+                        protect_code, restore_code,
                         _restore_svg, tidy_svg)
 
 LIBRARY = Path(__file__).resolve().parents[3]
@@ -764,7 +765,13 @@ def cmd_write(a):
             # drawing's text, and escaping it there put a stray `\$` inside the diagram and
             # broke the very page this repair was added to fix.
             body, _svg = _protect_svg(tidy_svg(ch["markdown"].strip()))
-            body = _restore_svg(_fix_stray_dollars(body), _svg)
+            # fix_escaped_closer runs AFTER the escaper, not before: the damage it repairs is the
+            # escaper's own. One stray dollar earlier in the page shifts every pairing, so a
+            # legitimate closer is left over and escaped -- `$\chi^2\$` -- which then swallows
+            # the page the escaper was protecting.
+            _code_body, _code = protect_code(body)
+            _code_body = fix_escaped_closer(_fix_stray_dollars(_code_body))
+            body = _restore_svg(restore_code(_code_body, _code), _svg)
             if solutions.get(ch["number"]):
                 body += (f"\n\nSolutions: [chapter {ch['number']}]"
                          f"(solutions/{name})\n")

@@ -319,8 +319,44 @@ def _maths(text: str) -> str:
 
 
 CURRENCY_DOUBLED = re.compile(r"\$\$(\d[\d,.]*)\$")
+ESCAPED_CLOSER = re.compile(r"(?<![\\$])\$(?!\$)((?:\\[^$]|[^$\\\n])+?)\\\$")
 VALID_MATH = re.compile(r"\$\$.*?\$\$|(?<![\$\\])\$(?!\$)(?:\\.|[^$\\])+?(?<![\$\\])\$(?!\$)",
                         re.S)
+
+
+CODE_REGION = re.compile(r"^(`{3,}|~{3,}).*?^\1[^\n]*$|`[^`]+`", re.M | re.S)
+
+
+def protect_code(text: str) -> tuple[str, list]:
+    """Hide fenced blocks and inline spans so a dollar repair pairs over prose only.
+
+    A shell `$(...)` or an R `mNB$theta` is not a maths delimiter, but the escaper used to pair
+    dollars across the whole body, so a code dollar could pair with a prose one and leave a real
+    span's closer orphaned -- the escaper then escaped that closer and swallowed the page. The
+    validator's gate strips code before pairing; this makes the repair agree with it."""
+    store = []
+
+    def take(m):
+        store.append(m.group(0))
+        return f"@@CODE{len(store) - 1}@@"
+
+    return CODE_REGION.sub(take, text), store
+
+
+def restore_code(text: str, store: list) -> str:
+    for i, block in enumerate(store):
+        text = text.replace(f"@@CODE{i}@@", block)
+    return text
+
+
+def fix_escaped_closer(text: str) -> str:
+    """Unescape a maths span's closing delimiter when escaping left the opener unmatched.
+
+    `$\\chi^2\\$` renders as a stray dollar and swallows the rest of the page. Deliberately NOT
+    part of _fix_stray_dollars: that runs in the conversion path, and editing it would change the
+    material every chapter key is hashed over. This runs when a book is emitted, where the only
+    input is an already-paid-for chapter."""
+    return ESCAPED_CLOSER.sub(r"$\1$", text)
 
 
 def unmatched_dollars(text: str) -> int:
