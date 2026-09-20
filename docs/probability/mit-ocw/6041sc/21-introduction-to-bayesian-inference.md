@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 21
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -206,6 +206,9 @@ While $\mathbf{E}[\Theta \mid X_1, \dots, X_n]$ is mathematically the optimal LM
 - **Lecture 21 Slides:** Overview of statistical models, taxonomy of inference problems (system identification, hypothesis testing, classical vs. Bayesian), Bayes' rule formulas across discrete/continuous combinations, coin bias example, MAP decision rules, and derivation of LMS estimators without and with observations.
 - **Lecture 21 Transcript:** Motivation using arrival modeling, Netflix recommendations, orbit fitting, electron mass example, philosophical differences between classical parameters and Bayesian priors, contrast between MAP and conditional expectation, and the proof of LMS optimality over all functions $g(X)$.
 - **Recitation 21 Slides and Transcript:** Formulation of the bounding and limit theorem problems for the Exercises section. Note: The lecture referred to specific historical misuses of statistics and promised simpler alternatives to multi-dimensional Bayesian integration (linear least squares), which were deferred to subsequent lectures.
+
+Solutions: [chapter 21](solutions/21-introduction-to-bayesian-inference.md)
+
 
 ---
 

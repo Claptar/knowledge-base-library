@@ -4,7 +4,7 @@ course: "Berkeley Stat 156 Fall 2024"
 chapter: 5
 source: "https://github.com/berkeley-stat156/fall-2024/blob/bbfe05b00bcc6fcbcf3140ad89cda2c5b36ed75e/HW3.pdf"
 licence: "CC BY-NC 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [Berkeley Stat 156 Fall 2024](https://github.com/berkeley-stat156/fall-2024/blob/bbfe05b00bcc6fcbcf3140ad89cda2c5b36ed75e/HW3.pdf), licensed CC BY-NC 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -179,4 +179,4 @@ not reproduced here for that reason.
 
 ---
 
-[← 4. Confounding, Backdoor Paths, M-Bias](04-confounding-backdoor-paths-m-bias.md) · [Contents](index.md) · [8. The Final Project →](08-the-final-project.md)
+[← 4. Confounding, Backdoor Paths, M-Bias](04-confounding-backdoor-paths-m-bias.md) · [Contents](index.md) · [7. Course Reading Guide →](07-course-reading-guide.md)

@@ -5,10 +5,10 @@ source_file: sources/berkeley-stat206a/fall-2024/index.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-18'
+converted: '2026-09-20'
 ---
 
-> **Converted source.** [`index.qmd`](https://github.com/berkeley-stat206a/fall-2024/blob/67b33919409b2507b48465b8d9e92b11fb41a983/index.qmd) — berkeley-stat206a · fall-2024, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
+> **Converted source.** [`index.qmd`](https://github.com/berkeley-stat206a/fall-2024/blob/67b33919409b2507b48465b8d9e92b11fb41a983/index.qmd) — berkeley-stat206a · fall-2024, licensed CC BY 4.0. Converted 2026-09-20 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Statistics 206a: Advanced Topics in Probability and Stochastic Process
 

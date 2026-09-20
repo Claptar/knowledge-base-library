@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 24
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -300,6 +300,9 @@ We evaluate two candidate models:
 * Binary hypothesis testing, Type I and II errors, and the Likelihood Ratio Test (Bayesian and non-Bayesian): slides 8–9; transcript [42:22]–[50:13].
 * Exercises: adapted directly from Fall 2010 Recitation 24 problem set.
 * Not covered in supplied material: specific derivations for parameter confidence intervals in regression; quantitative tests for multicollinearity.
+
+Solutions: [chapter 24](solutions/24-linear-regression-and-hypothesis-testing.md)
+
 
 ---
 

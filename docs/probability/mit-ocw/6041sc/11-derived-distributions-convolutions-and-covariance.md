@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 11
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -285,6 +285,9 @@ Find the probability density function of $Y$.
 * **Covariance and Correlation Coefficient:** Slides "Covariance" and "Correlation coefficient", Transcript [41:00]–[50:47].
 * **Exercises:** Recitation 11 problems 1, 2, and 3 (Fall 2010). Note: the variance formula on the lecture slide contained a typographical index notation corrected during lecture delivery at [46:24].
 
+Solutions: [chapter 11](solutions/11-derived-distributions-convolutions-and-covariance.md)
+
+
 ---
 
-[← 10. Bayes' Rule and Derived Distributions](10-bayes-rule-and-derived-distributions.md) · [Contents](index.md) · [12. Iterated Expectations and Total Variance →](12-iterated-expectations-and-total-variance.md)
+[← 10. Derived Distributions and Bayesian Inference](10-derived-distributions-and-bayesian-inference.md) · [Contents](index.md) · [12. Iterated Expectations and Total Variance →](12-iterated-expectations-and-total-variance.md)

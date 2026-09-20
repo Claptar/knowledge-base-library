@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 20
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -227,6 +227,9 @@ Let $X$ be uniformly distributed on the interval $[-1, 1]$, and let $X_1, X_2, \
 - Slides and lecture notes: Lecture 20, "The Central Limit Theorem," MIT 6.041SC Fall 2013.
 - Lecture transcript: Lecture 20, covering standardization, interpretation of convergence of CDFs vs. PMFs, the pollster problem, continuity correction, De Moivre–Laplace theorem, and normal vs. Poisson limits.
 - Problem material: Recitation 20 slides and video transcripts for problems on lightbulb polling estimation, modes of convergence ($X_n, Y_n$, mean square convergence), and convergence in probability of uniform random sequences.
+
+Solutions: [chapter 20](solutions/20-the-central-limit-theorem.md)
+
 
 ---
 

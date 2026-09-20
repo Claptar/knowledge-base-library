@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 13
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -260,6 +260,9 @@ Widgets are stored in boxes, and all boxes are assembled into a crate. Let $X$ d
 
 - **Lecture 13 Slides & Transcript:** Bernoulli process definition, sample space of infinite sequences, binomial count distribution, geometric interarrival times, memoryless property, the first string of losing days example, Pascal distribution for $k$th arrival time, splitting and merging of independent Bernoulli processes.
 - **Recitation 13 Problem Set:** Iterated expectations generalizations (Problem 1), broken stick length moments (Problem 2), and total widget count in a crate (Problem 3).
+
+Solutions: [chapter 13](solutions/13-the-bernoulli-process.md)
+
 
 ---
 

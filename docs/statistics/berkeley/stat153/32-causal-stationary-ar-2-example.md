@@ -1,0 +1,263 @@
+---
+title: "32. Causal Stationary AR(2) Example"
+course: "Berkeley Stat 153 Fall 2024"
+chapter: 32
+source: "https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFive153248Fall2025.ipynb"
+licence: "CC BY 4.0"
+written: "2026-09-20"
+---
+
+> **Lecture notes.** Written from the slides and recording of this lecture of [Berkeley Stat 153 Fall 2024](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFive153248Fall2025.ipynb), licensed CC BY 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
+
+# 32. Causal Stationary AR(2) Example
+
+## What this covers
+
+This chapter works one causal-stationary AR(2) process all the way through to an explicit formula
+for the process in terms of the noise, and then turns to the practical question that formula is
+for: given real data, how do you *choose* the order $p$ of an AR($p$) model? The tool is the
+**partial autocorrelation function (PACF)**, and the chapter builds it two ways — as a regression
+coefficient and as a partial correlation — checks that the two definitions agree numerically, and
+uses it to choose between two candidate models fit to the sunspot-count series. It assumes the
+reader already knows what an AR($p$) equation is, the backward-shift operator $B$ (so $By_t =
+y_{t-1}$), the characteristic polynomial $\phi(z)$ of an AR equation, and the fact — established
+earlier in the course — that an AR equation has a causal stationary solution exactly when every
+root of $\phi(z)$ has modulus strictly greater than $1$.
+
+## Worked example: solving a causal AR(2) explicitly
+
+Take the equation
+
+$$
+y_t - 0.5\,y_{t-1} + 0.25\,y_{t-2} = \epsilon_t .
+$$
+
+Its characteristic polynomial is $\phi(z) = 1 - 0.5z + 0.25z^2$, with roots $2e^{\pm i\pi/3}$,
+both of modulus $2 > 1$. So the equation admits a causal stationary solution — the question is to
+write that solution out explicitly as a function of $\{\epsilon_t\}$.
+
+**Factor the polynomial.** Roots of $\phi$ at $z = 2e^{\pm i\pi/3}$ correspond to a factorization
+with reciprocal coefficients:
+
+$$
+\phi(z) = \bigl(1 - 0.5e^{i\pi/3}z\bigr)\bigl(1 - 0.5e^{-i\pi/3}z\bigr).
+$$
+
+**Invert termwise.** Formally, $y_t = \phi(B)^{-1}\epsilon_t$, and each factor is inverted by a
+geometric series in $B$ — valid because each coefficient $0.5e^{\pm i\pi/3}$ has modulus $0.5 < 1$,
+so the series converges:
+
+$$
+\begin{aligned}
+y_t &= \bigl(I - 0.5e^{i\pi/3}B\bigr)^{-1}\bigl(I - 0.5e^{-i\pi/3}B\bigr)^{-1}\epsilon_t \\
+&= \left(\sum_{j=0}^{\infty} 0.5^{j}e^{ij\pi/3}B^{j}\right)\left(\sum_{k=0}^{\infty} 0.5^{k}e^{-ik\pi/3}B^{k}\right)\epsilon_t \\
+&= \sum_{j=0}^{\infty}\sum_{k=0}^{\infty} 0.5^{j+k}\,e^{i(j-k)\pi/3}\,\epsilon_{t-j-k}.
+\end{aligned}
+$$
+
+That double sum is correct but awkward — it is a sum over every pair $(j,k)$, not over the lag
+$t - j - k$ directly. It collapses to a single sum by a partial-fraction trick. Write $a_1 =
+0.5e^{i\pi/3}$, $a_2 = 0.5e^{-i\pi/3}$, and split
+
+$$
+\frac{1}{(1-a_1z)(1-a_2z)} = \frac{a_1}{a_1-a_2}\cdot\frac{1}{1-a_1z} + \frac{a_2}{a_2-a_1}\cdot\frac{1}{1-a_2z}
+= \sum_{j=0}^{\infty}\psi_j z^j,
+$$
+
+where each term on the right is now a single geometric series, and collecting the coefficient of
+$z^j$ gives
+
+$$
+\psi_j = \frac{a_1^{j+1}-a_2^{j+1}}{a_1-a_2} = (0.5)^{j}\,\frac{\sin\!\left(\frac{(j+1)\pi}{3}\right)}{\sin(\pi/3)}
+= \frac{2}{\sqrt3}\,(0.5)^{j}\sin\!\left(\frac{(j+1)\pi}{3}\right).
+$$
+
+(The trigonometric form comes from writing $a_1^{j+1}-a_2^{j+1}$ as $(0.5)^{j+1}\bigl(e^{i(j+1)\pi/3}-e^{-i(j+1)\pi/3}\bigr) = (0.5)^{j+1}\cdot 2i\sin\!\left(\tfrac{(j+1)\pi}{3}\right)$, and similarly for the denominator $a_1-a_2$.)
+
+So the causal stationary solution is the single sum
+
+$$
+y_t = \sum_{j=0}^{\infty}\psi_j\,\epsilon_{t-j} = \frac{2}{\sqrt3}\sum_{j=0}^{\infty}(0.5)^{j}\sin\!\left(\frac{(j+1)\pi}{3}\right)\epsilon_{t-j}.
+$$
+
+This is exactly an MA($\infty$) representation: recall MA($q$) is $y_t = \mu + \sum_{j=0}^{q}
+\theta_j\epsilon_{t-j}$ for finite $q$; here $q=\infty$ and the coefficients are the $\psi_j$ above.
+The whole construction — and the very fact that $y_t$ is a well-defined random variable at all —
+rests on the $\psi_j$ decaying to zero, which they do here because of the factor $(0.5)^j$: had
+the root moduli been $\le 1$ this factor would not shrink and the sum would not converge. This is
+the same causality condition from the start of the example, now visible in the decay rate of the
+$\psi_j$.
+
+<figure>
+<svg viewBox="0 0 320 200" role="img" aria-label="Plot of the MA(infinity) coefficients psi_j against lag j, showing rapid decay toward zero">
+  <line x1="30" y1="162.8" x2="310" y2="162.8" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+  <line x1="30" y1="10" x2="30" y2="190" stroke="currentColor" stroke-width="1"/>
+  <line x1="30" y1="190" x2="310" y2="190" stroke="currentColor" stroke-width="1"/>
+  <polyline points="40,26.8 63.6,94.8 87.3,162.8 110.9,179.8 134.5,171.3 158.2,162.8 181.8,160.7 205.5,161.7 229.1,162.8 252.7,163.1 276.4,162.9 300,162.8"
+            fill="none" stroke="currentColor" stroke-width="1.8"/>
+  <g fill="currentColor">
+    <circle cx="40" cy="26.8" r="2.5"/><circle cx="63.6" cy="94.8" r="2.5"/><circle cx="87.3" cy="162.8" r="2.5"/>
+    <circle cx="110.9" cy="179.8" r="2.5"/><circle cx="134.5" cy="171.3" r="2.5"/><circle cx="158.2" cy="162.8" r="2.5"/>
+    <circle cx="181.8" cy="160.7" r="2.5"/><circle cx="205.5" cy="161.7" r="2.5"/><circle cx="229.1" cy="162.8" r="2.5"/>
+    <circle cx="252.7" cy="163.1" r="2.5"/><circle cx="276.4" cy="162.9" r="2.5"/><circle cx="300" cy="162.8" r="2.5"/>
+  </g>
+  <text x="20" y="16" font-size="11" fill="currentColor">1</text>
+  <text x="20" y="167" font-size="11" fill="currentColor">0</text>
+  <text x="170" y="200" text-anchor="middle" font-size="12" fill="currentColor">lag j</text>
+  <text x="18" y="100" font-size="12" fill="currentColor" transform="rotate(-90 18 100)">&#968;_j</text>
+</svg>
+<figcaption>The psi_j coefficients for j = 0,...,11, computed from the formula above: 1, 0.5, ~0,
+-0.125, -0.0625, ~0, 0.015625, 0.0078125, ~0, -0.001953, -0.000977, ~0. The oscillating sign comes
+from the sine term; the (0.5)^j factor is what drives the magnitude to zero within a handful of
+lags — the decay that makes the infinite sum defining y_t converge.</figcaption>
+</figure>
+
+**Numerical check.** `statsmodels` has a general-purpose routine for this: given the AR
+coefficients $\phi_1,\dots,\phi_p$ of any causal stationary AR($p$) — in fact of any causal
+stationary ARMA model, a class the course meets the following week —
+`ArmaProcess(ar, ma).arma2ma(lags)` returns $\psi_0=1,\psi_1,\psi_2,\dots$ such that $y_t =
+\sum_j \psi_j\epsilon_{t-j}$ solves the equation. Running it with `ar = [1, -0.5, 0.25]` and
+comparing against the $\psi_j$ from the closed form above, the two columns agree to floating-point
+precision out to 40 lags — confirming the backshift-and-partial-fractions derivation against the
+library implementation.
+
+## The sample PACF as a regression coefficient
+
+The rest of the chapter is about a practical question: given a real series, what order $p$ should
+an AR($p$) model fitted to it have? The tool is the sample **partial autocorrelation function**.
+
+**Definition.** The sample PACF at lag $h$, written $\mathrm{PACF}(h)$, is the ordinary
+least-squares estimate $\hat\phi_h$ of the *last* coefficient $\phi_h$ when the AR($h$) model
+
+$$
+y_t = c + \phi_1 y_{t-1} + \dots + \phi_h y_{t-h} + \epsilon_t
+$$
+
+is fit to the data by regressing $y_t$ on $y_{t-1},\dots,y_{t-h}$ (and a constant). Fitting a
+separate AR($h$) regression for every $h = 1,\dots,p_{\max}$ and reading off the last coefficient
+each time reproduces `statsmodels.tsa.stattools.pacf` exactly (checked directly against it on the
+annual sunspot-count series, for $h$ up to 50) — so this really is what the library function
+computes, not merely something related to it.
+
+**Using it for order selection.** Plot $\mathrm{PACF}(h)$ against $h$ for the sunspot series (a
+count of sunspots per year). The two largest spikes are at lags 1 and 2; the values are small from
+lag 3 through 5; there is then a secondary, non-negligible bump around lags 7–9; and the rest is
+small. Two orders are worth trying: $p=2$, taking only the dominant spikes, and $p=9$, extending
+far enough to also capture the secondary bump.
+
+<figure>
+<svg viewBox="0 0 340 200" role="img" aria-label="Stem plot of the sample PACF of the sunspot series at lags 1 through 12">
+  <line x1="30" y1="100" x2="320" y2="100" stroke="currentColor" stroke-width="1"/>
+  <g stroke="currentColor" stroke-width="6">
+    <line x1="40" y1="100" x2="40" y2="34.6"/>
+    <line x1="64" y1="100" x2="64" y2="155.7"/>
+    <line x1="88" y1="100" x2="88" y2="111.6"/>
+    <line x1="112" y1="100" x2="112" y2="99.1"/>
+    <line x1="136" y1="100" x2="136" y2="100.8"/>
+    <line x1="160" y1="100" x2="160" y2="89.0"/>
+    <line x1="184" y1="100" x2="184" y2="83.9"/>
+    <line x1="208" y1="100" x2="208" y2="82.3"/>
+    <line x1="232" y1="100" x2="232" y2="82.6"/>
+    <line x1="256" y1="100" x2="256" y2="98.4"/>
+    <line x1="280" y1="100" x2="280" y2="99.0"/>
+    <line x1="304" y1="100" x2="304" y2="100.9"/>
+  </g>
+  <g font-size="10" fill="currentColor" text-anchor="middle">
+    <text x="40" y="195">1</text><text x="64" y="195">2</text><text x="88" y="195">3</text>
+    <text x="112" y="195">4</text><text x="136" y="195">5</text><text x="160" y="195">6</text>
+    <text x="184" y="195">7</text><text x="208" y="195">8</text><text x="232" y="195">9</text>
+    <text x="256" y="195">10</text><text x="280" y="195">11</text><text x="304" y="195">12</text>
+  </g>
+  <text x="182" y="14" text-anchor="middle" font-size="12" fill="currentColor">lag h</text>
+</svg>
+<figcaption>Sample PACF of the annual sunspot series at lags 1-12 (values from the fitted
+regressions). Two dominant spikes at lags 1-2, then a secondary bump at lags 7-9 before the values
+settle down — the pattern that motivates trying both AR(2) and AR(9).</figcaption>
+</figure>
+
+## Why "partial correlation": the residual-based definition
+
+The name is not decorative. In statistics, the **partial correlation** between two variables $y$
+and $x$ given other variables $z_1,\dots,z_k$ is defined as the ordinary correlation between the
+*residuals* $e^{y\mid z_1,\dots,z_k}$ and $e^{x\mid z_1,\dots,z_k}$ — what is left of $y$ and of $x$
+once their shared dependence on the $z$'s has been regressed away. The claim is that
+$\mathrm{PACF}(h)$ is exactly this partial correlation between $y_t$ and $y_{t-h}$, given the
+intervening lags $y_{t-1},\dots,y_{t-h+1}$.
+
+This was checked directly on the sunspot series at $h = 9$: regress $y_t$ on
+$y_{t-1},\dots,y_{t-8}$ (i.e. leave out the $h$-th lag) and keep the residual `res_y`; separately
+regress $y_{t-9}$ on the same set $y_{t-1},\dots,y_{t-8}$ and keep that residual `res_x`. Their
+sample correlation came out to $0.2195$, against $\hat\phi_9 = 0.2177$ from the direct AR(9)
+regression — close, but not identical.
+
+**Where the small gap comes from.** A general fact about multiple regression: the coefficient
+$\hat\beta_j$ on covariate $x_j$ in a regression of $y$ on $x_1,\dots,x_k$ satisfies
+
+$$
+\hat\beta_j = \mathrm{corr}\!\left(e^{y\mid x_{k\neq j}},\, e^{x_j\mid x_{k\neq j}}\right)\sqrt{\frac{\mathrm{var}\!\left(e^{y\mid x_{k\neq j}}\right)}{\mathrm{var}\!\left(e^{x_j\mid x_{k\neq j}}\right)}}.
+$$
+
+A correlation is scale-free, but a regression coefficient is not — it also carries the ratio of the
+two residual scales. Here $\mathrm{var}(\texttt{res\_y}) = 570.44$ and $\mathrm{var}(\texttt{res\_x}) = 579.98$: close but not
+equal, so the partial correlation and the regression coefficient differ slightly. Multiplying the
+partial correlation by $\sqrt{570.44/579.98}$ recovers $0.21769$, matching $\hat\phi_9 =
+0.2176877941518991$ to the last printed digit. So the two definitions of PACF — regression
+coefficient and partial correlation — are the same object, up to this scale factor that vanishes
+in the check above only because it is close to 1, not because it is exactly 1 in general.
+
+## Fitting and forecasting with the two candidate orders
+
+Fit `AutoReg(y, lags=2)` and `AutoReg(y, lags=9)` to the sunspot series, and use each to forecast
+200 steps beyond the end of the observed data. Plotted against each other and against the (later)
+observed continuation, the AR(9) forecast tracks the actual near-term behaviour of the series
+visibly better than the AR(2) forecast, at least for the first several steps out — a first piece of
+evidence, beyond the PACF plot alone, that the extra lags in AR(9) are doing real work.
+
+## Checking that the fitted models are still causal stationary
+
+Fitting a model to data does not automatically produce a causal stationary process — the estimated
+coefficients could in principle put a root of the fitted characteristic polynomial inside or on the
+unit circle. This is exactly the check from the worked example at the top of the chapter, now
+applied to *estimated* rather than exact coefficients.
+
+For the fitted AR(2), $\hat\phi_1 = 1.388$, $\hat\phi_2 = -0.6965$, so the characteristic polynomial
+is $1 - 1.388z + 0.6965z^2$ (coefficients read off as `[1, -phi_1, -phi_2]` reversed to match
+`numpy.roots`' convention). Its two roots are $0.9965 \mp 0.6655i$, a complex-conjugate pair with
+modulus $1.1983$ — strictly greater than 1, so the fitted AR(2) is causal stationary. `statsmodels`
+reports the same roots and modulus directly in the model summary, confirming the by-hand
+`numpy.roots` computation.
+
+For the fitted AR(9), the same computation on the nine estimated coefficients gives nine roots with
+moduli $1.0701,\ 1.0249\ (\times2),\ 1.1756\ (\times2),\ 1.3142\ (\times2),\ 1.3086\ (\times2)$ —
+every one strictly greater than 1, so the fitted AR(9) is causal stationary as well. (The ordering
+of the roots differs between the `numpy.roots` output and the `statsmodels` summary table; there is
+no canonical order, but the multiset of moduli agrees exactly.)
+
+So both candidate orders from the PACF plot give legitimate causal stationary models; the PACF
+shape and the forecast comparison are what distinguish between them, not causality, which both
+satisfy.
+
+## Sources
+
+All material in this chapter is from the Berkeley STAT 153 (Fall 2025) code lab notebook
+`CodeLabTen153248Fall2025.ipynb`, licensed CC BY 4.0, as converted to markdown in three parts:
+
+- Worked AR(2) example, factorization, backshift derivation, $\psi_j$ formula, and the numerical
+  check against `ArmaProcess.arma2ma` — `01-causal-stationary-ar-2-example.md`.
+- PACF definition via AR($h$) regression, the sunspot PACF plot and its use for choosing between
+  AR(2) and AR(9), the residual/partial-correlation derivation and its numeric reconciliation, and
+  the AR(2)/AR(9) forecast comparison — `02-ar-order-selection-through-pacf.md`.
+- Root-modulus checks of the two fitted models via `numpy.roots` and the `statsmodels` `AutoReg`
+  summary output — `03-stationarity-of-the-fitted-ar-models.md`.
+
+Two things the lab points to but does not itself contain: the sunspot data file
+(`SN_y_tot_V2.0.csv`, the underlying counts) is read in but not included in the converted text, and
+the lab twice mentions ARMA models as material for "next week," which this chapter does not cover.
+Three plots from the original notebook (the raw sunspot series, the sample PACF plot from
+`plot_pacf`, and the forecast comparison plot) were not preserved in the conversion; the two
+figures in this chapter reconstruct the shape of the $\psi_j$ decay and of the sunspot PACF
+directly from the numeric values printed in the source, not from the original images.
+
+---
+
+[← 31. Fitting Trends to Time Series](31-fitting-trends-to-time-series.md) · [Contents](index.md) · [33. Scaling and Initialization in PyTorch →](33-scaling-and-initialization-in-pytorch.md)

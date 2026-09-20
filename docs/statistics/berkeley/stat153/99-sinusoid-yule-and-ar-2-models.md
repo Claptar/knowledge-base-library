@@ -1,0 +1,227 @@
+---
+title: "99. Sinusoid, Yule, and AR(2) Models"
+course: "Berkeley Stat 153 Fall 2024"
+chapter: 99
+source: "https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFive153248Fall2025.ipynb"
+licence: "CC BY 4.0"
+written: "2026-09-20"
+---
+
+> **Lecture notes.** Written from the slides and recording of this lecture of [Berkeley Stat 153 Fall 2024](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFive153248Fall2025.ipynb), licensed CC BY 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
+
+# 99. Sinusoid, Yule, and AR(2) Models
+
+## What this covers
+
+This lab (Lab 9) forecasts a single time series — sunspot counts, split into a training stretch
+and a held-out test stretch — with three progressively more general models: a fitted sinusoid, a
+constrained autoregression called the Yule model, and a free AR(2). The question it answers is a
+practical one: given several models that all describe periodic-looking data, which forecasts
+better, and why does the answer not follow from which model looks more faithful to the mechanism?
+It assumes the reader already has ordinary least squares, the harmonic (sinusoid) regression model
+and frequency estimation by grid search from earlier in the course, and the idea of an
+autoregressive model.
+
+## The forecasting setup
+
+Throughout, $y_t$ denotes the training portion of the series (length $n$, indexed by `tme_train`),
+and a separate test portion (`tme_test`, `sunspots_test`) is held back and never used for fitting.
+Every model below is fit on $y_t$ alone, then used to produce forecasts over the test horizon, and
+the three sets of forecasts are compared on the same footing: the root-mean-square prediction error
+$$
+\text{RMSE} = \sqrt{\frac{1}{k}\sum_{t}\left(\hat y_t - y_t^{\text{test}}\right)^2}
+$$
+over the $k$ test times. Nothing about the comparison depends on which model is "correct" — it is
+purely about which forecast lands closer to the held-out data.
+
+## Model One: the sinusoid model
+
+The first model is the harmonic regression from earlier in the course:
+$$
+y_t = \beta_0 + \beta_1 \cos(2\pi f t) + \beta_2 \sin(2\pi f t) + \epsilon_t, \qquad
+\epsilon_t \overset{\text{i.i.d.}}{\sim} N(0,\sigma^2).
+$$
+For a *fixed* frequency $f$ this is linear in $\beta_0,\beta_1,\beta_2$, so it is fit by ordinary
+least squares; the frequency itself is not linear, so it is chosen by a grid search — for each
+candidate $f$ on a fine grid, fit the regression and record the residual sum of squares, then take
+$\hat f$ to be the grid point with the smallest RSS. On this data the search gives $\hat f \approx
+0.0899$, i.e. an estimated period of about $1/\hat f \approx 11.12$ time units.
+
+Because the fitted curve is a fully specified function of $t$, forecasting is direct extrapolation:
+plug the future time indices into $\hat\beta_0 + \hat\beta_1\cos(2\pi\hat f t) +
+\hat\beta_2\sin(2\pi\hat f t)$. No use is made of the observed values near the end of the training
+set — the forecast is generated purely from the fitted deterministic curve. The resulting
+prediction error on the test set is $\text{RMSE} \approx 79.84$.
+
+## Model Two: the Yule model
+
+### From a pure sinusoid to a recursion
+
+The Yule model starts from an identity about pure sinusoids (stated here, proved earlier in the
+course): for
+$$
+s_t = \beta_0 + \beta_1\cos(2\pi f t) + \beta_2 \sin(2\pi f t), \qquad t = 1,2,\dots,
+$$
+there is an exactly equivalent second-order linear recursion, with no error term,
+$$
+s_t = \alpha_0 + \alpha_1 s_{t-1} - s_{t-2}, \qquad
+\alpha_0 = 2\beta_0(1-\cos\omega),\ \ \alpha_1 = 2\cos\omega,\ \ \omega = 2\pi f.
+$$
+That is: *any* sinusoid of frequency $f$ satisfies this recursion, with the coefficient on the
+second lag fixed at $-1$ and the coefficient on the first lag pinned down by $f$ alone. This is a
+genuinely different route to the same periodic shape — instead of writing the sinusoid as an
+explicit function of $t$ (Model One), it is characterised as the solution of a linear difference
+equation in its own past values.
+
+### Turning the recursion into a model
+
+The Yule model adds noise to the *recursion* rather than to the curve:
+$$
+y_t = \alpha_0 + \alpha_1 y_{t-1} - y_{t-2} + \epsilon_t.
+$$
+This is worth pausing on, because it is a different generative model from Model One even though
+both are trying to capture "a sinusoid plus noise": Model One adds independent noise to each point
+of a fixed deterministic curve, while the Yule model perturbs the *rule that propagates one value
+to the next*, so a given $\epsilon_t$ can influence every later value through the recursion. The
+two coincide only when $\sigma^2 = 0$.
+
+The payoff is that fitting no longer requires a grid search. Rearranging,
+$$
+\sum_{t=3}^{n} \left(y_t - \alpha_0 - \alpha_1 y_{t-1} + y_{t-2}\right)^2
+= \sum_{t=3}^{n} \left(y_t + y_{t-2} - \alpha_0 - \alpha_1 y_{t-1}\right)^2,
+$$
+which is an ordinary linear least-squares problem: build a new response $y_t + y_{t-2}$ and
+regress it on $y_{t-1}$ and a constant. The sum runs from $t=3$ because $y_{t-1}, y_{t-2}$ are not
+available for $t \le 2$, so the fit uses $n-2$ rows (248 of them, meaning $n=250$ here). The fit
+gives $\hat\alpha_0 \approx 27.31$, $\hat\alpha_1 \approx 1.635$.
+
+### Reading off the frequency, and a discrepancy
+
+Since $\alpha_1 = 2\cos(2\pi f)$, the frequency can be recovered from the fitted $\hat\alpha_1$ by
+inverting the cosine:
+$$
+\hat f = \frac{\arccos(\hat\alpha_1/2)}{2\pi}.
+$$
+This gives an estimated period of about $10.23$ — noticeably shorter than the $11.12$ from Model
+One. The two models are estimating the frequency of what is nominally "the same" periodic signal,
+but through different objective functions (RSS of the curve fit vs. RSS of the one-step recursion
+residuals), and there is no reason for those two estimates to agree once real data — which is not
+an exact sinusoid — is involved.
+
+### Forecasting by recursion
+
+Unlike Model One, forecasting here cannot be read off a closed-form curve: the recursion needs the
+two previous values at every step, so forecasts are generated one step at a time, and once the
+training data run out, previously forecast values are fed back in as if they were observed:
+$$
+\hat y_{n+i} = \hat\alpha_0 - y_{n+i-3} + \hat\alpha_1\, y_{n+i-2}, \qquad i = 1, \dots, k,
+$$
+where $y_{n+i-3}$ or $y_{n+i-2}$ is itself a previously computed forecast once $n+i-3 > n$ or
+$n+i-2 > n$.
+
+<figure>
+<svg viewBox="0 0 440 200" role="img" aria-label="Recursive forecasting: each new value is a fixed combination of the two preceding values, which may themselves be earlier forecasts">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <line x1="187" y1="20" x2="187" y2="185" stroke="currentColor" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+  <text x="110" y="16" text-anchor="middle" font-size="11" fill="currentColor">observed</text>
+  <text x="300" y="16" text-anchor="middle" font-size="11" fill="currentColor">forecast</text>
+
+  <circle cx="45" cy="130" r="20" fill="none" stroke="currentColor"/>
+  <text x="45" y="134" text-anchor="middle" font-size="12" fill="currentColor">yₙ₋₁</text>
+
+  <circle cx="140" cy="130" r="20" fill="none" stroke="currentColor"/>
+  <text x="140" y="134" text-anchor="middle" font-size="12" fill="currentColor">yₙ</text>
+
+  <circle cx="235" cy="130" r="20" fill="none" stroke="currentColor"/>
+  <text x="235" y="134" text-anchor="middle" font-size="11" fill="currentColor">ŷₙ₊₁</text>
+
+  <circle cx="330" cy="130" r="20" fill="none" stroke="currentColor"/>
+  <text x="330" y="134" text-anchor="middle" font-size="11" fill="currentColor">ŷₙ₊₂</text>
+
+  <text x="410" y="134" text-anchor="middle" font-size="16" fill="currentColor">…</text>
+
+  <path d="M 60,115 Q 140,50 218,118" fill="none" stroke="currentColor" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <path d="M 158,140 Q 187,168 214,138" fill="none" stroke="currentColor" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+  <path d="M 155,115 Q 235,50 313,118" fill="none" stroke="currentColor" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <path d="M 253,140 Q 282,168 309,138" fill="none" stroke="currentColor" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+  <path d="M 350,130 L 386,130" fill="none" stroke="currentColor" stroke-width="1.3" marker-end="url(#arrow)"/>
+</svg>
+<figcaption>Both the Yule model and AR(2) forecast by plugging the fitted recursion forward one
+step at a time: each new value uses the two preceding ones, and after the observed data run out,
+earlier forecasts stand in for the missing lags.</figcaption>
+</figure>
+
+The resulting prediction error is $\text{RMSE} \approx 79.53$ — "basically the same" as Model One,
+with the expectation that the ordering could flip under a different training/test split.
+
+## Model Three: AR(2)
+
+The Yule model is a *constrained* AR(2): it fixes the coefficient on the second lag at exactly
+$-1$, because that is what a noiseless sinusoid recursion requires. The natural generalisation is
+to let that coefficient be estimated from the data instead:
+$$
+y_t = \phi_0 + \phi_1 y_{t-1} + \phi_2 y_{t-2} + \epsilon_t,
+$$
+fit by the same kind of OLS regression, now with two lagged columns (both $y_{t-1}$ and $y_{t-2}$)
+in the design matrix rather than one. The fit gives $\hat\phi_0 \approx 23.09$, $\hat\phi_1 \approx
+1.378$, $\hat\phi_2 \approx -0.684$.
+
+The value $\hat\phi_2 \approx -0.684$ is the point of the exercise: it is quite a bit smaller in
+magnitude than the $-1$ that the Yule model hard-codes. Least squares, given the freedom to choose
+$\phi_2$, does not choose a value near $-1$ — the data do not support as strong a "sinusoid-like"
+pullback from two steps back as the Yule model assumes.
+
+Forecasting proceeds by exactly the same recursive plug-in as the Yule model (the diagram above
+applies unchanged, just with $\hat\phi_0,\hat\phi_1,\hat\phi_2$ in place of $\hat\alpha_0,
+\hat\alpha_1, -1$). The qualitative behaviour of the forecasts is different, though: instead of
+continuing to oscillate, the AR(2) forecasts die out toward a constant value. The prediction error
+is $\text{RMSE} \approx 70.32$ — clearly the best of the three.
+
+## Comparing the three models
+
+| Model | RMSE on test set |
+| --- | --- |
+| Sinusoid (Model One) | $\approx 79.84$ |
+| Yule (Model Two) | $\approx 79.53$ |
+| AR(2) (Model Three) | $\approx 70.32$ |
+
+The result looks paradoxical at first: the model whose forecasts settle to a flat constant beats
+both of the models built to reproduce the oscillation, even though the sunspot series is visibly
+periodic. The explanation offered is about *robustness to phase*, not about which model is a
+better description of the underlying mechanism. Sunspot cycles are irregular — their length varies
+from cycle to cycle — so a single rigid sinusoid extrapolated far enough into the test window risks
+drifting out of phase with the real data, and once it is out of phase its errors can be large even
+though its amplitude and shape look right. A model whose forecast decays to a constant has no phase
+to get wrong, so it cannot fail in that particular way, and on this test window that turns out to
+matter more than capturing the oscillation at all. The lab is explicit that this ranking is a
+property of the particular training/test split used here and would be expected to change under a
+different split.
+
+## Sources
+
+All three sections are from the Berkeley Stat 153 (spring 2025) Lab 9 notebook, converted to
+markdown (CC BY 4.0):
+
+- Model One — `Lab9/02-model-one-sinusoid-model.md`.
+- Model Two (the Yule model) — `Lab9/03-model-two-the-yule-model.md`.
+- Model Three (AR(2)) — `Lab9/04-model-three-ar-2.md`.
+
+Two things the lab points to but does not itself contain: the proof that a pure sinusoid is
+equivalent to the second-order recursion used to motivate the Yule model, credited to "Lecture 16";
+and the code that loads the sunspots series and constructs the training/test split (`y`, `tme`,
+`tme_train`, `tme_test`, `sunspots_test`), which belongs to an earlier, unsupplied part of the same
+notebook. The plots referenced in the notebook ("Sunspots Data" with training data, test data and
+predictions overlaid) were themselves omitted from the converted source and are not reproduced
+here; the forecasting diagram above is a schematic of the recursion mechanism, not a rendering of
+those plots.
+
+---
+
+[← 98. Smoothing the Periodogram (part 2)](98-smoothing-the-periodogram-part-2.md) · [Contents](index.md) · [100. Discrete Fourier Transform and Periodogram →](100-discrete-fourier-transform-and-periodogram.md)

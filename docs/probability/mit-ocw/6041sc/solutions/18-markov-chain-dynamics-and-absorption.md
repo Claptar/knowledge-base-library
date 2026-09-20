@@ -1,0 +1,72 @@
+---
+title: "Solutions — Markov Chain Dynamics and Absorption"
+source: https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/
+licence: CC BY-NC-SA 4.0
+---
+
+> **Worked solutions.** From the course's own solution sets, licensed CC BY-NC-SA 4.0.
+
+# Solutions — Markov Chain Dynamics and Absorption
+
+## Department of Electrical Engineering & Computer Science
+## 6.041/6.431: Probabilistic Systems Analysis
+## (Fall 2010)
+
+## Recitation 18: Solutions
+## November 9, 2010
+
+1. a) The number of remaining green fish at time $n$ completely determines all the relevant information of the system's entire history (relevant to predicting the future state.) Therefore it is immediate that the number of green fish is the state of the system and the process has the Markov property:
+$$P(X_{m+1} = j \mid X_m = i, X_{m-1} = i_{m-1}, \dots, X_1 = i_1) = P(X_{m+1} = j \mid X_m = i).$$
+
+b) For $j > i$ clearly $p_{ij} = 0$, since a blue fish will never be painted green. For $0 \le i, j \le k$, we have the following:
+$$p_{ij} = P(i - j \text{ green fish are caught} \mid \text{current state} = i) = \begin{cases} \frac{n-i}{n} & j = i \\ \frac{i}{n} & j = i - 1 \\ 0 & \text{otherwise} \end{cases}$$
+
+c) The state 0 is an absorbing state since there is a positive probability that the system will enter it, and once it does, it will remain there forever. Therefore the state with 0 green fish is the only recurrent state, and all other states are then transient.
+
+Textbook problem removed due to copyright restrictions.
+Drake, Fundamentals of Applied Probability Theory, Problem 5.02.
+
+---
+
+3. (a) Let $A_k$ be the event that the process enters $s_2$ for first time on trial $k$. The only way to enter state $s_2$ for the first time on the $k\text{th}$ trial is to enter state $s_3$ on the first trial, remain in $s_3$ for the next $k - 2$ trials, and finally enter $s_2$ on the last trial. Thus,
+$$P(A_k) = p_{03} \cdot p_{33}^{k-2} \cdot p_{32} = \left(\frac{1}{3}\right) \left(\frac{1}{4}\right)^{k-2} \left(\frac{1}{4}\right) = \frac{1}{3}\left(\frac{1}{4}\right)^{k-1} \quad \text{for } k = 2, 3, \dots$$
+
+(b) Let $A$ be the event that the process never enters $s_4$.
+There are three possible ways for $A$ to occur. The first two are if the first transition is either from $s_0$ to $s_1$ or $s_0$ to $s_5$. This occurs with probability $\frac{2}{3}$. The other is if The first transition is from $s_0$ to $s_3$, and that the next change of state after that is to the state $s_2$. We know that the probability of going from $s_0$ to $s_3$ is $\frac{1}{3}$. Given this has occurred, and given a change of state occurs from state $s_3$, we know that the probability that the state transitioned to is the state $s_2$ is simply $\frac{\frac{1}{4}}{\frac{1}{4} + \frac{1}{2}} = \frac{1}{3}$. Thus, the probability of transitioning from $s_0$ to $s_3$ and then eventually transitioning to $s_2$ is $\frac{1}{9}$. Thus, the probability of never entering $s_4$ is $\frac{2}{3} + \frac{1}{9} = \frac{7}{9}$.
+
+---
+
+(c) $P(\{\text{process enters } s_2 \text{ and then leaves } s_2 \text{ on next trial}\})$
+$$\begin{aligned}
+&= P(\{\text{process enters } s_2\})P(\{\text{leaves } s_2 \text{ on next trial }\} \mid \{\text{in } s_2\}) \\
+&= \left[\sum_{k=2}^\infty P(A_k)\right] \cdot \frac{1}{2} \\
+&= \left[\sum_{k=2}^\infty \frac{1}{3}\left(\frac{1}{4}\right)^{k-1}\right] \cdot \frac{1}{2} \\
+&= \frac{1}{6} \cdot \frac{\frac{1}{4}}{1 - \frac{1}{4}} \\
+&= \frac{1}{18}.
+\end{aligned}$$
+
+(d) This event can only happen if the sequence of state transitions is as follows:
+$$s_0 \longrightarrow s_3 \longrightarrow s_2 \longrightarrow s_1.$$
+Thus, $P(\{\text{process enters } s_1 \text{ for first time on third trial}\}) = p_{03} \cdot p_{32} \cdot p_{21} = \frac{1}{3} \cdot \frac{1}{4} \cdot \frac{1}{2} = \frac{1}{24}$.
+
+(e) $P(\{\text{process in } s_3 \text{ immediately after the } N\text{th trial}\})$
+$$\begin{aligned}
+&= P(\{\text{moves to } s_3 \text{ in first trial and stays in } s_3 \text{ for next } N - 1 \text{ trials}\}) \\
+&= \frac{1}{3}\left(\frac{1}{4}\right)^{n-1} \quad \text{for } n = 1, 2, 3, \dots
+\end{aligned}$$
+
+$^\dagger$Required for 6.431; optional for 6.041
+
+---
+
+MIT OpenCourseWare
+http://ocw.mit.edu
+
+6.041SC Probabilistic Systems Analysis and Applied Probability
+Fall 2013
+
+For information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.
+
+---
+
+[← back to chapter 18](../18-markov-chain-dynamics-and-absorption.md)

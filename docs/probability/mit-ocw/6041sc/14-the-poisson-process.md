@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 14
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -253,6 +253,9 @@ Similarly, the probability that it came from Process 2 is $\frac{\lambda_2}{\lam
 
 - MIT OpenCourseWare 6.041SC (Fall 2013), Lecture 14: The Poisson Process (slides and lecture transcript).
 - MIT OpenCourseWare 6.041 (Fall 2010), Recitation 14 problem set.
+
+Solutions: [chapter 14](solutions/14-the-poisson-process.md)
+
 
 ---
 

@@ -5,10 +5,10 @@ source_file: sources/berkeley-stat158/spring-2025/syllabus.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-18'
+converted: '2026-09-20'
 ---
 
-> **Converted source.** [`syllabus.qmd`](https://github.com/berkeley-stat158/spring-2025/blob/02be3b577c9af913bfbbda698495471c2f909adb/syllabus.qmd) — berkeley-stat158 · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
+> **Converted source.** [`syllabus.qmd`](https://github.com/berkeley-stat158/spring-2025/blob/02be3b577c9af913bfbbda698495471c2f909adb/syllabus.qmd) — berkeley-stat158 · spring-2025, licensed CC BY 4.0. Converted 2026-09-20 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Syllabus
 

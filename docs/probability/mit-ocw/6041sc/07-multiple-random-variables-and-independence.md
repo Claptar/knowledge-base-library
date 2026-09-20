@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 7
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -285,6 +285,9 @@ Both the mean and the variance of $X$ equal 1 for all $n \ge 2$.
 - Exercises 4–10: Problem Set 7, Problems 1–6 and G1.
 - Exercises 11–13: Tutorial 7 slides, Problems 1–3.
 - *Omissions noted in source:* The mathematical derivation of the general expected value rule $\mathbf{E}[g(X,Y)]$ and the deeper Poisson/asymptotic connection to the hat problem variance were omitted in the lecture exposition and deferred to later chapters.
+
+Solutions: [chapter 7](solutions/07-multiple-random-variables-and-independence.md)
+
 
 ---
 

@@ -5,10 +5,10 @@ source_file: sources/berkeley-stat230a/spring-2025/syllabus.md
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-18'
+converted: '2026-09-20'
 ---
 
-> **Converted source.** [`syllabus.md`](https://github.com/berkeley-stat230a/spring-2025/blob/e876671afc2665ae79c2a5263b03c3377f6e2836/syllabus.md) — berkeley-stat230a · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
+> **Converted source.** [`syllabus.md`](https://github.com/berkeley-stat230a/spring-2025/blob/e876671afc2665ae79c2a5263b03c3377f6e2836/syllabus.md) — berkeley-stat230a · spring-2025, licensed CC BY 4.0. Converted 2026-09-20 from `.md`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Syllabus
 

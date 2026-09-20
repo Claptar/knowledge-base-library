@@ -2,7 +2,7 @@
 title: "MIT 8.592J"
 source: https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/
 licence: CC BY-NC-SA 4.0
-written: '2026-09-18'
+written: '2026-09-20'
 ---
 
 > **Lecture notes.** Written from the material of [MIT 8.592J](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/), licensed CC BY-NC-SA 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.

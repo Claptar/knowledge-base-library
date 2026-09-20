@@ -3,10 +3,10 @@ title: "Berkeley Stat 206A Fall 2024"
 source: https://github.com/berkeley-stat206a/fall-2024.git
 licence: CC BY 4.0
 material: course
-converted: '2026-09-18'
+converted: '2026-09-20'
 ---
 
-> **Converted source.** [Berkeley Stat 206A Fall 2024](https://github.com/berkeley-stat206a/fall-2024.git) — licensed CC BY 4.0. Converted 2026-09-18. The same material in markdown, split so that every part has a URL; nothing here is rewritten. It is regenerable output and is never edited by hand — to change the text, fix the converter or make an adaptation.
+> **Converted source.** [Berkeley Stat 206A Fall 2024](https://github.com/berkeley-stat206a/fall-2024.git) — licensed CC BY 4.0. Converted 2026-09-20. The same material in markdown, split so that every part has a URL; nothing here is rewritten. It is regenerable output and is never edited by hand — to change the text, fix the converter or make an adaptation.
 
 # Berkeley Stat 206A Fall 2024
 

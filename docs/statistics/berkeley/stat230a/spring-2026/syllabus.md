@@ -5,10 +5,10 @@ source_file: sources/berkeley-stat230a/spring-2026/syllabus.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-18'
+converted: '2026-09-20'
 ---
 
-> **Converted source.** [`syllabus.qmd`](https://github.com/berkeley-stat230a/spring-2026/blob/3999c62f8688b734d0aebe5759554705ed20fd3e/syllabus.qmd) — berkeley-stat230a · spring-2026, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
+> **Converted source.** [`syllabus.qmd`](https://github.com/berkeley-stat230a/spring-2026/blob/3999c62f8688b734d0aebe5759554705ed20fd3e/syllabus.qmd) — berkeley-stat230a · spring-2026, licensed CC BY 4.0. Converted 2026-09-20 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # STAT 230A: Linear Models
 

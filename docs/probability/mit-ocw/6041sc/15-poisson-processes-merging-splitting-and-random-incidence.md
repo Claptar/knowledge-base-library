@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 15
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -243,6 +243,9 @@ Let $X$, $Y$, and $Z$ be independent exponential random variables with parameter
 - Lecture slides: "Poisson process — II", MIT Course 6.041SC, Fall 2013.
 - Lecture transcript: John Tsitsiklis, Lecture 15 captions, MIT Course 6.041SC, Fall 2013.
 - Problem set: Recitation 15 problems (Problems 6.14 and 6.15 from the course text, and ordering of three exponentials), MIT Course 6.041/6.431, Fall 2010.
+
+Solutions: [chapter 15](solutions/15-poisson-processes-merging-splitting-and-random-incidence.md)
+
 
 ---
 

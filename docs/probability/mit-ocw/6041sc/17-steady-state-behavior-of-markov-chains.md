@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 17
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -251,6 +251,9 @@ Consider an arrival process where interarrival times are independent Erlang rand
 - Slides 10–12 and Transcript [18:40]–[33:49]: Steady-state convergence theorem, balance equations, visit frequency interpretation, and the two-state Markov chain example.
 - Slides 13–14 and Transcript [33:49]–[50:40]: Birth-death processes, local balance equations across cuts, load factor $\rho$, symmetric random walks, and infinite-capacity queueing derivations ($\pi_0 = 1-\rho$, $\mathbf{E}[X] = \rho/(1-\rho)$).
 - Recitation 17 Problems: Exercises 1, 2, and 3. Note that while Lecture 17 covered Markov chains, the recitation material focused on Poisson processes, merging/splitting, and renewal random incidence.
+
+Solutions: [chapter 17](solutions/17-steady-state-behavior-of-markov-chains.md)
+
 
 ---
 

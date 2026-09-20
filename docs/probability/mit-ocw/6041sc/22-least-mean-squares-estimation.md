@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 22
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -340,6 +340,9 @@ Using the delay model from Exercise 1, suppose Romeo observes Juliet's delays $X
 
 - Lecture 22 slides and lecture transcript: Framework of Bayesian estimation, conditional expectation as the optimal LMS estimator, conditional variance as conditional MSE, properties of estimation error, derivation and interpretation of linear LMS, multiple observation LLMS, the additive independent noise example, and feature choice.
 - Recitation 22 problem set: Uniform prior date-delay model (Exercises 1 and 2), corresponding to Examples 8.2, 8.7, 8.12, and 8.15 in the course textbook.
+
+Solutions: [chapter 22](solutions/22-least-mean-squares-estimation.md)
+
 
 ---
 

@@ -4,7 +4,7 @@ course: "Berkeley Stat 156 Fall 2024"
 chapter: 11
 source: "https://github.com/berkeley-stat156/fall-2024/blob/bbfe05b00bcc6fcbcf3140ad89cda2c5b36ed75e/HW3.pdf"
 licence: "CC BY-NC 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [Berkeley Stat 156 Fall 2024](https://github.com/berkeley-stat156/fall-2024/blob/bbfe05b00bcc6fcbcf3140ad89cda2c5b36ed75e/HW3.pdf), licensed CC BY-NC 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -45,4 +45,4 @@ statistical language R. The course is described as emphasizing both theory and d
 
 ---
 
-[← 10. Causal Inference: Course Structure](10-causal-inference-course-structure.md) · [Contents](index.md) · [13. Paper Presentation Guidelines →](13-paper-presentation-guidelines.md)
+[← 10. Causal Inference: Course Structure](10-causal-inference-course-structure.md) · [Contents](index.md) · [12. Paper Presentation Assignment →](12-paper-presentation-assignment.md)

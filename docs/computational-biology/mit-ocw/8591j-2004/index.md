@@ -2,7 +2,7 @@
 title: "MIT 8.591J 2004"
 source: https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/
 licence: CC BY-NC-SA 4.0
-written: '2026-09-18'
+written: '2026-09-20'
 ---
 
 > **Lecture notes.** Written from the material of [MIT 8.591J 2004](https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/), licensed CC BY-NC-SA 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.

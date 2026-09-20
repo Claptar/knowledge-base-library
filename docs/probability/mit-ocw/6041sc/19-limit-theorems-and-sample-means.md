@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 19
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -254,6 +254,9 @@ Assume Josephina will be a student forever. For parts (a) through (f), assume th
 * Lecture slides: Course 6.041SC, Lecture 19 (Chebyshev's inequality, deterministic limits, convergence in probability, sample mean, pollster's problem, sum scalings, Central Limit Theorem statement).
 * Lecture transcript: Course 6.041SC, Lecture 19 (Penguin motivation, Markov inequality derivation, Chebyshev derivation from Markov and continuous integrals, $Y_n$ moment counterexample, polling sample size derivation, $\sqrt{n}$ scaling justification).
 * Recitation slides: Course 6.041/6.431 Fall 2010, Recitation 19 (Josephina Markov chain problems). Note: The recitation exercises supplied covered discrete Markov chains, while the lecture covered limit theorems.
+
+Solutions: [chapter 19](solutions/19-limit-theorems-and-sample-means.md)
+
 
 ---
 

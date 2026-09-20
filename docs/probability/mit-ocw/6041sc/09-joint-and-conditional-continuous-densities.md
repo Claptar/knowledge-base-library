@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 9
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -318,6 +318,9 @@ Let $X$ be an exponential random variable with parameter $\lambda > 0$.
 * **Lecture transcript (Lecture 9):** Geometric intuition of probability mass as volume under a surface, infinitesimal strip argument for marginalization, physical setup and historical context of Buffon's needle, the link to Monte Carlo integration, slice-and-normalize intuition for conditional densities, and sequential stick-breaking derivations.
 * **Recitation 9 / Homework 9 problem sets:** Exercises on uniform triangular distributions, stick-breaking into three pieces, exponential distribution properties, Chebyshev bounds, and convergence in probability.
 
+Solutions: [chapter 9](solutions/09-joint-and-conditional-continuous-densities.md)
+
+
 ---
 
-[← 8. Continuous Random Variables and the Normal Distribution](08-continuous-random-variables-and-the-normal-distribution.md) · [Contents](index.md) · [10. Bayes' Rule and Derived Distributions →](10-bayes-rule-and-derived-distributions.md)
+[← 8. Continuous Random Variables and the Normal Distribution](08-continuous-random-variables-and-the-normal-distribution.md) · [Contents](index.md) · [10. Derived Distributions and Bayesian Inference →](10-derived-distributions-and-bayesian-inference.md)

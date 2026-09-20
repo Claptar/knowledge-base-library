@@ -4,7 +4,7 @@ course: "MIT 6.041SC"
 chapter: 12
 source: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -247,6 +247,9 @@ $$\text{var}(Y) = E[N] \text{var}(X) + (E[X])^2 \text{var}(N)$$
 * `TRANSCRIPT: 12 captions`: Detailed derivations, intuitive explanations of between-group versus within-group variance, stick-breaking example details, and full algebraic calculations for the piecewise uniform and bookstore examples.
 * `SLIDES: 12 slides Lec 12 —bonvid`: Problem statement for coin tosses with a random parameter $Q$ (Exercise 5).
 * `PROBLEMS: 12 slides`: Recitation 12 problems (Exercises 1 through 4).
+
+Solutions: [chapter 12](solutions/12-iterated-expectations-and-total-variance.md)
+
 
 ---
 

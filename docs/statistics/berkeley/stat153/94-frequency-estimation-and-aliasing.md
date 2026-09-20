@@ -1,0 +1,191 @@
+---
+title: "94. Frequency Estimation and Aliasing"
+course: "Berkeley Stat 153 Fall 2024"
+chapter: 94
+source: "https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFive153248Fall2025.ipynb"
+licence: "CC BY 4.0"
+written: "2026-09-20"
+---
+
+> **Lecture notes.** Written from the slides and recording of this lecture of [Berkeley Stat 153 Fall 2024](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFive153248Fall2025.ipynb), licensed CC BY 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
+
+# 94. Frequency Estimation and Aliasing
+
+## What this covers
+
+This chapter works through a lab problem: given data assumed to follow a single sinusoid plus
+noise, how do you estimate the frequency, and how much does it matter that the observation times
+are equally spaced? It builds a least-squares (frequentist) estimate of the frequency and a
+Bayesian posterior for it, both by grid search rather than a closed-form formula, and then examines
+*aliasing* — the fact that equally spaced sampling makes some frequencies indistinguishable from
+others. It assumes familiarity with ordinary least squares regression; the specific posterior
+formula used below is quoted as something already derived in lecture, and this chapter does not
+re-derive it.
+
+## The model
+
+The data $y_1,\dots,y_n$ are generated from
+
+$$y_t = \beta_0 + \beta_1\cos(2\pi f t) + \beta_2 \sin(2\pi f t) + \epsilon_t, \qquad t=1,\dots,n,$$
+
+for fixed but unknown $\beta_0,\beta_1,\beta_2,f$ and noise level $\sigma$, with $\epsilon_t$
+independent mean-zero noise. The lab simulates such a series with $f = 0.2$, $n = 400$,
+$\beta_0 = 0$, $\beta_1 = 3$, $\beta_2 = 5$, $\sigma = 10$, and the task is to recover $f$ — together
+with uncertainty about it — from $y$ alone.
+
+The awkward feature of this model is that it is **linear in $\beta_0,\beta_1,\beta_2$ but nonlinear
+in $f$**: once $f$ is fixed, $\cos(2\pi f t)$ and $\sin(2\pi f t)$ are just two more columns of a
+design matrix, and estimating the $\beta$'s is ordinary linear regression with $p = 3$ parameters.
+There is no equivalent shortcut for $f$ itself, so it has to be searched for.
+
+## Estimating f by least squares
+
+Profile out the linear parameters: for each candidate value of $f$, fit $\beta_0,\beta_1,\beta_2$ by
+OLS on the design matrix with columns $1$, $\cos(2\pi f t)$, $\sin(2\pi f t)$, and record the
+resulting residual sum of squares. This defines a criterion function
+
+$$\text{crit}(f) := \min_{\beta_0,\beta_1,\beta_2} \sum_{t=1}^n \big(y_t - \beta_0 - \beta_1\cos(2\pi f t) - \beta_2\sin(2\pi f t)\big)^2 = RSS(f).$$
+
+Minimizing $\text{crit}(f)$ over $f$ gives the least-squares (and, under Gaussian noise, maximum
+likelihood) estimate $\hat f$. Because $RSS(f)$ has no closed form minimizer in $f$, this
+minimization is done by evaluating $\text{crit}(f)$ on a fine grid over $f$ and taking the
+arg-min — a grid of $100{,}000$ points on $[0, 0.5]$ in the lab. Once $\hat f$ is found, the
+estimates of $\beta_0,\beta_1,\beta_2$ and $\sigma$ are the ordinary regression estimates obtained by
+plugging $f = \hat f$ back into the design matrix and refitting.
+
+For the simulated series above this gives $\hat f \approx 0.19990$, extremely close to the true
+$f = 0.2$. Refitting at $\hat f$ gives coefficient estimates $(\hat\beta_0,\hat\beta_1,\hat\beta_2)
+\approx (0.98, 3.63, 4.11)$ — all within the regression's own 95% confidence intervals of the true
+values $(0, 3, 5)$ — and $\hat\sigma \approx 9.50$, close to the true $\sigma = 10$.
+
+## Why the search only needs to run over [0, 1/2]
+
+The grid above only covers $f \in [0, 0.5]$, and that is not an arbitrary choice of range — it is
+forced by the fact that $t$ only ever takes integer values $1,\dots,n$. For any integer $k$,
+
+$$\cos\big(2\pi (f+k) t\big) = \cos(2\pi f t), \qquad \sin\big(2\pi (f+k) t\big) = \sin(2\pi f t)$$
+
+whenever $t$ is an integer, since $2\pi k t$ is a whole multiple of $2\pi$. And because cosine is
+even and sine is odd,
+
+$$\cos\big(2\pi (-f) t\big) = \cos(2\pi f t), \qquad \sin\big(2\pi (-f) t\big) = -\sin(2\pi f t).$$
+
+Putting the two together: for any integer $k$, the frequencies $f$ and $k - f$ produce *identical*
+$\cos$ columns and a *sign-flipped* $\sin$ column in the design matrix, at every integer $t$. So they
+give exactly the same residual sum of squares (with $\beta_2 \mapsto -\beta_2$), and the least
+squares criterion cannot tell them apart. This is **aliasing**: $\text{crit}(f)$ is periodic with
+period 1 and symmetric about every half-integer, so its shape on $[0, \tfrac12]$ already determines
+it everywhere else, and it is enough to search that one interval.
+
+The lab makes this concrete with $k = 2$: the frequency $f = 1.8$ and $f_0 = 2 - 1.8 = 0.2$ are
+aliases of one another, in the sense that the two sinusoids $s_t = R\cos(2\pi f t + \phi)$ and
+$s_t = R\cos(2\pi f_0 t - \phi)$ are identical whenever $t$ is an integer. Concretely: if the true
+frequency is changed from $f = 0.2$ to $f = 1.8$ (keeping everything else, including the equally
+spaced sample times, the same), the least-squares and Bayesian analyses both still return an
+estimate close to $0.2$ — because that is the only frequency in $[0, 0.5]$ that the data, sampled at
+integer times, can express. Consistent with the sign flip above, the estimate of $\beta_2$ comes out
+with the opposite sign from what it would have had at $f = 0.2$.
+
+<figure>
+<svg viewBox="0 0 400 200" role="img" aria-label="Sinusoids of frequency 0.2 and 1.8 plotted against continuous time, coinciding only at integer values of t">
+  <line x1="40" y1="90" x2="380" y2="90" stroke="currentColor" stroke-width="1" stroke-opacity="0.4"/>
+  <polyline points="40.0,30.0 42.1,30.0 44.3,30.2 46.4,30.4 48.6,30.7 50.7,31.2 52.8,31.7 55.0,32.3 57.1,33.0 59.2,33.8 61.4,34.6 63.5,35.6 65.7,36.6 67.8,37.7 69.9,39.0 72.1,40.2 74.2,41.6 76.4,43.0 78.5,44.5 80.6,46.1 82.8,47.8 84.9,49.5 87.0,51.3 89.2,53.1 91.3,55.0 93.5,57.0 95.6,59.0 97.7,61.0 99.9,63.1 102.0,65.3 104.2,67.5 106.3,69.7 108.4,71.9 110.6,74.2 112.7,76.5 114.8,78.8 117.0,81.1 119.1,83.5 121.3,85.9 123.4,88.2 125.5,90.6 127.7,93.0 129.8,95.3 131.9,97.7 134.1,100.0 136.2,102.4 138.4,104.7 140.5,107.0 142.6,109.2 144.8,111.4 146.9,113.6 149.1,115.8 151.2,117.9 153.3,120.0 155.5,122.0 157.6,124.0 159.7,125.9 161.9,127.8 164.0,129.6 166.2,131.4 168.3,133.1 170.4,134.7 172.6,136.2 174.7,137.7 176.9,139.1 179.0,140.4 181.1,141.7 183.3,142.8 185.4,143.9 187.5,144.9 189.7,145.8 191.8,146.6 194.0,147.4 196.1,148.0 198.2,148.6 200.4,149.1 202.5,149.4 204.7,149.7 206.8,149.9 208.9,150.0 211.1,150.0 213.2,149.9 215.3,149.7 217.5,149.4 219.6,149.1 221.8,148.6 223.9,148.0 226.0,147.4 228.2,146.6 230.3,145.8 232.5,144.9 234.6,143.9 236.7,142.8 238.9,141.7 241.0,140.4 243.1,139.1 245.3,137.7 247.4,136.2 249.6,134.7 251.7,133.1 253.8,131.4 256.0,129.6 258.1,127.8 260.3,125.9 262.4,124.0 264.5,122.0 266.7,120.0 268.8,117.9 270.9,115.8 273.1,113.6 275.2,111.4 277.4,109.2 279.5,107.0 281.6,104.7 283.8,102.4 285.9,100.0 288.1,97.7 290.2,95.3 292.3,93.0 294.5,90.6 296.6,88.2 298.7,85.9 300.9,83.5 303.0,81.1 305.2,78.8 307.3,76.5 309.4,74.2 311.6,71.9 313.7,69.7 315.8,67.5 318.0,65.3 320.1,63.1 322.3,61.0 324.4,59.0 326.5,57.0 328.7,55.0 330.8,53.1 333.0,51.3 335.1,49.5 337.2,47.8 339.4,46.1 341.5,44.5 343.6,43.0 345.8,41.6 347.9,40.2 350.1,39.0 352.2,37.7 354.3,36.6 356.5,35.6 358.6,34.6 360.8,33.8 362.9,33.0 365.0,32.3 367.2,31.7 369.3,31.2 371.4,30.7 373.6,30.4 375.7,30.2 377.9,30.0 380.0,30.0" fill="none" stroke="currentColor" stroke-width="1.8"/>
+  <polyline points="40.0,30.0 42.1,33.8 44.3,44.5 46.4,61.0 48.6,81.1 50.7,102.4 52.8,122.0 55.0,137.7 57.1,147.4 59.2,149.9 61.4,144.9 63.5,133.1 65.7,115.8 67.8,95.3 69.9,74.2 72.1,55.0 74.2,40.2 76.4,31.7 78.5,30.4 80.6,36.6 82.8,49.5 84.9,67.5 87.0,88.2 89.2,109.2 91.3,127.8 93.5,141.7 95.6,149.1 97.7,149.1 99.9,141.7 102.0,127.8 104.2,109.2 106.3,88.2 108.4,67.5 110.6,49.5 112.7,36.6 114.8,30.4 117.0,31.7 119.1,40.2 121.3,55.0 123.4,74.2 125.5,95.3 127.7,115.8 129.8,133.1 131.9,144.9 134.1,149.9 136.2,147.4 138.4,137.7 140.5,122.0 142.6,102.4 144.8,81.1 146.9,61.0 149.1,44.5 151.2,33.8 153.3,30.0 155.5,33.8 157.6,44.5 159.7,61.0 161.9,81.1 164.0,102.4 166.2,122.0 168.3,137.7 170.4,147.4 172.6,149.9 174.7,144.9 176.9,133.1 179.0,115.8 181.1,95.3 183.3,74.2 185.4,55.0 187.5,40.2 189.7,31.7 191.8,30.4 194.0,36.6 196.1,49.5 198.2,67.5 200.4,88.2 202.5,109.2 204.7,127.8 206.8,141.7 208.9,149.1 211.1,149.1 213.2,141.7 215.3,127.8 217.5,109.2 219.6,88.2 221.8,67.5 223.9,49.5 226.0,36.6 228.2,30.4 230.3,31.7 232.5,40.2 234.6,55.0 236.7,74.2 238.9,95.3 241.0,115.8 243.1,133.1 245.3,144.9 247.4,149.9 249.6,147.4 251.7,137.7 253.8,122.0 256.0,102.4 258.1,81.1 260.3,61.0 262.4,44.5 264.5,33.8 266.7,30.0 268.8,33.8 270.9,44.5 273.1,61.0 275.2,81.1 277.4,102.4 279.5,122.0 281.6,137.7 283.8,147.4 285.9,149.9 288.1,144.9 290.2,133.1 292.3,115.8 294.5,95.3 296.6,74.2 298.7,55.0 300.9,40.2 303.0,31.7 305.2,30.4 307.3,36.6 309.4,49.5 311.6,67.5 313.7,88.2 315.8,109.2 318.0,127.8 320.1,141.7 322.3,149.1 324.4,149.1 326.5,141.7 328.7,127.8 330.8,109.2 333.0,88.2 335.1,67.5 337.2,49.5 339.4,36.6 341.5,30.4 343.6,31.7 345.8,40.2 347.9,55.0 350.1,74.2 352.2,95.3 354.3,115.8 356.5,133.1 358.6,144.9 360.8,149.9 362.9,147.4 365.0,137.7 367.2,122.0 369.3,102.4 371.4,81.1 373.6,61.0 375.7,44.5 377.9,33.8 380.0,30.0" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <circle cx="40.0" cy="30.0" r="3" fill="currentColor"/>
+  <circle cx="108.0" cy="71.5" r="3" fill="currentColor"/>
+  <circle cx="176.0" cy="138.5" r="3" fill="currentColor"/>
+  <circle cx="244.0" cy="138.5" r="3" fill="currentColor"/>
+  <circle cx="312.0" cy="71.5" r="3" fill="currentColor"/>
+  <circle cx="380.0" cy="30.0" r="3" fill="currentColor"/>
+  <text x="40" y="185" font-size="11" text-anchor="middle" fill="currentColor">0</text>
+  <text x="108" y="185" font-size="11" text-anchor="middle" fill="currentColor">1</text>
+  <text x="176" y="185" font-size="11" text-anchor="middle" fill="currentColor">2</text>
+  <text x="244" y="185" font-size="11" text-anchor="middle" fill="currentColor">3</text>
+  <text x="312" y="185" font-size="11" text-anchor="middle" fill="currentColor">4</text>
+  <text x="380" y="185" font-size="11" text-anchor="middle" fill="currentColor">5</text>
+  <text x="210" y="198" font-size="12" text-anchor="middle" fill="currentColor">t</text>
+  <text x="330" y="24" font-size="12" fill="currentColor">f = 0.2</text>
+  <text x="315" y="163" font-size="12" fill="currentColor">f = 1.8 (dashed)</text>
+</svg>
+<figcaption>The sinusoids at frequency 0.2 (solid) and its alias 1.8 (dashed) agree exactly at every
+integer time t (dots) but disagree everywhere in between: aliasing is a property of the sampling
+times, not of the underlying signal.</figcaption>
+</figure>
+
+## Breaking aliasing with unequally spaced samples
+
+The derivation above depended entirely on $t$ being an integer — that is what let $2\pi k t$ collapse
+to a multiple of $2\pi$. If the observation times are **not** equally spaced, that cancellation no
+longer happens for a generic (non-integer) $t$, and frequencies outside $[0, 0.5]$ become
+identifiable again.
+
+The lab demonstrates this by re-simulating the same model with $f = 1.8$, $n = 400$, and the same
+$\beta_0,\beta_1,\beta_2,\sigma$, but this time drawing the $n$ observation times as $n$ points
+sampled uniformly at random from $[1, 400]$ and sorted, rather than as $1,\dots,n$. With time no
+longer restricted to integers, the criterion function is evaluated on a grid over the wider range
+$[0, 10]$ instead of $[0, 0.5]$, since there is no longer a reason to expect the answer to lie in
+$[0, 0.5]$. The resulting least-squares estimate is $\hat f \approx 1.7996$, correctly recovering the
+true frequency rather than its alias, and the Bayesian posterior (below) is likewise tightly
+concentrated near $1.8$ rather than near $0.2$.
+
+## A Bayesian posterior for f
+
+The course had already derived, for this model, the (unnormalized) posterior density of $f$:
+
+$$I\{0 \le f \le 1/2\} \cdot \big|X_f^\top X_f\big|^{-1/2} \cdot \left(\frac{1}{S(\hat\beta(f), f)}\right)^{(n-p)/2},$$
+
+where $X_f$ is the design matrix with columns $1, \cos(2\pi f t), \sin(2\pi f t)$ at the candidate
+frequency $f$, $p = 3$ is the number of regression coefficients, and $S(\hat\beta(f), f)$ is the
+residual sum of squares at $f$ with $\beta$ profiled out — exactly the $\text{crit}(f) = RSS(f)$ from
+the least-squares section. (The indicator restricting $f$ to $[0, 1/2]$ is exactly the aliasing
+restriction derived above; when sampling is non-uniform, as in the previous section, the same
+argument extends the range the grid is evaluated over.)
+
+Because $RSS(f)$ is raised to the power $-(n-p)/2$ — a large negative power for $n = 400$ — the
+posterior is extremely sensitive to small differences in $RSS(f)$, which is also why the posterior
+mode turns out to coincide with the least-squares/MLE estimate $\hat f$: both are found by locating
+where $RSS(f)$ is smallest.
+
+Evaluating this on a grid raises two numerical issues, both handled by the lab:
+
+- **Work with the log posterior.** Directly exponentiating can overflow or underflow, so the grid
+  search computes $\log|X_f^\top X_f|^{-1/2} + \tfrac{p-n}{2}\log RSS(f)$ instead, using
+  `np.linalg.slogdet` for the log-determinant term.
+- **Exclude frequencies very close to the boundary.** As $f \to 0$ or $f \to 1/2$, the columns of
+  $X_f$ become nearly collinear (with the constant column, or with each other) and $X_f^\top X_f$
+  becomes nearly singular, so $|X_f^\top X_f|^{-1/2}$ blows up. The lab trims the first and last 100
+  points of a $100{,}000$-point grid before evaluating the log posterior, rather than let those
+  spurious spikes dominate.
+
+Once the log posterior values are in hand, exponentiate after subtracting the maximum value (so the
+largest term becomes $1$ rather than something that might overflow), then normalize by the sum over
+the grid to get posterior probabilities, and rescale by the number of grid points per unit interval
+to get an (approximate) posterior density.
+
+From here, the posterior mean and mode of $f$ can be read off directly, and a credible interval is
+built by growing a window symmetrically around the posterior mode: starting from a window of width
+$0$, widen it by one grid point at a time until the posterior probability captured inside it first
+reaches $95\%$.
+
+For the original $f = 0.2$ simulation, this gives a posterior mean $\approx 0.19990$ and posterior
+mode exactly equal to $\hat f \approx 0.19990$, with a $95\%$ credible interval of roughly
+$[0.19957, 0.20022]$ — a very narrow interval that comfortably contains the true value $0.2$. For the
+non-uniformly sampled $f = 1.8$ simulation, the same procedure gives a posterior mean
+$\approx 1.79959$ and mode $\approx 1.79962$, again close to the true frequency.
+
+## Sources
+
+- Berkeley STAT 153 (Spring 2025), Lab 3, "More on fitting sinusoidal models," part 1: [Estimating
+  Frequency in a Simulated Dataset](https://github.com/berkeley-stat153/spring-2025/blob/60232ff1b10a6e871e4de968015b36891a606030/Lab3.ipynb)
+  — the model, the least-squares/MLE grid search for $\hat f$, and the Bayesian posterior
+  computation, credible interval, and numerical results quoted above.
+- Same lab, part 2: Frequency Aliasing — the aliasing identity, the $f = 1.8$ example, the
+  non-uniform-time simulation and its recovered estimate.
+- The posterior formula used in the Bayesian section is quoted in the lab as "the formula for the
+  Bayesian posterior that we derived in class"; the derivation itself (the prior assumed, and how
+  $\beta$ and $\sigma$ are integrated out) is not part of the supplied material and is not
+  reconstructed here.
+
+---
+
+[← 93. Anatomy of a Regression Fit (part 2)](93-anatomy-of-a-regression-fit-part-2.md) · [Contents](index.md) · [95. Inference in Nonlinear Regression Models →](95-inference-in-nonlinear-regression-models.md)

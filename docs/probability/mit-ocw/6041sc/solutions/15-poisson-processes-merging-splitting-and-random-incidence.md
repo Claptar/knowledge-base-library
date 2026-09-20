@@ -1,0 +1,112 @@
+---
+title: "Solutions — Poisson Processes: Merging, Splitting, and Random Incidence"
+source: https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/
+licence: CC BY-NC-SA 4.0
+---
+
+> **Worked solutions.** From the course's own solution sets, licensed CC BY-NC-SA 4.0.
+
+# Solutions — Poisson Processes: Merging, Splitting, and Random Incidence
+
+## Department of Electrical Engineering & Computer Science
+## 6.041/6.431: Probabilistic Systems Analysis
+## (Fall 2010)
+
+## Recitation 15 Solutions
+## October 28, 2010
+
+1. (a) Let $X$ be the time until the first bulb failure. Let $A$ (respectively, $B$) be the event that the frist bulb is of type $A$ (respectively, $B$). Since the two bulb types are equally likely, the total expectation theorem yields
+
+   $$\mathbf{E}[X] = \mathbf{E}[X|A]\mathbf{P}(A) + \mathbf{E}[X|B]\mathbf{P}(B) = 1 \cdot \frac{1}{2} + \frac{1}{3} \cdot \frac{1}{2} = \frac{2}{3}.$$
+
+   (b) Let $D$ be the event of no bulb failures before time $t$. Using the total probability theorem, and the exponential distributions for bulbs of the two types, we obtain
+
+   $$\mathbf{P}(D) = \mathbf{P}(D|A)\mathbf{P}(A) + \mathbf{P}(D|B)\mathbf{P}(B) = \frac{1}{2}e^{-t} + \frac{1}{2}e^{-3t}.$$
+
+   (c) We have
+
+   $$\mathbf{P}(A|D) = \frac{\mathbf{P}(A \cap D)}{\mathbf{P}(D)} = \frac{\frac{1}{2}e^{-t}}{\frac{1}{2}e^{-t} + \frac{1}{2}e^{-3t}} = \frac{1}{1 + e^{-2t}}.$$
+
+   (d) The lifetime of the first type-A bulb is $X_A$, with PDF given by:
+
+   $$f_{X_A}(x) = \begin{cases} e^{-x} & x \geq 0 \\ 0 & \text{elsewhere} \end{cases}$$
+
+   Let $Y$ be the total lifetime of two type-B bulbs. Because the lifetime of each type-B bulb is exponential with $\lambda = 3$, the sum $Y$ has an Erlang distribution of order 2 with $\lambda = 3$. Its PDF is:
+
+   $$f_Y(y) = \begin{cases} 9ye^{-3y} & y \geq 0 \\ 0 & \text{elsewhere} \end{cases}$$
+
+   $$\begin{aligned}
+   \mathbf{P}(G) &= \mathbf{P}(Y \geq X_A) \\
+   &= \int_{-\infty}^{\infty} f_Y(y) \int_{-\infty}^y f_{X_A}(x)dxdy \\
+   &= \int_0^{\infty} 9ye^{-3y} \int_0^y e^{-x}dxdy = 9 \int_0^{\infty} ye^{-3y} \left[ -e^{-x} \right]_{x=0}^{x=y} dy \\
+   &= 9 \int_0^{\infty} ye^{-3y}(1 - e^{-y})dy = 9 \int_0^{\infty} ye^{-3y} - ye^{-4y}dy \\
+   &= 9 \left[ -\frac{1}{3}ye^{-3y} - \frac{1}{9}e^{-3y} + \frac{1}{4}ye^{-4y} + \frac{1}{16}e^{-4y} \right]_{y=0}^{y=\infty} \\
+   &= 9\left( \frac{1}{9} - \frac{1}{16} \right) = \frac{7}{16}
+   \end{aligned}$$
+
+   A simpler solution involving no integrals is as follows:
+
+   The bulb failure times of interest (1st type-A, 2nd type-B) may be thought of as the arrival times of two independent Poisson processes of rate $\lambda_A = 1$ and $\lambda_B = 3$. We may imagine that these two processes were split from a joint Poisson process of rate $\lambda_A + \lambda_B$, where the splitting probabilities for each arrival are $P(A) = \frac{\lambda_A}{\lambda_A + \lambda_B} = 1/4$ to process A and $P(B) = \frac{\lambda_B}{\lambda_A + \lambda_B} = 3/4$ to process B. Now we may just focus on whether arrivals to the joint process go to process A or to process B. Each arrival to the joint process corresponds to an independent trial. There are two possible outcomes: the arrival is handed to process A with probability $P(A)$ or the arrival is handed to process B with probability $P(B)$. Then our event of interest occurs when either the first arrival goes to A, or the first arrival goes to B followed by the second going to A. So the corresponding probability is
+
+   $$P(A \text{ or } BA) = P(A) + P(BA) = P(A) + P(B)P(A) = 7/16$$
+
+   (e) Let $V$ be the total period of illumination provided by type-B bulbs while the process is in operation. Let $N$ be the number of light bulbs, out of the first 12, that are of type-B. Let $X_i$ be the period of illumination from the $i$th type-B bulb. We then have $V = Y_1 + \dots Y_N$. Note that $N$ is a binomial random variable, with parameters $n = 12$ and $p = 1/2$, so that
+
+   $$\mathbf{E}[N] = 6, \quad \operatorname{var}(N) = 12 \cdot \frac{1}{2} \cdot \frac{1}{2} = 3.$$
+
+   Furthermore, $\mathbf{E}[X_i] = 1/3$ and $\operatorname{var}(X_i) = 1/9$. Using the formulas for the mean and variance of the sum of a random number of random variables, we obtain
+
+   $$\mathbf{E}[V] = \mathbf{E}[N]\mathbf{E}[X_i] = 2,$$
+
+   and
+
+   $$\operatorname{var}(V) = \operatorname{var}(X_i)\mathbf{E}[N] + (\mathbf{E}[X_i])^2\operatorname{var}(N) = \frac{1}{9} \cdot 6 + \frac{1}{9} \cdot 3 = 1$$
+
+   (f) Using the notation in parts (a)-(c), and the result of part (c), we have
+
+   $$\begin{aligned}
+   \mathbf{E}[T|D] &= t + \mathbf{E}[T - t|D \cap A]\mathbf{P}(A|D) + \mathbf{E}[T - t|D \cap B]\mathbf{P}(B|D) \\
+   &= t + 1 \cdot \frac{1}{1 + e^{-2t}} + \frac{1}{3} \left( 1 - \frac{1}{1 + e^{-2t}} \right) \\
+   &= t + \frac{1}{3} + \frac{2}{3} \cdot \frac{1}{1 + e^{-2t}}.
+   \end{aligned}$$
+
+2. (a) The total arrival process corresponds to the merging of two independent Poisson processes, and is therefore Poisson with rate $\lambda = \lambda_A + \lambda_B = 7$. Thus, the number $N$ of jobs that arrive in a given three-minute interval is a Poisson random variable, with $\mathbf{E}[N] = 3\lambda = 21$, $\operatorname{var}(N) = 21$, and PMF
+
+   $$p_N(n) = \frac{(21)^n e^{-21}}{n!}, \quad n = 0, 1, 2, \dots.$$
+
+   (b) Each of these 10 jobs has probability $\lambda_A/(\lambda_A + \lambda_B) = 3/7$ of being type A, independently of the others. Thus, the binomial PMF applies and the desired probability is equal to
+
+   $$\binom{10}{3} \left( \frac{3}{7} \right)^3 \left( \frac{4}{7} \right)^7$$
+
+   (c) Each future arrival is of type A with probability $\lambda_A/(\lambda_A + \lambda_B) = 3/7$ of being type A, independently of the others. Thus, the number $K$ of arrivals until the first type A arrival is geometric with parameter $3/7$. The number of type B arrivals before the first type A arrival is equal to $K - 1$, and its PMF is similar to a geometric, except that it is shifted by one unit to the left. In particular,
+
+   $$p_K(k) = \left( \frac{3}{7} \right)\left( \frac{4}{7} \right)^k, \quad k = 0, 1, 2, \dots.$$
+
+3. The event $\{X < Y < Z\}$ can be expressed as $\{X < \min\{Y, Z\}\} \cap \{Y < Z\}$. Let $Y$ and $Z$ be the 1st arrival times of two independent Poisson processes with rates $\mu$ and $\nu$. By merging the two processes, it should be clear that $Y < Z$ if and only if the first arrival of the merged process comes from the original process with rate $\mu$, and thus
+
+   $$\mathbf{P}(Y < Z) = \frac{\mu}{\mu + \nu}.$$
+
+   Let $X$ be the 1st arrival time of a third independent Poisson process with rate $\lambda$. Now $\{X < \min\{Y, Z\}\}$ if and only if the first arrival of the Poisson process obtained by merging the two processes with rates $\lambda$ and $\mu + \nu$ comes from the original process with rate $\lambda$, and thus
+
+   $$\mathbf{P}(X < \min\{Y, Z\}) = \frac{\lambda}{\lambda + \mu + \nu}.$$
+
+   Note that the event $\{X < \min\{Y, Z\}\}$ is independent of the event $\{Y < Z\}$, as the time of the first arrival of the merged process with rate $\mu + \nu$ is independent of whether that first arrival comes from the process with rate $\mu$ or the process with rate $\nu$. Hence,
+
+   $$\begin{aligned}
+   \mathbf{P}(X < Y < Z) &= \mathbf{P}(X < \min\{Y, Z\}) \cdot \mathbf{P}(Y < Z) \\
+   &= \frac{\lambda\mu}{(\lambda + \mu + \nu)(\mu + \nu)}.
+   \end{aligned}$$
+
+---
+
+MIT OpenCourseWare
+http://ocw.mit.edu
+
+6.041SC Probabilistic Systems Analysis and Applied Probability
+Fall 2013
+
+For information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.
+
+---
+
+[← back to chapter 15](../15-poisson-processes-merging-splitting-and-random-incidence.md)

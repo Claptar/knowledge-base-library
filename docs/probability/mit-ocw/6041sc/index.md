@@ -2,7 +2,7 @@
 title: "MIT 6.041SC"
 source: https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/
 licence: CC BY-NC-SA 4.0
-written: '2026-09-18'
+written: '2026-09-20'
 ---
 
 > **Lecture notes.** Written from the material of [MIT 6.041SC](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/), licensed CC BY-NC-SA 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
@@ -22,7 +22,7 @@ written: '2026-09-18'
 7. [Multiple Random Variables and Independence](07-multiple-random-variables-and-independence.md)
 8. [Continuous Random Variables and the Normal Distribution](08-continuous-random-variables-and-the-normal-distribution.md)
 9. [Joint and Conditional Continuous Densities](09-joint-and-conditional-continuous-densities.md)
-10. [Bayes' Rule and Derived Distributions](10-bayes-rule-and-derived-distributions.md)
+10. [Derived Distributions and Bayesian Inference](10-derived-distributions-and-bayesian-inference.md)
 11. [Derived Distributions, Convolutions, and Covariance](11-derived-distributions-convolutions-and-covariance.md)
 12. [Iterated Expectations and Total Variance](12-iterated-expectations-and-total-variance.md)
 13. [The Bernoulli Process](13-the-bernoulli-process.md)

@@ -5,10 +5,10 @@ source_file: sources/berkeley-stat210b/spring-2025/Syllabus_STAT210B_Spring2025.
 licence: CC BY 4.0
 route: llm
 fidelity: reconstructed
-converted: '2026-09-18'
+converted: '2026-09-20'
 ---
 
-> **Reconstructed by a model.** [`Syllabus_STAT210B_Spring2025.pdf`](https://github.com/berkeley-stat210b/spring-2025/blob/6a725bda2894de573659dd9ae38e3ca1b5cb41d5/Syllabus_STAT210B_Spring2025.pdf) — berkeley-stat210b · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
+> **Reconstructed by a model.** [`Syllabus_STAT210B_Spring2025.pdf`](https://github.com/berkeley-stat210b/spring-2025/blob/6a725bda2894de573659dd9ae38e3ca1b5cb41d5/Syllabus_STAT210B_Spring2025.pdf) — berkeley-stat210b · spring-2025, licensed CC BY 4.0. Converted 2026-09-20 from `.pdf`. The original is a PDF with no usable text layer. A model read the pages and wrote this markdown: the prose is a paraphrase in places and **every equation is unverified**. Treat it as a pointer into the original, never as a citable source.
 
 # Syllabus of STAT210B
 

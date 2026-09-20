@@ -4,7 +4,7 @@ course: "MIT 6047"
 chapter: 6
 source: "https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/"
 licence: "CC BY-NC-SA 4.0"
-written: "2026-09-18"
+written: "2026-09-20"
 ---
 
 > **Lecture notes.** Written from the slides and recording of this lecture of [MIT 6047](https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
@@ -371,4 +371,4 @@ supplied for this chapter.
 
 ---
 
-[← 5. Training Hidden Markov Models](05-training-hidden-markov-models.md) · [Contents](index.md)
+[← 5. Training Hidden Markov Models](05-training-hidden-markov-models.md) · [Contents](index.md) · [7. Challenges in Regulatory Genomics →](07-challenges-in-regulatory-genomics.md)

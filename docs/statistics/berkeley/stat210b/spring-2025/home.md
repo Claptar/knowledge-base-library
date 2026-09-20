@@ -5,10 +5,10 @@ source_file: sources/berkeley-stat210b/spring-2025/index.qmd
 licence: CC BY 4.0
 route: markdown
 fidelity: lossless
-converted: '2026-09-18'
+converted: '2026-09-20'
 ---
 
-> **Converted source.** [`index.qmd`](https://github.com/berkeley-stat210b/spring-2025/blob/6a725bda2894de573659dd9ae38e3ca1b5cb41d5/index.qmd) — berkeley-stat210b · spring-2025, licensed CC BY 4.0. Converted 2026-09-18 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
+> **Converted source.** [`index.qmd`](https://github.com/berkeley-stat210b/spring-2025/blob/6a725bda2894de573659dd9ae38e3ca1b5cb41d5/index.qmd) — berkeley-stat210b · spring-2025, licensed CC BY 4.0. Converted 2026-09-20 from `.qmd`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
 
 # Statistics 210b: Theory of Statistics
 
