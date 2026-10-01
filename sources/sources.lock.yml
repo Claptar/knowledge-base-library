@@ -3818,3 +3818,196 @@ sources:
     bytes: 59268340
     sha256: 18f5c3d3367736740ffc5651a2cfd426e16c1fe64fc46f254cb7e7dc04846dd3
   note: book PDF, added by hand
+- slug: papers/gorin-2022-interpretable-tractable
+  material: paper
+  subject: computational-biology
+  licence: CC BY 4.0
+  open_access: true
+  title: "Gorin, Vastola, Fang & Pachter 2022, Interpretable and tractable models of transcriptional noise for the rational design of single-molecule quantification experiments"
+  holds: material
+  files: 1
+  bytes: 301680
+  fetched: '2026-10-01'
+  kind: files
+  base: https://doi.org/10.1038/s41467-022-34857-7
+  restorable: upstream
+  contents:
+  - name: gorin-2022-interpretable-tractable.jats
+    bytes: 301680
+    sha256: eb79a582ac8fc90fc3e8f3417713c63fb0cebbba55bf72c1818e3db5ac522798
+  note: "Nature Communications, open access; CC BY 4.0 stated in the article's own JATS <license> (Europe PMC PMC9734650)"
+- slug: papers/tang-2023-capture-efficiency
+  material: paper
+  subject: computational-biology
+  licence: CC BY 4.0
+  open_access: true
+  title: "Tang et al. 2023, Modelling capture efficiency of single-cell RNA-sequencing data improves inference of transcriptome-wide burst kinetics"
+  holds: material
+  files: 1
+  bytes: 137999
+  fetched: '2026-10-01'
+  kind: files
+  base: https://doi.org/10.1093/bioinformatics/btad395
+  restorable: upstream
+  contents:
+  - name: tang-2023-capture-efficiency.jats
+    bytes: 137999
+    sha256: c22db40a78105b087a68307ce34c60538d18fbf75d60cd4d8617fc809e671f66
+  note: "Bioinformatics, open access; CC BY 4.0 stated in the article's own JATS <license> (Europe PMC PMC10318389)"
+- slug: papers/tang-2020-baynorm
+  material: paper
+  subject: computational-biology
+  licence: CC BY 4.0
+  open_access: true
+  title: "Tang, Wiuf, Sutherland & Hayes 2020, bayNorm: Bayesian gene expression recovery, imputation and normalization for single-cell RNA-sequencing data"
+  holds: material
+  files: 1
+  bytes: 139149
+  fetched: '2026-10-01'
+  kind: files
+  base: https://doi.org/10.1093/bioinformatics/btz726
+  restorable: upstream
+  contents:
+  - name: tang-2020-baynorm.jats
+    bytes: 139149
+    sha256: 37a26ac23ae3b39dffa5ecfb649ac3f7ab447f5ab8e1b3a901ebd9fcae241fa4
+  note: "Bioinformatics, open access; CC BY 4.0 stated in the article's own JATS <license> (Europe PMC PMC7703772)"
+- slug: papers/gorin-pachter-2020-intrinsic-extrinsic
+  material: paper
+  subject: computational-biology
+  licence: CC BY 4.0
+  open_access: true
+  title: "Gorin & Pachter 2020, Intrinsic and extrinsic noise are distinguishable in a synthesis-export-degradation model of mRNA production"
+  holds: material
+  files: 1
+  bytes: 2363510
+  fetched: '2026-10-01'
+  kind: files
+  base: https://doi.org/10.1101/2020.09.25.312868
+  restorable: upstream
+  contents:
+  - name: gorin-pachter-2020-intrinsic-extrinsic.pdf
+    bytes: 2363510
+    sha256: 3b98753f797d112ee186708228542a7c746f3b87140f02d7c0de863268d77db8
+  note: "bioRxiv preprint v1; api.biorxiv.org reports license cc_by. Read from the PDF: bioRxiv's JATS stores formulas as images"
+- slug: papers/gorin-2022-transient-delay-cme
+  material: paper
+  subject: computational-biology
+  licence: CC BY 4.0
+  open_access: true
+  title: "Gorin, Yoshida & Pachter 2022, Transient and delay chemical master equations"
+  holds: material
+  files: 1
+  bytes: 3831608
+  fetched: '2026-10-01'
+  kind: files
+  base: https://doi.org/10.1101/2022.10.17.512599
+  restorable: upstream
+  contents:
+  - name: gorin-2022-transient-delay-cme.pdf
+    bytes: 3831608
+    sha256: 7a1575d85e2ed2df3724992ef38f91ce8a1bf05f07480ee605e213fc6741b04b
+  note: "bioRxiv preprint v2; api.biorxiv.org reports license cc_by. Read from the PDF"
+- slug: papers/gorin-pachter-2022-bursty-splicing
+  material: paper
+  subject: computational-biology
+  licence: CC BY 4.0
+  open_access: true
+  title: "Gorin & Pachter 2021, Analytical solutions of the chemical master equation with bursty production and isomerization reactions"
+  holds: material
+  files: 1
+  bytes: 2488912
+  fetched: '2026-10-01'
+  kind: files
+  base: https://doi.org/10.1101/2021.03.24.436847
+  restorable: upstream
+  contents:
+  - name: gorin-pachter-2022-bursty-splicing.pdf
+    bytes: 2488912
+    sha256: ab96d845f75a9927d96da7b27ded1a4d55dffe653f0cb6f83c04cd4f625993c4
+  note: "bioRxiv preprint v2; Crossref links it as the preprint of the Biophysical Journal article 10.1016/j.bpj.2022.02.004, retitled on publication as Modeling bursty transcription and splicing with the chemical master equation (journal version not open). api.biorxiv.org reports license cc_by"
+- slug: papers/vastola-holmes-2020-path-integral-cle
+  material: paper
+  subject: computational-biology
+  licence: arXiv non-exclusive distribution licence
+  title: "Vastola & Holmes 2020, Chemical Langevin equation: a path-integral view of Gillespie's derivation"
+  holds: material
+  files: 1
+  bytes: 310428
+  fetched: '2026-10-01'
+  kind: files
+  base: https://arxiv.org/abs/1910.05383
+  restorable: upstream
+  contents:
+  - name: vastola-holmes-2020-path-integral-cle.pdf
+    bytes: 310428
+    sha256: fd164d403608237a645818efedf9849641f6af0d4ae9d0302d2ad7f6cf72ec97
+  note: "arXiv:1910.05383 under arXiv's default licence, which grants distribution to arXiv only; published as Phys. Rev. E 101, 032417. Summary only"
+- slug: papers/grima-2012-feedback-loop
+  material: paper
+  subject: computational-biology
+  licence: arXiv non-exclusive distribution licence
+  title: "Grima, Schmidt & Newman 2012, Steady-state fluctuations of a genetic feedback loop: an exact solution"
+  holds: material
+  files: 1
+  bytes: 327808
+  fetched: '2026-10-01'
+  kind: files
+  base: https://arxiv.org/abs/1206.1571
+  restorable: upstream
+  contents:
+  - name: grima-2012-feedback-loop.pdf
+    bytes: 327808
+    sha256: f3f3e2da9a93bcdad83918e41cf65a7b582437a8d7d3b4bba5735bd826b831ca
+  note: "arXiv:1206.1571 under arXiv's default licence. Summary only"
+- slug: papers/hines-2021-demystifying-eif
+  material: paper
+  subject: statistics
+  licence: arXiv non-exclusive distribution licence
+  title: "Hines, Dukes, Diaz-Ordaz & Vansteelandt 2021, Demystifying statistical learning based on efficient influence functions"
+  holds: material
+  files: 1
+  bytes: 320016
+  fetched: '2026-10-01'
+  kind: files
+  base: https://arxiv.org/abs/2107.00681
+  restorable: upstream
+  contents:
+  - name: hines-2021-demystifying-eif.pdf
+    bytes: 320016
+    sha256: c21d1c102da8db93856f81d303866076dfed0ffbf7f29b01e631d21522edffd9
+  note: "arXiv:2107.00681 under arXiv's default licence. Summary only"
+- slug: papers/fisher-kennedy-influence-functions
+  material: paper
+  subject: statistics
+  licence: arXiv non-exclusive distribution licence
+  title: "Fisher & Kennedy, Visually Communicating and Teaching Intuition for Influence Functions"
+  holds: material
+  files: 1
+  bytes: 991667
+  fetched: '2026-10-01'
+  kind: files
+  base: https://arxiv.org/abs/1810.03260
+  restorable: upstream
+  contents:
+  - name: fisher-kennedy-influence-functions.pdf
+    bytes: 991667
+    sha256: 62a6c42ea203bc6af2186847f904b8dfac0a90624af0c50b65ab0f4723f7eaaf
+  note: "arXiv:1810.03260 under arXiv's default licence. Summary only"
+- slug: papers/galvez-merchan-2023-mrna-degradation
+  material: thesis
+  subject: computational-biology
+  licence: all rights reserved
+  title: "Gálvez Merchán 2023, Studies of mRNA Expression and Degradation (PhD thesis, Caltech)"
+  holds: material
+  files: 1
+  bytes: 15283976
+  fetched: '2026-10-01'
+  kind: files
+  base: https://doi.org/10.7907/esxk-ch24
+  restorable: upstream
+  contents:
+  - name: galvez-merchan-2023-mrna-degradation.pdf
+    bytes: 15283976
+    sha256: ad01971db4f321cef08b6b99f5a71e155805825e58a0374730aa7653d9cd50cd
+  note: "freely downloadable from thesis.caltech.edu/16081; the web record states no rights, but the thesis's own copyright page reads All rights reserved. Summary only"
