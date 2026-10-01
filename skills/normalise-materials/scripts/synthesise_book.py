@@ -67,6 +67,9 @@ TERM_DIR = re.compile(
 # A chapter key: a unit name, a lecture number, or failing both the containing directory.
 UNIT = re.compile(r"(unit\s*\d+|week\s*\d+|chap(?:ter)?[-_ ]?\d+)", re.I)
 LECTURE_NO = re.compile(r"(?:^|[/-])(?:lec(?:ture)?[-_ ]?)?(\d{1,2})(?:[-_./]|$)")
+# A dated file is unnumbered. Without this `recitations/2014-02-11-slides` read its MONTH as a
+# lecture number, so every February recitation joined lecture 2 and every March one lecture 3.
+DATED = re.compile(r"^\d{4}-\d{2}-\d{2}")
 FRONTMATTER = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n", re.S)
 # Which source document a converted page is a section of. The converter records this on every
 # page, and it is the only reliable answer: the OUTPUT path cannot distinguish section 1 of
@@ -168,7 +171,7 @@ def chapter_key(rel: str, doc: str = "") -> tuple[str, int]:
     else:
         parts = [p for p in rel.split("/") if not TERM_DIR.match(p)]
         stem = Path(parts[-1]).stem.lower() if parts else rel
-    m = LECTURE_NO.search("/" + stem)
+    m = None if DATED.match(stem) else LECTURE_NO.search("/" + stem)
     if m and role in ("slides", "transcript", "exercises", "solutions"):
         # Practice numbered like a lecture belongs WITH that lecture: recitation 7 is the
         # exercises for chapter 7, not a chapter between 7 and 8.
@@ -241,7 +244,10 @@ def plan_course(course_dir: Path) -> list:
 
     chapters = []
     for c in buckets.values():
-        if not c.inputs:
+        # A chapter needs something taught in it -- except the one that gathers the course's
+        # unnumbered practice, which is all problems by construction. Dropping it threw away
+        # 7.091J's fourteen recitations, every one of them.
+        if not c.inputs and c.key != "practice":
             continue
         chapters += (_split_long_document(c, docs) if c.chars() > CHAPTER_BUDGET else [c])
     # a course's own order: lecture number where it has one, then alphabetically by key
