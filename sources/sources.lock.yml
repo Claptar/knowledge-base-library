@@ -4238,3 +4238,88 @@ sources:
     bytes: 442815
     sha256: d038174c83f50c1662e9d7ec5c8b6c3e20621f0687cf889131b607e01090c2f7
   note: "Theoretical Population Biology (Elsevier). supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/gillespie-2000-cle
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Gillespie 2000, The chemical Langevin equation"
+  holds: material
+  files: 1
+  bytes: 406445
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1063/1.481811
+  restorable: never
+  contents:
+  - name: gillespie-2000-cle.pdf
+    bytes: 406445
+    sha256: b2e17df74959d17c6700f98a88cc5993c1a53b45d55e08a4ef26d3ac72b2ca46
+  note: "Journal of Chemical Physics (AIP). supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/gillespie-2001-tau-leaping
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Gillespie 2001, Approximate accelerated stochastic simulation of chemically reacting systems"
+  holds: material
+  files: 1
+  bytes: 595516
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1063/1.1378322
+  restorable: never
+  contents:
+  - name: gillespie-2001-tau-leaping.pdf
+    bytes: 595516
+    sha256: a85e630f6645a71b09f73a6d77401d0db4e282b3c8004b7fda4b5313a83deb64
+  note: "Journal of Chemical Physics (AIP). supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/thomas-2014-conditional-lna
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Thomas, Popović & Grima 2014, Phenotypic switching in gene regulatory networks"
+  holds: material
+  files: 1
+  bytes: 1336156
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1073/pnas.1400049111
+  restorable: never
+  contents:
+  - name: thomas-2014-conditional-lna.pdf
+    bytes: 1336156
+    sha256: 9f2a1e99894234c378206894767b9dbec6bda586ba30cb5d6a5679888f5364c6
+  note: "PNAS; free to read in PubMed Central (PMC4024914) but not openly licensed. supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/shahrezaei-swain-2008-analytical-distributions
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Shahrezaei & Swain 2008, Analytical distributions for stochastic gene expression"
+  holds: material
+  files: 1
+  bytes: 2168992
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1073/pnas.0803850105
+  restorable: never
+  contents:
+  - name: shahrezaei-swain-2008-analytical-distributions.pdf
+    bytes: 2168992
+    sha256: bb3f8e7ca0afa5f306745c61e73daa9a579bcf37bd9803cf6c3898a988441194
+  note: "PNAS, © 2008 National Academy of Sciences; free to read in PubMed Central (PMC2582303) but not openly licensed. supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/singh-bokes-2012-mrna-transport
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Singh & Bokes 2012, Consequences of mRNA transport on stochastic variability in protein levels"
+  holds: material
+  files: 1
+  bytes: 486078
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1016/j.bpj.2012.07.015
+  restorable: never
+  contents:
+  - name: singh-bokes-2012-mrna-transport.pdf
+    bytes: 486078
+    sha256: 7ad39a5a19ce8b82e28d7ddd844a1ef3d3fb0bcf991dc5b89398a5003aad6585
+  note: "Biophysical Journal (Elsevier); free to read in PubMed Central (PMC3433621) but not openly licensed. supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
