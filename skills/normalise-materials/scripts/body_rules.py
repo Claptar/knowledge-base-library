@@ -355,8 +355,16 @@ def fix_escaped_closer(text: str) -> str:
     `$\\chi^2\\$` renders as a stray dollar and swallows the rest of the page. Deliberately NOT
     part of _fix_stray_dollars: that runs in the conversion path, and editing it would change the
     material every chapter key is hashed over. This runs when a book is emitted, where the only
-    input is an already-paid-for chapter."""
-    return ESCAPED_CLOSER.sub(r"$\1$", text)
+    input is an already-paid-for chapter.
+
+    Only an opener that no valid span accounts for is repaired. Matching the pattern alone cannot
+    tell an opener from a closer: it read the closer of `$4$ wins \\$2` as an opener and unescaped
+    the price, and it broke `$T=\\texttt{ACAACG\\$}$`, a valid span whose `\\$` is meant."""
+    covered = bytearray(len(text))
+    for m in VALID_MATH.finditer(text):
+        covered[m.start():m.end()] = b"\x01" * (m.end() - m.start())
+    return ESCAPED_CLOSER.sub(lambda m: m.group(0) if covered[m.start()] else f"${m.group(1)}$",
+                              text)
 
 
 def unmatched_dollars(text: str) -> int:
