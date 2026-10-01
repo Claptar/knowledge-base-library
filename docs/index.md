@@ -9,7 +9,7 @@ provides. The companion to the
 [study knowledge base](https://github.com/Claptar/knowledge-base), which holds the notes
 themselves — the split is by authorship, not by subject.
 
-**11 course books, 450 chapters.** 13 further sources are converted but not yet written as books — 130 pages. Books and paywalled papers are deliberately absent.
+**12 course books, 473 chapters.** 12 further sources are converted but not yet written as books — 18 pages. Books and paywalled papers are deliberately absent.
 
 ## Course books
 
@@ -21,6 +21,7 @@ themselves — the split is by authorship, not by subject.
 ### Computational biology
 
 - [MIT 6047](computational-biology/mit-ocw/6047/index.md) — 16 chapters, CC BY-NC-SA 4.0
+- [MIT 7.091J](computational-biology/mit-ocw/7091j/index.md) — 23 chapters, CC BY-NC-SA 4.0
 - [MIT 8.591J 2004](computational-biology/mit-ocw/8591j-2004/index.md) — 20 chapters, CC BY-NC-SA 4.0
 - [MIT 8.591J 2014](computational-biology/mit-ocw/8591j-2014/index.md) — 24 chapters, CC BY-NC-SA 4.0
 - [MIT 8.592J](computational-biology/mit-ocw/8592j/index.md) — 15 chapters, CC BY-NC-SA 4.0
@@ -49,10 +50,6 @@ themselves — the split is by authorship, not by subject.
 > **Converted, not adapted.** The text is its author's, reformatted and split so that
 > every part has a URL. A page built from a PDF carries a warning, because prose
 > survives a PDF and mathematics does not.
-
-### Computational biology
-
-- [MIT 7.091J](computational-biology/mit-ocw/7091j/index.md) — 112 pages, CC BY-NC-SA 4.0
 
 ### Probability
 

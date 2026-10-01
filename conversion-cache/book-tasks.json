@@ -1,186 +1,269 @@
 [
  {
-  "key": "7d1b30d951ecd7ba3c9a91d3cfdbc591",
-  "course": "computational-biology/mit-ocw/6047",
+  "key": "f5ec28abb74b592787749f4470fc6207",
+  "course": "computational-biology/mit-ocw/7091j",
+  "number": 1,
+  "title": "Genomic Analysis Module",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/f5ec28abb74b592787749f4470fc6207.json",
+  "chars": 85751,
+  "slides": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/01-slides/01-genomic-analysis-module.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/01-slides/02-computational-genetics-module.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/01-slides/03-gwas-analysis-can-identify-human-variants-associated-with-di.md"
+  ],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/01.md"
+  ],
+  "notes": [],
+  "exercises": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/01-questions-pset1-ans/01-problem-1-sequence-search-6-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/01-questions-pset1-ans/02-problem-2-gapped-sequence-alignment-6-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/01-questions-pset1-ans/03-problem-3-sequence-similarity-search-statistics-7-points.md"
+  ]
+ },
+ {
+  "key": "2154a96bc68d2a74fd5f6cf669204dee",
+  "course": "computational-biology/mit-ocw/7091j",
+  "number": 2,
+  "title": "Local Alignment (BLAST) and Statistics",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/2154a96bc68d2a74fd5f6cf669204dee.json",
+  "chars": 87284,
+  "slides": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/02-slides/01-local-alignment-blast-and-statistics.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/02-slides/02-comparison-of-platforms.md"
+  ],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/02.md"
+  ],
+  "notes": [],
+  "exercises": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/02-questions-pset2-ques/01-02-questions-pset2-ques-part-01.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/02-questions-pset2-ques/02-problem-2-library-complexity-5-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/02-questions-pset2-ques/03-problem-6-modeling-and-information-content-of-sequence-motif.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/02-questions-pset2-ques/04-extra-6-874-problem-multiple-hypothesis-testing-4-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/02-questions.md"
+  ]
+ },
+ {
+  "key": "9f5538dc0e3b82a1a221259874ab3b7f",
+  "course": "computational-biology/mit-ocw/7091j",
+  "number": 3,
+  "title": "03 slides",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/9f5538dc0e3b82a1a221259874ab3b7f.json",
+  "chars": 118629,
+  "slides": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/03-slides.md"
+  ],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/03.md"
+  ],
+  "notes": [],
+  "exercises": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/03-questions-pset3-ques/01-p1-gibbs-sampler-10-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/03-questions-pset3-ques/02-p2-rna-secondary-structure-prediction-5-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/03-questions-pset3-ques/03-p3-protein-structure-with-pyrosetta-6-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/03-questions.md"
+  ]
+ },
+ {
+  "key": "68cec24849c91706e62430fb458dcf2e",
+  "course": "computational-biology/mit-ocw/7091j",
+  "number": 4,
+  "title": "Global Alignment of Protein Sequences (NW, SW, PAM, BLOSUM)",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/68cec24849c91706e62430fb458dcf2e.json",
+  "chars": 111331,
+  "slides": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/04-slides/01-global-alignment-of-protein-sequences-nw-sw-pam-blosum.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/04-slides/02-number-of-spacers-is-correlated-with-resistance-to-phage.md"
+  ],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/04.md"
+  ],
+  "notes": [],
+  "exercises": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/04-questions/01-p1---bayesian-networks-7-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/04-questions/02-p2-refining-protein-structures-in-pyrosetta-7-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/04-questions/03-p3-mutual-information-of-protein-residues-7-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/04-questions-pset4-ques/01-p1---bayesian-networks-7-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/04-questions-pset4-ques/02-p2-refining-protein-structures-in-pyrosetta-7-points.md"
+  ]
+ },
+ {
+  "key": "925d84db0b1eb0096701b545eb68d66b",
+  "course": "computational-biology/mit-ocw/7091j",
+  "number": 5,
+  "title": "Backtracking",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/925d84db0b1eb0096701b545eb68d66b.json",
+  "chars": 98463,
+  "slides": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/05-slides.md"
+  ],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/05.md"
+  ],
+  "notes": [],
+  "exercises": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/05-questions/01-p1-network-statistics-10-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/05-questions/02-p2-analysis-of-chromatin-structure-5-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/05-questions/03-p3-heritability-5-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/05-questions/04-p4-association-studies-5-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/05-questions-pset5-ques/01-p1-network-statistics-10-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/05-questions-pset5-ques/02-p3-heritability-5-points.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/psets/05-questions-pset5-ques/03-p4-association-studies-5-points.md"
+  ]
+ },
+ {
+  "key": "5eb8205831d6788d4d7b89610180af8e",
+  "course": "computational-biology/mit-ocw/7091j",
+  "number": 6,
+  "title": "Lecture 6",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/5eb8205831d6788d4d7b89610180af8e.json",
+  "chars": 74890,
+  "slides": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/06-slides/01-lecture-6.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/06-slides/02-n50---contig-scaffold-length-or-larger-that-contains-50-of-b.md"
+  ],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/06.md"
+  ],
+  "notes": [],
+  "exercises": []
+ },
+ {
+  "key": "387eb00e8ffcd94a39d8dcb67484f04e",
+  "course": "computational-biology/mit-ocw/7091j",
   "number": 7,
-  "title": "Challenges in regulatory genomics",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/7d1b30d951ecd7ba3c9a91d3cfdbc591.json",
-  "chars": 9059,
+  "title": "Lecture 7",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/387eb00e8ffcd94a39d8dcb67484f04e.json",
+  "chars": 76010,
   "slides": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/lectures/10-slides.md"
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/07-slides/01-lecture-7.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/07-slides/02-gps-probabilistically-models-chip-seq-read-spatial-distribut.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/07.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "31a29a8c60ccb1a95a9305a237e41069",
-  "course": "computational-biology/mit-ocw/6047",
+  "key": "9a3d75b663e9908b7561fc856c1a7a06",
+  "course": "computational-biology/mit-ocw/7091j",
   "number": 8,
-  "title": "Key goal: Evolution preserves functional elements",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/31a29a8c60ccb1a95a9305a237e41069.json",
-  "chars": 15698,
-  "slides": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/lectures/17-slides/01-key-goal-evolution-preserves-functional-elements.md"
+  "title": "08 captions",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/9a3d75b663e9908b7561fc856c1a7a06.json",
+  "chars": 57010,
+  "slides": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/08.md"
   ],
-  "transcript": [],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "2a284f1953e5b3ee692763b33c8cc86e",
-  "course": "computational-biology/mit-ocw/6047",
+  "key": "f9aebb01dc6368a18a83373ee8b20b59",
+  "course": "computational-biology/mit-ocw/7091j",
   "number": 9,
-  "title": "6.047/6.878 - Computational Biology: Genomes, Networks, Evolution",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/2a284f1953e5b3ee692763b33c8cc86e.json",
-  "chars": 22583,
+  "title": "Modeling & Discovery of Sequence Motifs",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/f9aebb01dc6368a18a83373ee8b20b59.json",
+  "chars": 80500,
   "slides": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/lectures/18-slides.md"
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/09-slides/01-modeling-discovery-of-sequence-motifs.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/09-slides/02-the-motif-finding-problem.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/09.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "06227fbf2b7ac0ee5adb0bfd07b8d7ad",
-  "course": "computational-biology/mit-ocw/6047",
+  "key": "6143c7e731fce93e169548e7f1044f95",
+  "course": "computational-biology/mit-ocw/7091j",
   "number": 10,
-  "title": "Lecture 21",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/06227fbf2b7ac0ee5adb0bfd07b8d7ad.json",
-  "chars": 39860,
+  "title": "10 slides",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/6143c7e731fce93e169548e7f1044f95.json",
+  "chars": 75852,
   "slides": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/lectures/20-slides/01-lecture-21.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/lectures/20-slides/02-data-matrices-an-example-scenario.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/lectures/20-slides/04-cis-meqtls.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/lectures/20-slides/05-enhancers-overlapping-gwas-loci-share-functional-properties.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/lectures/20-slides/06-experimental-validation-of-11-sub-threshold-loci.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/lectures/20-slides/07-convergence-in-immune-signaling-mitoch-functions.md"
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/10-slides.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/10.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "b884d36f34d90454b7d334079eff07aa",
-  "course": "computational-biology/mit-ocw/6047",
-  "number": 11,
-  "title": "Introduction",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/b884d36f34d90454b7d334079eff07aa.json",
-  "chars": 13257,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/compiled/compiled-compiled/01-introduction.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "b06922328e3494451f16c86fb20337a1",
-  "course": "computational-biology/mit-ocw/6047",
-  "number": 12,
-  "title": "BACTERIAL GENOMICS\u2013 MOLECULAR EVOLUTION AT THE LEVEL OF ECOSYSTEMS",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/b06922328e3494451f16c86fb20337a1.json",
-  "chars": 28172,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/compiled/compiled-compiled/02-bacterial-genomics-molecular-evolution-at-the-level-of-ecosy.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "e28511c8507fc122cbdf867e2934cc78",
-  "course": "computational-biology/mit-ocw/6047",
-  "number": 13,
-  "title": "HIDDEN MARKOV MODELS II - POSTERIOR DECODING AND LEARNING",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/e28511c8507fc122cbdf867e2934cc78.json",
-  "chars": 76041,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/compiled/compiled-compiled/04-hidden-markov-models-ii---posterior-decoding-and-learning.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "2ca3f9d7393bb26f08a23c57f4d5d99d",
-  "course": "computational-biology/mit-ocw/6047",
-  "number": 14,
-  "title": "GENE REGULATION 1 \u2013 GENE EXPRESSION CLUSTERING",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/2ca3f9d7393bb26f08a23c57f4d5d99d.json",
-  "chars": 32652,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/compiled/compiled-compiled/05-gene-regulation-1-gene-expression-clustering.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "358206c327b06328dae50b02cdc1ca01",
-  "course": "computational-biology/mit-ocw/6047",
-  "number": 15,
-  "title": "GENE REGULATION 2 \u2013 CLASSIFICATION",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/358206c327b06328dae50b02cdc1ca01.json",
-  "chars": 32339,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/compiled/compiled-compiled/06-gene-regulation-2-classification.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "775ac7ca9f447b287eb94f2be439f393",
-  "course": "computational-biology/mit-ocw/6047",
-  "number": 16,
-  "title": "REGULATORY MOTIFS, GIBBS SAMPLING, AND EM",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/775ac7ca9f447b287eb94f2be439f393.json",
-  "chars": 220000,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/6047/compiled/compiled-compiled/07-regulatory-motifs-gibbs-sampling-and-em.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "8fde9afa78ae150b5e31aab1ae32be84",
+  "key": "6dd2dee13a9a8469a54d6e2830b6016e",
   "course": "computational-biology/mit-ocw/7091j",
   "number": 11,
+  "title": "11 slides",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/6dd2dee13a9a8469a54d6e2830b6016e.json",
+  "chars": 79329,
+  "slides": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/11-slides.md"
+  ],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/11.md"
+  ],
+  "notes": [],
+  "exercises": []
+ },
+ {
+  "key": "8e2e4f596963c3eda1b0fe27735690cf",
+  "course": "computational-biology/mit-ocw/7091j",
+  "number": 12,
+  "title": "12 captions",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/8e2e4f596963c3eda1b0fe27735690cf.json",
+  "chars": 68473,
+  "slides": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/12.md"
+  ],
+  "notes": [],
+  "exercises": []
+ },
+ {
+  "key": "4e9131640668699231466626e0dc34f9",
+  "course": "computational-biology/mit-ocw/7091j",
+  "number": 13,
   "title": "Predicting Protein Structure",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/8fde9afa78ae150b5e31aab1ae32be84.json",
-  "chars": 33331,
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/4e9131640668699231466626e0dc34f9.json",
+  "chars": 99677,
   "slides": [
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/13-slides/01-predicting-protein-structure.md",
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/13-slides/02-de-shaw.md",
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/13-slides/03-13-slides-part-03.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/13.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "fba70ac1569bc57bf6e0b3e959910983",
+  "key": "aba599d462544c8540c61721d16e9d59",
   "course": "computational-biology/mit-ocw/7091j",
-  "number": 12,
+  "number": 14,
   "title": "14 slides",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/fba70ac1569bc57bf6e0b3e959910983.json",
-  "chars": 7666,
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/aba599d462544c8540c61721d16e9d59.json",
+  "chars": 78540,
   "slides": [
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/14-slides.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/14.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "b54ca83242c0efadc93a68078d7c9617",
+  "key": "2fc3c7044feed46303ca9bd112f54147",
   "course": "computational-biology/mit-ocw/7091j",
-  "number": 13,
+  "number": 15,
   "title": "Outline",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/b54ca83242c0efadc93a68078d7c9617.json",
-  "chars": 25277,
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/2fc3c7044feed46303ca9bd112f54147.json",
+  "chars": 106542,
   "slides": [
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/15-slides/01-outline.md",
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/15-slides/02-distinct-types-of-diffuse-large-b-cell-lymphoma-identified-b.md",
@@ -190,17 +273,19 @@
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/15-slides/06-aupr-area-under-precision-recall-curve.md",
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/15-slides/07-approach.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/15.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "e189572cf3c051cbaf5a56f18bdd9fcc",
+  "key": "88030380dff287cac2621c95f113ec3f",
   "course": "computational-biology/mit-ocw/7091j",
-  "number": 14,
+  "number": 16,
   "title": "Messages flow up from leaves",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/e189572cf3c051cbaf5a56f18bdd9fcc.json",
-  "chars": 26686,
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/88030380dff287cac2621c95f113ec3f.json",
+  "chars": 107427,
   "slides": [
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/16-slides/01-messages-flow-up-from-leaves.md",
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/16-slides/02-mdm2-tp53-apoptosis.md",
@@ -209,1262 +294,143 @@
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/16-slides/06-approach.md",
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/16-slides/07-for-156-perturbations.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/16.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "aed38c6651e1f355f885b5e04990e28e",
+  "key": "20f41c0a116fc2561f5b36da6702d8fc",
   "course": "computational-biology/mit-ocw/7091j",
-  "number": 15,
+  "number": 17,
   "title": "LOGIC MODELING OF CELL SIGNALING NETWORKS",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/aed38c6651e1f355f885b5e04990e28e.json",
-  "chars": 4638,
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/20f41c0a116fc2561f5b36da6702d8fc.json",
+  "chars": 68907,
   "slides": [
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/17-slides.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/17.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "650ec90792b146a7ff8ebe8ac6e68f63",
+  "key": "24ed750faf0f3b2f1a78311ecde4015d",
   "course": "computational-biology/mit-ocw/7091j",
-  "number": 16,
+  "number": 18,
   "title": "Analysis of Chromatin Structure",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/650ec90792b146a7ff8ebe8ac6e68f63.json",
-  "chars": 11332,
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/24ed750faf0f3b2f1a78311ecde4015d.json",
+  "chars": 71674,
   "slides": [
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/18-slides.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/18.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "f3a363f11b348dd95d2abd3cae8bad4f",
+  "key": "631e5986292a53bc9873f55d54f59f00",
   "course": "computational-biology/mit-ocw/7091j",
-  "number": 17,
+  "number": 19,
   "title": "Quantitative Trait Loci (QTLs) \u2014 Lecture 19",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/f3a363f11b348dd95d2abd3cae8bad4f.json",
-  "chars": 25190,
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/631e5986292a53bc9873f55d54f59f00.json",
+  "chars": 82860,
   "slides": [
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/19-slides.md"
   ],
-  "transcript": [],
+  "transcript": [
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/19.md"
+  ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "b2f8ee2bd2c12b213e8c566ffabad0db",
+  "key": "a16c2d110e8e63b4df7b995bef91a1d5",
   "course": "computational-biology/mit-ocw/7091j",
-  "number": 18,
+  "number": 20,
   "title": "Analysis of Genome Wide Association Studies (GWAS)",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/b2f8ee2bd2c12b213e8c566ffabad0db.json",
-  "chars": 6372,
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/a16c2d110e8e63b4df7b995bef91a1d5.json",
+  "chars": 67573,
   "slides": [
    "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/lectures/20-slides.md"
   ],
-  "transcript": [],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "1a34a785cfa8afa4ef7c02bef7877d41",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 19,
-  "title": "14m9mw qmhg captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/1a34a785cfa8afa4ef7c02bef7877d41.json",
-  "chars": 65388,
-  "slides": [],
   "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/14m9mw-qmhg.md"
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/20.md"
   ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "692c92610ab394d4ada291f7316c6d65",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 20,
-  "title": "1emonm7qau8 captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/692c92610ab394d4ada291f7316c6d65.json",
-  "chars": 65673,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/1emonm7qau8.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "bd4268dfe34bcda95499964a46f382ff",
+  "key": "b1d6f1322a88adbb405286287e2220ee",
   "course": "computational-biology/mit-ocw/7091j",
   "number": 21,
-  "title": "6robp57g2zi captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/bd4268dfe34bcda95499964a46f382ff.json",
-  "chars": 68482,
+  "title": "21 captions",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/b1d6f1322a88adbb405286287e2220ee.json",
+  "chars": 66072,
   "slides": [],
   "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/6robp57g2zi.md"
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/21.md"
   ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "64fcad42ff24ead0f1f4cdf59bd05d58",
+  "key": "dd2ae3df299b8cd282389c040d880c07",
   "course": "computational-biology/mit-ocw/7091j",
   "number": 22,
-  "title": "6udqou3vmng captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/64fcad42ff24ead0f1f4cdf59bd05d58.json",
-  "chars": 62136,
+  "title": "22 captions",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/dd2ae3df299b8cd282389c040d880c07.json",
+  "chars": 43681,
   "slides": [],
   "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/6udqou3vmng.md"
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/lectures/22.md"
   ],
   "notes": [],
   "exercises": []
  },
  {
-  "key": "4ea80605a54410250c2876c771eeaf77",
+  "key": "0a35525b0e226334e5cc0e9328e992a6",
   "course": "computational-biology/mit-ocw/7091j",
   "number": 23,
-  "title": "C95294 vvqy captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/4ea80605a54410250c2876c771eeaf77.json",
-  "chars": 70883,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/c95294-vvqy.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "33004bcb0e77ceed97f96f97409fbd8b",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 24,
-  "title": "D5nmra2hkg4 captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/33004bcb0e77ceed97f96f97409fbd8b.json",
-  "chars": 61179,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/d5nmra2hkg4.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "fdb7a9e8828d2c41bf7bfd29338916fd",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 25,
-  "title": "I59jdq9hk10 captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/fdb7a9e8828d2c41bf7bfd29338916fd.json",
-  "chars": 64278,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/i59jdq9hk10.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "2f52de02d3e0b5acf9564fd7456d4b75",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 26,
-  "title": "Iklvcufd1ma captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/2f52de02d3e0b5acf9564fd7456d4b75.json",
-  "chars": 60351,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/iklvcufd1ma.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "d959459a1422c3de815bc08356a42e83",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 27,
-  "title": "J1s9jfzkfqu captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/d959459a1422c3de815bc08356a42e83.json",
-  "chars": 66355,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/j1s9jfzkfqu.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "f2c566962bf215bb1e561edb193e57db",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 28,
-  "title": "Kkyrr0cfreg captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/f2c566962bf215bb1e561edb193e57db.json",
-  "chars": 66081,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/kkyrr0cfreg.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "4cd0936f8438737585f39819dfe02474",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 29,
-  "title": "Kun6rj21hno captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/4cd0936f8438737585f39819dfe02474.json",
-  "chars": 64985,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/kun6rj21hno.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "9d2ecd600d0628d22571282a1e0899bf",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 30,
-  "title": "Kx hks szm captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/9d2ecd600d0628d22571282a1e0899bf.json",
-  "chars": 57678,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/kx-hks-szm.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "4a0a0bb351e634f1d549f920c95a9ce8",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 31,
-  "title": "Kyq2dpw5neu captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/4a0a0bb351e634f1d549f920c95a9ce8.json",
-  "chars": 61210,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/kyq2dpw5neu.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "276c97e405e9e85aa41676b09dabbf84",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 32,
-  "title": "Ljzybexmij0 captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/276c97e405e9e85aa41676b09dabbf84.json",
-  "chars": 56792,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/ljzybexmij0.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "da4db2d45beeb06a794ccab08719a7eb",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 33,
-  "title": "Mniygszsp30 captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/da4db2d45beeb06a794ccab08719a7eb.json",
-  "chars": 57019,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/mniygszsp30.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "1e40c42f92768c2a07ddf753e27a15c1",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 34,
-  "title": "Ob9xgbpvr s captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/1e40c42f92768c2a07ddf753e27a15c1.json",
-  "chars": 60548,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/ob9xgbpvr-s.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "444385e72d2924b408ec3f1075be836b",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 35,
-  "title": "P3orbmon8aw captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/444385e72d2924b408ec3f1075be836b.json",
-  "chars": 64900,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/p3orbmon8aw.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "b695ea0ee219697c44223c488ebf5d96",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 36,
-  "title": "Pdyarrnwi7i captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/b695ea0ee219697c44223c488ebf5d96.json",
-  "chars": 63786,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/pdyarrnwi7i.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "d456d58fdcfab2aa8393bdf7047a88f3",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 38,
-  "title": "Rbpckbevk3u captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/d456d58fdcfab2aa8393bdf7047a88f3.json",
-  "chars": 80750,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/rbpckbevk3u.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "25f3f36c758e14c3bcbe6e51055f0667",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 39,
-  "title": "So6mk fcp4e captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/25f3f36c758e14c3bcbe6e51055f0667.json",
-  "chars": 81274,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/so6mk-fcp4e.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "8800bae05248bd39dcd52a97c97b28ec",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 40,
-  "title": "Ud4 fowexay captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/8800bae05248bd39dcd52a97c97b28ec.json",
-  "chars": 43690,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/ud4-fowexay.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "21639a1a31352417c98acbdf6a3b3539",
-  "course": "computational-biology/mit-ocw/7091j",
-  "number": 41,
-  "title": "Zyw2aede6wu captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/21639a1a31352417c98acbdf6a3b3539.json",
-  "chars": 51275,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recordings/recordings/zyw2aede6wu.md"
-  ],
-  "notes": [],
-  "exercises": []
- },
- {
-  "key": "777d26b243e96a58ffb6a09505cfb94e",
-  "course": "omics-statistics/gtpb/psls20",
-  "number": 41,
-  "title": "1. Workflow",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/777d26b243e96a58ffb6a09505cfb94e.json",
-  "chars": 9590,
+  "title": "practice",
+  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/0a35525b0e226334e5cc0e9328e992a6.json",
+  "chars": 185078,
   "slides": [],
   "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/omics-statistics/gtpb/psls20/background_material/rmarkdown-cheatsheet/01-1-workflow.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/omics-statistics/gtpb/psls20/background_material/rmarkdown-cheatsheet/02-3-markdown.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/omics-statistics/gtpb/psls20/background_material/rmarkdown-cheatsheet/03-5-embed-code.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "8e769cf36d2627a4d99df7f74bab3ad6",
-  "course": "omics-statistics/statomics/sga21",
-  "number": 9,
-  "title": "I. Welcome to Next-Generation Sequencing",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/8e769cf36d2627a4d99df7f74bab3ad6.json",
-  "chars": 38999,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/omics-statistics/statomics/sga21/docs/illumina_sequencing_introduction/01-i-welcome-to-next-generation-sequencing.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/omics-statistics/statomics/sga21/docs/illumina_sequencing_introduction/02-ii-ngs-methods.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/omics-statistics/statomics/sga21/docs/illumina_sequencing_introduction/03-iii-illumina-dna-to-data-ngs-solutions.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/omics-statistics/statomics/sga21/docs/illumina_sequencing_introduction/04-iv-glossary.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/omics-statistics/statomics/sga21/docs/illumina_sequencing_introduction/05-v-references.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "0e4787aa6021d93ad07556f5e999ddc3",
-  "course": "probability/mit-ocw/6041sc",
-  "number": 10,
-  "title": "10 captions",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/0e4787aa6021d93ad07556f5e999ddc3.json",
-  "chars": 50106,
-  "slides": [],
-  "transcript": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/probability/mit-ocw/6041sc/recordings/lectures/10.md"
-  ],
   "notes": [],
   "exercises": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/probability/mit-ocw/6041sc/psets/10-questions.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/probability/mit-ocw/6041sc/recitations/10-slides/01-10-slides-part-01.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/probability/mit-ocw/6041sc/recitations/10-slides/02-10-slides-part-02.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/probability/mit-ocw/6041sc/tutorials/10-slides.md"
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-11-slides/01-6-874-recitation-1.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-11-slides/03-null-distribution.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-12-slides/01-2014-02-12-slides-part-01.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-14-slides/01-clustering-k-means.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-14-slides/02-hierarchical-clustering.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-14-slides/03-biclustering.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-19-slides/01-7-36-7-91-recitation.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-19-slides/02-pam-vs-blosum.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-19-slides/03-positive-negative-selection.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-26-slides/01-library-complexity-na\u00efve-approach.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-26-slides/02-library-complexity-na\u00efve-approach.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-26-slides/03-why-use-the-bwt.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-26-slides/04-using-the-bwt-and-lf-function-to-do-exact-matching.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-02-26-slides/05-find-location-of-our-match.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-03-05-slides.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-03-07-slides/01-6-874-recitation.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-03-07-slides/02-pca-identifies-the-directions-pc1-and-pc2-along-which-the-da.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-03-12-slides/01-7-36-7-91-section.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-03-12-slides/02-non-random-background-sequences.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-03-19-slides.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-04-02-slides/01-recitation-4-2.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-04-02-slides/02-2-rosetta-statistician-s-approach.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-04-09-slides.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-04-16-slides/01-4-16-recitation.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-04-16-slides/02-sample-experimental-data.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-04-23-slides.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-04-30-slides/01-4-30-recitation.md",
+   "/Users/ab76/Documents/projects/knowledge-base-library/docs/computational-biology/mit-ocw/7091j/recitations/2014-04-30-slides/02-testing-for-snp-phenotype-association.md"
   ]
- },
- {
-  "key": "856092db9a8952cf83cc0fd7d65ad714",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 16,
-  "title": "Problem",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/856092db9a8952cf83cc0fd7d65ad714.json",
-  "chars": 21256,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/project/project/01-problem.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/project/project/02-formatting-requirements-and-additional-information.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/project/project.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/project/project/01-problem.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/project/project/02-formatting-requirements-and-additional-information.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "801015ff34256cf400c6d089ab8bdc93",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 17,
-  "title": "Formatting requirements",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/801015ff34256cf400c6d089ab8bdc93.json",
-  "chars": 37732,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps1/01-formatting-requirements.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps1/02-problems.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps1/01-formatting-requirements.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps1/02-problems.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/ps/ps1/01-formatting-requirements.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/ps/ps1/02-problems.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/ps/ps1/01-formatting-requirements.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/ps/ps1/02-problems.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "524cf49371cbe9d9e69c7b1282bbc9c4",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 18,
-  "title": "Comments",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/524cf49371cbe9d9e69c7b1282bbc9c4.json",
-  "chars": 23053,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps2/01-comments.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps2/02-problems.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps2/01-comments.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps2/02-problems.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/ps/ps2/01-formatting-requirements.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/ps/ps2/02-problems.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "5ae2f8db55c9047266d6b8ac622237ac",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 19,
-  "title": "Problem Set 3",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/5ae2f8db55c9047266d6b8ac622237ac.json",
-  "chars": 24188,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps3.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps3.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/ps/ps3.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "113590eea20ddcf4ffcc7f2abcad53a8",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 20,
-  "title": "Problem Set 4",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/113590eea20ddcf4ffcc7f2abcad53a8.json",
-  "chars": 11845,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps4.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps4.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "4d79c33a6b0c5c38b4bb685452566deb",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 21,
-  "title": "Comments",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/4d79c33a6b0c5c38b4bb685452566deb.json",
-  "chars": 30438,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps5/01-comments.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps5/02-problems.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps5.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/ps/ps5.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "86a9ae8e78a020e33d550cf073b429fb",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 22,
-  "title": "Problem Set 6",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/86a9ae8e78a020e33d550cf073b429fb.json",
-  "chars": 13617,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps6.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps6.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "937554839afad0a84e401485aee6ca18",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 23,
-  "title": "Problem Set 7",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/937554839afad0a84e401485aee6ca18.json",
-  "chars": 10479,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps7.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps7.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "4477fe7117c95fd45fdb00d6fefac17a",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 24,
-  "title": "Problem Set 8",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/4477fe7117c95fd45fdb00d6fefac17a.json",
-  "chars": 19583,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/ps/ps8.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/ps/ps8.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/ps/ps8.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "a6d04a06ecb347b71353288fec6fa3fe",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 25,
-  "title": "Py vs R Part 01 \u2014",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/a6d04a06ecb347b71353288fec6fa3fe.json",
-  "chars": 3762,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/09/py_vs_R/01-py-vs-r-part-01.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/09/py_vs_R/02-questions.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "0ab609b2ed0836de060b0a9190f2e134",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 26,
-  "title": "Python",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/0ab609b2ed0836de060b0a9190f2e134.json",
-  "chars": 23276,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/06/python.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "8581ca88da29f800d72f83dca34b3efb",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 27,
-  "title": "Introduction",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/8581ca88da29f800d72f83dca34b3efb.json",
-  "chars": 11174,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/06/python_intro/01-introduction.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/06/python_intro/02-strings.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "c39a45b9d63efd2f718f20884cb9ecaf",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 28,
-  "title": "Creating datastructures",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/c39a45b9d63efd2f718f20884cb9ecaf.json",
-  "chars": 8002,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/RPractice/R-practice/01-creating-datastructures.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/RPractice/R-practice/02-functions.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/RPractice/R-practice/03-loading-and-saving-data.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "4298ce9094d4de187bc764bf626de390",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 29,
-  "title": "Installing R & RStudio",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/4298ce9094d4de187bc764bf626de390.json",
-  "chars": 7490,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/howtos/RandRStudioInstall.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/howtos/RandRStudioInstall.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/howtos/RandRStudioInstall.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/howtos/RandRStudioInstall.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "7f07ca8501f305ed7163d5a9747275c7",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 30,
-  "title": "Assignment: regex problems",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/7f07ca8501f305ed7163d5a9747275c7.json",
-  "chars": 2991,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/regex.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/regex.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "ac8be12c80f0957bc29f37eca19059e8",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 31,
-  "title": "Introduction",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/ac8be12c80f0957bc29f37eca19059e8.json",
-  "chars": 9008,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/07/scfOverview/01-introduction.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/07/scfOverview/02-data-transfer-scp-sftp.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/07/scfOverview/03-submitting-a-batch-job.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/sections/07/scfOverview/04-exercise.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "b29925986ce6f4cdc2295690be553e9c",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 32,
-  "title": "Scheduling information",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/b29925986ce6f4cdc2295690be553e9c.json",
-  "chars": 6793,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/schedule.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/schedule.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/schedule.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "9f819a513746bce22f1df571fb0be211",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 33,
-  "title": "RISING CITIES",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/9f819a513746bce22f1df571fb0be211.json",
-  "chars": 5787,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/graphics_files/shell.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/graphics_files/shell.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/shell.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "2dab18dc6f637665ff9a6030ddb5bf9c",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 34,
-  "title": "A Quick Guide to Conducting a Simulation Study",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/2dab18dc6f637665ff9a6030ddb5bf9c.json",
-  "chars": 2444,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/simulation_tutorial_miratrix.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "c211cf7243665628ea376feea2824ae9",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 35,
-  "title": "Course description",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/c211cf7243665628ea376feea2824ae9.json",
-  "chars": 76919,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/syllabus/01-course-description.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/syllabus/02-course-websites-github-ed-discussion-gradescope-and-bcourses.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/syllabus/03-course-material.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/syllabus/04-class-time.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/syllabus/05-course-requirements-and-grading.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/syllabus/06-campus-honor-code.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/syllabus/01-course-description.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/syllabus/02-course-websites-github-ed-discussion-gradescope-and-bcourses.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/syllabus/03-course-material.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/syllabus/04-class-time.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/syllabus/05-course-requirements-and-grading.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/syllabus/06-campus-honor-code.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/syllabus/01-course-description.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/syllabus/02-course-websites-github-ed-discussion-gradescope-and-bcourses.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/syllabus/03-course-material.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/syllabus/04-class-time.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/syllabus/05-course-requirements-and-grading.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/syllabus/06-campus-honor-code.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "f3602396fddde82127531797202b039a",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 36,
-  "title": "1. UNIX command line basics",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/f3602396fddde82127531797202b039a.json",
-  "chars": 38770,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit1-intro/01-1-unix-command-line-basics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit1-intro/02-2-version-control.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit1-intro/03-4-connecting-to-other-machines.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit1-intro/04-5-editors.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit1-intro/01-1-unix-command-line-basics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit1-intro/02-2-version-control.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit1-intro/03-4-connecting-to-other-machines.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit1-intro/04-5-editors.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit1-intro/01-1-unix-command-line-basics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit1-intro/02-2-version-control.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit1-intro/03-4-connecting-to-other-machines.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit1-intro/04-6-background-editors.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit1-unix/01-unit-1-basics-of-unix.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit1-unix/02-2-version-control.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit1-unix/03-4-editors.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "f6137432e17312a800f5d8520690a046",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 37,
-  "title": "1. Preliminaries",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/f6137432e17312a800f5d8520690a046.json",
-  "chars": 159961,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit10-linalg/01-1-preliminaries.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit10-linalg/02-2-statistical-interpretations-of-matrix-invertibility-rank-e.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit10-linalg/03-3-computational-issues.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit10-linalg/04-4-matrix-factorizations-decompositions-and-solving-systems-o.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit10-linalg/05-5-eigendecomposition-and-svd.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit10-linalg/06-6-computation.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit10-linalg/07-7-iterative-solutions-of-linear-systems-optional.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit10-linalg/01-1-preliminaries.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit10-linalg/02-2-statistical-interpretations-of-matrix-invertibility-rank-e.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit10-linalg/03-3-computational-issues.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit10-linalg/04-4-matrix-factorizations-decompositions-and-solving-systems-o.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit10-linalg/05-5-eigendecomposition-and-svd.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit10-linalg/06-6-computation.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit10-linalg/07-7-iterative-solutions-of-linear-systems-optional.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit10-linalg/01-1-preliminaries.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit10-linalg/02-2-statistical-interpretations-of-matrix-invertibility-rank-e.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "bfee7ed9ce95ed4bc69a3aa13d7d5d27",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 38,
-  "title": "1. Notation",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/bfee7ed9ce95ed4bc69a3aa13d7d5d27.json",
-  "chars": 220000,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit11-optim/01-1-notation.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit11-optim/02-2-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit11-optim/03-3-univariate-function-optimization.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit11-optim/04-4-convergence-ideas.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit11-optim/05-5-multivariate-optimization.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit11-optim/06-6-basic-optimization-in-python.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit11-optim/07-8-convexity.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit11-optim/08-9-optimization-under-constraints.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit11-optim/01-1-notation.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit11-optim/02-2-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit11-optim/03-3-univariate-function-optimization.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit11-optim/04-4-convergence-ideas.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit11-optim/05-5-multivariate-optimization.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit11-optim/06-6-basic-optimization-in-python.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit11-optim/07-8-convexity.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit11-optim/08-9-optimization-under-constraints.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit11-optim.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "547afd96cb442f087cd9e26463d30e71",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 39,
-  "title": "1. Good practices for graphics",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/547afd96cb442f087cd9e26463d30e71.json",
-  "chars": 53305,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit12-graphics/01-1-good-practices-for-graphics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit12-graphics/02-3-graphics-file-formats.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit12-graphics/03-4-colors.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit12-graphics/01-1-good-practices-for-graphics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit12-graphics/02-3-graphics-file-formats.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit12-graphics/03-4-colors.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit12-integ/01-1-differentiation.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit12-integ/02-2-integration-optional.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "34662cb49b4ae9a52873e239466241f1",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 40,
-  "title": "1. Data storage and file formats on a computer",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/34662cb49b4ae9a52873e239466241f1.json",
-  "chars": 203699,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit2-dataTech/01-1-data-storage-and-file-formats-on-a-computer.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit2-dataTech/02-2-reading-data-from-text-files-into-python.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit2-dataTech/03-3-output-from-python.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit2-dataTech/04-4-webscraping-and-working-with-html-xml-json-and-yaml.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit2-dataTech/05-5-file-and-string-encodings.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit2-dataTech/06-6-data-structures.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit2-dataTech/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit2-dataTech/02-1-data-storage-and-file-formats-on-a-computer.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit2-dataTech/03-2-reading-data-from-text-files-into-python.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit2-dataTech/04-3-output-from-python.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit2-dataTech/05-4-working-with-information-on-the-web.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit2-dataTech/06-5-file-and-string-encodings.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit2-dataTech/07-6-data-structures.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit2-bash/01-1-shell-basics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit2-bash/02-3-bash-shell-examples.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit2-bash/03-4-bash-shell-challenges.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit2-bash/04-5-data-storage-and-file-formats-on-a-computer.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit2-bash/05-6-regular-expressions.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit2-dataTech/01-1-data-storage-and-file-formats-on-a-computer.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit2-dataTech/02-2-reading-data-from-text-files-into-r.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit2-dataTech/03-3-output-from-r.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit2-dataTech/04-4-webscraping-and-working-with-html-xml-and-json.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit2-dataTech/05-5-file-and-string-encodings.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "1c13f8308be8cf1325624eaaaa48def1",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 41,
-  "title": "1. Shell basics",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/1c13f8308be8cf1325624eaaaa48def1.json",
-  "chars": 100440,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit3-bash/01-1-shell-basics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit3-bash/02-3-bash-shell-examples.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit3-bash/03-4-bash-shell-challenges.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit3-bash/04-5-regular-expressions.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit3-bash/01-1-shell-basics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit3-bash/02-3-bash-shell-examples.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit3-bash/03-4-bash-shell-challenges.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit3-bash/04-5-regular-expressions.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit3-goodPractices/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit3-goodPractices/02-1-good-coding-practices.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit3-goodPractices/03-2-debugging-and-recommendations-for-avoiding-bugs.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit3-goodPractices/04-4-reproducible-research.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit3-bash/01-unit-3-the-bash-shell-and-unix-utilities.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit3-bash/02-2-using-the-bash-shell.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit3-bash/03-3-bash-shell-examples.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit3-bash/04-4-bash-shell-challenges.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit3-bash/05-5-regular-expressions.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "15d7aa5e4e7de67af33335b5b17ae11d",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 42,
-  "title": "1. Good coding practices",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/15d7aa5e4e7de67af33335b5b17ae11d.json",
-  "chars": 220000,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit4-goodPractices/01-1-good-coding-practices.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit4-goodPractices/02-2-debugging-and-recommendations-for-avoiding-bugs.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit4-goodPractices/03-4-reproducible-research.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit4-goodPractices/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit4-goodPractices/02-1-good-coding-practices.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit4-goodPractices/03-2-debugging-and-recommendations-for-avoiding-bugs.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit4-goodPractices/04-4-reproducible-research.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/02-1-text-manipulation-string-processing-and-regular-expression.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/03-2-reading-data-into-python.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/04-3-output-from-python.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/05-4-interacting-with-the-operating-system-and-external-code-an.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/06-5-modules-and-packages.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/07-6-types-and-data-structures.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/08-7-programming-paradigms-object-oriented-and-functional-progr.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/09-8-object-oriented-programming-oop.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/10-9-functional-programming.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/11-10-memory-and-copies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/13-the-following-lines-are-very-inefficient.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit4-programming/14-define-the-sum-calculations-as-functions.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit4-goodPractices/01-1-good-coding-practices.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit4-goodPractices/02-4-reproducible-research.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "82e3926873764ec4827c0348769d12c9",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 43,
-  "title": "Introduction",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/82e3926873764ec4827c0348769d12c9.json",
-  "chars": 220000,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/01-introduction.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/02-1-text-manipulation-string-processing-and-regular-expression.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/03-2-interacting-with-the-operating-system-and-external-code-an.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/04-3-modules-and-packages.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/05-4-types-and-data-structures.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/06-5-programming-paradigms-object-oriented-and-functional-progr.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/07-6-object-oriented-programming-oop.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/08-7-functional-programming.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/09-8-memory-and-copies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/11-the-following-lines-are-very-inefficient.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit5-programming/12-define-the-sum-calculations-as-functions.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/02-1-text-manipulation-string-processing-and-regular-expression.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/03-2-interacting-with-the-operating-system-and-external-code-an.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/04-3-modules-and-packages.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/05-4-types-and-data-structures.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/06-5-programming-paradigms-object-oriented-and-functional-progr.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/07-6-object-oriented-programming-oop.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/08-7-functional-programming.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/09-8-memory-and-copies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/11-the-following-lines-are-very-inefficient.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit5-programming/12-define-the-sum-calculations-as-functions.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit5-bigData/01-1-a-few-preparatory-notes.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit5-bigData/02-2-mapreduce-and-dask.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit5-bigData/03-3-databases.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit5-bigData/04-4-recent-tools-and-data-storage-formats.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit5-bigData/05-6-using-statistical-concepts-to-deal-with-computational-bott.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit5-programming/01-1-interacting-with-the-operating-system-from-r-and-controlli.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit5-programming/02-2-text-manipulation-string-processing-and-regular-expression.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit5-programming/03-3-packages-and-namespaces.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit5-programming/04-4-types-classes-and-object-oriented-programming.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit5-programming/05-is-larger-than-before.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit5-programming/06-5-standard-dataset-manipulations.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit5-programming/08-8-evaluating-memory-use.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "d02f924cab8f030f8d53770324cdc63d",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 44,
-  "title": "Overview",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/d02f924cab8f030f8d53770324cdc63d.json",
-  "chars": 174583,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit6-parallel/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit6-parallel/02-1-some-scenarios-for-parallelization.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit6-parallel/03-2-overview-of-parallel-processing.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit6-parallel/04-3-parallelization-strategies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit6-parallel/05-4-introduction-to-dask.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit6-parallel/06-5-illustrating-the-principles-in-specific-case-studies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit6-parallel/07-6-additional-details-and-topics-optional.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit6-parallel/08-7-introduction-to-r-s-future-package-optional.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit6-parallel/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit6-parallel/02-1-some-scenarios-for-parallelization.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit6-parallel/03-2-overview-of-parallel-processing.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit6-parallel/04-3-parallelization-strategies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit6-parallel/05-4-introduction-to-dask.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit6-parallel/06-5-illustrating-the-principles-in-specific-case-studies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit6-parallel/07-6-additional-details-and-topics-optional.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit6-parallel/08-7-introduction-to-r-s-future-package-optional.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit6-parallel/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit6-parallel/02-1-some-scenarios-for-parallelization.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit6-parallel/03-2-overview-of-parallel-processing.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit6-parallel/04-3-parallelization-strategies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit6-parallel/05-4-introduction-to-dask.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit6-parallel/06-5-illustrating-the-principles-in-specific-case-studies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit6-parallel/07-6-additional-details-and-topics-optional.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit6-parallel/08-7-introduction-to-r-s-future-package-optional.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit6-numbers.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "1fae5d39c05508303f1827fb9ac4c538",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 45,
-  "title": "1. A few preparatory notes",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/1fae5d39c05508303f1827fb9ac4c538.json",
-  "chars": 165540,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit7-bigData/01-1-a-few-preparatory-notes.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit7-bigData/02-2-mapreduce-dask-hadoop-and-spark.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit7-bigData/03-3-databases.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit7-bigData/04-4-recent-tools-and-data-storage-formats.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit7-bigData/05-6-using-statistical-concepts-to-deal-with-computational-bott.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit7-bigData/01-1-a-few-preparatory-notes.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit7-bigData/02-2-mapreduce-and-dask.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit7-bigData/03-3-databases.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit7-bigData/04-4-recent-tools-and-data-storage-formats.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit7-bigData/05-6-using-statistical-concepts-to-deal-with-computational-bott.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit7-dataTech/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit7-dataTech/02-1-working-with-information-on-the-web.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2026/units/unit7-dataTech/03-2-file-and-string-encodings.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit7-parallel/01-1-some-scenarios-for-parallelization.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit7-parallel/02-2-overview-of-parallel-processing.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "17df3324d6e9a74c1ff6007603543da5",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 46,
-  "title": "1. Basic representations",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/17df3324d6e9a74c1ff6007603543da5.json",
-  "chars": 129842,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit8-numbers/01-1-basic-representations.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit8-numbers/02-2-floating-point-basics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit8-numbers/03-3-implications-for-calculations-and-comparisons.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit8-numbers/01-1-basic-representations.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit8-numbers/02-2-floating-point-basics.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit8-numbers/03-3-implications-for-calculations-and-comparisons.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit8-bigData/01-1-a-few-preparatory-notes.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit8-bigData/02-2-hadoop-mapreduce-spark-and-dask.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit8-bigData/03-3-databases.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "a42f1e79397d9a7a2288924e38cd7edd",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 47,
-  "title": "Overview",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/a42f1e79397d9a7a2288924e38cd7edd.json",
-  "chars": 134820,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit9-sim/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit9-sim/02-1-monte-carlo-considerations.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit9-sim/03-2-design-of-simulation-studies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit9-sim/04-3-implementation-of-simulation-studies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit9-sim/05-4-random-number-generation-rng.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/unit9-sim/06-5-generating-random-variables.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit9-sim/01-overview.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit9-sim/02-1-monte-carlo-considerations.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit9-sim/03-2-design-of-simulation-studies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit9-sim/04-3-implementation-of-simulation-studies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit9-sim/05-4-random-number-generation-rng.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/unit9-sim/06-5-generating-random-variables.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit9-sim/01-unit-9-simulation.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit9-sim/02-1-monte-carlo-considerations.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit9-sim/03-2-design-of-simulation-studies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit9-sim/04-3-implementation-of-simulation-studies.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit9-sim/05-4-random-number-generation-rng.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/unit9-sim/06-5-generating-random-variables.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "5abb12ac8b92a07a9cf5ad0c18fef38c",
-  "course": "statistical-computing/berkeley/stat243",
-  "number": 48,
-  "title": "Commentaries",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/5abb12ac8b92a07a9cf5ad0c18fef38c.json",
-  "chars": 83175,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2024/units/graphics_files/wainer1984.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/fall-2025/units/graphics_files/wainer1984.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistical-computing/berkeley/stat243/stat243-fall-2021/units/wainer1984.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "500d32e2a71579d572f188f992805b69",
-  "course": "statistics/berkeley/stat153",
-  "number": 83,
-  "title": "Introduction",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/500d32e2a71579d572f188f992805b69.json",
-  "chars": 8030,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/fall-2024/homeworks/homework4/homework4/01-introduction.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/fall-2024/homeworks/homework4/homework4/02-long-range-arima.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/fall-2024/homeworks/homework4/homework4/03-time-series-cv.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "34cd23125331b55d834d542d55f41ffc",
-  "course": "statistics/berkeley/stat153",
-  "number": 126,
-  "title": "1 Simple Linear Regression",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/34cd23125331b55d834d542d55f41ffc.json",
-  "chars": 21076,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/fall-2025/LectureTwo153248Fall2025/01-1-simple-linear-regression.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/fall-2025/LectureTwo153248Fall2025/02-2-estimation-of-and.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/fall-2026/LectureTwo153248Fall2026/01-simple-linear-regression.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/fall-2026/LectureTwo153248Fall2026/02-estimation-of-and.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/spring-2025/LectureTwo153248Spring2025/01-1-simple-linear-regression.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/spring-2025/LectureTwo153248Spring2025/02-2-frequentist-inference.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat153/spring-2025/LectureTwo153248Spring2025/03-3-bayesian-inference.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "19c5374179ec14f36b042884ed45448b",
-  "course": "statistics/berkeley/stat156",
-  "number": 7,
-  "title": "Statistics 156/256: Causal Inference",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/19c5374179ec14f36b042884ed45448b.json",
-  "chars": 4588,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat156/fall-2024/home.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "ee5d10fd36b12d08d3a08a7e17a41bd9",
-  "course": "statistics/berkeley/stat156",
-  "number": 12,
-  "title": "Stat 256 Paper Presentation Guidelines",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/ee5d10fd36b12d08d3a08a7e17a41bd9.json",
-  "chars": 2654,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat156/fall-2024/VideoGuidelines.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "7e1acef226be43c2b5052b203c2a4540",
-  "course": "statistics/berkeley/stat210a",
-  "number": 17,
-  "title": "Homework",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/7e1acef226be43c2b5052b203c2a4540.json",
-  "chars": 9173,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat210a/fall-2024/homework.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat210a/fall-2025/units/homework.md",
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat210a/fall-2026/homework.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "be8036b42b82938b438e29689c4202cc",
-  "course": "statistics/berkeley/stat210a",
-  "number": 85,
-  "title": "Unit 01 \u2014",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/be8036b42b82938b438e29689c4202cc.json",
-  "chars": 1935,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat210a/fall-2025/units/unit1.md"
-  ],
-  "exercises": []
- },
- {
-  "key": "cc82d2fd032d40212b5bb8b3d391e76e",
-  "course": "statistics/berkeley/stat210a",
-  "number": 86,
-  "title": "Unit 03 \u2014",
-  "out": "/Users/ab76/Documents/projects/knowledge-base-library/conversion-cache/books/cc82d2fd032d40212b5bb8b3d391e76e.json",
-  "chars": 1121,
-  "slides": [],
-  "transcript": [],
-  "notes": [
-   "/Users/ab76/Documents/projects/knowledge-base-library/docs/statistics/berkeley/stat210a/fall-2025/units/unit3.md"
-  ],
-  "exercises": []
  }
 ]
