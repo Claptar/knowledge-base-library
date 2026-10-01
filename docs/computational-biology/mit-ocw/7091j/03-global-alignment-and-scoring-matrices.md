@@ -367,26 +367,8 @@ found by implementing a Gibbs sampler.
   of adenosines at strategic positions (loops, between stems, across bulges) so mfold's top
   structure pairs the same bases the Nussinov structure did.
 
-**P3. Protein structure with PyRosetta (6 points).** Throughout, the protein under study is PDB
-entry 1YY8.
-
-- *(A, 1 point)* Look up 1YY8 in the Protein Data Bank. What is this molecule, and — from its 3D
-  view — is its predominant secondary structure $\alpha$-helix or $\beta$-sheet?
-- *(B, 1 point)* Using `pyRosetta_1YY8.py`'s `part_b()`, load `1YY8.clean.pdb` and print its
-  backbone angles and energy score. What is the total energy, and which categories are the largest
-  contributors for and against it (in words, not short codes)?
-- *(C, 1 point)* `part_c()` performs Monte Carlo side-chain packing. Add code to print the
-  post-packing energy score. What is the energy after packing, and which two categories decreased
-  most relative to part (B)?
-- *(D, 1 point)* `1YY8.rotated.pdb` is identical to the clean structure except that one residue's
-  $\phi$ or $\psi$ angle differs. Complete `part_d()` to load it, pack side chains, and print the
-  energy before and after. What are those energies, and why doesn't the post-packing energy match
-  the one from part (C)?
-- *(E, 1 point)* Complete `part_e()` to identify which residue and which backbone angle ($\phi$ or
-  $\psi$) differs between the clean and rotated structures.
-- *(F, 1 point)* Using that residue and angle, complete `part_f()` to compute the energy for every
-  integer angle from $-180$ to $180$, feeding the `energy_vs_angle.pdf` plot. Which angle gives the
-  lowest energy, and does it agree with that residue's angle in the original (part B) structure?
+**P3. Protein structure with PyRosetta (6 points)** is set out in full in chapter 12, whose
+lecture it exercises.
 
 **P4. Queuing theory and connections (4 points).** A bank is deciding whether it can afford to
 promise free checking for a year (worth \$150) to any customer who waits more than 15 minutes.
