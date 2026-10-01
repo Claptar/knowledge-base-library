@@ -86,9 +86,14 @@ converted and published; two categories are simply never converted at all:
 | `book` | **no**, however obtained |
 | `archive`, `data` | no — not document sources |
 
-No source is currently classified `paper`, and `open_access:` appears nowhere in the lockfile, so
-those two rows govern nothing today. They are kept because a paper is a first-class source kind
-here and the next one collected will need them — not because they are in use.
+**A paper's licence decides, never the fact that a copy is readable.** `open_access: true` is set
+by hand only when the paper's own licence — read from the article's licence block, bioRxiv's
+record, or the arXiv abstract page — permits a derivative: CC BY, BY-SA, BY-NC, BY-NC-SA or CC0. A
+preprint is not open because it exists: arXiv's default licence grants distribution to arXiv
+alone, and many bioRxiv preprints are CC BY-NC-ND. Every paper an agent can read is also
+*summarised* on the Papers shelf, whatever its licence; see the skill's Step 3c for what a summary
+may and may not reproduce. A paper a course ships inside itself is still excluded per file below —
+its summary goes on the shelf, never its text into the course's book.
 
 `material:` is a hand-written field in `sources/sources.lock.yml`. It is never detected, because
 guessing it guesses in the publishing direction. A source with no `material` is skipped and named

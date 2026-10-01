@@ -20,6 +20,7 @@ docs/<discipline>/<provider>/<course>/   one book per course, several course yea
   index.md              contents, licence, and a Sources table naming every offering used
   NN-<topic>.md         the chapters
   solutions/            the course's own worked solutions, where it published them
+docs/papers/<subject>/<slug>/          a summary of each paper, with the full text where its licence allows
 docs/index.md           generated landing page; docs/SUMMARY.md the generated nav
 sources/                the raw downloads — gitignored in full except the lockfile
   sources.lock.yml      what should be here and how to get it back
@@ -43,5 +44,6 @@ the traps — read it before running either.
 ## Licences
 
 Material here belongs to its authors and is republished under the licence recorded in each page's
-front matter, with a link to the original. Books and paywalled papers are never converted. If you
-are a rights-holder and want something removed, open an issue and it will be taken down.
+front matter, with a link to the original. Books are never converted. A paper's full text appears
+only where its own licence allows; otherwise only our summary of it does. If you are a
+rights-holder and want something removed, open an issue and it will be taken down.

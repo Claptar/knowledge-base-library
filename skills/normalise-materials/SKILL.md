@@ -184,6 +184,23 @@ Three things about this that cost real time to learn:
 - **A chapter is keyed on its input material**, so writing a book before its slides have finished
   converting means paying for every chapter twice. Wait for the conversion.
 
+## Step 3c — papers: summary always, full text only where the licence allows
+
+A paper goes on the **Papers shelf**, `docs/papers/<subject>/<slug>/`: one page per paper, its
+summary first, the full text beneath it only for a paper the lockfile marks `open_access`. Look for
+an open copy before deciding — the journal's own open version, then a preprint — and record the
+licence with its evidence in the lockfile entry.
+
+- **Summaries** are written by the `paper-summary-writer` agent into
+  `conversion-cache/papers/<slug>.json` and emitted with `synthesise_book.py papers --apply`. The
+  agent's rules hold the line between describing a work and rewriting it: our own words, organised
+  by its own headings rather than the paper's, no figure, table or passage reproduced.
+- **Full text**: JATS from the journal or PubMed Central (the `.jats` route) where it carries
+  MathML or TeX; otherwise the PDF through the `pdf-to-markdown` agent. bioRxiv's JATS stores every
+  formula as an image, so a preprint is always read from its PDF.
+- A copy supplied by hand from institutional access is locked `restorable: never`: only that
+  access can bring it back, so back it up.
+
 ## Step 4 — file it
 
 - **An `index.md` per source**, listing its parts in order with links. This is the page a topic
