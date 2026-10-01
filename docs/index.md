@@ -47,7 +47,7 @@ themselves — the split is by authorship, not by subject.
 
 ## Papers
 
-> **36 papers and theses**, each summarised in our own words. The full text is here too for the 12 whose licence allows it; the rest are summaries only and link to the original.
+> **41 papers and theses**, each summarised in our own words. The full text is here too for the 12 whose licence allows it; the rest are summaries only and link to the original.
 
 ### Computational biology
 
@@ -57,6 +57,8 @@ themselves — the split is by authorship, not by subject.
 - [Gálvez Merchán 2023 — Studies of mRNA expression and degradation](papers/computational-biology/galvez-merchan-2023-mrna-degradation/index.md) — summary
 - [Gardiner & Chaturvedi 1977 — The Poisson Representation. I. A New Technique for Chemical Master Equations](papers/computational-biology/gardiner-chaturvedi-1977-poisson-representation/index.md) — summary
 - [Gillespie 1976 — A General Method for Numerically Simulating the Stochastic Time Evolution of Coupled Chemical Reactions](papers/computational-biology/gillespie-1976-ssa/index.md) — summary
+- [Gillespie 2000 — The chemical Langevin equation](papers/computational-biology/gillespie-2000-cle/index.md) — summary
+- [Gillespie 2001 — Approximate accelerated stochastic simulation of chemically reacting systems](papers/computational-biology/gillespie-2001-tau-leaping/index.md) — summary
 - [Gorin et al. 2022 — Interpretable and tractable models of transcriptional noise for the rational design of single-molecule quantification experiments](papers/computational-biology/gorin-2022-interpretable-tractable/index.md) — summary and full text
 - [Gorin, Yoshida & Pachter 2022 — Transient and delay chemical master equations](papers/computational-biology/gorin-2022-transient-delay-cme/index.md) — summary and full text
 - [Gorin 2023 — Stochastic foundations for single-cell RNA sequencing](papers/computational-biology/gorin-2023-scrnaseq-foundations/index.md) — summary
@@ -68,8 +70,11 @@ themselves — the split is by authorship, not by subject.
 - [Munsky & Khammash 2006 — The finite state projection algorithm for the solution of the chemical master equation](papers/computational-biology/munsky-khammash-2006-fsp/index.md) — summary
 - [Paulsson 2004 — Summing up the noise in gene networks](papers/computational-biology/paulsson-2004-summing-up-noise/index.md) — summary
 - [Peccoud & Ycart 1995 — Markovian Modelling of Gene Product Synthesis](papers/computational-biology/peccoud-ycart-1995-telegraph/index.md) — summary
+- [Shahrezaei & Swain 2008 — Analytical distributions for stochastic gene expression](papers/computational-biology/shahrezaei-swain-2008-analytical-distributions/index.md) — summary
+- [Singh & Bokes, 2012 — Consequences of mRNA Transport on Stochastic Variability in Protein Levels](papers/computational-biology/singh-bokes-2012-mrna-transport/index.md) — summary
 - [Tang et al. 2020 — bayNorm: Bayesian gene expression recovery, imputation and normalization for single-cell RNA-sequencing data](papers/computational-biology/tang-2020-baynorm/index.md) — summary and full text
 - [Tang et al. 2023 — Modelling capture efficiency of single-cell RNA-sequencing data improves inference of transcriptome-wide burst kinetics](papers/computational-biology/tang-2023-capture-efficiency/index.md) — summary and full text
+- [Thomas, Popović & Grima, 2014 — Phenotypic switching in gene regulatory networks](papers/computational-biology/thomas-2014-conditional-lna/index.md) — summary
 - [Vastola & Holmes 2020 — The chemical Langevin equation: a path integral view of Gillespie's derivation](papers/computational-biology/vastola-holmes-2020-path-integral-cle/index.md) — summary
 
 ### Omics statistics
