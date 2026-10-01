@@ -442,7 +442,7 @@ heads with probability $p$, $0<p<1$. Tossing continues until either heads has ap
 
 **Question 3.** A casino offers a game with a fair four-sided die (faces $1,2,3,4$). The **basic
 game** is one or two rolls: a first roll of $1,2,$ or $3$ wins that many dollars and ends the game;
-a first roll of $4$ wins $2 plus one further ("bonus") roll. Let $X$ be the basic game's payoff.
+a first roll of $4$ wins \$2 plus one further ("bonus") roll. Let $X$ be the basic game's payoff.
 
 3.1 Find the PMF of $X$, $p_X(x)$.
 
@@ -451,7 +451,7 @@ a first roll of $4$ wins $2 plus one further ("bonus") roll. Let $X$ be the basi
 3.3 Find the conditional PMF of the first roll given $X=3$ (state your notation clearly).
 
 3.4 In an **extended game**, a roll of $1,2,$ or $3$ still wins that amount and ends the game, but
-a roll of $4$ wins $2 *and* the game continues with another roll (possibly another $4$, and so on
+a roll of $4$ wins \$2 *and* the game continues with another roll (possibly another $4$, and so on
 indefinitely). Let $Y$ be the extended game's payoff. Find $\mathbf E[Y]$.
 
 ### From Tutorial 10
