@@ -1,7 +1,7 @@
 # Study reference library
 
-Course material, lecture notes, transcripts and papers converted to uniform markdown and split by
-section, so that every part of them can be linked to.
+Other people's courses, written up as one book per course: coherent lecture notes merged from
+each course's slides, lecture recordings, notes and problem sets.
 
 **Browse it:** <https://claptar.github.io/knowledge-base-library/>
 
@@ -11,37 +11,34 @@ the study notes themselves. The split is by authorship:
 | | |
 | --- | --- |
 | [knowledge-base](https://github.com/Claptar/knowledge-base) | his questions, trajectories, own expositions and verdicts on sources |
-| this repository | everyone else's material, mechanically converted |
-
-Nearly ten thousand converted pages would have buried seventy-odd pages of actual notes, which is
-the whole reason these are two repositories.
+| this repository | everyone else's courses, rewritten as books |
 
 ## What is here
 
-```
-docs/<slug>/            one directory per source, mirroring sources/<slug>/
-  index.md              generated contents, licence, link to the original
-  **/*.md               the converted pages, one per section
-docs/SUMMARY.md         generated nav
+```text
+docs/<discipline>/<provider>/<course>/   one book per course, several course years merged
+  index.md              contents, licence, and a Sources table naming every offering used
+  NN-<topic>.md         the chapters
+  solutions/            the course's own worked solutions, where it published them
+docs/index.md           generated landing page; docs/SUMMARY.md the generated nav
 sources/                the raw downloads — gitignored in full except the lockfile
   sources.lock.yml      what should be here and how to get it back
+conversion-cache/       paid-for conversions and written chapters, content-addressed
 ```
 
-Every page carries its source URL, its licence and the route it was converted by, and says so at
-the top. Pages converted from a PDF carry a warning: prose survives a PDF, mathematics does not.
+A few small courses are not books yet and are still published as converted pages; the landing page
+lists them separately.
+
+Every page carries its source and licence at the top. A book is a derivative of every course year
+it merges, so it carries the most restrictive of their licences.
 
 ## Everything here is generated
 
-Do not edit a converted file by hand — the next run overwrites it, and in the meantime it claims to
-reproduce a source it no longer matches. The converter is in `skills/`:
-
-```bash
-uv sync --group dev --group convert
-uv run --group convert --group dev python \
-    skills/normalise-materials/scripts/normalise_source.py sources/<slug> --apply
-```
-
-See [AGENTS.md](AGENTS.md) for what is converted, what is deliberately not, and the traps.
+Do not edit a book by hand — the next run overwrites it. Two scripts in `skills/` make it:
+`normalise_source.py` converts a source into markdown, and `synthesise_book.py` plans each course's
+chapters, which are written from that material and then emitted as the book, replacing the
+converted pages. [AGENTS.md](AGENTS.md) has the commands, what is deliberately not converted, and
+the traps — read it before running either.
 
 ## Licences
 

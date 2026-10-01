@@ -1,7 +1,7 @@
 site_name: Study reference library
 site_description: >-
-  Course material, lecture notes and transcripts converted to markdown and split by section,
-  so that every part of them can be linked to.
+  Other people's courses, written up as one book per course from the course's slides,
+  recordings, notes and problem sets.
 site_url: https://claptar.github.io/knowledge-base-library/
 repo_url: https://github.com/Claptar/knowledge-base-library
 docs_dir: docs
@@ -17,8 +17,9 @@ theme:
     - navigation.top
     - navigation.indexes
     # Render only the part of the nav this page needs. Material otherwise embeds the whole
-    # tree in every page, and at this scale that is fatal: ~2,100 entries on each of 11,808
-    # pages. Without it an earlier build reached 5.8 MB per page and a 48 GB site.
+    # tree in every page: the converted corpus once put 5.8 MB of sidebar on each of ~12,000
+    # pages, far over GitHub Pages' 1 GB limit. With every book's chapters listed, pruning keeps
+    # a page to its own book's sidebar — the site is ~120 MB, the largest page under 160 KB.
     - navigation.prune
     - search.highlight
     - search.suggest
@@ -66,17 +67,17 @@ plugins:
       nav_file: SUMMARY.md
       implicit_index: true
 
-# Converted pages are generated output, and the converter rewrites every relative link to a
-# converted sibling or to the original. A warning here means the converter has a bug, which is
+# Every page is generated, and the generators rewrite every relative link to a published
+# sibling or to the original. A warning here means the converter has a bug, which is
 # exactly what this should catch — so the build stays strict even though nothing is hand-written.
 validation:
   omitted_files: warn
   absolute_links: warn
   unrecognized_links: warn
   nav:
-    # Section pages are deliberately absent from the nav — it stops at the document, or the
-    # sidebar alone weighs several megabytes on every page. They stay reachable from their
-    # document's index page, from previous/next links, and from search.
+    # A book lists its chapters in the nav. A converted document's section pages do not appear:
+    # it stops at the document, whose index page lists them, and they stay reachable from
+    # previous/next links and from search.
     omitted_files: info
     not_found: warn
   links:
