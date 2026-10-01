@@ -47,7 +47,7 @@ themselves — the split is by authorship, not by subject.
 
 ## Papers
 
-> **23 papers and theses**, each summarised in our own words. The full text is here too for the 6 whose licence allows it; the rest are summaries only and link to the original.
+> **36 papers and theses**, each summarised in our own words. The full text is here too for the 12 whose licence allows it; the rest are summaries only and link to the original.
 
 ### Computational biology
 
@@ -55,13 +55,19 @@ themselves — the split is by authorship, not by subject.
 - [Fang 2025 — A biophysical approach to normalization and trajectory inference in single-cell RNA sequencing data analysis](papers/computational-biology/fang-2025-biophysical-normalisation/index.md) — summary
 - [Felce 2026 — Biophysical Modeling for Gene Expression and Evolution](papers/computational-biology/felce-2026-biophysical-evolution/index.md) — summary
 - [Gálvez Merchán 2023 — Studies of mRNA expression and degradation](papers/computational-biology/galvez-merchan-2023-mrna-degradation/index.md) — summary
+- [Gardiner & Chaturvedi 1977 — The Poisson Representation. I. A New Technique for Chemical Master Equations](papers/computational-biology/gardiner-chaturvedi-1977-poisson-representation/index.md) — summary
+- [Gillespie 1976 — A General Method for Numerically Simulating the Stochastic Time Evolution of Coupled Chemical Reactions](papers/computational-biology/gillespie-1976-ssa/index.md) — summary
 - [Gorin et al. 2022 — Interpretable and tractable models of transcriptional noise for the rational design of single-molecule quantification experiments](papers/computational-biology/gorin-2022-interpretable-tractable/index.md) — summary and full text
 - [Gorin, Yoshida & Pachter 2022 — Transient and delay chemical master equations](papers/computational-biology/gorin-2022-transient-delay-cme/index.md) — summary and full text
 - [Gorin 2023 — Stochastic foundations for single-cell RNA sequencing](papers/computational-biology/gorin-2023-scrnaseq-foundations/index.md) — summary
 - [Gorin & Pachter 2020 — Intrinsic and extrinsic noise are distinguishable in a synthesis – export – degradation model of mRNA production](papers/computational-biology/gorin-pachter-2020-intrinsic-extrinsic/index.md) — summary and full text
 - [Gorin & Pachter 2021 — Analytical solutions of the chemical master equation with bursty production and isomerization reactions](papers/computational-biology/gorin-pachter-2022-bursty-splicing/index.md) — summary and full text
 - [Grima, Schmidt & Newman 2012 — Steady-state fluctuations of a genetic feedback loop: an exact solution](papers/computational-biology/grima-2012-feedback-loop/index.md) — summary
+- [Jahnke & Huisinga 2007 — Solving the chemical master equation for monomolecular reaction systems analytically](papers/computational-biology/jahnke-huisinga-2007-monomolecular/index.md) — summary
 - [Luebbert 2024 — Complexity of Transcriptomic Data Analysis and Implications for Biological Discovery](papers/computational-biology/luebbert-2024-transcriptomic-complexity/index.md) — summary
+- [Munsky & Khammash 2006 — The finite state projection algorithm for the solution of the chemical master equation](papers/computational-biology/munsky-khammash-2006-fsp/index.md) — summary
+- [Paulsson 2004 — Summing up the noise in gene networks](papers/computational-biology/paulsson-2004-summing-up-noise/index.md) — summary
+- [Peccoud & Ycart 1995 — Markovian Modelling of Gene Product Synthesis](papers/computational-biology/peccoud-ycart-1995-telegraph/index.md) — summary
 - [Tang et al. 2020 — bayNorm: Bayesian gene expression recovery, imputation and normalization for single-cell RNA-sequencing data](papers/computational-biology/tang-2020-baynorm/index.md) — summary and full text
 - [Tang et al. 2023 — Modelling capture efficiency of single-cell RNA-sequencing data improves inference of transcriptome-wide burst kinetics](papers/computational-biology/tang-2023-capture-efficiency/index.md) — summary and full text
 - [Vastola & Holmes 2020 — The chemical Langevin equation: a path integral view of Gillespie's derivation](papers/computational-biology/vastola-holmes-2020-path-integral-cle/index.md) — summary
@@ -69,8 +75,15 @@ themselves — the split is by authorship, not by subject.
 ### Omics statistics
 
 - [Ahlmann-Eltze & Huber 2021 — Transformation and Preprocessing of Single-Cell RNA-Seq Data](papers/omics-statistics/ahlmann-eltze-huber-2021-transformations/index.md) — summary
+- [Cargnelli et al. 2026 — Benchmarking computational decontamination of ambient RNA](papers/omics-statistics/cargnelli-2026-benchmarking-decontamination/index.md) — summary and full text
+- [Caskey & Rich et al. 2026 — Single-Cell Genomics Decontamination with CellSweep](papers/omics-statistics/caskey-rich-2026-cellsweep/index.md) — summary and full text
+- [Fleming et al. 2023 — Unsupervised removal of systematic background noise from droplet-based single-cell experiments using CellBender](papers/omics-statistics/fleming-2023-cellbender/index.md) — summary
+- [Janssen et al. 2023 — The effect of background noise and its removal on the analysis of single-cell expression data](papers/omics-statistics/janssen-2023-background-noise/index.md) — summary and full text
 - [Kouiroukidis & Evangelidis 2011 — The Effects of Dimensionality Curse in High Dimensional kNN Search](papers/omics-statistics/kouiroukidis-evangelidis-2011-dimensionality-knn/index.md) — summary
 - [Marioni et al. 2008 — RNA-seq: An assessment of technical reproducibility and comparison with gene expression arrays](papers/omics-statistics/marioni-2008-rnaseq-reproducibility/index.md) — summary
+- [Wang et al. 2024 — scCDC: a computational method for gene-specific contamination detection and correction in single-cell and single-nucleus RNA-seq data](papers/omics-statistics/wang-2024-sccdc/index.md) — summary and full text
+- [Yang et al. 2020 — Decontamination of ambient RNA in single-cell RNA-seq with DecontX](papers/omics-statistics/yang-2020-decontx/index.md) — summary and full text
+- [Young & Behjati 2020 — SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data](papers/omics-statistics/young-behjati-2020-soupx/index.md) — summary and full text
 
 ### Statistical computing
 

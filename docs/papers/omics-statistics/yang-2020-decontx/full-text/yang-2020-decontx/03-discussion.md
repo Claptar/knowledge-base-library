@@ -1,0 +1,29 @@
+---
+title: Discussion
+source: https://doi.org/10.1186/s13059-020-1950-6/
+source_file: sources/papers/yang-2020-decontx/yang-2020-decontx.jats
+licence: CC BY 4.0
+route: pandoc-jats
+fidelity: high
+converted: '2026-10-02'
+---
+
+> **Converted source.** `yang-2020-decontx.jats` from [papers/yang-2020-decontx](https://doi.org/10.1186/s13059-020-1950-6/) — papers · yang-2020-decontx, licensed CC BY 4.0. Converted 2026-10-02 from `.jats`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
+
+# Discussion
+
+We developed a Bayesian method called DecontX to estimate the percentage of cross-contamination within each cell due to ambient RNA or other experimental factors. In our model, each cell is treated as a mixture of multinomial distributions over genes, one from its native cell population and another from contamination. For each cell population, the contamination distribution is defined as a combination of gene counts from other cell populations. Genes that are more highly expressed (i.e., have more UMI counts) in other cell populations will be more likely to contribute to contaminaion in the current cell population. Therefore, these genes will have relatiely higher probabilities in the contamination distribution compared to the expression distribution in native cell population and counts for these genes will be more likely to be called “contamination.” Certain types of housekeeping genes, such as ribosomal protein coding genes, can be highly expressed across many cell populations and thus will have high probabilities appearing in both the native cell populations and contamination distributions. In this case, counts for these genes will predominantly be called “native” assuming the overall proportion of estimated contamination in that cell is also relatively low. We demonstrated the accuracy of DecontX by showing it was able to accurately estimate the percentage of exogenous, contaminating transcripts in a mouse-human mixture dataset. Furthermore, after estimating and removing contaminated transcripts in 4K PBMC data, the profiles of key marker genes for each subpopulation better resembled those from sorted, purified PBMCs.
+
+We observed that cell types with higher total mRNA abundance and prevalence within the dataset are more likely to contribute to the contamination in other cell types. For example, in the human-mouse mixture dataset, the human cells had more uniquely aligning UMIs on average than mouse cells. Therefore, the human cells contributed more reads to the ambient RNA and resulted in more contamination in mouse cells. In the 4K PBMC data, the monocytes were the second most common cell type and had the highest total numbers of UMI counts on average. In addition, monocyte-associated genes such as LYZ, S100A8, and S100A9 were the most highly expressed cell type-specific marker genes and thus contributed more to the contamination in other cell types compared to markers from other populations. These results show that contamination distributions in each cell will be dependent on the other cell types in the assay as well as the level of expression of specific genes in those cell types.
+
+In some cases, DecontX was not able to completely remove aberrant expression of cell type markers. For example, 43.03% of NK cells in the 4K PBMC still exhibited expression of T cell markers. One potential explanation is that some cells in this dataset were actually NKT cells and truly share expression features from both NK and T cell populations [19]. Another factor is that for cell populations that share substantial similarities in gene expression patterns, DecontX will tend to be conservative and treat the majority of these counts as native expression rather than contamination. In general, we believe this behavior is desired so true biological variation between cell types is not removed. The cells estimated to be highly contaminated by DecontX in 4K PBMC were also estimated to be doublets by independent algorithms. Therefore, high contamination levels may also be useful as a quality control criterion for excluding cells. Additionally, DecontX estimation on benchmark datasets shows 10X Chromium has lowest contamination, while CEL-seq2 has highest contamination. CEL-seq2 has shown much higher frequencies of intronic and intergenic mappings compared to other scRNA-seq methods [20]. Although the SORT-seq protocol is similar to CEL-seq2, it used vapor-leak oil to prevent evaporation [7] which resulted in less estimated contaminations overall in our analysis.
+
+By utilizing raw counts for estimation of the multinomial distributions, DecontX eliminates the potential variability that could be introduced by different normalization methods. One limitation is that cell cluster labels are needed a priori. While we automatically use Celda to identify cell clusters if none are supplied, any fast cell clustering approach can be utilized. As the contamination distribution for each cell population is derived from all other populations present in the dataset, it may sometimes better to use broader cell population labels. For example, including all T cells in one cluster rather than treating individual T cell subpopulation as a separate subcluster may help alleviate T cell-specific counts in the calculation of the contamination distributions for all T cells.
+
+## Conclusions {#Sec4}
+
+DecontX can be used as an important quality assessment tool that estimates the levels of background RNA contributing to the contamination occurring as a result of dissociation procedures or other library preparation processes. Overall, computational decontamination of single-cell counts with DecontX will aid in downstream clustering and visualization and can be systematically included in analysis workflows.
+
+---
+
+[← Results](02-results.md) · [Up: contents](index.md) · [Methods →](04-methods.md)
