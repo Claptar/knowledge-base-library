@@ -278,6 +278,12 @@ def check(path: Path, text: str) -> PageReport:
     is_library_root = path.parent.name == "docs" and path.name == "index.md"
     if not meta.get("source") and not is_library_root:
         add("uncited", FATAL, 1, "no source URL in front matter")
+    # A book chapter tells the reader what it covers and where each part came from; book-template.md
+    # makes both mandatory. Without `## Sources` a chapter cannot be checked against its material.
+    if "chapter" in meta:
+        for heading in ("## What this covers", "## Sources"):
+            if not re.search(rf"^{heading}\b", body, re.M):
+                add("book-shape", FATAL, 1, f"chapter has no `{heading}` section")
     lines = [l for l in body.splitlines() if l.strip()]
     if lines:
         ratio = sum(1 for l in lines if is_debris(l)) / len(lines)

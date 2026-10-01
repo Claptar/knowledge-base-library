@@ -25,7 +25,9 @@ content is not recoverable mechanically and there is nothing honest to publish.
 ## The gates
 
 Counts in the right-hand column are the **baseline** measured on `main` at `b6766d7`, over 11,918
-pages. They are what the rebuild is scored against, and they are all expected to reach zero.
+pages. They are what the rebuild is scored against, and they are all expected to reach zero. The baseline is
+history: it describes the converted corpus before books replaced it, and is kept so the gates'
+reasons stay checkable.
 
 ### Fatal
 
@@ -39,6 +41,7 @@ pages. They are what the rebuild is scored against, and they are all expected to
 | `unbalanced-fences` — odd number of ``` | the page renders as one giant code block, or as none | 652 pages |
 | `unbalanced-dollars` — odd `$` outside code | the rest of the page renders as mathematics | 359 pages |
 | `uncited` — no `source` URL | cannot be published uncited | 1 page |
+| `book-shape` — a book chapter (`chapter:` in front matter) without `## What this covers` or `## Sources` | the reader cannot tell what the chapter assumes, or check it against the course material it was written from (`book-template.md`) | 0 of 450 chapters when added, 2026-10-01 |
 | `route: pdf` where a text-format sibling exists | the render was converted instead of the source | see `SKILL.md` |
 
 **4,613 of 11,917 pages fail one of these.** That is the number the rebuild is scored against.
