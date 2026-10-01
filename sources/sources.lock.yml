@@ -4011,3 +4011,230 @@ sources:
     bytes: 15283976
     sha256: ad01971db4f321cef08b6b99f5a71e155805825e58a0374730aa7653d9cd50cd
   note: "freely downloadable from thesis.caltech.edu/16081; the web record states no rights, but the thesis's own copyright page reads All rights reserved. Summary only"
+- slug: papers/caskey-rich-2026-cellsweep
+  material: paper
+  subject: omics-statistics
+  licence: CC BY 4.0
+  open_access: true
+  title: "Caskey, Rich et al. 2026, Single-Cell Genomics Decontamination with CellSweep"
+  holds: material
+  files: 1
+  bytes: 5283889
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.64898/2026.03.04.709349
+  restorable: upstream
+  contents:
+  - name: caskey-rich-2026-cellsweep.pdf
+    bytes: 5283889
+    sha256: f8c27f1c67384c6639e7d437a2165e1dd44483e1ae2325a27f8b1f50398afbdc
+  note: "bioRxiv preprint v1; api.biorxiv.org reports license cc_by. Read from the PDF: bioRxiv's JATS stores formulas as images"
+- slug: papers/cargnelli-2026-benchmarking-decontamination
+  material: paper
+  subject: omics-statistics
+  licence: CC BY 4.0
+  open_access: true
+  title: "Cargnelli et al. 2026, Benchmarking computational decontamination of ambient RNA"
+  holds: material
+  files: 1
+  bytes: 10874474
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.64898/2026.01.13.699237
+  restorable: upstream
+  contents:
+  - name: cargnelli-2026-benchmarking-decontamination.pdf
+    bytes: 10874474
+    sha256: 10ea7dd52f32a28aab9ffeab2c0d94828cf19f4da88dab20ed6fbbcec5e4f192
+  note: "bioRxiv preprint v2; api.biorxiv.org reports license cc_by. Read from the PDF"
+- slug: papers/young-behjati-2020-soupx
+  material: paper
+  subject: omics-statistics
+  licence: CC BY 4.0
+  open_access: true
+  title: "Young & Behjati 2020, SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data"
+  holds: material
+  files: 1
+  bytes: 91192
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1093/gigascience/giaa151
+  restorable: upstream
+  contents:
+  - name: young-behjati-2020-soupx.jats
+    bytes: 91192
+    sha256: abd92dcf6dee68193a1e9d6bb4fde4b4bf660889e365260b51fa4187ec7194ad
+  note: "GigaScience, open access; CC BY 4.0 stated in the article's own JATS <license> (Europe PMC PMC7763177)"
+- slug: papers/janssen-2023-background-noise
+  material: paper
+  subject: omics-statistics
+  licence: CC BY 4.0
+  open_access: true
+  title: "Janssen et al. 2023, The effect of background noise and its removal on the analysis of single-cell expression data"
+  holds: material
+  files: 1
+  bytes: 209049
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1186/s13059-023-02978-x
+  restorable: upstream
+  contents:
+  - name: janssen-2023-background-noise.jats
+    bytes: 209049
+    sha256: 1898db815e35181ee95059bc15ba1f32deff4ac659c25382c77ef6d6ba3070c1
+  note: "Genome Biology, open access; CC BY 4.0 stated in the article's own JATS <license> (Europe PMC PMC10278251)"
+- slug: papers/yang-2020-decontx
+  material: paper
+  subject: omics-statistics
+  licence: CC BY 4.0
+  open_access: true
+  title: "Yang et al. 2020, Decontamination of ambient RNA in single-cell RNA-seq with DecontX"
+  holds: material
+  files: 1
+  bytes: 196385
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1186/s13059-020-1950-6
+  restorable: upstream
+  contents:
+  - name: yang-2020-decontx.jats
+    bytes: 196385
+    sha256: a5d2bdad3f5e63f44ce2ad16de689978539ef0422de1ac414af6775d0b9204df
+  note: "Genome Biology, open access; CC BY 4.0 stated in the article's own JATS <license> (Europe PMC PMC7059395)"
+- slug: papers/wang-2024-sccdc
+  material: paper
+  subject: omics-statistics
+  licence: CC BY 4.0
+  open_access: true
+  title: "Wang et al. 2024, scCDC: a computational method for gene-specific contamination detection and correction in single-cell and single-nucleus RNA-seq data"
+  holds: material
+  files: 1
+  bytes: 222985
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1186/s13059-024-03284-w
+  restorable: upstream
+  contents:
+  - name: wang-2024-sccdc.jats
+    bytes: 222985
+    sha256: dfb47b489074f7bd736503926b15f0f691c730099863dc15b9a27c18cd07edff
+  note: "Genome Biology, open access; CC BY 4.0 stated in the article's own JATS <license> (Europe PMC PMC11112958)"
+- slug: papers/fleming-2023-cellbender
+  material: paper
+  subject: omics-statistics
+  licence: publisher copyright
+  title: "Fleming et al. 2023, Unsupervised removal of systematic background noise from droplet-based single-cell experiments using CellBender"
+  holds: material
+  files: 1
+  bytes: 11154635
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1038/s41592-023-01943-7
+  restorable: never
+  contents:
+  - name: fleming-2023-cellbender.pdf
+    bytes: 11154635
+    sha256: 07ffd0d987cf7a38f84a6d62f778aae9c2678e833f00eb383dead8190462a41f
+  note: "Nature Methods, not open access; its bioRxiv preprint 10.1101/791699 is CC BY-NC-ND, which forbids an adaptation. supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/gillespie-1976-ssa
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Gillespie 1976, A general method for numerically simulating the stochastic time evolution of coupled chemical reactions"
+  holds: material
+  files: 1
+  bytes: 2050487
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1016/0021-9991(76)90041-3
+  restorable: never
+  contents:
+  - name: gillespie-1976-ssa.pdf
+    bytes: 2050487
+    sha256: 30633d1c77036195cd10413525ac685a7263c245e567fb4326b9244653a113e0
+  note: "Journal of Computational Physics (Elsevier). supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/gardiner-chaturvedi-1977-poisson-representation
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Gardiner & Chaturvedi 1977, The Poisson representation. I. A new technique for chemical master equations"
+  holds: material
+  files: 1
+  bytes: 1844250
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1007/BF01014349
+  restorable: never
+  contents:
+  - name: gardiner-chaturvedi-1977-poisson-representation.pdf
+    bytes: 1844250
+    sha256: 0134299efd4a6e48ccccd70c48e1dc25cc2ffe3db20da679664c00cb699ddef5
+  note: "Journal of Statistical Physics (Springer). supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/jahnke-huisinga-2007-monomolecular
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Jahnke & Huisinga 2007, Solving the chemical master equation for monomolecular reaction systems analytically"
+  holds: material
+  files: 1
+  bytes: 292008
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1007/s00285-006-0034-x
+  restorable: never
+  contents:
+  - name: jahnke-huisinga-2007-monomolecular.pdf
+    bytes: 292008
+    sha256: b85ff116158746cae064c54c6c4bfbb0c66404793a24c283ecf45cc808b24a2c
+  note: "Journal of Mathematical Biology (Springer). supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/munsky-khammash-2006-fsp
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Munsky & Khammash 2006, The finite state projection algorithm for the solution of the chemical master equation"
+  holds: material
+  files: 1
+  bytes: 712158
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1063/1.2145882
+  restorable: never
+  contents:
+  - name: munsky-khammash-2006-fsp.pdf
+    bytes: 712158
+    sha256: 6e1360b4d88919c2f82322dd7f279a1c53609f7089df20aeca602c1879244bf5
+  note: "Journal of Chemical Physics, © 2006 American Institute of Physics. supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/paulsson-2004-summing-up-noise
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Paulsson 2004, Summing up the noise in gene networks"
+  holds: material
+  files: 1
+  bytes: 135564
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1038/nature02257
+  restorable: never
+  contents:
+  - name: paulsson-2004-summing-up-noise.pdf
+    bytes: 135564
+    sha256: 7b39643bbc6afcc4199b6347916b77a8ccbfc597108d887dd37e3571b94ec9d8
+  note: "Nature, © 2004 Nature Publishing Group. supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
+- slug: papers/peccoud-ycart-1995-telegraph
+  material: paper
+  subject: computational-biology
+  licence: publisher copyright
+  title: "Peccoud & Ycart 1995, Markovian modeling of gene-product synthesis"
+  holds: material
+  files: 1
+  bytes: 442815
+  fetched: '2026-10-02'
+  kind: files
+  base: https://doi.org/10.1006/tpbi.1995.1027
+  restorable: never
+  contents:
+  - name: peccoud-ycart-1995-telegraph.pdf
+    bytes: 442815
+    sha256: d038174c83f50c1662e9d7ec5c8b6c3e20621f0687cf889131b607e01090c2f7
+  note: "Theoretical Population Biology (Elsevier). supplied by hand from an institutional copy; no open copy exists, so it cannot be refetched automatically. Summary only"
