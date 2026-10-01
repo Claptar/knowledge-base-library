@@ -17,12 +17,12 @@ written: '2026-09-20'
 1. [Assertions and Unit Testing](01-assertions-and-unit-testing.md)
 2. [Bash Shell Tutorial and Exercises](02-bash-shell-tutorial-and-exercises.md)
 3. [Regular Expressions and Testing](03-regular-expressions-and-testing.md)
-4. [The Cohort Location Model](04-the-cohort-location-model.md)
+4. [Reading: A Cohort Location Model of household sorting in US metropolitan regions](04-reading-a-cohort-location-model-of-household-sorting-in-us-m.md)
 5. [Code Review and Homework Habits](05-code-review-and-homework-habits.md)
 6. [Debugging in R](06-debugging-in-r.md)
 7. [First Three Weeks Logistics](07-first-three-weeks-logistics.md)
-8. [Infovis vs. Statistical Graphics](08-infovis-vs-statistical-graphics.md)
-9. [Adaptive Rejection Sampling for Gibbs Sampling](09-adaptive-rejection-sampling-for-gibbs-sampling.md)
+8. [Reading: Infovis and Statistical Graphics](08-reading-infovis-and-statistical-graphics.md)
+9. [Reading: Adaptive Rejection Sampling for Gibbs Sampling](09-reading-adaptive-rejection-sampling-for-gibbs-sampling.md)
 10. [Installing Git](10-installing-git.md)
 11. [Course Structure and Prerequisites](11-course-structure-and-prerequisites.md)
 12. [Version Control and Dynamic Documents](12-version-control-and-dynamic-documents.md)
@@ -59,7 +59,7 @@ written: '2026-09-20'
 45. [Preparatory Notes on Big Data](45-preparatory-notes-on-big-data.md)
 46. [Floating-Point Numbers and Precision](46-floating-point-numbers-and-precision.md)
 47. [Simulation and Monte Carlo](47-simulation-and-monte-carlo.md)
-48. [Displaying Data Badly](48-displaying-data-badly.md)
+48. [Reading: How to Display Data Badly](48-reading-how-to-display-data-badly.md)
 
 ## Sources
 

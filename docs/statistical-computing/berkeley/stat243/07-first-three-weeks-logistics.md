@@ -100,4 +100,4 @@ this toolkit rather than introducing it later.
 
 ---
 
-[← 6. Debugging in R](06-debugging-in-r.md) · [Contents](index.md) · [8. Infovis vs. Statistical Graphics →](08-infovis-vs-statistical-graphics.md)
+[← 6. Debugging in R](06-debugging-in-r.md) · [Contents](index.md) · [8. Reading: Infovis and Statistical Graphics →](08-reading-infovis-and-statistical-graphics.md)

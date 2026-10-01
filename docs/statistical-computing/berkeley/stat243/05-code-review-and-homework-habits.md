@@ -170,4 +170,4 @@ vectorized version is actually faster, rather than assuming it must be.
 
 ---
 
-[← 4. The Cohort Location Model](04-the-cohort-location-model.md) · [Contents](index.md) · [6. Debugging in R →](06-debugging-in-r.md)
+[← 4. Reading: A Cohort Location Model of household sorting in US metropolitan regions](04-reading-a-cohort-location-model-of-household-sorting-in-us-m.md) · [Contents](index.md) · [6. Debugging in R →](06-debugging-in-r.md)

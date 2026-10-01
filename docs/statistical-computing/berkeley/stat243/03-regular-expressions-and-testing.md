@@ -106,4 +106,4 @@ regular expression for the pattern, and check it against every test case with `g
 
 ---
 
-[← 2. Bash Shell Tutorial and Exercises](02-bash-shell-tutorial-and-exercises.md) · [Contents](index.md) · [4. The Cohort Location Model →](04-the-cohort-location-model.md)
+[← 2. Bash Shell Tutorial and Exercises](02-bash-shell-tutorial-and-exercises.md) · [Contents](index.md) · [4. Reading: A Cohort Location Model of household sorting in US metropolitan regions →](04-reading-a-cohort-location-model-of-household-sorting-in-us-m.md)

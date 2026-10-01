@@ -56,4 +56,4 @@ need manual fixing:
 
 ---
 
-[← 9. Adaptive Rejection Sampling for Gibbs Sampling](09-adaptive-rejection-sampling-for-gibbs-sampling.md) · [Contents](index.md) · [11. Course Structure and Prerequisites →](11-course-structure-and-prerequisites.md)
+[← 9. Reading: Adaptive Rejection Sampling for Gibbs Sampling](09-reading-adaptive-rejection-sampling-for-gibbs-sampling.md) · [Contents](index.md) · [11. Course Structure and Prerequisites →](11-course-structure-and-prerequisites.md)

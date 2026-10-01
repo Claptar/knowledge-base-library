@@ -526,4 +526,4 @@ version for discrete distributions (2nd ed., p. 323).
 
 ---
 
-[← 46. Floating-Point Numbers and Precision](46-floating-point-numbers-and-precision.md) · [Contents](index.md) · [48. Displaying Data Badly →](48-displaying-data-badly.md)
+[← 46. Floating-Point Numbers and Precision](46-floating-point-numbers-and-precision.md) · [Contents](index.md) · [48. Reading: How to Display Data Badly →](48-reading-how-to-display-data-badly.md)

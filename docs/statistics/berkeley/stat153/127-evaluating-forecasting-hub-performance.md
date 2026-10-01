@@ -2,12 +2,12 @@
 title: "127. Evaluating Forecasting Hub Performance"
 course: "Berkeley Stat 153"
 chapter: 127
-source: "https://github.com/berkeley-stat153"
+source: "https://doi.org/10.1038/s41467-024-50601-9"
 licence: "CC BY 4.0"
 written: "2026-09-20"
 ---
 
-> **Lecture notes.** Written from the material of [Berkeley Stat 153](https://github.com/berkeley-stat153), licensed CC BY 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
+> **Written from a paper.** Written from Mathis, S. M. et al. (2024). "Evaluation of FluSight influenza forecasting in the 2021–22 and 2022–23 seasons with a new target laboratory-confirmed influenza hospitalizations." *Nature Communications* 15, 6289 ([original](https://doi.org/10.1038/s41467-024-50601-9)), licensed CC BY 4.0. This adaptation carries the same licence.
 
 # 127. Evaluating Forecasting Hub Performance
 
