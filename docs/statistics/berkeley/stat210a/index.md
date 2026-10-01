@@ -1,15 +1,16 @@
 ---
-title: "Berkeley Stat 210A Fall 2024"
-source: https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/recitation.html
+title: "Berkeley Stat 210A"
+source: https://github.com/berkeley-stat210a
 licence: CC BY 4.0
+years: "Fall 2024, Fall 2025, Fall 2026"
 written: '2026-09-20'
 ---
 
-> **Lecture notes.** Written from the material of [Berkeley Stat 210A Fall 2024](https://github.com/berkeley-stat210a/fall-2025/blob/5eb849a4924c34eb73e098cdfc812ffa8d806501/recitation.html), licensed CC BY 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
+> **Lecture notes.** Written from the material of [Berkeley Stat 210A](https://github.com/berkeley-stat210a), licensed CC BY 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
 
-# Berkeley Stat 210A Fall 2024
+# Berkeley Stat 210A
 
-83 chapters, written from the course's slides, recordings and notes.
+83 chapters, written from the course's material.
 
 ## Contents
 
@@ -96,3 +97,13 @@ written: '2026-09-20'
 82. [Nuisance Parameters](82-nuisance-parameters.md)
 83. [Testing With One Real Parameter](83-testing-with-one-real-parameter.md)
 84. [Unbiased Estimation](84-unbiased-estimation.md)
+
+## Sources
+
+3 course offerings were merged. The book carries CC BY 4.0.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| Fall 2024 | [github.com/berkeley-stat210a/fall-2024](https://github.com/berkeley-stat210a/fall-2024) | `812543b` | CC BY 4.0 |
+| Fall 2025 | [github.com/berkeley-stat210a/fall-2025](https://github.com/berkeley-stat210a/fall-2025) | `5eb849a` | CC BY 4.0 |
+| Fall 2026 | [github.com/berkeley-stat210a/fall-2026](https://github.com/berkeley-stat210a/fall-2026) | `7dc8f80` | CC BY 4.0 |

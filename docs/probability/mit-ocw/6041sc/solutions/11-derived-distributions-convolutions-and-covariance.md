@@ -237,8 +237,6 @@ Extracted from the original PDF. They are listed by the page they came from rath
 than placed in the text: the conversion does not record where on the page each one
 sat.
 
-
-
 ---
 
 [← back to chapter 11](../11-derived-distributions-convolutions-and-covariance.md)

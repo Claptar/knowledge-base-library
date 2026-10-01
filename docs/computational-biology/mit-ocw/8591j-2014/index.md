@@ -9,7 +9,7 @@ written: '2026-09-20'
 
 # MIT 8.591J 2014
 
-24 chapters, written from the course's slides, recordings and notes.
+24 chapters, written from the course's material.
 
 ## Contents
 
@@ -37,3 +37,11 @@ written: '2026-09-20'
 22. [Diffusion, Uptake, and Bacterial Chemotaxis](22-diffusion-uptake-and-bacterial-chemotaxis.md)
 23. [Predator-Prey Cycles and Their Fragility](23-predator-prey-cycles-and-their-fragility.md)
 24. [Negative Autoregulation and the Repressilator](24-negative-autoregulation-and-the-repressilator.md)
+
+## Sources
+
+The book carries CC BY-NC-SA 4.0.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| MIT 8.591J 2014 | [ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/](https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/) | — | CC BY-NC-SA 4.0 |

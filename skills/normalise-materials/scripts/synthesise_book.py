@@ -637,8 +637,8 @@ def cmd_collect(a):
     return 0
 
 
-BOOK_BANNER = ("> **Lecture notes.** Written from {inputs} of [{course}]({url}), "
-               "licensed {licence}{attrib}. These are notes, not a transcript: the material has "
+BOOK_BANNER = ("> **Lecture notes.** Written from the material of [{course}]({url}), "
+               "licensed {licence}. These are notes, not a transcript: the material has "
                "been reorganised and rewritten. This adaptation carries the same licence, and the "
                "original is linked above.")
 
@@ -648,39 +648,79 @@ def _slug(text, limit=60):
     return (s[:limit].rstrip("-") or "chapter")
 
 
-def _course_meta(course: Path) -> dict:
-    """Title, source URL and licence, read from any surviving converted page of the course."""
-    for page in list(course.rglob("*.md"))[:40]:
-        text = page.read_text(encoding="utf-8", errors="replace")
-        m = FRONTMATTER.match(text)
-        if not m:
-            continue
-        meta = {}
-        for line in m.group(1).splitlines():
-            if ":" in line and not line.startswith((" ", "\t", "-")):
-                k, _, v = line.partition(":")
-                meta[k.strip()] = v.strip().strip("'\"")
-        if meta.get("source"):
-            return meta
-    return {}
+TERM = re.compile(r"(fall|spring|summer|winter)-(\d{4})", re.I)
 
 
-def _course_title(course_name: str, meta: dict) -> str:
-    """The course's own name, not its directory slug.
+def _course_provenance(course_name: str) -> dict:
+    """Title, citation, licence and the course offerings a book was written from.
 
-    `6041sc` is a path component. A book's cover says `MIT 6.041SC`. The lockfile's hand-written
-    `title:` wins where one has been set; otherwise normalise_source.source_title() formats the
-    slug, which at least knows that `ocw` means MIT and that `6041sc` is a course number."""
+    Read from the LOCKFILE, never from a surviving page. `write` deletes the artefacts, so the only
+    `source:` left in the tree afterwards is the one this function wrote, and reading it back
+    would launder a wrong citation through every re-emit -- which is how Stat 156 came to cite
+    one homework PDF. The tree says which books exist (`is_written`); the lockfile says where they
+    came from."""
     import normalise_source as ns
-    try:
-        lock = ns.load_lock(LIBRARY / "sources")
-        for e in lock.get("sources", []):
-            dest, _, _ = ns.destination(e, LIBRARY)
-            if dest and str(Path(dest).relative_to(DOCS)).startswith(course_name):
-                return ns.source_title(e)
-    except Exception:
-        pass
-    return meta.get("title") or course_name.split("/")[-1]
+    parts = tuple(course_name.split("/"))
+    entries = []
+    for e in ns.load_lock(LIBRARY / "sources").get("sources", []):
+        dest, ok, _ = ns.destination(e, LIBRARY)
+        if ok and Path(dest).relative_to(DOCS).parts[:3] == parts:
+            entries.append(e)
+    if not entries:
+        raise SystemExit(f"{course_name}: no publishable lockfile source -- refusing to write a "
+                         "book that cannot cite its original")
+    # Chronological, not by slug: `stat243-fall-2021` sorts after `fall-2026` alphabetically.
+    def when(e):
+        m = TERM.search(e["slug"])
+        season = ["winter", "spring", "summer", "fall"].index(m.group(1).lower()) if m else 0
+        return (int(m.group(2)) if m else 0, season, e["slug"])
+    entries.sort(key=when)
+    head = entries[0]["slug"].partition("/")[0]
+    # The book is the course, so the year belongs in `years`, not in the title.
+    title = (entries[0].get("title") if len(entries) == 1 else None) \
+        or ns.source_title({"slug": head})
+    homes = [ns.course_home(e) for e in entries]
+    owners = {re.match(r"https://github\.com/[^/]+", h).group(0)
+              for h in homes if h.startswith("https://github.com/")}
+    url = homes[0] if len(entries) == 1 else (owners.pop() if len(owners) == 1 else homes[0])
+    licences = [e.get("licence", "unresolved") for e in entries]
+    licence = ns.book_licence(licences)
+    if len(set(licences)) > 1:
+        print(f"  {course_name}: licences differ across years, the book carries {licence}: "
+              + ", ".join(f"{e['slug']}={e.get('licence')}" for e in entries))
+    offerings = []
+    for e, home in zip(entries, homes):
+        m = TERM.search(e["slug"].partition("/")[2])
+        offerings.append({"term": f"{m.group(1).capitalize()} {m.group(2)}" if m
+                          else ns.source_title(e),
+                          "home": home, "commit": str(e.get("commit") or "")[:7],
+                          "licence": e.get("licence", "unresolved")})
+    return {"title": title, "url": url, "licence": licence, "offerings": offerings}
+
+
+def _written_on(page: Path) -> str:
+    """The date a page was first written, kept across re-emits; today for a new page.
+
+    Re-emitting a book to fix its citation does not rewrite its chapters, and stamping all of
+    them with today's date would say it did."""
+    if page.exists():
+        m = re.search(r"^written: ['\"]?([\d-]+)", page.read_text(encoding="utf-8")[:600], re.M)
+        if m:
+            return m.group(1)
+    return TODAY
+
+
+def _published_solution(page: Path) -> str:
+    """The body of a solutions page this command wrote on an earlier run.
+
+    A re-emitted book's solution sources are artefacts that the first write deleted, so the
+    published page is the only copy left. Without this a re-emit dropped every solutions page --
+    all 14 of 6.041SC's."""
+    if not page.exists():
+        return ""
+    text = page.read_text(encoding="utf-8")
+    body = text.split("\n# ", 1)[1].split("\n", 1)[1] if "\n# " in text else ""
+    return body.rsplit("\n---\n\n[← back to chapter", 1)[0].strip()
 
 
 def cmd_write(a):
@@ -739,10 +779,9 @@ def cmd_write(a):
             if seen[ch["title"]] > 1:
                 run[ch["title"]] += 1
                 ch["title"] = f"{ch['title']} (part {run[ch['title']]})"
-        meta = _course_meta(course)
-        url = meta.get("source", "")
-        licence = meta.get("licence", "unresolved")
-        title = _course_title(course_name, meta)
+        prov = _course_provenance(course_name)
+        url, licence, title = prov["url"], prov["licence"], prov["title"]
+        index_written = _written_on(course / "index.md")   # read before the course is cleared
 
         # solutions are carried over as an appendix, not left as loose artefacts
         solutions = {}
@@ -751,6 +790,11 @@ def cmd_write(a):
                 src = Path(src)
                 if src.exists():
                     solutions.setdefault(ch["number"], []).append(strip_page(src))
+            if ch.get("solutions") and ch["number"] not in solutions:
+                kept = _published_solution(
+                    course / "solutions" / f"{ch['number']:02d}-{_slug(ch['title'])}.md")
+                if kept:
+                    solutions[ch["number"]] = [("", kept)]
 
         pages = []
         for i, ch in enumerate(chapters):
@@ -775,14 +819,13 @@ def cmd_write(a):
             if solutions.get(ch["number"]):
                 body += (f"\n\nSolutions: [chapter {ch['number']}]"
                          f"(solutions/{name})\n")
+            # `chapter:` must stay inside the first 400 bytes: is_written() reads only that far.
             front = {"title": f"{ch['number']}. {ch['title']}", "course": title,
                      "chapter": ch["number"], "source": url, "licence": licence,
-                     "written": TODAY}
+                     "written": _written_on(course / name)}
             fm = "---\n" + "\n".join(f"{k}: {json.dumps(v) if isinstance(v, str) else v}"
                                      for k, v in front.items()) + "\n---\n"
-            banner = BOOK_BANNER.format(
-                inputs="the slides and recording of this lecture", course=title,
-                url=url, licence=licence, attrib="")
+            banner = BOOK_BANNER.format(course=title, url=url, licence=licence)
             nav = []
             if i:
                 prev = chapters[i - 1]
@@ -825,13 +868,29 @@ def cmd_write(a):
                         encoding="utf-8")
             contents = "\n".join(
                 f"{ch['number']}. [{ch['title']}]({name})" for name, _, ch in pages)
+            offs = prov["offerings"]
+            # The artefact layer is gone, so this table is the only route back to the originals.
+            # `source:` above stays a scalar: the validator skips list lines, and a list there
+            # would read as uncited.
+            rows = "\n".join(
+                f"| {o['term']} | [{o['home'].split('://', 1)[1]}]({o['home']}) | "
+                f"{('`' + o['commit'] + '`') if o['commit'] else '—'} | {o['licence']} |"
+                for o in offs)
+            merged = (f"{len(offs)} course offerings were merged. " if len(offs) > 1 else "")
+            carries = (f"The book carries {licence}, the most restrictive licence among them."
+                       if len({o['licence'] for o in offs}) > 1
+                       else f"The book carries {licence}.")
+            years = ", ".join(o["term"] for o in offs)
             (course / "index.md").write_text(
                 f'---\ntitle: "{title}"\nsource: {url}\nlicence: {licence}\n'
-                f"written: '{TODAY}'\n---\n\n"
+                + (f'years: "{years}"\n' if TERM.search(years.replace(" ", "-")) else "")
+                + f"written: '{index_written}'\n---\n\n"
                 f"> **Lecture notes.** Written from the material of [{title}]({url}), licensed "
                 f"{licence}. Notes, not a transcript — reorganised and rewritten, carrying the "
                 f"same licence.\n\n# {title}\n\n{len(pages)} chapters, written from the "
-                f"course's slides, recordings and notes.\n\n## Contents\n\n{contents}\n",
+                f"course's material.\n\n## Contents\n\n{contents}\n\n"
+                f"## Sources\n\n{merged}{carries}\n\n"
+                f"| Offering | Original | Commit | Licence |\n| --- | --- | --- | --- |\n{rows}\n",
                 encoding="utf-8")
         if a.apply:
             MANIFESTS.mkdir(parents=True, exist_ok=True)

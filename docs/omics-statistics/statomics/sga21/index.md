@@ -1,15 +1,15 @@
 ---
 title: "StatOmics Sga21"
-source: https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_intro1.Rmd
+source: https://github.com/statOmics/SGA21
 licence: CC BY-NC-SA 4.0
 written: '2026-09-20'
 ---
 
-> **Lecture notes.** Written from the material of [StatOmics Sga21](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_intro1.Rmd), licensed CC BY-NC-SA 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
+> **Lecture notes.** Written from the material of [StatOmics Sga21](https://github.com/statOmics/SGA21), licensed CC BY-NC-SA 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
 
 # StatOmics Sga21
 
-41 chapters, written from the course's slides, recordings and notes.
+41 chapters, written from the course's material.
 
 ## Contents
 
@@ -54,3 +54,11 @@ written: '2026-09-20'
 41. [Stage-wise Omnibus and Post-hoc Testing](41-stage-wise-omnibus-and-post-hoc-testing.md)
 42. [Testing for Differential Protein Abundance](42-testing-for-differential-protein-abundance.md)
 43. [Mass Spectrometry & Bioinformatics for Proteomics](43-mass-spectrometry-bioinformatics-for-proteomics.md)
+
+## Sources
+
+The book carries CC BY-NC-SA 4.0.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| StatOmics Sga21 | [github.com/statOmics/SGA21](https://github.com/statOmics/SGA21) | `0ad787d` | CC BY-NC-SA 4.0 |

@@ -9,7 +9,7 @@ written: '2026-09-20'
 
 # MIT 8.592J
 
-15 chapters, written from the course's slides, recordings and notes.
+15 chapters, written from the course's material.
 
 ## Contents
 
@@ -28,3 +28,11 @@ written: '2026-09-20'
 13. [Fixed Points and Hopfield Networks](13-fixed-points-and-hopfield-networks.md)
 14. [Synchronization and Turing Patterns](14-synchronization-and-turing-patterns.md)
 15. [Amino Acid Contact Energies](15-amino-acid-contact-energies.md)
+
+## Sources
+
+The book carries CC BY-NC-SA 4.0.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| MIT 8.592J | [ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/) | — | CC BY-NC-SA 4.0 |

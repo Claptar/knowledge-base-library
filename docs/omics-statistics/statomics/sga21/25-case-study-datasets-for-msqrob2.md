@@ -2,12 +2,12 @@
 title: "25. Case-Study Datasets for msqrob2"
 course: "StatOmics Sga21"
 chapter: 25
-source: "https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_intro1.Rmd"
+source: "https://github.com/statOmics/SGA21"
 licence: "CC BY-NC-SA 4.0"
 written: "2026-09-20"
 ---
 
-> **Lecture notes.** Written from the slides and recording of this lecture of [StatOmics Sga21](https://github.com/statOmics/SGA21/blob/0ad787d4cc2bb2f4636440840a8a923cf6c09839/singleCell_intro1.Rmd), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
+> **Lecture notes.** Written from the material of [StatOmics Sga21](https://github.com/statOmics/SGA21), licensed CC BY-NC-SA 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
 
 # 25. Case-Study Datasets for msqrob2
 

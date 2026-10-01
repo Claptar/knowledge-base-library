@@ -368,6 +368,42 @@ def upstream(entry, relpath, raw=False):
     return origin.rstrip("/") + "/", False
 
 
+def course_home(entry):
+    """Where a book's citation lands: the course, never a file inside it.
+
+    A book is written from a whole course, so citing one leaf of it -- the first page found on
+    disk -- told a reader that Stat 156 was a homework PDF. `upstream` answers the per-file
+    question; this answers the per-course one."""
+    url = entry.get("url") or ""
+    if "github.com" in url:
+        return re.sub(r"\.git$", "", url.rstrip("/"))
+    return entry.get("base") or url
+
+
+def _licence_family(licence):
+    """0 public domain, 1 BY, 2 BY-SA, 3 BY-NC, 4 BY-NC-SA: least to most restrictive."""
+    words = licence.upper().replace("-", " ").split()
+    if "CC0" in words or "PUBLIC" in words:
+        return 0
+    if "BY" not in words:
+        raise ValueError(f"not a Creative Commons licence: {licence!r}")
+    return {(False, False): 1, (False, True): 2, (True, False): 3, (True, True): 4}[
+        ("NC" in words, "SA" in words)]
+
+
+def book_licence(licences):
+    """The licence a book written from several course years must carry.
+
+    The book is a derivative of every year it merges, so it carries the most restrictive of their
+    licences. Share-alike without NC cannot be combined with anything NC -- each forbids the
+    other's terms on the derivative -- so that refuses rather than picking one."""
+    found = sorted(set(licences), key=_licence_family)
+    families = {_licence_family(l) for l in found}
+    if 2 in families and families & {3, 4}:
+        raise ValueError(f"share-alike and non-commercial cannot be combined: {found}")
+    return found[-1]
+
+
 def destination(entry, library):
     """(output_root, convert, reason). Never guess in the publishing direction.
 

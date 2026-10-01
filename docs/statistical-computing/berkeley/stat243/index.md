@@ -1,15 +1,16 @@
 ---
-title: "Berkeley Stat 243 Fall 2024"
-source: https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/schedule.qmd
+title: "Berkeley Stat 243"
+source: https://github.com/berkeley-stat243
 licence: CC BY 4.0
+years: "Fall 2021, Fall 2024, Fall 2025, Fall 2026"
 written: '2026-09-20'
 ---
 
-> **Lecture notes.** Written from the material of [Berkeley Stat 243 Fall 2024](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/schedule.qmd), licensed CC BY 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
+> **Lecture notes.** Written from the material of [Berkeley Stat 243](https://github.com/berkeley-stat243), licensed CC BY 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
 
-# Berkeley Stat 243 Fall 2024
+# Berkeley Stat 243
 
-46 chapters, written from the course's slides, recordings and notes.
+46 chapters, written from the course's material.
 
 ## Contents
 
@@ -59,3 +60,14 @@ written: '2026-09-20'
 46. [Floating-Point Numbers and Precision](46-floating-point-numbers-and-precision.md)
 47. [Simulation and Monte Carlo](47-simulation-and-monte-carlo.md)
 48. [Displaying Data Badly](48-displaying-data-badly.md)
+
+## Sources
+
+4 course offerings were merged. The book carries CC BY 4.0, the most restrictive licence among them.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| Fall 2021 | [github.com/berkeley-stat243/stat243-fall-2021](https://github.com/berkeley-stat243/stat243-fall-2021) | `c918dcc` | CC0-1.0 |
+| Fall 2024 | [github.com/berkeley-stat243/fall-2024](https://github.com/berkeley-stat243/fall-2024) | `9c62305` | CC BY 4.0 |
+| Fall 2025 | [github.com/berkeley-stat243/fall-2025](https://github.com/berkeley-stat243/fall-2025) | `035a19e` | CC BY 4.0 |
+| Fall 2026 | [github.com/berkeley-stat243/fall-2026](https://github.com/berkeley-stat243/fall-2026) | `c74395e` | CC BY 4.0 |

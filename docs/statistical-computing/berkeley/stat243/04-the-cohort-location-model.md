@@ -1,13 +1,13 @@
 ---
 title: "4. The Cohort Location Model"
-course: "Berkeley Stat 243 Fall 2024"
+course: "Berkeley Stat 243"
 chapter: 4
-source: "https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/schedule.qmd"
+source: "https://github.com/berkeley-stat243"
 licence: "CC BY 4.0"
 written: "2026-09-20"
 ---
 
-> **Lecture notes.** Written from the slides and recording of this lecture of [Berkeley Stat 243 Fall 2024](https://github.com/berkeley-stat243/fall-2025/blob/035a19ebd7ab88cffca907cade6d40212d575a1f/schedule.qmd), licensed CC BY 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
+> **Lecture notes.** Written from the material of [Berkeley Stat 243](https://github.com/berkeley-stat243), licensed CC BY 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
 
 # 4. The Cohort Location Model
 

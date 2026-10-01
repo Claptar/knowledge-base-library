@@ -2,12 +2,12 @@
 title: "8. Hypothesis-Testing Case Studies"
 course: "GTPB Psls20"
 chapter: 8
-source: "https://github.com/GTPB/PSLS20.git"
+source: "https://github.com/GTPB/PSLS20"
 licence: "CC BY 4.0"
 written: "2026-09-20"
 ---
 
-> **Lecture notes.** Written from the slides and recording of this lecture of [GTPB Psls20](https://github.com/GTPB/PSLS20.git), licensed CC BY 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
+> **Lecture notes.** Written from the material of [GTPB Psls20](https://github.com/GTPB/PSLS20), licensed CC BY 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
 
 # 8. Hypothesis-Testing Case Studies
 

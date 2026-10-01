@@ -1,15 +1,15 @@
 ---
 title: "GTPB Psls20"
-source: https://github.com/GTPB/PSLS20.git
+source: https://github.com/GTPB/PSLS20
 licence: CC BY 4.0
 written: '2026-09-20'
 ---
 
-> **Lecture notes.** Written from the material of [GTPB Psls20](https://github.com/GTPB/PSLS20.git), licensed CC BY 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
+> **Lecture notes.** Written from the material of [GTPB Psls20](https://github.com/GTPB/PSLS20), licensed CC BY 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
 
 # GTPB Psls20
 
-42 chapters, written from the course's slides, recordings and notes.
+42 chapters, written from the course's material.
 
 ## Contents
 
@@ -55,3 +55,11 @@ written: '2026-09-20'
 40. [Base R Cheat Sheet](40-base-r-cheat-sheet.md)
 41. [The R Markdown Workflow](41-the-r-markdown-workflow.md)
 42. [Statistics and Data Exploration Review](42-statistics-and-data-exploration-review.md)
+
+## Sources
+
+The book carries CC BY 4.0.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| GTPB Psls20 | [github.com/GTPB/PSLS20](https://github.com/GTPB/PSLS20) | `55acd65` | CC BY 4.0 |

@@ -1,15 +1,16 @@
 ---
-title: "Berkeley Stat 153 Fall 2024"
-source: https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFive153248Fall2025.ipynb
+title: "Berkeley Stat 153"
+source: https://github.com/berkeley-stat153
 licence: CC BY 4.0
+years: "Fall 2024, Spring 2025, Fall 2025, Spring 2026, Fall 2026"
 written: '2026-09-20'
 ---
 
-> **Lecture notes.** Written from the material of [Berkeley Stat 153 Fall 2024](https://github.com/berkeley-stat153/fall-2025/blob/df8e8e972b95eb1235ce8a17f88722e852802200/CodeLectureFive153248Fall2025.ipynb), licensed CC BY 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
+> **Lecture notes.** Written from the material of [Berkeley Stat 153](https://github.com/berkeley-stat153), licensed CC BY 4.0. Notes, not a transcript — reorganised and rewritten, carrying the same licence.
 
-# Berkeley Stat 153 Fall 2024
+# Berkeley Stat 153
 
-128 chapters, written from the course's slides, recordings and notes.
+128 chapters, written from the course's material.
 
 ## Contents
 
@@ -141,3 +142,15 @@ written: '2026-09-20'
 128. [Supplementary Reading List](128-supplementary-reading-list.md)
 129. [Stat 153 Course Syllabus](129-stat-153-course-syllabus.md)
 130. [Finger Tapping Regression Exercise](130-finger-tapping-regression-exercise.md)
+
+## Sources
+
+5 course offerings were merged. The book carries CC BY 4.0.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| Fall 2024 | [github.com/berkeley-stat153/fall-2024](https://github.com/berkeley-stat153/fall-2024) | `94c943d` | CC BY 4.0 |
+| Spring 2025 | [github.com/berkeley-stat153/spring-2025](https://github.com/berkeley-stat153/spring-2025) | `60232ff` | CC BY 4.0 |
+| Fall 2025 | [github.com/berkeley-stat153/fall-2025](https://github.com/berkeley-stat153/fall-2025) | `df8e8e9` | CC BY 4.0 |
+| Spring 2026 | [github.com/berkeley-stat153/spring-2026](https://github.com/berkeley-stat153/spring-2026) | `c08dd12` | CC BY 4.0 |
+| Fall 2026 | [github.com/berkeley-stat153/fall-2026](https://github.com/berkeley-stat153/fall-2026) | `1df2e36` | CC BY 4.0 |

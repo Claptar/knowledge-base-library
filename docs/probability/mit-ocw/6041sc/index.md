@@ -9,7 +9,7 @@ written: '2026-09-20'
 
 # MIT 6.041SC
 
-26 chapters, written from the course's slides, recordings and notes.
+26 chapters, written from the course's material.
 
 ## Contents
 
@@ -39,3 +39,11 @@ written: '2026-09-20'
 24. [Linear Regression and Hypothesis Testing](24-linear-regression-and-hypothesis-testing.md)
 25. [Classical Hypothesis Testing](25-classical-hypothesis-testing.md)
 26. [Hypergeometric Probabilities](26-hypergeometric-probabilities.md)
+
+## Sources
+
+The book carries CC BY-NC-SA 4.0.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| MIT 6.041SC | [ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/](https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/) | — | CC BY-NC-SA 4.0 |

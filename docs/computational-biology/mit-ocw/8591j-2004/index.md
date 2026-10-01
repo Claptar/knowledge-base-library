@@ -9,7 +9,7 @@ written: '2026-09-20'
 
 # MIT 8.591J 2004
 
-20 chapters, written from the course's slides, recordings and notes.
+20 chapters, written from the course's material.
 
 ## Contents
 
@@ -33,3 +33,11 @@ written: '2026-09-20'
 18. [Genetic Switch in Phage Lambda](18-genetic-switch-in-phage-lambda.md)
 19. [Linear Stability of Fixed Points](19-linear-stability-of-fixed-points.md)
 20. [Master Equation for Gene Expression](20-master-equation-for-gene-expression.md)
+
+## Sources
+
+The book carries CC BY-NC-SA 4.0.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| MIT 8.591J 2004 | [ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/](https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/) | — | CC BY-NC-SA 4.0 |

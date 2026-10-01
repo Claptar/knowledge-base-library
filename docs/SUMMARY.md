@@ -110,18 +110,18 @@
         - [MIT 6.041SC](probability/mit-ocw/6041sc/index.md)
 - Statistical computing:
     - Berkeley:
-        - [Berkeley Stat 243 Fall 2024](statistical-computing/berkeley/stat243/index.md)
+        - [Berkeley Stat 243](statistical-computing/berkeley/stat243/index.md)
 - Statistics:
     - Berkeley:
-        - [Berkeley Stat 153 Fall 2024](statistics/berkeley/stat153/index.md)
-        - [Berkeley Stat 156 Fall 2024](statistics/berkeley/stat156/index.md)
+        - [Berkeley Stat 153](statistics/berkeley/stat153/index.md)
+        - [Berkeley Stat 156](statistics/berkeley/stat156/index.md)
         - Stat158:
             - [Berkeley Stat 158 Spring 2025](statistics/berkeley/stat158/spring-2025/index.md)
                 - [Syllabus](statistics/berkeley/stat158/spring-2025/syllabus.md)
         - Stat201b:
             - [Berkeley Stat 201B Fall 2024](statistics/berkeley/stat201b/fall-2024/index.md)
                 - [Syllabus](statistics/berkeley/stat201b/fall-2024/syllabus.md)
-        - [Berkeley Stat 210A Fall 2024](statistics/berkeley/stat210a/index.md)
+        - [Berkeley Stat 210A](statistics/berkeley/stat210a/index.md)
         - Stat210b:
             - [Berkeley Stat 210B Spring 2025](statistics/berkeley/stat210b/spring-2025/index.md)
                 - [Syllabus of STAT210B](statistics/berkeley/stat210b/spring-2025/Syllabus_STAT210B_Spring2025.md)

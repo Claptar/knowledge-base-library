@@ -9,7 +9,7 @@ written: '2026-09-20'
 
 # MIT 6047
 
-16 chapters, written from the course's slides, recordings and notes.
+16 chapters, written from the course's material.
 
 ## Contents
 
@@ -29,3 +29,11 @@ written: '2026-09-20'
 14. [Clustering Gene Expression Data](14-clustering-gene-expression-data.md)
 15. [Naive Bayes and SVM Classification](15-naive-bayes-and-svm-classification.md)
 16. [Motif Discovery: EM and Gibbs](16-motif-discovery-em-and-gibbs.md)
+
+## Sources
+
+The book carries CC BY-NC-SA 4.0.
+
+| Offering | Original | Commit | Licence |
+| --- | --- | --- | --- |
+| MIT 6047 | [ocw.mit.edu/courses/6-047-computational-biology-fall-2015/](https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/) | — | CC BY-NC-SA 4.0 |

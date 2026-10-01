@@ -1,13 +1,13 @@
 ---
 title: "1. Causal Inference Reading List"
-course: "Berkeley Stat 156 Fall 2024"
+course: "Berkeley Stat 156"
 chapter: 1
-source: "https://github.com/berkeley-stat156/fall-2024/blob/bbfe05b00bcc6fcbcf3140ad89cda2c5b36ed75e/HW3.pdf"
+source: "https://github.com/berkeley-stat156/fall-2024"
 licence: "CC BY-NC 4.0"
 written: "2026-09-20"
 ---
 
-> **Lecture notes.** Written from the slides and recording of this lecture of [Berkeley Stat 156 Fall 2024](https://github.com/berkeley-stat156/fall-2024/blob/bbfe05b00bcc6fcbcf3140ad89cda2c5b36ed75e/HW3.pdf), licensed CC BY-NC 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
+> **Lecture notes.** Written from the material of [Berkeley Stat 156](https://github.com/berkeley-stat156/fall-2024), licensed CC BY-NC 4.0. These are notes, not a transcript: the material has been reorganised and rewritten. This adaptation carries the same licence, and the original is linked above.
 
 # 1. Causal Inference Reading List
 
