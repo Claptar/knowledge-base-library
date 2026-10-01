@@ -939,10 +939,53 @@ def cmd_write(a):
     return 0
 
 
+PAPERS = LIBRARY / "conversion-cache" / "papers"
+
+
+def cmd_papers(a):
+    """Emit the Papers shelf: one page per paper, from its summary record.
+
+    A record is written once, by the paper-summary-writer agent, and kept in the cache, so the
+    shelf is regenerated like the books are -- a `--clean` run deletes nothing that cannot come
+    back. The full text appears beneath the summary only where the converter published it, which
+    it does only for a paper whose licence permits it (`open_access` in the lockfile)."""
+    import normalise_source as ns
+    n = 0
+    for rec_path in sorted(PAPERS.glob("*.json")):
+        r = json.loads(rec_path.read_text())
+        page = DOCS / "papers" / r["subject"] / r["slug"] / "index.md"
+        full = page.parent / "full-text" / "index.md"
+        if full.exists():
+            banner = (f"> **Paper.** {r['citation']} ([original]({r['url']})), licensed "
+                      f"{r['licence']}. Below is a short summary in our own words; the "
+                      "[full text](full-text/index.md) is reproduced under the paper's licence.")
+        else:
+            banner = (f"> **Summary of a {r.get('kind', 'paper')}.** {r['citation']} "
+                      f"([original]({r['url']})). Rights: {r['licence']}. This is a short account "
+                      "of it in our own words; the work itself is not reproduced here.")
+        front = {"title": f"{r['authors_year']} — {r['title']}", "paper": "summary",
+                 "source": r["url"], "licence": r["licence"], "written": _written_on(page)}
+        fm = "---\n" + "\n".join(f"{k}: {json.dumps(v, ensure_ascii=False)}"
+                                  for k, v in front.items()) + "\n---\n"
+        body = (f"{fm}\n{banner}\n\n# {r['title']}\n\n"
+                + (f"**[Read the full text](full-text/index.md)**\n\n" if full.exists() else "")
+                + r["markdown"].strip() + "\n")
+        if a.apply:
+            page.parent.mkdir(parents=True, exist_ok=True)
+            page.write_text(body, encoding="utf-8")
+        n += 1
+    print(f"{n} paper pages" + ("" if a.apply else "  (dry run)"))
+    if a.apply:
+        ns.write_library_index(DOCS, True)
+        ns.write_nav(DOCS, True)
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("command", choices=["plan", "tasks", "submit", "status", "collect", "write"])
+    ap.add_argument("command", choices=["plan", "tasks", "submit", "status", "collect", "write",
+                                            "papers"])
     ap.add_argument("--apply", action="store_true", help="write the books and delete the artefacts")
     ap.add_argument("--sync", action="store_true", help="call the model directly instead of batching: twice the price, no wait")
     ap.add_argument("course", nargs="?", default="")
@@ -950,7 +993,7 @@ def main():
     ap.add_argument("--verbose", type=int, default=0, help="show the first N chapters per course")
     a = ap.parse_args()
     return {"plan": cmd_plan, "tasks": cmd_tasks, "submit": cmd_submit, "status": cmd_status,
-            "collect": cmd_collect, "write": cmd_write}[a.command](a) or 0
+            "collect": cmd_collect, "write": cmd_write, "papers": cmd_papers}[a.command](a) or 0
 
 
 if __name__ == "__main__":

@@ -113,6 +113,10 @@ def output_path(entry, library):
     """Where a source's converted pages go. One definition, used by the converter and the index."""
     slug = entry["slug"]
     subject = entry.get("subject") or "unsorted"
+    if entry.get("material") == "paper":
+        # The Papers shelf: one page per paper (its summary), with the full text beneath it where
+        # the licence lets it be published.
+        return library / "docs" / "papers" / subject / slug.split("/")[-1] / "full-text"
     head, _, tail = slug.partition("/")
     if entry.get("provider"):
         # Set by hand where the slug does not encode the publisher — a thesis is named for its
@@ -143,13 +147,19 @@ ROUTES = {
     ".srt": ("transcript", "speech"),
     ".vtt": ("transcript", "speech"),
     ".html": ("pandoc-html", "good"),
+    # JATS, the XML a journal or PubMed Central publishes an article in. Keyed on a `.jats`
+    # extension rather than `.xml`, so a course's stray config or sitemap file is never
+    # mistaken for an article. bioRxiv's JATS stores every formula as a GIF and loses all the
+    # mathematics, so a preprint is read from its PDF instead.
+    ".jats": ("pandoc-jats", "high"),
     # Not a "pdf" route any more. A PDF that survives re-routing is read by a multimodal model,
     # with pymupdf4llm kept as the cross-check rather than as the output. The deterministic route
     # produced 55% of the old corpus and almost none of it was worth reading; it is far more
     # useful as a control. See references/quality-gates.md, "The LLM route".
     ".pdf": ("llm", "reconstructed"),
 }
-PREFERENCE = [".qmd", ".rmd", ".md", ".rst", ".ipynb", ".tex", ".srt", ".vtt", ".html", ".pdf"]
+PREFERENCE = [".qmd", ".rmd", ".md", ".rst", ".ipynb", ".tex", ".jats", ".srt", ".vtt", ".html",
+              ".pdf"]
 
 SKIP_DIRS = {
     ".git", ".github", ".quarto", "_freeze", "_site", "site_libs", "libs", "node_modules",
@@ -649,6 +659,36 @@ def convert_pandoc(path, fmt):
     return text, None
 
 
+TEX_MATH = re.compile(r"(<tex-math\b[^>]*>)(.*?)(</tex-math>)", re.S)
+
+
+def convert_jats(path):
+    """A journal article's JATS, with each formula's TeX unwrapped first.
+
+    PubMed Central ships every `<tex-math>` as a complete LaTeX document -- `\\documentclass`,
+    a dozen `\\usepackage` lines, `\\begin{document}$...$\\end{document}` -- and pandoc copies the
+    preamble into the output, so every equation in a Nature Communications paper came out as
+    `$\\documentclass[12pt]{minimal}`. The gate caught four of them only because they happened to
+    unbalance the dollars; the rest would have published as junk. The author's own TeX is the
+    body of that document, so it is kept and the wrapper dropped; pandoc supplies the delimiters."""
+    import pypandoc
+
+    def body(m):
+        t = re.sub(r"<\?[^>]*\?>", "", m.group(2))
+        doc = re.search(r"\\begin\{document\}(.*?)\\end\{document\}", t, re.S)
+        t = re.sub(r"^\$\$?|\$\$?$", "", (doc.group(1) if doc else t).strip()).strip()
+        return m.group(1) + t.replace("&", "&amp;").replace("<", "&lt;") + m.group(3)
+
+    to = ("markdown_strict+pipe_tables+backtick_code_blocks+tex_math_dollars"
+          "+fenced_code_attributes+header_attributes+footnotes+raw_tex-raw_html")
+    raw = read_text(path)
+    text = pypandoc.convert_text(TEX_MATH.sub(body, raw), to, format="jats",
+                                 extra_args=["--wrap=none", "--markdown-headings=atx", "--quiet"])
+    # The article's own title, so the document is not named after its first section.
+    t = re.search(r"<title-group>.*?<article-title[^>]*>(.*?)</article-title>", raw, re.S)
+    return text, (re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", t.group(1))).strip() if t else None)
+
+
 def convert_transcript(path):
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import transcript_text
@@ -683,6 +723,8 @@ def convert(doc):
         return convert_pandoc(doc.src, "rst")
     if doc.route == "pandoc-html":
         return convert_pandoc(doc.src, "html")
+    if doc.route == "pandoc-jats":
+        return convert_jats(doc.src)
     if doc.route == "transcript":
         return convert_transcript(doc.src)
     if doc.route == "pdf":
@@ -1668,8 +1710,15 @@ def write_library_index(reference_dir, apply):
     """
     if not reference_dir.is_dir():
         return
-    books, converted = [], []
-    for discipline in sorted(p for p in reference_dir.iterdir() if p.is_dir()):
+    books, converted, papers = [], [], []
+    shelf = reference_dir / "papers"
+    for page in sorted(shelf.glob("*/*/index.md")) if shelf.is_dir() else []:
+        # docs/papers/<subject>/<slug>/index.md -- a summary, with the full text beneath it where
+        # the paper's licence lets it be published.
+        papers.append((page.parent.parent.name, read_title(page),
+                       page.relative_to(reference_dir).as_posix(),
+                       (page.parent / "full-text" / "index.md").exists()))
+    for discipline in sorted(p for p in reference_dir.iterdir() if p.is_dir() and p != shelf):
         for provider in sorted(p for p in discipline.iterdir() if p.is_dir()):
             for course in sorted(p for p in provider.iterdir() if p.is_dir()):
                 units = ([course] if (course / "index.md").exists() else
@@ -1717,6 +1766,19 @@ def write_library_index(reference_dir, apply):
         "> **never edited by hand**.",
     ]
     body += listing(books, "chapter") if books else ["", "*(none yet)*"]
+    if papers:
+        body += [
+            "", "## Papers", "",
+            f"> **{len(papers)} papers and theses**, each summarised in our own words. The full "
+            f"text is here too for the {sum(1 for p in papers if p[3])} whose licence allows it; "
+            "the rest are summaries only and link to the original.",
+        ]
+        current = None
+        for subject, title, href, full in papers:
+            if subject != current:
+                body += ["", f"### {prettify(subject)}", ""]
+                current = subject
+            body.append(f"- [{title}]({href}) — {'summary and full text' if full else 'summary'}")
     if converted:
         body += [
             "", "## Converted sources", "",

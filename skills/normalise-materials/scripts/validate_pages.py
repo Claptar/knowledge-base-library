@@ -284,6 +284,10 @@ def check(path: Path, text: str) -> PageReport:
         for heading in ("## What this covers", "## Sources"):
             if not re.search(rf"^{heading}\b", body, re.M):
                 add("book-shape", FATAL, 1, f"chapter has no `{heading}` section")
+    # A paper summary stands in for a work the library may not reproduce, so the citation is
+    # what sends a reader to the real thing. Without it the page is an account of nothing.
+    if meta.get("paper") == "summary" and not re.search(r"^## Citation\b", body, re.M):
+        add("paper-shape", FATAL, 1, "paper summary has no `## Citation` section")
     lines = [l for l in body.splitlines() if l.strip()]
     if lines:
         ratio = sum(1 for l in lines if is_debris(l)) / len(lines)
