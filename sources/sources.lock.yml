@@ -1214,6 +1214,11 @@ sources:
   commit: 3999c62f8688b734d0aebe5759554705ed20fd3e
   restorable: upstream
 - slug: berkeley-stat243/fall-2024
+  exclude:
+  - project/gilks.etal.1992.pdf          # Gilks & Wild 1992, JRSS-C (Applied Statistics) 41(2); (c) Royal Statistical Society
+  - units/graphics_files/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/graphics_files/gordonFinch2015.pdf          # Gordon & Finch 2015, JCGS 24(4); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/graphics_files/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: CC BY 4.0
@@ -1228,6 +1233,10 @@ sources:
   commit: 9c62305d05fca31df0d9c6a3b68b350ad8722fee
   restorable: upstream
 - slug: berkeley-stat243/fall-2025
+  exclude:
+  - units/graphics_files/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/graphics_files/gordonFinch2015.pdf          # Gordon & Finch 2015, JCGS 24(4); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/graphics_files/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: CC BY 4.0
@@ -1258,6 +1267,8 @@ sources:
 - slug: berkeley-stat243/stat243-fall-2014
   exclude:
   - project/givens_hoeting_ch3.pdf          # Givens & Hoeting, Computational Statistics ch.3 (Wiley)
+  - units/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: all rights reserved
@@ -1272,6 +1283,10 @@ sources:
   restorable: upstream
   note: 'licence checked — no LICENSE, no license page, no notice in README, syllabus or rendered site'
 - slug: berkeley-stat243/stat243-fall-2015
+  exclude:
+  - project/gilks.etal.1992.pdf          # Gilks & Wild 1992, JRSS-C (Applied Statistics) 41(2); (c) Royal Statistical Society
+  - units/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: all rights reserved
@@ -1288,6 +1303,9 @@ sources:
 - slug: berkeley-stat243/stat243-fall-2017
   exclude:
   - project/givens_hoeting_ch3.pdf          # Givens & Hoeting, Computational Statistics ch.3 (Wiley)
+  - units/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/gordonFinch2015.pdf          # Gordon & Finch 2015, JCGS 24(4); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: all rights reserved
@@ -1302,6 +1320,12 @@ sources:
   restorable: upstream
   note: 'licence checked — no LICENSE, no license page, no notice in README, syllabus or rendered site'
 - slug: berkeley-stat243/stat243-fall-2018
+  exclude:
+  - project/gilks.etal.1992.pdf          # Gilks & Wild 1992, JRSS-C (Applied Statistics) 41(2); (c) Royal Statistical Society
+  - ps/clm.pdf          # Estiri & Krause 2016, Urban Studies; (c) Urban Studies Journal Limited (SAGE)
+  - units/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/gordonFinch2015.pdf          # Gordon & Finch 2015, JCGS 24(4); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: all rights reserved
@@ -1319,6 +1343,10 @@ sources:
   exclude:
   - project/givens_hoeting_ch3.pdf          # Givens & Hoeting, Computational Statistics ch.3 (Wiley)
   - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
+  - ps/clm.pdf          # Estiri & Krause 2016, Urban Studies; (c) Urban Studies Journal Limited (SAGE)
+  - units/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/gordonFinch2015.pdf          # Gordon & Finch 2015, JCGS 24(4); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: all rights reserved
@@ -1335,6 +1363,10 @@ sources:
 - slug: berkeley-stat243/stat243-fall-2020
   exclude:
   - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
+  - ps/clm.pdf          # Estiri & Krause 2016, Urban Studies; (c) Urban Studies Journal Limited (SAGE)
+  - units/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/gordonFinch2015.pdf          # Gordon & Finch 2015, JCGS 24(4); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: all rights reserved
@@ -1352,6 +1384,10 @@ sources:
   exclude:
   - project/givens_hoeting_ch3.pdf          # Givens & Hoeting, Computational Statistics ch.3 (Wiley)
   - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
+  - ps/clm.pdf          # Estiri & Krause 2016, Urban Studies; (c) Urban Studies Journal Limited (SAGE)
+  - units/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/gordonFinch2015.pdf          # Gordon & Finch 2015, JCGS 24(4); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: CC0-1.0
@@ -1368,6 +1404,10 @@ sources:
 - slug: berkeley-stat243/stat243-fall-2022
   exclude:
   - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
+  - project/gilks.etal.1992.pdf          # Gilks & Wild 1992, JRSS-C (Applied Statistics) 41(2); (c) Royal Statistical Society
+  - units/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/gordonFinch2015.pdf          # Gordon & Finch 2015, JCGS 24(4); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: all rights reserved
@@ -1384,6 +1424,9 @@ sources:
 - slug: berkeley-stat243/stat243-fall-2023
   exclude:
   - ps/cao_etal_2015.pdf          # (c) 2014 Royal Statistical Society, JRSS-B 77(4) 755-776
+  - units/gelmanUnwin2013.pdf          # Gelman & Unwin 2013, JCGS 22(1); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/gordonFinch2015.pdf          # Gordon & Finch 2015, JCGS 24(4); (c) ASA/IMS/Interface, Taylor & Francis
+  - units/wainer1984.pdf          # Wainer 1984, The American Statistician 38(2); (c) American Statistical Association
   material: course
   subject: statistical-computing
   licence: unresolved
