@@ -729,6 +729,7 @@ def _published_solution(page: Path) -> str:
 
 def cmd_write(a):
     """Write the books and remove the artefact layer they replace."""
+    import normalise_source as ns
     # Plan-driven, not cache-driven. The cache accumulates every chapter ever generated, including
     # ones whose inputs have since been removed -- dropping 13 duplicate transcript PDFs left their
     # chapters behind, and a cache-driven write put them back into the book.
@@ -823,13 +824,31 @@ def cmd_write(a):
             if solutions.get(ch["number"]):
                 body += (f"\n\nSolutions: [chapter {ch['number']}]"
                          f"(solutions/{name})\n")
+            # A chapter written from a third-party paper the course distributes cites the PAPER, not
+            # the course: the course's licence was never the course's to grant over it. Four
+            # stat243 chapters claimed CC BY 4.0 over journal articles that way.
+            ch_url, ch_licence, banner = url, licence, None
+            paper = ch.get("paper")
+            if paper:
+                ch_url = paper["url"]
+                if ns.may_adapt(paper.get("licence", "")):
+                    ch_licence = paper["licence"]
+                    banner = (f"> **Written from a paper.** Written from {paper['citation']} "
+                              f"([original]({ch_url})), licensed {ch_licence}. This adaptation "
+                              "carries the same licence.")
+                else:
+                    ch_licence = "summary only — the paper is not reproduced"
+                    banner = (f"> **Summary of a paper.** {paper['citation']} "
+                              f"([original]({ch_url})). The paper is © its rights holder and is "
+                              "not reproduced here: this is a short account of it in our own "
+                              f"words, standing in for it in the reading of {title}.")
             # `chapter:` must stay inside the first 400 bytes: is_written() reads only that far.
             front = {"title": f"{ch['number']}. {ch['title']}", "course": title,
-                     "chapter": ch["number"], "source": url, "licence": licence,
+                     "chapter": ch["number"], "source": ch_url, "licence": ch_licence,
                      "written": _written_on(course / name)}
             fm = "---\n" + "\n".join(f"{k}: {json.dumps(v) if isinstance(v, str) else v}"
                                      for k, v in front.items()) + "\n---\n"
-            banner = BOOK_BANNER.format(course=title, url=url, licence=licence)
+            banner = banner or BOOK_BANNER.format(course=title, url=url, licence=licence)
             nav = []
             if i:
                 prev = chapters[i - 1]
