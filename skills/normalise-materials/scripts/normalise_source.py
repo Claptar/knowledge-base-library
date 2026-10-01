@@ -1523,6 +1523,33 @@ def read_title(path):
     return path.stem
 
 
+def read_meta(path):
+    m = FRONTMATTER.match(read_text(path))
+    try:
+        return (yaml.safe_load(m.group(1)) or {}) if m else {}
+    except Exception:
+        return {}
+
+
+def is_written(course: Path) -> bool:
+    """Whether this directory holds a written book.
+
+    True by construction: synthesise_book's `write` emits every chapter with a `chapter:` field in
+    its front matter, and nothing else in the tree carries one."""
+    return course.is_dir() and any(
+        "\nchapter:" in p.read_text(encoding="utf-8", errors="ignore")[:400]
+        for p in course.glob("*.md"))
+
+
+CHAPTER_FILE = re.compile(r"^(\d+)-")
+
+
+def chapter_order(path: Path):
+    """Sort key putting `100-…` after `99-…`, not between `10-` and `11-`."""
+    m = CHAPTER_FILE.match(path.name)
+    return (int(m.group(1)) if m else float("inf"), path.name)
+
+
 def repair_dangling_links(published_root, apply):
     """Strip links whose target was not published, after the gates have decided.
 
@@ -1564,12 +1591,14 @@ def write_nav(reference_dir, apply):
     Built by scanning rather than from this run's output, so the nav is correct whichever subset
     of sources has been converted so far. `mkdocs-literate-nav` reads it.
 
-    **The nav stops at the document, never the section.** Material renders the navigation tree
-    into every page it builds, so nav size multiplies across the site: listing all 9,967 section
-    pages produced 5.8 MB of sidebar on *each* of 11,808 pages — a 68 GB site, against GitHub
-    Pages' 1 GB limit, and a build that never finished. Listing documents instead costs ~2,100
-    entries, and nothing becomes unreachable: a split document's index page lists its sections,
-    and every section carries previous/next/up links and is indexed by search.
+    **A book lists its chapters; a converted document stops at the document.** Material renders
+    the navigation tree into every page it builds, so nav size multiplies across the site. When
+    the library was ~12,000 converted section pages, listing them all produced 5.8 MB of sidebar
+    on each page, a site far over GitHub Pages' 1 GB limit, so the nav stopped at the document.
+    A book is a few dozen chapters a reader moves between, and with `navigation.prune` on a page
+    renders only its own book's chapters: listing all 450 adds ~10 MB to the site and keeps the
+    largest page under 90 KB. Converted split documents still collapse to their index, which
+    lists their sections.
     """
     if not reference_dir.is_dir():
         return 0
@@ -1588,7 +1617,9 @@ def write_nav(reference_dir, apply):
         idx = d / "index.md"
         entries = sorted(p for p in d.iterdir() if p.name != "SUMMARY.md")
         subdirs = [p for p in entries if p.is_dir()]
-        pages = [p for p in entries if p.is_file() and p.suffix == ".md" and p.name != "index.md"]
+        pages = sorted((p for p in entries
+                        if p.is_file() and p.suffix == ".md" and p.name != "index.md"),
+                       key=chapter_order)
         if idx.exists():
             lines.append(f"{pad}- [{read_title(idx)}]({idx.relative_to(reference_dir).as_posix()})")
             count += 1
@@ -1600,7 +1631,7 @@ def write_nav(reference_dir, apply):
         for sub in subdirs:
             if not any(sub.rglob("*.md")):
                 continue
-            if is_split_document(sub):
+            if is_split_document(sub) and not is_written(sub):
                 # The document, not its sections. Its own index page lists those.
                 target = (sub / "index.md").relative_to(reference_dir).as_posix()
                 lines.append(f"{pad}- [{read_title(sub / 'index.md')}]({target})")
@@ -1626,49 +1657,74 @@ def write_nav(reference_dir, apply):
     return count
 
 
-def write_library_index(reference_dir, slugs, apply):
-    """The landing page: one entry per source, not one per document.
+def write_library_index(reference_dir, apply):
+    """The landing page: one entry per course, read from the tree it describes.
 
-    Built from the lockfile's slugs rather than by finding every `index.md` on disk — a split
-    document has an index of its own, and listing those here turned the page into a flat list
-    of four hundred lectures, which is the thing the nav exists to avoid.
+    Not from the lockfile. Its slugs are course YEARS (`berkeley-stat243/fall-2024`), and a book
+    merges the years into one directory, so looking each slug's index up by path missed every
+    merged book: four books and 266 chapters, with a whole discipline, were absent from the page.
+    The shelf is `docs/<discipline>/<provider>/<course>/`: a course with an index is one entry,
+    and a course that is not a book lists the year directories it was converted into.
     """
     if not reference_dir.is_dir():
         return
-    entries = []
-    for entry in sorted(slugs, key=lambda e: (e.get("subject") or "", e["slug"])):
-        idx = output_path(entry, reference_dir.parent) / "index.md"
-        if idx.exists():
-            rel = idx.relative_to(reference_dir).as_posix()
-            entries.append((entry.get("subject") or "unsorted", read_title(idx), rel))
+    books, converted = [], []
+    for discipline in sorted(p for p in reference_dir.iterdir() if p.is_dir()):
+        for provider in sorted(p for p in discipline.iterdir() if p.is_dir()):
+            for course in sorted(p for p in provider.iterdir() if p.is_dir()):
+                units = ([course] if (course / "index.md").exists() else
+                         sorted(d for d in course.iterdir() if (d / "index.md").exists()))
+                for unit in units:
+                    idx = unit / "index.md"
+                    entry = (discipline.name, read_title(idx),
+                             idx.relative_to(reference_dir).as_posix(),
+                             read_meta(idx).get("licence", "unresolved"))
+                    if is_written(unit):
+                        n = sum(1 for p in unit.glob("*.md") if CHAPTER_FILE.match(p.name))
+                        books.append(entry + (n,))
+                    else:
+                        n = sum(1 for p in unit.rglob("*.md") if p.name != "index.md")
+                        converted.append(entry + (n,))
 
+    def listing(rows, unit):
+        out, current = [], None
+        for discipline, title, href, licence, n in rows:
+            if discipline != current:
+                out += ["", f"### {prettify(discipline)}", ""]
+                current = discipline
+            out.append(f"- [{title}]({href}) — {n} {unit}{'s' if n != 1 else ''}, {licence}")
+        return out
+
+    chapters = sum(r[-1] for r in books)
+    pages = sum(r[-1] for r in converted)
     body = [
         "---", "title: Home", "---", "",
         "# Study reference library", "",
-        "Course material, lecture notes, transcripts and papers converted to markdown and split",
-        "by section, so that every part of them can be linked to. The companion to the",
+        "Other people's courses, written up as one book per course from everything the course",
+        "provides. The companion to the",
         "[study knowledge base](https://github.com/Claptar/knowledge-base), which holds the notes",
         "themselves — the split is by authorship, not by subject.",
         "",
-        "> **Converted, not adapted.** The text is its author's, reformatted. Every page cites its",
-        "> source and links to the original, and says which route converted it — a page built from",
-        "> a PDF carries a warning, because prose survives a PDF and mathematics does not. These",
-        "> files are generated and are **never edited by hand**.",
+        f"**{len(books)} course books, {chapters} chapters.** "
+        + (f"{len(converted)} further sources are converted but not yet written as books — "
+           f"{pages} pages. " if converted else "")
+        + "Books and paywalled papers are deliberately absent.",
         "",
-        f"**{len(entries)} source{'s' if len(entries) != 1 else ''} converted**, by discipline. "
-        "Books and paywalled papers are deliberately absent.",
-        "",
-        "## Sources", "",
+        "## Course books", "",
+        "> **Rewritten, not reformatted.** Each book merges a course's slides, recordings, notes",
+        "> and problem sets into chapters, names every course offering it was written from, and",
+        "> carries the licence those offerings permit. The books are generated and are",
+        "> **never edited by hand**.",
     ]
-    if entries:
-        current = None
-        for subject, title, href in entries:
-            if subject != current:
-                body += ["", f"### {prettify(subject)}", ""]
-                current = subject
-            body.append(f"- [{title}]({href})")
-    else:
-        body.append("*(none yet)*")
+    body += listing(books, "chapter") if books else ["", "*(none yet)*"]
+    if converted:
+        body += [
+            "", "## Converted sources", "",
+            "> **Converted, not adapted.** The text is its author's, reformatted and split so that",
+            "> every part has a URL. A page built from a PDF carries a warning, because prose",
+            "> survives a PDF and mathematics does not.",
+        ]
+        body += listing(converted, "page")
     text = "\n".join(body).rstrip() + "\n"
     if apply:
         (reference_dir / "index.md").write_text(text, encoding="utf-8")
@@ -1705,7 +1761,7 @@ def main():
     by_slug = {e["slug"]: e for e in lock.get("sources", [])}
 
     if a.summary_only:
-        write_library_index(published_root, by_slug.values(), a.apply)
+        write_library_index(published_root, a.apply)
         n = write_nav(published_root, a.apply)
         print(f"nav: {n} entries" + ("" if a.apply else "  (dry run)"))
         return 0
@@ -1778,7 +1834,7 @@ def main():
         fixed, on_pages = repair_dangling_links(published_root, True)
         if fixed:
             print(f"\nstripped {fixed} links on {on_pages} pages whose target failed a gate")
-        write_library_index(published_root, by_slug.values(), True)
+        write_library_index(published_root, True)
         n = write_nav(published_root, True)
         print(f"\nwrote {tot['parts']} pages; nav has {n} entries")
     else:

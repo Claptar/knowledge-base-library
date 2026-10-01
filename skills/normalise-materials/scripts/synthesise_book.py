@@ -181,12 +181,10 @@ def chapter_key(rel: str, doc: str = "") -> tuple[str, int]:
 
 
 def is_written(course: Path) -> bool:
-    """Whether this course's book has already been written.
-
-    True by construction: `write` emits every chapter with a `chapter:` field in its front matter,
-    and nothing else in the tree carries one."""
-    return any("\nchapter:" in p.read_text(encoding="utf-8", errors="ignore")[:400]
-               for p in course.glob("*.md"))
+    """Whether this course's book has already been written. One definition, shared with the nav
+    and the landing page, which ask the same question."""
+    import normalise_source as ns
+    return ns.is_written(course)
 
 
 def is_book(chapters: list) -> bool:
@@ -910,8 +908,7 @@ def cmd_write(a):
         fixed, on_pages = ns.repair_dangling_links(DOCS, True)
         if fixed:
             print(f"stripped {fixed} links on {on_pages} pages with no published target")
-        lock = ns.load_lock(LIBRARY / "sources")
-        ns.write_library_index(DOCS, lock.get("sources", []), True)
+        ns.write_library_index(DOCS, True)
         n = ns.write_nav(DOCS, True)
         print(f"nav rebuilt: {n} entries")
     return 0
