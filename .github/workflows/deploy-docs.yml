@@ -29,6 +29,11 @@ jobs:
       - name: Sync dependencies
         run: uv sync --group dev
 
+      # The real quality gate. --strict only checks links; this rejects a page whose maths
+      # swallows the rest of it, a destroyed figure, an uncited page. Exits 1 on any rejection.
+      - name: Validate pages
+        run: uv run python skills/normalise-materials/scripts/validate_pages.py --report
+
       # --strict turns broken internal links and missing anchors into build
       # failures. That is the point: the notes cross-reference heavily.
       - name: Build site
