@@ -2800,8 +2800,8 @@ sources:
   restorable: upstream
   contents:
   - name: _manifest.csv
-    bytes: 9762
-    sha256: aff4b586f1a328541d2a79cd78818d4243b5ee77b5bf97e3bc8e0a0d274500ad
+    bytes: 9039
+    sha256: f53fdfa0d8633aa8e0fc8d37a31e5ee4673f88868f475559738c7487afe323fd
   - name: lectures/01-slides.pdf
     bytes: 5256935
     sha256: 8480d50859f0eb3c451be8bebfade687c29eee1b4b4d3642d7e5764462ac0de0
@@ -2937,202 +2937,202 @@ sources:
   - name: recitations/2014-04-30-slides.pdf
     bytes: 1911210
     sha256: da9b63e171ddcff320167a7690792d0098bf0c9fc301829a18da15015eac4952
-  - name: recordings/14m9mw-qmhg-captions.srt
+  - name: lectures/04-captions.srt
     bytes: 119936
     sha256: 13a01afce073e6108f271aedb920770b0ce4834845c0be949dcf3e3e14b04cd0
-  - name: recordings/14m9mw-qmhg-captions.vtt
+  - name: lectures/04-captions.vtt
     bytes: 113176
     sha256: 3375ce20d67c1315cf50a322a2bbd771d4f113cab080e2f8bc8170f5857e94fe
-  - name: recordings/14m9mw-qmhg-transcript.pdf
+  - name: lectures/04-transcript.pdf
     bytes: 117539
     sha256: f29f5e33f5e1aade9460e717eaf964d0ed1f8b52bf0f551f9ba31288b199e619
-  - name: recordings/1emonm7qau8-captions.srt
+  - name: lectures/09-captions.srt
     bytes: 120979
     sha256: e42ec6d9e199078448a52b29c3bce76bcd7de2bc62f8f2b219aae2d1b0b5adde
-  - name: recordings/1emonm7qau8-captions.vtt
+  - name: lectures/09-captions.vtt
     bytes: 114114
     sha256: 1f957078ef4f2ca729dc72f1b3b0943a39ac24b4419303b5365c394aff333604
-  - name: recordings/1emonm7qau8-transcript.pdf
+  - name: lectures/09-transcript.pdf
     bytes: 119555
     sha256: 7ae353a7d3b7052f8b54fdd7ae1e406f605dc17c4b95cadfbc394881d3f54f5e
-  - name: recordings/6robp57g2zi-captions.srt
+  - name: lectures/12-captions.srt
     bytes: 123772
     sha256: 37a116fa6a44d039b160cc153b5937134e7bf406a6489d3509e7dc3263e47554
-  - name: recordings/6robp57g2zi-captions.vtt
+  - name: lectures/12-captions.vtt
     bytes: 116942
     sha256: b7fddde3c857ecd38048ef5fe256d47a31a4613c241050c0487a8769cc7db622
-  - name: recordings/6robp57g2zi-transcript.pdf
+  - name: lectures/12-transcript.pdf
     bytes: 122402
     sha256: 71828620c07107c89fd8a4474c4fba469812882c252d04cd5e626d74295104ce
-  - name: recordings/6udqou3vmng-captions.srt
+  - name: lectures/02-captions.srt
     bytes: 117394
     sha256: 175767dca7a06ab56f88b4bc47ea6d36bc8e0112fe9b09d71b5f816625ccfa4f
-  - name: recordings/6udqou3vmng-captions.vtt
+  - name: lectures/02-captions.vtt
     bytes: 110544
     sha256: 755bd9d7dab1fa651e069f0c84b31eb9e7393480f8033c07c658a5dd79dc2c49
-  - name: recordings/6udqou3vmng-transcript.pdf
+  - name: lectures/02-transcript.pdf
     bytes: 114747
     sha256: 42a656c0a892241201217baa926d5a169a181bcda467a599d16d2865e703c364
-  - name: recordings/c95294-vvqy-captions.srt
+  - name: lectures/14-captions.srt
     bytes: 129837
     sha256: 88d562defb7d72283bd487f5af3d402e6cf920cfe0d96edf7409a79e70de65ed
-  - name: recordings/c95294-vvqy-captions.vtt
+  - name: lectures/14-captions.vtt
     bytes: 122482
     sha256: 0194d232675e11bb033924450593570ffd16b2eaab7ab037eec77d1d2266d410
-  - name: recordings/c95294-vvqy-transcript.pdf
+  - name: lectures/14-transcript.pdf
     bytes: 122226
     sha256: 17361f8a9196928ac593ac9626d64b0d82657dbe90a2b633899f5e6e5509c290
-  - name: recordings/d5nmra2hkg4-captions.srt
+  - name: lectures/10-captions.srt
     bytes: 112136
     sha256: 0777caf0d35dba2822083c74a3b20e7a71b3d06120d7165c843d883932f9008a
-  - name: recordings/d5nmra2hkg4-captions.vtt
+  - name: lectures/10-captions.vtt
     bytes: 105881
     sha256: 6ca26b8b39bb41187f0394bedc9d255bbd8d6c3dcb8f1497f407229f3fa6170e
-  - name: recordings/d5nmra2hkg4-transcript.pdf
+  - name: lectures/10-transcript.pdf
     bytes: 115176
     sha256: d2b0c7b7fab64facad81db537d65e21b91833588f17c756cfb624bfc9799e270
-  - name: recordings/i59jdq9hk10-captions.srt
+  - name: lectures/17-captions.srt
     bytes: 117764
     sha256: f112bb93d162b2de25b5158670308b6510d4f4ec4423ad27d374ab04c32a2ff4
-  - name: recordings/i59jdq9hk10-captions.vtt
+  - name: lectures/17-captions.vtt
     bytes: 111164
     sha256: febdb5716f2a14b84fb58812ed4646be987b70fa46a2b83f3aadb8e33c72d576
-  - name: recordings/i59jdq9hk10-transcript.pdf
+  - name: lectures/17-transcript.pdf
     bytes: 117126
     sha256: f6585064d17c66cb40e1402f9df76bf7f5209c6b615c072003cd9594bf1d9a74
-  - name: recordings/iklvcufd1ma-captions.srt
+  - name: lectures/18-captions.srt
     bytes: 110897
     sha256: 72bc8a090e6eb98659231696d328f3937b55f4535ceb2c0deb90175890c1ab89
-  - name: recordings/iklvcufd1ma-captions.vtt
+  - name: lectures/18-captions.vtt
     bytes: 104697
     sha256: 4b16cd86b7b20401a0a18933e152036446825622d3f8661f7855f5e46af1e46a
-  - name: recordings/iklvcufd1ma-transcript.pdf
+  - name: lectures/18-transcript.pdf
     bytes: 111424
     sha256: ea456e27421a9762b3596cdb5a0d344cc1f6a34ab8d99c84b46cb32c3057bcb6
-  - name: recordings/j1s9jfzkfqu-captions.srt
+  - name: lectures/13-captions.srt
     bytes: 121649
     sha256: 46bdfe519c4e0ccbdc118403ed2d4e0b3473d177dfe840edc71772dc4453c077
-  - name: recordings/j1s9jfzkfqu-captions.vtt
+  - name: lectures/13-captions.vtt
     bytes: 114819
     sha256: aa1acad1776d8188c2d6d1958c6ab0de3a070ad12d55db057a13c2601637a291
-  - name: recordings/j1s9jfzkfqu-transcript.pdf
+  - name: lectures/13-transcript.pdf
     bytes: 118275
     sha256: 608b99f1158bb27df0aa9e13639e0d29a8c54a0d88df57ff14092ce3fa6e2b7c
-  - name: recordings/kkyrr0cfreg-captions.srt
+  - name: lectures/21-captions.srt
     bytes: 119255
     sha256: 34e88857c16924d28c8f1986aa0b19afdcc4c62b1d506ae2e2b9fb91ce45d404
-  - name: recordings/kkyrr0cfreg-captions.vtt
+  - name: lectures/21-captions.vtt
     bytes: 112690
     sha256: cc94229913d26bf11c408d4e4922d0359abe897ff72f027cd234a8808ae8058b
-  - name: recordings/kkyrr0cfreg-transcript.pdf
+  - name: lectures/21-transcript.pdf
     bytes: 117181
     sha256: 4e83c01dcf71e45e1ccf802629ce25402a4a3eda1ed22e23d8202786c0054fd7
-  - name: recordings/kun6rj21hno-captions.srt
+  - name: lectures/11-captions.srt
     bytes: 119620
     sha256: 3518cd7c657e67582ff9806aa1a63c48dfa5555b7fb57c6f1219833c0240566a
-  - name: recordings/kun6rj21hno-captions.vtt
+  - name: lectures/11-captions.vtt
     bytes: 112850
     sha256: 91b311b819d1479ce329a90d23b92b3320063ae0425973b202c767b8926f5e8e
-  - name: recordings/kun6rj21hno-transcript.pdf
+  - name: lectures/11-transcript.pdf
     bytes: 120507
     sha256: 1080bfc490745b0395d32429bf473cdaf243b9113bc5555684d4bb1f66088e1e
-  - name: recordings/kx-hks-szm-captions.srt
+  - name: lectures/19-captions.srt
     bytes: 106323
     sha256: 0bb43dd848ac60cd7f63e302d9044bfd6c559ea59250688d5469ec94e566aa09
-  - name: recordings/kx-hks-szm-captions.vtt
+  - name: lectures/19-captions.vtt
     bytes: 100383
     sha256: bd6a31604737149df9bcf3ee0436d1298cf122e8416981575c23065abd55838a
-  - name: recordings/kx-hks-szm-transcript.pdf
+  - name: lectures/19-transcript.pdf
     bytes: 106428
     sha256: 5474ab0dabc84fc47fd84994d3d9d4d9dcab12271138a58a3a57d6a4dba17216
-  - name: recordings/kyq2dpw5neu-captions.srt
+  - name: lectures/20-captions.srt
     bytes: 110228
     sha256: cca58f2591fe2dd9e75c336f58643221f65a2ca9263e6b7f9401b029f04a1be7
-  - name: recordings/kyq2dpw5neu-captions.vtt
+  - name: lectures/20-captions.vtt
     bytes: 104248
     sha256: 42f4454bb9a65ed4543167eb624de70f5dfa8a0b9419f91421341866203151ce
-  - name: recordings/kyq2dpw5neu-transcript.pdf
+  - name: lectures/20-transcript.pdf
     bytes: 106575
     sha256: 272721b20999b8a8d2b2277e7ef47c167d4e7ae84e6a57bc6d2a0ca96bd33f70
-  - name: recordings/ljzybexmij0-captions.srt
+  - name: lectures/01-captions.srt
     bytes: 103920
     sha256: b6d07a9d40047cc17f2151b17c06b532e61b85e5c44ae1b954a7743e48b8bc1b
-  - name: recordings/ljzybexmij0-captions.vtt
+  - name: lectures/01-captions.vtt
     bytes: 98220
     sha256: 9627441d6433dee4fb5d30713dacaa330c76087f0e8051b87f601cfc8b90f940
-  - name: recordings/ljzybexmij0-transcript.pdf
+  - name: lectures/01-transcript.pdf
     bytes: 109669
     sha256: e0a2adbbab603808141b12d7f606a8679b7803ef9bcaba33b82ae81131360b1b
-  - name: recordings/mniygszsp30-captions.srt
+  - name: lectures/08-captions.srt
     bytes: 105448
     sha256: 4522356dddc6ed140733c0a9ff93624b4034bd158e15f479572487b49a5e30b5
-  - name: recordings/mniygszsp30-captions.vtt
+  - name: lectures/08-captions.vtt
     bytes: 99548
     sha256: cc3e11ed268fdad0dbfe1aafc92951457f2bd88e0c37effd1e736e1ecdbb8e16
-  - name: recordings/mniygszsp30-transcript.pdf
+  - name: lectures/08-transcript.pdf
     bytes: 102849
     sha256: 30d7ab949ab263c004f7d25c1f4f0a233f834382af9b950bdfcac8fc9ba85117
-  - name: recordings/ob9xgbpvr-s-captions.srt
+  - name: lectures/07-captions.srt
     bytes: 110423
     sha256: d2d41a4e2071f46906a770e1641198f86bcaffd95b41e15931de07beeae66fbf
-  - name: recordings/ob9xgbpvr-s-captions.vtt
+  - name: lectures/07-captions.vtt
     bytes: 104318
     sha256: e7b88aad817c8a46c8fcee34a2b12096735f0064616dbd5f19f29a01982f1474
-  - name: recordings/ob9xgbpvr-s-transcript.pdf
+  - name: lectures/07-transcript.pdf
     bytes: 112347
     sha256: 2e1ad3063afb6a6dff8011aca25c9e7a34b0782951695318fdec3aea61ce48e8
-  - name: recordings/p3orbmon8aw-captions.srt
+  - name: lectures/05-captions.srt
     bytes: 121565
     sha256: efa0fcecd3f3a6278ba302a1977f1c16a558bdfecc6aa6772d0445f2fd770847
-  - name: recordings/p3orbmon8aw-captions.vtt
+  - name: lectures/05-captions.vtt
     bytes: 114515
     sha256: 56a88a26cd3ef109fb1115355c3fb6dbf70d67e92a37f029399655ee2e99572c
-  - name: recordings/p3orbmon8aw-transcript.pdf
+  - name: lectures/05-transcript.pdf
     bytes: 115042
     sha256: 07589b672cdb17b36bdf80461bdb869cc7d07b5b6b6fba247362da217b4b0190
-  - name: recordings/pdyarrnwi7i-captions.srt
+  - name: lectures/03-captions.srt
     bytes: 118207
     sha256: 8c87ee608a50944ac4d15b306504fd26477c6369620ba16e799b03c0f23134ac
-  - name: recordings/pdyarrnwi7i-captions.vtt
+  - name: lectures/03-captions.vtt
     bytes: 111467
     sha256: 5d86e8310021f1980d9fa5463e48d8e3c9c5e2d042e255cd2fe2b22ded080978
-  - name: recordings/pdyarrnwi7i-transcript.pdf
+  - name: lectures/03-transcript.pdf
     bytes: 116563
     sha256: 6198786bc3b8a16c348344a3205d48ce3c44298226de538c1cd494241d859831
-  - name: recordings/rbpckbevk3u-captions.srt
+  - name: lectures/16-captions.srt
     bytes: 146856
     sha256: f905cb348438edca28b485b83bd4814ed4ef55f7a1b0dd8c17c507e138617b3b
-  - name: recordings/rbpckbevk3u-captions.vtt
+  - name: lectures/16-captions.vtt
     bytes: 138491
     sha256: 030ddb5cfa1d93f74472865e2ae3077bdb30b808457527dfe759811c1e05fbc2
-  - name: recordings/rbpckbevk3u-transcript.pdf
+  - name: lectures/16-transcript.pdf
     bytes: 136165
     sha256: 0723429896e053ca3b490c5204984de45f9e10f66d25db4fa46c10cc3cd56b11
-  - name: recordings/so6mk-fcp4e-captions.srt
+  - name: lectures/15-captions.srt
     bytes: 148009
     sha256: 6453086cddf986c13185225d92209784a1dc5ced44eb508d416e191b15b268d4
-  - name: recordings/so6mk-fcp4e-captions.vtt
+  - name: lectures/15-captions.vtt
     bytes: 139559
     sha256: 27abd644ea620def28f2602caccfa93f4facd04b7ccbf4bddeaa6c70f2e64486
-  - name: recordings/so6mk-fcp4e-transcript.pdf
+  - name: lectures/15-transcript.pdf
     bytes: 134332
     sha256: d2cc0fb6a1f5c5aa6c13489f568f9e739903df7c850fbea78026489f133fa21e
-  - name: recordings/ud4-fowexay-captions.srt
+  - name: lectures/22-captions.srt
     bytes: 79153
     sha256: 0d765efea192a57516792ceb0f575405206d084885053618354fee4a81bfaaea
-  - name: recordings/ud4-fowexay-captions.vtt
+  - name: lectures/22-captions.vtt
     bytes: 75098
     sha256: 1dfb019e39ae51b075fd19d7b00cf9eda25e3e672e4c2e2dac69db625734d8af
-  - name: recordings/ud4-fowexay-transcript.pdf
+  - name: lectures/22-transcript.pdf
     bytes: 88926
     sha256: 280049acf628342d0878eae3185613d136d0c760b12be440dbe4f8e3d48b133a
-  - name: recordings/zyw2aede6wu-captions.srt
+  - name: lectures/06-captions.srt
     bytes: 91906
     sha256: d44c0941629e6bff3a8d0d0fbdfcaac9283e39b4e777d8a68c9f2b02f64d5586
-  - name: recordings/zyw2aede6wu-captions.vtt
+  - name: lectures/06-captions.vtt
     bytes: 87106
     sha256: 605e0af8584549844aaf1d31662ded98e4eb5a25957411aca4c1fbd6a3eac6b5
-  - name: recordings/zyw2aede6wu-transcript.pdf
+  - name: lectures/06-transcript.pdf
     bytes: 96076
     sha256: 6e598a01e6337deae49d73b502dcd4dee144db0aa1e3657a1534494d59f30a93
   note: MIT OCW export, unpacked from sources/_archives/
