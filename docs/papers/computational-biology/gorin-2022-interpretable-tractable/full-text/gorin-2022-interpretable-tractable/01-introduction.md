@@ -1,0 +1,32 @@
+---
+title: Introduction
+source: https://doi.org/10.1038/s41467-022-34857-7/
+source_file: sources/papers/gorin-2022-interpretable-tractable/gorin-2022-interpretable-tractable.jats
+licence: CC BY 4.0
+route: pandoc-jats
+fidelity: high
+converted: '2026-10-02'
+---
+
+> **Converted source.** `gorin-2022-interpretable-tractable.jats` from [papers/gorin-2022-interpretable-tractable](https://doi.org/10.1038/s41467-022-34857-7/) — papers · gorin-2022-interpretable-tractable, licensed CC BY 4.0. Converted 2026-10-02 from `.jats`. The same text in markdown, split so that every part has a URL; nothing here is rewritten.
+
+# Introduction
+
+Single-cell RNA counts fluctuate due to a combination of dynamic processes in living cells, such as DNA supercoiling, gene regulation, and RNA processing; however, it is unclear how much we can learn about these processes’ kinetics and relative importance from counts alone. By generating enormous amounts of single-cell data, modern transcriptomics has the potential to shed light on such fundamental aspects of transcription on a genome-wide scale. However, the field’s standard data-driven and phenomenological analyses are descriptive: even though they can summarize data, they do not make specific claims about the mechanisms that generated it. To make mechanistic sense of measurements of gene expression and submolecular features in thousands of single cells at a time^(1–4), we seek a framework for systematically distinguishing different plausible hypotheses about transcription.
+
+In principle, models of transcription that are both interpretable and tractable would allow us to be more hypothesis-driven. Interpretability means fitting model parameters conveys clear biological information about the kinetics of microscopic phenomena. Tractability means a thorough mathematical analysis of model behavior is possible. These properties enable a ‘rational’ design of transcriptomic experiments (Fig. 1a), analogous to ideas about rational drug design^(5–9) and the optimal design of single-cell experiments^(10–13), since one can mathematically determine the kind of experiment that best distinguishes two such models. One can then perform this experiment, use the results to refine or reject those models, and iterate.
+
+![](https://doi.org/10.1038/s41467-022-34857-7/)
+
+Framework for the rational design of transcriptomics experiments.
+**a** Model-based closed loop paradigm. A researcher begins by representing two or more competing hypotheses as interpretable and tractable mathematical models (middle right of circle). Next, they perform a detailed mathematical analysis of each model, computing quantities (e.g., RNA count distributions and moments) that can help distinguish one hypothesis from another. Using the results of that analysis as input, they identify the experiment that best distinguishes the two models. Finally, they perform this experiment on some population of cells, use the resulting data to refine and/or reject models, and repeat the process with an updated ensemble of models. **b** Interpretable and tractable modeling framework for transcription rate variation. We consider stochastic models of transcription involving (i) nascent/unspliced RNA, (ii) mature/spliced RNA, and (iii) a stochastic and time-varying transcription rate *K*(*t*). The transcription rate is assumed to evolve in time according to a simple, one-dimensional SDE that includes a mean-reversion term (which tends to push *K*(*t*) towards its mean value) and a noise term (which causes *K*(*t*) to randomly fluctuate). Here, we have specifically chosen dynamics for which the long-time probability distribution of *K*(*t*) is a gamma distribution (gray curve), because this assumption yields empirically plausible negative binomial-like RNA distributions. However, the framework does not require this in general. **c** Two plausible models studied in this paper. The gamma Ornstein–Uhlenbeck (Γ-OU) model describes DNA mechanics, whereas the Cox–Ingersoll–Ross (CIR) model describes regulation by a high copy number regulator.
+
+The common post-hoc approach of fitting negative binomial-like distributions to RNA count data^(14–18) is mathematically tractable, but not biologically interpretable. On the other hand, detailed mathematical models of transcription^(19–27) are certainly interpretable, but tend not to be tractable: complexity makes a thorough analysis challenging, and identifiability issues mean that it can be difficult or impossible to use the data one has to distinguish competing hypotheses.
+
+In this paper, we propose a class of interpretable and tractable transcription models that is fairly simple, yet flexible enough to account for a range of biological phenomena. It assumes that a stochastic and time-varying transcription rate drives a discrete stochastic RNA transcription and splicing process. This model class incorporates both intrinsic noise (randomness associated with the timing of events like transcription and degradation) and extrinsic noise (due to cell-to-cell differences)^(28–32) in a principled way, with the latter due to transcription rate variation. We focus on two specific examples of models from this class, which assume variation is due to (i) random changes in the mechanical state of DNA, or (ii) random changes in the number of an abundant regulator.
+
+We find that these models, although mathematically similar, yield different predictions; this indicates that the fine details of transcription can, at least some of the time, be inferred from transcription rate variation. This is because the details of how the transcription rate fluctuates (i.e., its dynamics), rather than just the steady-state distribution of those fluctuations, can qualitatively affect model predictions. We also find that a naïve moment-based approach to distinguishing between them fails, and that comparing whole joint distributions far outperforms other approaches. Finally, as a proof of principle, we fit these models to single-cell transcriptomic data from mouse glutamatergic neurons, and find in many cases that (i) the two models can be distinguished, and that (ii) they greatly outperform standard negative binomial-like fits, even when one penalizes model complexity using a principled Bayesian model selection procedure. While we will not actually implement the entire closed loop paradigm depicted in Fig. 1a, our work constructs one possible mathematical and computational foundation for it.
+
+---
+
+[Up: contents](index.md) · [Results →](02-results.md)

@@ -1,0 +1,35 @@
+---
+title: "Fisher & Kennedy 2019 — Visually Communicating and Teaching Intuition for Influence Functions"
+paper: "summary"
+source: "https://arxiv.org/abs/1810.03260"
+licence: "arXiv non-exclusive distribution licence — not reproduced"
+written: "2026-10-02"
+---
+
+> **Summary of a paper.** Fisher, A., & Kennedy, E. H. (2019). Visually Communicating and Teaching Intuition for Influence Functions. arXiv:1810.03260v3 [stat.ME]. ([original](https://arxiv.org/abs/1810.03260)). Rights: arXiv non-exclusive distribution licence — not reproduced. This is a short account of it in our own words; the work itself is not reproduced here.
+
+# Visually Communicating and Teaching Intuition for Influence Functions
+
+## What this covers
+
+A methods/pedagogical paper in statistics on why "influence function" (IF) based estimators often beat the naive "plug-in" approach when estimating a single numerical summary of an unknown distribution, and on how to build visual intuition for that fact.
+
+## The question
+
+Estimators built from influence functions are widely used in causal inference, missing-data problems and semiparametric regression, and are central to combining machine learning with valid statistical inference. Yet the theory is usually explained only through algebraic properties visible in an estimator's formula — most commonly the "doubly robust" property, that the estimate stays consistent if either of two nuisance models is correctly specified. That property is checkable from a formula but does not explain the deeper, more important benefit: IF-based estimators of a target quantity can converge at the fast, parametric $\sqrt{n}$ rate even when built on flexible nonparametric nuisance estimates that themselves converge much more slowly. Because this reasoning is rarely made intuitive, researchers who could benefit from IF-based methods are kept at arm's length from them. The paper's aim is to give readers with only a multivariate calculus background a visual account of when and why these estimators outperform plug-in estimators.
+
+## The approach
+
+The setup is a target quantity $T(P)$ — a functional of an unknown distribution $P$, such as a mean, covariance, or integrated squared density — estimated either by "plugging in" a nonparametric or smoothed estimate $\tilde P$ directly into $T$, or by correcting that plug-in estimate using an influence function. The authors build a one-dimensional path of distributions connecting the fitted estimate $\tilde P$ to the (unknown) truth $P$, indexed by a mixing weight $\epsilon \in [0,1]$, and plot the target value $T(P_\epsilon)$ along this path. The truth sits at one end, unobservable; the plug-in estimate sits at the other, observable end. The influence function estimates the slope of this curve at the observable end, enabling a linear extrapolation back toward the truth — a "1-step" correction the authors identify with one step of Newton–Raphson applied to a root-finding problem. They illustrate this with a running example, the integrated squared density functional, giving its influence function in closed form, then show the analogous picture for several candidate nuisance estimates at once, and for a 3-category discrete variable, where the whole distribution space is literally two-dimensional and can be drawn directly rather than merely implied by a path through it. A secondary theme is that the correction's quality depends jointly on how far the fitted estimate sits from the truth, and on how "smooth" (close to linear) the target functional is along the connecting path — formalized through a condition on higher derivatives of $T$ with respect to a distance-rescaled path parameter.
+
+## What it found
+
+The central formal result (Remark 1) compares error rates. If the nuisance estimate $\tilde P$ is fixed and the target functional is suitably smooth, the plug-in estimator's bias is of order $\|P-\tilde P\|_2$ — linear in the distributional error — while the 1-step, IF-corrected estimator's bias is of order $\|P-\tilde P\|_2^2$, quadratic in that error. Since the nuisance error typically shrinks with sample size, squaring it gives a much faster-vanishing bias — the formal content behind the claim that influence functions let a nonparametric nuisance estimator "inherit" a parametric rate. For the worked example of integrated squared density, the bias term is shown to equal exactly the squared $L_2$ distance between fitted and true densities, making the quadratic order concrete rather than only asymptotic. They also note a matching efficiency benchmark: no estimator of $T(P)$, under no parametric assumptions, can have mean-squared error uniformly below $n^{-1}\mathrm{Var}(IF(Z,P))$, so when the bias term is negligible, the 1-step estimator is approximately both unbiased and efficient. Overall 1-step performance is governed by whichever is slower of two rates: the $\sqrt{n}$ rate of the sample-average correction term, and the rate at which the quadratic bias term shrinks; if the bias shrinks more slowly than $n^{-1/2}$, standard normal-approximation inference is no longer asymptotically valid.
+
+## Limits and context
+
+The authors are explicit this is expository rather than new theory: the results visualized here (the bias-rate comparison, the minimax bound, the von Mises/distributional Taylor expansion) are drawn from existing semiparametric and nonparametric estimation literature. They flag several open points. Formal study of the residual bias term via Taylor's theorem requires differentiability conditions on the target functional that are not always necessary and can be bypassed case by case. Higher-order influence-function corrections, which could in principle reduce bias further, do not exist in closed form for most functionals of practical interest — including the average treatment effect — and the authors describe this as an area with "many open problems." Confidence intervals accounting precisely for the bias term would need nuisance-error bounds rarely available in practice, so the common shortcut of assuming the bias negligible (e.g. via sample splitting) needs checking rather than assuming. The discussion also distinguishes this efficiency-focused framework from two related literatures: classical robust statistics, where influence functions were originally proposed to describe an estimator's sensitivity to outliers, and recent machine-learning uses of influence functions for interpreting black-box predictions and approximating resampling-based variance estimates.
+
+## Citation
+
+Fisher, A., & Kennedy, E. H. (2019). *Visually Communicating and Teaching Intuition for Influence Functions*. arXiv:1810.03260v3 [stat.ME]. Available at https://arxiv.org/abs/1810.03260.

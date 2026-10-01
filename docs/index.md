@@ -45,6 +45,45 @@ themselves — the split is by authorship, not by subject.
 - [Berkeley Stat 156](statistics/berkeley/stat156/index.md) — 9 chapters, CC BY-NC 4.0
 - [Berkeley Stat 210A](statistics/berkeley/stat210a/index.md) — 83 chapters, CC BY 4.0
 
+## Papers
+
+> **23 papers and theses**, each summarised in our own words. The full text is here too for the 6 whose licence allows it; the rest are summaries only and link to the original.
+
+### Computational biology
+
+- [Carilli 2026 — Genetic Interrogation of Expression Regulation](papers/computational-biology/carilli-2026-expression-regulation/index.md) — summary
+- [Fang 2025 — A biophysical approach to normalization and trajectory inference in single-cell RNA sequencing data analysis](papers/computational-biology/fang-2025-biophysical-normalisation/index.md) — summary
+- [Felce 2026 — Biophysical Modeling for Gene Expression and Evolution](papers/computational-biology/felce-2026-biophysical-evolution/index.md) — summary
+- [Gálvez Merchán 2023 — Studies of mRNA expression and degradation](papers/computational-biology/galvez-merchan-2023-mrna-degradation/index.md) — summary
+- [Gorin et al. 2022 — Interpretable and tractable models of transcriptional noise for the rational design of single-molecule quantification experiments](papers/computational-biology/gorin-2022-interpretable-tractable/index.md) — summary and full text
+- [Gorin, Yoshida & Pachter 2022 — Transient and delay chemical master equations](papers/computational-biology/gorin-2022-transient-delay-cme/index.md) — summary and full text
+- [Gorin 2023 — Stochastic foundations for single-cell RNA sequencing](papers/computational-biology/gorin-2023-scrnaseq-foundations/index.md) — summary
+- [Gorin & Pachter 2020 — Intrinsic and extrinsic noise are distinguishable in a synthesis – export – degradation model of mRNA production](papers/computational-biology/gorin-pachter-2020-intrinsic-extrinsic/index.md) — summary and full text
+- [Gorin & Pachter 2021 — Analytical solutions of the chemical master equation with bursty production and isomerization reactions](papers/computational-biology/gorin-pachter-2022-bursty-splicing/index.md) — summary and full text
+- [Grima, Schmidt & Newman 2012 — Steady-state fluctuations of a genetic feedback loop: an exact solution](papers/computational-biology/grima-2012-feedback-loop/index.md) — summary
+- [Luebbert 2024 — Complexity of Transcriptomic Data Analysis and Implications for Biological Discovery](papers/computational-biology/luebbert-2024-transcriptomic-complexity/index.md) — summary
+- [Tang et al. 2020 — bayNorm: Bayesian gene expression recovery, imputation and normalization for single-cell RNA-sequencing data](papers/computational-biology/tang-2020-baynorm/index.md) — summary and full text
+- [Tang et al. 2023 — Modelling capture efficiency of single-cell RNA-sequencing data improves inference of transcriptome-wide burst kinetics](papers/computational-biology/tang-2023-capture-efficiency/index.md) — summary and full text
+- [Vastola & Holmes 2020 — The chemical Langevin equation: a path integral view of Gillespie's derivation](papers/computational-biology/vastola-holmes-2020-path-integral-cle/index.md) — summary
+
+### Omics statistics
+
+- [Ahlmann-Eltze & Huber 2021 — Transformation and Preprocessing of Single-Cell RNA-Seq Data](papers/omics-statistics/ahlmann-eltze-huber-2021-transformations/index.md) — summary
+- [Kouiroukidis & Evangelidis 2011 — The Effects of Dimensionality Curse in High Dimensional kNN Search](papers/omics-statistics/kouiroukidis-evangelidis-2011-dimensionality-knn/index.md) — summary
+- [Marioni et al. 2008 — RNA-seq: An assessment of technical reproducibility and comparison with gene expression arrays](papers/omics-statistics/marioni-2008-rnaseq-reproducibility/index.md) — summary
+
+### Statistical computing
+
+- [Gordon & Finch 2015 — Statistician Heal Thyself: Have We Lost the Plot?](papers/statistical-computing/gordon-finch-2015-statistical-graphics/index.md) — summary
+
+### Statistics
+
+- [Cao, Zeng & Fine 2015 — Regression analysis of sparse asynchronous longitudinal data](papers/statistics/cao-zeng-fine-2015-asynchronous-longitudinal/index.md) — summary
+- [Efron 2008 — Microarrays, Empirical Bayes and the Two-Groups Model](papers/statistics/efron-2008-two-groups/index.md) — summary
+- [Fisher & Kennedy 2019 — Visually Communicating and Teaching Intuition for Influence Functions](papers/statistics/fisher-kennedy-influence-functions/index.md) — summary
+- [Hines et al. 2021 — Demystifying statistical learning based on efficient influence functions](papers/statistics/hines-2021-demystifying-eif/index.md) — summary
+- [Lo, Mendell & Rubin 2001 — Testing the number of components in a normal mixture](papers/statistics/lo-mendell-rubin-2001-mixture-components/index.md) — summary
+
 ## Converted sources
 
 > **Converted, not adapted.** The text is its author's, reformatted and split so that

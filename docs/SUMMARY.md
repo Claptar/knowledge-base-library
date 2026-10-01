@@ -194,6 +194,46 @@
             - [41. Stage-wise Omnibus and Post-hoc Testing](omics-statistics/statomics/sga21/41-stage-wise-omnibus-and-post-hoc-testing.md)
             - [42. Testing for Differential Protein Abundance](omics-statistics/statomics/sga21/42-testing-for-differential-protein-abundance.md)
             - [43. Mass Spectrometry & Bioinformatics for Proteomics](omics-statistics/statomics/sga21/43-mass-spectrometry-bioinformatics-for-proteomics.md)
+- Papers:
+    - Computational biology:
+        - [Carilli 2026 — Genetic Interrogation of Expression Regulation](papers/computational-biology/carilli-2026-expression-regulation/index.md)
+        - [Fang 2025 — A biophysical approach to normalization and trajectory inference in single-cell RNA sequencing data analysis](papers/computational-biology/fang-2025-biophysical-normalisation/index.md)
+        - [Felce 2026 — Biophysical Modeling for Gene Expression and Evolution](papers/computational-biology/felce-2026-biophysical-evolution/index.md)
+        - [Gálvez Merchán 2023 — Studies of mRNA expression and degradation](papers/computational-biology/galvez-merchan-2023-mrna-degradation/index.md)
+        - [Gorin et al. 2022 — Interpretable and tractable models of transcriptional noise for the rational design of single-molecule quantification experiments](papers/computational-biology/gorin-2022-interpretable-tractable/index.md)
+            - [Gorin, Vastola, Fang & Pachter 2022, Interpretable and tractable models of transcriptional noise for the rational design of single-molecule quantification experiments](papers/computational-biology/gorin-2022-interpretable-tractable/full-text/index.md)
+                - [Gorin 2022 interpretable tractable](papers/computational-biology/gorin-2022-interpretable-tractable/full-text/gorin-2022-interpretable-tractable/index.md)
+        - [Gorin, Yoshida & Pachter 2022 — Transient and delay chemical master equations](papers/computational-biology/gorin-2022-transient-delay-cme/index.md)
+            - [Gorin, Yoshida & Pachter 2022, Assessing Markovian and delay models for single-nucleus RNA sequencing](papers/computational-biology/gorin-2022-transient-delay-cme/full-text/index.md)
+                - [Transient and delay chemical master equations](papers/computational-biology/gorin-2022-transient-delay-cme/full-text/gorin-2022-transient-delay-cme/index.md)
+        - [Gorin 2023 — Stochastic foundations for single-cell RNA sequencing](papers/computational-biology/gorin-2023-scrnaseq-foundations/index.md)
+        - [Gorin & Pachter 2020 — Intrinsic and extrinsic noise are distinguishable in a synthesis – export – degradation model of mRNA production](papers/computational-biology/gorin-pachter-2020-intrinsic-extrinsic/index.md)
+            - [Gorin & Pachter 2020, Intrinsic and extrinsic noise are distinguishable in a synthesis-export-degradation model of mRNA production](papers/computational-biology/gorin-pachter-2020-intrinsic-extrinsic/full-text/index.md)
+                - [1 Background](papers/computational-biology/gorin-pachter-2020-intrinsic-extrinsic/full-text/gorin-pachter-2020-intrinsic-extrinsic/index.md)
+        - [Gorin & Pachter 2021 — Analytical solutions of the chemical master equation with bursty production and isomerization reactions](papers/computational-biology/gorin-pachter-2022-bursty-splicing/index.md)
+            - [Gorin & Pachter 2021, Analytical solutions of the chemical master equation with bursty production and isomerization reactions](papers/computational-biology/gorin-pachter-2022-bursty-splicing/full-text/index.md)
+                - [Gorin pachter 2022 bursty splicing](papers/computational-biology/gorin-pachter-2022-bursty-splicing/full-text/gorin-pachter-2022-bursty-splicing/index.md)
+        - [Grima, Schmidt & Newman 2012 — Steady-state fluctuations of a genetic feedback loop: an exact solution](papers/computational-biology/grima-2012-feedback-loop/index.md)
+        - [Luebbert 2024 — Complexity of Transcriptomic Data Analysis and Implications for Biological Discovery](papers/computational-biology/luebbert-2024-transcriptomic-complexity/index.md)
+        - [Tang et al. 2020 — bayNorm: Bayesian gene expression recovery, imputation and normalization for single-cell RNA-sequencing data](papers/computational-biology/tang-2020-baynorm/index.md)
+            - [Tang, Wiuf, Sutherland & Hayes 2020, bayNorm: Bayesian gene expression recovery, imputation and normalization for single-cell RNA-sequencing data](papers/computational-biology/tang-2020-baynorm/full-text/index.md)
+                - [Tang 2020 baynorm](papers/computational-biology/tang-2020-baynorm/full-text/tang-2020-baynorm/index.md)
+        - [Tang et al. 2023 — Modelling capture efficiency of single-cell RNA-sequencing data improves inference of transcriptome-wide burst kinetics](papers/computational-biology/tang-2023-capture-efficiency/index.md)
+            - [Tang et al. 2023, Modelling capture efficiency of single-cell RNA-sequencing data improves inference of transcriptome-wide burst kinetics](papers/computational-biology/tang-2023-capture-efficiency/full-text/index.md)
+                - [Tang 2023 capture efficiency](papers/computational-biology/tang-2023-capture-efficiency/full-text/tang-2023-capture-efficiency/index.md)
+        - [Vastola & Holmes 2020 — The chemical Langevin equation: a path integral view of Gillespie's derivation](papers/computational-biology/vastola-holmes-2020-path-integral-cle/index.md)
+    - Omics statistics:
+        - [Ahlmann-Eltze & Huber 2021 — Transformation and Preprocessing of Single-Cell RNA-Seq Data](papers/omics-statistics/ahlmann-eltze-huber-2021-transformations/index.md)
+        - [Kouiroukidis & Evangelidis 2011 — The Effects of Dimensionality Curse in High Dimensional kNN Search](papers/omics-statistics/kouiroukidis-evangelidis-2011-dimensionality-knn/index.md)
+        - [Marioni et al. 2008 — RNA-seq: An assessment of technical reproducibility and comparison with gene expression arrays](papers/omics-statistics/marioni-2008-rnaseq-reproducibility/index.md)
+    - Statistical computing:
+        - [Gordon & Finch 2015 — Statistician Heal Thyself: Have We Lost the Plot?](papers/statistical-computing/gordon-finch-2015-statistical-graphics/index.md)
+    - Statistics:
+        - [Cao, Zeng & Fine 2015 — Regression analysis of sparse asynchronous longitudinal data](papers/statistics/cao-zeng-fine-2015-asynchronous-longitudinal/index.md)
+        - [Efron 2008 — Microarrays, Empirical Bayes and the Two-Groups Model](papers/statistics/efron-2008-two-groups/index.md)
+        - [Fisher & Kennedy 2019 — Visually Communicating and Teaching Intuition for Influence Functions](papers/statistics/fisher-kennedy-influence-functions/index.md)
+        - [Hines et al. 2021 — Demystifying statistical learning based on efficient influence functions](papers/statistics/hines-2021-demystifying-eif/index.md)
+        - [Lo, Mendell & Rubin 2001 — Testing the number of components in a normal mixture](papers/statistics/lo-mendell-rubin-2001-mixture-components/index.md)
 - Probability:
     - Berkeley:
         - Stat201a:
