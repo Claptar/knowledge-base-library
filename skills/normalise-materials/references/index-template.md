@@ -1,14 +1,16 @@
 # The shape of a source index
 
-A converted source is a *book*, and its `index.md` is the front matter: what this is, who wrote it,
-under what licence, what is in it, and — the part that is usually missing — **what is not in it**.
+This file covers the index of a **converted source that is not yet a book**, and the library
+landing page. A written book's `index.md` is specified in `book-template.md`. A converted source's
+`index.md` is its front matter: what this is, who wrote it, under what licence, what is in it, and
+— the part that is usually missing — **what is not in it**.
 
 Three levels of index exist, and only the first is interesting:
 
 | page | is |
 | --- | --- |
 | `docs/<discipline>/<provider>/<source>/index.md` | the contents page for one source. The page a topic file links to |
-| `docs/<discipline>/index.md` | the sources in one discipline, one line each |
+| `docs/<discipline>/index.md` | the sources in one discipline, one line each — not generated; the landing page's discipline sections do this job |
 | `docs/index.md` | the library landing page |
 
 **Every source directory has one.** Fourteen did not, which made them dead URLs on the site.
@@ -82,9 +84,12 @@ nobody reads it — keep it short and do not editorialise.
 
 ## The library landing page
 
-Generated from the lockfile. It states the total page count, the number of sources, and the split by
-discipline, and it says plainly what this repository is: *someone else's material, converted*. It
-links to the knowledge base for the part that is his.
+Generated from the **tree**, never the lockfile: lockfile slugs are course years, and a book merges
+the years into one directory, so looking slugs up by path left every merged book off the page.
+It has two sections — **Course books** (chapter count and licence for each) and **Converted
+sources** (page count and licence) — each with a banner saying truthfully what its entries are,
+because "converted, not adapted" is false of a book. It states the totals, and links to the
+knowledge base for the part that is his.
 
 **Count things once.** The landing page said "61 sources converted" while the lockfile held 69
 slugs, `sources/` held 41 directories and `docs/` held 33. Four numbers for one thing, none of them

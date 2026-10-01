@@ -1,6 +1,9 @@
 # The shape of a converted page
 
-**This file is the single authority on what a converted page looks like.** `SKILL.md` points here
+**This file is the single authority on what a converted page looks like** — the intermediate a book
+is written from, and what still ships for a course not yet written as one. A book's chapters and
+index are specified in `book-template.md`; this file governs their markdown, not their structure.
+`SKILL.md` points here
 rather than restating it, and `scripts/normalise_source.py` implements it. When the three disagree,
 this file wins and the other two are wrong.
 
@@ -16,7 +19,7 @@ does not rewrite.**
 
 ## The skeleton
 
-Every published page, without exception:
+Every converted page, without exception:
 
 ```markdown
 ---
