@@ -143,8 +143,9 @@ checks links, not content.
 - **Currency is not mathematics.** `$50 million` in a problem set opened a maths span that never
   closed and swallowed the rest of the page. Unmatched dollars are escaped structurally, by
   locating the valid spans first.
-- **`normalise_names.py` is idempotent**, so `-transcript-transcript` stops leaking into published
-  URLs.
+- **`normalise_names.py` was made idempotent for the `-transcript-transcript` case**, so that
+  suffix stops leaking into published URLs. It is still not idempotent in general: see Known
+  issues.
 
 ### The PDF route is now a model
 
@@ -209,6 +210,23 @@ committed cache so regeneration does not re-roll the model.
 
 ### Known issues
 
+- **Found by the 2026-10-02 audits, unfixed. Do not run these commands until they are:**
+  - `lock_sources.py --apply`: `detect_licence()` drops `ND` (`CC-BY-NC-ND-4.0` is detected as
+    `CC BY-NC 4.0`, which `may_adapt()` allows) and rewrites versions to 4.0. `merge()` lets a
+    detected licence overwrite a hand-resolved one and drops entries the scan does not find.
+  - `normalise_source.py <slug> --clean --apply` deletes every child of `docs/` except
+    `javascripts/`, whatever slug is given. `<slug> --apply` without `--clean` deletes the written
+    book for single-offering courses.
+  - `synthesise_book.py submit` lacks the written-book and `papers/` guards that `tasks` has.
+  - Batch collect (`llm_batch.py`) keeps only the first response part, ignores `finish_reason` and
+    missing page slices, and writes `recall: 1.0` without measuring it. 139 cached PDFs are
+    truncated.
+  - `llm_batch.py` ignores `exclude:`, so `plan`/`submit` would re-buy the eight withheld
+    third-party files and write them back into the tracked cache.
+- **The tracked cache held text the licence gate denies.** On 2026-10-02, 374 such records were
+  moved to `conversion-cache/withheld/` (gitignored, backed up privately). Git history still
+  contains them. The 46 published Stat 243 chapters, from a course mixing allowed and denied
+  offerings, still need a check that every input came from an allowed offering.
 - **`normalise_names.py` is not idempotent.** A second `--apply` re-suffixes already-normalised
   files (`final-f09-exam.pdf` → `final-f09-exam-exam.pdf`) and rewrites `_manifest.csv` with the
   mangled names, destroying the mapping back to publisher filenames. The guard in `main()` compares
