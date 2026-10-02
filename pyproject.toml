@@ -38,4 +38,4 @@ convert = [
 
 # Notebooks are read directly from the .ipynb JSON rather than via nbconvert, which writes
 # image outputs as links to files the converter does not emit — and a broken link fails the
-# strict site build. See convert_notebook() in the knowledge base's normalise_source.py.
+# strict site build. See convert_notebook() in skills/normalise-materials/scripts/normalise_source.py.

@@ -60,8 +60,8 @@ extra_javascript:
 
 plugins:
   - search
-  # The entire nav is generated into docs/SUMMARY.md by the knowledge base's
-  # normalise_source.py. There is no hand-written `nav:` here and there should not be —
+  # The entire nav is generated into docs/SUMMARY.md by this repo's
+  # skills/normalise-materials/scripts/normalise_source.py. There is no hand-written `nav:` here and there should not be —
   # several thousand entries do not belong in a config file.
   - literate-nav:
       nav_file: SUMMARY.md

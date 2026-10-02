@@ -7,5 +7,11 @@ every agent working in this repo. Do not copy its content here — edit `AGENTS.
 
 Claude-specific only:
 
-- **The skills are not in this repository.** They live in the knowledge base, next door, and are
-  installed from there as a plugin. This repo is their output.
+- **This repository holds two skills, `collect-materials` and `normalise-materials`,** under
+  `skills/`, packaged as the `study-library` plugin (`.claude-plugin/plugin.json`). The three
+  teaching skills live in the knowledge base next door, as the `study-kb` plugin.
+- **The three agents in `.claude/agents/`** (`course-chapter-writer`, `paper-summary-writer`,
+  `pdf-to-markdown`) are project agents. Run them from this checkout. They are not plugin
+  components.
+- An installed plugin does not load this file or `AGENTS.md`. A rule a skill depends on must be
+  written in the skill.

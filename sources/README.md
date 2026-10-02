@@ -3,30 +3,27 @@
 Working copies of downloaded source material — OCW notes, lecture PDFs, slides, paper preprints,
 scanned chapters.
 
-**Nothing in here is committed.** `.gitignore` excludes everything except this file. The directory
-exists so that a source sits at a stable path while it is being adapted, not so that it is stored.
+**Nothing in here is committed** except this file and `sources.lock.yml`, which `.gitignore`
+lets through. The directory exists so that a source sits at a stable path while it is converted,
+not so that it is stored.
 
 ## Why it is not committed
 
-- **Licence.** This repo is published as a site. Most course notes, papers and book chapters may
-  not be redistributed, and the ones that may (OCW is CC BY-NC-SA) still carry conditions that a
-  notes repo has no business taking on. Linking to a source carries no such conditions.
-- **It is the same rule as everywhere else here.** A knowledge base that vendors its sources starts
-  drifting from them the day it copies them, and the copy is the thing that goes stale. The repo
-  keeps the *verdict* and the *adaptation*; the source stays where it is published.
-- **Git is bad at binaries.** A PDF committed once is in the history forever, and the site build
-  carries it.
+- **Licence.** This repository is public. Most course notes, papers and book chapters may not be
+  redistributed at all. What *is* published here is only what the licence gate in
+  `skills/normalise-materials/scripts/normalise_source.py` (`may_adapt()`) admits, as converted
+  pages and books with attribution, never the raw files.
+- **Git is bad at binaries.** A PDF committed once is in the history forever.
+- **The bytes are not the durable part.** The lockfile records where each source came from and how
+  to get it back, so the copy here is a cache.
 
 ## What is committed instead
 
 | Thing | Where | Why it is the durable part |
 | --- | --- | --- |
-| The source's URL, and the verdict on it | [`../docs/resources/`](../docs/resources/) | the judgement is expensive; the bytes are not |
-| The rewritten version | [`../docs/adapted/`](../docs/adapted/) | his own document, with motivation supplied and proofs converted |
-| What he actually got from it | [`../docs/topics/`](../docs/topics/) | the trajectory, which exists nowhere else |
-
-An adapted file names its source, the section, and the date accessed, so the original is one click
-away and the adaptation can be checked against it.
+| What `sources/` should contain, and how to restore it | `sources.lock.yml` | the bytes can be refetched; knowing which bytes cannot |
+| The converted and written output | `../docs/` and `../conversion-cache/` | regenerating it costs model calls |
+| The verdict on a source, and his adaptation of it | the **knowledge base** repository: `docs/resources/`, `docs/adapted/` | the judgement and the rewrite are his, not the library's |
 
 ## `_archives/`
 

@@ -211,9 +211,9 @@ someone else's material and mostly all-rights-reserved. What is committed is the
 lockfile that says how to get them back, and the conversion.
 
 ```bash
-uv run python <kb>/skills/collect-materials/scripts/restore_sources.py --apply   # rebuild
-uv run python <kb>/skills/collect-materials/scripts/restore_sources.py --check   # verify
-uv run python <kb>/skills/collect-materials/scripts/lock_sources.py --apply      # re-record
+uv run python skills/collect-materials/scripts/restore_sources.py --apply   # rebuild
+uv run python skills/collect-materials/scripts/restore_sources.py --check   # verify
+uv run python skills/collect-materials/scripts/lock_sources.py --apply      # re-record
 ```
 
 `lock_sources.py` preserves hand-written fields across a rescan — `material`, `open_access`,
@@ -245,8 +245,10 @@ uv run mkdocs build --strict   # what CI runs
 
 ## Git
 
-One long-lived branch, `main`, which is also the deploy branch. This repository holds generated
-output: there is nothing to review on its own, and no releases to cut — the versioned artefact is
-the skills, and they live in the knowledge base.
+One long-lived branch, `main`, which is also the deploy branch. The repository holds two kinds of
+thing, and they are reviewed differently. **Generated output** (`docs/`, `conversion-cache/`) has
+nothing to review on its own. **Authored tooling** (`skills/`, its scripts and references, and
+`.claude/agents/`) is the versioned artefact of the `study-library` plugin. It gets ordinary
+review, a `CHANGELOG.md` entry, and tests as they are written.
 
 Commit per conversion run, with a message naming the source converted — not "update".
