@@ -1,8 +1,0 @@
-{
- "key": "a7349c8b2a12bb2dde7c81018cb1c781",
- "course": "omics-statistics/statomics/sga2020-ghpages",
- "number": 7,
- "title": "Statistical Software Setup",
- "solutions": [],
- "markdown": "## What this covers\n\nThis chapter details the software prerequisites and setup procedures required for running the computational tutorials and Shiny applications used throughout the course. It covers the hardware specifications, a local R and RStudio installation workflow, and an alternative browser-based Docker environment.\n\n## Hardware and System Requirements\n\nTo follow the tutorial sessions and execute the scripts locally, students must have a personal laptop meeting the following baseline specifications:\n\n- **Operating System Privileges:** Administrative rights to install binary software and R libraries.\n- **Memory (RAM):** More than 4 GB of RAM.\n- **Storage:** More than 2 GB of free disk space"
-}

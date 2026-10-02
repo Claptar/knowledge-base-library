@@ -22,3 +22,7 @@ _site/
 # Regenerable from sources/ at zero cost, and 335MB of the 352MB cache. The chapters and
 # conversions beside them ARE paid artefacts and are committed.
 conversion-cache/slices/
+
+# Cache records for sources the licence gate denies (and for `exclude:`d third-party files).
+# Kept locally and backed up privately; never published. Withheld 2026-10-02 after the audits.
+conversion-cache/withheld/

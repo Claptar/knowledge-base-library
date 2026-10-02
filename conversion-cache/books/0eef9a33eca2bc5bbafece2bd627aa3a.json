@@ -1,8 +1,0 @@
-{
- "key": "0eef9a33eca2bc5bbafece2bd627aa3a",
- "course": "omics-statistics/statomics/statistiekcursusnotas-ghpages",
- "number": 10,
- "title": "Foreword and Acknowledgments",
- "solutions": [],
- "markdown": "## What this covers\n\nThis short introductory note establishes the context and origins of the course materials. It acknowledges the foundational contributions of colleagues whose earlier courses and discussions shaped the curriculum, and identifies the software environment used to compile the text.\n\n## Context and Acknowledgments\n\nThe development and revision of these statistics lecture notes build directly upon material and pedagogical insights shared by colleagues across several institutions:\n\n* Prof. Stijn Vansteelandt, who previously taught this course module.\n* Prof. Olivier Thas, drawing from the course *Statistische Dataverwerking* in the Bachelor of Science in Bioscience Engineering at Ghent University (UGent).\n* Prof. Geert Verbeke, drawing from the course *Beginselen van biostatistiek* in the Bachelor of Biomedical Sciences at KU Leuven.\n\nTheir contributions and discussions regarding statistics education provided the framework for the current material.\n\n## Technical Framework\n\nThe entire course text was authored and produced within the open-source statistical computing environment R, utilizing Yihui Xie's `bookdown` package.\n\n## Sources\n\n* `Cursus Statistiek 2019-2020` notes (Lieven Clement, 2019-09-17), \"Woord vooraf\"."
-}
