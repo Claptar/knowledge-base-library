@@ -52,6 +52,7 @@ Existing recipes:
 - `references/mit-ocw.md` — OCW course exports
 - `references/berkeley.md` — Berkeley department sites, vanity domains, cross-listings
 - `references/github-courses.md` — course material held in GitHub orgs and repos
+- `references/caltech-thesis.md` — CaltechTHESIS records, document slots, and rate limiting
 
 ## Step 1 — identify the provider, and read its recipe
 

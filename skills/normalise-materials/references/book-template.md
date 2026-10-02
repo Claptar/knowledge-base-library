@@ -130,7 +130,9 @@ and question. A reader who wants the original must be able to find the page it c
 - **Solutions never sit beside their problem.** They are a linked page, because an answer one scroll
   below the question is not an exercise.
 - **Everything `page-template.md` says about body text still applies** — one H1, `##`-rooted body,
-  `$…$` maths, no raw HTML, figures as relative images. That file governs *markdown*; this one
+  `$…$` maths, no raw HTML except a figure, and figures as **inline SVG** using `currentColor`, not
+  relative images, because an external image cannot follow the light/dark theme. That file
+  governs *markdown*; this one
   governs *structure and content*.
 - **Never invent material.** If the lecture did not cover something, the chapter does not either. A
   gap is recorded in `## Sources` as a gap. The failure this guards against is a plausible-sounding

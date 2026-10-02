@@ -1,6 +1,6 @@
 ---
 name: normalise-materials
-description: Converts collected source material — course repos, lecture notes, GitHub Pages sites, Quarto/Rmd/LaTeX sources, notebooks, caption files, PDFs — into uniform markdown split by lecture or section, so every part of it can be linked to. Use when he wants material made referenceable rather than fetched, judged or rewritten: "convert these to markdown", "split this course into sections", "make this linkable", "normalise the sources", "why can't I link to lecture 7". Produces a markdown tree beside the raw download, never in place of it. Use collect-materials to fetch a source first, adapt-material to rewrite one motivation-first, and study-mentor to work through it.
+description: Converts collected source material — course repos, lecture notes, GitHub Pages sites, Quarto/Rmd/LaTeX sources, notebooks, caption files, PDFs — into uniform markdown split by lecture or section, then writes the library's products from it: one course book per course, and the Papers shelf (a summary of every paper, full text only where its licence allows). Use when he wants material made referenceable or written up rather than fetched, judged or adapted: "convert these to markdown", "make this linkable", "normalise the sources", "write the book for this course", "summarise these papers for the library", "why can't I link to lecture 7". Produces generated, cited pages in the library, never a rewrite around his anchors. Use collect-materials to fetch a source first, adapt-material (in the knowledge base) to rewrite one for him, and study-mentor to work through it.
 ---
 
 # Normalise Materials
@@ -24,11 +24,10 @@ boundary matters: everything up to step 3a changes format only, and step 3b writ
 what those steps produced. If you find yourself improving the text during conversion, stop — that
 belongs in the book, where it is marked as a rewrite and carries its source's licence.
 
-**It preserves; it does not rewrite.** An adapted document reorders the material motivation-first
-and converts proofs to exercises — that is the `adapt-material` skill, in the knowledge base
-repository, and it is a different job.
-This one changes the *format* and nothing else. If you find yourself improving the prose, stop:
-that is an adaptation, and it belongs in `adapted/` under its own rules.
+**A book is not an adaptation.** An adapted document reorders the material around *his* anchors,
+motivation-first, and converts proofs to exercises. That is the `adapt-material` skill, in the
+knowledge base repository, and it is a different job. A book here is a course written up for any
+reader. An adaptation should start from the original source, never from a book.
 
 ## The rule that decides everything: convert the source, not the render
 
